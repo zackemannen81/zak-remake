@@ -1,0 +1,76 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/OCv2_0236
+Events:
+   C - 001F
+  FD - 0033
+[001F] (D8) printEgo("It looks like Earth!");
+[0032] (00) stopObjectCode();
+[0033] (46) Var[203]++;
+[0035] (80) breakHere();
+[0036] (48) if (VAR_ACTIVE_VERB == 3) {
+[003C] (BB)   waitForActor(VAR_EGO);
+[003E] (89)   faceActor(VAR_EGO,11);
+[0041] (00)   stopObjectCode();
+[0042] (48)   if (VAR_ACTIVE_OBJECT2 == 11) {
+[0048] (19)     doSentence(254,237,0,1);
+[004F] (11)     animateActor(11,255);
+[0052] (4D)     walkActorToActor(11,VAR_EGO,3);
+[0056] (3B)     waitForActor(11);
+[0058] (49)     faceActor(11,VAR_EGO);
+[005B] (89)     faceActor(VAR_EGO,11);
+[005E] (00)     stopObjectCode();
+[005F] (80)     breakHere();
+[0060] (80)     breakHere();
+[0061] (48)     if (VAR_ACTIVE_OBJECT1 == 41) {
+[0067] (14)       print(11,"A \x06\x09! It's been SO long since ah've\x01strummed them strings!");
+[009B] (18)       goto 00BC;
+[009E] (48)     } else if (VAR_ACTIVE_OBJECT1 == 27) {
+[00A7] (14)       print(11,"A fan! Ah didn't know!");
+[00BC] (9A)       Var[45] = Var[234];
+[00BF] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,0);
+[00C2] (5B)       setBitVar(1505,0,Var[235]);
+[00C7] (42)       startScript(103);
+[00C9] (48)     } else if (VAR_ACTIVE_OBJECT1 == 16) {
+[00D2] (14)       print(11,"Ah don't play no sissy instruments!");
+[00F3] (48)     } else if (VAR_ACTIVE_OBJECT1 == 30) {
+[00FC] (14)       print(11,"Lazy! You gotta send away for your card.");
+[0120] (18)     } else {
+[0123] (9D)       if (classOfIs(VAR_ACTIVE_OBJECT1,32)) {
+[0128] (14)         print(11,"An artifact!");
+[0136] (62)         stopScript(101);
+[0138] (9A)         Var[45] = Var[234];
+[013B] (AE)         waitForMessage();
+[013C] (42)         startScript(95);
+[013E] (5B)         setBitVar(1505,0,Var[234]);
+[0143] (18)         goto 0180;
+[0146] (**)       }
+[0146] (A8)       if (Var[45]) {
+[014A] (14)         print(11,"Ah don't want it!");
+[015B] (18)       } else {
+[015E] (14)         print(11,"No thanks.");
+[016A] (**)       }
+[016A] (**)     }
+[016A] (80)     breakHere();
+[016B] (68)     VAR_RESULT = isScriptRunning(103);
+[016E] (28)     unless (!VAR_RESULT) goto 016A;
+[0172] (A8)     if (Var[45]) {
+[0176] (19)       doSentence(253,237,0,1);
+[017D] (18)     } else {
+[0180] (19)       doSentence(250,233,0,1);
+[0187] (**)     }
+[0187] (9A)     VAR_ACTIVE_OBJECT2 = Var[234];
+[018A] (48)   } else if (VAR_ACTIVE_OBJECT2 == 7) {
+[0193] (14)     print(7,"Give it to The King.");
+[01A6] (AE)     waitForMessage();
+[01A7] (68)     VAR_RESULT = isScriptRunning(95);
+[01AA] (28)     if (!VAR_RESULT) {
+[01AE] (43)       VAR_RESULT = getActorX(7);
+[01B1] (48)       if (VAR_RESULT == 68) {
+[01B7] (11)         animateActor(7,247);
+[01BA] (**)       }
+[01BA] (**)     }
+[01BA] (9A)     VAR_ACTIVE_OBJECT2 = Var[234];
+[01BD] (**)   }
+[01BD] (**) }
+[01BD] (18) goto 0035;
+[01C0] (00) stopObjectCode();
+END

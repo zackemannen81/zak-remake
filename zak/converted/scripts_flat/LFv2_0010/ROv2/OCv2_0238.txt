@@ -1,0 +1,39 @@
+Events:
+   1 - 0019
+  FD - 0030
+[0019] (D8) printEgo("It doesn't seem to open.");
+[002F] (00) stopObjectCode();
+[0030] (80) breakHere();
+[0031] (9A) Var[54] = Var[234];
+[0034] (48) unless (Var[167] == 48) goto 00C3;
+[003A] (48) unless (Var[164] == 40) goto 00C3;
+[0040] (46) Var[54]++;
+[0042] (68) VAR_RESULT = isScriptRunning(100);
+[0045] (28) unless (!VAR_RESULT) goto 00C3;
+[0049] (62) stopScript(101);
+[004B] (11) animateActor(11,255);
+[004E] (62) stopScript(95);
+[0050] (11) animateActor(7,255);
+[0053] (5B) setBitVar(1505,0,Var[234]);
+[0058] (0C) loadScript(95)
+[005B] (14) print(11,"Hey! What's THAT ah see?");
+[0072] (4D) walkActorToActor(11,VAR_EGO,2);
+[0076] (80) breakHere();
+[0077] (80) breakHere();
+[0078] (B4) VAR_RESULT = getDist(VAR_EGO,11);
+[007D] (04) unless (VAR_RESULT <= 2) goto 0072;
+[0083] (5B) setBitVar(1441,0,Var[235]);
+[0088] (11) animateActor(1,255);
+[008B] (09) faceActor(1,11);
+[008E] (00) stopObjectCode();
+[008F] (19) doSentence(253,234,0,1);
+[0096] (14) print(11,"Trying to fool us?\x03Take him!");
+[00B1] (AE) waitForMessage();
+[00B2] (42) startScript(95);
+[00B4] (80) breakHere();
+[00B5] (68) VAR_RESULT = isScriptRunning(95);
+[00B8] (28) unless (!VAR_RESULT) goto 00B4;
+[00BC] (19) doSentence(250,233,0,1);
+[00C3] (18) goto 0030;
+[00C6] (00) stopObjectCode();
+END

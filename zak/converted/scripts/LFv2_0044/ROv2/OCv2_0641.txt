@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0641
+Events:
+   C - 0017
+[0017] (D8) printEgo("WARNING: Fence is electrified.");
+[0034] (00) stopObjectCode();
+END

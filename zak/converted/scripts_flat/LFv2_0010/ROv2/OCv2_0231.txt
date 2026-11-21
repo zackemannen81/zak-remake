@@ -1,0 +1,19 @@
+Events:
+   4 - 0026
+   9 - 0026
+   B - 0026
+   D - 0026
+  FD - 003B
+[0026] (28) unless (!Var[50]) goto 003A;
+[002A] (68) VAR_RESULT = isScriptRunning(64);
+[002D] (28) unless (!VAR_RESULT) goto 003A;
+[0031] (1C) startSound(73);
+[0033] (19) doSentence(253,239,0,1);
+[003A] (00) stopObjectCode();
+[003B] (5B) setBitVar(1573,0,Var[235]);
+[0040] (1E) walkActorTo(7,68,56);
+[0044] (3B) waitForActor(7);
+[0046] (11) animateActor(7,247);
+[0049] (5B) setBitVar(1573,0,Var[234]);
+[004E] (00) stopObjectCode();
+END

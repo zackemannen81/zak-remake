@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0033/ROv2/EXv2
+[0000] (9A) Var[154] = Var[234];
+[0003] (47) clearState08(535);
+[0006] (57) setState02(535);
+[0009] (30) setBoxFlags(8,0);
+[000C] (30) setBoxFlags(0,0);
+[000F] (30) setBoxFlags(3,0);
+[0012] (30) setBoxFlags(4,0);
+[0015] (0C) unlockSound(92)
+[0018] (0C) unlockSound(91)
+[001B] (0C) unlockSound(90)
+[001E] (0C) unlockSound(32)
+[0021] (0C) unlockSound(48)
+[0024] (00) stopObjectCode();
+END

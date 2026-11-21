@@ -1,0 +1,53 @@
+# Decompiled with descumm -2
+# Source: LFv2_0025\SCv2_0065
+
+[0000] (80) breakHere();
+[0001] (A8) if (Var[200]) {
+[0005] (B4)   VAR_RESULT = getDist(Var[200],424);
+[000A] (A8)   if (VAR_RESULT) {
+[000E] (47)     clearState08(424);
+[0011] (9A)     Var[200] = Var[234];
+[0014] (18)     goto 002A;
+[0017] (**)   }
+[0017] (**) }
+[0017] (A8) if (Var[201]) {
+[001B] (B4)   VAR_RESULT = getDist(Var[201],425);
+[0020] (A8)   if (VAR_RESULT) {
+[0024] (47)     clearState08(425);
+[0027] (9A)     Var[201] = Var[234];
+[002A] (1C)     startSound(27);
+[002C] (6F)     if (getState04(433)) {
+[0031] (67)       clearState04(433);
+[0034] (19)       doSentence(254,433,0,1);
+[003B] (3C)       stopSound(98);
+[003D] (47)       clearState08(433);
+[0040] (47)       clearState08(435);
+[0043] (**)     }
+[0043] (**)   }
+[0043] (**) }
+[0043] (4F) if (getState08(424)) {
+[0048] (4F)   if (getState08(425)) {
+[004D] (0F)     if (!getState08(427)) {
+[0052] (0F)       if (!getState08(428)) {
+[0057] (0F)         if (!getState08(429)) {
+[005C] (0F)           if (!getState08(430)) {
+[0061] (0F)             if (!getState08(431)) {
+[0066] (12)               panCameraTo(24);
+[0068] (80)               breakHere();
+[0069] (48)               unless (VAR_CAMERA_POS_X == 24) goto 0068;
+[006F] (4A)               chainScript(66);
+[0071] (**)             }
+[0071] (**)           }
+[0071] (**)         }
+[0071] (**)       }
+[0071] (**)     }
+[0071] (2F)     if (!getState04(433)) {
+[0076] (27)       setState04(433);
+[0079] (19)       doSentence(250,433,0,1);
+[0080] (1C)       startSound(98);
+[0082] (**)     }
+[0082] (**)   }
+[0082] (**) }
+[0082] (18) goto 0000;
+[0085] (A0) stopObjectCode();
+END

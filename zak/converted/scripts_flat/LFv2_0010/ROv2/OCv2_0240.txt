@@ -1,0 +1,42 @@
+Events:
+   9 - 001D
+   B - 001D
+  FD - 003B
+[001D] (68) VAR_RESULT = isScriptRunning(64);
+[0020] (28) unless (!VAR_RESULT) goto 003A;
+[0024] (1C) startSound(23);
+[0026] (0F) unless (!getState08(238)) goto 003A;
+[002B] (80) breakHere();
+[002C] (4F) unless (getState08(229)) goto 002B;
+[0031] (68) VAR_RESULT = isScriptRunning(100);
+[0034] (28) unless (!VAR_RESULT) goto 003A;
+[0038] (42) startScript(100);
+[003A] (00) stopObjectCode();
+[003B] (13) ActorOps(11,[Costume(27)]);
+[003F] (13) ActorOps(11,[Sound(6)]);
+[0043] (13) ActorOps(11,[TalkColor(15)]);
+[0047] (53) ActorOps(11,[Name("The King")]);
+[0054] (53) ActorOps(7,[Name("Caponian")]);
+[0061] (03) VAR_RESULT = getActorRoom(11);
+[0064] (88) unless (VAR_RESULT != VAR_ROOM) goto 0073;
+[0069] (2D) putActorInRoom(11,10);
+[006C] (01) putActor(11,66,36);
+[0070] (11) animateActor(11,251);
+[0073] (03) VAR_RESULT = getActorRoom(7);
+[0076] (88) unless (VAR_RESULT != VAR_ROOM) goto 0082;
+[007B] (2D) putActorInRoom(7,10);
+[007E] (01) putActor(7,44,56);
+[0082] (1A) Var[245] = 28;
+[0086] (42) startScript(5);
+[0088] (11) animateActor(11,24);
+[008B] (30) setBoxFlags(4,0);
+[008E] (30) setBoxFlags(5,0);
+[0091] (33) RoomScroll(20,100);
+[0095] (19) doSentence(250,238,0,1);
+[009C] (19) doSentence(253,236,0,1);
+[00A3] (9A) Var[45] = Var[234];
+[00A6] (68) VAR_RESULT = isScriptRunning(101);
+[00A9] (A8) unless (VAR_RESULT) goto 00B4;
+[00AD] (19) doSentence(253,237,0,1);
+[00B4] (00) stopObjectCode();
+END

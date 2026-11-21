@@ -1,0 +1,8 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0007/ROv2/OCv2_0186
+Events:
+  11 - 001F
+[001F] (1A) Var[47] = 550;
+[0023] (1A) Var[46] = 55;
+[0027] (42) startScript(24);
+[0029] (00) stopObjectCode();
+END

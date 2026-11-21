@@ -1,0 +1,13 @@
+[0000] (3C) stopSound(19);
+[0002] (9A) Var[203] = Var[234];
+[0005] (3C) stopSound(87);
+[0007] (3C) stopSound(96);
+[0009] (68) VAR_RESULT = isScriptRunning(30);
+[000C] (28) unless (!VAR_RESULT) goto 001D;
+[0010] (07) setState08(195);
+[0013] (57) setState02(195);
+[0016] (62) stopScript(43);
+[0018] (62) stopScript(40);
+[001A] (2D) putActorInRoom(10,0);
+[001D] (00) stopObjectCode();
+END

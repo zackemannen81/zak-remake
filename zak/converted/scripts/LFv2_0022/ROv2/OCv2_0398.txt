@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0022/ROv2/OCv2_0398
+Events:
+   D - 001D
+[001D] (A4) loadRoomWithEgo(Var[45],20,255,255);
+[0022] (00) stopObjectCode();
+END

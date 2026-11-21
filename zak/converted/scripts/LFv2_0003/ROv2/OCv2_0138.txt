@@ -1,0 +1,41 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/OCv2_0138
+Events:
+   1 - 0020
+   2 - 0048
+   B - 004B
+   C - 00B9
+[0020] (D8) printEgo("It's \x02");
+[0027] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[002B] (D8)   printEgo("locked.");
+[0034] (18) } else {
+[0037] (D8)   printEgo("already opened.");
+[0047] (**) }
+[0047] (00) stopObjectCode();
+[0048] (42) startScript(11);
+[004A] (00) stopObjectCode();
+[004B] (48) if (VAR_ACTIVE_OBJECT2 == 24) {
+[0051] (8F)   if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0055] (87)     setState08(VAR_ACTIVE_OBJECT1);
+[0057] (1C)     startSound(26);
+[0059] (**)   }
+[0059] (CF) } else if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0060] (48)   if (VAR_ACTIVE_OBJECT2 == 30) {
+[0066] (28)     if (!Var[160]) {
+[006A] (D8)       printEgo("It's not filled out.");
+[007D] (18)     } else {
+[0080] (C7)       clearState08(VAR_ACTIVE_OBJECT1);
+[0082] (19)       doSentence(2,139,0,1);
+[0089] (9A)       Var[159] = Var[160];
+[008C] (5A)       Var[159] += 10;
+[0090] (29)       setOwnerOf(30,0);
+[0094] (**)     }
+[0094] (18)   } else {
+[0097] (D8)     printEgo("I can't mail that!");
+[00A8] (**)   }
+[00A8] (18) } else {
+[00AB] (D8)   printEgo("It's locked.");
+[00B8] (**) }
+[00B8] (00) stopObjectCode();
+[00B9] (D8) printEgo("Zachary McKracken, 5858 13th Ave.");
+[00D8] (00) stopObjectCode();
+END

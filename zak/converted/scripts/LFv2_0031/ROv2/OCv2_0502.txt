@@ -1,0 +1,22 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0031/ROv2/OCv2_0502
+Events:
+  21 - 0015
+  FD - 0057
+[0015] (31) VAR_RESULT = getBitVar(1550,0);
+[001A] (28) if (!VAR_RESULT) {
+[001E] (D8)   printEgo("MAN TRADES MINDS WITH DOLPHIN;\x01DESTROYS TUNA BOAT FLEET.");
+[0051] (5B)   setBitVar(1550,0,Var[235]);
+[0056] (**) }
+[0056] (00) stopObjectCode();
+[0057] (1A) VAR_TIMER_NEXT = 6;
+[005B] (1A) Var[45] = 497;
+[005F] (1C) startSound(43);
+[0061] (85) drawObject(Var[45],255,255);
+[0065] (80) breakHere();
+[0066] (46) Var[45]++;
+[0068] (44) unless (Var[45] > 503) goto 0061;
+[006E] (47) clearState08(506);
+[0071] (47) clearState08(500);
+[0074] (47) clearState08(503);
+[0077] (00) stopObjectCode();
+END

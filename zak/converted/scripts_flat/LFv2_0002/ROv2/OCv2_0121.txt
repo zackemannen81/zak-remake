@@ -1,0 +1,10 @@
+Events:
+   1 - 0020
+   2 - 0023
+   9 - 0023
+   A - 0020
+[0020] (42) startScript(10);
+[0022] (00) stopObjectCode();
+[0023] (42) startScript(11);
+[0025] (00) stopObjectCode();
+END

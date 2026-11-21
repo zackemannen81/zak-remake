@@ -1,0 +1,30 @@
+Events:
+   B - 0027
+   C - 009F
+  FD - 00D2
+[0027] (48) unless (VAR_CURRENT_LIGHTS == 11) goto 0087;
+[002D] (48) unless (VAR_ACTIVE_OBJECT2 == 25) goto 006D;
+[0033] (60) cursorCommand(15, 2);
+[0036] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0038] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[003A] (D8) printEgo("Connect the dots^ la, la, la-la.");
+[0057] (2E) delay(120);
+[005B] (07) setState08(281);
+[005E] (1C) startSound(78);
+[0060] (19) doSentence(250,283,0,1);
+[0067] (60) cursorCommand(247, 1);
+[006A] (18) goto 0084;
+[006D] (D8) printEgo("Hmmm, nothing happened.");
+[0084] (18) goto 009E;
+[0087] (D8) printEgo("I need more light in here.");
+[009E] (00) stopObjectCode();
+[009F] (D8) printEgo("It looks like an unfinished drawing made\x01of yellow dots.");
+[00D1] (00) stopObjectCode();
+[00D2] (33) RoomColor(0,1);
+[00D6] (33) RoomColor(0,9);
+[00DA] (33) RoomColor(8,4);
+[00DE] (33) RoomColor(7,6);
+[00E2] (33) RoomColor(8,12);
+[00E6] (F0) lights(Var[234],0,0);
+[00EA] (00) stopObjectCode();
+END

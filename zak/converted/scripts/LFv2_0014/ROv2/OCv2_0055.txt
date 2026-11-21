@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0014/ROv2/OCv2_0055
+Events:
+   B - 0029
+   E - 0021
+[0021] (19) doSentence(253,298,0,1);
+[0028] (00) stopObjectCode();
+[0029] (48) if (VAR_ACTIVE_OBJECT2 == 169) {
+[002F] (48) } else if (VAR_ACTIVE_OBJECT2 == 428) {
+[0038] (48) } else if (VAR_EGO == 1) {
+[0041] (42)   startScript(67);
+[0043] (18) } else {
+[0046] (79)   doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[004B] (**) }
+[004B] (00) stopObjectCode();
+END

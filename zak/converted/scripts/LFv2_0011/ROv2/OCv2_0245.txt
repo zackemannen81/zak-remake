@@ -1,0 +1,19 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0245
+Events:
+   9 - 0022
+   B - 0022
+   C - 003B
+[0022] (1C) startSound(38);
+[0024] (80) breakHere();
+[0025] (7C) VAR_RESULT = isSoundRunning(38);
+[0028] (28) unless (!VAR_RESULT) goto 0024;
+[002C] (80) breakHere();
+[002D] (28) unless (!Var[248]) goto 002C;
+[0031] (68) VAR_RESULT = isScriptRunning(106);
+[0034] (28) if (!VAR_RESULT) {
+[0038] (42)   startScript(106);
+[003A] (**) }
+[003A] (00) stopObjectCode();
+[003B] (D8) printEgo("In case of emergency, push button.");
+[005A] (00) stopObjectCode();
+END

@@ -1,0 +1,31 @@
+Events:
+   1 - 001C
+   2 - 009D
+[001C] (42) startScript(10);
+[001E] (08) unless (VAR_EGO != 7) goto 009C;
+[0024] (EF) unless (getState04(VAR_ACTIVE_OBJECT1)) goto 008C;
+[0028] (60) cursorCommand(15, 2);
+[002B] (2E) delay(60);
+[002F] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[0031] (9A) Var[52] = Var[234];
+[0034] (1A) Var[50] = 33;
+[0038] (90) VAR_RESULT = getObjectOwner(Var[50]);
+[003B] (48) unless (VAR_RESULT == 7) goto 0046;
+[0041] (E9) setOwnerOf(Var[50],VAR_EGO);
+[0044] (46) Var[52]++;
+[0046] (46) Var[50]++;
+[0048] (44) unless (Var[50] > 81) goto 0038;
+[004E] (D8) printEgo("Yay! Here's the \x02");
+[005E] (44) unless (Var[52] > 1) goto 006F;
+[0064] (D8) printEgo("stuff\x02");
+[006C] (18) goto 007A;
+[006F] (D8) printEgo("artifact\x02");
+[007A] (D8) printEgo(" they took!");
+[0086] (60) cursorCommand(247, 1);
+[0089] (18) goto 009C;
+[008C] (2E) delay(30);
+[0090] (D8) printEgo("It's empty.");
+[009C] (00) stopObjectCode();
+[009D] (42) startScript(11);
+[009F] (00) stopObjectCode();
+END

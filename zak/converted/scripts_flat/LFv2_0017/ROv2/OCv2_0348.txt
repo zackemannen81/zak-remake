@@ -1,0 +1,8 @@
+Events:
+   C - 0017
+[0017] (48) unless (VAR_EGO == 1) goto 0040;
+[001D] (D8) printEgo("I think it's the name of a cigarette.");
+[003D] (18) goto 0058;
+[0040] (D8) printEgo("It obviously says `JAIL.`");
+[0058] (00) stopObjectCode();
+END

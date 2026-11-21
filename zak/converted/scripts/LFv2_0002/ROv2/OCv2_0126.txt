@@ -1,0 +1,42 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0002/ROv2/OCv2_0126
+Events:
+   1 - 001B
+   2 - 0050
+   B - 006C
+[001B] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[001F] (D8)   printEgo("I'll need some tools for that.");
+[003A] (18) } else {
+[003D] (D8)   printEgo("It's already open.");
+[004F] (**) }
+[004F] (00) stopObjectCode();
+[0050] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0054] (18)   goto 001F;
+[0057] (**) }
+[0057] (D8) printEgo("It's already closed.");
+[006B] (00) stopObjectCode();
+[006C] (48) if (VAR_ACTIVE_OBJECT2 == 35) {
+[0072] (1C)   startSound(35);
+[0074] (60)   cursorCommand(15, 2);
+[0077] (80)   breakHere();
+[0078] (7C)   VAR_RESULT = isSoundRunning(35);
+[007B] (28)   unless (!VAR_RESULT) goto 0077;
+[007F] (60)   cursorCommand(247, 1);
+[0082] (0F)   if (!getState08(126)) {
+[0087] (07)     setState08(126);
+[008A] (6F)     if (getState04(23)) {
+[008F] (07)       setState08(23);
+[0092] (17)       clearState02(23);
+[0095] (67)       clearState04(23);
+[0098] (**)     }
+[0098] (4F)     if (getState08(129)) {
+[009D] (42)       startScript(22);
+[009F] (**)     }
+[009F] (18)   } else {
+[00A2] (47)     clearState08(126);
+[00A5] (9A)     Var[44] = Var[234];
+[00A8] (**)   }
+[00A8] (18) } else {
+[00AB] (42)   startScript(3);
+[00AD] (**) }
+[00AD] (00) stopObjectCode();
+END

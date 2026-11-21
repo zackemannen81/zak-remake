@@ -1,0 +1,15 @@
+Events:
+   C - 0020
+  FD - 004F
+[0020] (D8) printEgo("Cash offered for merchandise.\x01No questions asked.");
+[004E] (00) stopObjectCode();
+[004F] (48) unless (VAR_EGO == 1) goto 0067;
+[0055] (10) VAR_RESULT = getObjectOwner(18);
+[0059] (08) unless (VAR_RESULT != 1) goto 0064;
+[005F] (5B) setBitVar(848,1,Var[235]);
+[0064] (18) goto 0076;
+[0067] (10) VAR_RESULT = getObjectOwner(32);
+[006B] (08) unless (VAR_RESULT != 2) goto 0076;
+[0071] (5B) setBitVar(848,2,Var[235]);
+[0076] (00) stopObjectCode();
+END

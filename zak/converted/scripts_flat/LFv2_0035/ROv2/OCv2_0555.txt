@@ -1,0 +1,27 @@
+Events:
+   D - 0019
+  FD - 0020
+[0019] (24) loadRoomWithEgo(565,200,255,255);
+[001F] (00) stopObjectCode();
+[0020] (27) setState04(555);
+[0023] (60) cursorCommand(15, 2);
+[0026] (80) breakHere();
+[0027] (1E) walkActorTo(3,66,59);
+[002B] (3B) waitForActor(3);
+[002D] (11) animateActor(3,246);
+[0030] (2E) delay(60);
+[0034] (D8) printEgo("YIKES! It must be a zillion miles to the\x01bottom!");
+[005E] (2E) delay(60);
+[0062] (1E) walkActorTo(3,68,55);
+[0066] (3B) waitForActor(3);
+[0068] (11) animateActor(3,246);
+[006B] (AE) waitForMessage();
+[006C] (2E) delay(60);
+[0070] (D8) printEgo("I'm SCARED of heights!");
+[0085] (2E) delay(120);
+[0089] (36) walkActorToObject(3,555);
+[008D] (3B) waitForActor(3);
+[008F] (60) cursorCommand(247, 1);
+[0092] (19) doSentence(13,555,0,1);
+[0099] (00) stopObjectCode();
+END

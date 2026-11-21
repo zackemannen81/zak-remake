@@ -1,0 +1,6 @@
+Events:
+   B - 0028
+[0028] (1A) Var[78] = 228;
+[002C] (42) startScript(30);
+[002E] (00) stopObjectCode();
+END

@@ -1,0 +1,39 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/EXv2
+[0000] (03) VAR_RESULT = getActorRoom(1);
+[0003] (08) if (VAR_RESULT != 4) {
+[0009] (03)   VAR_RESULT = getActorRoom(2);
+[000C] (08)   if (VAR_RESULT != 4) {
+[0012] (47)     clearState08(135);
+[0015] (47)     clearState08(151);
+[0018] (47)     clearState08(156);
+[001B] (**)   }
+[001B] (**) }
+[001B] (44) if (Var[159] > 10) {
+[0021] (42)   startScript(12);
+[0023] (**) }
+[0023] (47) clearState08(143);
+[0026] (07) setState08(144);
+[0029] (30) setBoxFlags(6,64);
+[002C] (1A) Var[48] = 1;
+[0030] (19) doSentence(253,149,0,1);
+[0037] (A8) if (Var[47]) {
+[003B] (B1)   VAR_RESULT = getBitVar(1464,Var[48]);
+[0040] (28)   if (!VAR_RESULT) {
+[0044] (81)     putActor(Var[48],90,60);
+[0048] (**)   }
+[0048] (**) }
+[0048] (1A) Var[48] = 2;
+[004C] (19) doSentence(253,149,0,1);
+[0053] (A8) if (Var[47]) {
+[0057] (B1)   VAR_RESULT = getBitVar(1464,Var[48]);
+[005C] (28)   if (!VAR_RESULT) {
+[0060] (81)     putActor(Var[48],86,60);
+[0064] (**)   }
+[0064] (**) }
+[0064] (68) VAR_RESULT = isScriptRunning(52);
+[0067] (A8) if (VAR_RESULT) {
+[006B] (62)   stopScript(52);
+[006D] (42)   startScript(54);
+[006F] (**) }
+[006F] (00) stopObjectCode();
+END

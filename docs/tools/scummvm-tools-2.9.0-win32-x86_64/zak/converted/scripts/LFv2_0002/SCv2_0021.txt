@@ -1,0 +1,30 @@
+# Decompiled with descumm -2
+# Source: LFv2_0002\SCv2_0021
+
+[0000] (1C) startSound(18);
+[0002] (2E) delay(22);
+[0006] (4F) if (getState08(130)) {
+[000B] (47)   clearState08(130);
+[000E] (57)   setState02(130);
+[0011] (29)   setOwnerOf(29,0);
+[0015] (4F)   if (getState08(126)) {
+[001A] (68)     VAR_RESULT = isScriptRunning(22);
+[001D] (28)     if (!VAR_RESULT) {
+[0021] (07)       setState08(23);
+[0024] (17)       clearState02(23);
+[0027] (18)     } else {
+[002A] (D8)       printEgo("Oh no! The crumbs got washed away!");
+[0048] (**)     }
+[0048] (0F)   } else if (!getState08(129)) {
+[0050] (27)     setState04(23);
+[0053] (**)   }
+[0053] (**) }
+[0053] (48) if (Var[138] == 2) {
+[0059] (1A)   Var[138] = 3;
+[005D] (AE)   waitForMessage();
+[005E] (D8)   printEgo("WHOOPS! Shredded Sushi.");
+[0075] (5A)   Var[225] += 10;
+[0079] (**) }
+[0079] (18) goto 0002;
+[007C] (A0) stopObjectCode();
+END

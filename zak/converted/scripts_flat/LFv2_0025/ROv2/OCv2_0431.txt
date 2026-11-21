@@ -1,0 +1,7 @@
+Events:
+   E - 001F
+[001F] (07) setState08(431);
+[0022] (57) setState02(431);
+[0025] (69) setOwnerOf(55,VAR_EGO);
+[0029] (00) stopObjectCode();
+END

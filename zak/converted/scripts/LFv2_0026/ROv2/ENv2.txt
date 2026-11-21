@@ -1,0 +1,14 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0026/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (13) ActorOps(12,[Costume(20)]);
+[0008] (3D) setActorElevation(12,0);
+[000B] (83) VAR_RESULT = getActorRoom(VAR_EGO);
+[000E] (48) if (VAR_RESULT == 26) {
+[0014] (13)   ActorOps(3,[Costume(0)]);
+[0018] (13)   ActorOps(4,[Costume(0)]);
+[001C] (2D)   putActorInRoom(12,26);
+[001F] (01)   putActor(12,76,49);
+[0023] (42)   startScript(81);
+[0025] (**) }
+[0025] (00) stopObjectCode();
+END

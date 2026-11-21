@@ -1,0 +1,17 @@
+Events:
+   B - 0019
+   D - 0019
+[0019] (30) setBoxFlags(4,160);
+[001C] (81) putActor(VAR_EGO,63,52);
+[0020] (BD) setActorElevation(VAR_EGO,252);
+[0023] (91) animateActor(VAR_EGO,249);
+[0026] (47) clearState08(263);
+[0029] (48) unless (VAR_EGO == 2) goto 0035;
+[002F] (07) setState08(775);
+[0032] (18) goto 003D;
+[0035] (6F) unless (getState04(39)) goto 003D;
+[003A] (07) setState08(774);
+[003D] (42) startScript(150);
+[003F] (9A) VAR_ACTIVE_OBJECT1 = Var[234];
+[0042] (00) stopObjectCode();
+END

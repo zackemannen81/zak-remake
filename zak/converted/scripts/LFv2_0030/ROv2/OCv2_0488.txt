@@ -1,0 +1,70 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0030/ROv2/OCv2_0488
+Events:
+   1 - 001D
+   2 - 0055
+   D - 0078
+  FD - 0083
+[001D] (2F) if (!getState04(454)) {
+[0022] (8F)   if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0026] (42)     startScript(10);
+[0028] (19)     doSentence(254,489,0,1);
+[002F] (9A)     Var[154] = Var[235];
+[0032] (1C)     startSound(37);
+[0034] (19)     doSentence(253,493,0,1);
+[003B] (07)     setState08(452);
+[003E] (4F)     if (getState08(490)) {
+[0043] (19)       doSentence(253,495,0,1);
+[004A] (**)     }
+[004A] (**)   }
+[004A] (18) } else {
+[004D] (19)   doSentence(253,491,0,1);
+[0054] (**) }
+[0054] (00) stopObjectCode();
+[0055] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0059] (42)   startScript(11);
+[005B] (47)   clearState08(452);
+[005E] (4F)   if (getState08(490)) {
+[0063] (19)     doSentence(253,494,0,1);
+[006A] (9A)     Var[154] = Var[234];
+[006D] (18)   } else {
+[0070] (19)     doSentence(250,489,0,1);
+[0077] (**)   }
+[0077] (**) }
+[0077] (00) stopObjectCode();
+[0078] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[007C] (24)   loadRoomWithEgo(452,185,255,255);
+[0082] (**) }
+[0082] (00) stopObjectCode();
+[0083] (80) breakHere();
+[0084] (F5) Var[66] = findObject(VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[0088] (48) if (Var[66] == 488) {
+[008E] (DB)   setBitVar(1440,VAR_EGO,Var[234]);
+[0093] (18) } else {
+[0096] (DB)   setBitVar(1440,VAR_EGO,Var[235]);
+[009B] (**) }
+[009B] (A8) if (Var[154]) {
+[009F] (18)   goto 0083;
+[00A2] (**) }
+[00A2] (6F) if (getState04(454)) {
+[00A7] (18)   goto 0083;
+[00AA] (**) }
+[00AA] (48) if (VAR_ACTIVE_VERB == 6) {
+[00B0] (9A)   Var[67] = Var[234];
+[00B3] (18) } else {
+[00B6] (48)   unless (VAR_ACTIVE_VERB == 7) goto 00F8;
+[00BC] (9A)   Var[67] = Var[235];
+[00BF] (**) }
+[00BF] (9A) VAR_ACTIVE_VERB = Var[234];
+[00C2] (48) if (VAR_ACTIVE_OBJECT1 == 65) {
+[00C8] (18) } else {
+[00CB] (48)   unless (VAR_ACTIVE_OBJECT1 == 66) goto 00F8;
+[00D1] (**) }
+[00D1] (A8) if (Var[67]) {
+[00D5] (D8)   printEgo("I took off\x02");
+[00E0] (18) } else {
+[00E3] (D8)   printEgo("I put on\x02");
+[00EC] (**) }
+[00EC] (D8) printEgo(" my helmet.");
+[00F8] (18) goto 0083;
+[00FB] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+[0000] (03) VAR_RESULT = getActorRoom(1);
+[0003] (08) unless (VAR_RESULT != 31) goto 0014;
+[0009] (13) ActorOps(1,[Sound(6)]);
+[000D] (3D) setActorElevation(1,0);
+[0010] (62) stopScript(85);
+[0012] (62) stopScript(86);
+[0014] (0C) unlockCostume(1)
+[0017] (0C) unlockCostume(12)
+[001A] (9A) Var[203] = Var[234];
+[001D] (7A) VerbOps(New-13(13,19,2,0,"Walk to@@"));
+[002D] (60) cursorCommand(0, 0);
+[0030] (3D) setActorElevation(7,0);
+[0033] (13) ActorOps(7,[Sound(6)]);
+[0037] (00) stopObjectCode();
+END

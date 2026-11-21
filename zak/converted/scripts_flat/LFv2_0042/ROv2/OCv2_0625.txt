@@ -1,0 +1,22 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (83) VAR_RESULT = getActorRoom(VAR_EGO);
+[0017] (C8) unless (VAR_RESULT == VAR_ROOM) goto 0013;
+[001C] (88) unless (Var[50] != VAR_EGO) goto 0028;
+[0021] (9A) Var[50] = VAR_EGO;
+[0024] (1A) Var[47] = 3;
+[0028] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[002B] (44) unless (VAR_RESULT > 42) goto 003E;
+[0031] (88) unless (Var[47] != Var[234]) goto 003B;
+[0036] (12) panCameraTo(60);
+[0038] (9A) Var[47] = Var[234];
+[003B] (18) goto 0051;
+[003E] (88) unless (Var[47] != Var[235]) goto 0051;
+[0043] (83) VAR_RESULT = getActorRoom(VAR_EGO);
+[0046] (48) unless (VAR_RESULT == 42) goto 004E;
+[004C] (D2) actorFollowCamera(VAR_EGO);
+[004E] (9A) Var[47] = Var[235];
+[0051] (18) goto 0013;
+[0054] (00) stopObjectCode();
+END

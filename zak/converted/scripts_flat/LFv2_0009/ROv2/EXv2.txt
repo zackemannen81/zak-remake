@@ -1,0 +1,7 @@
+[0000] (3C) stopSound(114);
+[0002] (68) VAR_RESULT = isScriptRunning(30);
+[0005] (28) unless (!VAR_RESULT) goto 000F;
+[0009] (07) setState08(223);
+[000C] (57) setState02(223);
+[000F] (00) stopObjectCode();
+END

@@ -1,0 +1,212 @@
+# Decompiled with descumm -2
+# Source: LFv2_0005\SCv2_0062
+
+[0000] (62) stopScript(147);
+[0002] (60) cursorCommand(255, 1);
+[0005] (9A) Var[119] = VAR_ACTIVE_OBJECT2;
+[0008] (9A) Var[45] = Var[234];
+[000B] (80) breakHere();
+[000C] (03) VAR_RESULT = getActorRoom(1);
+[000F] (08) if (VAR_RESULT != 5) {
+[0015] (18) } else {
+[0018] (46)   Var[45]++;
+[001A] (44)   unless (Var[45] > 80) goto 000B;
+[0020] (**) }
+[0020] (11) animateActor(1,255);
+[0023] (60) cursorCommand(134, 0);
+[0026] (40) cutscene();
+[0027] (67) clearState04(162);
+[002A] (58) beginOverride();
+[002B] (18) goto 04DC;
+[002E] (03) Var[120] = getActorRoom(1);
+[0031] (2E) delay(30);
+[0035] (12) panCameraTo(45);
+[0037] (80) breakHere();
+[0038] (48) unless (VAR_CAMERA_POS_X == 45) goto 0037;
+[003E] (0C) loadCostume(2)
+[0041] (2E) delay(60);
+[0045] (30) setBoxFlags(14,0);
+[0048] (2D) putActorInRoom(2,5);
+[004B] (01) putActor(2,46,36);
+[004F] (11) animateActor(2,250);
+[0052] (1A) VAR_EGO = 2;
+[0056] (52) actorFollowCamera(2);
+[0058] (19) doSentence(1,162,0,1);
+[005F] (2E) delay(60);
+[0063] (1A) Var[117] = 168;
+[0067] (08) if (Var[120] != 5) {
+[006D] (1E)   walkActorTo(2,46,40);
+[0071] (3B)   waitForActor(2);
+[0073] (11)   animateActor(2,245);
+[0076] (2E)   delay(60);
+[007A] (11)   animateActor(2,244);
+[007D] (2E)   delay(60);
+[0081] (48)   if (Var[120] == 7) {
+[0087] (1A)     Var[118] = 161;
+[008B] (1A)     Var[117] = 180;
+[008F] (48)   } else if (Var[120] == 3) {
+[0098] (1A)     Var[118] = 160;
+[009C] (1A)     Var[117] = 141;
+[00A0] (18)     /* goto 00A3; */
+[00A3] (**)   }
+[00A3] (76)   walkActorToObject(2,Var[118]);
+[00A6] (3B)   waitForActor(2);
+[00A8] (E4)   loadRoomWithEgo(Var[117],Var[120],50,56);
+[00AD] (2E)   delay(60);
+[00B1] (18) } else {
+[00B4] (43)   VAR_RESULT = getActorX(1);
+[00B7] (78)   if (VAR_RESULT < 24) {
+[00BD] (01)     putActor(1,5,56);
+[00C1] (42)     startScript(5);
+[00C3] (**)   }
+[00C3] (**) }
+[00C3] (34) VAR_RESULT = getDist(2,1);
+[00C9] (44) if (VAR_RESULT > 4) {
+[00CF] (0D)   walkActorToActor(2,1,4);
+[00D3] (D8)   printEgo("Hey you!");
+[00DC] (AE)   waitForMessage();
+[00DD] (09)   faceActor(1,2);
+[00E0] (00)   stopObjectCode();
+[00E1] (3B)   waitForActor(2);
+[00E3] (09)   faceActor(2,1);
+[00E6] (00)   stopObjectCode();
+[00E7] (09)   faceActor(1,2);
+[00EA] (00)   stopObjectCode();
+[00EB] (18) } else {
+[00EE] (48)   if (Var[120] == 5) {
+[00F4] (7B)     VAR_RESULT = getActorWalkBox(1);
+[00F7] (08)     if (VAR_RESULT != 9) {
+[00FD] (1E)       walkActorTo(1,46,40);
+[0101] (3B)       waitForActor(1);
+[0103] (**)     }
+[0103] (**)   }
+[0103] (11)   animateActor(1,247);
+[0106] (**) }
+[0106] (D8) printEgo("Where did you get that artifact?");
+[0123] (AE) waitForMessage();
+[0124] (14) print(1,"Never mind that! You're the woman who\x01was in my dream!");
+[0154] (AE) waitForMessage();
+[0155] (D8) printEgo("What a line!\x03Wait a second^ I had a dream too. I was\x01in a strange room with a strange man.");
+[019F] (AE) waitForMessage();
+[01A0] (08) if (Var[164] != 44) {
+[01A6] (11)   animateActor(1,246);
+[01A9] (1A)   VAR_EGO = 1;
+[01AD] (D8)   printEgo("Hold on!");
+[01B6] (AE)   waitForMessage();
+[01B7] (19)   doSentence(7,40,0,1);
+[01BE] (19)   doSentence(7,50,0,1);
+[01C5] (2E)   delay(60);
+[01C9] (09)   faceActor(1,2);
+[01CC] (00)   stopObjectCode();
+[01CD] (3B)   waitForActor(1);
+[01CF] (1A)   VAR_EGO = 2;
+[01D3] (**) }
+[01D3] (D8) printEgo("IT WAS YOU!\x03Come with me.");
+[01EA] (AE) waitForMessage();
+[01EB] (76) walkActorToObject(2,Var[117]);
+[01EE] (74) VAR_RESULT = getDist(1,Var[117]);
+[01F3] (44) if (VAR_RESULT > 7) {
+[01F9] (80)   breakHere();
+[01FA] (34)   VAR_RESULT = getDist(2,1);
+[0200] (44)   unless (VAR_RESULT > 6) goto 01F9;
+[0206] (18) } else {
+[0209] (2E)   delay(30);
+[020D] (**) }
+[020D] (76) walkActorToObject(1,Var[117]);
+[0210] (3B) waitForActor(2);
+[0212] (2D) putActorInRoom(2,6);
+[0215] (01) putActor(2,10,56);
+[0219] (2D) putActorInRoom(1,6);
+[021C] (01) putActor(1,3,56);
+[0220] (11) animateActor(2,248);
+[0223] (11) animateActor(1,249);
+[0226] (72) loadRoom(6);
+[0228] (2E) delay(60);
+[022C] (D8) printEgo("My two friends and I had special dreams\x01sent to us by the Ancient Ones.\x03You're the one they told us about.");
+[0285] (AE) waitForMessage();
+[0286] (11) animateActor(1,246);
+[0289] (80) breakHere();
+[028A] (14) print(1,"Give me a break!");
+[029A] (AE) waitForMessage();
+[029B] (11) animateActor(1,245);
+[029E] (D8) printEgo("I see you're skeptical. You'll soon\x01change your mind.");
+[02CE] (AE) waitForMessage();
+[02CF] (19) doSentence(10,178,0,0);
+[02D6] (D8) printEgo("In the dream we shared, we saw a strange\x01device which we must build.");
+[0310] (4C) waitForSentence();
+[0311] (1E) walkActorTo(2,26,51);
+[0315] (3B) waitForActor(2);
+[0317] (11) animateActor(2,244);
+[031A] (80) breakHere();
+[031B] (AE) waitForMessage();
+[031C] (D8) printEgo("Here's a drawing of it.");
+[0331] (36) walkActorToObject(1,178);
+[0335] (3B) waitForActor(1);
+[0337] (14) print(1,"Hey! That's it!");
+[0347] (AE) waitForMessage();
+[0348] (D8) printEgo("The \x06\x77 you brought me is\x01\x02");
+[0360] (48) if (Var[119] == 79) {
+[0366] (D8)   printEgo("very important to our mission.");
+[0382] (AE)   waitForMessage();
+[0383] (18) } else {
+[0386] (D8)   printEgo("a part of this device.");
+[039A] (AE)   waitForMessage();
+[039B] (D8)   printEgo("This is another part of it.");
+[03B3] (**) }
+[03B3] (19) doSentence(3,33,1,0);
+[03BA] (4C) waitForSentence();
+[03BB] (D8) printEgo("Here.\x03When whole, this yellow crystal shard\x01will let you join my friends on Mars.\x03Of course, you'll need a spacesuit.");
+[0421] (AE) waitForMessage();
+[0422] (11) animateActor(1,246);
+[0425] (14) print(1,"A spacesuit?");
+[0433] (2E) delay(60);
+[0437] (36) walkActorToObject(2,173);
+[043B] (2E) delay(60);
+[043F] (59) doSentence(3,Var[119],1,0);
+[0445] (D8) printEgo("Oh yes, here's your artifact back.");
+[0464] (AE) waitForMessage();
+[0465] (D8) printEgo("From now on, we will all share knowledge\x01through our dreams.\x03Be careful! If one of us dies, it will\x01be impossible to complete our mission!");
+[04DB] (AE) waitForMessage();
+[04DC] (1A) VAR_EGO = 1;
+[04E0] (A8) if (VAR_OVERRIDE) {
+[04E4] (14)   print(255,"");
+[04E7] (2D)   putActorInRoom(2,6);
+[04EA] (01)   putActor(2,27,52);
+[04EE] (2D)   putActorInRoom(1,6);
+[04F1] (01)   putActor(1,23,52);
+[04F5] (19)   doSentence(7,40,0,1);
+[04FC] (19)   doSentence(7,50,0,1);
+[0503] (42)   startScript(5);
+[0505] (11)   animateActor(1,249);
+[0508] (11)   animateActor(2,248);
+[050B] (72)   loadRoom(6);
+[050D] (07)   setState08(162);
+[0510] (07)   setState08(172);
+[0513] (07)   setState08(178);
+[0516] (10)   VAR_RESULT = getObjectOwner(33);
+[051A] (48)   if (VAR_RESULT == 15) {
+[0520] (50)     pickupObject(33);
+[0523] (**)   }
+[0523] (29)   setOwnerOf(33,1);
+[0527] (A9)   setOwnerOf(Var[119],1);
+[052A] (**) }
+[052A] (9A) Var[66] = Var[234];
+[052D] (FA) VerbOps(Delete(Var[66]););
+[0530] (46) Var[66]++;
+[0532] (44) unless (Var[66] > 13) goto 052D;
+[0538] (60) cursorCommand(0, 0);
+[053B] (C0) endCutscene();
+[053C] (9A) Var[117] = Var[235];
+[053F] (2E) delay(15);
+[0543] (7A) VerbOps(Delete(14));
+[0546] (60) cursorCommand(0, 0);
+[0549] (2E) delay(15);
+[054D] (7A) VerbOps(New-45(32,21,14,0,"Switch@@"));
+[055C] (60) cursorCommand(0, 0);
+[055F] (46) Var[117]++;
+[0561] (44) unless (Var[117] > 6) goto 053F;
+[0567] (9A) Var[199] = Var[235];
+[056A] (42) startScript(19);
+[056C] (60) cursorCommand(247, 1);
+[056F] (A0) stopObjectCode();
+END

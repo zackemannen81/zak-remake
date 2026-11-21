@@ -1,0 +1,4 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0012/ROv2/EXv2
+[0000] (93) ActorOps(VAR_EGO,[Sound(6)]);
+[0004] (00) stopObjectCode();
+END

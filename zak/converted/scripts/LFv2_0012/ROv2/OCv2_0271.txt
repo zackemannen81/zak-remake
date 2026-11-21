@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0012/ROv2/OCv2_0271
+Events:
+   D - 0020
+   E - 0032
+[0020] (D8) printEgo("It's way too high!");
+[0031] (00) stopObjectCode();
+[0032] (2F) if (!getState04(271)) {
+[0037] (27)   setState04(271);
+[003A] (11)   animateActor(1,246);
+[003D] (D8)   printEgo("Come on^ get real.");
+[004E] (**) }
+[004E] (00) stopObjectCode();
+END

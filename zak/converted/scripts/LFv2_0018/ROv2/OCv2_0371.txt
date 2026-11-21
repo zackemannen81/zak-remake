@@ -1,0 +1,72 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0018/ROv2/OCv2_0371
+Events:
+   C - 001A
+  FD - 009B
+[001A] (48) if (VAR_EGO == 1) {
+[0020] (D8)   printEgo("It's a picture of a flagpole, but I\x01can't read Nepali.");
+[004F] (18) } else {
+[0052] (D8)   printEgo("Bulletin: Because of termite problems,\x01all wooden flagpoles have been replaced.");
+[009A] (**) }
+[009A] (00) stopObjectCode();
+[009B] (9A) Var[203] = Var[235];
+[009E] (80) breakHere();
+[009F] (48) if (VAR_ACTIVE_VERB == 3) {
+[00A5] (90)   VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[00A8] (C8)   if (VAR_RESULT == VAR_EGO) {
+[00AD] (BB)     waitForActor(VAR_EGO);
+[00AF] (48)     if (VAR_ACTIVE_OBJECT2 == 8) {
+[00B5] (49)       faceActor(8,VAR_EGO);
+[00B8] (48)       if (VAR_ACTIVE_OBJECT1 == 59) {
+[00BE] (14)         print(8,"Our flag! Thank you!");
+[00D2] (AE)         waitForMessage();
+[00D3] (40)         cutscene();
+[00D4] (19)         doSentence(253,369,0,1);
+[00DB] (80)         breakHere();
+[00DC] (A8)         unless (Var[46]) goto 00DB;
+[00E0] (C0)         endCutscene();
+[00E1] (48)       } else if (VAR_ACTIVE_OBJECT1 == 60) {
+[00EA] (14)         print(8,"You found the key!");
+[00FC] (AE)         waitForMessage();
+[00FD] (40)         cutscene();
+[00FE] (19)         doSentence(253,366,0,1);
+[0105] (80)         breakHere();
+[0106] (A8)         unless (Var[46]) goto 0105;
+[010A] (C0)         endCutscene();
+[010B] (18)       } else {
+[010E] (14)         print(8,"I don't take bribes!");
+[0122] (AE)         waitForMessage();
+[0123] (**)       }
+[0123] (19)       doSentence(253,367,0,1);
+[012A] (9A)       VAR_ACTIVE_OBJECT2 = Var[234];
+[012D] (**)     }
+[012D] (7B)     VAR_RESULT = getActorWalkBox(1);
+[0130] (48)     if (VAR_RESULT == 7) {
+[0136] (48)       if (VAR_ACTIVE_OBJECT2 == 1) {
+[013C] (03)         VAR_RESULT = getActorRoom(8);
+[013F] (C8)         if (VAR_RESULT == VAR_ROOM) {
+[0144] (49)           faceActor(8,VAR_EGO);
+[0147] (14)           print(8,"Don't give anything to the prisoner!");
+[0169] (80)           breakHere();
+[016A] (90)           VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[016D] (48)           if (VAR_RESULT == 1) {
+[0173] (A9)             setOwnerOf(VAR_ACTIVE_OBJECT1,2);
+[0176] (**)           }
+[0176] (18)           goto 0122;
+[0179] (**)         }
+[0179] (**)       }
+[0179] (48)       if (VAR_ACTIVE_OBJECT2 == 2) {
+[017F] (43)         Var[66] = getActorX(1);
+[0182] (5E)         walkActorTo(2,Var[66],49);
+[0186] (3B)         waitForActor(2);
+[0188] (90)         VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[018B] (48)         if (VAR_RESULT == 1) {
+[0191] (59)           doSentence(3,VAR_ACTIVE_OBJECT1,2,0);
+[0197] (**)         }
+[0197] (18)         goto 0122;
+[019A] (**)       }
+[019A] (**)     }
+[019A] (**)   }
+[019A] (**) }
+[019A] (18) goto 009E;
+[019D] (00) stopObjectCode();
+END

@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0340
+Events:
+  FD - 0013
+[0013] (94) print(Var[66],"I can't stand the noise! It's MUCH\x01louder in here!");
+[0040] (00) stopObjectCode();
+END

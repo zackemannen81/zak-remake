@@ -1,0 +1,16 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0013/ROv2/OCv2_0291
+Events:
+  FD - 0013
+[0013] (48) if (Var[153] == 2) {
+[0019] (54)   setObjectName(273,"branch in pit");
+[002A] (C8) } else if (Var[153] == Var[235]) {
+[0032] (54)   setObjectName(273,"nest in pit");
+[0041] (48) } else if (Var[153] == 3) {
+[004A] (54)   setObjectName(273,"nest and branch");
+[005D] (48) } else if (Var[153] == 4) {
+[0066] (54)   setObjectName(273,"pit of fire");
+[0075] (18) } else {
+[0078] (54)   setObjectName(273,"fire pit");
+[0084] (**) }
+[0084] (00) stopObjectCode();
+END

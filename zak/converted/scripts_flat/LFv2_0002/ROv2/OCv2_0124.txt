@@ -1,0 +1,8 @@
+Events:
+   1 - 001E
+   4 - 001E
+   5 - 001E
+   B - 001E
+[001E] (D8) printEgo("I don't feel like cooking.");
+[0036] (00) stopObjectCode();
+END

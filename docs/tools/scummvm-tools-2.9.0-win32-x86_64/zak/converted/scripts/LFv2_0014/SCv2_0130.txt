@@ -1,0 +1,44 @@
+# Decompiled with descumm -2
+# Source: LFv2_0014\SCv2_0130
+
+[0000] (68) Var[66] = isScriptRunning(98);
+[0003] (48) if (Var[247] == 352) {
+[0009] (19)   doSentence(254,362,0,1);
+[0010] (19)   doSentence(253,353,0,1);
+[0017] (0C)   unlockSound(18)
+[001A] (28)   if (!Var[66]) {
+[001E] (31)     VAR_RESULT = getBitVar(1548,0);
+[0023] (28)     if (!VAR_RESULT) {
+[0027] (D8)       printEgo("ZAK YAKKETY-YAKS YAK.");
+[003C] (5B)       setBitVar(1548,0,Var[235]);
+[0041] (**)     }
+[0041] (**)   }
+[0041] (**) }
+[0041] (48) if (Var[247] == 285) {
+[0047] (19)   doSentence(254,287,0,1);
+[004E] (17)   clearState02(285);
+[0051] (19)   doSentence(250,286,0,1);
+[0058] (28)   if (!Var[66]) {
+[005C] (31)     VAR_RESULT = getBitVar(1552,0);
+[0061] (28)     if (!VAR_RESULT) {
+[0065] (D8)       printEgo("MAN TRADES MINDS WITH TWO-HEADED\x01SQUIRREL; DEVELOPS SPLIT PERSONALITY.");
+[00A6] (5B)       setBitVar(1552,0,Var[235]);
+[00AB] (**)     }
+[00AB] (**)   }
+[00AB] (**) }
+[00AB] (48) if (Var[247] == 14) {
+[00B1] (19)   doSentence(254,99,0,1);
+[00B8] (19)   doSentence(254,100,0,1);
+[00BF] (19)   doSentence(254,102,0,1);
+[00C6] (19)   doSentence(253,101,0,1);
+[00CD] (28)   if (!Var[66]) {
+[00D1] (31)     VAR_RESULT = getBitVar(1551,0);
+[00D6] (28)     if (!VAR_RESULT) {
+[00DA] (D8)       printEgo("MAN EXCHANGES MINDS WITH GOLDFISH;\x01BORES HIMSELF TO DEATH.");
+[010F] (5B)       setBitVar(1551,0,Var[235]);
+[0114] (**)     }
+[0114] (**)   }
+[0114] (**) }
+[0114] (9A) Var[247] = Var[234];
+[0117] (A0) stopObjectCode();
+END

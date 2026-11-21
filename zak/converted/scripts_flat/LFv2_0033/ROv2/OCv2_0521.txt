@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (47) clearState08(517);
+[0016] (30) setBoxFlags(7,128);
+[0019] (54) setObjectName(517,"massive door");
+[0029] (CF) unless (getState08(Var[48])) goto 003E;
+[002D] (07) setState08(517);
+[0030] (30) setBoxFlags(7,0);
+[0033] (54) setObjectName(517,"doorway");
+[003E] (00) stopObjectCode();
+END

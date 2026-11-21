@@ -1,0 +1,36 @@
+Events:
+   4 - 001E
+   5 - 0050
+   B - 005C
+  FD - 0086
+[001E] (0F) unless (!getState08(73)) goto 0038;
+[0023] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[0025] (0F) unless (!getState08(72)) goto 0033;
+[002A] (59) doSentence(253,VAR_ACTIVE_OBJECT1,0,1);
+[0030] (18) goto 0035;
+[0033] (1C) startSound(50);
+[0035] (18) goto 004F;
+[0038] (D8) printEgo("Hmmmm^it's not working.");
+[004F] (00) stopObjectCode();
+[0050] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[0052] (0F) unless (!getState08(72)) goto 0059;
+[0057] (BC) stopSound(Var[158]);
+[0059] (3C) stopSound(50);
+[005B] (00) stopObjectCode();
+[005C] (48) unless (VAR_ACTIVE_OBJECT2 == 72) goto 0083;
+[0062] (47) clearState08(72);
+[0065] (17) clearState02(72);
+[0068] (29) setOwnerOf(72,0);
+[006C] (29) setOwnerOf(72,15);
+[0070] (EF) unless (getState04(VAR_ACTIVE_OBJECT1)) goto 0080;
+[0074] (3C) stopSound(50);
+[0076] (2E) delay(30);
+[007A] (59) doSentence(253,VAR_ACTIVE_OBJECT1,0,1);
+[0080] (18) goto 0085;
+[0083] (42) startScript(3);
+[0085] (00) stopObjectCode();
+[0086] (9C) startSound(Var[158]);
+[0088] (2F) unless (!getState04(495)) goto 008F;
+[008D] (42) startScript(44);
+[008F] (00) stopObjectCode();
+END

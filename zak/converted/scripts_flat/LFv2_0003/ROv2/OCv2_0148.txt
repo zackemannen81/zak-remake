@@ -1,0 +1,15 @@
+Events:
+  FD - 0013
+[0013] (05) drawObject(145,255,255);
+[0018] (05) drawObject(146,255,255);
+[001D] (80) breakHere();
+[001E] (80) breakHere();
+[001F] (05) drawObject(145,255,255);
+[0024] (80) breakHere();
+[0025] (08) unless (VAR_TALK_ACTOR != 255) goto 002E;
+[002B] (18) goto 0032;
+[002E] (28) unless (!VAR_HAVE_MSG) goto 0018;
+[0032] (47) clearState08(146);
+[0035] (47) clearState08(145);
+[0038] (00) stopObjectCode();
+END

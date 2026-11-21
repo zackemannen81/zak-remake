@@ -1,0 +1,23 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0032
+
+[0000] (90) VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0003] (48) if (VAR_RESULT == 15) {
+[0009] (FF)   if (getState01(VAR_ACTIVE_OBJECT1)) {
+[000D] (F9)     doSentence(VAR_ACTIVE_VERB,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,0);
+[0012] (59)     doSentence(14,VAR_ACTIVE_OBJECT1,0,0);
+[0018] (AC)     drawSentence();
+[0019] (62)     stopScript(0);
+[001B] (**)   }
+[001B] (**) }
+[001B] (B1) VAR_RESULT = getBitVar(1440,Var[137]);
+[0020] (28) if (!VAR_RESULT) {
+[0024] (F6)   walkActorToObject(Var[137],VAR_ACTIVE_OBJECT2);
+[0027] (**) }
+[0027] (BB) waitForActor(Var[137]);
+[0029] (F4) VAR_RESULT = getDist(Var[137],VAR_ACTIVE_OBJECT2);
+[002D] (04) if (VAR_RESULT <= 4) {
+[0033] (79)   doSentence(19,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,1);
+[0038] (**) }
+[0038] (A0) stopObjectCode();
+END

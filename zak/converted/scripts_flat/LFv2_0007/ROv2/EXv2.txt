@@ -1,0 +1,14 @@
+[0000] (5B) setBitVar(1445,0,Var[234]);
+[0005] (42) startScript(19);
+[0007] (62) stopScript(24);
+[0009] (62) stopScript(25);
+[000B] (62) stopScript(26);
+[000D] (62) stopScript(27);
+[000F] (A8) unless (Var[45]) goto 001D;
+[0013] (C7) clearState08(Var[45]);
+[0015] (97) clearState02(Var[45]);
+[0017] (A9) setOwnerOf(Var[45],0);
+[001A] (A9) setOwnerOf(Var[45],15);
+[001D] (53) ActorOps(10,[Name()]);
+[0022] (00) stopObjectCode();
+END

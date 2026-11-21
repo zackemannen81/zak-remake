@@ -1,0 +1,5 @@
+Events:
+   B - 0018
+[0018] (42) startScript(46);
+[001A] (00) stopObjectCode();
+END

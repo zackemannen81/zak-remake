@@ -1,0 +1,93 @@
+# Decompiled with descumm -2
+# Source: LFv2_0048\SCv2_0028
+
+[0000] (80) breakHere();
+[0001] (9A) Var[149] = VAR_ROOM;
+[0004] (60) cursorCommand(159, 3);
+[0007] (72) loadRoom(48);
+[0009] (9A) Var[66] = Var[234];
+[000C] (FA) VerbOps(Delete(Var[66]););
+[000F] (46) Var[66]++;
+[0011] (44) unless (Var[66] > 14) goto 000C;
+[0017] (7A) VerbOps(New-30(24,21,14,0,"Finished drawing"));
+[002E] (7A) VerbOps(New-13(0,200,12,0,"@"));
+[0036] (60) cursorCommand(0, 0);
+[0039] (1A) Var[118] = 672;
+[003D] (9A) Var[66] = Var[234];
+[0040] (B1) VAR_RESULT = getBitVar(1936,Var[66]);
+[0045] (A8) if (VAR_RESULT) {
+[0049] (87)   setState08(Var[118]);
+[004B] (18) } else {
+[004E] (C7)   clearState08(Var[118]);
+[0050] (**) }
+[0050] (46) Var[118]++;
+[0052] (46) Var[66]++;
+[0054] (44) unless (Var[118] > 695) goto 0040;
+[005A] (80) breakHere();
+[005B] (48) unless (VAR_ACTIVE_VERB == 30) goto 005A;
+[0061] (72) loadRoom(0);
+[0063] (5B) setBitVar(1467,0,Var[234]);
+[0068] (1A) Var[118] = 672;
+[006C] (9A) Var[66] = Var[234];
+[006F] (8F) if (!getState08(Var[118])) {
+[0073] (DB)   setBitVar(1936,Var[66],Var[234]);
+[0078] (B1)   VAR_RESULT = getBitVar(1904,Var[66]);
+[007D] (A8)   if (VAR_RESULT) {
+[0081] (5B)     setBitVar(1467,0,Var[235]);
+[0086] (**)   }
+[0086] (18) } else {
+[0089] (DB)   setBitVar(1936,Var[66],Var[235]);
+[008E] (B1)   VAR_RESULT = getBitVar(1904,Var[66]);
+[0093] (28)   if (!VAR_RESULT) {
+[0097] (5B)     setBitVar(1467,0,Var[235]);
+[009C] (**)   }
+[009C] (**) }
+[009C] (46) Var[66]++;
+[009E] (46) Var[118]++;
+[00A0] (44) unless (Var[118] > 695) goto 006F;
+[00A6] (48) if (Var[149] == 130) {
+[00AC] (9A)   Var[127] = Var[121];
+[00AF] (9A)   Var[128] = Var[122];
+[00B2] (48) } else if (Var[149] == 139) {
+[00BB] (18)   goto 00C7;
+[00BE] (48) } else if (Var[149] == 140) {
+[00C7] (9A)   Var[125] = Var[121];
+[00CA] (9A)   Var[126] = Var[122];
+[00CD] (48) } else if (Var[149] == 193) {
+[00D6] (9A)   Var[129] = Var[121];
+[00D9] (9A)   Var[130] = Var[122];
+[00DC] (18)   /* goto 00DF; */
+[00DF] (**) }
+[00DF] (42) startScript(19);
+[00E1] (60) cursorCommand(15, 2);
+[00E4] (D2) actorFollowCamera(VAR_EGO);
+[00E6] (2E) delay(120);
+[00EA] (31) VAR_RESULT = getBitVar(1467,0);
+[00EF] (28) if (!VAR_RESULT) {
+[00F3] (48)   if (VAR_ROOM_RESOURCE == 22) {
+[00F9] (07)     setState08(400);
+[00FC] (17)     clearState02(400);
+[00FF] (57)     setState02(399);
+[0102] (17)     clearState02(389);
+[0105] (30)     setBoxFlags(2,0);
+[0108] (1C)     startSound(78);
+[010A] (**)   }
+[010A] (48)   if (VAR_ROOM == 130) {
+[0110] (1C)     startSound(25);
+[0112] (67)     clearState04(307);
+[0115] (57)     setState02(307);
+[0118] (07)     setState08(307);
+[011B] (**)   }
+[011B] (48)   if (VAR_ROOM == 193) {
+[0121] (42)     startScript(132);
+[0123] (67)     clearState04(293);
+[0126] (19)     doSentence(1,301,0,1);
+[012D] (19)     doSentence(1,299,0,1);
+[0134] (19)     doSentence(1,303,0,1);
+[013B] (**)   }
+[013B] (18) } else {
+[013E] (D8)   printEgo("I guess it didn't work.");
+[0153] (**) }
+[0153] (60) cursorCommand(247, 1);
+[0156] (A0) stopObjectCode();
+END

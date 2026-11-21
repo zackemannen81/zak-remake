@@ -1,0 +1,3 @@
+[0000] (93) ActorOps(VAR_EGO,[Sound(6)]);
+[0004] (00) stopObjectCode();
+END

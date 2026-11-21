@@ -1,0 +1,50 @@
+# Decompiled with descumm -2
+# Source: LFv2_0009\SCv2_0080
+
+[0000] (48) if (VAR_ACTIVE_VERB == 11) {
+[0006] (9D)   if (classOfIs(VAR_ACTIVE_OBJECT2,128)) {
+[000B] (D8)     printEgo("I don't need to buy one. I can read the\x01headlines from here.");
+[003E] (AE)     waitForMessage();
+[003F] (18)     goto 028B;
+[0042] (18)   } else {
+[0045] (4A)     chainScript(3);
+[0047] (**)   }
+[0047] (**) }
+[0047] (2F) if (!getState04(219)) {
+[004C] (27)   setState04(219);
+[004F] (9A)   Var[66] = Var[234];
+[0052] (B1)   VAR_RESULT = getBitVar(1559,Var[66]);
+[0057] (A8)   if (VAR_RESULT) {
+[005B] (DB)     setBitVar(1559,Var[66],Var[234]);
+[0060] (9A)     Var[216] = Var[66];
+[0063] (18)   } else {
+[0066] (46)     Var[66]++;
+[0068] (44)     unless (Var[66] > 8) goto 0052;
+[006E] (**)   }
+[006E] (**) }
+[006E] (48) if (Var[216] == 0) {
+[0074] (D8)   printEgo("COEDS DISCOVER MILE-LONG FACE ON MARS!");
+[0097] (48) } else if (Var[216] == 1) {
+[00A0] (48)   if (Var[147] == 2) {
+[00A6] (D8)     printEgo("LAST OF THE TWO-HEADED SQUIRRELS\x01BLUDGEONED BY BUMBLING FOOL!");
+[00DE] (18)   } else {
+[00E1] (D8)     printEgo("TWO-HEADED SQUIRREL ON RAVENOUS\x01RAMPAGE IN PACIFIC NORTHWEST!");
+[011A] (**)   }
+[011A] (48) } else if (Var[216] == 2) {
+[0123] (D8)   printEgo("REAL LIFE DR. DOOLITTLE\x01YAKS WITH THE ANIMALS!");
+[014D] (48) } else if (Var[216] == 3) {
+[0156] (D8)   printEgo("SERIOUS SECURITY SLIPPAGE AT STONEHENGE!");
+[017C] (48) } else if (Var[216] == 4) {
+[0185] (D8)   printEgo("RIDDLE OF THE SILENT SPHINX, SOLVED!");
+[01A6] (48) } else if (Var[216] == 5) {
+[01AF] (D8)   printEgo("ANGRY GURU MAKES MAN WAIT -- FOUR YEARS!");
+[01D2] (48) } else if (Var[216] == 6) {
+[01DB] (D8)   printEgo("ALIEN CADILLAC CRUISER CAUSE OF\x01BERMUDA TRIANGLE CATASTROPHES!");
+[0215] (48) } else if (Var[216] == 7) {
+[021E] (D8)   printEgo("A-MAZE-ING MYSTERY OF THE\x01ANCIENT MAYANS, REVEALED!");
+[024E] (48) } else if (Var[216] == 8) {
+[0257] (D8)   printEgo("ISOLATED AFRICAN TRIBE\x01WORSHIPS ANCIENT ASTRONAUTS!");
+[0288] (18)   /* goto 028B; */
+[028B] (**) }
+[028B] (A0) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+Events:
+  FD - 0013
+[0013] (4F) unless (getState08(298)) goto 0031;
+[0018] (F0) lights(Var[234],0,0);
+[001C] (33) RoomColor(9,3);
+[0020] (33) RoomColor(9,11);
+[0024] (47) clearState08(283);
+[0027] (47) clearState08(284);
+[002A] (42) startScript(147);
+[002C] (42) startScript(119);
+[002E] (18) goto 004F;
+[0031] (D8) printEgo("It's locked into the pedestal.");
+[004D] (19) doSentence(STOP);
+[004F] (00) stopObjectCode();
+END

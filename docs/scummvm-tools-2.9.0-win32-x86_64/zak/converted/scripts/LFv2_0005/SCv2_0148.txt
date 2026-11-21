@@ -1,0 +1,47 @@
+# Decompiled with descumm -2
+# Source: LFv2_0005\SCv2_0148
+
+[0000] (40) cutscene();
+[0001] (72) loadRoom(5);
+[0003] (32) setCameraAt(45);
+[0005] (0C) loadCostume(2)
+[0008] (2E) delay(120);
+[000C] (30) setBoxFlags(14,0);
+[000F] (2D) putActorInRoom(2,5);
+[0012] (01) putActor(2,46,36);
+[0016] (11) animateActor(2,250);
+[0019] (67) clearState04(162);
+[001C] (19) doSentence(1,162,0,1);
+[0023] (2E) delay(60);
+[0027] (1E) walkActorTo(2,45,40);
+[002B] (3B) waitForActor(2);
+[002D] (9A) Var[121] = Var[234];
+[0030] (11) animateActor(2,244);
+[0033] (2E) delay(60);
+[0037] (11) animateActor(2,245);
+[003A] (2E) delay(60);
+[003E] (11) animateActor(2,246);
+[0041] (2E) delay(30);
+[0045] (28) if (!Var[121]) {
+[0049] (14)   print(2,"What could be keeping him?");
+[0062] (AE)   waitForMessage();
+[0063] (46)   Var[121]++;
+[0065] (18)   goto 0030;
+[0068] (18) } else {
+[006B] (14)   print(2,"He should have been here by now!");
+[0088] (**) }
+[0088] (AE) waitForMessage();
+[0089] (2E) delay(60);
+[008D] (1E) walkActorTo(2,46,36);
+[0091] (3B) waitForActor(2);
+[0093] (11) animateActor(2,246);
+[0096] (2E) delay(30);
+[009A] (1C) startSound(11);
+[009C] (47) clearState08(162);
+[009F] (27) setState04(162);
+[00A2] (2D) putActorInRoom(2,6);
+[00A5] (01) putActor(2,20,16);
+[00A9] (2E) delay(120);
+[00AD] (C0) endCutscene();
+[00AE] (A0) stopObjectCode();
+END

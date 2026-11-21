@@ -1,0 +1,20 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/OCv2_0233
+Events:
+   4 - 002C
+   9 - 002C
+   B - 002C
+   D - 002C
+  FD - 0041
+[002C] (28) if (!Var[50]) {
+[0030] (68)   VAR_RESULT = isScriptRunning(64);
+[0033] (28)   if (!VAR_RESULT) {
+[0037] (1C)     startSound(75);
+[0039] (19)     doSentence(253,239,0,1);
+[0040] (**)   }
+[0040] (**) }
+[0040] (00) stopObjectCode();
+[0041] (1E) walkActorTo(11,66,36);
+[0045] (3B) waitForActor(11);
+[0047] (11) animateActor(11,247);
+[004A] (00) stopObjectCode();
+END

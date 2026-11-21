@@ -1,0 +1,24 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/EXv2
+[0000] (0C) unlockSound(23)
+[0003] (0C) unlockScript(64)
+[0006] (0C) unlockSound(72)
+[0009] (0C) unlockSound(73)
+[000C] (0C) unlockSound(74)
+[000F] (0C) unlockSound(75)
+[0012] (0C) unlockSound(76)
+[0015] (0C) unlockSound(77)
+[0018] (0C) unlockSound(45)
+[001B] (3C) stopSound(45);
+[001D] (9A) Var[203] = Var[234];
+[0020] (53) ActorOps(7,[Name("representative")]);
+[0033] (03) VAR_RESULT = getActorRoom(1);
+[0036] (08) if (VAR_RESULT != 10) {
+[003C] (62)   stopScript(100);
+[003E] (62)   stopScript(101);
+[0040] (62)   stopScript(95);
+[0042] (62)   stopScript(103);
+[0044] (9A)   Var[199] = Var[235];
+[0047] (5B)   setBitVar(1573,0,Var[234]);
+[004C] (**) }
+[004C] (00) stopObjectCode();
+END

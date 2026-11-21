@@ -1,0 +1,5 @@
+Events:
+   1 - 0016
+[0016] (19) doSentence(1,591,0,1);
+[001D] (00) stopObjectCode();
+END

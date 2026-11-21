@@ -1,0 +1,101 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0141
+
+[0000] (DB) setBitVar(1440,Var[238],Var[234]);
+[0005] (9A) Var[117] = Var[238];
+[0008] (1A) VAR_EGO = 7;
+[000C] (D2) actorFollowCamera(VAR_EGO);
+[000E] (9A) Var[118] = Var[234];
+[0011] (1A) Var[66] = 33;
+[0015] (90) VAR_RESULT = getObjectOwner(Var[66]);
+[0018] (C8) if (VAR_RESULT == Var[117]) {
+[001D] (9D)   if (classOfIs(Var[66],32)) {
+[0022] (A9)     setOwnerOf(Var[66],7);
+[0025] (46)     Var[118]++;
+[0027] (**)   }
+[0027] (**) }
+[0027] (46) Var[66]++;
+[0029] (44) unless (Var[66] > 81) goto 0015;
+[002F] (A8) if (Var[118]) {
+[0033] (27)   setState04(328);
+[0036] (**) }
+[0036] (AE) waitForMessage();
+[0037] (9A) Var[14] = Var[117];
+[003A] (5A) Var[14] += 163;
+[003E] (48) if (Var[14] == 40) {
+[0044] (9A)   Var[14] = Var[117];
+[0047] (5A)   Var[14] += 166;
+[004B] (48)   if (Var[14] == 48) {
+[0051] (31)     VAR_RESULT = getBitVar(1544,0);
+[0056] (A8)     if (VAR_RESULT) {
+[005A] (D8)       printEgo("Sorry! I thought you were an intruder!");
+[007C] (**)     }
+[007C] (AE)     waitForMessage();
+[007D] (A8)     if (Var[118]) {
+[0081] (D8)       printEgo("I'll put your artifact\x02");
+[0097] (C4)       if (Var[118] > Var[235]) {
+[009C] (D8)         printEgo("s\x02");
+[00A0] (**)       }
+[00A0] (D8)       printEgo(" in a safe place!");
+[00B0] (18)     } else {
+[00B3] (D8)       printEgo("I didn't know there was a Brother here.");
+[00D5] (**)     }
+[00D5] (AE)     waitForMessage();
+[00D6] (3B)     waitForActor(7);
+[00D8] (49)     faceActor(7,Var[117]);
+[00DB] (89)     faceActor(Var[117],7);
+[00DE] (00)     stopObjectCode();
+[00DF] (48)     if (VAR_ROOM == 31) {
+[00E5] (D8)       printEgo("WAIT! You're bobbing up and down!");
+[0103] (AE)       waitForMessage();
+[0104] (1A)       Var[167] = 52;
+[0108] (1A)       Var[164] = 44;
+[010C] (42)       startScript(5);
+[010E] (2E)       delay(60);
+[0112] (D8)       printEgo("You're not one of us!");
+[0125] (AE)       waitForMessage();
+[0126] (29)       setOwnerOf(40,7);
+[012A] (29)       setOwnerOf(43,7);
+[012E] (27)       setState04(328);
+[0131] (62)       stopScript(0);
+[0133] (**)     }
+[0133] (48)     if (VAR_ROOM == 16) {
+[0139] (27)       setState04(330);
+[013C] (FB)       VAR_RESULT = getActorWalkBox(Var[117]);
+[013F] (48)       if (VAR_RESULT == 6) {
+[0145] (D8)         printEgo("What are you doing in there?");
+[015E] (AE)         waitForMessage();
+[015F] (4F)         if (getState08(331)) {
+[0164] (19)           doSentence(5,331,0,0);
+[016B] (4C)           waitForSentence();
+[016C] (18)         } else {
+[016F] (D8)           printEgo("Oh well.");
+[0178] (**)         }
+[0178] (**)       }
+[0178] (**)     }
+[0178] (46)     Var[119]++;
+[017A] (62)     stopScript(0);
+[017C] (**)   }
+[017C] (**) }
+[017C] (1A) Var[66] = 1;
+[0180] (C8) if (Var[66] == Var[117]) {
+[0185] (1A)   Var[66] = 2;
+[0189] (**) }
+[0189] (08) if (VAR_ROOM != 4) {
+[018F] (83)   VAR_RESULT = getActorRoom(Var[66]);
+[0192] (C8)   if (VAR_RESULT == VAR_ROOM) {
+[0197] (9A)     Var[14] = Var[66];
+[019A] (5A)     Var[14] += 163;
+[019E] (48)     if (Var[14] == 40) {
+[01A4] (9A)       Var[14] = Var[66];
+[01A7] (5A)       Var[14] += 166;
+[01AB] (48)       if (Var[14] == 48) {
+[01B1] (9A)         Var[117] = Var[66];
+[01B4] (4D)         walkActorToActor(7,Var[117],4);
+[01B8] (18)         goto 00B3;
+[01BB] (**)       }
+[01BB] (**)     }
+[01BB] (**)   }
+[01BB] (**) }
+[01BB] (A0) stopObjectCode();
+END

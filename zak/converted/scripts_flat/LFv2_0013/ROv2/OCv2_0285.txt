@@ -1,0 +1,36 @@
+Events:
+   9 - 0030
+   A - 0030
+   B - 0046
+   E - 0030
+  13 - 0090
+  FD - 00AC
+[0030] (D8) printEgo("I don't want to get bit.");
+[0045] (00) stopObjectCode();
+[0046] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,2)) goto 007E;
+[004B] (48) unless (VAR_EGO == 1) goto 0069;
+[0051] (19) doSentence(254,286,0,1);
+[0058] (47) clearState08(285);
+[005B] (47) clearState08(286);
+[005E] (47) clearState08(287);
+[0061] (17) clearState02(54);
+[0064] (42) startScript(144);
+[0066] (18) goto 007B;
+[0069] (D8) printEgo("That would kill it!");
+[007B] (18) goto 008F;
+[007E] (48) unless (VAR_ACTIVE_OBJECT2 == 55) goto 008C;
+[0084] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0089] (18) goto 008F;
+[008C] (18) goto 0090;
+[008F] (00) stopObjectCode();
+[0090] (D8) printEgo("It just wants to be left alone.");
+[00AB] (00) stopObjectCode();
+[00AC] (17) clearState02(285);
+[00AF] (16) Var[48] = getRandomNr(2);
+[00B2] (5A) Var[48] += 285;
+[00B6] (48) unless (Var[48] == 286) goto 00BE;
+[00BC] (1C) startSound(93);
+[00BE] (85) drawObject(Var[48],255,255);
+[00C2] (80) breakHere();
+[00C3] (00) stopObjectCode();
+END

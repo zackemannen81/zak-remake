@@ -1,0 +1,9 @@
+Events:
+  FD - 0013
+[0013] (29) setOwnerOf(20,0);
+[0017] (29) setOwnerOf(20,15);
+[001B] (0F) unless (!getState08(118)) goto 0026;
+[0020] (47) clearState08(20);
+[0023] (17) clearState02(20);
+[0026] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+Events:
+   1 - 0019
+   2 - 0036
+[0019] (2F) unless (!getState04(293)) goto 002E;
+[001E] (1C) startSound(10);
+[0020] (17) clearState02(302);
+[0023] (07) setState08(302);
+[0026] (57) setState02(293);
+[0029] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[002B] (18) goto 0035;
+[002E] (19) doSentence(253,299,0,1);
+[0035] (00) stopObjectCode();
+[0036] (19) doSentence(2,299,0,1);
+[003D] (00) stopObjectCode();
+END

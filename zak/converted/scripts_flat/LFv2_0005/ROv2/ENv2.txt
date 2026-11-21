@@ -1,0 +1,9 @@
+[0000] (70) lights(11,0,0);
+[0004] (2F) unless (!getState04(169)) goto 000C;
+[0009] (0C) loadScript(62)
+[000C] (30) setBoxFlags(14,128);
+[000F] (4F) unless (getState08(162)) goto 0017;
+[0014] (30) setBoxFlags(14,0);
+[0017] (19) doSentence(250,170,0,1);
+[001E] (00) stopObjectCode();
+END

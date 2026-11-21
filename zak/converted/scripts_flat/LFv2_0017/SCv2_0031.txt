@@ -1,0 +1,27 @@
+[0000] (9A) Var[14] = VAR_EGO;
+[0003] (5A) Var[14] += 61;
+[0007] (78) unless (Var[14] < 100) goto 0029;
+[000D] (D8) printEgo("I must not have enough money.");
+[0027] (62) stopScript(0);
+[0029] (40) cutscene();
+[002A] (9A) Var[14] = VAR_EGO;
+[002D] (5A) Var[14] += 61;
+[0031] (6A) Var[Var[14]] -= 100;
+[0035] (1C) startSound(84);
+[0037] (80) breakHere();
+[0038] (7C) VAR_RESULT = isSoundRunning(84);
+[003B] (28) unless (!VAR_RESULT) goto 0037;
+[003F] (48) unless (VAR_EGO == 1) goto 006B;
+[0045] (B4) VAR_RESULT = getDist(VAR_EGO,8);
+[004A] (04) unless (VAR_RESULT <= 4) goto 006B;
+[0050] (14) print(8,"You're not getting away!");
+[0068] (18) goto 0091;
+[006B] (72) loadRoom(0);
+[006D] (53) ActorOps(8,[Name()]);
+[0072] (EE) dummy(EE);
+[0073] (14) print(255,"A long dusty ride later^");
+[008A] (AE) waitForMessage();
+[008B] (24) loadRoomWithEgo(218,148,34,60);
+[0091] (C0) endCutscene();
+[0092] (A0) stopObjectCode();
+END

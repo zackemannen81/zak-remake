@@ -1,0 +1,8 @@
+Events:
+   B - 0017
+[0017] (48) unless (VAR_ACTIVE_OBJECT2 == 55) goto 0025;
+[001D] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0022] (18) goto 0027;
+[0025] (42) startScript(3);
+[0027] (00) stopObjectCode();
+END

@@ -1,0 +1,7 @@
+Events:
+  FD - 0013
+[0013] (16) Var[66] = getRandomNr(255);
+[0016] (80) breakHere();
+[0017] (18) goto 0013;
+[001A] (00) stopObjectCode();
+END

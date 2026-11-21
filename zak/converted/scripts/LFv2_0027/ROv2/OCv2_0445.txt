@@ -1,0 +1,50 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0027/ROv2/OCv2_0445
+Events:
+   4 - 0019
+   B - 0049
+[0019] (D8) printEgo("There's no switch. Maybe it's not\x01getting any power.");
+[0048] (00) stopObjectCode();
+[0049] (08) if (VAR_ACTIVE_OBJECT2 != 61) {
+[004F] (08)   if (VAR_ACTIVE_OBJECT2 != 62) {
+[0055] (08)     if (VAR_ACTIVE_OBJECT2 != 63) {
+[005B] (42)       startScript(3);
+[005D] (18)       goto 00E7;
+[0060] (**)     }
+[0060] (**)   }
+[0060] (**) }
+[0060] (0F) if (!getState08(451)) {
+[0065] (D8)   printEgo("It just spits my token out again!");
+[0082] (18) } else {
+[0085] (48)   if (VAR_ACTIVE_OBJECT2 == 61) {
+[008B] (C6)     Var[148]--;
+[008D] (9A)     Var[46] = Var[148];
+[0090] (48)   } else if (VAR_ACTIVE_OBJECT2 == 62) {
+[0099] (C6)     Var[150]--;
+[009B] (9A)     Var[46] = Var[150];
+[009E] (18)   } else {
+[00A1] (48)     unless (VAR_ACTIVE_OBJECT2 == 63) goto 00E7;
+[00A7] (C6)     Var[151]--;
+[00A9] (9A)     Var[46] = Var[151];
+[00AC] (**)   }
+[00AC] (C8)   if (Var[46] == Var[235]) {
+[00B1] (D4)     setObjectName(VAR_ACTIVE_OBJECT2,"token");
+[00B9] (**)   }
+[00B9] (28)   if (!Var[46]) {
+[00BD] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT2,14);
+[00C0] (**)   }
+[00C0] (1C)   startSound(44);
+[00C2] (68)   VAR_RESULT = isScriptRunning(51);
+[00C5] (28)   if (!VAR_RESULT) {
+[00C9] (42)     startScript(51);
+[00CB] (**)   }
+[00CB] (60)   cursorCommand(15, 2);
+[00CE] (30)   setBoxFlags(11,0);
+[00D1] (DB)   setBitVar(1440,VAR_EGO,Var[235]);
+[00D6] (DB)   setBitVar(1445,VAR_EGO,Var[235]);
+[00DB] (B6)   walkActorToObject(VAR_EGO,445);
+[00DF] (BB)   waitForActor(VAR_EGO);
+[00E1] (30)   setBoxFlags(11,128);
+[00E4] (60)   cursorCommand(247, 1);
+[00E7] (**) }
+[00E7] (00) stopObjectCode();
+END

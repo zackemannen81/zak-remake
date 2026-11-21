@@ -1,0 +1,5 @@
+Events:
+   C - 001A
+[001A] (D8) printEgo("It looks like the Egyptian Sphinx!");
+[0039] (00) stopObjectCode();
+END

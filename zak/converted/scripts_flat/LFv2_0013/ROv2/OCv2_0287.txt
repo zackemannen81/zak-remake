@@ -1,0 +1,28 @@
+Events:
+  FD - 0013
+[0013] (19) doSentence(254,286,0,1);
+[001A] (7A) VerbOps(New-31(0,19,0,0,"  Left head@@"));
+[002E] (7A) VerbOps(New-33(13,19,2,0,"   Chatter@@@"));
+[0042] (7A) VerbOps(New-32(26,19,3,0,"  Right head@@"));
+[0057] (80) breakHere();
+[0058] (A8) unless (VAR_ACTIVE_VERB) goto 0057;
+[005C] (05) drawObject(286,255,255);
+[0061] (80) breakHere();
+[0062] (48) unless (VAR_ACTIVE_VERB == 31) goto 0070;
+[0068] (05) drawObject(287,255,255);
+[006D] (9A) VAR_ACTIVE_VERB = Var[234];
+[0070] (48) unless (VAR_ACTIVE_VERB == 32) goto 007E;
+[0076] (05) drawObject(285,255,255);
+[007B] (9A) VAR_ACTIVE_VERB = Var[234];
+[007E] (48) unless (VAR_ACTIVE_VERB == 33) goto 00A1;
+[0084] (9A) VAR_ACTIVE_VERB = Var[234];
+[0087] (1A) Var[49] = 1;
+[008B] (19) doSentence(253,285,0,1);
+[0092] (80) breakHere();
+[0093] (80) breakHere();
+[0094] (46) Var[49]++;
+[0096] (44) unless (Var[49] > 12) goto 008B;
+[009C] (05) drawObject(286,255,255);
+[00A1] (18) goto 0057;
+[00A4] (00) stopObjectCode();
+END

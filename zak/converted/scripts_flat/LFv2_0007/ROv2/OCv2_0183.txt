@@ -1,0 +1,12 @@
+Events:
+  11 - 0022
+  FD - 002D
+[0022] (1A) Var[47] = 120;
+[0026] (1A) Var[46] = 33;
+[002A] (42) startScript(24);
+[002C] (00) stopObjectCode();
+[002D] (7A) VerbOps(New-17(13,20,7,0,"Buy@@@@@@"));
+[003D] (7A) VerbOps(New-18(0,21,10,0,"Sell@@"));
+[004A] (60) cursorCommand(0, 0);
+[004D] (00) stopObjectCode();
+END

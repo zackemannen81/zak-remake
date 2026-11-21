@@ -1,0 +1,35 @@
+[0000] (0F) unless (!getState08(108)) goto 008B;
+[0005] (48) unless (VAR_ACTIVE_OBJECT2 == 26) goto 0049;
+[000B] (6F) unless (getState04(26)) goto 001E;
+[0010] (D8) printEgo("It's bent.");
+[001B] (18) goto 0046;
+[001E] (27) setState04(26);
+[0021] (54) setObjectName(26,"bent butter knife");
+[0036] (D8) printEgo("Ooops! I bent it!");
+[0046] (18) goto 0088;
+[0049] (48) unless (VAR_ACTIVE_OBJECT2 == 35) goto 0055;
+[004F] (18) goto 005B;
+[0052] (18) goto 0088;
+[0055] (48) unless (VAR_ACTIVE_OBJECT2 == 38) goto 006D;
+[005B] (0C) loadSound(60)
+[005E] (1C) startSound(97);
+[0060] (07) setState08(108);
+[0063] (19) doSentence(253,108,0,1);
+[006A] (18) goto 0088;
+[006D] (D8) printEgo("I can't remove them with that.");
+[0088] (18) goto 00BA;
+[008B] (48) unless (VAR_ACTIVE_OBJECT2 == 37) goto 00B8;
+[0091] (4F) unless (getState08(84)) goto 00A5;
+[0096] (19) doSentence(2,84,0,0);
+[009D] (4C) waitForSentence();
+[009E] (2E) delay(60);
+[00A2] (18) goto 0091;
+[00A5] (29) setOwnerOf(37,14);
+[00A9] (07) setState08(110);
+[00AC] (17) clearState02(110);
+[00AF] (07) setState08(333);
+[00B2] (17) clearState02(333);
+[00B5] (18) goto 00BA;
+[00B8] (4A) chainScript(3);
+[00BA] (A0) stopObjectCode();
+END

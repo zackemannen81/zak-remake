@@ -1,0 +1,11 @@
+Events:
+   C - 0019
+  FD - 004B
+[0019] (D8) printEgo("Society for Ancient Wisdom\x01Deposit artifacts in slot.");
+[004A] (00) stopObjectCode();
+[004B] (48) unless (VAR_EGO == 1) goto 006D;
+[0051] (D8) printEgo("It's connected with wires.");
+[006A] (18) goto 0083;
+[006D] (D8) printEgo("That would be stealing.");
+[0083] (00) stopObjectCode();
+END

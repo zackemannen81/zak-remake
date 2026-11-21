@@ -1,0 +1,12 @@
+Events:
+  FD - 0019
+  FF - 0015
+[0015] (18) goto 0019;
+[0018] (00) stopObjectCode();
+[0019] (9A) Var[117] = VAR_ACTIVE_OBJECT1;
+[001C] (8F) unless (!getState08(Var[117])) goto 0025;
+[0020] (87) setState08(Var[117]);
+[0022] (18) goto 0027;
+[0025] (C7) clearState08(Var[117]);
+[0027] (00) stopObjectCode();
+END

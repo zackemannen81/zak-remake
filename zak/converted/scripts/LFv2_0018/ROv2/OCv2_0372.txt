@@ -1,0 +1,23 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0018/ROv2/OCv2_0372
+Events:
+   1 - 0039
+   2 - 0039
+   D - 001D
+  FD - 0041
+[001D] (48) if (VAR_EGO == 2) {
+[0023] (D8)   printEgo("Let me outta here!");
+[0034] (1E)   walkActorTo(2,22,58);
+[0038] (**) }
+[0038] (00) stopObjectCode();
+[0039] (99) doSentence(VAR_ACTIVE_VERB,366,0,0);
+[0040] (00) stopObjectCode();
+[0041] (80) breakHere();
+[0042] (7B) VAR_RESULT = getActorWalkBox(1);
+[0045] (48) if (VAR_RESULT == 7) {
+[004B] (5B)   setBitVar(1475,0,Var[235]);
+[0050] (18) } else {
+[0053] (5B)   setBitVar(1475,0,Var[234]);
+[0058] (**) }
+[0058] (18) goto 0041;
+[005B] (00) stopObjectCode();
+END

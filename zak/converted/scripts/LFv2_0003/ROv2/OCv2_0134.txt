@@ -1,0 +1,7 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/OCv2_0134
+Events:
+   D - 0019
+[0019] (07) setState08(112);
+[001C] (24) loadRoomWithEgo(112,2,255,255);
+[0022] (00) stopObjectCode();
+END

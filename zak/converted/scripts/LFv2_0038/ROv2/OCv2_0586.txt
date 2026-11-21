@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0038/ROv2/OCv2_0586
+Events:
+   C - 001F
+  FF - 0066
+[001F] (D8) printEgo("They look like a nice set of Pongs\x02");
+[003D] (10) VAR_RESULT = getObjectOwner(44);
+[0041] (A8) if (VAR_RESULT) {
+[0045] (D8)   printEgo(",\x01but there's no sand wedge.");
+[005F] (18) } else {
+[0062] (D8)   printEgo(".");
+[0065] (**) }
+[0065] (00) stopObjectCode();
+[0066] (D8) printEgo("I'd better not touch them^ the doctor\x01might get mad.");
+[0094] (00) stopObjectCode();
+END

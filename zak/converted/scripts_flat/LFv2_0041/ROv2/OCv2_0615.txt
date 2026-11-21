@@ -1,0 +1,17 @@
+Events:
+  FD - 0013
+[0013] (3D) setActorElevation(5,0);
+[0016] (80) breakHere();
+[0017] (80) breakHere();
+[0018] (3D) setActorElevation(5,1);
+[001B] (80) breakHere();
+[001C] (80) breakHere();
+[001D] (3D) setActorElevation(5,2);
+[0020] (80) breakHere();
+[0021] (80) breakHere();
+[0022] (3D) setActorElevation(5,1);
+[0025] (80) breakHere();
+[0026] (80) breakHere();
+[0027] (18) goto 0013;
+[002A] (00) stopObjectCode();
+END

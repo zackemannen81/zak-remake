@@ -1,0 +1,31 @@
+Events:
+   1 - 001D
+   2 - 005C
+   B - 006D
+   D - 0062
+[001D] (4F) unless (getState08(110)) goto 0056;
+[0022] (D8) printEgo("I'll remove the rope first.");
+[003B] (19) doSentence(14,110,0,0);
+[0042] (4C) waitForSentence();
+[0043] (2E) delay(60);
+[0047] (0F) unless (!getState08(110)) goto 0053;
+[004C] (19) doSentence(1,84,0,0);
+[0053] (18) goto 005B;
+[0056] (42) startScript(10);
+[0058] (07) setState08(111);
+[005B] (00) stopObjectCode();
+[005C] (42) startScript(11);
+[005E] (47) clearState08(111);
+[0061] (00) stopObjectCode();
+[0062] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 006C;
+[0066] (24) loadRoomWithEgo(111,2,255,255);
+[006C] (00) stopObjectCode();
+[006D] (48) unless (VAR_ACTIVE_OBJECT2 == 37) goto 008E;
+[0073] (4F) unless (getState08(108)) goto 0082;
+[0078] (19) doSentence(11,108,37,0);
+[007F] (18) goto 008B;
+[0082] (D8) printEgo("Not yet.");
+[008B] (18) goto 0090;
+[008E] (42) startScript(3);
+[0090] (00) stopObjectCode();
+END

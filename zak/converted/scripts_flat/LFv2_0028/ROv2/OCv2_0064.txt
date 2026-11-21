@@ -1,0 +1,17 @@
+Events:
+   B - 002B
+   E - 0021
+  FD - 003F
+[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0023] (19) doSentence(253,64,0,1);
+[002A] (00) stopObjectCode();
+[002B] (48) unless (VAR_ACTIVE_OBJECT2 == 73) goto 003B;
+[0031] (19) doSentence(11,73,470,0);
+[0038] (18) goto 003E;
+[003B] (18) goto 0021;
+[003E] (00) stopObjectCode();
+[003F] (19) doSentence(13,470,0,0);
+[0046] (D8) printEgo("Hmm. It crumbled to dust in my hands.");
+[0066] (29) setOwnerOf(64,0);
+[006A] (00) stopObjectCode();
+END

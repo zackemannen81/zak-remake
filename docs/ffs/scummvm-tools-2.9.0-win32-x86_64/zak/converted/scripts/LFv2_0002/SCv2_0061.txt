@@ -1,0 +1,65 @@
+# Decompiled with descumm -2
+# Source: LFv2_0002\SCv2_0061
+
+[0000] (C8) if (VAR_CURRENT_LIGHTS == Var[234]) {
+[0005] (D8)   printEgo("It's too dark in here.");
+[0019] (18) } else {
+[001C] (48)   if (VAR_ACTIVE_OBJECT1 == 27) {
+[0022] (D8)     printEgo("THE KING FAN CLUB\x01Member in good standing since 1997.");
+[0051] (62)     stopScript(0);
+[0053] (**)   }
+[0053] (48)   if (VAR_ACTIVE_OBJECT1 == 30) {
+[0059] (48)     if (VAR_ACTIVE_OBJECT2 == 25) {
+[005F] (9A)       Var[160] = VAR_EGO;
+[0062] (2E)       delay(60);
+[0066] (D8)       printEgo("Well, it's all filled out and the\x01postage is prepaid.");
+[0095] (**)     }
+[0095] (48)     if (VAR_ACTIVE_VERB == 12) {
+[009B] (D8)       printEgo("   THE KING FAN CLUB\x01DON'T DELAY - JOIN TODAY");
+[00C2] (A8)       if (Var[160]) {
+[00C6] (AE)         waitForMessage();
+[00C7] (D8)         printEgo("And it's filled out in crayon.");
+[00E2] (**)       }
+[00E2] (**)     }
+[00E2] (62)     stopScript(0);
+[00E4] (**)   }
+[00E4] (48)   if (VAR_ACTIVE_OBJECT2 == 17) {
+[00EA] (9A)     Var[66] = Var[234];
+[00ED] (54)     setObjectName(17,"wallpaper map");
+[00FE] (18)   } else {
+[0101] (9A)     Var[66] = Var[235];
+[0104] (54)     setObjectName(15,"phone bill map");
+[0116] (**)   }
+[0116] (9A)   Var[14] = Var[66];
+[0119] (5A)   Var[14] += 193;
+[011D] (C8)   if (Var[14] == Var[234]) {
+[0122] (B1)     VAR_RESULT = getBitVar(1455,VAR_EGO);
+[0127] (28)     if (!VAR_RESULT) {
+[012B] (D8)       printEgo("I drew the map from my dream on it.");
+[0148] (9A)       Var[14] = Var[66];
+[014B] (5A)       Var[14] += 193;
+[014F] (8A)       Var[Var[14]] = Var[235];
+[0152] (18)     } else {
+[0155] (D8)       printEgo("I drew my dream map and the Mars map.");
+[0174] (9A)       Var[14] = Var[66];
+[0177] (5A)       Var[14] += 193;
+[017B] (0A)       Var[Var[14]] = 2;
+[017F] (**)     }
+[017F] (18)   } else {
+[0182] (9A)     Var[14] = Var[66];
+[0185] (5A)     Var[14] += 193;
+[0189] (08)     if (Var[14] != 2) {
+[018F] (B1)       VAR_RESULT = getBitVar(1455,VAR_EGO);
+[0194] (A8)       if (VAR_RESULT) {
+[0198] (D8)         printEgo("I drew the Mars map.");
+[01AA] (9A)         Var[14] = Var[66];
+[01AD] (5A)         Var[14] += 193;
+[01B1] (0A)         Var[Var[14]] = 2;
+[01B5] (18)         goto 01CF;
+[01B8] (**)       }
+[01B8] (**)     }
+[01B8] (D8)     printEgo("It already has a map on it.");
+[01CF] (**)   }
+[01CF] (**) }
+[01CF] (A0) stopObjectCode();
+END

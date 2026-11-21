@@ -1,0 +1,32 @@
+Events:
+   C - 0022
+  FD - 007F
+[0022] (48) unless (VAR_EGO == 2) goto 0065;
+[0028] (9A) Var[47] = Var[234];
+[002B] (14) print(2,"First\x02");
+[0034] (19) doSentence(253,319,0,1);
+[003B] (AE) waitForMessage();
+[003C] (14) print(2,"Then\x02");
+[0044] (19) doSentence(253,319,0,1);
+[004B] (AE) waitForMessage();
+[004C] (14) print(2,"And finally,\x02");
+[005B] (19) doSentence(253,319,0,1);
+[0062] (18) goto 007E;
+[0065] (D8) printEgo("I can't read those symbols!");
+[007E] (00) stopObjectCode();
+[007F] (14) print(2," push the \x02");
+[008B] (9A) Var[14] = Var[47];
+[008E] (5A) Var[14] += 110;
+[0092] (48) unless (Var[14] == 316) goto 00A3;
+[0098] (14) print(2,"left\x02");
+[00A0] (18) goto 00C8;
+[00A3] (48) unless (Var[14] == 317) goto 00B6;
+[00A9] (14) print(2,"center\x02");
+[00B3] (18) goto 00C8;
+[00B6] (48) unless (Var[14] == 318) goto 00C8;
+[00BC] (14) print(2,"right\x02");
+[00C5] (18) /* goto 00C8; */
+[00C8] (14) print(2," button.");
+[00D3] (46) Var[47]++;
+[00D5] (00) stopObjectCode();
+END

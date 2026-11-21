@@ -1,0 +1,12 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (B1) VAR_RESULT = getBitVar(1445,VAR_EGO);
+[0019] (A8) unless (VAR_RESULT) goto 0023;
+[001D] (57) setState02(445);
+[0020] (18) goto 002B;
+[0023] (0F) unless (!getState08(445)) goto 002B;
+[0028] (17) clearState02(445);
+[002B] (18) goto 0013;
+[002E] (00) stopObjectCode();
+END

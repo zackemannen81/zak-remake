@@ -1,0 +1,12 @@
+{
+  "room": 26,
+  "object_id": 442,
+  "prompt": "Create a polished AAA Unreal Engine 5 recreation of ONLY this exact tightly cropped state patch. Plain coral-red ground filling frame with small grey/brown remnants ONLY along top edge and tiny left notch. No face, animal or emoji. Preserve all source edges, positions, proportions, palette and animation phase. Realistic material detail and refined lighting. Do not add symbols, writing, objects or surrounding room. Fill entire frame with original background, no extra black border except necessary letterbox for extreme aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_026\\object_0442\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_026\\object_0442\\state_v010.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_026\\object_0442\\request_v010.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-52285f2b-98ee-4987-b95d-a71a8caa9591.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

@@ -1,0 +1,7 @@
+[0000] (70) lights(11,0,0);
+[0004] (9A) Var[154] = Var[234];
+[0007] (2F) unless (!getState04(558)) goto 000E;
+[000C] (46) Var[154]++;
+[000E] (19) doSentence(253,539,0,1);
+[0015] (00) stopObjectCode();
+END

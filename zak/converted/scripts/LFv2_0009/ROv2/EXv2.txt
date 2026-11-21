@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0009/ROv2/EXv2
+[0000] (3C) stopSound(114);
+[0002] (68) VAR_RESULT = isScriptRunning(30);
+[0005] (28) if (!VAR_RESULT) {
+[0009] (07)   setState08(223);
+[000C] (57)   setState02(223);
+[000F] (**) }
+[000F] (00) stopObjectCode();
+END

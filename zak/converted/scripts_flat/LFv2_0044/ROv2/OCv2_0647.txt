@@ -1,0 +1,6 @@
+Events:
+   A - 001D
+   E - 001D
+[001D] (D8) printEgo("It seems to be stuck in the stone!");
+[003A] (00) stopObjectCode();
+END

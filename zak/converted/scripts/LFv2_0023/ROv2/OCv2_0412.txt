@@ -1,0 +1,8 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0023/ROv2/OCv2_0412
+Events:
+  FD - 0013
+[0013] (1C) startSound(82);
+[0015] (2E) delay(60);
+[0019] (18) goto 0013;
+[001C] (00) stopObjectCode();
+END

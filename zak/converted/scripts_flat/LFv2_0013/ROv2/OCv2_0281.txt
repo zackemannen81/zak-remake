@@ -1,0 +1,14 @@
+Events:
+   D - 001E
+  FD - 0029
+[001E] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0028;
+[0022] (24) loadRoomWithEgo(297,129,255,255);
+[0028] (00) stopObjectCode();
+[0029] (33) RoomColor(1,1);
+[002D] (33) RoomColor(9,9);
+[0031] (33) RoomColor(4,4);
+[0035] (33) RoomColor(6,6);
+[0039] (33) RoomColor(12,12);
+[003D] (70) lights(11,0,0);
+[0041] (00) stopObjectCode();
+END

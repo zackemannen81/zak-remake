@@ -1,0 +1,22 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0037/ROv2/OCv2_0573
+Events:
+   D - 0019
+  FD - 0021
+[0019] (19) doSentence(253,571,0,1);
+[0020] (00) stopObjectCode();
+[0021] (2E) delay(30);
+[0025] (60) cursorCommand(15, 2);
+[0028] (91) animateActor(VAR_EGO,255);
+[002B] (19) doSentence(STOP);
+[002D] (2E) delay(60);
+[0031] (D8) printEgo("Yikes! What was that?");
+[0045] (91) animateActor(VAR_EGO,244);
+[0048] (2E) delay(60);
+[004C] (91) animateActor(VAR_EGO,246);
+[004F] (80) breakHere();
+[0050] (91) animateActor(VAR_EGO,245);
+[0053] (2E) delay(60);
+[0057] (91) animateActor(VAR_EGO,246);
+[005A] (60) cursorCommand(247, 1);
+[005D] (00) stopObjectCode();
+END

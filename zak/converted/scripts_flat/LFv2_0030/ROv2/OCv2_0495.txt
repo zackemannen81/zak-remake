@@ -1,0 +1,18 @@
+Events:
+  21 - 0015
+  FD - 0028
+[0015] (50) pickupObject(74);
+[0018] (50) pickupObject(75);
+[001B] (54) setObjectName(74,"CashCard");
+[0027] (00) stopObjectCode();
+[0028] (19) doSentence(254,494,0,1);
+[002F] (3C) stopSound(51);
+[0031] (47) clearState08(491);
+[0034] (9A) Var[199] = Var[235];
+[0037] (14) print(255,"");
+[003A] (4F) unless (getState08(488)) goto 004B;
+[003F] (1C) startSound(27);
+[0041] (19) doSentence(253,493,0,1);
+[0048] (47) clearState08(490);
+[004B] (00) stopObjectCode();
+END

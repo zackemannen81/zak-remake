@@ -1,0 +1,15 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0018
+
+[0000] (29) setOwnerOf(19,0);
+[0004] (29) setOwnerOf(19,15);
+[0008] (47) clearState08(87);
+[000B] (62) stopScript(13);
+[000D] (3C) stopSound(15);
+[000F] (62) stopScript(16);
+[0011] (62) stopScript(17);
+[0013] (3C) stopSound(14);
+[0015] (3C) stopSound(13);
+[0017] (3C) stopSound(12);
+[0019] (A0) stopObjectCode();
+END

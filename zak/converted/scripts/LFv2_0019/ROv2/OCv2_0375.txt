@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0019/ROv2/OCv2_0375
+Events:
+   D - 0017
+[0017] (53) ActorOps(10,[Name()]);
+[001C] (9A) Var[199] = Var[235];
+[001F] (60) cursorCommand(1, 0);
+[0022] (07) setState08(351);
+[0025] (17) clearState02(351);
+[0028] (24) loadRoomWithEgo(351,17,255,255);
+[002E] (00) stopObjectCode();
+END

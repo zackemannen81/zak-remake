@@ -1,0 +1,25 @@
+Events:
+   4 - 0025
+   9 - 0025
+   B - 0025
+   D - 0025
+  FD - 003A
+[0025] (28) unless (!Var[50]) goto 0039;
+[0029] (68) VAR_RESULT = isScriptRunning(64);
+[002C] (28) unless (!VAR_RESULT) goto 0039;
+[0030] (1C) startSound(72);
+[0032] (19) doSentence(253,239,0,1);
+[0039] (00) stopObjectCode();
+[003A] (1A) Var[56] = 12;
+[003E] (FD) setActorElevation(Var[233],Var[56]);
+[0041] (80) breakHere();
+[0042] (46) Var[56]++;
+[0044] (44) unless (Var[56] > 17) goto 003E;
+[004A] (94) print(Var[233],"I'm on!");
+[0053] (80) breakHere();
+[0054] (B4) VAR_RESULT = getDist(Var[233],229);
+[0059] (44) unless (VAR_RESULT > 0) goto 0053;
+[005F] (BD) setActorElevation(Var[233],0);
+[0062] (9A) Var[233] = Var[234];
+[0065] (00) stopObjectCode();
+END

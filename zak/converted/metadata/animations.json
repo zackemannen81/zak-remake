@@ -1,0 +1,1880 @@
+[
+  {
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0089.txt",
+    "room": 1,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0014] (05) drawObject(89,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001B] (05) drawObject(88,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0095.txt",
+    "room": 1,
+    "draw_commands": [
+      {
+        "line": 23,
+        "instruction": "[0087] (05) drawObject(95,255,255);"
+      },
+      {
+        "line": 26,
+        "instruction": "[0092] (05) drawObject(96,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0100.txt",
+    "room": 1,
+    "draw_commands": [
+      {
+        "line": 4,
+        "instruction": "[0013] (85) drawObject(Var[44],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0101.txt",
+    "room": 1,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[001C] (85) drawObject(Var[44],255,255);"
+      },
+      {
+        "line": 19,
+        "instruction": "[0042] (05) drawObject(97,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0102.txt",
+    "room": 1,
+    "draw_commands": [
+      {
+        "line": 4,
+        "instruction": "[0013] (85) drawObject(Var[44],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0105.txt",
+    "room": 1,
+    "draw_commands": [
+      {
+        "line": 8,
+        "instruction": "[001E] (05) drawObject(104,255,255);"
+      },
+      {
+        "line": 11,
+        "instruction": "[0026] (05) drawObject(105,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/ENv2.txt",
+    "room": 2,
+    "draw_commands": [
+      {
+        "line": 19,
+        "instruction": "[0039] (05)   drawObject(115,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0115.txt",
+    "room": 2,
+    "draw_commands": [
+      {
+        "line": 6,
+        "instruction": "[001B] (05) drawObject(115,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0148.txt",
+    "room": 3,
+    "draw_commands": [
+      {
+        "line": 4,
+        "instruction": "[0013] (05) drawObject(145,255,255);"
+      },
+      {
+        "line": 5,
+        "instruction": "[0018] (05) drawObject(146,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001F] (05) drawObject(145,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0170.txt",
+    "room": 5,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0017] (05) drawObject(170,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[0022] (05) drawObject(171,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/ENv2.txt",
+    "room": 8,
+    "draw_commands": [
+      {
+        "line": 21,
+        "instruction": "[004B] (05) drawObject(215,6,1);"
+      },
+      {
+        "line": 54,
+        "instruction": "[00D2] (05)   drawObject(198,255,255);"
+      },
+      {
+        "line": 62,
+        "instruction": "[00FF] (05)   drawObject(200,255,255);"
+      },
+      {
+        "line": 88,
+        "instruction": "[016C] (05)   drawObject(199,255,255);"
+      },
+      {
+        "line": 117,
+        "instruction": "[01EF] (05)   drawObject(196,255,255);"
+      },
+      {
+        "line": 148,
+        "instruction": "[0266] (05)   drawObject(197,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0202.txt",
+    "room": 8,
+    "draw_commands": [
+      {
+        "line": 18,
+        "instruction": "[003F] (45)     drawObject(215,Var[66],1);"
+      },
+      {
+        "line": 21,
+        "instruction": "[0044] (C5) drawObject(Var[241],Var[57],1);"
+      },
+      {
+        "line": 28,
+        "instruction": "[005F] (05)   drawObject(215,33,1);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0203.txt",
+    "room": 8,
+    "draw_commands": [
+      {
+        "line": 20,
+        "instruction": "[004D] (45)       drawObject(216,Var[66],1);"
+      },
+      {
+        "line": 27,
+        "instruction": "[005E] (C5)   drawObject(Var[66],Var[58],1);"
+      },
+      {
+        "line": 29,
+        "instruction": "[0065] (C5)   drawObject(Var[242],Var[58],1);"
+      },
+      {
+        "line": 37,
+        "instruction": "[0080] (05)   drawObject(216,6,1);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0009/ROv2/ENv2.txt",
+    "room": 9,
+    "draw_commands": [
+      {
+        "line": 32,
+        "instruction": "[0070] (05)   drawObject(224,255,255);"
+      },
+      {
+        "line": 41,
+        "instruction": "[009C] (05)   drawObject(227,255,255);"
+      },
+      {
+        "line": 49,
+        "instruction": "[00C0] (05)   drawObject(226,255,255);"
+      },
+      {
+        "line": 67,
+        "instruction": "[0108] (05)   drawObject(225,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0239.txt",
+    "room": 10,
+    "draw_commands": [
+      {
+        "line": 10,
+        "instruction": "[0027] (85) drawObject(Var[51],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0249.txt",
+    "room": 11,
+    "draw_commands": [
+      {
+        "line": 31,
+        "instruction": "[006B] (C5)   drawObject(Var[14],Var[50],4);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0269.txt",
+    "room": 12,
+    "draw_commands": [
+      {
+        "line": 4,
+        "instruction": "[0013] (05) drawObject(268,255,255);"
+      },
+      {
+        "line": 20,
+        "instruction": "[004B] (85) drawObject(Var[46],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0273.txt",
+    "room": 13,
+    "draw_commands": [
+      {
+        "line": 56,
+        "instruction": "[0163] (05)       drawObject(274,255,255);"
+      },
+      {
+        "line": 64,
+        "instruction": "[017E] (05)   drawObject(276,255,255);"
+      },
+      {
+        "line": 67,
+        "instruction": "[018A] (05)   drawObject(275,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0277.txt",
+    "room": 13,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[001C] (85) drawObject(Var[46],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0280.txt",
+    "room": 13,
+    "draw_commands": [
+      {
+        "line": 10,
+        "instruction": "[002B] (85) drawObject(Var[46],28,11);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0283.txt",
+    "room": 13,
+    "draw_commands": [
+      {
+        "line": 6,
+        "instruction": "[0019] (05)   drawObject(283,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001F] (05)   drawObject(284,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0285.txt",
+    "room": 13,
+    "draw_commands": [
+      {
+        "line": 35,
+        "instruction": "[00BE] (85) drawObject(Var[48],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0287.txt",
+    "room": 13,
+    "draw_commands": [
+      {
+        "line": 10,
+        "instruction": "[005C] (05) drawObject(286,255,255);"
+      },
+      {
+        "line": 13,
+        "instruction": "[0068] (05)   drawObject(287,255,255);"
+      },
+      {
+        "line": 17,
+        "instruction": "[0076] (05)   drawObject(285,255,255);"
+      },
+      {
+        "line": 28,
+        "instruction": "[009C] (05)   drawObject(286,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0289.txt",
+    "room": 13,
+    "draw_commands": [
+      {
+        "line": 8,
+        "instruction": "[0023] (85) drawObject(Var[46],25,11);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0313.txt",
+    "room": 15,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0015] (05) drawObject(313,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001C] (05) drawObject(314,255,255);"
+      },
+      {
+        "line": 11,
+        "instruction": "[0023] (05) drawObject(315,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0335.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 6,
+        "instruction": "[0020] (45)   drawObject(335,Var[49],5);"
+      },
+      {
+        "line": 8,
+        "instruction": "[0027] (45)   drawObject(336,Var[49],5);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0336.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 6,
+        "instruction": "[0020] (45)   drawObject(335,Var[49],5);"
+      },
+      {
+        "line": 8,
+        "instruction": "[0027] (45)   drawObject(336,Var[49],5);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0337.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0017] (45) drawObject(338,Var[48],7);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001E] (45) drawObject(337,Var[48],7);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0338.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0017] (45) drawObject(338,Var[48],7);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001E] (45) drawObject(337,Var[48],7);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0339.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 19,
+        "instruction": "[0039] (C5) drawObject(Var[47],Var[45],9);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0342.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[001D] (45) drawObject(338,Var[48],7);"
+      },
+      {
+        "line": 9,
+        "instruction": "[0023] (45) drawObject(337,Var[48],7);"
+      },
+      {
+        "line": 15,
+        "instruction": "[0039] (45)   drawObject(335,Var[49],5);"
+      },
+      {
+        "line": 21,
+        "instruction": "[004A] (45)   drawObject(336,Var[49],5);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0347.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 6,
+        "instruction": "[0019] (05) drawObject(347,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[0022] (05) drawObject(346,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0353.txt",
+    "room": 17,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0016] (05) drawObject(353,255,255);"
+      },
+      {
+        "line": 7,
+        "instruction": "[001F] (05) drawObject(354,255,255);"
+      },
+      {
+        "line": 10,
+        "instruction": "[0026] (05) drawObject(355,255,255);"
+      },
+      {
+        "line": 12,
+        "instruction": "[002F] (05) drawObject(354,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0357.txt",
+    "room": 17,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[001B] (05) drawObject(357,255,255);"
+      },
+      {
+        "line": 10,
+        "instruction": "[0025] (05) drawObject(358,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0360.txt",
+    "room": 17,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0015] (05) drawObject(360,255,255);"
+      },
+      {
+        "line": 7,
+        "instruction": "[001B] (05) drawObject(361,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0019/ROv2/OCv2_0381.txt",
+    "room": 19,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[001B] (85) drawObject(Var[49],55,5);"
+      },
+      {
+        "line": 10,
+        "instruction": "[0026] (85) drawObject(Var[49],65,5);"
+      },
+      {
+        "line": 13,
+        "instruction": "[0031] (85) drawObject(Var[49],51,5);"
+      },
+      {
+        "line": 16,
+        "instruction": "[003C] (85) drawObject(Var[49],69,5);"
+      },
+      {
+        "line": 19,
+        "instruction": "[0047] (85) drawObject(Var[49],53,4);"
+      },
+      {
+        "line": 22,
+        "instruction": "[0052] (85) drawObject(Var[49],67,4);"
+      },
+      {
+        "line": 25,
+        "instruction": "[005D] (85) drawObject(Var[49],56,2);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/ENv2.txt",
+    "room": 20,
+    "draw_commands": [
+      {
+        "line": 22,
+        "instruction": "[004B] (05)     drawObject(389,77,10);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0021/ROv2/ENv2.txt",
+    "room": 21,
+    "draw_commands": [
+      {
+        "line": 25,
+        "instruction": "[0066] (05)     drawObject(395,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0021/ROv2/OCv2_0393.txt",
+    "room": 21,
+    "draw_commands": [
+      {
+        "line": 9,
+        "instruction": "[002E] (05)   drawObject(394,255,255);"
+      },
+      {
+        "line": 12,
+        "instruction": "[0039] (05)   drawObject(395,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/ENv2.txt",
+    "room": 23,
+    "draw_commands": [
+      {
+        "line": 27,
+        "instruction": "[0062] (05)   drawObject(408,27,1);"
+      },
+      {
+        "line": 28,
+        "instruction": "[0067] (05)   drawObject(409,49,0);"
+      },
+      {
+        "line": 29,
+        "instruction": "[006C] (05)   drawObject(403,0,0);"
+      },
+      {
+        "line": 38,
+        "instruction": "[0092] (05)   drawObject(403,0,0);"
+      },
+      {
+        "line": 39,
+        "instruction": "[0097] (05)   drawObject(407,41,1);"
+      },
+      {
+        "line": 40,
+        "instruction": "[009C] (05)   drawObject(406,74,1);"
+      },
+      {
+        "line": 55,
+        "instruction": "[00D8] (05)   drawObject(407,8,1);"
+      },
+      {
+        "line": 56,
+        "instruction": "[00DD] (05)   drawObject(405,52,1);"
+      },
+      {
+        "line": 57,
+        "instruction": "[00E2] (05)   drawObject(404,115,0);"
+      },
+      {
+        "line": 70,
+        "instruction": "[0118] (05)   drawObject(409,71,0);"
+      },
+      {
+        "line": 71,
+        "instruction": "[011D] (05)   drawObject(403,0,0);"
+      },
+      {
+        "line": 72,
+        "instruction": "[0122] (05)   drawObject(407,19,1);"
+      },
+      {
+        "line": 73,
+        "instruction": "[0127] (05)   drawObject(405,63,1);"
+      },
+      {
+        "line": 86,
+        "instruction": "[015D] (05)   drawObject(405,19,1);"
+      },
+      {
+        "line": 87,
+        "instruction": "[0162] (05)   drawObject(406,30,1);"
+      },
+      {
+        "line": 88,
+        "instruction": "[0167] (05)   drawObject(404,49,0);"
+      },
+      {
+        "line": 101,
+        "instruction": "[019D] (05)   drawObject(403,0,0);"
+      },
+      {
+        "line": 102,
+        "instruction": "[01A2] (05)   drawObject(406,30,1);"
+      },
+      {
+        "line": 103,
+        "instruction": "[01A7] (05)   drawObject(404,49,0);"
+      },
+      {
+        "line": 116,
+        "instruction": "[01DD] (05)   drawObject(409,49,0);"
+      },
+      {
+        "line": 117,
+        "instruction": "[01E2] (05)   drawObject(403,0,0);"
+      },
+      {
+        "line": 118,
+        "instruction": "[01E7] (05)   drawObject(407,19,1);"
+      },
+      {
+        "line": 119,
+        "instruction": "[01EC] (05)   drawObject(405,41,1);"
+      },
+      {
+        "line": 132,
+        "instruction": "[0222] (05)   drawObject(406,8,1);"
+      },
+      {
+        "line": 133,
+        "instruction": "[0227] (05)   drawObject(407,30,1);"
+      },
+      {
+        "line": 134,
+        "instruction": "[022C] (05)   drawObject(405,52,1);"
+      },
+      {
+        "line": 135,
+        "instruction": "[0231] (05)   drawObject(404,71,0);"
+      },
+      {
+        "line": 151,
+        "instruction": "[0272] (05)   drawObject(406,8,1);"
+      },
+      {
+        "line": 152,
+        "instruction": "[0277] (05)   drawObject(407,41,1);"
+      },
+      {
+        "line": 153,
+        "instruction": "[027C] (05)   drawObject(404,71,0);"
+      },
+      {
+        "line": 167,
+        "instruction": "[02B5] (05)   drawObject(403,0,0);"
+      },
+      {
+        "line": 168,
+        "instruction": "[02BA] (05)   drawObject(404,71,0);"
+      },
+      {
+        "line": 178,
+        "instruction": "[02E5] (05)   drawObject(406,30,1);"
+      },
+      {
+        "line": 179,
+        "instruction": "[02EA] (05)   drawObject(405,41,1);"
+      },
+      {
+        "line": 180,
+        "instruction": "[02EF] (05)   drawObject(404,71,0);"
+      },
+      {
+        "line": 193,
+        "instruction": "[0325] (05)   drawObject(409,49,0);"
+      },
+      {
+        "line": 194,
+        "instruction": "[032A] (05)   drawObject(403,0,0);"
+      },
+      {
+        "line": 195,
+        "instruction": "[032F] (05)   drawObject(407,19,1);"
+      },
+      {
+        "line": 204,
+        "instruction": "[0357] (05)   drawObject(408,5,1);"
+      },
+      {
+        "line": 205,
+        "instruction": "[035C] (05)   drawObject(405,96,1);"
+      },
+      {
+        "line": 206,
+        "instruction": "[0361] (05)   drawObject(404,115,0);"
+      },
+      {
+        "line": 219,
+        "instruction": "[0397] (05)   drawObject(408,19,1);"
+      },
+      {
+        "line": 220,
+        "instruction": "[039C] (05)   drawObject(412,19,1);"
+      },
+      {
+        "line": 221,
+        "instruction": "[03A1] (05)   drawObject(404,71,0);"
+      },
+      {
+        "line": 231,
+        "instruction": "[03CD] (05)   drawObject(409,115,0);"
+      },
+      {
+        "line": 232,
+        "instruction": "[03D2] (05)   drawObject(408,27,1);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0024/ROv2/OCv2_0417.txt",
+    "room": 24,
+    "draw_commands": [
+      {
+        "line": 8,
+        "instruction": "[0024] (85) drawObject(Var[45],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0427.txt",
+    "room": 25,
+    "draw_commands": [
+      {
+        "line": 18,
+        "instruction": "[0055] (05) drawObject(438,255,255);"
+      },
+      {
+        "line": 20,
+        "instruction": "[005E] (05) drawObject(439,255,255);"
+      },
+      {
+        "line": 22,
+        "instruction": "[0067] (05) drawObject(440,255,255);"
+      },
+      {
+        "line": 24,
+        "instruction": "[0070] (05) drawObject(439,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0435.txt",
+    "room": 25,
+    "draw_commands": [
+      {
+        "line": 4,
+        "instruction": "[0013] (65) drawObject(433,Var[47],Var[46]);"
+      },
+      {
+        "line": 5,
+        "instruction": "[0018] (65) drawObject(435,Var[48],Var[46]);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0436.txt",
+    "room": 25,
+    "draw_commands": [
+      {
+        "line": 4,
+        "instruction": "[0013] (65) drawObject(434,Var[47],Var[46]);"
+      },
+      {
+        "line": 5,
+        "instruction": "[0018] (65) drawObject(436,Var[48],Var[46]);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/ENv2.txt",
+    "room": 27,
+    "draw_commands": [
+      {
+        "line": 55,
+        "instruction": "[00B6] (05)   drawObject(454,33,1);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0459.txt",
+    "room": 27,
+    "draw_commands": [
+      {
+        "line": 6,
+        "instruction": "[0018] (85) drawObject(Var[44],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/OCv2_0502.txt",
+    "room": 31,
+    "draw_commands": [
+      {
+        "line": 14,
+        "instruction": "[0061] (85) drawObject(Var[45],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0032/ROv2/ENv2.txt",
+    "room": 32,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[0010] (05)   drawObject(514,9,9);"
+      },
+      {
+        "line": 10,
+        "instruction": "[001A] (05)   drawObject(514,54,9);"
+      },
+      {
+        "line": 13,
+        "instruction": "[0024] (05)   drawObject(514,99,9);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0520.txt",
+    "room": 33,
+    "draw_commands": [
+      {
+        "line": 31,
+        "instruction": "[007B] (85)   drawObject(Var[47],255,255);"
+      },
+      {
+        "line": 40,
+        "instruction": "[0097] (85)   drawObject(Var[46],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/ENv2.txt",
+    "room": 35,
+    "draw_commands": [
+      {
+        "line": 48,
+        "instruction": "[00AB] (45)   drawObject(559,Var[161],5);"
+      },
+      {
+        "line": 49,
+        "instruction": "[00B0] (45)   drawObject(560,Var[162],8);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0545.txt",
+    "room": 35,
+    "draw_commands": [
+      {
+        "line": 11,
+        "instruction": "[002F] (05) drawObject(546,255,255);"
+      },
+      {
+        "line": 14,
+        "instruction": "[003B] (05) drawObject(547,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0552.txt",
+    "room": 35,
+    "draw_commands": [
+      {
+        "line": 9,
+        "instruction": "[002C] (85) drawObject(Var[14],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0554.txt",
+    "room": 35,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0015] (05) drawObject(553,255,255);"
+      },
+      {
+        "line": 7,
+        "instruction": "[001B] (05) drawObject(554,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0559.txt",
+    "room": 35,
+    "draw_commands": [
+      {
+        "line": 9,
+        "instruction": "[0025] (45)     drawObject(561,Var[161],5);"
+      },
+      {
+        "line": 11,
+        "instruction": "[002C] (45)     drawObject(559,Var[161],5);"
+      },
+      {
+        "line": 20,
+        "instruction": "[004A] (45)     drawObject(561,Var[161],5);"
+      },
+      {
+        "line": 22,
+        "instruction": "[0053] (45)     drawObject(559,Var[161],5);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0560.txt",
+    "room": 35,
+    "draw_commands": [
+      {
+        "line": 9,
+        "instruction": "[0025] (45)     drawObject(562,Var[162],8);"
+      },
+      {
+        "line": 11,
+        "instruction": "[002C] (45)     drawObject(560,Var[162],8);"
+      },
+      {
+        "line": 20,
+        "instruction": "[004A] (45)     drawObject(562,Var[162],8);"
+      },
+      {
+        "line": 22,
+        "instruction": "[0053] (45)     drawObject(560,Var[162],8);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/ENv2.txt",
+    "room": 36,
+    "draw_commands": [
+      {
+        "line": 15,
+        "instruction": "[003B] (05)   drawObject(566,41,0);"
+      },
+      {
+        "line": 16,
+        "instruction": "[0040] (05)   drawObject(569,49,0);"
+      },
+      {
+        "line": 18,
+        "instruction": "[0048] (05)   drawObject(563,0,0);"
+      },
+      {
+        "line": 27,
+        "instruction": "[0070] (05)   drawObject(568,41,0);"
+      },
+      {
+        "line": 28,
+        "instruction": "[0075] (05)   drawObject(569,49,0);"
+      },
+      {
+        "line": 30,
+        "instruction": "[007D] (05)   drawObject(563,0,0);"
+      },
+      {
+        "line": 41,
+        "instruction": "[00AD] (05)     drawObject(563,0,0);"
+      },
+      {
+        "line": 46,
+        "instruction": "[00BD] (05)   drawObject(565,19,0);"
+      },
+      {
+        "line": 47,
+        "instruction": "[00C2] (05)   drawObject(566,30,0);"
+      },
+      {
+        "line": 48,
+        "instruction": "[00C7] (05)   drawObject(567,52,0);"
+      },
+      {
+        "line": 49,
+        "instruction": "[00CC] (05)   drawObject(568,63,0);"
+      },
+      {
+        "line": 50,
+        "instruction": "[00D1] (05)   drawObject(564,71,0);"
+      },
+      {
+        "line": 69,
+        "instruction": "[011F] (05)     drawObject(565,41,0);"
+      },
+      {
+        "line": 75,
+        "instruction": "[0139] (05)   drawObject(568,8,0);"
+      },
+      {
+        "line": 76,
+        "instruction": "[013E] (05)   drawObject(566,63,0);"
+      },
+      {
+        "line": 77,
+        "instruction": "[0143] (05)   drawObject(567,96,0);"
+      },
+      {
+        "line": 78,
+        "instruction": "[0148] (05)   drawObject(564,115,0);"
+      },
+      {
+        "line": 94,
+        "instruction": "[0189] (05)   drawObject(567,8,0);"
+      },
+      {
+        "line": 95,
+        "instruction": "[018E] (05)   drawObject(568,19,0);"
+      },
+      {
+        "line": 96,
+        "instruction": "[0193] (05)   drawObject(565,41,0);"
+      },
+      {
+        "line": 97,
+        "instruction": "[0198] (05)   drawObject(566,52,0);"
+      },
+      {
+        "line": 98,
+        "instruction": "[019D] (05)   drawObject(564,71,0);"
+      },
+      {
+        "line": 116,
+        "instruction": "[01E6] (05)   drawObject(566,19,0);"
+      },
+      {
+        "line": 117,
+        "instruction": "[01EB] (05)   drawObject(567,30,0);"
+      },
+      {
+        "line": 118,
+        "instruction": "[01F0] (05)   drawObject(568,63,0);"
+      },
+      {
+        "line": 119,
+        "instruction": "[01F5] (05)   drawObject(565,85,0);"
+      },
+      {
+        "line": 120,
+        "instruction": "[01FA] (05)   drawObject(564,115,0);"
+      },
+      {
+        "line": 139,
+        "instruction": "[0248] (05)     drawObject(564,49,0);"
+      },
+      {
+        "line": 146,
+        "instruction": "[0268] (05)     drawObject(569,49,0);"
+      },
+      {
+        "line": 149,
+        "instruction": "[0270] (05)   drawObject(563,0,0);"
+      },
+      {
+        "line": 150,
+        "instruction": "[0275] (05)   drawObject(567,8,0);"
+      },
+      {
+        "line": 151,
+        "instruction": "[027A] (05)   drawObject(566,19,0);"
+      },
+      {
+        "line": 164,
+        "instruction": "[02B0] (05)   drawObject(569,71,0);"
+      },
+      {
+        "line": 165,
+        "instruction": "[02B5] (05)   drawObject(563,0,0);"
+      },
+      {
+        "line": 166,
+        "instruction": "[02BA] (05)   drawObject(565,19,0);"
+      },
+      {
+        "line": 167,
+        "instruction": "[02BF] (05)   drawObject(568,52,0);"
+      },
+      {
+        "line": 180,
+        "instruction": "[02F7] (05)     drawObject(564,49,0);"
+      },
+      {
+        "line": 187,
+        "instruction": "[0317] (05)     drawObject(569,49,0);"
+      },
+      {
+        "line": 190,
+        "instruction": "[031F] (05)   drawObject(567,19,0);"
+      },
+      {
+        "line": 197,
+        "instruction": "[033F] (05)   drawObject(563,0,0);"
+      },
+      {
+        "line": 198,
+        "instruction": "[0344] (05)   drawObject(566,30,0);"
+      },
+      {
+        "line": 199,
+        "instruction": "[0349] (05)   drawObject(565,52,0);"
+      },
+      {
+        "line": 200,
+        "instruction": "[034E] (05)   drawObject(564,71,0);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0037/ROv2/ENv2.txt",
+    "room": 37,
+    "draw_commands": [
+      {
+        "line": 50,
+        "instruction": "[00AD] (45)   drawObject(572,Var[47],0);"
+      },
+      {
+        "line": 52,
+        "instruction": "[00B5] (45)   drawObject(570,Var[47],0);"
+      },
+      {
+        "line": 56,
+        "instruction": "[00C1] (45)   drawObject(573,Var[48],0);"
+      },
+      {
+        "line": 58,
+        "instruction": "[00C9] (45)   drawObject(571,Var[48],0);"
+      },
+      {
+        "line": 62,
+        "instruction": "[00D5] (45)   drawObject(574,Var[49],0);"
+      },
+      {
+        "line": 66,
+        "instruction": "[00E1] (45)   drawObject(575,Var[50],0);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0038/ROv2/OCv2_0583.txt",
+    "room": 38,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[001B] (85) drawObject(Var[66],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0040/ROv2/OCv2_0598.txt",
+    "room": 40,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[001F] (85) drawObject(Var[47],255,255);"
+      },
+      {
+        "line": 27,
+        "instruction": "[005E] (85) drawObject(Var[46],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0041/ROv2/OCv2_0606.txt",
+    "room": 41,
+    "draw_commands": [
+      {
+        "line": 4,
+        "instruction": "[0013] (05) drawObject(606,255,255);"
+      },
+      {
+        "line": 6,
+        "instruction": "[0019] (05) drawObject(607,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001F] (05) drawObject(608,255,255);"
+      },
+      {
+        "line": 10,
+        "instruction": "[0025] (05) drawObject(607,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0041/ROv2/OCv2_0614.txt",
+    "room": 41,
+    "draw_commands": [
+      {
+        "line": 16,
+        "instruction": "[003D] (05)   drawObject(617,255,255);"
+      },
+      {
+        "line": 19,
+        "instruction": "[0047] (05)   drawObject(612,18,9);"
+      },
+      {
+        "line": 22,
+        "instruction": "[0051] (05)   drawObject(611,61,12);"
+      },
+      {
+        "line": 26,
+        "instruction": "[005F] (05)   drawObject(616,255,255);"
+      },
+      {
+        "line": 29,
+        "instruction": "[0069] (05)   drawObject(613,18,9);"
+      },
+      {
+        "line": 32,
+        "instruction": "[0073] (05)   drawObject(612,61,12);"
+      },
+      {
+        "line": 36,
+        "instruction": "[0081] (05)   drawObject(615,255,255);"
+      },
+      {
+        "line": 39,
+        "instruction": "[008B] (05)   drawObject(612,18,9);"
+      },
+      {
+        "line": 42,
+        "instruction": "[0095] (05)   drawObject(613,61,12);"
+      },
+      {
+        "line": 46,
+        "instruction": "[00A3] (05)   drawObject(616,255,255);"
+      },
+      {
+        "line": 49,
+        "instruction": "[00AD] (05)   drawObject(611,18,9);"
+      },
+      {
+        "line": 52,
+        "instruction": "[00B7] (05)   drawObject(612,61,12);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0042/ROv2/OCv2_0624.txt",
+    "room": 42,
+    "draw_commands": [
+      {
+        "line": 6,
+        "instruction": "[001B] (85) drawObject(Var[45],255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[0020] (85) drawObject(Var[46],255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0651.txt",
+    "room": 44,
+    "draw_commands": [
+      {
+        "line": 9,
+        "instruction": "[0020] (05)   drawObject(649,255,255);"
+      },
+      {
+        "line": 11,
+        "instruction": "[0026] (05)   drawObject(650,255,255);"
+      },
+      {
+        "line": 12,
+        "instruction": "[002B] (05)   drawObject(656,255,255);"
+      },
+      {
+        "line": 14,
+        "instruction": "[0031] (05)   drawObject(651,255,255);"
+      },
+      {
+        "line": 16,
+        "instruction": "[0037] (05)   drawObject(654,255,255);"
+      },
+      {
+        "line": 24,
+        "instruction": "[004D] (05)     drawObject(655,255,255);"
+      },
+      {
+        "line": 26,
+        "instruction": "[0053] (05)     drawObject(653,255,255);"
+      },
+      {
+        "line": 30,
+        "instruction": "[0060] (05)     drawObject(81,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0050/ROv2/ENv2.txt",
+    "room": 50,
+    "draw_commands": [
+      {
+        "line": 7,
+        "instruction": "[0018] (05) drawObject(770,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0050/ROv2/OCv2_0769.txt",
+    "room": 50,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0017] (05) drawObject(769,255,255);"
+      },
+      {
+        "line": 8,
+        "instruction": "[001E] (05) drawObject(770,255,255);"
+      },
+      {
+        "line": 11,
+        "instruction": "[0025] (05) drawObject(769,255,255);"
+      },
+      {
+        "line": 14,
+        "instruction": "[002C] (05) drawObject(770,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/ENv2.txt",
+    "room": 53,
+    "draw_commands": [
+      {
+        "line": 19,
+        "instruction": "[004E] (05)   drawObject(748,38,1);"
+      },
+      {
+        "line": 20,
+        "instruction": "[0053] (05)   drawObject(749,82,1);"
+      },
+      {
+        "line": 21,
+        "instruction": "[0058] (05)   drawObject(747,104,1);"
+      },
+      {
+        "line": 22,
+        "instruction": "[005D] (05)   drawObject(741,30,4);"
+      },
+      {
+        "line": 23,
+        "instruction": "[0062] (05)   drawObject(742,52,4);"
+      },
+      {
+        "line": 24,
+        "instruction": "[0067] (05)   drawObject(743,74,4);"
+      },
+      {
+        "line": 25,
+        "instruction": "[006C] (05)   drawObject(744,0,0);"
+      },
+      {
+        "line": 26,
+        "instruction": "[0071] (05)   drawObject(745,115,0);"
+      },
+      {
+        "line": 36,
+        "instruction": "[0098] (05)     drawObject(739,22,9);"
+      },
+      {
+        "line": 37,
+        "instruction": "[009D] (05)     drawObject(740,99,9);"
+      },
+      {
+        "line": 87,
+        "instruction": "[017A] (05)   drawObject(748,27,1);"
+      },
+      {
+        "line": 88,
+        "instruction": "[017F] (05)   drawObject(749,49,1);"
+      },
+      {
+        "line": 89,
+        "instruction": "[0184] (05)   drawObject(747,60,1);"
+      },
+      {
+        "line": 90,
+        "instruction": "[0189] (05)   drawObject(741,19,4);"
+      },
+      {
+        "line": 91,
+        "instruction": "[018E] (05)   drawObject(742,41,4);"
+      },
+      {
+        "line": 92,
+        "instruction": "[0193] (05)   drawObject(744,0,0);"
+      },
+      {
+        "line": 93,
+        "instruction": "[0198] (05)   drawObject(746,71,0);"
+      },
+      {
+        "line": 101,
+        "instruction": "[01B9] (05)     drawObject(739,22,9);"
+      },
+      {
+        "line": 102,
+        "instruction": "[01BE] (05)     drawObject(740,44,9);"
+      },
+      {
+        "line": 135,
+        "instruction": "[024B] (05)   drawObject(748,16,1);"
+      },
+      {
+        "line": 136,
+        "instruction": "[0250] (05)   drawObject(749,27,1);"
+      },
+      {
+        "line": 137,
+        "instruction": "[0255] (05)   drawObject(747,5,1);"
+      },
+      {
+        "line": 138,
+        "instruction": "[025A] (05)   drawObject(741,30,4);"
+      },
+      {
+        "line": 139,
+        "instruction": "[025F] (05)   drawObject(745,38,0);"
+      },
+      {
+        "line": 146,
+        "instruction": "[027D] (05)     drawObject(739,22,9);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0750.txt",
+    "room": 53,
+    "draw_commands": [
+      {
+        "line": 8,
+        "instruction": "[001F] (C5) drawObject(Var[59],Var[56],3);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0751.txt",
+    "room": 53,
+    "draw_commands": [
+      {
+        "line": 8,
+        "instruction": "[001F] (C5) drawObject(Var[60],Var[57],3);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "zak/converted/scripts/LFv2_0054/ROv2/OCv2_0754.txt",
+    "room": 54,
+    "draw_commands": [
+      {
+        "line": 5,
+        "instruction": "[0017] (05) drawObject(755,24,1);"
+      },
+      {
+        "line": 6,
+        "instruction": "[001C] (05) drawObject(754,38,1);"
+      },
+      {
+        "line": 8,
+        "instruction": "[0025] (05) drawObject(754,24,1);"
+      },
+      {
+        "line": 9,
+        "instruction": "[002A] (05) drawObject(755,38,1);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0022.txt",
+    "room": 2,
+    "draw_commands": [
+      {
+        "line": 11,
+        "instruction": "[0034] (05)   drawObject(127,255,255);"
+      },
+      {
+        "line": 15,
+        "instruction": "[003F] (05)   drawObject(128,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0102.txt",
+    "room": 2,
+    "draw_commands": [
+      {
+        "line": 45,
+        "instruction": "[0159] (05)     drawObject(114,255,255);"
+      },
+      {
+        "line": 91,
+        "instruction": "[0319] (05)     drawObject(133,255,255);"
+      },
+      {
+        "line": 103,
+        "instruction": "[038D] (05)     drawObject(116,255,255);"
+      },
+      {
+        "line": 113,
+        "instruction": "[03B6] (05)     drawObject(115,255,255);"
+      },
+      {
+        "line": 114,
+        "instruction": "[03BB] (05)     drawObject(133,255,255);"
+      },
+      {
+        "line": 121,
+        "instruction": "[0410] (05)     drawObject(116,255,255);"
+      },
+      {
+        "line": 138,
+        "instruction": "[04C7] (05)     drawObject(115,255,255);"
+      },
+      {
+        "line": 139,
+        "instruction": "[04CC] (05)     drawObject(133,255,255);"
+      },
+      {
+        "line": 149,
+        "instruction": "[051D] (05)     drawObject(116,255,255);"
+      },
+      {
+        "line": 161,
+        "instruction": "[05CA] (05)     drawObject(115,255,255);"
+      },
+      {
+        "line": 162,
+        "instruction": "[05CF] (05)     drawObject(133,255,255);"
+      },
+      {
+        "line": 173,
+        "instruction": "[0610] (05)   drawObject(120,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0003/SCv2_0039.txt",
+    "room": 3,
+    "draw_commands": [
+      {
+        "line": 57,
+        "instruction": "[0118] (05)   drawObject(148,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0121.txt",
+    "room": 11,
+    "draw_commands": [
+      {
+        "line": 104,
+        "instruction": "[0169] (C5)       drawObject(Var[14],Var[50],4);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0096.txt",
+    "room": 16,
+    "draw_commands": [
+      {
+        "line": 98,
+        "instruction": "[0216] (05) drawObject(346,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25,
+    "draw_commands": [
+      {
+        "line": 114,
+        "instruction": "[0177] (05) drawObject(762,255,255);"
+      },
+      {
+        "line": 116,
+        "instruction": "[017D] (05) drawObject(763,255,255);"
+      },
+      {
+        "line": 118,
+        "instruction": "[0183] (05) drawObject(764,255,255);"
+      },
+      {
+        "line": 120,
+        "instruction": "[0189] (05) drawObject(765,255,255);"
+      },
+      {
+        "line": 126,
+        "instruction": "[019C] (05) drawObject(709,255,255);"
+      },
+      {
+        "line": 128,
+        "instruction": "[01A5] (05) drawObject(710,255,255);"
+      },
+      {
+        "line": 130,
+        "instruction": "[01AE] (05) drawObject(711,255,255);"
+      },
+      {
+        "line": 132,
+        "instruction": "[01B7] (05) drawObject(771,255,255);"
+      },
+      {
+        "line": 134,
+        "instruction": "[01C0] (05) drawObject(772,255,255);"
+      },
+      {
+        "line": 183,
+        "instruction": "[028E] (05) drawObject(345,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0030.txt",
+    "room": 45,
+    "draw_commands": [
+      {
+        "line": 47,
+        "instruction": "[00A7] (A5) drawObject(Var[14],7,Var[120]);"
+      },
+      {
+        "line": 70,
+        "instruction": "[00FD] (25)       drawObject(773,7,Var[253]);"
+      },
+      {
+        "line": 72,
+        "instruction": "[0102] (25)     drawObject(670,7,Var[120]);"
+      },
+      {
+        "line": 92,
+        "instruction": "[0141] (05)       drawObject(669,255,255);"
+      },
+      {
+        "line": 137,
+        "instruction": "[01F9] (05)   drawObject(657,255,255);"
+      },
+      {
+        "line": 139,
+        "instruction": "[0201] (05)   drawObject(658,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49,
+    "draw_commands": [
+      {
+        "line": 79,
+        "instruction": "[0129] (05) drawObject(766,255,255);"
+      },
+      {
+        "line": 81,
+        "instruction": "[0132] (05) drawObject(767,255,255);"
+      },
+      {
+        "line": 83,
+        "instruction": "[013B] (05) drawObject(768,255,255);"
+      },
+      {
+        "line": 100,
+        "instruction": "[016A] (85) drawObject(Var[46],255,255);"
+      },
+      {
+        "line": 133,
+        "instruction": "[01CA] (05) drawObject(701,255,255);"
+      },
+      {
+        "line": 157,
+        "instruction": "[0248] (05)   drawObject(699,10,2);"
+      },
+      {
+        "line": 165,
+        "instruction": "[0266] (05)   drawObject(700,10,6);"
+      },
+      {
+        "line": 169,
+        "instruction": "[026E] (05)   drawObject(696,30,3);"
+      },
+      {
+        "line": 181,
+        "instruction": "[0296] (45)   drawObject(697,Var[45],6);"
+      },
+      {
+        "line": 194,
+        "instruction": "[02BF] (05)   drawObject(698,19,4);"
+      },
+      {
+        "line": 230,
+        "instruction": "[0335] (05)   drawObject(702,255,255);"
+      },
+      {
+        "line": 296,
+        "instruction": "[041B] (05)   drawObject(699,10,2);"
+      },
+      {
+        "line": 302,
+        "instruction": "[042A] (05)   drawObject(700,10,6);"
+      },
+      {
+        "line": 306,
+        "instruction": "[0437] (05)   drawObject(696,30,3);"
+      },
+      {
+        "line": 316,
+        "instruction": "[0453] (45)   drawObject(697,Var[45],6);"
+      },
+      {
+        "line": 327,
+        "instruction": "[0473] (05)   drawObject(698,19,4);"
+      },
+      {
+        "line": 360,
+        "instruction": "[04D8] (05)   drawObject(702,255,255);"
+      },
+      {
+        "line": 375,
+        "instruction": "[0504] (05)   drawObject(761,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  },
+  {
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0050/SCv2_0007.txt",
+    "room": 50,
+    "draw_commands": [
+      {
+        "line": 11,
+        "instruction": "[0012] (05)   drawObject(708,255,255);"
+      },
+      {
+        "line": 26,
+        "instruction": "[0040] (85) drawObject(VAR_ACTIVE_OBJECT1,255,255);"
+      }
+    ],
+    "classification": "ordered static draw sites; branch and timer semantics preserved in script, not inferred frame playback"
+  }
+]

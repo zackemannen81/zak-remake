@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0042/ROv2/OCv2_0622
+Events:
+   C - 0019
+  FD - 004F
+[0019] (D8) printEgo("Ancient Incan Bird Feeder:\x01Fill only with dry bread crumbs.");
+[004E] (00) stopObjectCode();
+[004F] (31) VAR_RESULT = getBitVar(1549,0);
+[0054] (28) if (!VAR_RESULT) {
+[0058] (D8)   printEgo("REPORTER BECOMES BIRD-BRAINED\x01AFTER TRADING MINDS WITH SPARROW.");
+[0093] (5B)   setBitVar(1549,0,Var[235]);
+[0098] (**) }
+[0098] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0042/ROv2/OCv2_0620
+Events:
+   D - 001F
+[001F] (08) if (VAR_EGO != 6) {
+[0025] (D8)   printEgo("It's way across the valley!");
+[003E] (EF)   if (getState04(VAR_ACTIVE_OBJECT1)) {
+[0042] (AE)     waitForMessage();
+[0043] (D8)     printEgo("I don't have wings!");
+[0055] (**)   }
+[0055] (A7)   setState04(VAR_ACTIVE_OBJECT1);
+[0057] (18) } else {
+[005A] (24)   loadRoomWithEgo(638,138,61,51);
+[0060] (**) }
+[0060] (00) stopObjectCode();
+END

@@ -1,0 +1,44 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0050
+Events:
+   3 - 0076
+   6 - 0032
+   7 - 0076
+   B - 0032
+   C - 0093
+   E - 002A
+  FD - 0099
+[002A] (19) doSentence(253,262,0,1);
+[0031] (00) stopObjectCode();
+[0032] (08) if (VAR_EGO != 1) {
+[0038] (D8)   printEgo("No way!");
+[0040] (18) } else {
+[0043] (28)   if (!Var[205]) {
+[0047] (18)     goto 00A3;
+[004A] (**)   }
+[004A] (48)   if (Var[164] == 40) {
+[0050] (D8)     printEgo("Gotta remove my glasses.");
+[0067] (**)   }
+[0067] (1A)   Var[164] = 60;
+[006B] (51)   animateActor(1,Var[164]);
+[006E] (19)   doSentence(253,50,0,1);
+[0075] (**) }
+[0075] (00) stopObjectCode();
+[0076] (48) if (Var[164] == 60) {
+[007C] (1A)   Var[164] = 44;
+[0080] (51)   animateActor(1,Var[164]);
+[0083] (19)   doSentence(254,50,0,1);
+[008A] (**) }
+[008A] (48) if (VAR_ACTIVE_VERB == 3) {
+[0090] (42)   startScript(20);
+[0092] (**) }
+[0092] (00) stopObjectCode();
+[0093] (9A) Var[66] = Var[205];
+[0096] (42) startScript(71);
+[0098] (00) stopObjectCode();
+[0099] (2E) delay(900);
+[009D] (C6) Var[205]--;
+[009F] (28) unless (!Var[205]) goto 0099;
+[00A3] (14) print(1,"I'm out of oxygen!");
+[00B5] (18) goto 0076;
+[00B8] (00) stopObjectCode();
+END

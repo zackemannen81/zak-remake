@@ -1,0 +1,12 @@
+[0000] (3C) stopSound(80);
+[0002] (48) unless (Var[153] == 3) goto 0017;
+[0008] (6F) unless (getState04(289)) goto 0017;
+[000D] (47) clearState08(276);
+[0010] (07) setState08(275);
+[0013] (1A) Var[153] = 4;
+[0017] (68) VAR_RESULT = isScriptRunning(35);
+[001A] (A8) unless (VAR_RESULT) goto 0027;
+[001E] (62) stopScript(35);
+[0020] (19) doSentence(253,290,0,1);
+[0027] (00) stopObjectCode();
+END

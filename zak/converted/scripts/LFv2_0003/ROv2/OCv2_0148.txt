@@ -1,0 +1,17 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/OCv2_0148
+Events:
+  FD - 0013
+[0013] (05) drawObject(145,255,255);
+[0018] (05) drawObject(146,255,255);
+[001D] (80) breakHere();
+[001E] (80) breakHere();
+[001F] (05) drawObject(145,255,255);
+[0024] (80) breakHere();
+[0025] (08) if (VAR_TALK_ACTOR != 255) {
+[002B] (18) } else {
+[002E] (28)   unless (!VAR_HAVE_MSG) goto 0018;
+[0032] (**) }
+[0032] (47) clearState08(146);
+[0035] (47) clearState08(145);
+[0038] (00) stopObjectCode();
+END

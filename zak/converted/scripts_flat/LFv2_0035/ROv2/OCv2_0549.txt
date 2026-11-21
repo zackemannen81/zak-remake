@@ -1,0 +1,24 @@
+Events:
+   B - 004C
+   C - 001A
+[001A] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0049;
+[001E] (D8) printEgo("There's an indentation the shape of an\x01ankh.");
+[0046] (18) goto 004B;
+[0049] (42) startScript(3);
+[004B] (00) stopObjectCode();
+[004C] (48) unless (VAR_ACTIVE_OBJECT2 == 57) goto 007B;
+[0052] (29) setOwnerOf(57,0);
+[0056] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0058] (19) doSentence(254,554,0,1);
+[005F] (19) doSentence(254,551,0,1);
+[0066] (80) breakHere();
+[0067] (3C) stopSound(19);
+[0069] (47) clearState08(553);
+[006C] (57) setState02(553);
+[006F] (47) clearState08(554);
+[0072] (30) setBoxFlags(4,0);
+[0075] (30) setBoxFlags(6,0);
+[0078] (18) goto 007D;
+[007B] (42) startScript(3);
+[007D] (00) stopObjectCode();
+END

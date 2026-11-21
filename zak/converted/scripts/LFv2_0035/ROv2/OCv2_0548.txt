@@ -1,0 +1,14 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0035/ROv2/OCv2_0548
+Events:
+  FD - 001D
+[001D] (80) breakHere();
+[001E] (48) if (VAR_ACTIVE_VERB == 3) {
+[0024] (48)   if (VAR_ACTIVE_OBJECT2 == 10) {
+[002A] (BB)     waitForActor(VAR_EGO);
+[002C] (D8)     printEgo("It's just a hologram.");
+[0040] (9A)     VAR_ACTIVE_OBJECT2 = Var[234];
+[0043] (**)   }
+[0043] (**) }
+[0043] (18) goto 001D;
+[0046] (00) stopObjectCode();
+END

@@ -1,0 +1,20 @@
+Events:
+   B - 005B
+   E - 0023
+  FD - 0083
+[0023] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 003F;
+[0027] (D8) printEgo("It's too much to carry.");
+[003C] (18) goto 005A;
+[003F] (D8) printEgo("Sure, I'll put it in my pocket.");
+[005A] (00) stopObjectCode();
+[005B] (48) unless (VAR_ACTIVE_OBJECT2 == 68) goto 0080;
+[0061] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 006A;
+[0065] (42) startScript(129);
+[0067] (18) goto 007D;
+[006A] (D8) printEgo("They look fine to me.");
+[007D] (18) goto 0082;
+[0080] (42) startScript(3);
+[0082] (00) stopObjectCode();
+[0083] (54) setObjectName(451,"solar panels");
+[0093] (00) stopObjectCode();
+END

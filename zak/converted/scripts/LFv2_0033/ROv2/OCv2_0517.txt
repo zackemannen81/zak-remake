@@ -1,0 +1,24 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0033/ROv2/OCv2_0517
+Events:
+   1 - 0027
+   2 - 0059
+   9 - 0027
+   A - 0059
+   D - 008F
+[0027] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[002B] (D8)   printEgo("I can't do it! It's too big!");
+[0043] (18) } else {
+[0046] (D8)   printEgo("It's already open.");
+[0058] (**) }
+[0058] (00) stopObjectCode();
+[0059] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[005D] (D8)   printEgo("The door's too heavy to move.");
+[0077] (18) } else {
+[007A] (D8)   printEgo("It's already closed.");
+[008E] (**) }
+[008E] (00) stopObjectCode();
+[008F] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0093] (E4)   loadRoomWithEgo(Var[49],Var[50],255,255);
+[0098] (**) }
+[0098] (00) stopObjectCode();
+END

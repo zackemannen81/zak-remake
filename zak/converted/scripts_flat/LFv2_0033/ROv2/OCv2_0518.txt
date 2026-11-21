@@ -1,0 +1,12 @@
+Events:
+   B - 001B
+[001B] (48) unless (VAR_ACTIVE_OBJECT2 == 70) goto 0033;
+[0021] (29) setOwnerOf(70,14);
+[0025] (30) setBoxFlags(11,5);
+[0028] (07) setState08(535);
+[002B] (17) clearState02(535);
+[002E] (A7) setState04(Var[54]);
+[0030] (18) goto 0035;
+[0033] (42) startScript(3);
+[0035] (00) stopObjectCode();
+END

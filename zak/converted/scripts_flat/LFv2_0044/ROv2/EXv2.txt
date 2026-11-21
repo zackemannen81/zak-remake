@@ -1,0 +1,9 @@
+[0000] (3C) stopSound(28);
+[0002] (3C) stopSound(19);
+[0004] (93) ActorOps(VAR_EGO,[Sound(6)]);
+[0008] (2D) putActorInRoom(12,0);
+[000B] (2D) putActorInRoom(10,0);
+[000E] (9A) Var[203] = Var[234];
+[0011] (30) setBoxFlags(4,0);
+[0014] (00) stopObjectCode();
+END

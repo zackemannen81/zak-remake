@@ -1,0 +1,14 @@
+Events:
+   C - 0018
+  FD - 0039
+[0018] (D8) printEgo("It looks like a map of ancient Earth!");
+[0038] (00) stopObjectCode();
+[0039] (48) unless (VAR_EGO == 1) goto 006E;
+[003F] (2F) unless (!getState04(539)) goto 006E;
+[0044] (2E) delay(120);
+[0048] (36) walkActorToObject(1,539);
+[004C] (3B) waitForActor(1);
+[004E] (14) print(1,"Hey! It's the map from my dream!");
+[006B] (27) setState04(539);
+[006E] (00) stopObjectCode();
+END

@@ -1,0 +1,25 @@
+Events:
+  FD - 0013
+[0013] (2E) delay(60);
+[0017] (19) doSentence(253,281,0,1);
+[001E] (1C) startSound(80);
+[0020] (1A) Var[44] = 1;
+[0024] (16) Var[46] = getRandomNr(2);
+[0027] (5A) Var[46] += 289;
+[002B] (85) drawObject(Var[46],28,11);
+[002F] (80) breakHere();
+[0030] (46) Var[44]++;
+[0032] (44) unless (Var[44] > 8) goto 0024;
+[0038] (47) clearState08(288);
+[003B] (57) setState02(288);
+[003E] (47) clearState08(289);
+[0041] (47) clearState08(290);
+[0044] (47) clearState08(291);
+[0047] (68) VAR_RESULT = isScriptRunning(35);
+[004A] (28) unless (!VAR_RESULT) goto 005E;
+[004E] (08) unless (Var[153] != 4) goto 005E;
+[0054] (3C) stopSound(80);
+[0056] (80) breakHere();
+[0057] (19) doSentence(253,282,0,1);
+[005E] (00) stopObjectCode();
+END

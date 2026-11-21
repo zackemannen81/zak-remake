@@ -1,0 +1,4 @@
+Events:
+  FF - 0013
+[0013] (00) stopObjectCode();
+END

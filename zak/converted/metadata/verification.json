@@ -1,0 +1,39 @@
+{
+  "source_files_unchanged": 2206,
+  "objects": {
+    "identified": 578,
+    "exported": 578,
+    "mask_review": [
+      {
+        "room": 35,
+        "object_id": 553
+      },
+      {
+        "room": 35,
+        "object_id": 554
+      }
+    ],
+    "unresolved": [],
+    "room_table_records": 762,
+    "image_less_table_records": 183,
+    "frames_note": "One image per old-bundle OI; scripted state changes may switch object IDs. No invented animation frames."
+  },
+  "backgrounds_original": 58,
+  "references_checked": 6904,
+  "poc_backgrounds_generated": 24,
+  "poc_object_concepts_generated": 1,
+  "poc_backgrounds_pending": 34,
+  "poc_object_concepts_pending": 577,
+  "poc_approved_replacements": 0,
+  "audio_files": [
+    "zak/converted/poc/audio/sfx/drawer_click.wav",
+    "zak/converted/poc/audio/sfx/switch_click.wav",
+    "zak/converted/poc/audio/sfx/ui_select.wav",
+    "zak/converted/poc/audio/voice/dialogue_00004_6989e2af250c.mp3"
+  ],
+  "limitations": [
+    "Two original zplane boundaries require runtime comparison",
+    "AI concepts are not approved perspective/placement matches",
+    "COv2/BXv2/SOv2 decoding and full runtime puzzle replay remain"
+  ]
+}

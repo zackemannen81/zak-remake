@@ -1,0 +1,16 @@
+[0000] (19) doSentence(253,282,0,1);
+[0007] (67) clearState04(289);
+[000A] (C8) unless (Var[147] == Var[235]) goto 0029;
+[000F] (0C) loadSound(93)
+[0012] (48) unless (Var[247] == 285) goto 0022;
+[0018] (19) doSentence(253,287,0,1);
+[001F] (18) goto 0029;
+[0022] (19) doSentence(250,286,0,1);
+[0029] (48) unless (Var[153] == 4) goto 003D;
+[002F] (19) doSentence(250,277,0,1);
+[0036] (19) doSentence(253,281,0,1);
+[003D] (4F) unless (getState08(281)) goto 0049;
+[0042] (19) doSentence(250,283,0,1);
+[0049] (19) doSentence(253,291,0,1);
+[0050] (00) stopObjectCode();
+END

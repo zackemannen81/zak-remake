@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0054/ROv2/OCv2_0754
+Events:
+  FD - 0013
+[0013] (2E) delay(30);
+[0017] (05) drawObject(755,24,1);
+[001C] (05) drawObject(754,38,1);
+[0021] (2E) delay(30);
+[0025] (05) drawObject(754,24,1);
+[002A] (05) drawObject(755,38,1);
+[002F] (18) goto 0013;
+[0032] (00) stopObjectCode();
+END

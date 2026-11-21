@@ -1,0 +1,21 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0053/ROv2/OCv2_0748
+Events:
+   B - 0018
+[0018] (48) if (VAR_ACTIVE_OBJECT2 == 49) {
+[001E] (DB)   setBitVar(1481,Var[58],Var[235]);
+[0023] (19)   doSentence(250,750,0,1);
+[002A] (48) } else if (VAR_ACTIVE_OBJECT2 == 48) {
+[0033] (DB)   setBitVar(1481,Var[58],Var[234]);
+[0038] (19)   doSentence(254,750,0,1);
+[003F] (47)   clearState08(750);
+[0042] (47)   clearState08(751);
+[0045] (47)   clearState08(752);
+[0048] (B1)   VAR_RESULT = getBitVar(1493,Var[58]);
+[004D] (28)   if (!VAR_RESULT) {
+[0051] (F0)     lights(Var[234],0,0);
+[0055] (**)   }
+[0055] (18) } else {
+[0058] (42)   startScript(3);
+[005A] (**) }
+[005A] (00) stopObjectCode();
+END

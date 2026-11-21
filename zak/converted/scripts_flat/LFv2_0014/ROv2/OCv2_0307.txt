@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (4F) unless (getState08(307)) goto 0026;
+[0018] (F0) lights(Var[234],0,0);
+[001C] (5B) setBitVar(1559,7,Var[235]);
+[0021] (42) startScript(119);
+[0023] (18) goto 0039;
+[0026] (D8) printEgo("I can't get it out.");
+[0037] (19) doSentence(STOP);
+[0039] (00) stopObjectCode();
+END

@@ -1,0 +1,5 @@
+Events:
+  FF - 001B
+[001B] (27) setState04(483);
+[001E] (00) stopObjectCode();
+END

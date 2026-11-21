@@ -1,0 +1,12 @@
+{
+  "room": 2,
+  "object_id": 130,
+  "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. The narrow bread-related state patch at the kitchen sink/disposal. Use the room context to preserve the actual small physical bread/water/sink detail visible in the target, without turning colored pixels into letters or a decorative glyph. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0130\\frame_000.png"
+  ],
+  "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0130\\state_v006.png",
+  "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0130\\request_v006.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-043f25a7-d26d-49cc-9de4-9ecf5ba5e61f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

@@ -1,0 +1,14 @@
+[0000] (70) lights(11,0,0);
+[0004] (0C) loadSound(27)
+[0007] (0C) loadSound(37)
+[000A] (46) Var[154]++;
+[000C] (0F) unless (!getState08(488)) goto 0014;
+[0011] (9A) Var[154] = Var[234];
+[0014] (6F) unless (getState04(492)) goto 0020;
+[0019] (19) doSentence(4,492,0,1);
+[0020] (6F) unless (getState04(454)) goto 002C;
+[0025] (19) doSentence(253,490,0,1);
+[002C] (93) ActorOps(VAR_EGO,[Costume(0)]);
+[0030] (19) doSentence(253,488,0,1);
+[0037] (00) stopObjectCode();
+END

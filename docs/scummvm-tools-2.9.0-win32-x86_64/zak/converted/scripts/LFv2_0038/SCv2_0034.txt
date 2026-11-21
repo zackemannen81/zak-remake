@@ -1,0 +1,27 @@
+# Decompiled with descumm -2
+# Source: LFv2_0038\SCv2_0034
+
+[0000] (9A) Var[46] = Var[234];
+[0003] (9A) Var[49] = Var[46];
+[0006] (2D) putActorInRoom(10,151);
+[0009] (01) putActor(10,98,46);
+[000D] (3D) setActorElevation(10,250);
+[0010] (11) animateActor(10,250);
+[0013] (11) animateActor(10,24);
+[0016] (48) if (VAR_ACTIVE_OBJECT1 == 578) {
+[001C] (DB)   setBitVar(1458,VAR_EGO,Var[235]);
+[0021] (2E)   delay(90);
+[0025] (7D)   setActorElevation(10,Var[234]);
+[0028] (4D)   walkActorToActor(10,VAR_EGO,4);
+[002C] (14)   print(10,"Hello, hello! \x02");
+[003C] (10)   VAR_RESULT = getObjectOwner(44);
+[0040] (48)   if (VAR_RESULT == 0) {
+[0046] (14)     print(10,"I cannot help you until\x01you bring the Yellow Crystal.");
+[0076] (18)   } else {
+[0079] (14)     print(10,"What can I do for you?");
+[008D] (**)   }
+[008D] (3B)   waitForActor(10);
+[008F] (**) }
+[008F] (19) doSentence(253,587,0,1);
+[0096] (A0) stopObjectCode();
+END

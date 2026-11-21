@@ -1,0 +1,44 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0008/ROv2/OCv2_0208
+Events:
+  FD - 0013
+[0013] (40) cutscene();
+[0014] (58) beginOverride();
+[0015] (18) goto 00AC;
+[0018] (14) print(10,"I've heard of dis guru. Lemme see what\x01he has t'say.");
+[0046] (AE) waitForMessage();
+[0047] (11) animateActor(10,247);
+[004A] (9A) Var[117] = Var[235];
+[004D] (2E) delay(180);
+[0051] (14) print(10,"Ah!");
+[0057] (46) Var[117]++;
+[0059] (44) unless (Var[117] > 3) goto 004D;
+[005F] (2E) delay(180);
+[0063] (49) faceActor(10,VAR_EGO);
+[0066] (3B) waitForActor(10);
+[0068] (14) print(10,"I UNDERSTAND now! I don't need this\x01whiskey any longer! Here, and thank you!");
+[00AB] (AE) waitForMessage();
+[00AC] (6F) if (getState04(45)) {
+[00B1] (29)   setOwnerOf(45,0);
+[00B5] (**) }
+[00B5] (9A) Var[67] = Var[234];
+[00B8] (1A) Var[66] = 14;
+[00BC] (90) VAR_RESULT = getObjectOwner(Var[66]);
+[00BF] (48) if (VAR_RESULT == 10) {
+[00C5] (E9)   setOwnerOf(Var[66],VAR_EGO);
+[00C8] (46)   Var[67]++;
+[00CA] (**) }
+[00CA] (46) Var[66]++;
+[00CC] (44) unless (Var[66] > 83) goto 00BC;
+[00D2] (A8) if (Var[67]) {
+[00D6] (14)   print(10,"And here're all my earthly possessions.");
+[00FB] (**) }
+[00FB] (53) ActorOps(10,[Name("devotee")]);
+[0107] (50) pickupObject(46);
+[010A] (C0) endCutscene();
+[010B] (1A) Var[44] = -1;
+[010F] (1E) walkActorTo(10,10,46);
+[0113] (3B) waitForActor(10);
+[0115] (42) startScript(40);
+[0117] (19) doSentence(253,206,0,1);
+[011E] (00) stopObjectCode();
+END

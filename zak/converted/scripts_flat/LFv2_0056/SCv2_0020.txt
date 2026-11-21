@@ -1,0 +1,7 @@
+[0000] (04) unless (VAR_ACTIVE_OBJECT2 <= 4) goto 0016;
+[0006] (E9) setOwnerOf(VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2);
+[0009] (48) unless (VAR_ACTIVE_OBJECT2 == 2) goto 0016;
+[000F] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT1,32)) goto 0016;
+[0014] (42) startScript(119);
+[0016] (A0) stopObjectCode();
+END

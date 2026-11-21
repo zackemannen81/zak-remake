@@ -1,0 +1,17 @@
+********************
+* Preferences File *
+********************
+
+HERC		OFF
+TANDY		OFF
+CGA		OFF
+EGA		OFF
+MCGA		ON
+VGA		OFF
+
+COMPOSITE	OFF
+
+JOYSTICK	OFF
+MOUSE		ON
+
+TEXT_RATE	2

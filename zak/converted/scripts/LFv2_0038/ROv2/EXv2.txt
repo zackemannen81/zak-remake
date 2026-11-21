@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0038/ROv2/EXv2
+[0000] (7D) setActorElevation(10,Var[234]);
+[0003] (3C) stopSound(85);
+[0005] (30) setBoxFlags(6,0);
+[0008] (30) setBoxFlags(9,0);
+[000B] (30) setBoxFlags(1,0);
+[000E] (62) stopScript(34);
+[0010] (00) stopObjectCode();
+END

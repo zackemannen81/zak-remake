@@ -1,0 +1,20 @@
+Events:
+   B - 001A
+   C - 0035
+  13 - 003D
+[001A] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,128)) goto 0024;
+[001F] (42) startScript(31);
+[0021] (18) goto 0034;
+[0024] (48) unless (VAR_ACTIVE_OBJECT2 == 55) goto 0032;
+[002A] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002F] (18) goto 0034;
+[0032] (42) startScript(3);
+[0034] (00) stopObjectCode();
+[0035] (19) doSentence(12,356,0,0);
+[003C] (00) stopObjectCode();
+[003D] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,128)) goto 0047;
+[0042] (42) startScript(31);
+[0044] (18) goto 005B;
+[0047] (D8) printEgo("It doesn't want that.");
+[005B] (00) stopObjectCode();
+END

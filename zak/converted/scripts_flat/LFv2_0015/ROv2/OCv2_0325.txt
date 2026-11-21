@@ -1,0 +1,17 @@
+Events:
+   1 - 002C
+   2 - 0046
+   B - 001A
+[001A] (48) unless (VAR_ACTIVE_OBJECT2 == 76) goto 0029;
+[0020] (42) startScript(10);
+[0022] (29) setOwnerOf(76,0);
+[0026] (18) goto 002B;
+[0029] (42) startScript(3);
+[002B] (00) stopObjectCode();
+[002C] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0045;
+[0030] (D8) printEgo("I think I'll need a key.");
+[0045] (00) stopObjectCode();
+[0046] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0059;
+[004A] (D8) printEgo("It won't close.");
+[0059] (00) stopObjectCode();
+END

@@ -1,0 +1,5 @@
+Events:
+   1 - 0016
+[0016] (D8) printEgo("I don't want to disturb its occupants.");
+[0038] (00) stopObjectCode();
+END

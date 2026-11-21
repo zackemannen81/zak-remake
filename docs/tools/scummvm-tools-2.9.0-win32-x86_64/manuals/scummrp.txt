@@ -1,0 +1,91 @@
+SCUMMRP(1)                  General Commands Manual                 SCUMMRP(1)
+
+NAME
+     scummrp - pack and unpack SCUMM game data blocks
+
+SYNOPSIS
+     scummrp -i [-qvV] [-t tag] -g gameid -p gamedir -d dumpdir
+     scummrp -o [-qvV] [-t tag] -g gameid -p gamedir -d dumpdir
+     scummrp -L
+
+DESCRIPTION
+     The scummrp tool imports and exports game data blocks for SCUMM engine
+     games, in their original, raw format.
+
+     The mode of operation is chosen with one of the following options:
+
+     -i      Import blocks into the game files.
+
+     -o      Export blocks from the game files.
+
+     -L      List all supported games with their respective gameid.
+
+     The other options are as follows:
+
+     -d dumpdir
+                The path to the dump directory (default: DUMP).  Game content
+                is represented as a hierarchy of multiple files and
+                subdirectories.  If it doesn't exist, the directory will be
+                created.
+
+     -g gameid  The ID of the game variant to pack or unpack, as given by -L.
+
+     -p gamedir
+                The path to the game (default: current directory).
+
+     -q         Quiet mode.  Suppress informational output.
+
+     -t tag     Only export/import game blocks matching the specified tag.
+
+                A tag is the internal name of a SCUMM block type.  Tag names
+                went from 2 to 4 letters starting with SCUMM v5.
+
+                Common tags name include:
+
+                      CHAR      Charset (or font).
+
+                      CO, COST  Character costume and related animation.
+
+                      EN, ENCD  Local entry script (run when entering the
+                                room).
+
+                      EX, EXCD  Local exit script (run when leaving the room).
+
+                      LS, LSCR  Local script.
+
+                      OC, OBCD  Object code (name, interactions).
+
+                      OI, OBIM  Object image.
+
+                      SC, SCRP  Global script.
+
+     -v         Verbose mode.
+
+     -V         Same as -v, but list block names as they're being treated.
+
+EXAMPLES
+     Dump all the blocks from Monkey Island 2 to the DUMP_MI2 directory:
+
+           $ scummrp -g monkey2 -p /path/to/MI2 -od DUMP_MI2
+
+     Dump the global scripts from the Talkie CD version of Loom, using default
+     paths:
+
+           $ scummrp -g loomcd -t SCRP -o
+
+SEE ALSO
+     descumm (https://github.com/scummvm/scummvm-tools), NUTCracker
+     (https://github.com/BLooperZ/nutcracker), ScummPacker
+     (http://www.jestarjokin.net/apps/scummpacker/)
+
+HISTORY
+     The scummrp tool was written in 2003 by Thomas Combeleran for the ATP
+     team, and was open-sourced in 2020 under the MIT license.
+
+CAVEATS
+     On case-sensitive file systems, game data files must currently follow the
+     DOS convention of being all-uppercase to be properly detected.
+
+     SCUMM v0, SCUMM v8 and Humongous games are not supported.
+
+ScummTR                        November 19, 2020                       ScummTR

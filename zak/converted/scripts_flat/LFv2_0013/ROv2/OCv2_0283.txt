@@ -1,0 +1,10 @@
+Events:
+  FD - 0013
+[0013] (0F) unless (!getState08(55)) goto 0027;
+[0018] (80) breakHere();
+[0019] (05) drawObject(283,255,255);
+[001E] (80) breakHere();
+[001F] (05) drawObject(284,255,255);
+[0024] (18) goto 0018;
+[0027] (00) stopObjectCode();
+END

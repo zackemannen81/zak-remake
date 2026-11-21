@@ -1,0 +1,14 @@
+Events:
+   D - 0019
+  FD - 0021
+[0019] (19) doSentence(253,571,0,1);
+[0020] (00) stopObjectCode();
+[0021] (67) clearState04(575);
+[0024] (2E) delay(60);
+[0028] (16) Var[44] = getRandomNr(3);
+[002B] (28) unless (!Var[44]) goto 0052;
+[002F] (D8) printEgo("Will I ever see civilization again?");
+[004F] (18) goto 006B;
+[0052] (D8) printEgo("Oh no. I'm hopelessly lost.");
+[006B] (00) stopObjectCode();
+END

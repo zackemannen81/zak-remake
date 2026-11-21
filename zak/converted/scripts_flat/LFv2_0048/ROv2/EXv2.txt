@@ -1,0 +1,3 @@
+[0000] (5B) setBitVar(1545,0,Var[235]);
+[0005] (00) stopObjectCode();
+END

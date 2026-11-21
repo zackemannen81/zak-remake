@@ -1,0 +1,23 @@
+[0000] (70) lights(11,0,0);
+[0004] (0C) loadSound(2)
+[0007] (0C) loadSound(38)
+[000A] (4F) unless (getState08(465)) goto 0011;
+[000F] (46) Var[154]++;
+[0011] (48) unless (VAR_ROOM == 181) goto 003C;
+[0017] (33) RoomScroll(73,73);
+[001B] (30) setBoxFlags(4,128);
+[001E] (54) setObjectName(470,"metal plate");
+[002D] (2F) unless (!getState04(470)) goto 0039;
+[0032] (19) doSentence(253,470,0,1);
+[0039] (18) goto 005D;
+[003C] (33) RoomScroll(20,33);
+[0040] (30) setBoxFlags(5,128);
+[0043] (4F) unless (getState08(70)) goto 004E;
+[0048] (30) setBoxFlags(6,128);
+[004B] (18) goto 0051;
+[004E] (30) setBoxFlags(6,0);
+[0051] (4F) unless (getState08(463)) goto 005D;
+[0056] (4F) unless (getState08(472)) goto 005D;
+[005B] (46) Var[154]++;
+[005D] (00) stopObjectCode();
+END

@@ -1,0 +1,21 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0652
+Events:
+   D - 0020
+  FD - 0027
+[0020] (24) loadRoomWithEgo(644,133,22,52);
+[0026] (00) stopObjectCode();
+[0027] (9A) VAR_ACTIVE_OBJECT2 = Var[48];
+[002A] (80) breakHere();
+[002B] (48) if (VAR_ACTIVE_VERB == 3) {
+[0031] (BB)   waitForActor(VAR_EGO);
+[0033] (48)   if (VAR_ACTIVE_OBJECT2 == 10) {
+[0039] (90)     VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[003C] (C8)     if (VAR_RESULT == VAR_EGO) {
+[0041] (D8)       printEgo("He's drunk!");
+[004D] (9A)       VAR_ACTIVE_OBJECT2 = Var[234];
+[0050] (**)     }
+[0050] (**)   }
+[0050] (**) }
+[0050] (18) goto 002A;
+[0053] (00) stopObjectCode();
+END

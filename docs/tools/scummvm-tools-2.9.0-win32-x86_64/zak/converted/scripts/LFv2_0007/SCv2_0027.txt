@@ -1,0 +1,63 @@
+# Decompiled with descumm -2
+# Source: LFv2_0007\SCv2_0027
+
+[0000] (80) breakHere();
+[0001] (28) unless (!Var[50]) goto 0000;
+[0005] (AE) waitForMessage();
+[0006] (68) VAR_RESULT = isScriptRunning(24);
+[0009] (28) if (!VAR_RESULT) {
+[000D] (B4)   VAR_RESULT = getDist(VAR_EGO,181);
+[0012] (78)   if (VAR_RESULT < 3) {
+[0018] (08)     if (Var[49] != 181) {
+[001E] (1A)       Var[49] = 181;
+[0022] (1E)       walkActorTo(10,22,47);
+[0026] (3B)       waitForActor(10);
+[0028] (11)       animateActor(10,246);
+[002B] (3B)       waitForActor(10);
+[002D] (AE)       waitForMessage();
+[002E] (B4)       VAR_RESULT = getDist(VAR_EGO,181);
+[0033] (78)       if (VAR_RESULT < 3) {
+[0039] (B1)         VAR_RESULT = getBitVar(848,VAR_EGO);
+[003E] (A8)         if (VAR_RESULT) {
+[0042] (14)           print(10,"I told ya, no card, no bizness.");
+[005E] (18)           goto 00FC;
+[0061] (**)         }
+[0061] (14)         print(10,"Show me what ya wanna buy.");
+[0079] (**)       }
+[0079] (**)     }
+[0079] (**)   }
+[0079] (**) }
+[0079] (68) VAR_RESULT = isScriptRunning(26);
+[007C] (28) if (!VAR_RESULT) {
+[0080] (B4)   VAR_RESULT = getDist(VAR_EGO,182);
+[0085] (78)   if (VAR_RESULT < 3) {
+[008B] (08)     if (Var[49] != 182) {
+[0091] (1E)       walkActorTo(10,16,47);
+[0095] (3B)       waitForActor(10);
+[0097] (11)       animateActor(10,246);
+[009A] (3B)       waitForActor(10);
+[009C] (AE)       waitForMessage();
+[009D] (B4)       VAR_RESULT = getDist(VAR_EGO,182);
+[00A2] (78)       if (VAR_RESULT < 3) {
+[00A8] (1A)         Var[49] = 182;
+[00AC] (B1)         VAR_RESULT = getBitVar(848,VAR_EGO);
+[00B1] (A8)         if (VAR_RESULT) {
+[00B5] (14)           print(10,"Can't help ya without yer card.");
+[00D2] (18)           goto 00FC;
+[00D5] (**)         }
+[00D5] (14)         print(10,"Can I help ya?");
+[00E3] (**)       }
+[00E3] (**)     }
+[00E3] (**)   }
+[00E3] (**) }
+[00E3] (B4) VAR_RESULT = getDist(VAR_EGO,181);
+[00E8] (44) if (VAR_RESULT > 2) {
+[00EE] (B4)   VAR_RESULT = getDist(VAR_EGO,182);
+[00F3] (44)   if (VAR_RESULT > 2) {
+[00F9] (9A)     Var[49] = Var[234];
+[00FC] (**)   }
+[00FC] (**) }
+[00FC] (80) breakHere();
+[00FD] (18) goto 0000;
+[0100] (A0) stopObjectCode();
+END

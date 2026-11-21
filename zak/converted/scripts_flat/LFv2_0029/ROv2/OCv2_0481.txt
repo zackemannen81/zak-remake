@@ -1,0 +1,9 @@
+Events:
+   9 - 0020
+[0020] (68) VAR_RESULT = isScriptRunning(60);
+[0023] (A8) unless (VAR_RESULT) goto 0031;
+[0027] (1A) Var[81] = 309;
+[002B] (1A) Var[195] = 130;
+[002F] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[0031] (00) stopObjectCode();
+END

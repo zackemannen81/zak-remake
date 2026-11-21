@@ -1,0 +1,17 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0005/ROv2/OCv2_0167
+Events:
+   C - 0019
+  FD - 003F
+[0019] (D8) printEgo("CLOSED PERMANENTLY\x03Owner `locked` out.");
+[003E] (00) stopObjectCode();
+[003F] (48) if (VAR_EGO == 1) {
+[0045] (1C)   startSound(2);
+[0047] (2E)   delay(30);
+[004B] (1C)   startSound(2);
+[004D] (2E)   delay(18);
+[0051] (50)   pickupObject(31);
+[0054] (18) } else {
+[0057] (D8)   printEgo("I'm not into vandalism!");
+[006D] (**) }
+[006D] (00) stopObjectCode();
+END

@@ -1,0 +1,18 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0087
+Events:
+   B - 0020
+   E - 0020
+  FD - 0034
+[0020] (42) startScript(18);
+[0022] (AF) if (!getState04(VAR_ACTIVE_OBJECT1)) {
+[0026] (80)   breakHere();
+[0027] (42)   startScript(13);
+[0029] (18) } else {
+[002C] (19)   doSentence(253,87,0,1);
+[0033] (**) }
+[0033] (00) stopObjectCode();
+[0034] (42) startScript(14);
+[0036] (2E) delay(120);
+[003A] (D8) printEgo("It seems to be out of order.");
+[0052] (00) stopObjectCode();
+END

@@ -1,0 +1,5 @@
+Events:
+   C - 0017
+[0017] (D8) printEgo("Don't be a space goof -\x01always wear your spacesuit!\x03A reminder from The Friendly Hostel.");
+[0064] (00) stopObjectCode();
+END

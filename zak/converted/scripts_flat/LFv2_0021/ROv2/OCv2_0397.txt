@@ -1,0 +1,5 @@
+Events:
+   D - 001F
+[001F] (19) doSentence(13,396,0,1);
+[0026] (00) stopObjectCode();
+END

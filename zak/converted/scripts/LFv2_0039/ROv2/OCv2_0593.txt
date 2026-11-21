@@ -1,0 +1,21 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0039/ROv2/OCv2_0593
+Events:
+   D - 001B
+  FD - 0030
+[001B] (19) doSentence(253,593,0,1);
+[0022] (1A) Var[58] = 573;
+[0026] (1A) Var[59] = 593;
+[002A] (A4) loadRoomWithEgo(Var[58],171,255,255);
+[002F] (00) stopObjectCode();
+[0030] (9A) Var[255] = VAR_ROOM;
+[0033] (9A) Var[14] = VAR_EGO;
+[0036] (5A) Var[14] += 219;
+[003A] (0A) Var[Var[14]] = 191;
+[003E] (9A) Var[14] = VAR_EGO;
+[0041] (5A) Var[14] += 222;
+[0045] (0A) Var[Var[14]] = 142;
+[0049] (9A) Var[14] = VAR_EGO;
+[004C] (5A) Var[14] += 216;
+[0050] (0A) Var[Var[14]] = 4;
+[0054] (00) stopObjectCode();
+END

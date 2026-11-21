@@ -1,0 +1,18 @@
+Events:
+   C - 001C
+  FD - 002B
+[001C] (D8) printEgo("It's set to 60.");
+[002A] (00) stopObjectCode();
+[002B] (9A) Var[66] = Var[234];
+[002E] (7B) VAR_RESULT = getActorWalkBox(1);
+[0031] (48) unless (VAR_RESULT == 6) goto 0047;
+[0037] (48) unless (Var[167] == 48) goto 0047;
+[003D] (48) unless (Var[164] == 40) goto 0047;
+[0043] (1A) Var[66] = 1;
+[0047] (7B) VAR_RESULT = getActorWalkBox(2);
+[004A] (48) unless (VAR_RESULT == 6) goto 0060;
+[0050] (48) unless (Var[168] == 48) goto 0060;
+[0056] (48) unless (Var[165] == 40) goto 0060;
+[005C] (1A) Var[66] = 2;
+[0060] (00) stopObjectCode();
+END

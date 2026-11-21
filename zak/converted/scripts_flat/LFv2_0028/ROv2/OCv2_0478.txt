@@ -1,0 +1,43 @@
+Events:
+   1 - 0021
+   9 - 0021
+   A - 0021
+   E - 0021
+  FD - 009E
+[0021] (48) unless (VAR_EGO == 4) goto 002A;
+[0027] (18) goto 0038;
+[002A] (B1) VAR_RESULT = getBitVar(1450,VAR_EGO);
+[002F] (28) unless (!VAR_RESULT) goto 0096;
+[0033] (DB) setBitVar(1450,VAR_EGO,Var[235]);
+[0038] (9A) Var[45] = VAR_EGO;
+[003B] (D8) printEgo("I don't know what's under the covers,\x01\x02");
+[005E] (48) unless (VAR_EGO == 4) goto 006D;
+[0064] (D8) printEgo("but \x02");
+[006A] (18) goto 0096;
+[006D] (D8) printEgo("");
+[006F] (AE) waitForMessage();
+[0070] (91) animateActor(Var[45],246);
+[0073] (94) print(Var[45],"and I'd really rather not find out.");
+[0093] (18) goto 009D;
+[0096] (19) doSentence(253,478,0,1);
+[009D] (00) stopObjectCode();
+[009E] (9A) Var[45] = VAR_EGO;
+[00A1] (D8) printEgo("I guess it won't hurt to look.");
+[00BB] (AE) waitForMessage();
+[00BC] (1C) startSound(1);
+[00BE] (07) setState08(478);
+[00C1] (57) setState02(478);
+[00C4] (94) print(Var[45],"Oh. It's just a broom.\x03No! WAIT! IT HAS EYES!!");
+[00ED] (AE) waitForMessage();
+[00EE] (94) print(Var[45],"It's a DEAD ALIEN!");
+[0100] (9E) walkActorTo(Var[45],49,69);
+[0104] (1A) Var[66] = 3;
+[0108] (48) unless (Var[45] == 3) goto 0112;
+[010E] (1A) Var[66] = 4;
+[0112] (83) VAR_RESULT = getActorRoom(Var[66]);
+[0115] (C8) unless (VAR_RESULT == VAR_ROOM) goto 011E;
+[011A] (B6) walkActorToObject(Var[66],472);
+[011E] (BB) waitForActor(Var[45]);
+[0120] (B6) walkActorToObject(Var[45],472);
+[0124] (00) stopObjectCode();
+END

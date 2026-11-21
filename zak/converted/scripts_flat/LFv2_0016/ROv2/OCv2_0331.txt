@@ -1,0 +1,41 @@
+Events:
+   4 - 0021
+   5 - 0063
+   9 - 0080
+   A - 0080
+   B - 0080
+[0021] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0062;
+[0025] (1C) startSound(27);
+[0027] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0029] (48) unless (VAR_EGO == 7) goto 0031;
+[002F] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[0031] (19) doSentence(253,332,0,1);
+[0038] (07) setState08(332);
+[003B] (57) setState02(332);
+[003E] (7B) VAR_RESULT = getActorWalkBox(1);
+[0041] (48) unless (VAR_RESULT == 6) goto 0050;
+[0047] (68) VAR_RESULT = isScriptRunning(88);
+[004A] (28) unless (!VAR_RESULT) goto 0050;
+[004E] (42) startScript(88);
+[0050] (7B) VAR_RESULT = getActorWalkBox(2);
+[0053] (48) unless (VAR_RESULT == 6) goto 0062;
+[0059] (68) VAR_RESULT = isScriptRunning(90);
+[005C] (28) unless (!VAR_RESULT) goto 0062;
+[0060] (42) startScript(90);
+[0062] (00) stopObjectCode();
+[0063] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 007F;
+[0067] (1C) startSound(27);
+[0069] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[006B] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[006D] (3C) stopSound(19);
+[006F] (47) clearState08(332);
+[0072] (30) setBoxFlags(1,0);
+[0075] (17) clearState02(332);
+[0078] (19) doSentence(254,332,0,1);
+[007F] (00) stopObjectCode();
+[0080] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 008E;
+[0084] (19) doSentence(5,331,0,0);
+[008B] (18) goto 0095;
+[008E] (19) doSentence(4,331,0,0);
+[0095] (00) stopObjectCode();
+END

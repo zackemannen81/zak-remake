@@ -1,0 +1,13 @@
+Events:
+   1 - 001A
+   2 - 0026
+  FD - 002E
+[001A] (1A) Var[50] = 51;
+[001E] (19) doSentence(253,249,0,1);
+[0025] (00) stopObjectCode();
+[0026] (19) doSentence(253,250,0,1);
+[002D] (00) stopObjectCode();
+[002E] (07) setState08(248);
+[0031] (19) doSentence(253,248,0,1);
+[0038] (00) stopObjectCode();
+END

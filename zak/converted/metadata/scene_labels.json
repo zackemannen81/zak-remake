@@ -1,0 +1,408 @@
+[
+  {
+    "room": 1,
+    "label": "Bedroom",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 2,
+    "label": "Living room and kitchen",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 3,
+    "label": "City street with bakery and TPC",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 4,
+    "label": "Phone company lobby",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 5,
+    "label": "City street with shops",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 6,
+    "label": "Library",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 7,
+    "label": "Pawn shop",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 480,
+    "height": 128
+  },
+  {
+    "room": 8,
+    "label": "Airport terminal",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 9,
+    "label": "Damaged airport terminal",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 10,
+    "label": "Aircraft corridor",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 768,
+    "height": 128
+  },
+  {
+    "room": 11,
+    "label": "Aircraft cabin",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 800,
+    "height": 128
+  },
+  {
+    "room": 12,
+    "label": "Mountain path",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 13,
+    "label": "Cave with fire and markings",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 480,
+    "height": 128
+  },
+  {
+    "room": 14,
+    "label": "Crystal chamber",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 15,
+    "label": "Temple interior",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 16,
+    "label": "Machine corridor",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 800,
+    "height": 128
+  },
+  {
+    "room": 17,
+    "label": "Village exterior",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 18,
+    "label": "Jail cell",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 19,
+    "label": "Temple display hall",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 20,
+    "label": "Egypt desert",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 800,
+    "height": 128
+  },
+  {
+    "room": 21,
+    "label": "Sand-covered doorway",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 22,
+    "label": "Sphinx exterior",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 23,
+    "label": "Egyptian corridor",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 24,
+    "label": "Burial chamber",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 480,
+    "height": 128
+  },
+  {
+    "room": 25,
+    "label": "Crystal machine chamber",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 384,
+    "height": 128
+  },
+  {
+    "room": 26,
+    "label": "Mars pyramid landscape",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 880,
+    "height": 128
+  },
+  {
+    "room": 27,
+    "label": "Mars landing site",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 28,
+    "label": "Mars machinery interior",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 744,
+    "height": 128
+  },
+  {
+    "room": 29,
+    "label": "Map and symbols",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 30,
+    "label": "Mars equipment room",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 31,
+    "label": "Ocean surface",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 32,
+    "label": "Temple corridor",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 33,
+    "label": "Red temple interior",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 34,
+    "label": "Wall map and lion",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 35,
+    "label": "Machine room",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 36,
+    "label": "Space corridor",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 37,
+    "label": "Jungle",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 520,
+    "height": 128
+  },
+  {
+    "room": 38,
+    "label": "Village panorama",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 39,
+    "label": "Jungle temple exterior",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 40,
+    "label": "Biplane in flight",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 41,
+    "label": "Underwater ruins",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 42,
+    "label": "Mountain/temple landscape",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 43,
+    "label": "Rock passages",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 44,
+    "label": "Alien chambers",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 45,
+    "label": "Destinations interface",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 46,
+    "label": "Title and office sequence",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 47,
+    "label": "Black transition background",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 48,
+    "label": "Gray overlay with highlights",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 49,
+    "label": "Speech/overlay frame",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 50,
+    "label": "Save/load menu portrait",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 51,
+    "label": "Planets in space",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 52,
+    "label": "Window/grid overlays",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 53,
+    "label": "Repeating stone corridor",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 960,
+    "height": 128
+  },
+  {
+    "room": 54,
+    "label": "Flying car",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 55,
+    "label": "Black transition background",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 56,
+    "label": "Mask/glasses overlay",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 640,
+    "height": 128
+  },
+  {
+    "room": 57,
+    "label": "Pyramid in space",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  },
+  {
+    "room": 58,
+    "label": "Bed/end sequence",
+    "evidence": "inferred from original background visual inspection; not canonical geographic naming",
+    "width": 320,
+    "height": 128
+  }
+]

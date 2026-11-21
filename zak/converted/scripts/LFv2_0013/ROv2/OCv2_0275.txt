@@ -1,0 +1,18 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0013/ROv2/OCv2_0275
+Events:
+  FD - 0013
+[0013] (48) if (VAR_ACTIVE_VERB == 14) {
+[0019] (D8)   printEgo("I can't reach it.");
+[0029] (19)   doSentence(STOP);
+[002B] (48) } else if (VAR_ACTIVE_VERB == 11) {
+[0034] (48)   if (VAR_ACTIVE_OBJECT2 == 49) {
+[003A] (18)     goto 0019;
+[003D] (**)   }
+[003D] (9D)   if (classOfIs(VAR_ACTIVE_OBJECT2,2)) {
+[0042] (19)     doSentence(253,274,0,1);
+[0049] (18)   } else {
+[004C] (D8)     printEgo("I can't reach it with that.");
+[0064] (**)   }
+[0064] (**) }
+[0064] (00) stopObjectCode();
+END

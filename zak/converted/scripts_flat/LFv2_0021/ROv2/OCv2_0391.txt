@@ -1,0 +1,12 @@
+Events:
+   9 - 0020
+   B - 003F
+   E - 0020
+[0020] (D8) printEgo("It runs right through my fingers.");
+[003E] (00) stopObjectCode();
+[003F] (48) unless (VAR_ACTIVE_OBJECT2 == 68) goto 004A;
+[0045] (42) startScript(99);
+[0047] (18) goto 004C;
+[004A] (42) startScript(3);
+[004C] (00) stopObjectCode();
+END

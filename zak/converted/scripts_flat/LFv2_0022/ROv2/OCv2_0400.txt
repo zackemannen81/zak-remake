@@ -1,0 +1,8 @@
+Events:
+   1 - 0024
+   D - 0039
+[0024] (D8) printEgo("It's already opened.");
+[0038] (00) stopObjectCode();
+[0039] (24) loadRoomWithEgo(403,207,255,255);
+[003F] (00) stopObjectCode();
+END

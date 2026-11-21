@@ -1,0 +1,10 @@
+[
+  {
+    "path": "zak\\converted\\poc\\objects\\room_015\\object_0326\\request_v001.json",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "path": "zak\\converted\\poc\\objects\\room_016\\object_0345\\request_v001.json",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  }
+]

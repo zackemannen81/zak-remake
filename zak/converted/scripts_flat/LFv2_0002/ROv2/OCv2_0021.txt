@@ -1,0 +1,8 @@
+Events:
+   B - 0026
+   E - 0023
+[0023] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0025] (00) stopObjectCode();
+[0026] (42) startScript(23);
+[0028] (00) stopObjectCode();
+END

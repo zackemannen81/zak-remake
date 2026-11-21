@@ -1,0 +1,40 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/OCv2_0362
+Events:
+   E - 001C
+  FD - 002D
+[001C] (91) animateActor(VAR_EGO,246);
+[001F] (80) breakHere();
+[0020] (D8) printEgo("Yeah, sure!");
+[002C] (00) stopObjectCode();
+[002D] (7A) VerbOps(New-31(0,19,0,0,"Chew@@@@@@@@@"));
+[0041] (9A) Var[46] = Var[234];
+[0044] (19) doSentence(254,353,0,1);
+[004B] (80) breakHere();
+[004C] (A8) unless (VAR_ACTIVE_VERB) goto 004B;
+[0050] (48) if (VAR_ACTIVE_VERB == 31) {
+[0056] (9A)   VAR_ACTIVE_VERB = Var[234];
+[0059] (19)   doSentence(253,353,0,1);
+[0060] (80)   breakHere();
+[0061] (A8)   unless (Var[47]) goto 0060;
+[0065] (46)   Var[46]++;
+[0067] (48)   if (Var[46] == 16) {
+[006D] (4F)     if (getState08(362)) {
+[0072] (7A)       VerbOps(New-32(16,19,2,0,"   Poop@@@"));
+[0083] (60)       cursorCommand(0, 0);
+[0086] (**)     }
+[0086] (**)   }
+[0086] (**) }
+[0086] (48) if (VAR_ACTIVE_VERB == 32) {
+[008C] (9A)   VAR_ACTIVE_VERB = Var[234];
+[008F] (1C)   startSound(18);
+[0091] (80)   breakHere();
+[0092] (47)   clearState08(362);
+[0095] (17)   clearState02(362);
+[0098] (80)   breakHere();
+[0099] (3C)   stopSound(18);
+[009B] (7A)   VerbOps(Delete(2));
+[009E] (60)   cursorCommand(0, 0);
+[00A1] (**) }
+[00A1] (18) goto 0044;
+[00A4] (00) stopObjectCode();
+END

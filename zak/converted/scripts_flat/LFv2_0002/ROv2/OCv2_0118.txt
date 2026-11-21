@@ -1,0 +1,47 @@
+Events:
+   A - 008E
+   B - 0023
+  FD - 00AD
+[0023] (48) unless (VAR_ACTIVE_OBJECT2 == 20) goto 0039;
+[0029] (87) setState08(VAR_ACTIVE_OBJECT1);
+[002B] (9E) walkActorTo(VAR_EGO,27,57);
+[002F] (19) doSentence(253,131,0,1);
+[0036] (18) goto 008D;
+[0039] (48) unless (VAR_ACTIVE_OBJECT2 == 24) goto 0042;
+[003F] (18) goto 0047;
+[0042] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,16)) goto 008B;
+[0047] (48) unless (VAR_EGO == 1) goto 0071;
+[004D] (1C) startSound(29);
+[004F] (2E) delay(30);
+[0053] (11) animateActor(1,246);
+[0056] (D8) printEgo("YOWL!!!");
+[005F] (6F) unless (getState04(122)) goto 006E;
+[0064] (80) breakHere();
+[0065] (7C) VAR_RESULT = isSoundRunning(29);
+[0068] (28) unless (!VAR_RESULT) goto 0064;
+[006C] (42) startScript(21);
+[006E] (18) goto 0088;
+[0071] (11) animateActor(2,246);
+[0074] (D8) printEgo("That would be stupid!");
+[0088] (18) goto 008D;
+[008B] (42) startScript(3);
+[008D] (00) stopObjectCode();
+[008E] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0090] (19) doSentence(253,131,0,1);
+[0097] (47) clearState08(20);
+[009A] (17) clearState02(20);
+[009D] (6F) unless (getState04(21)) goto 00AC;
+[00A2] (67) clearState04(21);
+[00A5] (19) doSentence(253,118,0,1);
+[00AC] (00) stopObjectCode();
+[00AD] (62) stopScript(102);
+[00AF] (14) print(255,"");
+[00B2] (2D) putActorInRoom(10,0);
+[00B5] (2D) putActorInRoom(11,0);
+[00B8] (47) clearState08(133);
+[00BB] (47) clearState08(120);
+[00BE] (47) clearState08(114);
+[00C1] (47) clearState08(115);
+[00C4] (47) clearState08(116);
+[00C7] (00) stopObjectCode();
+END

@@ -1,0 +1,31 @@
+Events:
+   B - 001A
+  FD - 001D
+[001A] (42) startScript(46);
+[001C] (00) stopObjectCode();
+[001D] (48) unless (VAR_EGO == 1) goto 00DA;
+[0023] (2F) unless (!getState04(152)) goto 00B8;
+[0028] (10) VAR_RESULT = getObjectOwner(15);
+[002C] (48) unless (VAR_RESULT == 1) goto 0095;
+[0032] (1C) startSound(66);
+[0034] (9A) Var[45] = Var[234];
+[0037] (80) breakHere();
+[0038] (34) VAR_RESULT = getDist(1,152);
+[003E] (44) unless (VAR_RESULT > 0) goto 0047;
+[0044] (18) goto 00FB;
+[0047] (46) Var[45]++;
+[0049] (44) unless (Var[45] > 30) goto 0037;
+[004F] (27) setState04(152);
+[0052] (D8) printEgo("There, now my bill is zero. I'll stamp\x01it paid and leave it here.");
+[0089] (29) setOwnerOf(15,0);
+[008D] (67) clearState04(87);
+[0090] (42) startScript(134);
+[0092] (18) goto 00B5;
+[0095] (D8) printEgo("I don't remember my account number!");
+[00B5] (18) goto 00D7;
+[00B8] (D8) printEgo("I've already taken care of my bill.");
+[00D7] (18) goto 00FB;
+[00DA] (D8) printEgo("I don't know a thing about computers.");
+[00FB] (3C) stopSound(66);
+[00FD] (00) stopObjectCode();
+END

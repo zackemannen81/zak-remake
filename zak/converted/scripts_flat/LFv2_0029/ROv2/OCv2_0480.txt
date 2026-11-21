@@ -1,0 +1,32 @@
+Events:
+   9 - 0025
+  FD - 0037
+[0025] (68) VAR_RESULT = isScriptRunning(60);
+[0028] (A8) unless (VAR_RESULT) goto 0036;
+[002C] (1A) Var[81] = 309;
+[0030] (1A) Var[195] = 129;
+[0034] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[0036] (00) stopObjectCode();
+[0037] (1A) Var[45] = 480;
+[003B] (EF) unless (getState04(Var[45])) goto 00C4;
+[003F] (48) unless (Var[45] == 480) goto 005B;
+[0045] (D4) setObjectName(Var[45],"Mt. Rainier cave");
+[0058] (18) goto 00C1;
+[005B] (48) unless (Var[45] == 481) goto 0074;
+[0061] (D4) setObjectName(Var[45],"Mayan pyramid");
+[0071] (18) goto 00C1;
+[0074] (48) unless (Var[45] == 482) goto 0091;
+[007A] (D4) setObjectName(Var[45],"Peruvian eye cave");
+[008E] (18) goto 00C1;
+[0091] (48) unless (Var[45] == 483) goto 00A5;
+[0097] (D4) setObjectName(Var[45],"Atlantis");
+[00A2] (18) goto 00C1;
+[00A5] (48) unless (Var[45] == 484) goto 00C1;
+[00AB] (D4) setObjectName(Var[45],"Egyptian pyramid");
+[00BE] (18) /* goto 00C1; */
+[00C1] (18) goto 00CA;
+[00C4] (D4) setObjectName(Var[45],"???");
+[00CA] (46) Var[45]++;
+[00CC] (44) unless (Var[45] > 484) goto 003B;
+[00D2] (00) stopObjectCode();
+END

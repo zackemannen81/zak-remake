@@ -1,0 +1,38 @@
+Events:
+   1 - 001A
+   2 - 0022
+  FD - 002A
+[001A] (1A) Var[50] = 18;
+[001E] (18) goto 002A;
+[0021] (00) stopObjectCode();
+[0022] (19) doSentence(253,250,0,1);
+[0029] (00) stopObjectCode();
+[002A] (9A) Var[51] = VAR_ACTIVE_OBJECT1;
+[002D] (3A) Var[51] -= 249;
+[0031] (42) startScript(10);
+[0033] (78) unless (Var[101] < 6) goto 0057;
+[0039] (9A) Var[14] = Var[51];
+[003C] (5A) Var[14] += 84;
+[0040] (28) unless (!Var[14]) goto 0057;
+[0044] (9A) Var[14] = Var[51];
+[0047] (5A) Var[14] += 84;
+[004B] (9A) Var[15] = Var[101];
+[004E] (5A) Var[15] += 186;
+[0052] (8A) Var[Var[14]] = Var[15];
+[0055] (46) Var[101]++;
+[0057] (9A) Var[14] = Var[51];
+[005A] (5A) Var[14] += 84;
+[005E] (44) unless (Var[14] > 1) goto 0078;
+[0064] (9A) Var[14] = Var[51];
+[0067] (5A) Var[14] += 84;
+[006B] (C5) drawObject(Var[14],Var[50],4);
+[006F] (9A) Var[14] = Var[51];
+[0072] (5A) Var[14] += 84;
+[0076] (97) clearState02(Var[14]);
+[0078] (2E) delay(60);
+[007C] (28) unless (!Var[248]) goto 0089;
+[0080] (68) VAR_RESULT = isScriptRunning(105);
+[0083] (28) unless (!VAR_RESULT) goto 0089;
+[0087] (42) startScript(105);
+[0089] (00) stopObjectCode();
+END

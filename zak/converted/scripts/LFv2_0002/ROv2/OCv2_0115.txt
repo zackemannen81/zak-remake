@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0002/ROv2/OCv2_0115
+Events:
+  FD - 0013
+[0013] (13) ActorOps(10,[Costume(34)]);
+[0017] (13) ActorOps(10,[TalkColor(15)]);
+[001B] (05) drawObject(115,255,255);
+[0020] (2D) putActorInRoom(10,2);
+[0023] (01) putActor(10,16,48);
+[0027] (11) animateActor(10,250);
+[002A] (00) stopObjectCode();
+END

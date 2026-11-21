@@ -1,0 +1,6 @@
+Events:
+   D - 0019
+[0019] (07) setState08(112);
+[001C] (24) loadRoomWithEgo(112,2,255,255);
+[0022] (00) stopObjectCode();
+END

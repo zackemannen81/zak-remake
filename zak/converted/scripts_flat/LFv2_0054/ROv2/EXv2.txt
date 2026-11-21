@@ -1,0 +1,3 @@
+[0000] (3C) stopSound(110);
+[0002] (00) stopObjectCode();
+END

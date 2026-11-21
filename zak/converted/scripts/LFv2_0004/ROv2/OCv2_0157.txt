@@ -1,0 +1,23 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0004/ROv2/OCv2_0157
+Events:
+  FD - 0029
+  FF - 0021
+[0021] (99) doSentence(VAR_ACTIVE_VERB,156,0,1);
+[0028] (00) stopObjectCode();
+[0029] (9A) Var[48] = Var[234];
+[002C] (4F) if (getState08(87)) {
+[0031] (62)   stopScript(77);
+[0033] (**) }
+[0033] (47) clearState08(159);
+[0036] (80) breakHere();
+[0037] (19) doSentence(1,156,0,0);
+[003E] (4C) waitForSentence();
+[003F] (19) doSentence(2,157,0,0);
+[0046] (4C) waitForSentence();
+[0047] (1E) walkActorTo(7,22,52);
+[004B] (3B) waitForActor(7);
+[004D] (11) animateActor(7,246);
+[0050] (2E) delay(60);
+[0054] (46) Var[48]++;
+[0056] (00) stopObjectCode();
+END

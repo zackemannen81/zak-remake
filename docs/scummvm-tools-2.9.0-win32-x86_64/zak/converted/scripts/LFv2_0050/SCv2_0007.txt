@@ -1,0 +1,132 @@
+# Decompiled with descumm -2
+# Source: LFv2_0050\SCv2_0007
+
+[0000] (68) Var[122] = isScriptRunning(122);
+[0003] (47) clearState08(708);
+[0006] (17) clearState02(703);
+[0009] (62) stopScript(122);
+[000B] (40) cutscene();
+[000C] (72) loadRoom(50);
+[000E] (A8) if (Var[122]) {
+[0012] (05)   drawObject(708,255,255);
+[0017] (57)   setState02(703);
+[001A] (**) }
+[001A] (19) doSentence(253,705,0,1);
+[0021] (60) cursorCommand(159, 3);
+[0024] (1A) Var[117] = 4;
+[0028] (22) Var[243] = saveLoadGame(32);
+[002B] (42) startScript(8);
+[002D] (58) beginOverride();
+[002E] (18) goto 0183;
+[0031] (9A) VAR_ACTIVE_OBJECT1 = Var[234];
+[0034] (80) breakHere();
+[0035] (A8) unless (VAR_ACTIVE_OBJECT1) goto 0034;
+[0039] (1A) Var[117] = 255;
+[003D] (14) print(255,"");
+[0040] (85) drawObject(VAR_ACTIVE_OBJECT1,255,255);
+[0044] (1C) startSound(16);
+[0046] (9A) Var[121] = VAR_ACTIVE_OBJECT1;
+[0049] (80) breakHere();
+[004A] (80) breakHere();
+[004B] (48) if (Var[121] == 705) {
+[0051] (18) } else {
+[0054] (9A)   VAR_ACTIVE_OBJECT1 = Var[234];
+[0057] (9A)   VAR_SENTENCE_OBJECT1 = Var[234];
+[005A] (9A)   VAR_ACTIVE_VERB = Var[234];
+[005D] (1A)   Var[122] = 10;
+[0061] (9A)   Var[67] = Var[234];
+[0064] (1A)   Var[66] = 192;
+[0068] (DA)   Var[66] += Var[67];
+[006B] (A2)   Var[61] = saveLoadGame(Var[66]);
+[006E] (48)   if (Var[61] == 6) {
+[0074] (DB)     setBitVar(4048,Var[67],Var[235]);
+[0079] (C6)     Var[122]--;
+[007B] (18)   } else {
+[007E] (DB)     setBitVar(4048,Var[67],Var[234]);
+[0083] (**)   }
+[0083] (46)   Var[67]++;
+[0085] (44)   unless (Var[67] > 9) goto 0064;
+[008B] (22)   Var[244] = saveLoadGame(7);
+[008E] (C4)   if (Var[244] > Var[122]) {
+[0093] (9A)     Var[244] = Var[122];
+[0096] (**)   }
+[0096] (9A)   Var[61] = Var[234];
+[0099] (9A)   Var[66] = Var[234];
+[009C] (B1)   VAR_RESULT = getBitVar(4048,Var[66]);
+[00A1] (A8)   if (VAR_RESULT) {
+[00A5] (19)     doSentence(253,708,0,1);
+[00AC] (46)     Var[61]++;
+[00AE] (**)   }
+[00AE] (46)   Var[66]++;
+[00B0] (44)   unless (Var[66] > 9) goto 009C;
+[00B6] (48)   if (Var[121] == 703) {
+[00BC] (A8)     if (Var[244]) {
+[00C0] (9A)       Var[67] = Var[244];
+[00C3] (9A)       Var[66] = Var[234];
+[00C6] (B1)       VAR_RESULT = getBitVar(4048,Var[66]);
+[00CB] (28)       if (!VAR_RESULT) {
+[00CF] (19)         doSentence(253,707,0,1);
+[00D6] (C6)         Var[67]--;
+[00D8] (28)         if (!Var[67]) {
+[00DC] (18)           goto 00E7;
+[00DF] (**)         }
+[00DF] (**)       }
+[00DF] (46)       Var[66]++;
+[00E1] (44)       unless (Var[66] > 9) goto 00C6;
+[00E7] (**)     }
+[00E7] (**)   }
+[00E7] (48)   if (Var[121] == 704) {
+[00ED] (28)     if (!Var[61]) {
+[00F1] (1A)       Var[117] = 8;
+[00F5] (19)       doSentence(253,706,0,1);
+[00FC] (18)       goto 0031;
+[00FF] (**)     }
+[00FF] (**)   }
+[00FF] (60)   cursorCommand(0, 0);
+[0102] (80)   breakHere();
+[0103] (A8)   if (VAR_ACTIVE_OBJECT1) {
+[0107] (19)     doSentence(253,706,0,1);
+[010E] (19)     doSentence(253,705,0,1);
+[0115] (18)     goto 0039;
+[0118] (**)   }
+[0118] (38)   unless (VAR_ACTIVE_VERB >= 35) goto 0102;
+[011E] (9A)   Var[118] = VAR_ACTIVE_VERB;
+[0121] (3A)   Var[118] -= 35;
+[0125] (1C)   startSound(16);
+[0127] (46)   Var[119]++;
+[0129] (80)   breakHere();
+[012A] (80)   breakHere();
+[012B] (48)   if (Var[121] == 703) {
+[0131] (19)     doSentence(253,705,0,1);
+[0138] (9A)     Var[66] = Var[118];
+[013B] (5A)     Var[66] += 128;
+[013F] (A2)     Var[117] = saveLoadGame(Var[66]);
+[0142] (48)     if (Var[117] == 0) {
+[0148] (B1)       VAR_RESULT = getBitVar(4048,Var[118]);
+[014D] (28)       if (!VAR_RESULT) {
+[0151] (C6)         Var[244]--;
+[0153] (DB)         setBitVar(4048,Var[118],Var[235]);
+[0158] (**)       }
+[0158] (**)     }
+[0158] (**)   }
+[0158] (48)   if (Var[121] == 704) {
+[015E] (62)     stopScript(8);
+[0160] (5A)     Var[118] += 64;
+[0164] (A2)     Var[117] = saveLoadGame(Var[118]);
+[0167] (48)     if (Var[117] == 3) {
+[016D] (18)       goto 0183;
+[0170] (**)     }
+[0170] (42)     startScript(8);
+[0172] (**)   }
+[0172] (19)   doSentence(253,706,0,1);
+[0179] (19)   doSentence(253,705,0,1);
+[0180] (18)   goto 0031;
+[0183] (**) }
+[0183] (62) stopScript(8);
+[0185] (C0) endCutscene();
+[0186] (71) VAR_RESULT = getActorCostume(1);
+[0189] (48) if (VAR_RESULT == 30) {
+[018F] (42)   startScript(108);
+[0191] (**) }
+[0191] (A0) stopObjectCode();
+END

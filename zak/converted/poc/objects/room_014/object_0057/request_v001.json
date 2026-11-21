@@ -1,0 +1,17 @@
+{
+  "room": 14,
+  "object_id": 57,
+  "prompt": "Precision recreation of ONE small game-state image patch as a premium polished realistic AAA Unreal Engine 5 asset. REFERENCE 1 is the exact TARGET PATCH and its exact state. REFERENCE 2 is the whole old room ONLY to understand what the tiny pixels represent; never output the whole room. Target position in original 320x128 room: x=136, y=40, width=16, height=8. Output ONLY the target patch with these proportions 16:8, matching its exact crop, camera, silhouette, relative positions, object orientation and palette. Resource label 'ankh' is context only: it may name an item that has been REMOVED. If reference 1 is an empty surface/background after pickup, keep it empty; do not invent the named prop. Use the whole-room context to distinguish real objects (lamps, drawers, instruments, switches, creatures, ornaments) from meaningless pixel blocks. Refine visible geometry into natural smooth surfaces, physically plausible materials and beautiful lighting. Do not add extra furniture, surrounding room area, text, letters, numbers, logos, buttons, symbols, marks or puzzle clues. Preserve actual existing lettering and symbols exactly. For animation, retain this specific phase, not a generic alternative. Black pixels remain opaque if black in the source. This is a tightly cropped opaque state patch, not an isolated inventory icon, not a redesign.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_014\\object_0057\\frame_000.png",
+    "C:\\code\\zac\\docs\\scummvm-tools-2.9.0-win32-x86_64\\zak\\converted\\images\\backgrounds\\LFv2_0014.png"
+  ],
+  "source_rectangle": [
+    136,
+    40,
+    16,
+    8
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-eee6d828-c804-4f1f-97db-00e60ca0937b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "context-assisted generation; visual QA pending"
+}

@@ -1,0 +1,13 @@
+Events:
+  FD - 0013
+[0013] (19) doSentence(254,337,0,1);
+[001A] (44) unless (Var[49] > 52) goto 0035;
+[0020] (45) drawObject(335,Var[49],5);
+[0025] (C6) Var[49]--;
+[0027] (45) drawObject(336,Var[49],5);
+[002C] (1C) startSound(83);
+[002E] (80) breakHere();
+[002F] (48) unless (Var[49] == 52) goto 0020;
+[0035] (19) doSentence(250,338,0,1);
+[003C] (00) stopObjectCode();
+END

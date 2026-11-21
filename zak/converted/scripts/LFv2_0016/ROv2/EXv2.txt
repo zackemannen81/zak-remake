@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/EXv2
+[0000] (3C) stopSound(83);
+[0002] (3C) stopSound(19);
+[0004] (BD) setActorElevation(VAR_EGO,0);
+[0007] (A8) if (Var[56]) {
+[000B] (19)   doSentence(253,343,0,1);
+[0012] (**) }
+[0012] (00) stopObjectCode();
+END

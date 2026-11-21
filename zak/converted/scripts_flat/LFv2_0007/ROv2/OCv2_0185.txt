@@ -1,0 +1,24 @@
+Events:
+  11 - 0023
+  FD - 002E
+[0023] (1A) Var[47] = 750;
+[0027] (1A) Var[46] = 81;
+[002B] (42) startScript(24);
+[002D] (00) stopObjectCode();
+[002E] (9A) Var[66] = Var[234];
+[0031] (48) unless (Var[45] == 44) goto 003B;
+[0037] (1A) Var[66] = 38;
+[003B] (48) unless (Var[45] == 184) goto 0045;
+[0041] (1A) Var[66] = 33;
+[0045] (48) unless (Var[45] == 188) goto 004F;
+[004B] (1A) Var[66] = 49;
+[004F] (48) unless (Var[45] == 187) goto 0059;
+[0055] (1A) Var[66] = 30;
+[0059] (A8) unless (Var[66]) goto 0069;
+[005D] (5E) walkActorTo(10,Var[66],44);
+[0061] (3B) waitForActor(10);
+[0063] (11) animateActor(10,246);
+[0066] (18) goto 006C;
+[0069] (76) walkActorToObject(10,Var[45]);
+[006C] (00) stopObjectCode();
+END

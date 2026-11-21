@@ -1,0 +1,17 @@
+Events:
+   1 - 001B
+   2 - 0021
+   D - 0027
+[001B] (42) startScript(10);
+[001D] (07) setState08(155);
+[0020] (00) stopObjectCode();
+[0021] (42) startScript(11);
+[0023] (47) clearState08(155);
+[0026] (00) stopObjectCode();
+[0027] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 003F;
+[002B] (A8) unless (Var[56]) goto 0039;
+[002F] (19) doSentence(253,343,0,1);
+[0036] (18) goto 003F;
+[0039] (24) loadRoomWithEgo(155,4,26,51);
+[003F] (00) stopObjectCode();
+END

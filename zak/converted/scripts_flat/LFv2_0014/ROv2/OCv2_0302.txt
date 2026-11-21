@@ -1,0 +1,8 @@
+Events:
+   1 - 0022
+   D - 001B
+[001B] (24) loadRoomWithEgo(565,199,255,255);
+[0021] (00) stopObjectCode();
+[0022] (19) doSentence(1,300,0,1);
+[0029] (00) stopObjectCode();
+END

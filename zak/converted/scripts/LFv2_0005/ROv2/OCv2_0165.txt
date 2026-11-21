@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0005/ROv2/OCv2_0165
+Events:
+   C - 0019
+  FD - 004B
+[0019] (D8) printEgo("Society for Ancient Wisdom\x01Deposit artifacts in slot.");
+[004A] (00) stopObjectCode();
+[004B] (48) if (VAR_EGO == 1) {
+[0051] (D8)   printEgo("It's connected with wires.");
+[006A] (18) } else {
+[006D] (D8)   printEgo("That would be stealing.");
+[0083] (**) }
+[0083] (00) stopObjectCode();
+END

@@ -1,0 +1,3999 @@
+[
+  {
+    "label": "Room 001 / object 0110 / rope",
+    "reference": "zak/converted/images/objects/room_001/object_0110/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0110/state_v006.png",
+    "sha256": "ea50ec42ab10fb15f3ec22ac132b2a0176f287fddff4c5fb15bef0630fc61263",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0108 / loose boards",
+    "reference": "zak/converted/images/objects/room_001/object_0108/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0108/state_v001.png",
+    "sha256": "6ab099fa7c9210f90567e4a30fb44ddf2545887dd6d232634821db891899b671",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0107 / rug corner",
+    "reference": "zak/converted/images/objects/room_001/object_0107/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0107/state_v001.png",
+    "sha256": "f3e961006cdfbc0da2596a24db961dab35ad365fdd6b62b9a4a7ceeb0225968f",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0109 / rug corner",
+    "reference": "zak/converted/images/objects/room_001/object_0109/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0109/state_v006.png",
+    "sha256": "d46ef7f545e28b3b21151cb2507b8cc8b98678b62a1c2da962d05697fe509f5e",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0085 / bed",
+    "reference": "zak/converted/images/objects/room_001/object_0085/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0085/state_v001.png",
+    "sha256": "2c269bc2f0728b0985c89f0dfead4333acc630e430ad3fb457be56e724d683bb",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0084 / door",
+    "reference": "zak/converted/images/objects/room_001/object_0084/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0084/state_v001.png",
+    "sha256": "dbf378cce47088b14a7e278439e8e6d04e99c00058e0e99ad35ba8af0f8ee4a1",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0017 / torn wallpaper",
+    "reference": "zak/converted/images/objects/room_001/object_0017/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0017/state_v001.png",
+    "sha256": "842ca8ff03b9350cdf6cff7e611179d6439a831ff48139109f10936b2214d58f",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0097 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0097/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0097/state_v006.png",
+    "sha256": "6b9bb24e1011dfb69296d39207b7445d6b41cf3b5803ecad21265144134cc889",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0098 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0098/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0098/state_v006.png",
+    "sha256": "46461703acc3efead5a163513c89c32852079cfe3fae32d33bf9ab6f3277249a",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0099 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0099/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0099/state_v006.png",
+    "sha256": "50ba833ba8b36bae3e89926fc1d0280b71c3a71092e7aa4d86e84588a35bf600",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0100 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0100/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0100/state_v006.png",
+    "sha256": "387070550312941c7815f73607a55a82cda4a2de81890843272c1987a571056f",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0101 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0101/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0101/state_v006.png",
+    "sha256": "83b8601a08430233f03802964344caa31124244b6244cb959b635e2d58b2fb55",
+    "sheet": "objects_000.jpg"
+  },
+  {
+    "label": "Room 001 / object 0102 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0102/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0102/state_v006.png",
+    "sha256": "d899bbcdc50a7e2497e83c53184ac25eacaae6393a8b5294063ddc895b540dbe",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0093 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0093/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0093/state_v006.png",
+    "sha256": "2fade372f4a74ec196e14e1f7b390207076246a53dc3ba168de42491e0b09fb0",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0014 / Sushi in fish bowl",
+    "reference": "zak/converted/images/objects/room_001/object_0014/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0014/state_v002.png",
+    "sha256": "b4da3d8a479f5e78437d9e1f98812259cfa69e8b4cd1932362b808c34b1cb748",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0015 / phone bill@@@@",
+    "reference": "zak/converted/images/objects/room_001/object_0015/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0015/state_v003.png",
+    "sha256": "c4777e23c07de2f57f1acaae1c9aee6ab3bd6eb8a8d017226a2b91aff8a378b6",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0016 / kazoo",
+    "reference": "zak/converted/images/objects/room_001/object_0016/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0016/state_v002.png",
+    "sha256": "425365789eb5a715bfb8ba1f44b54470075171fdc925a5fab1d7b992e81c3c81",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0092 / dresser drawer",
+    "reference": "zak/converted/images/objects/room_001/object_0092/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0092/state_v001.png",
+    "sha256": "166d479755ca78477d22341f4973bdc9cf4c3e6a75d85b739b8e428da2ea41cf",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0018 / CashCard",
+    "reference": "zak/converted/images/objects/room_001/object_0018/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0018/state_v006.png",
+    "sha256": "d8567c0f3e1d2d4b06661104fecb85e7b54db07618acbede8a43e0d48b38416d",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0106 / plastic card",
+    "reference": "zak/converted/images/objects/room_001/object_0106/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0106/state_v001.png",
+    "sha256": "3f4e1aad894854d6385c70d78abfca756e9390d576fc24f5f640981e267e3dde",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0094 / desk drawer",
+    "reference": "zak/converted/images/objects/room_001/object_0094/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0094/state_v003.png",
+    "sha256": "c945dba56b127d066a20bde113d03d33fcfbf54fa974852c3e73a0b2a1ea63f7",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0019 / receiver",
+    "reference": "zak/converted/images/objects/room_001/object_0019/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0019/state_v001.png",
+    "sha256": "31800ce97ac464c0fde95a86efd8d75e966788d506d301d85c1ecf6180957def",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0087 / telephone",
+    "reference": "zak/converted/images/objects/room_001/object_0087/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0087/state_v006.png",
+    "sha256": "11b533ceec444facc8ab22a5817700e1668a359bc30fdbedd7b51c450efe5c82",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0089 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0089/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0089/state_v006.png",
+    "sha256": "ed1c2fd9c3fcbc70a6cb003dbe2f4faa89ed11497b184344f28fdcebf31fab06",
+    "sheet": "objects_012.jpg"
+  },
+  {
+    "label": "Room 001 / object 0088 / answering machine",
+    "reference": "zak/converted/images/objects/room_001/object_0088/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0088/state_v006.png",
+    "sha256": "918a8628ab73f723dadbd49d2da2e35656d72b06eb58f3d30a7fdf6a959ef5e1",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 001 / object 0104 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0104/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0104/state_v003.png",
+    "sha256": "315c2d29050c1430c90b0323259af82f4fc46cd9af746cfa8c448e9f5bf1e383",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 001 / object 0105 / ",
+    "reference": "zak/converted/images/objects/room_001/object_0105/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0105/state_v006.png",
+    "sha256": "160f6ae049feca5e1629790e5129d76afb9c7a3e2f2d76a187c620c3721c77ce",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 001 / object 0103 / lamp@@@@@@@@@",
+    "reference": "zak/converted/images/objects/room_001/object_0103/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0103/state_v003.png",
+    "sha256": "a7a6c33c1ed8f04ae050ce1caf205d5b418f41bc4c115d18321c2a0e55cf2b33",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 001 / object 0095 / cat clock",
+    "reference": "zak/converted/images/objects/room_001/object_0095/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0095/state_v002.png",
+    "sha256": "33328e7886f53483fa7ef2ba4c5586485d13575a3c4f704b3493e784e5571f66",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 001 / object 0096 / cat clock",
+    "reference": "zak/converted/images/objects/room_001/object_0096/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0096/state_v007.png",
+    "sha256": "ca34d0b44580e5ac4052a0667911ffe82b03055f834ed5ad113a043a70baea8d",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 001 / object 0090 / window shade",
+    "reference": "zak/converted/images/objects/room_001/object_0090/frame_000.png",
+    "file": "zak/converted/poc/objects/room_001/object_0090/state_v001.png",
+    "sha256": "a7ba0415fb10be2446e672d2ea52a366f48cb41f5313c104f9606f298dc06ae3",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 002 / object 0026 / butter knife@@@@@",
+    "reference": "zak/converted/images/objects/room_002/object_0026/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0026/state_v003.png",
+    "sha256": "8d45645bfcff1375d3919208134fceff5ed5f0bf4ba6b2ef5b2e43de0c2b7bbf",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 002 / object 0024 / small key",
+    "reference": "zak/converted/images/objects/room_002/object_0024/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0024/state_v001.png",
+    "sha256": "8997e5894dcd8c7672161bd4dbf64d8fa7a9956f08b74c344bc2fb4105fb015f",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 002 / object 0111 / door",
+    "reference": "zak/converted/images/objects/room_002/object_0111/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0111/state_v001.png",
+    "sha256": "32bb4a2fa689c252f5999da04ac855c1b6e233081460c5fb9c2b30b05093a52e",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 002 / object 0112 / door",
+    "reference": "zak/converted/images/objects/room_002/object_0112/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0112/state_v001.png",
+    "sha256": "11857c1dd8b08021b8a7ea5b3a05402509df1ddd77f4636afae78be83a5d768f",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 002 / object 0133 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0133/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0133/state_v001.png",
+    "sha256": "4d4a46e1940d5022fb6084714ce347b2f95e9350ff24ba9aeaff8d032d5498a9",
+    "sheet": "objects_024.jpg"
+  },
+  {
+    "label": "Room 002 / object 0120 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0120/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0120/state_v001.png",
+    "sha256": "94a30f6f66a09c140a9b04a722c0b79984fe38827ee17b0fd130605907218505",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0114 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0114/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0114/state_v001.png",
+    "sha256": "8bbbe0518e33a404f4a48c36dd41f5e5b4bdb0f16ec4a09dd07b636daeeed0e1",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0115 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0115/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0115/state_v001.png",
+    "sha256": "0be768f1012d2989219be08f2e47ccd110019236ccabd7b2140feacd96726141",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0116 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0116/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0116/state_v001.png",
+    "sha256": "46d3c42e2bef87c98b9fbab597d24c6e4cb31660d08b4edc77abb7326af5ea60",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0020 / power cord",
+    "reference": "zak/converted/images/objects/room_002/object_0020/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0020/state_v006.png",
+    "sha256": "4ee93fb896200be5fbb9045016438304c20b25818b74a5fa3592ddad995cf3dc",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0118 / power outlet",
+    "reference": "zak/converted/images/objects/room_002/object_0118/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0118/state_v006.png",
+    "sha256": "0807d70c56feb9ef0dc908441401fac4cfb1b67e302b2125a8a8f15f14f74575",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0021 / remote control",
+    "reference": "zak/converted/images/objects/room_002/object_0021/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0021/state_v001.png",
+    "sha256": "dfc7421541f2edceed7f48798d92cb12b4d32feea9554a329f3ea1b07be7c279",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0131 / seat cushion",
+    "reference": "zak/converted/images/objects/room_002/object_0131/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0131/state_v001.png",
+    "sha256": "b0da610bd9f1cb4c1c1de6c202d56cdf83295b0b78e8f6ce2b076988b2f4fc2d",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0119 / seat cushion",
+    "reference": "zak/converted/images/objects/room_002/object_0119/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0119/state_v006.png",
+    "sha256": "19093b50f3932d216aedcfb4a66d0c89f7482fadb6adca874e6a319ea1fa3886",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0132 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0132/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0132/state_v006.png",
+    "sha256": "50bdb154d910622bf147fb2c68c6ca62fcf043e3af8f81a46b469f867f5dde4c",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0023 / bread crumbs",
+    "reference": "zak/converted/images/objects/room_002/object_0023/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0023/state_v006.png",
+    "sha256": "bd074d6e751115ce43307f7346fd4ce7d970e0b7786ecdb9d32352a5a428a8f0",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0126 / pipe",
+    "reference": "zak/converted/images/objects/room_002/object_0126/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0126/state_v006.png",
+    "sha256": "727c5a788107c556961baab1b0aef6f40a49a4ce206a9f1edbb07479d33df78b",
+    "sheet": "objects_036.jpg"
+  },
+  {
+    "label": "Room 002 / object 0025 / box of crayons",
+    "reference": "zak/converted/images/objects/room_002/object_0025/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0025/state_v006.png",
+    "sha256": "849cf14967e8d4d05a41db6ce91e17320bfbd7baa64ae0f2286c9b349496e349",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0127 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0127/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0127/state_v006.png",
+    "sha256": "ade363269b879aec59d296dfdda6f2408f8ed6b6c1fa6c7f1ddd98e9ebd6bb88",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0128 / ",
+    "reference": "zak/converted/images/objects/room_002/object_0128/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0128/state_v006.png",
+    "sha256": "d3f0505809c19af818ac7fd3968d59f2bb7e26d51139a55bcb603b5600677f6f",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0121 / cabinet",
+    "reference": "zak/converted/images/objects/room_002/object_0121/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0121/state_v001.png",
+    "sha256": "f31669a8b433f2772dbccf4bfeee75fed772c43970825f8eba29c6e715ee6088",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0130 / stale bread",
+    "reference": "zak/converted/images/objects/room_002/object_0130/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0130/state_v006.png",
+    "sha256": "f27d6ead49f862c4e39f0d339ca72c73722df0bdb2dbfd39eb8af296e4be3c4b",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0129 / sink",
+    "reference": "zak/converted/images/objects/room_002/object_0129/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0129/state_v001.png",
+    "sha256": "565843eb8370eeda3f56e444c17b14b29aa6437ed9b7a3e24709abd56e575898",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0123 / faucet",
+    "reference": "zak/converted/images/objects/room_002/object_0123/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0123/state_v006.png",
+    "sha256": "cd055dffd433462dea147a44691869dc2cc0121a02d76642c2d5006fbd07eef1",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0022 / egg",
+    "reference": "zak/converted/images/objects/room_002/object_0022/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0022/state_v006.png",
+    "sha256": "57ea496298bfc65e4c1ca7c6beac5aecad82d251e03bdc598507f3a230b69988",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 002 / object 0125 / refrigerator",
+    "reference": "zak/converted/images/objects/room_002/object_0125/frame_000.png",
+    "file": "zak/converted/poc/objects/room_002/object_0125/state_v001.png",
+    "sha256": "17e5d5f49ad017d08c5fa6f64b5ecdfe98f7c80562dc031978bd66f562b2c68e",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 003 / object 0135 / door",
+    "reference": "zak/converted/images/objects/room_003/object_0135/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0135/state_v001.png",
+    "sha256": "31603b3d02986d3b67cea7915d7f3b97c284f40ef8e57988218001b61efbdec6",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 003 / object 0136 / door",
+    "reference": "zak/converted/images/objects/room_003/object_0136/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0136/state_v006.png",
+    "sha256": "bf72a558056ebf9a4271003e9750ef46741d4ec8c25d3b01b0da9295294e96ba",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 003 / object 0137 / ",
+    "reference": "zak/converted/images/objects/room_003/object_0137/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0137/state_v001.png",
+    "sha256": "e0d45bd9b96d9bdc4ddf6d402886c0c6720bb81ce03478bf7e0128e1e06a83d4",
+    "sheet": "objects_048.jpg"
+  },
+  {
+    "label": "Room 003 / object 0028 / mailbox",
+    "reference": "zak/converted/images/objects/room_003/object_0028/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0028/state_v006.png",
+    "sha256": "2e963ed039b29190055bc924fc43aebe660b220c99ad55b0cd38040bf2d462c4",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0139 / letter",
+    "reference": "zak/converted/images/objects/room_003/object_0139/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0139/state_v006.png",
+    "sha256": "94dfa37357323d2cf1bd5dc288cc2b11ac890ac668dbd227084c014c44561a74",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0138 / mailbox",
+    "reference": "zak/converted/images/objects/room_003/object_0138/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0138/state_v006.png",
+    "sha256": "619753010cd6567d3f3129c4472ea5f24f719e929ee3168552ebb8131ff3c0d1",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0142 / bus",
+    "reference": "zak/converted/images/objects/room_003/object_0142/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0142/state_v001.png",
+    "sha256": "09c9025bf5d4e505cb1184728049e61948ef5609f43ca0f694bb45e1b281e9cf",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0143 / ",
+    "reference": "zak/converted/images/objects/room_003/object_0143/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0143/state_v001.png",
+    "sha256": "cfd0e2401e4636a11d460c4fc132bbf3f0d99227b794c9185d026ba27bf84cf2",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0144 / bus driver",
+    "reference": "zak/converted/images/objects/room_003/object_0144/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0144/state_v001.png",
+    "sha256": "346dea4e193867f107b89c4232fc9d33bd34618504ab228768152c478ed07ae3",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0145 / ",
+    "reference": "zak/converted/images/objects/room_003/object_0145/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0145/state_v001.png",
+    "sha256": "bec0f3dcce36847283a527c23e0064eb118d5024360379145fadf5744fccfccf",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0146 / ",
+    "reference": "zak/converted/images/objects/room_003/object_0146/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0146/state_v006.png",
+    "sha256": "145a1b66770ae8fff9ba2bcddee983168144a02f44f54cac02bf010857aa41b7",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0029 / stale bread",
+    "reference": "zak/converted/images/objects/room_003/object_0029/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0029/state_v001.png",
+    "sha256": "e9e4e0dc95e71fbea4f04b32508f9b25a9afc5fc0921835ea2b4da784590bf4a",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 003 / object 0148 / ",
+    "reference": "zak/converted/images/objects/room_003/object_0148/frame_000.png",
+    "file": "zak/converted/poc/objects/room_003/object_0148/state_v006.png",
+    "sha256": "1b5668034a34d3e9ce420820cf04d77e16dd6c2bc8d47ff9d5252543f5a2f78e",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 004 / object 0151 / door",
+    "reference": "zak/converted/images/objects/room_004/object_0151/frame_000.png",
+    "file": "zak/converted/poc/objects/room_004/object_0151/state_v001.png",
+    "sha256": "132f27b1ab08be96d81706570df2b9e39c6975b07048b1b808996bf6cab32def",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 004 / object 0030 / application",
+    "reference": "zak/converted/images/objects/room_004/object_0030/frame_000.png",
+    "file": "zak/converted/poc/objects/room_004/object_0030/state_v001.png",
+    "sha256": "8e702982d8063eac14a6773a1f95fcbf6280ae9c8cd7b92948c08d8ff6d59667",
+    "sheet": "objects_060.jpg"
+  },
+  {
+    "label": "Room 004 / object 0159 / pay phone",
+    "reference": "zak/converted/images/objects/room_004/object_0159/frame_000.png",
+    "file": "zak/converted/poc/objects/room_004/object_0159/state_v001.png",
+    "sha256": "33f586862e176d76c8a1a66572f285a6bffa4de73ba1fddc1cdbfc3e8700f7c7",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 004 / object 0156 / counter door",
+    "reference": "zak/converted/images/objects/room_004/object_0156/frame_000.png",
+    "file": "zak/converted/poc/objects/room_004/object_0156/state_v001.png",
+    "sha256": "7bf99eafc40ebdfd6a6f73c22bba99f22d22aa85ac8eb00b2183e9a4d6ab2071",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 004 / object 0155 / door",
+    "reference": "zak/converted/images/objects/room_004/object_0155/frame_000.png",
+    "file": "zak/converted/poc/objects/room_004/object_0155/state_v001.png",
+    "sha256": "a2b455b039f1c57117c89ae29f44d2da4cf034ec7232538c013f9996304a9bbe",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 005 / object 0169 / drop slot",
+    "reference": "zak/converted/images/objects/room_005/object_0169/frame_000.png",
+    "file": "zak/converted/poc/objects/room_005/object_0169/state_v001.png",
+    "sha256": "9aa9e5943cccb04af2bdf3cbb1e2a5ac00c5c3a13d98d5feb6b819da084bb6d3",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 005 / object 0170 / ",
+    "reference": "zak/converted/images/objects/room_005/object_0170/frame_000.png",
+    "file": "zak/converted/poc/objects/room_005/object_0170/state_v001.png",
+    "sha256": "556d82c774afae7e650b6cecb19cddf943930030460dcb71bf7c3c53b7ceb53e",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 005 / object 0171 / ",
+    "reference": "zak/converted/images/objects/room_005/object_0171/frame_000.png",
+    "file": "zak/converted/poc/objects/room_005/object_0171/state_v001.png",
+    "sha256": "43a9c595155f5f56333baf52a957bc4283c4ce12c5a44824bd640ef4b024e29b",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 005 / object 0166 / bus",
+    "reference": "zak/converted/images/objects/room_005/object_0166/frame_000.png",
+    "file": "zak/converted/poc/objects/room_005/object_0166/state_v001.png",
+    "sha256": "e1fe6843b7bade2a6e37b4a66cb74315e2e99659082401d038a7d6e4285b9622",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 005 / object 0161 / door",
+    "reference": "zak/converted/images/objects/room_005/object_0161/frame_000.png",
+    "file": "zak/converted/poc/objects/room_005/object_0161/state_v001.png",
+    "sha256": "482b858519bff40d6ef2232e50b068fd755a40f95444f93c2aeedda6ebb139d8",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 005 / object 0162 / door",
+    "reference": "zak/converted/images/objects/room_005/object_0162/frame_000.png",
+    "file": "zak/converted/poc/objects/room_005/object_0162/state_v001.png",
+    "sha256": "a01e72a639c865a921eca1942079fc9c11821c967196a37cd65149965e4e155a",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 005 / object 0031 / bobby pin sign",
+    "reference": "zak/converted/images/objects/room_005/object_0031/frame_000.png",
+    "file": "zak/converted/poc/objects/room_005/object_0031/state_v001.png",
+    "sha256": "bb685c34e313acdc650d03a876b54501969f7e2941735df9fc119504cd5a37e9",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 006 / object 0032 / CashCard",
+    "reference": "zak/converted/images/objects/room_006/object_0032/frame_000.png",
+    "file": "zak/converted/poc/objects/room_006/object_0032/state_v006.png",
+    "sha256": "ad05ccfa69b3374d2c111400482761b196d135e60c4265b73646d9895caeda59",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 006 / object 0033 / crystal shard",
+    "reference": "zak/converted/images/objects/room_006/object_0033/frame_000.png",
+    "file": "zak/converted/poc/objects/room_006/object_0033/state_v001.png",
+    "sha256": "94b238cf3e07b359d5b58889648109ae89bd5d48c57020c52cb232f697888629",
+    "sheet": "objects_072.jpg"
+  },
+  {
+    "label": "Room 006 / object 0172 / door",
+    "reference": "zak/converted/images/objects/room_006/object_0172/frame_000.png",
+    "file": "zak/converted/poc/objects/room_006/object_0172/state_v001.png",
+    "sha256": "ffaf2c0d6fec585c859442bfb7e36fa95484294a0b49a3456f05022598dea818",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 006 / object 0175 / blotter",
+    "reference": "zak/converted/images/objects/room_006/object_0175/frame_000.png",
+    "file": "zak/converted/poc/objects/room_006/object_0175/state_v006.png",
+    "sha256": "24fa14fee1d4fae00592c2d87ae9cc3406eb587a68a555c36790d89f451dd1e5",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 006 / object 0178 / drawing",
+    "reference": "zak/converted/images/objects/room_006/object_0178/frame_000.png",
+    "file": "zak/converted/poc/objects/room_006/object_0178/state_v001.png",
+    "sha256": "a60cd75ff4df17f01b46f43e346557e4abb3fb790a652731c4db7587ebe23bec",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0034 / tool kit@@@@@",
+    "reference": "zak/converted/images/objects/room_007/object_0034/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0034/state_v001.png",
+    "sha256": "250448f2c9ace552bbd6476b5c2be1f91106340f9507bad02e4c88f1c31b371d",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0039 / wet suit",
+    "reference": "zak/converted/images/objects/room_007/object_0039/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0039/state_v001.png",
+    "sha256": "96334ab9ee0c384627fa2ba02fe1a04cc4e46cdfbdffcc2600fffa33b87cf716",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0040 / nose glasses",
+    "reference": "zak/converted/images/objects/room_007/object_0040/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0040/state_v001.png",
+    "sha256": "bcbfd20ba0135707fded2abd968fb66a7eb21afd1e164ddf596e7c5a9aaf5a8f",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0043 / hat",
+    "reference": "zak/converted/images/objects/room_007/object_0043/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0043/state_v001.png",
+    "sha256": "8d1bbee56ac680cce6c319028f50e2e2f859fd729167ad2c88765cd2504250c8",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0044 / golf club",
+    "reference": "zak/converted/images/objects/room_007/object_0044/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0044/state_v001.png",
+    "sha256": "f4025bd2869d14adbd09f46ab43a9d634b7f4337682b8dd410e959d8dca7ab56",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0180 / door",
+    "reference": "zak/converted/images/objects/room_007/object_0180/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0180/state_v001.png",
+    "sha256": "767403df0384f6d05111ee216330f80cb9bc3d05133c8a8938667732365f87d1",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0183 / crystal shard",
+    "reference": "zak/converted/images/objects/room_007/object_0183/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0183/state_v006.png",
+    "sha256": "b8548730bf48a9e518a37d400593be83c4af92148d1322079b635a0e6e2133cc",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0184 / crystal shard",
+    "reference": "zak/converted/images/objects/room_007/object_0184/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0184/state_v004.png",
+    "sha256": "00ee28e9271761e845f9eff4279f57082600962b53e5fd6d7fc1fe637fe97b45",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0185 / yellow crystal",
+    "reference": "zak/converted/images/objects/room_007/object_0185/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0185/state_v001.png",
+    "sha256": "a21616965af18fe932a82a75316a0e0c207990c419e259c64a69befc8c5e048d",
+    "sheet": "objects_084.jpg"
+  },
+  {
+    "label": "Room 007 / object 0186 / blue crystal",
+    "reference": "zak/converted/images/objects/room_007/object_0186/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0186/state_v001.png",
+    "sha256": "7b3a3a9c0368d88154da78dd98e20ed0c8c8d5a04755bbef930f7fff78cdf93d",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 007 / object 0187 / butter knife",
+    "reference": "zak/converted/images/objects/room_007/object_0187/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0187/state_v004.png",
+    "sha256": "c89fd7b212836e501b812b3efd619904118542036186f6e4739777a26a04e585",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 007 / object 0188 / remote control",
+    "reference": "zak/converted/images/objects/room_007/object_0188/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0188/state_v004.png",
+    "sha256": "609886499613eddc410f2cf7097ab9fbc5067ff57a135b86dd9667b0c4f93a9d",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 007 / object 0041 / guitar",
+    "reference": "zak/converted/images/objects/room_007/object_0041/frame_000.png",
+    "file": "zak/converted/poc/objects/room_007/object_0041/state_v001.png",
+    "sha256": "42adddce1529ca98ebd73a9b30f77f7393a62375626120ff1319be70c9aabf96",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0214 / sign",
+    "reference": "zak/converted/images/objects/room_008/object_0214/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0214/state_v001.png",
+    "sha256": "3caae28d483702e96ce544513010eaf6cea617c472cc458b7d392be140c121b3",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0191 / door",
+    "reference": "zak/converted/images/objects/room_008/object_0191/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0191/state_v001.png",
+    "sha256": "3a715699ea61d6f60fcc541849896495e569ac62308a812bec78820b20ae41c1",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0213 / ticket",
+    "reference": "zak/converted/images/objects/room_008/object_0213/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0213/state_v001.png",
+    "sha256": "9b04d6db3f9b35f866b758ac89c3c5ee7ada547cc9b79f76ac12c55da2004030",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0195 / plane",
+    "reference": "zak/converted/images/objects/room_008/object_0195/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0195/state_v006.png",
+    "sha256": "b205a10172bb0117983ccad3e694f5896b02b6009e29862a68b73164e5aff08b",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0196 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0196/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0196/state_v001.png",
+    "sha256": "bc1b58709b8abbf0ab36f37ddebf53af3f14023191b60b6f8e52509c664ba63f",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0197 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0197/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0197/state_v001.png",
+    "sha256": "bd18dc64f20afd9824f5026b3613817d68410ea1ec9744871dbcd710df1f9206",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0198 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0198/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0198/state_v001.png",
+    "sha256": "e286921d8a1d8bcb097bb67cdc831c8c0f6c62504dce3b34a48f3909db7b0e4a",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0199 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0199/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0199/state_v001.png",
+    "sha256": "566d7dc1cfcd62ff5d95ac7d527b9b9c4a7323c87d8d7f14f68c73abbe676d79",
+    "sheet": "objects_096.jpg"
+  },
+  {
+    "label": "Room 008 / object 0200 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0200/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0200/state_v001.png",
+    "sha256": "fff3ddfd319ef3e4ba52f3ab7da3a61fbaa025b42e43476b2e110aa85ec79749",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0192 / plant",
+    "reference": "zak/converted/images/objects/room_008/object_0192/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0192/state_v001.png",
+    "sha256": "8f5ff0b9c112a57346d30741f6bd3b8032a3538609aa1b1bef9dadef59eb5e85",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0215 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0215/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0215/state_v001.png",
+    "sha256": "0d2c2565009829c78f8cbfd81b1c2daa04d8bf7a3243661c2d7b20fcff4bb72b",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0216 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0216/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0216/state_v001.png",
+    "sha256": "a5a1eec9fba3be0082339bcc9ed43c9267f11f3a7c35ce583d7c426cbdf06c36",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0201 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0201/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0201/state_v006.png",
+    "sha256": "eae15ce668aca5c6dfcdff9315f0485d3d81689ebfdbdbf493f0dd7328219a90",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0202 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0202/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0202/state_v004.png",
+    "sha256": "4145907a98973b6b869915889fdbfe6dc0dc1cbf0ebfb69d6224556aba875158",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0203 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0203/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0203/state_v004.png",
+    "sha256": "bf648fdc3204649cbb977e161c579ff07962259fbce441d626b4c63d425f0aa0",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0204 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0204/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0204/state_v004.png",
+    "sha256": "c0a8e6aa9faac103e9042072bb299e2f871d460b32002f93da00f92b9de0ea49",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0205 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0205/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0205/state_v004.png",
+    "sha256": "ad05493a4566818ffdd42dfe51d7dcdbf9e581711957b589ef80e3383189d726",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0206 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0206/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0206/state_v004.png",
+    "sha256": "7702b6de0249a8e5f2c20fffc5b662881affeb2b00c7a24310f6e78f036c3d2d",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0207 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0207/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0207/state_v004.png",
+    "sha256": "7be69d2443eb6002f02ea5c17b2202e0358a004d805b2a5dc28e7247767a0d95",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0208 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0208/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0208/state_v004.png",
+    "sha256": "a26d66876b27758a6d95707ab29ec30011209fbe7a20e88a53a3d861773da667",
+    "sheet": "objects_108.jpg"
+  },
+  {
+    "label": "Room 008 / object 0209 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0209/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0209/state_v004.png",
+    "sha256": "3b866cf166d87c1c6af9a0d4930fb1a77c07c235a54805f2dd404793040aa05b",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 008 / object 0210 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0210/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0210/state_v004.png",
+    "sha256": "5cc0f854110cc0b82e80882722687e91381b4671822b25abfbf5e15e63718675",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 008 / object 0211 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0211/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0211/state_v004.png",
+    "sha256": "b20a2010a2f58c1fd2af2f5022edec87a60f1143e0e56170a29717d3545015ec",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 008 / object 0212 / ",
+    "reference": "zak/converted/images/objects/room_008/object_0212/frame_000.png",
+    "file": "zak/converted/poc/objects/room_008/object_0212/state_v004.png",
+    "sha256": "69954c89bc7ee287bc46a2cab880a59a67d82dfbbd4479831ac93d81bbf52367",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0228 / ticket",
+    "reference": "zak/converted/images/objects/room_009/object_0228/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0228/state_v001.png",
+    "sha256": "5432cc2b4fc02cf639951ebe13759822b8c65e708df98606ebaf63e0f4c870f3",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0221 / ",
+    "reference": "zak/converted/images/objects/room_009/object_0221/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0221/state_v001.png",
+    "sha256": "9ed44260fba86681d5751bdc274adc59177962db007fbae9c6f44640509a60b4",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0222 / ",
+    "reference": "zak/converted/images/objects/room_009/object_0222/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0222/state_v001.png",
+    "sha256": "fed1f6f9a19e8219f5968806ae6afbe65315684ed19d1f7bc2be9191fb291685",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0223 / plane",
+    "reference": "zak/converted/images/objects/room_009/object_0223/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0223/state_v001.png",
+    "sha256": "e791447a85f06be41af33ae6a10c154264b0ee7aa4fb697586611bb5402eaafb",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0224 / ",
+    "reference": "zak/converted/images/objects/room_009/object_0224/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0224/state_v001.png",
+    "sha256": "1fecb41c3e6db51554a301f876d261e87bf4c424eed27f4a58d5c962633b6f04",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0225 / ",
+    "reference": "zak/converted/images/objects/room_009/object_0225/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0225/state_v001.png",
+    "sha256": "0d20693d99cd1f474b278d8c2c0451f82b2b0b43d7881dc07ae74db3a548a8c4",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0226 / ",
+    "reference": "zak/converted/images/objects/room_009/object_0226/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0226/state_v004.png",
+    "sha256": "c15627182e7502322c2342d4b62b19e1744b75f740e7e81af86a102c85236e77",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 009 / object 0227 / ",
+    "reference": "zak/converted/images/objects/room_009/object_0227/frame_000.png",
+    "file": "zak/converted/poc/objects/room_009/object_0227/state_v001.png",
+    "sha256": "b78afc37c2945eb54e2fa666e1fc0451984c570228a10046502d65f4e4176bdb",
+    "sheet": "objects_120.jpg"
+  },
+  {
+    "label": "Room 010 / object 0229 / biplane",
+    "reference": "zak/converted/images/objects/room_010/object_0229/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0229/state_v001.png",
+    "sha256": "cffbbaa930bfc78b8da7a317f7db107c19eae6dfee17a69319df69f91f5387ee",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0239 / ",
+    "reference": "zak/converted/images/objects/room_010/object_0239/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0239/state_v001.png",
+    "sha256": "2a4002e338f4d0a8ab85b79b95c2dda89dad793749d9e8f3eaca9a4f54c9faea",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0230 / red button",
+    "reference": "zak/converted/images/objects/room_010/object_0230/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0230/state_v001.png",
+    "sha256": "b7e2b3898bf2ce2cb9a1618b2c882d90bfdad6861173f25dd32199b317a4a143",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0231 / blue button",
+    "reference": "zak/converted/images/objects/room_010/object_0231/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0231/state_v001.png",
+    "sha256": "38cb0c00599260365ce2455e0fb7871ccb66e785773a738ee21f1933cef80a82",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0232 / green button",
+    "reference": "zak/converted/images/objects/room_010/object_0232/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0232/state_v001.png",
+    "sha256": "dfb7e43f69f75b17a45c142659223f6f066078d1173c0e076b0f4b6fea1f33db",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0233 / light blue button",
+    "reference": "zak/converted/images/objects/room_010/object_0233/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0233/state_v001.png",
+    "sha256": "b1920ff156edbe47bcf0d20399fad43d7458bbf732593e2154611ae9f7fe3343",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0234 / yellow button",
+    "reference": "zak/converted/images/objects/room_010/object_0234/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0234/state_v001.png",
+    "sha256": "ee7feb2e98ceebae2e7d26c2adafa2dae804744b8987cbaa6f2a85fbe340ea13",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0235 / purple button",
+    "reference": "zak/converted/images/objects/room_010/object_0235/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0235/state_v001.png",
+    "sha256": "f44cc190a73f81e0013bf710d0d6dac64bd8228c8123aaa58583b92df60465dd",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 010 / object 0238 / door",
+    "reference": "zak/converted/images/objects/room_010/object_0238/frame_000.png",
+    "file": "zak/converted/poc/objects/room_010/object_0238/state_v001.png",
+    "sha256": "129891f36a3a8b24ea1c650444005d3547a47dff6676a9241ef051c329b8700d",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 011 / object 0241 / exploded egg",
+    "reference": "zak/converted/images/objects/room_011/object_0241/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0241/state_v004.png",
+    "sha256": "ad24f166d1917b146a8eebe86ff6f7a5d6fe2fe586d13a4c243e9c7dcf5cf4fb",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 011 / object 0262 / egg",
+    "reference": "zak/converted/images/objects/room_011/object_0262/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0262/state_v001.png",
+    "sha256": "ba7598320ee68c20fd766a25133cde9212858a0f2830c979ba6fb761b5d31acc",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 011 / object 0047 / toilet paper",
+    "reference": "zak/converted/images/objects/room_011/object_0047/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0047/state_v004.png",
+    "sha256": "fcf664b1e44f4f411aeb2cce24c3a99c1f6c704bf4dfc6c46573bf4280c68802",
+    "sheet": "objects_132.jpg"
+  },
+  {
+    "label": "Room 011 / object 0242 / sink",
+    "reference": "zak/converted/images/objects/room_011/object_0242/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0242/state_v004.png",
+    "sha256": "165fc7b6cb0888d3dfed166dd5644974bec8c7e0593cf8e883a128d9f8b0df87",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0248 / sign",
+    "reference": "zak/converted/images/objects/room_011/object_0248/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0248/state_v004.png",
+    "sha256": "c138cb25b155087d5ed1e46a05a3fe9c5480765a90ae6c45b9fe04a19b2af0cd",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0246 / door",
+    "reference": "zak/converted/images/objects/room_011/object_0246/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0246/state_v001.png",
+    "sha256": "190529ae754d9b90da98ec50b9212265ba28cc0cf8b076b7027eefb81063a993",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0257 / suitcase",
+    "reference": "zak/converted/images/objects/room_011/object_0257/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0257/state_v004.png",
+    "sha256": "4ac3e39b6a0932e1755bbe051ec326977025273cab3e10e16bed773f60bcb088",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0258 / suitcase",
+    "reference": "zak/converted/images/objects/room_011/object_0258/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0258/state_v004.png",
+    "sha256": "c9b98f88922aef6341a4d63b1c40c354c080abe185ee846aafdadfaa689b4039",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0259 / suitcase",
+    "reference": "zak/converted/images/objects/room_011/object_0259/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0259/state_v004.png",
+    "sha256": "26e3b11ec1d5b2f08bdde6b0987ac2cf74de60241d3697ad5c11a00f27084ce8",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0050 / oxygen tank",
+    "reference": "zak/converted/images/objects/room_011/object_0050/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0050/state_v004.png",
+    "sha256": "de1fef7e31467beeb948192ef0b659c48b0181a1fc9e851f0eac3d0af12373ee",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0249 / bin",
+    "reference": "zak/converted/images/objects/room_011/object_0249/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0249/state_v001.png",
+    "sha256": "fe518f7ab9857b8ba413db3608dfa94e759cfd88c7258138ff4d5d1c70d062ab",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0250 / bin",
+    "reference": "zak/converted/images/objects/room_011/object_0250/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0250/state_v001.png",
+    "sha256": "df1673ca243b45821f94506f2b053da8a8509847d0dbf07ec02370ddd5a82f1e",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0251 / bin",
+    "reference": "zak/converted/images/objects/room_011/object_0251/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0251/state_v001.png",
+    "sha256": "b8a9756b45f6c13949ec19bd6835e5e63b608f9327f7ea04d199d75d8146c813",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0252 / bin",
+    "reference": "zak/converted/images/objects/room_011/object_0252/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0252/state_v001.png",
+    "sha256": "0e9756cdfd770a3ca1353cd97027f2940c1627b1801960da17b839969792fbe0",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0253 / bin",
+    "reference": "zak/converted/images/objects/room_011/object_0253/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0253/state_v001.png",
+    "sha256": "ccca24639173ce7beb0bc704ec0469a4c7824f3cd3347c71f5f4c90ff517a54a",
+    "sheet": "objects_144.jpg"
+  },
+  {
+    "label": "Room 011 / object 0254 / bin",
+    "reference": "zak/converted/images/objects/room_011/object_0254/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0254/state_v001.png",
+    "sha256": "6c0e62431766b286e2a74f59f731d279c8a286d96d326aee998787b12e7581e5",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0048 / cushion",
+    "reference": "zak/converted/images/objects/room_011/object_0048/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0048/state_v004.png",
+    "sha256": "5a7ee94f334a24587035d4d712833f05731aff1bd0fd58157e9794e3d980fe20",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0256 / door",
+    "reference": "zak/converted/images/objects/room_011/object_0256/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0256/state_v001.png",
+    "sha256": "3b31368ac218967d85001e04731828cf02dddc80e5aeee7f49b7525f880fef0a",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0049 / lighter@@@@",
+    "reference": "zak/converted/images/objects/room_011/object_0049/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0049/state_v001.png",
+    "sha256": "33925a213150d2fa38846dedd1b6ac379c61e9f055f3d40a6d562973f4cc1a81",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0261 / ",
+    "reference": "zak/converted/images/objects/room_011/object_0261/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0261/state_v001.png",
+    "sha256": "74aff1c275339546e9717743afcc705e209c56267ec18ee18c4a2493d2f258a5",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0260 / microwave oven",
+    "reference": "zak/converted/images/objects/room_011/object_0260/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0260/state_v001.png",
+    "sha256": "2f7b8624c9267ecab550b83b29a52c456c6bd4c7075b7995b0dbf989f048cf91",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0774 / ",
+    "reference": "zak/converted/images/objects/room_011/object_0774/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0774/state_v001.png",
+    "sha256": "a9269bebf45dccaed439f6ade3aa6b1f355d91b3235e807ddcfb03bd7d2ed8a4",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0775 / ",
+    "reference": "zak/converted/images/objects/room_011/object_0775/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0775/state_v001.png",
+    "sha256": "6efd823e5b52e08268d2d052d1421cd8a16fe5b51a1884f109c87fc137d1d1f8",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0263 / ",
+    "reference": "zak/converted/images/objects/room_011/object_0263/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0263/state_v001.png",
+    "sha256": "17c3a232a224ff8a3041f49aac62fd69c54edceed29a2568e038783442462443",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 011 / object 0265 / water",
+    "reference": "zak/converted/images/objects/room_011/object_0265/frame_000.png",
+    "file": "zak/converted/poc/objects/room_011/object_0265/state_v001.png",
+    "sha256": "d234c8e75e207af8b641a8b68d845a78f92b866e9db9a04a02c135b30dc14fcd",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 012 / object 0052 / tree branch",
+    "reference": "zak/converted/images/objects/room_012/object_0052/frame_000.png",
+    "file": "zak/converted/poc/objects/room_012/object_0052/state_v001.png",
+    "sha256": "d6babad736e614e7d4e8d35721be5cfde252d7a78978f0d4e25a4de56e88363c",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 012 / object 0268 / two-headed squirrel",
+    "reference": "zak/converted/images/objects/room_012/object_0268/frame_000.png",
+    "file": "zak/converted/poc/objects/room_012/object_0268/state_v001.png",
+    "sha256": "ddd1e64ad3599b0da3945eaf8c3e8174ee9cf1fc4e934bfe9df82fa398ef9d00",
+    "sheet": "objects_156.jpg"
+  },
+  {
+    "label": "Room 012 / object 0269 / ",
+    "reference": "zak/converted/images/objects/room_012/object_0269/frame_000.png",
+    "file": "zak/converted/poc/objects/room_012/object_0269/state_v005.png",
+    "sha256": "a4b8620efe212fc04cb088e7acf1346624ee5778a24aa562693883ba787a9acb",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 012 / object 0270 / ",
+    "reference": "zak/converted/images/objects/room_012/object_0270/frame_000.png",
+    "file": "zak/converted/poc/objects/room_012/object_0270/state_v005.png",
+    "sha256": "6ba931d7e99a2bf10c024a8de3f4c877ec28a77b4726483657f1b520fe0d898a",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 012 / object 0267 / loose dirt@@@",
+    "reference": "zak/converted/images/objects/room_012/object_0267/frame_000.png",
+    "file": "zak/converted/poc/objects/room_012/object_0267/state_v001.png",
+    "sha256": "6491b7378b992dd28edb269bd75bd9fd5d495881f8fe3d74656a37b3af3a8ee6",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0282 / strange markings",
+    "reference": "zak/converted/images/objects/room_013/object_0282/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0282/state_v005.png",
+    "sha256": "b6089e56e866113b8c96a0dd2b9719453d6ff9283a2e49e3b10467e4825c0d09",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0281 / ankh door",
+    "reference": "zak/converted/images/objects/room_013/object_0281/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0281/state_v001.png",
+    "sha256": "90e9e87bdea8b8101490cb050ceec40048c196af512a40b3b1b30c3971bc6d20",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0288 / paper",
+    "reference": "zak/converted/images/objects/room_013/object_0288/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0288/state_v005.png",
+    "sha256": "174b887dca396b344707758de3ebe080499ba1dbce49aa1380c1f38e0b33cb13",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0277 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0277/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0277/state_v001.png",
+    "sha256": "64248d1901269a710025590d953827bccfcab2b9c385fbfdb0c2f542fed7e80a",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0278 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0278/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0278/state_v005.png",
+    "sha256": "646e01cb5f128867b09941a93d3f0b9fc309de2777ef6f9c62bd1fab85968ccb",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0279 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0279/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0279/state_v005.png",
+    "sha256": "886b01bbc4e4f72f652ef76289a1a9b4d1a60ca7707184461332b63b885fbafe",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0280 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0280/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0280/state_v005.png",
+    "sha256": "487392cde7eec09d58c7d033ba260eb9216231d94c4804a8360bf6d3c35248d6",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0289 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0289/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0289/state_v005.png",
+    "sha256": "846c7ec9613eb6b0ae6a9e7560b841fffeaae737ee7fab77cd4d912580f05f3f",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0290 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0290/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0290/state_v005.png",
+    "sha256": "a59e73e0c60f05cec5ad5cde61217f140b459b645b4e6f6bb017800215c1acf3",
+    "sheet": "objects_168.jpg"
+  },
+  {
+    "label": "Room 013 / object 0291 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0291/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0291/state_v005.png",
+    "sha256": "0e0b1813730ae66f2f501ea11c5837888c88bc328a3f9f8a54695afdcad8efc4",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0276 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0276/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0276/state_v005.png",
+    "sha256": "605b6a43881d2242cd4928a22ef50a72f233e692c768a11c677ff03550f59c94",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0275 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0275/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0275/state_v005.png",
+    "sha256": "af7d1b40e86cabfbff5f09398dfc0c2dcf95ec2a15cd6fbf0c439bbab20a1b86",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0274 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0274/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0274/state_v005.png",
+    "sha256": "c2cfac7a8cd2226ad31add516e38daed2fbf81f4859999f4d13f330553fd473c",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0283 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0283/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0283/state_v005.png",
+    "sha256": "33fc96cb42e868982109986604af3eb69d2abb8d0292141fd4672f2389d5566b",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0284 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0284/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0284/state_v001.png",
+    "sha256": "2c0e28e75a0355d771db201e66bde85f78bbf2715b76fb7647f446d93e882e1b",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0053 / abandoned bird nest",
+    "reference": "zak/converted/images/objects/room_013/object_0053/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0053/state_v005.png",
+    "sha256": "d1b8048d42e4260db9d7cf5e8c1d4602fcd2fae5d01cc0bcf82784c80ca3123b",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0285 / two-headed squirrel",
+    "reference": "zak/converted/images/objects/room_013/object_0285/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0285/state_v005.png",
+    "sha256": "f0a7e9602d5170c1da8b147a7830c3e502d9825a1ff94da1dcf0bebe0b99a3fb",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0286 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0286/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0286/state_v005.png",
+    "sha256": "5826ccac204d02169acaae24700406d493d6b06e6d1a4c08ed1be74ffc41231c",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0287 / ",
+    "reference": "zak/converted/images/objects/room_013/object_0287/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0287/state_v005.png",
+    "sha256": "66ac87483d1218ef1b5af717edd0741dbf16551d26c014def403549e793fd91c",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 013 / object 0054 / squirrel nest",
+    "reference": "zak/converted/images/objects/room_013/object_0054/frame_000.png",
+    "file": "zak/converted/poc/objects/room_013/object_0054/state_v005.png",
+    "sha256": "758929b405ebbbdedaea0c4e08cedbd0b9f949cfc1da77750010ffa7cfc4237e",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 014 / object 0297 / door",
+    "reference": "zak/converted/images/objects/room_014/object_0297/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0297/state_v001.png",
+    "sha256": "9efff5ccd3d5da57061e4c49af6d4023cfc3ce7311cae1cfead2a8c916bb326b",
+    "sheet": "objects_180.jpg"
+  },
+  {
+    "label": "Room 014 / object 0296 / platform",
+    "reference": "zak/converted/images/objects/room_014/object_0296/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0296/state_v005.png",
+    "sha256": "d72de587a3c15c7ff4d2ee645cf6fb47c7375f38e6fb915fc8c03649d56f64a6",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0309 / platform",
+    "reference": "zak/converted/images/objects/room_014/object_0309/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0309/state_v005.png",
+    "sha256": "696f4b4d3f941fa7541d42a0d4d7eca0bd4c0d7be143c5af4465038d3aacc4b2",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0300 / tunnel",
+    "reference": "zak/converted/images/objects/room_014/object_0300/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0300/state_v001.png",
+    "sha256": "63d46992ee975efb2778f505eea12a313f4d89f65302ecbccbc81bcfbe520f56",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0299 / door",
+    "reference": "zak/converted/images/objects/room_014/object_0299/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0299/state_v001.png",
+    "sha256": "1c00ab2ece53ce42a285cc63d5eb4c75f7d7892390cf734af1dae35dc618dc28",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0302 / tunnel",
+    "reference": "zak/converted/images/objects/room_014/object_0302/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0302/state_v001.png",
+    "sha256": "046b1348fcefd65edbccd7a267dc0c99865c3fd16ebe60f52eb5a12873bba81f",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0301 / door",
+    "reference": "zak/converted/images/objects/room_014/object_0301/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0301/state_v001.png",
+    "sha256": "a9fde8d5e1f455675dc9b6d0cae94a7fec679f2260d32e9e4266599ff21aa196",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0304 / tunnel",
+    "reference": "zak/converted/images/objects/room_014/object_0304/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0304/state_v001.png",
+    "sha256": "808a067aa2741287bf174b6d98299ce69d6f1563cff761ce0aafd5a0added8e2",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0303 / door",
+    "reference": "zak/converted/images/objects/room_014/object_0303/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0303/state_v001.png",
+    "sha256": "b26212fee6defe24db9da333208248f8b79076af9fe61501cd054e17d26f24ff",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0308 / ",
+    "reference": "zak/converted/images/objects/room_014/object_0308/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0308/state_v005.png",
+    "sha256": "7ef1d535880facdc5cbd52b8c1c41409e44ca9551d7aa9726da2f352b6959bd4",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0057 / ankh",
+    "reference": "zak/converted/images/objects/room_014/object_0057/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0057/state_v005.png",
+    "sha256": "a56d6ac629a55a536f70727fe51b0baf0f29b29c895148dbb19341c6b99f3217",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0056 / crystal shard",
+    "reference": "zak/converted/images/objects/room_014/object_0056/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0056/state_v005.png",
+    "sha256": "750d6d7472de503c811fef6002229a0897d257a0630e61898b4d01e72164b245",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0307 / ",
+    "reference": "zak/converted/images/objects/room_014/object_0307/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0307/state_v005.png",
+    "sha256": "5a4cfe2eccebf46b69e5857d4c1126f328702ac83bcbf0b6a586936ca9fde27c",
+    "sheet": "objects_192.jpg"
+  },
+  {
+    "label": "Room 014 / object 0306 / ",
+    "reference": "zak/converted/images/objects/room_014/object_0306/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0306/state_v005.png",
+    "sha256": "e6de05b9978acd20b97b3bfe48fe76a10a724f993593af127ab372d6eeb3f544",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 014 / object 0294 / strange markings",
+    "reference": "zak/converted/images/objects/room_014/object_0294/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0294/state_v005.png",
+    "sha256": "65c79d76ea7d66ef1c97597671a0c8d9bb02bd9bf42aed4b72cb91c4ecf77508",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 014 / object 0305 / statue",
+    "reference": "zak/converted/images/objects/room_014/object_0305/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0305/state_v001.png",
+    "sha256": "f564fad735f8bdcde3198f1b4eb77020522d1a88d3f350915114413e369dfc4c",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 014 / object 0055 / blue crystal",
+    "reference": "zak/converted/images/objects/room_014/object_0055/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0055/state_v005.png",
+    "sha256": "8af1508ff66388e05852d09117ff8ae64e708f5085a271ec9b4dc0cd84e55edc",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 014 / object 0298 / ",
+    "reference": "zak/converted/images/objects/room_014/object_0298/frame_000.png",
+    "file": "zak/converted/poc/objects/room_014/object_0298/state_v001.png",
+    "sha256": "466811009267b7b70a98cbd3b8e69984e323b74dc93f7e778778d715b5babcd8",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0316 / button",
+    "reference": "zak/converted/images/objects/room_015/object_0316/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0316/state_v005.png",
+    "sha256": "fd158682b5c55d4b88c6f78e25ed953271e87c1f6f986a1b235b73dca177ea01",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0317 / button",
+    "reference": "zak/converted/images/objects/room_015/object_0317/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0317/state_v005.png",
+    "sha256": "63a7dc4ba3a2dc39a9afc5899d7f048c8c49291e547580d37b4af1c1068919dd",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0318 / button",
+    "reference": "zak/converted/images/objects/room_015/object_0318/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0318/state_v005.png",
+    "sha256": "0673a73bc20fa13d032042e2e67f3668e48f0972d93c9d2c269fcca2d83d25b3",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0322 / ",
+    "reference": "zak/converted/images/objects/room_015/object_0322/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0322/state_v001.png",
+    "sha256": "63e81a6195bb5912bf15f7f1235eb80a908d5055c12dfc5ffcdc0feb8f03e6b4",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0324 / ",
+    "reference": "zak/converted/images/objects/room_015/object_0324/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0324/state_v001.png",
+    "sha256": "79b2e9b8f23da269b058c1dbb5f4c3a3a37dd57fe6bae6f02570827d1d292fba",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0311 / stairs",
+    "reference": "zak/converted/images/objects/room_015/object_0311/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0311/state_v001.png",
+    "sha256": "5cac6f126f6013f19b42f6b6a5daab328a4bc7560be52ba615ca1637baa5a265",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0326 / button",
+    "reference": "zak/converted/images/objects/room_015/object_0326/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0326/state_v005.png",
+    "sha256": "fe9cf5eaf90105fe5816bf01fd3f0271ac3100c63167481704733b985ec210db",
+    "sheet": "objects_204.jpg"
+  },
+  {
+    "label": "Room 015 / object 0325 / box",
+    "reference": "zak/converted/images/objects/room_015/object_0325/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0325/state_v005.png",
+    "sha256": "be21c4cd51e4c36521b79a78f6fee237a568d25b855df6dbeadcd5f1d720bda7",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 015 / object 0058 / white crystal",
+    "reference": "zak/converted/images/objects/room_015/object_0058/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0058/state_v005.png",
+    "sha256": "0b81f205093a577b3fa67148b1c89995dbf85a4a0b0604e07c302e73f4a1cb2b",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 015 / object 0312 / containment device",
+    "reference": "zak/converted/images/objects/room_015/object_0312/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0312/state_v005.png",
+    "sha256": "34251ad0277f1885aaee530c15dce97fbe7b58138999533ad27331930f94a1e8",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 015 / object 0313 / ",
+    "reference": "zak/converted/images/objects/room_015/object_0313/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0313/state_v005.png",
+    "sha256": "94b927d39b71c5f704f6b906dc65aa70a75a3bc9beaefca24ebc5309867fa8d9",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 015 / object 0314 / ",
+    "reference": "zak/converted/images/objects/room_015/object_0314/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0314/state_v002.png",
+    "sha256": "9be55aea5b814f22f4a2f43c283d54e531d128d80c7db4d1bc16cd1db4f46341",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 015 / object 0315 / ",
+    "reference": "zak/converted/images/objects/room_015/object_0315/frame_000.png",
+    "file": "zak/converted/poc/objects/room_015/object_0315/state_v005.png",
+    "sha256": "b6cbb65c36b9d613c0046d8f1682133a8a7e0be0b766a42f22a474006ea8f98f",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 016 / object 0345 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0345/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0345/state_v003.png",
+    "sha256": "5e380064333e3f5c114b5ae39f41deb652915eee4a74548f5c12e842b97e2e26",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 016 / object 0328 / cabinet",
+    "reference": "zak/converted/images/objects/room_016/object_0328/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0328/state_v003.png",
+    "sha256": "e8508b151ea553b960b2b8a397956109b11c94de4924d6c2db770a57400c1264",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 016 / object 0329 / door",
+    "reference": "zak/converted/images/objects/room_016/object_0329/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0329/state_v003.png",
+    "sha256": "419edf0f12684e2679a3f837f2355a32b7a2105c9d470e31ddc2fc334b5e6536",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 016 / object 0346 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0346/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0346/state_v005.png",
+    "sha256": "f236749f7762662f1eba34069adb092b75dadf1356a0264b8730e61525cb1b88",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 016 / object 0347 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0347/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0347/state_v003.png",
+    "sha256": "773ad35058d0f0fc86440d832192e2893a2ef443bef127dd909a352a163452ef",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 016 / object 0335 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0335/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0335/state_v003.png",
+    "sha256": "a916ac337903c36e95f8dd2737617864ca2430dae246e55200dd5fbd556147b3",
+    "sheet": "objects_216.jpg"
+  },
+  {
+    "label": "Room 016 / object 0336 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0336/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0336/state_v009.png",
+    "sha256": "1492124bb50deae9806fbfb282598448038da9fc50766c1ce75e55cc36af6b25",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0337 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0337/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0337/state_v009.png",
+    "sha256": "d456e5485fa3588d8b45f3a6d2094b769023a4057b8aa3a80794a44e582dd672",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0338 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0338/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0338/state_v003.png",
+    "sha256": "55cfd47bad6bf2dc493f8a058f1b8ab369eb5c087837b99e4e357fc4394f16b5",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0342 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0342/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0342/state_v003.png",
+    "sha256": "dd9c70d0c0cd6d759161eb295c4fe07b14275225d098cba9819bce035a5ece07",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0339 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0339/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0339/state_v003.png",
+    "sha256": "7c28717a26c2d646644d26e83418140c1a4a0ab3ee8870e6d8fcbf84fb77b8f5",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0340 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0340/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0340/state_v009.png",
+    "sha256": "db48b42f2655fcd319d0907e8b731b6b403b2d09568a7bdf72b4044639b63312",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0341 / ",
+    "reference": "zak/converted/images/objects/room_016/object_0341/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0341/state_v005.png",
+    "sha256": "933f8dc94ece28e97660b6c431f794b5fd63f6dfa6e645af99d57567fbf66874",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0343 / switch",
+    "reference": "zak/converted/images/objects/room_016/object_0343/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0343/state_v005.png",
+    "sha256": "c769ddc019353f421d96c79e0a96495af557dae52bea654b4584db1e332b8d53",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0344 / machine",
+    "reference": "zak/converted/images/objects/room_016/object_0344/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0344/state_v002.png",
+    "sha256": "39318095538cb06d4f183e88815eece685cdad79cdc10ae47026e9474c2bec4f",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0331 / switch",
+    "reference": "zak/converted/images/objects/room_016/object_0331/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0331/state_v003.png",
+    "sha256": "3ba9178d9ea45a967a1110dfdf9443e6da9048b3019b4eba0de4e5c0fae64dc5",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0332 / detention chamber",
+    "reference": "zak/converted/images/objects/room_016/object_0332/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0332/state_v003.png",
+    "sha256": "6e617a9bfd7c5bfd4e39c806d3cc41abaf12a20c0fa8b3b7a524ab0c21c4798e",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0333 / rope",
+    "reference": "zak/converted/images/objects/room_016/object_0333/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0333/state_v003.png",
+    "sha256": "e407648f7e3ba54525f554944fe50792ab9900ab6aafdb65f6238c2ad54a84d1",
+    "sheet": "objects_228.jpg"
+  },
+  {
+    "label": "Room 016 / object 0334 / hole",
+    "reference": "zak/converted/images/objects/room_016/object_0334/frame_000.png",
+    "file": "zak/converted/poc/objects/room_016/object_0334/state_v009.png",
+    "sha256": "7f030cee15983db87a529edd6a764ec41e8ce2275bca8fa9420a6cd39cf9ca26",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0059 / flagpole",
+    "reference": "zak/converted/images/objects/room_017/object_0059/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0059/state_v003.png",
+    "sha256": "6ff396f80e567533f9f5ea23a9d83f6a1fe85e59e4830e45efc66248cc6844e1",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0350 / door",
+    "reference": "zak/converted/images/objects/room_017/object_0350/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0350/state_v003.png",
+    "sha256": "9bbada24a48a91ec7e9e12f7969e9960f55e61b3e9badec019fdcc7982e2e819",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0351 / door",
+    "reference": "zak/converted/images/objects/room_017/object_0351/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0351/state_v003.png",
+    "sha256": "012e00b1f1d59535f54e3fc16984880d1b6bed4677f354b6703fe896e07911ad",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0362 / yak pie",
+    "reference": "zak/converted/images/objects/room_017/object_0362/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0362/state_v003.png",
+    "sha256": "b8e0503967083d0049fa7aef4e96d8e62339a494ac9cfe29e86bf36efaf2250e",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0353 / ",
+    "reference": "zak/converted/images/objects/room_017/object_0353/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0353/state_v009.png",
+    "sha256": "85b8c535e05dc6347aba923c9cd6766b12c0c92af42921491beee675b50cf137",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0354 / ",
+    "reference": "zak/converted/images/objects/room_017/object_0354/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0354/state_v009.png",
+    "sha256": "077364b2a3f72c4fc4e2b0dea5ad4f9eec7fa67ed187f3db844a75f1db955e8e",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0355 / ",
+    "reference": "zak/converted/images/objects/room_017/object_0355/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0355/state_v009.png",
+    "sha256": "7c7d73623cde5d8645f455c9a10e27316f3ff9a54e5d4dc8c745c84641577036",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0357 / ",
+    "reference": "zak/converted/images/objects/room_017/object_0357/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0357/state_v003.png",
+    "sha256": "559b7f3c19026023984589aad79590c15db59146fa44a28d36786baf0dc392af",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0358 / ",
+    "reference": "zak/converted/images/objects/room_017/object_0358/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0358/state_v003.png",
+    "sha256": "ddc034c9854b6bd6847db1f72f385f92e5a0c5c7103e90cde72bded02632fa27",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0359 / hay",
+    "reference": "zak/converted/images/objects/room_017/object_0359/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0359/state_v003.png",
+    "sha256": "cd27b20d27dd3a8977bee0d703aa3d840f3d26f4b2ef931fef5d0c5a770c464e",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0360 / ",
+    "reference": "zak/converted/images/objects/room_017/object_0360/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0360/state_v003.png",
+    "sha256": "b2caffd069b504b63aa8c2c8a6e4e4d98acc7b0a992c3231662715c6688fdf53",
+    "sheet": "objects_240.jpg"
+  },
+  {
+    "label": "Room 017 / object 0361 / ",
+    "reference": "zak/converted/images/objects/room_017/object_0361/frame_000.png",
+    "file": "zak/converted/poc/objects/room_017/object_0361/state_v003.png",
+    "sha256": "e99439e73c66e99406f6f247a31cfaf2e3d3aad0e04882b82266ab326b97e70a",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 018 / object 0363 / door",
+    "reference": "zak/converted/images/objects/room_018/object_0363/frame_000.png",
+    "file": "zak/converted/poc/objects/room_018/object_0363/state_v003.png",
+    "sha256": "6dc90f7f176a99575f53d9ebe53419fe18e9fb7a2325337501ff8d23204083da",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 018 / object 0060 / jail key",
+    "reference": "zak/converted/images/objects/room_018/object_0060/frame_000.png",
+    "file": "zak/converted/poc/objects/room_018/object_0060/state_v003.png",
+    "sha256": "34c2f2919d3600ec08ca74e0fbc06f917a75c72f831abe6042bb1527aec7b110",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 018 / object 0364 / sign",
+    "reference": "zak/converted/images/objects/room_018/object_0364/frame_000.png",
+    "file": "zak/converted/poc/objects/room_018/object_0364/state_v003.png",
+    "sha256": "bbf9235dc83b94f3379d49e49bf12ccabe64e41f9fe4cefc6c5e97d9d9fb7359",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 018 / object 0368 / cabinet door",
+    "reference": "zak/converted/images/objects/room_018/object_0368/frame_000.png",
+    "file": "zak/converted/poc/objects/room_018/object_0368/state_v003.png",
+    "sha256": "c3d934ce62d471f83d9435644a450efaf48f9d3018d9b823ec594e0bed310231",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 018 / object 0374 / ",
+    "reference": "zak/converted/images/objects/room_018/object_0374/frame_000.png",
+    "file": "zak/converted/poc/objects/room_018/object_0374/state_v009.png",
+    "sha256": "cae1471eefeb2bcb1afbba399b0d7f994dfe3fc6173a59507e4dba02212bc854",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 018 / object 0373 / ",
+    "reference": "zak/converted/images/objects/room_018/object_0373/frame_000.png",
+    "file": "zak/converted/poc/objects/room_018/object_0373/state_v003.png",
+    "sha256": "223fbe4e207e3a7c7fba649738617e47c34b3cf5b6c8fad9614c54702d9fc32e",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 018 / object 0366 / cell door",
+    "reference": "zak/converted/images/objects/room_018/object_0366/frame_000.png",
+    "file": "zak/converted/poc/objects/room_018/object_0366/state_v003.png",
+    "sha256": "6e9f1bc42f3640a959c92d1d949cd7da5208c83b39a5f180a16b26aa0c57975c",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 019 / object 0381 / ",
+    "reference": "zak/converted/images/objects/room_019/object_0381/frame_000.png",
+    "file": "zak/converted/poc/objects/room_019/object_0381/state_v009.png",
+    "sha256": "a11388969c530584e4ed2efd96bd4b36e8820833ea2739766e3a405ba9474bb1",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 019 / object 0382 / ",
+    "reference": "zak/converted/images/objects/room_019/object_0382/frame_000.png",
+    "file": "zak/converted/poc/objects/room_019/object_0382/state_v009.png",
+    "sha256": "695c7ccd7baed151500fe54cc56fec26fe1681cded5945c308d9434a07ea5bdf",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 019 / object 0383 / ",
+    "reference": "zak/converted/images/objects/room_019/object_0383/frame_000.png",
+    "file": "zak/converted/poc/objects/room_019/object_0383/state_v003.png",
+    "sha256": "e2502e8a22be0b5aab02bc0dea90abf34bd0da16600e32ae82e7d67726daa247",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 019 / object 0384 / ",
+    "reference": "zak/converted/images/objects/room_019/object_0384/frame_000.png",
+    "file": "zak/converted/poc/objects/room_019/object_0384/state_v009.png",
+    "sha256": "11a15250d167dd307b1ae66ee1e716d3553852c8ee6896ea6d420432bd2c3cbf",
+    "sheet": "objects_252.jpg"
+  },
+  {
+    "label": "Room 020 / object 0389 / secret entryway",
+    "reference": "zak/converted/images/objects/room_020/object_0389/frame_000.png",
+    "file": "zak/converted/poc/objects/room_020/object_0389/state_v009.png",
+    "sha256": "85679e6c72cd54f40aed5f2031f0fb4d8da1d1b1cf6708201f46937315fdb8d0",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 021 / object 0393 / key hole",
+    "reference": "zak/converted/images/objects/room_021/object_0393/frame_000.png",
+    "file": "zak/converted/poc/objects/room_021/object_0393/state_v003.png",
+    "sha256": "c3284c5b578418c7d509dcbe87b15da23cbd41c8ebca704ebe58bd3d84253bda",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 021 / object 0394 / ",
+    "reference": "zak/converted/images/objects/room_021/object_0394/frame_000.png",
+    "file": "zak/converted/poc/objects/room_021/object_0394/state_v003.png",
+    "sha256": "3e321f5f400da9bbcb15b8c83fe744f074113d1ed819a66fb1b387b19ff575a7",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 021 / object 0395 / bobby pin sign",
+    "reference": "zak/converted/images/objects/room_021/object_0395/frame_000.png",
+    "file": "zak/converted/poc/objects/room_021/object_0395/state_v003.png",
+    "sha256": "2c81b3170fe8bd6659cf630be03124da1a9a20553afead5fc122208a681c5434",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 021 / object 0392 / door",
+    "reference": "zak/converted/images/objects/room_021/object_0392/frame_000.png",
+    "file": "zak/converted/poc/objects/room_021/object_0392/state_v003.png",
+    "sha256": "e479dfd592d480513f268244044091bf3b879afeb0841995d3e3574c7d8a92ec",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 021 / object 0391 / sand pile",
+    "reference": "zak/converted/images/objects/room_021/object_0391/frame_000.png",
+    "file": "zak/converted/poc/objects/room_021/object_0391/state_v003.png",
+    "sha256": "7360464a3234ccd77f53dc92a8ea1550b45f20653d1f5b030c1bcc0a15cbae45",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 022 / object 0402 / ",
+    "reference": "zak/converted/images/objects/room_022/object_0402/frame_000.png",
+    "file": "zak/converted/poc/objects/room_022/object_0402/state_v003.png",
+    "sha256": "7f68a0f0846d04ac2a288e2f49a67d07029c3c81514b1830b6ba73688b1ec02d",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 022 / object 0400 / secret entryway",
+    "reference": "zak/converted/images/objects/room_022/object_0400/frame_000.png",
+    "file": "zak/converted/poc/objects/room_022/object_0400/state_v003.png",
+    "sha256": "a4d0cde05732fed4ad257879d2892c095aab8f09025b3e62499a74e12587d059",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 022 / object 0401 / ",
+    "reference": "zak/converted/images/objects/room_022/object_0401/frame_000.png",
+    "file": "zak/converted/poc/objects/room_022/object_0401/state_v003.png",
+    "sha256": "aeb24df6fea80fb0bd8757e2aefe7f3a15e3d777d4700802202a961a94e6c90f",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 023 / object 0403 / doorway",
+    "reference": "zak/converted/images/objects/room_023/object_0403/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0403/state_v003.png",
+    "sha256": "8d770a345321cea95be134db6c81c82d884199f38b17f62709fcf58bf41eed35",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 023 / object 0404 / doorway",
+    "reference": "zak/converted/images/objects/room_023/object_0404/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0404/state_v003.png",
+    "sha256": "e522167df8c2ab0bbf83556dabc9531cc6eaf9d2b95ec7e7062631e6d4d51f4f",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 023 / object 0405 / doorway",
+    "reference": "zak/converted/images/objects/room_023/object_0405/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0405/state_v003.png",
+    "sha256": "66d88e63e2807e050828daae5d532c6fa3fe4ab51f2f35305023ce9583ea2424",
+    "sheet": "objects_264.jpg"
+  },
+  {
+    "label": "Room 023 / object 0406 / doorway",
+    "reference": "zak/converted/images/objects/room_023/object_0406/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0406/state_v003.png",
+    "sha256": "5663a7b75a02d845445c53ad55eda2a8d33ac8169768c91fbccbfb7ce3e21a2c",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 023 / object 0407 / doorway",
+    "reference": "zak/converted/images/objects/room_023/object_0407/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0407/state_v003.png",
+    "sha256": "51cf836ee2e856f2af7136617958eee7a7741c890772172b555dac7f2a463ac2",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 023 / object 0412 / ",
+    "reference": "zak/converted/images/objects/room_023/object_0412/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0412/state_v003.png",
+    "sha256": "3a501b3f97c98e0ea2e6369fafb6d6b50d444b1338bd28f952192b7b5e644027",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 023 / object 0408 / doorway",
+    "reference": "zak/converted/images/objects/room_023/object_0408/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0408/state_v003.png",
+    "sha256": "cc72579567a9baed6c435d889e087a035b580ac5ae966bbf96b5d3b2a941ab33",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 023 / object 0409 / ",
+    "reference": "zak/converted/images/objects/room_023/object_0409/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0409/state_v003.png",
+    "sha256": "386dd037515e943466a9b3575ff35f3ddf82f5293851bb4278ef1a6c4aa8b3c3",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 023 / object 0410 / ",
+    "reference": "zak/converted/images/objects/room_023/object_0410/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0410/state_v003.png",
+    "sha256": "8197592d48316ae318d06a828f19a0c08b32ac59f8986039d01ebf746f05068b",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 023 / object 0411 / sign",
+    "reference": "zak/converted/images/objects/room_023/object_0411/frame_000.png",
+    "file": "zak/converted/poc/objects/room_023/object_0411/state_v009.png",
+    "sha256": "4accc6eefc225bf0554cda1cf1a1fd5485f81836b570a661ff4f4c9a19de91f2",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 024 / object 0415 / ",
+    "reference": "zak/converted/images/objects/room_024/object_0415/frame_000.png",
+    "file": "zak/converted/poc/objects/room_024/object_0415/state_v003.png",
+    "sha256": "9f2c5d841d1a7d5de512e16e5a5446d26a2906bcb3b5dcb465666a151973129b",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 024 / object 0414 / sarcophagus feet",
+    "reference": "zak/converted/images/objects/room_024/object_0414/frame_000.png",
+    "file": "zak/converted/poc/objects/room_024/object_0414/state_v003.png",
+    "sha256": "7c88a22bb4d521d0bddd04fda5fce3b221ecf842654bdb9228c7923a88a6587e",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 024 / object 0416 / torch",
+    "reference": "zak/converted/images/objects/room_024/object_0416/frame_000.png",
+    "file": "zak/converted/poc/objects/room_024/object_0416/state_v003.png",
+    "sha256": "3ddc02e32e55a066f78f40654235b96d148061c1094db46a5ddf2e7797b7bb10",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 024 / object 0417 / ",
+    "reference": "zak/converted/images/objects/room_024/object_0417/frame_000.png",
+    "file": "zak/converted/poc/objects/room_024/object_0417/state_v009.png",
+    "sha256": "d8d0141cac6c2fb09e53e79c0ca78d1ffe89417a3716d1c9179c2a0426efa0e8",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 024 / object 0418 / ",
+    "reference": "zak/converted/images/objects/room_024/object_0418/frame_000.png",
+    "file": "zak/converted/poc/objects/room_024/object_0418/state_v009.png",
+    "sha256": "6764d74371c290c83db632e067b454935f6a4974bc7d922b124f37ae14f14bc1",
+    "sheet": "objects_276.jpg"
+  },
+  {
+    "label": "Room 024 / object 0419 / ",
+    "reference": "zak/converted/images/objects/room_024/object_0419/frame_000.png",
+    "file": "zak/converted/poc/objects/room_024/object_0419/state_v009.png",
+    "sha256": "96e8d1756d512e7a876127f0fa236a73d3d74e97476c739c8affcab45afead0b",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 024 / object 0420 / stairs",
+    "reference": "zak/converted/images/objects/room_024/object_0420/frame_000.png",
+    "file": "zak/converted/poc/objects/room_024/object_0420/state_v003.png",
+    "sha256": "b54a95279b22daef4435656cb50d631baf02f6acc6532296871ad8cd31364175",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0422 / stairs",
+    "reference": "zak/converted/images/objects/room_025/object_0422/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0422/state_v003.png",
+    "sha256": "8d6a7e918e49337299516f2f67c4c3184f0f8981da7cd36f30cf8f9360a9f64e",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0423 / lever",
+    "reference": "zak/converted/images/objects/room_025/object_0423/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0423/state_v003.png",
+    "sha256": "7f57a2675f99301496cd42e1f77365dbd003b83e24fc5f9c0dddb93713548c3c",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0424 / switch",
+    "reference": "zak/converted/images/objects/room_025/object_0424/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0424/state_v003.png",
+    "sha256": "de90941c74297df668332098a69fece553943a80cfe3a9caa45132b50dbbe414",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0425 / switch",
+    "reference": "zak/converted/images/objects/room_025/object_0425/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0425/state_v003.png",
+    "sha256": "aef16a6bff3f5a93cda82f22f4a3b6a2d9a3948a2c733a4eef80d4f52831f850",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0427 / glowing object",
+    "reference": "zak/converted/images/objects/room_025/object_0427/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0427/state_v003.png",
+    "sha256": "6af868bc6d422c56c216dd215e2b2b39f663633542521c1f2d0037e0dc13f96a",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0428 / crystalabra",
+    "reference": "zak/converted/images/objects/room_025/object_0428/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0428/state_v003.png",
+    "sha256": "98d9d4a3e073236257f5998a65d5fcdbbfee57248edbac8b1f0fb40ea85563e5",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0429 / yellow crystal",
+    "reference": "zak/converted/images/objects/room_025/object_0429/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0429/state_v009.png",
+    "sha256": "d7b086b49814adf357bad942dc1804079fdbedca57be60dea58a75a504bba228",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0430 / white crystal",
+    "reference": "zak/converted/images/objects/room_025/object_0430/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0430/state_v009.png",
+    "sha256": "105b2b0401991be9c0f9b5598d81c360c39377bddbf6fb1f17187d5121ed8b5f",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0431 / blue crystal",
+    "reference": "zak/converted/images/objects/room_025/object_0431/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0431/state_v009.png",
+    "sha256": "8c5416e19dff2740ae20d8b06c9f01917ce0f4bb3934b7dc1eb8765b952aa7b0",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0432 / hole",
+    "reference": "zak/converted/images/objects/room_025/object_0432/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0432/state_v003.png",
+    "sha256": "739db2856374ef91c3235377d3a8245bc35d658ee72bdea549e48861405f9ee5",
+    "sheet": "objects_288.jpg"
+  },
+  {
+    "label": "Room 025 / object 0433 / ",
+    "reference": "zak/converted/images/objects/room_025/object_0433/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0433/state_v003.png",
+    "sha256": "3a55ea39f596ef1087bd62cdea5d3a0296c435f00c0dd6d7171e9a71f3f4d6ff",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 025 / object 0434 / ",
+    "reference": "zak/converted/images/objects/room_025/object_0434/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0434/state_v003.png",
+    "sha256": "aca3fd63c2a107a37e480cbe3201e26b956891bfbb8dad128808cca5350a123e",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 025 / object 0435 / ",
+    "reference": "zak/converted/images/objects/room_025/object_0435/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0435/state_v003.png",
+    "sha256": "460300983d08ddf79383c7b447d2244d08a135c333a3e4441ae0e83e7f1ec3c7",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 025 / object 0436 / ",
+    "reference": "zak/converted/images/objects/room_025/object_0436/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0436/state_v003.png",
+    "sha256": "68ab9158926b289363ce49ef5b16b373b3d9d3d7bd3a9811c5104140975ecbd5",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 025 / object 0438 / ",
+    "reference": "zak/converted/images/objects/room_025/object_0438/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0438/state_v003.png",
+    "sha256": "c2fa90aa21f0c26fef171309572c9bf10c17b799e2fd22cec8efecf40505afad",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 025 / object 0439 / ",
+    "reference": "zak/converted/images/objects/room_025/object_0439/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0439/state_v003.png",
+    "sha256": "326b93896a74299657e72655872bad051413080f304c91b376e4ca16559abbbb",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 025 / object 0440 / ",
+    "reference": "zak/converted/images/objects/room_025/object_0440/frame_000.png",
+    "file": "zak/converted/poc/objects/room_025/object_0440/state_v003.png",
+    "sha256": "ad36cbeab8e572ba9c1df0854526e9bb120258aff7d6a9cf5219c2b05e93027f",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 026 / object 0442 / ",
+    "reference": "zak/converted/images/objects/room_026/object_0442/frame_000.png",
+    "file": "zak/converted/poc/objects/room_026/object_0442/state_v003.png",
+    "sha256": "67bbd114ddf54395efd5ed19e5258c48d34caf16c11ac404ed56e20388b13735",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 026 / object 0441 / ",
+    "reference": "zak/converted/images/objects/room_026/object_0441/frame_000.png",
+    "file": "zak/converted/poc/objects/room_026/object_0441/state_v003.png",
+    "sha256": "4441de45bb78b1b7d424ce4667d58d60303a967f94f4aa6f8869a114c0d1b548",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 026 / object 0443 / ",
+    "reference": "zak/converted/images/objects/room_026/object_0443/frame_000.png",
+    "file": "zak/converted/poc/objects/room_026/object_0443/state_v003.png",
+    "sha256": "d1c36cc0a6819ddee2aebfe2cc92ba8cabb072ccf29951cf09875e5c1d7c06f4",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 027 / object 0457 / ",
+    "reference": "zak/converted/images/objects/room_027/object_0457/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0457/state_v003.png",
+    "sha256": "b7670bc3d5fe71b7a3708cb8d5d94b0812af02338c5badeb0ed3b6b51dd8b621",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 027 / object 0445 / tram",
+    "reference": "zak/converted/images/objects/room_027/object_0445/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0445/state_v003.png",
+    "sha256": "a731c4589155954913a94494a38d70be9d7d3d83ddd9e285c4447ef7358441b8",
+    "sheet": "objects_300.jpg"
+  },
+  {
+    "label": "Room 027 / object 0446 / monolith",
+    "reference": "zak/converted/images/objects/room_027/object_0446/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0446/state_v003.png",
+    "sha256": "8bd64e6876317b02595710b3c60f6fbf42a0bf0e2bfe38906e42d6523fb1cb83",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0455 / light",
+    "reference": "zak/converted/images/objects/room_027/object_0455/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0455/state_v003.png",
+    "sha256": "08bdec2f4ab70d87da3bf2a392a59dbfedba91cf77e32416fa96e9457a3fd1aa",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0449 / door",
+    "reference": "zak/converted/images/objects/room_027/object_0449/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0449/state_v003.png",
+    "sha256": "59e59ca2d4d6ebf6c1b7ef3c0f04011ed9cfe16011bc4462c2338e7a33ee8189",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0451 / sand@@@@@@@@",
+    "reference": "zak/converted/images/objects/room_027/object_0451/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0451/state_v003.png",
+    "sha256": "fe8423ca2cd9745b6058316694843c89e4fa37c15c3c11298e70b09b34d2f21b",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0452 / door",
+    "reference": "zak/converted/images/objects/room_027/object_0452/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0452/state_v003.png",
+    "sha256": "d7447fa0dfe2093207682359f352da4736672029e17a1a422dfaf4e050b03f03",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0454 / Shuttle Bug",
+    "reference": "zak/converted/images/objects/room_027/object_0454/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0454/state_v003.png",
+    "sha256": "d46174474f0e9f5da1695b94f38eaa3789dd63f75e91e3a48cb0761fa21c1f3f",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0459 / ",
+    "reference": "zak/converted/images/objects/room_027/object_0459/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0459/state_v003.png",
+    "sha256": "13e596c2e58e59dc20205e26fe93ffcbdbbfb9afccecf3dd3d4d2b0559224872",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0460 / ",
+    "reference": "zak/converted/images/objects/room_027/object_0460/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0460/state_v003.png",
+    "sha256": "10a6e634bf676104771ecb88fc2f942180cf99c19eadb66a45e6856bd0f55d6b",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0461 / ",
+    "reference": "zak/converted/images/objects/room_027/object_0461/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0461/state_v003.png",
+    "sha256": "d8637bd7572c7e3717adadf2b3c00308732b3c70fe7af9a9f085264c134bb6a4",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0462 / ",
+    "reference": "zak/converted/images/objects/room_027/object_0462/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0462/state_v003.png",
+    "sha256": "171a9e47045a656dc9acf99a67310063bada7799b99510bead6312fabeb58368",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 027 / object 0456 / pyramid",
+    "reference": "zak/converted/images/objects/room_027/object_0456/frame_000.png",
+    "file": "zak/converted/poc/objects/room_027/object_0456/state_v003.png",
+    "sha256": "3fb88b939880ffb80d57189c2867c11e0679bcf861645a90638ac2692fde8db4",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 028 / object 0463 / Mars door",
+    "reference": "zak/converted/images/objects/room_028/object_0463/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0463/state_v003.png",
+    "sha256": "8ebdadd5a33795b82109bd9a0fefc3aa457082e90f96d1daba18a89c2e947ddd",
+    "sheet": "objects_312.jpg"
+  },
+  {
+    "label": "Room 028 / object 0464 / hostel door",
+    "reference": "zak/converted/images/objects/room_028/object_0464/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0464/state_v003.png",
+    "sha256": "d31b75b38f704c7e459c653d1b99f2002f7f465150735e5599f743f853a30eba",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0465 / light",
+    "reference": "zak/converted/images/objects/room_028/object_0465/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0465/state_v003.png",
+    "sha256": "1731113f42970c0df920757bb0724274082603b43cd19e8ade851b5d7ebd801b",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0467 / light",
+    "reference": "zak/converted/images/objects/room_028/object_0467/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0467/state_v003.png",
+    "sha256": "de7aa9e0da63ab7ff454e3383f90257813e3558296895591d891c3fb0334e7ff",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0471 / fuse",
+    "reference": "zak/converted/images/objects/room_028/object_0471/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0471/state_v003.png",
+    "sha256": "85c560247cf036b455caaa03433b66253703dbd03d0a2dd290e1d31d858882b7",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0064 / burnt fuse",
+    "reference": "zak/converted/images/objects/room_028/object_0064/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0064/state_v003.png",
+    "sha256": "21a4fe21bbce45b1745462714ec3add50e35c149e2579243dddefad87d05d59c",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0470 / metal plate",
+    "reference": "zak/converted/images/objects/room_028/object_0470/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0470/state_v003.png",
+    "sha256": "956fd1bad5300c5b081a82a8c2eda671c7d2cdcd00a943f80cbc4ecc0ae40e80",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0067 / vinyl tape",
+    "reference": "zak/converted/images/objects/room_028/object_0067/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0067/state_v003.png",
+    "sha256": "683b8596751ed38e85f079ef56984359dd1cd93c61398ad0b5bc63a890895018",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0068 / broom alien",
+    "reference": "zak/converted/images/objects/room_028/object_0068/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0068/state_v003.png",
+    "sha256": "559bc58f6be5fd8d15d925d3d1cd5b6fb53648cb3f0a3f735a87daee723ff210",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0478 / covers",
+    "reference": "zak/converted/images/objects/room_028/object_0478/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0478/state_v003.png",
+    "sha256": "6ef3b7ef3ca4a8e1209dd4bff37a8fcdf824346c492be548340bdfaadffcb753",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0069 / flashlight@@@@",
+    "reference": "zak/converted/images/objects/room_028/object_0069/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0069/state_v003.png",
+    "sha256": "38634b2bf6c922e30be950aec612cb517709573d836f361498c3c98daa7a7717",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0472 / door",
+    "reference": "zak/converted/images/objects/room_028/object_0472/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0472/state_v003.png",
+    "sha256": "8e630b83821dc2e041baf430e7d23f1dd545c9f0bfbd028cab29f509800a858e",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0474 / light",
+    "reference": "zak/converted/images/objects/room_028/object_0474/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0474/state_v003.png",
+    "sha256": "703c2291463c4955561b0683671642c25287e6d96f5121480886d7e571448f80",
+    "sheet": "objects_324.jpg"
+  },
+  {
+    "label": "Room 028 / object 0475 / locker",
+    "reference": "zak/converted/images/objects/room_028/object_0475/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0475/state_v003.png",
+    "sha256": "8961a6ef03a531c54252d58d3ccda0d2aab9ccfb41ae83870743c43134bb04aa",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 028 / object 0476 / locker",
+    "reference": "zak/converted/images/objects/room_028/object_0476/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0476/state_v003.png",
+    "sha256": "03bb2c04718a68f0d40f1aa5675c0eb2b3253cfdf763ba65e2fcd6725caa5217",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 028 / object 0070 / ladder",
+    "reference": "zak/converted/images/objects/room_028/object_0070/frame_000.png",
+    "file": "zak/converted/poc/objects/room_028/object_0070/state_v003.png",
+    "sha256": "39162fe4e0b289a2bc4013ee487a699bbeb1428a1700c2b53d74aa359200c6e4",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 029 / object 0485 / Mars pyramid",
+    "reference": "zak/converted/images/objects/room_029/object_0485/frame_000.png",
+    "file": "zak/converted/poc/objects/room_029/object_0485/state_v003.png",
+    "sha256": "8c6e22430521d4e87dbe80aadea7eee25ba48c16a915e98e0aa1fbdda7d240fe",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 029 / object 0486 / Mars face chamber",
+    "reference": "zak/converted/images/objects/room_029/object_0486/frame_000.png",
+    "file": "zak/converted/poc/objects/room_029/object_0486/state_v003.png",
+    "sha256": "3a23476328531a8b011db27dd1b686d6dffc65642d834128237658a1c14e8535",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 029 / object 0487 / ",
+    "reference": "zak/converted/images/objects/room_029/object_0487/frame_000.png",
+    "file": "zak/converted/poc/objects/room_029/object_0487/state_v003.png",
+    "sha256": "09216a198b2ac283548296301a79246a44db774fd6b7bb64bacb6eed594507cc",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 030 / object 0496 / oxygen valve",
+    "reference": "zak/converted/images/objects/room_030/object_0496/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0496/state_v003.png",
+    "sha256": "b6945b714dec076294ac90da7224427e12400ebcd7d5ecd6b02a5162ce9ca937",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 030 / object 0495 / ",
+    "reference": "zak/converted/images/objects/room_030/object_0495/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0495/state_v003.png",
+    "sha256": "ea8da46418ae6c753d5b1e5370ac40a97064dc547eb5e9df8406fc9b8a8da4fd",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 030 / object 0071 / boom box@@@@@@@@@@",
+    "reference": "zak/converted/images/objects/room_030/object_0071/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0071/state_v003.png",
+    "sha256": "de539d6ed9d92d8e1c7219a20a091be73ff7ff72a78610d8f75a3589111aa864",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 030 / object 0072 / Digital Audio Tape",
+    "reference": "zak/converted/images/objects/room_030/object_0072/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0072/state_v003.png",
+    "sha256": "12b13fee77bc731937d911a25bd0e2943642c6c23a7493ee4b2bf24ac5c7aa1b",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 030 / object 0073 / fuse",
+    "reference": "zak/converted/images/objects/room_030/object_0073/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0073/state_v003.png",
+    "sha256": "8429c76699df0d7abb4279455ce938c6d13738fd66cd5a0c061b9e6ada25eb45",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 030 / object 0074 / CashCards",
+    "reference": "zak/converted/images/objects/room_030/object_0074/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0074/state_v010.png",
+    "sha256": "a8b6396c268c996bb00ff9cb01d2cd44e2f40dffa92357c97b4aee7092f18a4f",
+    "sheet": "objects_336.jpg"
+  },
+  {
+    "label": "Room 030 / object 0488 / door",
+    "reference": "zak/converted/images/objects/room_030/object_0488/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0488/state_v003.png",
+    "sha256": "335569f429da8a31ed8be9d7e16ac50e80d9c52319aa7e27e9ea641688e3088c",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 030 / object 0489 / glove compartment",
+    "reference": "zak/converted/images/objects/room_030/object_0489/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0489/state_v003.png",
+    "sha256": "ae45852fca9b1d446870ea77dfdbf9cd5788fcb77a26562f0ecc20a0a112fa7c",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 030 / object 0494 / ",
+    "reference": "zak/converted/images/objects/room_030/object_0494/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0494/state_v003.png",
+    "sha256": "26045312f60e160e698c8a7e8b58e791b1ef92661cdd7ff1dee42471ccf3776b",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 030 / object 0490 / controls",
+    "reference": "zak/converted/images/objects/room_030/object_0490/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0490/state_v003.png",
+    "sha256": "1ebdb81ef4051e9372f54d3bb84a7343a903a8e67e104625eaa4307072ee37c1",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 030 / object 0491 / meters",
+    "reference": "zak/converted/images/objects/room_030/object_0491/frame_000.png",
+    "file": "zak/converted/poc/objects/room_030/object_0491/state_v003.png",
+    "sha256": "1a2e08c2c616e5a689cea4eb78669d544543234395f23bad05d95ed449fe3533",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0506 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0506/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0506/state_v003.png",
+    "sha256": "e49948874ec18918d668334fdea0699784476fe2342b0a2f58753ea3b7233c4a",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0497 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0497/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0497/state_v003.png",
+    "sha256": "9423b8e41278aa72661cf10d4ae478e359ef564fea0ea4f02fccf6dda44fdc36",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0498 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0498/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0498/state_v003.png",
+    "sha256": "de9b672b0a30382430a80613382b67417804202bf1b01881a9ce1e44ea83ba49",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0499 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0499/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0499/state_v003.png",
+    "sha256": "09f35c6fb7e338541008d3b08c4c6409870378830858a5d2cb54467b9d27bbef",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0500 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0500/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0500/state_v001.png",
+    "sha256": "0f614d4b66d2ca86d4636d7009f85a3d59c401cdf2717e0cf04453ef9437849a",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0501 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0501/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0501/state_v003.png",
+    "sha256": "223a7780e03702b9f952f598337af6a33baf163298d3dd46e8baa1367bda9472",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0502 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0502/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0502/state_v003.png",
+    "sha256": "3af8a750c8c32a686c9a90e80d1ef375cb8efccf862aeb78f4bc2c8d431d14a9",
+    "sheet": "objects_348.jpg"
+  },
+  {
+    "label": "Room 031 / object 0503 / ",
+    "reference": "zak/converted/images/objects/room_031/object_0503/frame_000.png",
+    "file": "zak/converted/poc/objects/room_031/object_0503/state_v003.png",
+    "sha256": "2c246dabafc0516bfb6c5d7072eea883d845f2d3a08eca9a3cc5b2e87e514f0d",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 032 / object 0514 / ",
+    "reference": "zak/converted/images/objects/room_032/object_0514/frame_000.png",
+    "file": "zak/converted/poc/objects/room_032/object_0514/state_v003.png",
+    "sha256": "46c899d2eced33f83118a3de2ceeb5ec415fdc8975a5758fca9307aaf718ed98",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 032 / object 0508 / massive door",
+    "reference": "zak/converted/images/objects/room_032/object_0508/frame_000.png",
+    "file": "zak/converted/poc/objects/room_032/object_0508/state_v003.png",
+    "sha256": "f252841a7b3be5a5786cbd655da7c3931f13c2eaa1e4beb70637d5aa19403df9",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 032 / object 0509 / massive door",
+    "reference": "zak/converted/images/objects/room_032/object_0509/frame_000.png",
+    "file": "zak/converted/poc/objects/room_032/object_0509/state_v003.png",
+    "sha256": "eec74ef52565bb6bc41d3c52b113dda9e28dca8c52bcd2a9b27a78a16bdd7365",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 032 / object 0510 / massive door",
+    "reference": "zak/converted/images/objects/room_032/object_0510/frame_000.png",
+    "file": "zak/converted/poc/objects/room_032/object_0510/state_v003.png",
+    "sha256": "d2acbae413ef758e4ddfa140a9b28558224f7f9df6873bbed2fcea597e790c73",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0535 / ladder",
+    "reference": "zak/converted/images/objects/room_033/object_0535/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0535/state_v003.png",
+    "sha256": "39e7593cc50196b8c51b54229eb715b3bb6d71e15cc0501cbf6dd4163831bba2",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0536 / ladder",
+    "reference": "zak/converted/images/objects/room_033/object_0536/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0536/state_v003.png",
+    "sha256": "2284375a60ecfc82ab67f0682c9bb06e67e18fe900d7672e4de5fb907f44631d",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0537 / ladder",
+    "reference": "zak/converted/images/objects/room_033/object_0537/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0537/state_v003.png",
+    "sha256": "b877f3872f04c1506527af80f41c4274e5815dd5cdfd98088b7588e3aea8fcae",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0517 / massive door",
+    "reference": "zak/converted/images/objects/room_033/object_0517/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0517/state_v003.png",
+    "sha256": "4668c1acea1d88b4ea5754bb9feecffdf1d8308cdf91a7109c3ff0b309cb2b41",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0519 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0519/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0519/state_v003.png",
+    "sha256": "7e0900a1c63f8a06a106ad863700be28bfa2f941b0b1577585c19b682edfcce4",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0521 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0521/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0521/state_v003.png",
+    "sha256": "88c027a1a7f123aa1a3c3a8a4d478888268098b3855683156d248c56419c5b2c",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0522 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0522/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0522/state_v003.png",
+    "sha256": "a85aa22c56627474f43053118fc4c04d8766475af29323b0faf3552d5591c442",
+    "sheet": "objects_360.jpg"
+  },
+  {
+    "label": "Room 033 / object 0523 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0523/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0523/state_v003.png",
+    "sha256": "100d8a30a66ff0fb22521c9429dc53e97a43a1f20c91e0630e186475e2237bca",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0524 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0524/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0524/state_v003.png",
+    "sha256": "f10aaa68b4b163fbd5696bf67afd37d1542c59fc02d5d29e6fbc413656bb291f",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0526 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0526/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0526/state_v003.png",
+    "sha256": "c24c26ca711578d58ed53668630916f072965ec4f4441ab4ffb330a5e8fb03a1",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0527 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0527/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0527/state_v003.png",
+    "sha256": "bd48de6af5ec94821025a1131c89070ae70237794c20b5867ecb278b5d66493a",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0528 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0528/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0528/state_v003.png",
+    "sha256": "eef3654ff7520c889ae21e974d494ef9f4d0a56cb5331eaac22b5172b2c5104b",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0529 / ",
+    "reference": "zak/converted/images/objects/room_033/object_0529/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0529/state_v003.png",
+    "sha256": "f5229c781ef81d42ede1d4a75f838bd91b59fdcec24ee4b2a8cd1c368be24396",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0531 / button",
+    "reference": "zak/converted/images/objects/room_033/object_0531/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0531/state_v003.png",
+    "sha256": "95dc727f6b7166b0e73c434c08a4cf39c2bd9f162a3f9912ec34b65ca4567223",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0532 / button",
+    "reference": "zak/converted/images/objects/room_033/object_0532/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0532/state_v003.png",
+    "sha256": "cbc4936a7b6c381094c56a84e1c04c19275baecec38c4657eff7e4844a3e5633",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0533 / button",
+    "reference": "zak/converted/images/objects/room_033/object_0533/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0533/state_v003.png",
+    "sha256": "66daade9ecca5f870e82368a44ff17e01af2bfee5e79856436e290563155a291",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 033 / object 0530 / door",
+    "reference": "zak/converted/images/objects/room_033/object_0530/frame_000.png",
+    "file": "zak/converted/poc/objects/room_033/object_0530/state_v003.png",
+    "sha256": "7639ed6d3a61b1c54ae2fdf5f443d076bd9aaa47b16dd05c334edcca6eac2308",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 035 / object 0076 / golden key",
+    "reference": "zak/converted/images/objects/room_035/object_0076/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0076/state_v003.png",
+    "sha256": "100699dcc2be655f7b2f1d94b84b1b4db3bd244b8101c37980561fa1e0d44f33",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 035 / object 0544 / large key",
+    "reference": "zak/converted/images/objects/room_035/object_0544/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0544/state_v003.png",
+    "sha256": "c6a965ca94289188a771b6ce3020324b3cda11e6bbabbd603aef51a73f96a1d5",
+    "sheet": "objects_372.jpg"
+  },
+  {
+    "label": "Room 035 / object 0545 / button",
+    "reference": "zak/converted/images/objects/room_035/object_0545/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0545/state_v003.png",
+    "sha256": "953702c7961ed5b2cbe3bae5a4e8632d7201a59693470ada4956af7356c10953",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0546 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0546/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0546/state_v003.png",
+    "sha256": "8707a5a67ac99dd9ec225d22802157657bf1e6d575413d83b6c0c1cb7bed6665",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0547 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0547/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0547/state_v003.png",
+    "sha256": "faf23898dc1863fe6f2cc2792dab81b9536e0a1db3b81ad7c5369f3a3c1e9119",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0549 / panel",
+    "reference": "zak/converted/images/objects/room_035/object_0549/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0549/state_v003.png",
+    "sha256": "b742a6ac1e98ae3d6ab0311929419b9c345f62c58487009ab82bc49818f2adeb",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0550 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0550/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0550/state_v003.png",
+    "sha256": "acf7244300e63f1884838b7ebe02c02565cad006e68fc0b993400c47d582c510",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0551 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0551/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0551/state_v003.png",
+    "sha256": "d3473dfb08dabfe338cb6f4e4bba3d88d20f6dcc3435fef8d4ae7772228ebc89",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0552 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0552/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0552/state_v003.png",
+    "sha256": "203a29f7c3e80adefc28ee7a948b0aecd37926998dec3e5b52cd91426a85fffc",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0553 / force field",
+    "reference": "zak/converted/images/objects/room_035/object_0553/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0553/state_v001.png",
+    "sha256": "9b0ae172d4486b3cdd357103dae3345582393bea522068296fa00f96311b3702",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0554 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0554/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0554/state_v003.png",
+    "sha256": "b3594a66f703c8bc565ef89f344d468128910c670bae08d72288b9de5ae017ca",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0561 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0561/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0561/state_v003.png",
+    "sha256": "9d45e3dd63b5ba79dcfc5480ab3ea1f439c0b29ea90c27cf168ab73f27d06c6a",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0562 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0562/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0562/state_v003.png",
+    "sha256": "79005e9eec285ee5ef2cbafa7c2d9c271f71411fcbb88a476dae0bc0b8dda0ea",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0559 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0559/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0559/state_v003.png",
+    "sha256": "fcbe0499fc6c4cd2cb45eac5be309420615619d707aa139ad0b0bf3b4bf92745",
+    "sheet": "objects_384.jpg"
+  },
+  {
+    "label": "Room 035 / object 0560 / ",
+    "reference": "zak/converted/images/objects/room_035/object_0560/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0560/state_v003.png",
+    "sha256": "7f4779e8e50847dc3a1d3e83a98becd52bedb532b96977fd56155d0fbeba0635",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 035 / object 0556 / switch",
+    "reference": "zak/converted/images/objects/room_035/object_0556/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0556/state_v003.png",
+    "sha256": "dfaf98a4dae8b2cd233d66a503feb62ad7d56031a16afee757a5edbd0c0f076b",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 035 / object 0557 / switch",
+    "reference": "zak/converted/images/objects/room_035/object_0557/frame_000.png",
+    "file": "zak/converted/poc/objects/room_035/object_0557/state_v003.png",
+    "sha256": "f1ff3f66a87e30dcf6d511378dbea54dfd35405ac5d6467110e46f8c42f199bd",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 036 / object 0563 / doorway",
+    "reference": "zak/converted/images/objects/room_036/object_0563/frame_000.png",
+    "file": "zak/converted/poc/objects/room_036/object_0563/state_v003.png",
+    "sha256": "f1f69b44022b629689529bcd4afcd19615711926282cdcbb32acdeffd7f545f4",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 036 / object 0564 / doorway",
+    "reference": "zak/converted/images/objects/room_036/object_0564/frame_000.png",
+    "file": "zak/converted/poc/objects/room_036/object_0564/state_v003.png",
+    "sha256": "d54c46ea554317d759bcf4834b0aba88d32481c4c4151b2110f715d44c446439",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 036 / object 0565 / doorway",
+    "reference": "zak/converted/images/objects/room_036/object_0565/frame_000.png",
+    "file": "zak/converted/poc/objects/room_036/object_0565/state_v003.png",
+    "sha256": "6ac1b50a10f9be9946cafe28b336f63b0e8591d431c4d76be2689fd00fe9906b",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 036 / object 0566 / doorway",
+    "reference": "zak/converted/images/objects/room_036/object_0566/frame_000.png",
+    "file": "zak/converted/poc/objects/room_036/object_0566/state_v003.png",
+    "sha256": "1fdc4328ad0568611cc5768c2a23886165c06f5eb5625279b8957d639ca1fa10",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 036 / object 0567 / doorway",
+    "reference": "zak/converted/images/objects/room_036/object_0567/frame_000.png",
+    "file": "zak/converted/poc/objects/room_036/object_0567/state_v003.png",
+    "sha256": "ca40ae29f96bb96ead5a9d8b27297d9409c46a2c6e39160de72f5ac38774f189",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 036 / object 0568 / doorway",
+    "reference": "zak/converted/images/objects/room_036/object_0568/frame_000.png",
+    "file": "zak/converted/poc/objects/room_036/object_0568/state_v003.png",
+    "sha256": "3de1a3589c1cf160404e053cce174a7d40a4c89e9ab0105ae30ee8a6168d6518",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 036 / object 0569 / ",
+    "reference": "zak/converted/images/objects/room_036/object_0569/frame_000.png",
+    "file": "zak/converted/poc/objects/room_036/object_0569/state_v003.png",
+    "sha256": "deb103ae795018a5c72da67e6b6d3e52eb59e2fca6958d6e50ac1379618741d3",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 037 / object 0570 / ",
+    "reference": "zak/converted/images/objects/room_037/object_0570/frame_000.png",
+    "file": "zak/converted/poc/objects/room_037/object_0570/state_v003.png",
+    "sha256": "92494362f5864d725a00784cad2e7cc7e56874f619f9457e948a1eb00690e456",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 037 / object 0571 / ",
+    "reference": "zak/converted/images/objects/room_037/object_0571/frame_000.png",
+    "file": "zak/converted/poc/objects/room_037/object_0571/state_v003.png",
+    "sha256": "5ac90bbad584893152e28ec5f089a9b2d849f9fe760ccde0e3e935c5cd318648",
+    "sheet": "objects_396.jpg"
+  },
+  {
+    "label": "Room 037 / object 0572 / path",
+    "reference": "zak/converted/images/objects/room_037/object_0572/frame_000.png",
+    "file": "zak/converted/poc/objects/room_037/object_0572/state_v003.png",
+    "sha256": "24d60b9351edd8e47fea67af05e68ba0f83756fa37db3e409b951a4afa59a6a5",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 037 / object 0573 / path",
+    "reference": "zak/converted/images/objects/room_037/object_0573/frame_000.png",
+    "file": "zak/converted/poc/objects/room_037/object_0573/state_v003.png",
+    "sha256": "3961ca4a9674cb7575def423d560e3f08915ca368d59d8f17868531c5230e754",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 037 / object 0574 / path",
+    "reference": "zak/converted/images/objects/room_037/object_0574/frame_000.png",
+    "file": "zak/converted/poc/objects/room_037/object_0574/state_v003.png",
+    "sha256": "dc9b89a433a74e6becf6a0a22c35b4c4e8dd01e66c52459016a76f2bb9bc725f",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 037 / object 0575 / path",
+    "reference": "zak/converted/images/objects/room_037/object_0575/frame_000.png",
+    "file": "zak/converted/poc/objects/room_037/object_0575/state_v003.png",
+    "sha256": "76ce37d825dffc2068f9ab2d4fbd9f262a76d4e206d7c0236af24353a9f557bb",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 038 / object 0577 / sign",
+    "reference": "zak/converted/images/objects/room_038/object_0577/frame_000.png",
+    "file": "zak/converted/poc/objects/room_038/object_0577/state_v003.png",
+    "sha256": "bb56c61b7d4d74f44134b128c4d826582bcd82d9dbd7bc9d7029bb18e40fdc9f",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 038 / object 0582 / ",
+    "reference": "zak/converted/images/objects/room_038/object_0582/frame_000.png",
+    "file": "zak/converted/poc/objects/room_038/object_0582/state_v003.png",
+    "sha256": "714476389b72dff2338201b2b8bb9d5e30e909342fd6c685638b0f9745e52fd0",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 038 / object 0583 / ",
+    "reference": "zak/converted/images/objects/room_038/object_0583/frame_000.png",
+    "file": "zak/converted/poc/objects/room_038/object_0583/state_v003.png",
+    "sha256": "43c313dbd1fed94899c3d4ab74e629e75f9d0bd5d51de738b9d2325732c85451",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 038 / object 0584 / ",
+    "reference": "zak/converted/images/objects/room_038/object_0584/frame_000.png",
+    "file": "zak/converted/poc/objects/room_038/object_0584/state_v003.png",
+    "sha256": "f923995a8c248913a8616cf3bf30912b669d950757fe2b9667180efabd378b5a",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 038 / object 0585 / ",
+    "reference": "zak/converted/images/objects/room_038/object_0585/frame_000.png",
+    "file": "zak/converted/poc/objects/room_038/object_0585/state_v003.png",
+    "sha256": "f513ac3ac48f720da7bc734af39429579fdae13c204444edfa3ab8f873c30711",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 040 / object 0598 / ",
+    "reference": "zak/converted/images/objects/room_040/object_0598/frame_000.png",
+    "file": "zak/converted/poc/objects/room_040/object_0598/state_v003.png",
+    "sha256": "a4daff2d027d9e8f37ced39fd68cb3c833e91f0b0a7fc0b29d20f62ba21d15d2",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 040 / object 0599 / ",
+    "reference": "zak/converted/images/objects/room_040/object_0599/frame_000.png",
+    "file": "zak/converted/poc/objects/room_040/object_0599/state_v003.png",
+    "sha256": "73dd5b608c9ab4bea34d0b152ede3da19b4b1a1696dd5a96568ce983901c90f5",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 040 / object 0600 / ",
+    "reference": "zak/converted/images/objects/room_040/object_0600/frame_000.png",
+    "file": "zak/converted/poc/objects/room_040/object_0600/state_v003.png",
+    "sha256": "07e77e3962d20895ae771cb2e6edd1b715a0bec3f10d837dd12fb9a5a045b147",
+    "sheet": "objects_408.jpg"
+  },
+  {
+    "label": "Room 040 / object 0601 / ",
+    "reference": "zak/converted/images/objects/room_040/object_0601/frame_000.png",
+    "file": "zak/converted/poc/objects/room_040/object_0601/state_v003.png",
+    "sha256": "f7a2ff39231354356335bcff93fbcc84ff3532a564fdfbe93dcb056892f91809",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 040 / object 0602 / ",
+    "reference": "zak/converted/images/objects/room_040/object_0602/frame_000.png",
+    "file": "zak/converted/poc/objects/room_040/object_0602/state_v003.png",
+    "sha256": "4e97e3138b19d6b86eadeaa25a9090696505c7d781551b4a75824b6bca005760",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 040 / object 0603 / ",
+    "reference": "zak/converted/images/objects/room_040/object_0603/frame_000.png",
+    "file": "zak/converted/poc/objects/room_040/object_0603/state_v003.png",
+    "sha256": "2a0e651c1ad8e56fd93ff4bf9b9fd28aebb10ab9a9e70f9a0a0f75aa3f72648e",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 040 / object 0604 / ",
+    "reference": "zak/converted/images/objects/room_040/object_0604/frame_000.png",
+    "file": "zak/converted/poc/objects/room_040/object_0604/state_v003.png",
+    "sha256": "3f88585244ea9bc55e9fed943292712c020e93ca23849254ca18db911171fd16",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0615 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0615/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0615/state_v003.png",
+    "sha256": "1613edecc09719d40f912e7906b616076deca7f83fdd5f64fd3bd38832e0a96a",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0616 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0616/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0616/state_v003.png",
+    "sha256": "0e9813dfbc54982fd975d7f704d200434f7fccff6698bc52939da3f9b26e1f15",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0617 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0617/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0617/state_v003.png",
+    "sha256": "6990ac9505c3ff8125195ab0d17c8e94547da283f4a35a86426290e0d293916e",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0078 / glowing object",
+    "reference": "zak/converted/images/objects/room_041/object_0078/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0078/state_v003.png",
+    "sha256": "b556b4cba4139fc2c2b56bb671fc81c47f59e9408744ef2936630c6bfd613b15",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0606 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0606/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0606/state_v003.png",
+    "sha256": "faf3c7ef910d39f553925300cab4050e7cd07aea2dab66787f37e3f8760262bc",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0607 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0607/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0607/state_v003.png",
+    "sha256": "a0a820a51652104a342efc9e50ee71a8de05a0b057883392b4315ce7b4248b6a",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0608 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0608/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0608/state_v003.png",
+    "sha256": "c937ba1a9cdb204d14f8f42fcc57b99d9a056802025b76d07034fabe3b6496ea",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0611 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0611/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0611/state_v003.png",
+    "sha256": "7b5fa1473e5664da3d2c7276fca78f82edcef8ace93d872d906b1df059b4c7a7",
+    "sheet": "objects_420.jpg"
+  },
+  {
+    "label": "Room 041 / object 0612 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0612/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0612/state_v003.png",
+    "sha256": "4230169324d626873561827440da1914abbca4ff83f668765cf64c05da05cf8d",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 041 / object 0613 / ",
+    "reference": "zak/converted/images/objects/room_041/object_0613/frame_000.png",
+    "file": "zak/converted/poc/objects/room_041/object_0613/state_v003.png",
+    "sha256": "d97f09daa57fe6bdda7e7103337467b1fa13b908dfa34642c4f428c4b964daaf",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 042 / object 0623 / bread crumbs",
+    "reference": "zak/converted/images/objects/room_042/object_0623/frame_000.png",
+    "file": "zak/converted/poc/objects/room_042/object_0623/state_v003.png",
+    "sha256": "36e04e29adafbd262802897b68f4f1bdacb49cb2cc557998197c2dbe7c8cae07",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 042 / object 0624 / ",
+    "reference": "zak/converted/images/objects/room_042/object_0624/frame_000.png",
+    "file": "zak/converted/poc/objects/room_042/object_0624/state_v003.png",
+    "sha256": "b4722c355f93dc9a4fda97895af7a8f5ccd9f0761d39aa36d4247ec056428efd",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 042 / object 0625 / ",
+    "reference": "zak/converted/images/objects/room_042/object_0625/frame_000.png",
+    "file": "zak/converted/poc/objects/room_042/object_0625/state_v003.png",
+    "sha256": "a443ddc076b2b20e978659cfd5847868e556814cfc74bd7af377517f4cc42625",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 042 / object 0626 / ",
+    "reference": "zak/converted/images/objects/room_042/object_0626/frame_000.png",
+    "file": "zak/converted/poc/objects/room_042/object_0626/state_v003.png",
+    "sha256": "4da9af41058b0a4b1c4f33df4d2c3322457d1bfd14d21e1138f0502c78489701",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 042 / object 0627 / ",
+    "reference": "zak/converted/images/objects/room_042/object_0627/frame_000.png",
+    "file": "zak/converted/poc/objects/room_042/object_0627/state_v003.png",
+    "sha256": "48e97ac00d94990ec3b71a0c5ecefb3c77cecf219a91392e7cbde51d2a55cffd",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 042 / object 0628 / ",
+    "reference": "zak/converted/images/objects/room_042/object_0628/frame_000.png",
+    "file": "zak/converted/poc/objects/room_042/object_0628/state_v003.png",
+    "sha256": "644f73a709348e390f198ccbfeadf03abf7346179a77fc1cbfd6c60b34ed2cf6",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 042 / object 0629 / ",
+    "reference": "zak/converted/images/objects/room_042/object_0629/frame_000.png",
+    "file": "zak/converted/poc/objects/room_042/object_0629/state_v003.png",
+    "sha256": "11f4f2f07e35c3743798c452bb10ea0fda8b09206e37236a5c591f597d95e3d7",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 043 / object 0080 / candelabra",
+    "reference": "zak/converted/images/objects/room_043/object_0080/frame_000.png",
+    "file": "zak/converted/poc/objects/room_043/object_0080/state_v003.png",
+    "sha256": "fe67588d77135cf914d9736c336ef61e97005215db106f4a12c187c7b8982e25",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 043 / object 0079 / scroll",
+    "reference": "zak/converted/images/objects/room_043/object_0079/frame_000.png",
+    "file": "zak/converted/poc/objects/room_043/object_0079/state_v003.png",
+    "sha256": "f4dad173e21f8da1857ee7fc46781be377420128427b6ac47f57069b19abe9dd",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 043 / object 0632 / platform",
+    "reference": "zak/converted/images/objects/room_043/object_0632/frame_000.png",
+    "file": "zak/converted/poc/objects/room_043/object_0632/state_v003.png",
+    "sha256": "83e2b4f42159fb1358802e123301762ec8fb8645f920c272d9ad56b5a89eded5",
+    "sheet": "objects_432.jpg"
+  },
+  {
+    "label": "Room 043 / object 0633 / ",
+    "reference": "zak/converted/images/objects/room_043/object_0633/frame_000.png",
+    "file": "zak/converted/poc/objects/room_043/object_0633/state_v003.png",
+    "sha256": "b5d653125fa839daf9171f0b2bbf9ce12dedc74bce348cc06636be22849aec77",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 043 / object 0634 / ",
+    "reference": "zak/converted/images/objects/room_043/object_0634/frame_000.png",
+    "file": "zak/converted/poc/objects/room_043/object_0634/state_v003.png",
+    "sha256": "963e59df046f9e3f5e3eb8a346f0f094164cd48df0032331214d9c50075378d8",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 043 / object 0635 / ",
+    "reference": "zak/converted/images/objects/room_043/object_0635/frame_000.png",
+    "file": "zak/converted/poc/objects/room_043/object_0635/state_v003.png",
+    "sha256": "80f482975d158b433ef24e19abd6471ef44ffb937f4d69e9e3dcd41584414c2f",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0642 / switch",
+    "reference": "zak/converted/images/objects/room_044/object_0642/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0642/state_v003.png",
+    "sha256": "1bb1e99a5c8d938c7f3d9181da14096f8d058f01e1d790bf426921f250d6e585",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0643 / fence",
+    "reference": "zak/converted/images/objects/room_044/object_0643/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0643/state_v003.png",
+    "sha256": "5ed763352778995cd39067e9423079bde359096ce827915da60bcec40e231764",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0081 / yellow crystal",
+    "reference": "zak/converted/images/objects/room_044/object_0081/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0081/state_v003.png",
+    "sha256": "8796ccbd726afb56fdd5d9e7d4ac36e38e27a20a3a86b67be41ad621035857a7",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0653 / crystal shards",
+    "reference": "zak/converted/images/objects/room_044/object_0653/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0653/state_v003.png",
+    "sha256": "0978078469a7ebc111583c5235e04f00e46c3dcbb63084a08339d7e77c35f214",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0655 / ",
+    "reference": "zak/converted/images/objects/room_044/object_0655/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0655/state_v003.png",
+    "sha256": "5185c02c8d6b4350d46839810d647c4993e83e98737eb1adb734b76f650dece5",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0645 / crystal shard",
+    "reference": "zak/converted/images/objects/room_044/object_0645/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0645/state_v003.png",
+    "sha256": "23cc422fcc5bc1d6f560f6b7cd2c76bdec44071fd426b92d3d81921d36af02af",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0646 / crystal shard",
+    "reference": "zak/converted/images/objects/room_044/object_0646/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0646/state_v003.png",
+    "sha256": "7ba126e9b55051c8d6e8e0576ee169bfeba5a0a45be5dcb07e1c4886800b0cfa",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0656 / ",
+    "reference": "zak/converted/images/objects/room_044/object_0656/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0656/state_v003.png",
+    "sha256": "441ebc3881668bd2e15ba21045d496216aa1f0c4bb2cc9dbca891b50aa2f25d0",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0647 / flagpole",
+    "reference": "zak/converted/images/objects/room_044/object_0647/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0647/state_v003.png",
+    "sha256": "ea83df7b0de52584ee00c539bedd6bae816ac80e94fa33ebfba48b1ff5295f7f",
+    "sheet": "objects_444.jpg"
+  },
+  {
+    "label": "Room 044 / object 0654 / ",
+    "reference": "zak/converted/images/objects/room_044/object_0654/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0654/state_v003.png",
+    "sha256": "4d5c2bcf8b9e1c33b4b8230f4ab4ab70ecc6f3702b0bffe02a962a6c81d82a1d",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 044 / object 0649 / ",
+    "reference": "zak/converted/images/objects/room_044/object_0649/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0649/state_v003.png",
+    "sha256": "ee18dac4df06ce7969628db8456d8fed6398789b7ee2fa453c359c45abe8ad0b",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 044 / object 0650 / ",
+    "reference": "zak/converted/images/objects/room_044/object_0650/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0650/state_v003.png",
+    "sha256": "831f7db5e61a16f1df615e11084c8d0ab7ede5bff2bb4297d5b45ec9eb157f67",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 044 / object 0651 / ",
+    "reference": "zak/converted/images/objects/room_044/object_0651/frame_000.png",
+    "file": "zak/converted/poc/objects/room_044/object_0651/state_v003.png",
+    "sha256": "b1363b4310211c3a9ad7de04143ad624caae13d05af06632fc548bf25b9f37d0",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0773 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0773/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0773/state_v003.png",
+    "sha256": "3ca3d1d7789bfa3fc036db7336cf5cab9a20c874b9067870f33ba1b5c67c1665",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0670 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0670/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0670/state_v003.png",
+    "sha256": "3e7d42c5e6b3f18c6ad2037d9af10f5ea0ef8f109c3902913327d1ab120f559a",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0657 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0657/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0657/state_v003.png",
+    "sha256": "2a5a2ca6acacf115426cd4403f5c4524f1447cb4d1ac46394278347a37a2ad13",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0658 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0658/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0658/state_v003.png",
+    "sha256": "d3719a1061562164b75a2676677f158e8431b777dd2d0a23ff88a69619558082",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0664 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0664/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0664/state_v003.png",
+    "sha256": "199a7925640004aafa8803a4ef59e8194a9609fc35199350eb781b2fbe08b57b",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0666 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0666/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0666/state_v003.png",
+    "sha256": "e9df2a517cdad7fffbb656054e839078bfea4538808f5412c70b43d09f8c9cd5",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0665 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0665/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0665/state_v003.png",
+    "sha256": "b5cb6cb56961cb0db7309ad3573af9ce2c0f78103db8f1c447fd1922556334a3",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0667 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0667/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0667/state_v003.png",
+    "sha256": "b8138850fd4e96e6cadef6723bbbee43f2fb8ea998fa67235b463da6a28a6e67",
+    "sheet": "objects_456.jpg"
+  },
+  {
+    "label": "Room 045 / object 0659 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0659/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0659/state_v003.png",
+    "sha256": "a6b4a8586bd5d4af8afa59ed2edff186bcff8c23042e82267605723872475f7e",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 045 / object 0660 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0660/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0660/state_v003.png",
+    "sha256": "36452a843de454ec7ef5933f52c6160cd533ca54e16b05dd5b88308418b10dc9",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 045 / object 0661 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0661/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0661/state_v003.png",
+    "sha256": "7354c0225e3da09c943d651f3a785af8887c28bec0e68605b58269489ed7b730",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 045 / object 0663 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0663/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0663/state_v003.png",
+    "sha256": "67d1cadab5ceb081b50bd0863bbf2322efbbee28da600599ae4e91131160aa48",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 045 / object 0662 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0662/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0662/state_v003.png",
+    "sha256": "2e7ab205b022c5021f9ac377c08b19681e7de0f3db289c6e18a6c7135b876d4c",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 045 / object 0668 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0668/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0668/state_v003.png",
+    "sha256": "e9c1c82513ffebed5a93b3f3f0144805729905dda56f813b52d000e9b654d5eb",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 045 / object 0669 / ",
+    "reference": "zak/converted/images/objects/room_045/object_0669/frame_000.png",
+    "file": "zak/converted/poc/objects/room_045/object_0669/state_v003.png",
+    "sha256": "9928cdb62c02e7eb84701b2623ceb43461b40ee85b919b9867edf7f53c4d0ad6",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 048 / object 0672 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0672/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0672/state_v003.png",
+    "sha256": "67a22f9666d71cde940c0046185918edbeb57a1e99a332cffd57dd076905b2cd",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 048 / object 0673 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0673/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0673/state_v003.png",
+    "sha256": "95491bf7092d89394a73591ee442ba3a57ecadcd6c502956aea49f9e4060055b",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 048 / object 0674 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0674/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0674/state_v003.png",
+    "sha256": "8bef0e0215db8385a25931d24325185822628ee720ebb850e49411202349e558",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 048 / object 0675 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0675/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0675/state_v003.png",
+    "sha256": "1706462cb4b7b8b5424403b1081e2fc5659273b6cdca6a00ef5b0512d96d294e",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 048 / object 0676 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0676/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0676/state_v003.png",
+    "sha256": "1aa36c46004de6edf0cac0556a934eb58f942374670432ef3ed963333d97651a",
+    "sheet": "objects_468.jpg"
+  },
+  {
+    "label": "Room 048 / object 0677 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0677/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0677/state_v004.png",
+    "sha256": "7ca3af23aa86beab073e0773d6ff99c33b66f4ddd8f8665bce8245600db3fad4",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0678 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0678/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0678/state_v003.png",
+    "sha256": "2fefc8a16d36b7a229b01ad68ad779381c1733f736a885fb5ea974f62e6c4b44",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0679 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0679/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0679/state_v003.png",
+    "sha256": "82d25b2e47a56e0da79b780e4d1d1b56810c7d37165af17b77ea82755b9d009f",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0680 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0680/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0680/state_v003.png",
+    "sha256": "4ad26f3d55413c962ac7f2615491bcc0e7bb921b711d614f6b5770ec9a72bcc0",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0681 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0681/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0681/state_v003.png",
+    "sha256": "db07e12bc06dd699f2e11a5062c5dc73c6745bf43c4d4b15d4b3147bf9dd72be",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0682 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0682/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0682/state_v003.png",
+    "sha256": "f0ce9229588ccbcb55054a9faf56bb1c153daf0f1ad099a7de4ddf5ba6e91380",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0683 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0683/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0683/state_v003.png",
+    "sha256": "6643f6036066fcd44e06140083db7d6b45a84b47dc3da6e16a0a38f62b37a9e3",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0684 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0684/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0684/state_v003.png",
+    "sha256": "1f7a56013c2931aef8c52fb69100e17ddf5d016f536d6c0fb4c8ad9a35a80478",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0685 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0685/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0685/state_v003.png",
+    "sha256": "04e156b800dffb50e74c1fb45779e8175b1a7cfdde746d7215e3569f8d21e2f9",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0686 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0686/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0686/state_v003.png",
+    "sha256": "3647393fe6b23368f1b4abec8b355bd1800edc91fb7584c62caa2442477b35a7",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0687 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0687/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0687/state_v003.png",
+    "sha256": "205014525ebca3cca632ab405daf18e26a691cb6669e4164124374f3aa630c2c",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0688 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0688/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0688/state_v003.png",
+    "sha256": "b33a86435e49ad252f91384c1fc960950ecd74c1dc63ec1bee3c21a55a7ad848",
+    "sheet": "objects_480.jpg"
+  },
+  {
+    "label": "Room 048 / object 0689 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0689/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0689/state_v003.png",
+    "sha256": "b3a21e1c2d2bf16db299a79be8bbe54368c411c1a919c8f602b63a23e30ccf74",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 048 / object 0690 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0690/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0690/state_v003.png",
+    "sha256": "40e63f29da5758704d988ee0b52d47e8928c787bd7abdf3c2ecade940d1f80c3",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 048 / object 0691 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0691/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0691/state_v003.png",
+    "sha256": "0f86230ccac14029d1b09dfecae240c8a128f1fd24d5e21bd1851e3691905caa",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 048 / object 0692 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0692/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0692/state_v003.png",
+    "sha256": "767529e459e32278f73a61ac12f62810250419bc98bbd3aad60360b12a10301c",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 048 / object 0693 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0693/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0693/state_v003.png",
+    "sha256": "8b9d1991cfe318cde733d2ef765b1732a28a19ddd0d5945d70f076fb7a30cf7b",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 048 / object 0694 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0694/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0694/state_v003.png",
+    "sha256": "c07faad425c4448ca114fbc15c18fda592c6fbf5edbc0cbf628c3cfea31e4deb",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 048 / object 0695 / ",
+    "reference": "zak/converted/images/objects/room_048/object_0695/frame_000.png",
+    "file": "zak/converted/poc/objects/room_048/object_0695/state_v003.png",
+    "sha256": "e72d687a6a446b277c6e154b62dca60b90b5179d66c24981e74efc9d4fd74847",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 049 / object 0696 / ",
+    "reference": "zak/converted/images/objects/room_049/object_0696/frame_000.png",
+    "file": "zak/converted/poc/objects/room_049/object_0696/state_v003.png",
+    "sha256": "fb9a1dd59de372e942632f59e621fdee0004e6b558b71fc4ed1766d12daedc1e",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 049 / object 0697 / ",
+    "reference": "zak/converted/images/objects/room_049/object_0697/frame_000.png",
+    "file": "zak/converted/poc/objects/room_049/object_0697/state_v003.png",
+    "sha256": "f30541f1df7b81fd85bff8cd7650134e834f8f9bb05d85ecbc72042c60c4965b",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 049 / object 0698 / ",
+    "reference": "zak/converted/images/objects/room_049/object_0698/frame_000.png",
+    "file": "zak/converted/poc/objects/room_049/object_0698/state_v003.png",
+    "sha256": "5d0c48b507ec3a9c804d3af046cfbe41ac97e4fc2f0c0c66a435d49769f62142",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 049 / object 0699 / ",
+    "reference": "zak/converted/images/objects/room_049/object_0699/frame_000.png",
+    "file": "zak/converted/poc/objects/room_049/object_0699/state_v003.png",
+    "sha256": "4e72bc5979e192889a3c1eeeae0c793cde9367a8bfa1b172d442d4d37f6f9f39",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 049 / object 0700 / ",
+    "reference": "zak/converted/images/objects/room_049/object_0700/frame_000.png",
+    "file": "zak/converted/poc/objects/room_049/object_0700/state_v003.png",
+    "sha256": "d0018fd4409ad73a27d4c71528d01d31400cb5b5eba42d39773695860775ecc5",
+    "sheet": "objects_492.jpg"
+  },
+  {
+    "label": "Room 049 / object 0701 / ",
+    "reference": "zak/converted/images/objects/room_049/object_0701/frame_000.png",
+    "file": "zak/converted/poc/objects/room_049/object_0701/state_v003.png",
+    "sha256": "860e8b9479251649755c6f4efe2e05eba5b943ea52f42ccf2eac4fa92f0a452c",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 049 / object 0702 / ",
+    "reference": "zak/converted/images/objects/room_049/object_0702/frame_000.png",
+    "file": "zak/converted/poc/objects/room_049/object_0702/state_v003.png",
+    "sha256": "1a329467df37666f0b1b138a46bb1de577476cfb40636e8cfa8f0d5f928d4d83",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0703 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0703/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0703/state_v003.png",
+    "sha256": "6ff1e6d83e82bb592e5461fab8a697403e8f54b1bfbed480bc3549990a800eb3",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0704 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0704/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0704/state_v003.png",
+    "sha256": "2d2312eb17d2fd8014ad813128ab2dc0cd2580e71038d049710224fd0afbe946",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0705 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0705/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0705/state_v003.png",
+    "sha256": "ce6df681171c599e07eb2276b7cfbf83142c7b2bd5fdd2e0628e6b450e8eb8d1",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0706 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0706/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0706/state_v003.png",
+    "sha256": "47ff080304934bd6a59e46823137f8fd3d6f3689886c964e6fa77028f67b010d",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0707 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0707/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0707/state_v003.png",
+    "sha256": "6b975e35fd6a6791b48f79109e8593ea908515866998d5722488c8f572053caf",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0708 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0708/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0708/state_v003.png",
+    "sha256": "ff5103afb64e84266f65c171fe2450fc078bef014058278f2f5440076edb6050",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0769 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0769/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0769/state_v003.png",
+    "sha256": "2d657d35f4bd78ef686e89a4a2aa781f380ac91660378b6d5565b02ee9dda185",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 050 / object 0770 / ",
+    "reference": "zak/converted/images/objects/room_050/object_0770/frame_000.png",
+    "file": "zak/converted/poc/objects/room_050/object_0770/state_v003.png",
+    "sha256": "5b58aa8b299b4743eb24ac903f8a1dad66d259b9de73b08dd728705b45cb34c7",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 051 / object 0709 / ",
+    "reference": "zak/converted/images/objects/room_051/object_0709/frame_000.png",
+    "file": "zak/converted/poc/objects/room_051/object_0709/state_v003.png",
+    "sha256": "3c3fbe9c2c46c380461afdf0957349f9ee0b18b9dd5df25cb00a1d4a29128371",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 051 / object 0710 / ",
+    "reference": "zak/converted/images/objects/room_051/object_0710/frame_000.png",
+    "file": "zak/converted/poc/objects/room_051/object_0710/state_v003.png",
+    "sha256": "251c6815ed7641b7b4f12937e5060ca26164ae930f0d4dae28bdf1d8357040b7",
+    "sheet": "objects_504.jpg"
+  },
+  {
+    "label": "Room 051 / object 0711 / ",
+    "reference": "zak/converted/images/objects/room_051/object_0711/frame_000.png",
+    "file": "zak/converted/poc/objects/room_051/object_0711/state_v003.png",
+    "sha256": "b57ead9220f7407e3a93160f370bfc520ba30b5d0e68bef3a1ff611401985795",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 051 / object 0771 / ",
+    "reference": "zak/converted/images/objects/room_051/object_0771/frame_000.png",
+    "file": "zak/converted/poc/objects/room_051/object_0771/state_v003.png",
+    "sha256": "7fd9b7b05f69879d428f4be55699ab8135058672592346207657a1d0ed0f767e",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 051 / object 0772 / ",
+    "reference": "zak/converted/images/objects/room_051/object_0772/frame_000.png",
+    "file": "zak/converted/poc/objects/room_051/object_0772/state_v003.png",
+    "sha256": "c18722b2fe2c32e8f1f7bd3f58a3bab9c0e7f0232047f58c05cb0dd6c3cc16c9",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0712 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0712/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0712/state_v003.png",
+    "sha256": "04b55f92e95da267f3d892b45cb4c3c7c4b32e2eb0e49709fec0fa251ce7b0a8",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0713 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0713/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0713/state_v003.png",
+    "sha256": "fc04b1224e674289f0e56afbbaf65bf7fa8dc498b94f69c5645db218976682a2",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0714 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0714/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0714/state_v003.png",
+    "sha256": "dddc7d2a1565faee575bbf95c1f8c0e1b39fea0bce3a76c872e9248a909b2850",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0715 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0715/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0715/state_v003.png",
+    "sha256": "fce47840938859e108a3a1937c44d1ff0ff33ea95287e55a19cd7e3a92f25e0e",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0716 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0716/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0716/state_v003.png",
+    "sha256": "1d363597fd72577db249de1d5a5f42950a57d967dd5f2d1a319c33fc3f956c68",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0717 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0717/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0717/state_v003.png",
+    "sha256": "c9db8669c689e9e652ac9def34e8e47f7b69385f817b253453af772f693c9927",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0718 / 6",
+    "reference": "zak/converted/images/objects/room_052/object_0718/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0718/state_v003.png",
+    "sha256": "12d34befdbd91637bfcd1a2d0a4a56a73794abb9ca3eed9c860f2527f288b4df",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0719 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0719/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0719/state_v003.png",
+    "sha256": "cc2f843616cb98afba23efff8065d9061aea7da57d08225196386e11e5f8c3f9",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0720 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0720/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0720/state_v003.png",
+    "sha256": "eb262a5aa2baee5cdbc8f1fd9a16c06ac99fc39c0020de2b9f05a958a0632bfd",
+    "sheet": "objects_516.jpg"
+  },
+  {
+    "label": "Room 052 / object 0721 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0721/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0721/state_v003.png",
+    "sha256": "3a35e1da291f17eed5c83c2dc44ca4ab274f4bbf83cdf13f0926d20e462f8685",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0722 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0722/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0722/state_v003.png",
+    "sha256": "de31bf4e17ca0a608588f0418fde2e3e09134fd927fec01148009ecc5438c080",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0723 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0723/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0723/state_v003.png",
+    "sha256": "d4f6dea75c9ba7e5b58ed49bec30b762719c53165bc4f0241be2a1947f4c23a4",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0725 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0725/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0725/state_v003.png",
+    "sha256": "40188e62735d970bbf558990be57c545745af31fbb92a68883fb44a4a3cb90dc",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0726 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0726/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0726/state_v003.png",
+    "sha256": "a5f1a6e29454fbb01af44890245d2007e895584fbbfea499fe061d4c5a02aaa6",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0727 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0727/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0727/state_v003.png",
+    "sha256": "49f07e1cadce0523931e6e9a31fd242f1c45267dd443254155d9ef2589ffe768",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0728 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0728/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0728/state_v003.png",
+    "sha256": "f9c6f15e4c6096021ac9494fb26717bae9d1963fbbb5162e8ae5d5cee86259fb",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0729 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0729/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0729/state_v003.png",
+    "sha256": "98487b18b1a885c430cdd98c7e8a69afc557481d0fcd8e917274879084556aa7",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0730 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0730/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0730/state_v003.png",
+    "sha256": "f11c91aaf1ed0805b07b9a77542f473a518614d0a7d1934ef4e53236da9656b1",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0731 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0731/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0731/state_v003.png",
+    "sha256": "b9b0da0b800f20fbf1df9df48145d3fbc339c42b6d3db9c9cc3359a898a83ab8",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0732 / 6",
+    "reference": "zak/converted/images/objects/room_052/object_0732/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0732/state_v003.png",
+    "sha256": "e496e173db60f121cbc582c3605c83297ce56ad014b1208c01785ad70286f4d4",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0733 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0733/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0733/state_v003.png",
+    "sha256": "13e14425a89069ad82ebce355ade63df89614bc28371fbeb92d376c0a1248f6d",
+    "sheet": "objects_528.jpg"
+  },
+  {
+    "label": "Room 052 / object 0734 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0734/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0734/state_v004.png",
+    "sha256": "66e2a7028af69bab3dc4ad649f903bb4402da46272a091207027f55d336c65a0",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 052 / object 0735 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0735/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0735/state_v003.png",
+    "sha256": "30b6a8a31e25df40e5e97ac75851c3d51f889803084ff28fa60df61b62db66f7",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 052 / object 0736 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0736/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0736/state_v003.png",
+    "sha256": "68b16373eb86af1d53298fa40f156a3b47be5964822eeff8750dfce96a3ac255",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 052 / object 0737 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0737/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0737/state_v003.png",
+    "sha256": "9c9dc2facde17a8fb6b7b835ddad89f3dab684d398b6edfbd1c2c9648dfdcc26",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 052 / object 0738 / ",
+    "reference": "zak/converted/images/objects/room_052/object_0738/frame_000.png",
+    "file": "zak/converted/poc/objects/room_052/object_0738/state_v003.png",
+    "sha256": "a78b03c88b3ec64e16548ef3a0a3a27d7b2d3438d5cecd1ba73470cd58426181",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0739 / ",
+    "reference": "zak/converted/images/objects/room_053/object_0739/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0739/state_v003.png",
+    "sha256": "9da058bc4928aabe88c8b30fe3c2f1871236d12c2b05027d703cd59076fc0625",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0740 / ",
+    "reference": "zak/converted/images/objects/room_053/object_0740/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0740/state_v003.png",
+    "sha256": "a00f861a98e8233571a843c6f49c79a2ae1a4b52c31301a44b246c1428e10163",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0742 / tunnel",
+    "reference": "zak/converted/images/objects/room_053/object_0742/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0742/state_v003.png",
+    "sha256": "9adb2fcd17bb2c9ef2abd9b590cd0b678ba585368f08a0cac866c19eb76b0743",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0743 / tunnel",
+    "reference": "zak/converted/images/objects/room_053/object_0743/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0743/state_v003.png",
+    "sha256": "8648b293f478262878012bdfc5fedd41d545f8dcb484f9fdabf47643bc8191c8",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0747 / doorway",
+    "reference": "zak/converted/images/objects/room_053/object_0747/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0747/state_v003.png",
+    "sha256": "2023dabbd3790937ac4c648994ab2fc3fde11e245809a909d7c73afa6fc693d5",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0744 / doorway",
+    "reference": "zak/converted/images/objects/room_053/object_0744/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0744/state_v003.png",
+    "sha256": "9997971d7e521c5fd30428118cc4390f7448f954901d0e25cdb166e900f1b3e1",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0745 / doorway",
+    "reference": "zak/converted/images/objects/room_053/object_0745/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0745/state_v003.png",
+    "sha256": "9d521cf777d713061f8ffbd4088ddb281fe62286de2dea06cc32bb183f858b1c",
+    "sheet": "objects_540.jpg"
+  },
+  {
+    "label": "Room 053 / object 0746 / ",
+    "reference": "zak/converted/images/objects/room_053/object_0746/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0746/state_v003.png",
+    "sha256": "4c3df8447e08be8e9ea90f66688815ce5b6623802c9e6d1e4027a1cc598ec0f5",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 053 / object 0748 / torch",
+    "reference": "zak/converted/images/objects/room_053/object_0748/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0748/state_v003.png",
+    "sha256": "011fed4b40ee4ae0515efdc3bbee8ce3138c908277cc1356b6a05f454f1a529c",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 053 / object 0749 / torch",
+    "reference": "zak/converted/images/objects/room_053/object_0749/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0749/state_v003.png",
+    "sha256": "32266469bafa5c60bf684baa86e95f075eab4e0a53cd8dc1b279e4956aad5789",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 053 / object 0750 / ",
+    "reference": "zak/converted/images/objects/room_053/object_0750/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0750/state_v003.png",
+    "sha256": "faf8a3240e71234e59bbb151c8778796d1846870f339393916b5b4e965494e8f",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 053 / object 0751 / ",
+    "reference": "zak/converted/images/objects/room_053/object_0751/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0751/state_v003.png",
+    "sha256": "914d6d2ee838d28be9f118fbbda791fa6a5071dca0ed1a5c211aa6b33d13afb8",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 053 / object 0752 / ",
+    "reference": "zak/converted/images/objects/room_053/object_0752/frame_000.png",
+    "file": "zak/converted/poc/objects/room_053/object_0752/state_v003.png",
+    "sha256": "1eac36d907ba05508b515f28c54d52c3afa2415a3373fb6f76c318e2acfb2a09",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 054 / object 0753 / ",
+    "reference": "zak/converted/images/objects/room_054/object_0753/frame_000.png",
+    "file": "zak/converted/poc/objects/room_054/object_0753/state_v003.png",
+    "sha256": "c1a5b4a3a727a7be53277ddf91a23536cdb165b7a3624f4618838f702d430256",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 054 / object 0754 / ",
+    "reference": "zak/converted/images/objects/room_054/object_0754/frame_000.png",
+    "file": "zak/converted/poc/objects/room_054/object_0754/state_v003.png",
+    "sha256": "e9fb59a5926f9601ef5d64bc6d55fbcc42b19fccbc48a44bbe4847b408bb7af2",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 054 / object 0755 / ",
+    "reference": "zak/converted/images/objects/room_054/object_0755/frame_000.png",
+    "file": "zak/converted/poc/objects/room_054/object_0755/state_v003.png",
+    "sha256": "e05df67ef4a533f2b36db433b523428b1ac633e62c35fdd91f9553548915adf6",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 055 / object 0756 / ",
+    "reference": "zak/converted/images/objects/room_055/object_0756/frame_000.png",
+    "file": "zak/converted/poc/objects/room_055/object_0756/state_v003.png",
+    "sha256": "3e5b2400a12e12018a9a2cfe4d166a5323573fda7a3c4752225b0ee3a5888feb",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 055 / object 0757 / ",
+    "reference": "zak/converted/images/objects/room_055/object_0757/frame_000.png",
+    "file": "zak/converted/poc/objects/room_055/object_0757/state_v003.png",
+    "sha256": "a33ac5d29c9d080b924abdb79802df37a8aac3c1535113d84be08436f2f29017",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 056 / object 0761 / ",
+    "reference": "zak/converted/images/objects/room_056/object_0761/frame_000.png",
+    "file": "zak/converted/poc/objects/room_056/object_0761/state_v001.png",
+    "sha256": "1b0770d4d134a8756e105b34bd6923fb3d1fd35b3626efa69751c4f11c8dc016",
+    "sheet": "objects_552.jpg"
+  },
+  {
+    "label": "Room 057 / object 0762 / ",
+    "reference": "zak/converted/images/objects/room_057/object_0762/frame_000.png",
+    "file": "zak/converted/poc/objects/room_057/object_0762/state_v003.png",
+    "sha256": "b60b8cfba77d0b9ad63990f6efb6f6b1efbf5127eb8bb8a3aeb314fd8b063182",
+    "sheet": "objects_564.jpg"
+  },
+  {
+    "label": "Room 057 / object 0763 / ",
+    "reference": "zak/converted/images/objects/room_057/object_0763/frame_000.png",
+    "file": "zak/converted/poc/objects/room_057/object_0763/state_v003.png",
+    "sha256": "3f89732ef3b4d2a2195b3c21bf3f0d9f63bc0a38e731634258e02c908a37e2d6",
+    "sheet": "objects_564.jpg"
+  },
+  {
+    "label": "Room 057 / object 0764 / ",
+    "reference": "zak/converted/images/objects/room_057/object_0764/frame_000.png",
+    "file": "zak/converted/poc/objects/room_057/object_0764/state_v003.png",
+    "sha256": "b5ba2dd5b43bdd0495f138c3d8b3cb070334bc0b1210d5933ea11a0f21629233",
+    "sheet": "objects_564.jpg"
+  },
+  {
+    "label": "Room 057 / object 0765 / ",
+    "reference": "zak/converted/images/objects/room_057/object_0765/frame_000.png",
+    "file": "zak/converted/poc/objects/room_057/object_0765/state_v003.png",
+    "sha256": "ad413d8c8ec772992be7f0306e47988057480b8903dc54ed98731032833ea37b",
+    "sheet": "objects_564.jpg"
+  },
+  {
+    "label": "Room 058 / object 0766 / ",
+    "reference": "zak/converted/images/objects/room_058/object_0766/frame_000.png",
+    "file": "zak/converted/poc/objects/room_058/object_0766/state_v003.png",
+    "sha256": "341e1b94baf7947f735c698fb2667fceefc6e7a5191e8e46cfd606bedbbee8e6",
+    "sheet": "objects_564.jpg"
+  },
+  {
+    "label": "Room 058 / object 0767 / ",
+    "reference": "zak/converted/images/objects/room_058/object_0767/frame_000.png",
+    "file": "zak/converted/poc/objects/room_058/object_0767/state_v001.png",
+    "sha256": "0c768d93f0afe9b27078b293b7ddeabebe648471bdd747cf4d17aee64715b098",
+    "sheet": "objects_564.jpg"
+  },
+  {
+    "label": "Room 058 / object 0768 / ",
+    "reference": "zak/converted/images/objects/room_058/object_0768/frame_000.png",
+    "file": "zak/converted/poc/objects/room_058/object_0768/state_v003.png",
+    "sha256": "ca0778b109a9b78bb3685308871a7ac815fcb6f54828a90d34cb08e5f6ddfa9a",
+    "sheet": "objects_564.jpg"
+  }
+]

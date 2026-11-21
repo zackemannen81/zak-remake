@@ -1,0 +1,28 @@
+Events:
+   9 - 0025
+   A - 0025
+   C - 0060
+   E - 0025
+  FD - 0077
+[0025] (19) doSentence(STOP);
+[0027] (D8) printEgo("I don't need it.");
+[0036] (AE) waitForMessage();
+[0037] (91) animateActor(VAR_EGO,246);
+[003A] (80) breakHere();
+[003B] (80) breakHere();
+[003C] (D8) printEgo("It's for a different game.");
+[0054] (AE) waitForMessage();
+[0055] (91) animateActor(VAR_EGO,24);
+[0058] (2E) delay(120);
+[005C] (91) animateActor(VAR_EGO,16);
+[005F] (00) stopObjectCode();
+[0060] (D8) printEgo("Use for chainsaws only.");
+[0076] (00) stopObjectCode();
+[0077] (08) unless (VAR_EGO != 4) goto 00A0;
+[007D] (D8) printEgo("No way am I gonna pick up a dead alien!");
+[009D] (18) goto 00CB;
+[00A0] (D8) printEgo("Well, I'll just pretend it's a broom.");
+[00C1] (19) doSentence(254,478,0,1);
+[00C8] (50) pickupObject(68);
+[00CB] (00) stopObjectCode();
+END

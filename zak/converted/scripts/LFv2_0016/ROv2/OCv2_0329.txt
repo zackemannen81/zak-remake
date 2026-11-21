@@ -1,0 +1,20 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0329
+Events:
+   1 - 001B
+   2 - 0021
+   D - 0027
+[001B] (42) startScript(10);
+[001D] (07) setState08(155);
+[0020] (00) stopObjectCode();
+[0021] (42) startScript(11);
+[0023] (47) clearState08(155);
+[0026] (00) stopObjectCode();
+[0027] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[002B] (A8)   if (Var[56]) {
+[002F] (19)     doSentence(253,343,0,1);
+[0036] (18)   } else {
+[0039] (24)     loadRoomWithEgo(155,4,26,51);
+[003F] (**)   }
+[003F] (**) }
+[003F] (00) stopObjectCode();
+END

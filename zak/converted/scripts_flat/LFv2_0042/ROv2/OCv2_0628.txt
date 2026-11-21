@@ -1,0 +1,28 @@
+Events:
+  FD - 0013
+[0013] (1A) Var[49] = 11;
+[0017] (13) ActorOps(6,[Costume(15)]);
+[001B] (2D) putActorInRoom(6,42);
+[001E] (21) putActor(6,12,Var[49]);
+[0022] (53) ActorOps(6,[Sound(Var[234])]);
+[0026] (0C) loadCostume(14)
+[0029] (16) Var[48] = getRandomNr(16);
+[002C] (5A) Var[48] += 9;
+[0030] (46) Var[49]++;
+[0032] (16) VAR_RESULT = getRandomNr(1);
+[0035] (A8) unless (VAR_RESULT) goto 0043;
+[0039] (44) unless (Var[49] > 8) goto 0043;
+[003F] (3A) Var[49] -= 2;
+[0043] (44) unless (Var[49] > 24) goto 004D;
+[0049] (3A) Var[49] -= 3;
+[004D] (7E) walkActorTo(6,Var[48],Var[49]);
+[0051] (3B) waitForActor(6);
+[0053] (4F) unless (getState08(623)) goto 005B;
+[0058] (18) goto 0029;
+[005B] (1E) walkActorTo(6,17,0);
+[005F] (3B) waitForActor(6);
+[0061] (3D) setActorElevation(6,10);
+[0064] (2E) delay(300);
+[0068] (19) doSentence(250,629,0,1);
+[006F] (00) stopObjectCode();
+END

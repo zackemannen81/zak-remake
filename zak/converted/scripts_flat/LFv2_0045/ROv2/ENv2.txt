@@ -1,0 +1,18 @@
+[0000] (0C) loadSound(16)
+[0003] (70) lights(11,0,0);
+[0007] (19) doSentence(250,669,0,1);
+[000E] (33) RoomColor(5,1);
+[0012] (33) RoomColor(15,11);
+[0016] (1A) Var[117] = 659;
+[001A] (C7) clearState08(Var[117]);
+[001C] (D7) setState02(Var[117]);
+[001E] (46) Var[117]++;
+[0020] (44) unless (Var[117] > 668) goto 001A;
+[0026] (47) clearState08(670);
+[0029] (47) clearState08(657);
+[002C] (47) clearState08(658);
+[002F] (47) clearState08(669);
+[0032] (9A) Var[253] = Var[234];
+[0035] (47) clearState08(773);
+[0038] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+# Decompiled with descumm -2
+# Source: LFv2_0003\SCv2_0012
+
+[0000] (2E) delay(60);
+[0004] (08) unless (VAR_ROOM != 3) goto 0000;
+[000A] (9A) Var[159] = Var[234];
+[000D] (2E) delay(18000);
+[0011] (2E) delay(60);
+[0015] (B4) VAR_RESULT = getDist(VAR_EGO,138);
+[001A] (78) unless (VAR_RESULT < 25) goto 0011;
+[0020] (2E) delay(60);
+[0024] (08) unless (VAR_ROOM != 3) goto 0020;
+[002A] (9A) Var[159] = Var[160];
+[002D] (A0) stopObjectCode();
+END

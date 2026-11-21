@@ -1,0 +1,50 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0077
+
+[0000] (2E) delay(420);
+[0004] (40) cutscene();
+[0005] (9A) Var[117] = VAR_EGO;
+[0008] (72) loadRoom(4);
+[000A] (4F) if (getState08(159)) {
+[000F] (47)   clearState08(159);
+[0012] (18) } else {
+[0015] (42)   startScript(17);
+[0017] (**) }
+[0017] (1A) Var[47] = 5000;
+[001B] (2E) delay(120);
+[001F] (1A) VAR_EGO = 7;
+[0023] (FB) VAR_RESULT = getActorWalkBox(VAR_EGO);
+[0026] (48) if (VAR_RESULT == 3) {
+[002C] (0F)   if (!getState08(156)) {
+[0031] (19)     doSentence(1,157,0,0);
+[0038] (4C)     waitForSentence();
+[0039] (**)   }
+[0039] (**) }
+[0039] (36) walkActorToObject(7,159);
+[003D] (3B) waitForActor(7);
+[003F] (07) setState08(159);
+[0042] (62) stopScript(17);
+[0044] (3C) stopSound(13);
+[0046] (2E) delay(60);
+[004A] (D8) printEgo("Hello?\x03Hello, who's there?\x03Is this Edna again?");
+[0075] (AE) waitForMessage();
+[0076] (2E) delay(120);
+[007A] (9A) VAR_EGO = Var[117];
+[007D] (C0) endCutscene();
+[007E] (80) breakHere();
+[007F] (0F) unless (!getState08(87)) goto 007E;
+[0084] (40) cutscene();
+[0085] (9A) Var[117] = VAR_EGO;
+[0088] (2E) delay(60);
+[008C] (72) loadRoom(4);
+[008E] (2E) delay(120);
+[0092] (1A) VAR_EGO = 7;
+[0096] (D8) printEgo("They hung up!");
+[00A3] (AE) waitForMessage();
+[00A4] (19) doSentence(253,157,0,1);
+[00AB] (80) breakHere();
+[00AC] (A8) unless (Var[48]) goto 00AB;
+[00B0] (9A) VAR_EGO = Var[117];
+[00B3] (C0) endCutscene();
+[00B4] (A0) stopObjectCode();
+END

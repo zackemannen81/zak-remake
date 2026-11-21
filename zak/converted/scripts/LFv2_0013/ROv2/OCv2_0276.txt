@@ -1,0 +1,14 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0013/ROv2/OCv2_0276
+Events:
+  FD - 0013
+[0013] (48) if (Var[147] == 2) {
+[0019] (48)   if (VAR_EGO == 1) {
+[001F] (D8)     printEgo("Too bad I had to kill the squirrel.");
+[003D] (**)   }
+[003D] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);
+[003F] (18) } else {
+[0042] (D8)   printEgo("The two-headed squirrel is guarding it.");
+[0066] (19)   doSentence(STOP);
+[0068] (**) }
+[0068] (00) stopObjectCode();
+END

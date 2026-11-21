@@ -1,0 +1,25 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0344
+Events:
+   C - 001C
+  FD - 002B
+[001C] (D8) printEgo("It's set to 60.");
+[002A] (00) stopObjectCode();
+[002B] (9A) Var[66] = Var[234];
+[002E] (7B) VAR_RESULT = getActorWalkBox(1);
+[0031] (48) if (VAR_RESULT == 6) {
+[0037] (48)   if (Var[167] == 48) {
+[003D] (48)     if (Var[164] == 40) {
+[0043] (1A)       Var[66] = 1;
+[0047] (**)     }
+[0047] (**)   }
+[0047] (**) }
+[0047] (7B) VAR_RESULT = getActorWalkBox(2);
+[004A] (48) if (VAR_RESULT == 6) {
+[0050] (48)   if (Var[168] == 48) {
+[0056] (48)     if (Var[165] == 40) {
+[005C] (1A)       Var[66] = 2;
+[0060] (**)     }
+[0060] (**)   }
+[0060] (**) }
+[0060] (00) stopObjectCode();
+END

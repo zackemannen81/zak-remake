@@ -1,0 +1,12 @@
+{
+  "room": 41,
+  "object_id": 78,
+  "prompt": "Create ONLY the exact attached original state patch in beautifully polished AAA Unreal Engine 5 visual quality. Empty blue stone alcove state: black opening, violet/blue L-shaped floor and right wall fill exact original proportions. No component added, no new black padding. The reference is the complete tight crop. Preserve source boundaries, geometry, relative positions, camera, palette and full image aspect. Realistic physical materials and refined lighting, not voxel/extruded pixel blocks. No surrounding room, invented props, extra symbols or text. Fill entire frame with original background; no new black padding except proportion-preserving letterbox if aspect is extreme.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_041\\object_0078\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_041\\object_0078\\state_v012.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_041\\object_0078\\request_v012.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-e242b2d2-48e6-4d60-9566-b3b3aab60947.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

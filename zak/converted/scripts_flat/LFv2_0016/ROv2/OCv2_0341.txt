@@ -1,0 +1,21 @@
+Events:
+  FD - 0013
+[0013] (1A) VAR_EGO = 7;
+[0017] (13) ActorOps(12,[Costume(28)]);
+[001B] (13) ActorOps(12,[Color(14, 9)]);
+[0020] (13) ActorOps(12,[Color(6, 1)]);
+[0025] (13) ActorOps(12,[Sound(6)]);
+[0029] (13) ActorOps(12,[TalkColor(9)]);
+[002D] (1A) Var[245] = 28;
+[0031] (2D) putActorInRoom(7,16);
+[0034] (01) putActor(7,28,48);
+[0038] (11) animateActor(7,251);
+[003B] (2D) putActorInRoom(12,16);
+[003E] (01) putActor(12,50,48);
+[0042] (3D) setActorElevation(12,0);
+[0045] (42) startScript(5);
+[0047] (47) clearState08(328);
+[004A] (47) clearState08(329);
+[004D] (47) clearState08(155);
+[0050] (00) stopObjectCode();
+END

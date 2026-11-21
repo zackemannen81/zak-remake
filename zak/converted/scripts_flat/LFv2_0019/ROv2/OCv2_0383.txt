@@ -1,0 +1,12 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[50] = Var[225];
+[0016] (2E) delay(600);
+[001A] (C6) Var[50]--;
+[001C] (28) unless (!Var[50]) goto 0016;
+[0020] (9A) Var[225] = Var[234];
+[0023] (9A) Var[50] = Var[235];
+[0026] (5B) setBitVar(1559,5,Var[235]);
+[002B] (42) startScript(42);
+[002D] (00) stopObjectCode();
+END

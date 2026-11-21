@@ -1,0 +1,14 @@
+Events:
+   B - 0025
+   C - 0042
+[0025] (48) unless (VAR_ACTIVE_OBJECT2 == 25) goto 003F;
+[002B] (0F) unless (!getState08(307)) goto 0035;
+[0030] (42) startScript(28);
+[0032] (18) goto 003C;
+[0035] (19) doSentence(253,293,0,1);
+[003C] (18) goto 0041;
+[003F] (42) startScript(3);
+[0041] (00) stopObjectCode();
+[0042] (42) startScript(68);
+[0044] (00) stopObjectCode();
+END

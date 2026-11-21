@@ -1,0 +1,9 @@
+Events:
+   C - 0017
+[0017] (AF) unless (!getState04(VAR_ACTIVE_OBJECT1)) goto 0052;
+[001B] (D8) printEgo("Hmm, it's in several alien languages^\x03Ah, here's English:");
+[004F] (AE) waitForMessage();
+[0050] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[0052] (D8) printEgo("Welcome Space Travelers. Please leave\x01The Friendly Hostel as you found it.\x03No gum chewing.");
+[00A2] (00) stopObjectCode();
+END

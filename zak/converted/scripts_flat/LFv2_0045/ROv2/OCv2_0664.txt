@@ -1,0 +1,5 @@
+Events:
+  FF - 0013
+[0013] (9A) Var[121] = VAR_ACTIVE_OBJECT1;
+[0016] (00) stopObjectCode();
+END

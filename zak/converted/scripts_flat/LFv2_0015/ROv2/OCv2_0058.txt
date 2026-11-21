@@ -1,0 +1,8 @@
+Events:
+   B - 002A
+   E - 0022
+[0022] (19) doSentence(253,314,0,1);
+[0029] (00) stopObjectCode();
+[002A] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002F] (00) stopObjectCode();
+END

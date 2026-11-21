@@ -1,0 +1,68 @@
+# Decompiled with descumm -2
+# Source: LFv2_0028\SCv2_0082
+
+[0000] (9A) Var[199] = Var[234];
+[0003] (80) breakHere();
+[0004] (68) VAR_RESULT = isScriptRunning(49);
+[0007] (28) unless (!VAR_RESULT) goto 0003;
+[000B] (B1) VAR_RESULT = getBitVar(1505,VAR_EGO);
+[0010] (28) if (!VAR_RESULT) {
+[0014] (9A)   Var[66] = Var[235];
+[0017] (B1)   VAR_RESULT = getBitVar(1505,Var[66]);
+[001C] (A8)   if (VAR_RESULT) {
+[0020] (88)     if (VAR_EGO != Var[66]) {
+[0025] (9A)       VAR_EGO = Var[66];
+[0028] (42)       startScript(19);
+[002A] (D2)       actorFollowCamera(VAR_EGO);
+[002C] (**)     }
+[002C] (2E)     delay(60);
+[0030] (18)     goto 000B;
+[0033] (**)   }
+[0033] (46)   Var[66]++;
+[0035] (44)   unless (Var[66] > 4) goto 0017;
+[003B] (9A)   Var[199] = Var[235];
+[003E] (62)   stopScript(0);
+[0040] (**) }
+[0040] (91) animateActor(VAR_EGO,246);
+[0043] (1A) Var[166] = 3;
+[0047] (48) if (VAR_EGO == 1) {
+[004D] (2F)   if (!getState04(39)) {
+[0052] (D8)     printEgo("My skin's boiling!");
+[0064] (1A)     Var[166] = 6;
+[0068] (18)     goto 00A4;
+[006B] (**)   }
+[006B] (48)   if (Var[167] == 56) {
+[0071] (D8)     printEgo("The air's leaking from my fish bowl.");
+[0091] (18)     goto 00A4;
+[0094] (**)   }
+[0094] (**) }
+[0094] (D8) printEgo("I can't breathe!");
+[00A4] (9A) Var[219] = Var[235];
+[00A7] (B1) VAR_RESULT = getBitVar(1505,Var[219]);
+[00AC] (A8) if (VAR_RESULT) {
+[00B0] (9A)   Var[14] = Var[219];
+[00B3] (5A)   Var[14] += 225;
+[00B7] (EA)   Var[Var[14]] -= Var[235];
+[00BA] (9A)   Var[14] = Var[219];
+[00BD] (5A)   Var[14] += 225;
+[00C1] (28)   if (!Var[14]) {
+[00C5] (88)     if (VAR_EGO != Var[219]) {
+[00CA] (9A)       VAR_EGO = Var[219];
+[00CD] (D2)       actorFollowCamera(VAR_EGO);
+[00CF] (2E)       delay(60);
+[00D3] (**)     }
+[00D3] (08)     if (VAR_EGO != 1) {
+[00D9] (1A)       Var[166] = 3;
+[00DD] (**)     }
+[00DD] (42)     startScript(78);
+[00DF] (80)     breakHere();
+[00E0] (68)     VAR_RESULT = isScriptRunning(78);
+[00E3] (28)     unless (!VAR_RESULT) goto 00DF;
+[00E7] (**)   }
+[00E7] (**) }
+[00E7] (46) Var[219]++;
+[00E9] (44) unless (Var[219] > 4) goto 00A7;
+[00EF] (2E) delay(60);
+[00F3] (18) goto 000B;
+[00F6] (A0) stopObjectCode();
+END

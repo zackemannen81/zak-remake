@@ -1,0 +1,38 @@
+Events:
+   1 - 0031
+   2 - 0029
+   4 - 0031
+   5 - 0031
+   B - 0031
+[0029] (19) doSentence(253,256,0,1);
+[0030] (00) stopObjectCode();
+[0031] (A8) unless (Var[248]) goto 00BD;
+[0035] (48) unless (VAR_ACTIVE_VERB == 1) goto 0045;
+[003B] (19) doSentence(253,254,0,1);
+[0042] (18) goto 00BA;
+[0045] (48) unless (VAR_ACTIVE_VERB == 11) goto 009F;
+[004B] (48) unless (VAR_ACTIVE_OBJECT2 == 22) goto 0074;
+[0051] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 005F;
+[0055] (29) setOwnerOf(22,14);
+[0059] (47) clearState08(262);
+[005C] (18) goto 0071;
+[005F] (D8) printEgo("The door is closed.");
+[0071] (18) goto 009C;
+[0074] (48) unless (VAR_ACTIVE_OBJECT2 == 14) goto 008D;
+[007A] (C8) unless (Var[138] == Var[234]) goto 008D;
+[007F] (D8) printEgo("Not Sushi!");
+[008A] (18) goto 009C;
+[008D] (D8) printEgo("I'd better not.");
+[009C] (18) goto 00BA;
+[009F] (48) unless (VAR_ACTIVE_VERB == 4) goto 00AA;
+[00A5] (42) startScript(36);
+[00A7] (18) goto 00BA;
+[00AA] (48) unless (VAR_ACTIVE_VERB == 5) goto 00BA;
+[00B0] (19) doSentence(253,253,0,1);
+[00B7] (18) /* goto 00BA; */
+[00BA] (18) goto 00C6;
+[00BD] (68) VAR_RESULT = isScriptRunning(105);
+[00C0] (28) unless (!VAR_RESULT) goto 00C6;
+[00C4] (42) startScript(105);
+[00C6] (00) stopObjectCode();
+END

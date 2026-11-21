@@ -1,0 +1,11 @@
+Events:
+   D - 0020
+   E - 0032
+[0020] (D8) printEgo("It's way too high!");
+[0031] (00) stopObjectCode();
+[0032] (2F) unless (!getState04(271)) goto 004E;
+[0037] (27) setState04(271);
+[003A] (11) animateActor(1,246);
+[003D] (D8) printEgo("Come on^ get real.");
+[004E] (00) stopObjectCode();
+END

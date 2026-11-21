@@ -1,0 +1,16 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0013/ROv2/OCv2_0281
+Events:
+   D - 001E
+  FD - 0029
+[001E] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0022] (24)   loadRoomWithEgo(297,129,255,255);
+[0028] (**) }
+[0028] (00) stopObjectCode();
+[0029] (33) RoomColor(1,1);
+[002D] (33) RoomColor(9,9);
+[0031] (33) RoomColor(4,4);
+[0035] (33) RoomColor(6,6);
+[0039] (33) RoomColor(12,12);
+[003D] (70) lights(11,0,0);
+[0041] (00) stopObjectCode();
+END

@@ -1,0 +1,63 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0094
+
+[0000] (80) breakHere();
+[0001] (40) cutscene();
+[0002] (5B) setBitVar(1544,0,Var[234]);
+[0007] (52) actorFollowCamera(7);
+[0009] (9A) Var[117] = VAR_EGO;
+[000C] (1A) VAR_EGO = 7;
+[0010] (2E) delay(60);
+[0014] (11) animateActor(7,247);
+[0017] (2E) delay(60);
+[001B] (11) animateActor(7,246);
+[001E] (3B) waitForActor(7);
+[0020] (D8) printEgo("What was that!");
+[002E] (AE) waitForMessage();
+[002F] (6F) if (getState04(330)) {
+[0034] (11)   animateActor(7,245);
+[0037] (D8)   printEgo("Oh, it must be the Brother in the back.");
+[0058] (AE)   waitForMessage();
+[0059] (11)   animateActor(7,246);
+[005C] (3B)   waitForActor(7);
+[005E] (1A)   Var[238] = 255;
+[0062] (18) } else {
+[0065] (19)   doSentence(253,156,0,1);
+[006C] (80)   breakHere();
+[006D] (A8)   unless (Var[48]) goto 006C;
+[0071] (2D)   putActorInRoom(7,16);
+[0074] (01)   putActor(7,17,48);
+[0078] (52)   actorFollowCamera(7);
+[007A] (11)   animateActor(7,250);
+[007D] (2E)   delay(30);
+[0081] (66)   Var[238] = getClosestObjActor(7);
+[0085] (48)   if (Var[238] == 255) {
+[008B] (11)     animateActor(7,244);
+[008E] (2E)     delay(60);
+[0092] (11)     animateActor(7,245);
+[0095] (2E)     delay(60);
+[0099] (D8)     printEgo("I THOUGHT I heard something!");
+[00B3] (AE)     waitForMessage();
+[00B4] (11)     animateActor(7,247);
+[00B7] (3B)     waitForActor(7);
+[00B9] (2D)     putActorInRoom(7,4);
+[00BC] (01)     putActor(7,22,52);
+[00C0] (2E)     delay(30);
+[00C4] (19)     doSentence(2,329,0,1);
+[00CB] (2E)     delay(30);
+[00CF] (18)   } else {
+[00D2] (49)     faceActor(7,Var[238]);
+[00D5] (D8)     printEgo("An intruder!");
+[00E2] (5B)     setBitVar(1544,0,Var[235]);
+[00E7] (AE)     waitForMessage();
+[00E8] (9A)     Var[117] = Var[238];
+[00EB] (**)   }
+[00EB] (**) }
+[00EB] (9A) VAR_EGO = Var[117];
+[00EE] (42) startScript(19);
+[00F0] (C0) endCutscene();
+[00F1] (08) if (Var[238] != 255) {
+[00F7] (4A)   chainScript(95);
+[00F9] (**) }
+[00F9] (A0) stopObjectCode();
+END

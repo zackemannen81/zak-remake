@@ -1,0 +1,8 @@
+Events:
+  FD - 001A
+[001A] (A9) setOwnerOf(Var[50],0);
+[001D] (A9) setOwnerOf(Var[50],15);
+[0020] (C7) clearState08(Var[50]);
+[0022] (97) clearState02(Var[50]);
+[0024] (00) stopObjectCode();
+END

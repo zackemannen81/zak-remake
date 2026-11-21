@@ -1,0 +1,13 @@
+{
+  "done": 373,
+  "failures": [
+    {
+      "id": 493,
+      "error": "Error: Warning: truncated output (original token count: 203)\nTotal output lines: 9\n\nFatal error.\r\nInternal CLR error. (0x80131506)\r\n   at Microsoft.PowerShell.ConsoleHost.DoRunspaceInitialization(Microsoft.PowerShell.RunspaceCreationEventArgs)\r\n   at Microsoft.PowerShell.ConsoleHost.…103 tokens truncated…l.ConsoleHost.Start(System.String, System.String, Boolean)\r\n   at Microsoft.PowerShell.UnmanagedPSEntry.Start(System.String[], Int32)\r\n   at Microsoft.PowerShell.ManagedPSEntry.Main(System.String[])\r\n"
+    },
+    {
+      "id": 671,
+      "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID f3166930-f01a-4fcb-ae84-9191c6276dd2.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")"
+    }
+  ]
+}

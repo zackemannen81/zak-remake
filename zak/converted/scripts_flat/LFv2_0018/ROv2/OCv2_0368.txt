@@ -1,0 +1,36 @@
+Events:
+   1 - 0027
+   2 - 0042
+   9 - 0042
+   A - 0027
+  FD - 0050
+[0027] (19) doSentence(253,370,0,1);
+[002E] (A8) unless (Var[47]) goto 0041;
+[0032] (42) startScript(10);
+[0034] (08) unless (VAR_EGO != 8) goto 0041;
+[003A] (19) doSentence(253,368,0,1);
+[0041] (00) stopObjectCode();
+[0042] (19) doSentence(253,370,0,1);
+[0049] (A8) unless (Var[47]) goto 004F;
+[004D] (42) startScript(11);
+[004F] (00) stopObjectCode();
+[0050] (60) cursorCommand(15, 2);
+[0053] (2E) delay(60);
+[0057] (6F) unless (getState04(368)) goto 00BB;
+[005C] (67) clearState04(368);
+[005F] (D8) printEgo("Here's the stuff he took from \x02");
+[007A] (48) unless (VAR_EGO == 1) goto 0088;
+[0080] (D8) printEgo("me!");
+[0085] (18) goto 00A0;
+[0088] (D8) printEgo("Zak!\x01I'll take it for him.");
+[00A0] (1A) Var[66] = 14;
+[00A4] (90) VAR_RESULT = getObjectOwner(Var[66]);
+[00A7] (48) unless (VAR_RESULT == 8) goto 00B0;
+[00AD] (E9) setOwnerOf(Var[66],VAR_EGO);
+[00B0] (46) Var[66]++;
+[00B2] (44) unless (Var[66] > 83) goto 00A4;
+[00B8] (18) goto 00C7;
+[00BB] (D8) printEgo("It's empty.");
+[00C7] (60) cursorCommand(247, 1);
+[00CA] (00) stopObjectCode();
+END

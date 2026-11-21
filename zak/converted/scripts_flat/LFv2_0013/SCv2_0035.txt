@@ -1,0 +1,24 @@
+[0000] (1A) Var[47] = 20;
+[0004] (6F) unless (getState04(290)) goto 000D;
+[0009] (1A) Var[47] = 40;
+[000D] (19) doSentence(250,289,0,1);
+[0014] (27) setState04(289);
+[0017] (2E) delay(60);
+[001B] (C6) Var[47]--;
+[001D] (28) unless (!Var[47]) goto 0017;
+[0021] (67) clearState04(289);
+[0024] (19) doSentence(254,289,0,1);
+[002B] (19) doSentence(253,290,0,1);
+[0032] (48) unless (Var[153] == 3) goto 0053;
+[0038] (47) clearState08(276);
+[003B] (07) setState08(275);
+[003E] (1A) Var[153] = 4;
+[0042] (80) breakHere();
+[0043] (19) doSentence(253,291,0,1);
+[004A] (19) doSentence(250,277,0,1);
+[0051] (62) stopScript(0);
+[0053] (48) unless (VAR_ROOM == 13) goto 0067;
+[0059] (19) doSentence(253,284,0,1);
+[0060] (19) doSentence(253,291,0,1);
+[0067] (A0) stopObjectCode();
+END

@@ -1,0 +1,24 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0005/ROv2/OCv2_0161
+Events:
+   1 - 001B
+   2 - 0021
+   D - 0027
+[001B] (42) startScript(10);
+[001D] (07) setState08(180);
+[0020] (00) stopObjectCode();
+[0021] (42) startScript(11);
+[0023] (47) clearState08(180);
+[0026] (00) stopObjectCode();
+[0027] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[002B] (68)   VAR_RESULT = isScriptRunning(62);
+[002E] (28)   if (!VAR_RESULT) {
+[0032] (27)     setState04(180);
+[0035] (24)     loadRoomWithEgo(180,7,255,255);
+[003B] (18)   } else {
+[003E] (2D)     putActorInRoom(1,7);
+[0041] (01)     putActor(1,31,56);
+[0045] (11)     animateActor(1,251);
+[0048] (**)   }
+[0048] (**) }
+[0048] (00) stopObjectCode();
+END

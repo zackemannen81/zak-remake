@@ -1,0 +1,41 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0108
+Events:
+   1 - 0083
+   A - 0083
+   B - 00B0
+   D - 0029
+   E - 0083
+  FD - 00B3
+[0029] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[002D] (4F)   if (getState08(110)) {
+[0032] (19)     doSentence(11,110,0,0);
+[0039] (48)   } else if (VAR_EGO == 1) {
+[0042] (1C)     startSound(60);
+[0044] (D8)     printEgo("AHHHHHHEEEEEEEEeeeeeee^");
+[005D] (1A)     Var[49] = 5;
+[0061] (19)     doSentence(253,110,0,1);
+[0068] (18)   } else {
+[006B] (D8)     printEgo("I'm not going down there!");
+[0082] (**)   }
+[0082] (**) }
+[0082] (00) stopObjectCode();
+[0083] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0087] (D8)   printEgo("They're not THAT loose. I'll need some\x01help.");
+[00AF] (**) }
+[00AF] (00) stopObjectCode();
+[00B0] (42) startScript(37);
+[00B2] (00) stopObjectCode();
+[00B3] (0F) if (!getState08(108)) {
+[00B8] (54)   setObjectName(108,"loose boards");
+[00C8] (30)   setBoxFlags(3,0);
+[00CB] (47)   clearState08(334);
+[00CE] (57)   setState02(334);
+[00D1] (18) } else {
+[00D4] (54)   setObjectName(108,"hole");
+[00DC] (30)   setBoxFlags(3,128);
+[00DF] (07)   setState08(334);
+[00E2] (17)   clearState02(334);
+[00E5] (0C)   loadSound(60)
+[00E8] (**) }
+[00E8] (00) stopObjectCode();
+END

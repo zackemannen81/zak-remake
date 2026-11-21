@@ -1,0 +1,5 @@
+[0000] (70) lights(11,0,0);
+[0004] (19) doSentence(253,754,0,1);
+[000B] (1C) startSound(110);
+[000D] (00) stopObjectCode();
+END

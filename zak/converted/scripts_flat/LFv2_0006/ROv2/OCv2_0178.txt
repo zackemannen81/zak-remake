@@ -1,0 +1,27 @@
+Events:
+   1 - 003A
+   2 - 0032
+   9 - 0042
+   A - 0022
+   C - 0058
+[0022] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 002D;
+[0026] (1C) startSound(64);
+[0028] (87) setState08(VAR_ACTIVE_OBJECT1);
+[002A] (18) goto 0031;
+[002D] (1C) startSound(63);
+[002F] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0031] (00) stopObjectCode();
+[0032] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0039;
+[0036] (18) goto 002D;
+[0039] (00) stopObjectCode();
+[003A] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0041;
+[003E] (18) goto 0026;
+[0041] (00) stopObjectCode();
+[0042] (D8) printEgo("Nope, that won't work.");
+[0057] (00) stopObjectCode();
+[0058] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 007A;
+[005C] (D8) printEgo("It's the device from my dream!");
+[0077] (18) goto 0088;
+[007A] (D8) printEgo("I can't see it.");
+[0088] (00) stopObjectCode();
+END

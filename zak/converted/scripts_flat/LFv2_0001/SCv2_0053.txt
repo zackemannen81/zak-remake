@@ -1,0 +1,40 @@
+[0000] (48) unless (VAR_ACTIVE_VERB == 12) goto 00A6;
+[0006] (48) unless (Var[67] == 1) goto 0022;
+[000C] (D8) printEgo("Zachary McKracken\x02");
+[001F] (18) goto 008A;
+[0022] (48) unless (Var[67] == 2) goto 0039;
+[0028] (D8) printEgo("Annie Larris\x02");
+[0036] (18) goto 008A;
+[0039] (48) unless (Var[67] == 3) goto 0071;
+[003F] (10) VAR_RESULT = getObjectOwner(74);
+[0043] (48) unless (VAR_RESULT == 15) goto 005F;
+[0049] (D8) printEgo("The one in front says:\x01\x02");
+[005F] (D8) printEgo("Melissa China\x02");
+[006E] (18) goto 008A;
+[0071] (48) unless (Var[67] == 4) goto 008A;
+[0077] (D8) printEgo("Leslie Bennett\x02");
+[0087] (18) /* goto 008A; */
+[008A] (9A) Var[14] = Var[67];
+[008D] (5A) Var[14] += 61;
+[0091] (9A) Var[66] = Var[14];
+[0094] (D8) printEgo(", balance is $\x04\x42");
+[00A3] (18) goto 0136;
+[00A6] (48) unless (VAR_ACTIVE_VERB == 3) goto 0113;
+[00AC] (04) unless (VAR_ACTIVE_OBJECT2 <= 4) goto 00D6;
+[00B2] (D8) printEgo("That's useless - it only works for me.");
+[00D3] (18) goto 0110;
+[00D6] (48) unless (VAR_ACTIVE_OBJECT2 == 352) goto 00E4;
+[00DC] (79) doSentence(11,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,0);
+[00E1] (18) goto 0110;
+[00E4] (48) unless (VAR_ACTIVE_OBJECT2 == 144) goto 0108;
+[00EA] (1A) Var[66] = 150;
+[00EE] (14) print(255,"Put it in the \x06\x42.");
+[00FE] (19) doSentence(253,148,0,1);
+[0105] (18) goto 0110;
+[0108] (D8) printEgo("No way!");
+[0110] (18) goto 0136;
+[0113] (48) unless (VAR_ACTIVE_VERB == 11) goto 0136;
+[0119] (D8) printEgo("It won't work. It's not mine.");
+[0133] (18) /* goto 0136; */
+[0136] (A0) stopObjectCode();
+END

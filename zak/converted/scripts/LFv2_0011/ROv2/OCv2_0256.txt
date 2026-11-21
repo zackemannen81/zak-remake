@@ -1,0 +1,27 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0256
+Events:
+   1 - 001D
+   2 - 0043
+   D - 0046
+  FD - 0055
+[001D] (08) if (VAR_EGO != 9) {
+[0023] (D8)   printEgo("I'd depressurize the plane!");
+[003D] (18) } else {
+[0040] (42)   startScript(10);
+[0042] (**) }
+[0042] (00) stopObjectCode();
+[0043] (42) startScript(11);
+[0045] (00) stopObjectCode();
+[0046] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[004A] (9A)   Var[52] = VAR_EGO;
+[004D] (42)   startScript(120);
+[004F] (E4)   loadRoomWithEgo(Var[45],Var[44],8,60);
+[0054] (**) }
+[0054] (00) stopObjectCode();
+[0055] (4F) if (getState08(260)) {
+[005A] (1C)   startSound(11);
+[005C] (47)   clearState08(260);
+[005F] (**) }
+[005F] (57) setState02(241);
+[0062] (00) stopObjectCode();
+END

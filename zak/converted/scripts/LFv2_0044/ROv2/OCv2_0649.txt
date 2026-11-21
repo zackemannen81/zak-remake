@@ -1,0 +1,14 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0649
+Events:
+  FD - 0013
+[0013] (FB) Var[66] = getActorWalkBox(VAR_EGO);
+[0016] (17) clearState02(640);
+[0019] (08) if (Var[66] != 9) {
+[001F] (38)   if (Var[66] >= 2) {
+[0025] (57)     setState02(640);
+[0028] (**)   }
+[0028] (**) }
+[0028] (80) breakHere();
+[0029] (18) goto 0013;
+[002C] (00) stopObjectCode();
+END

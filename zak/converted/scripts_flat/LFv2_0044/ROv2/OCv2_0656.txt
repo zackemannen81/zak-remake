@@ -1,0 +1,12 @@
+Events:
+  FD - 0013
+[0013] (53) ActorOps(10,[Name("drunken sentry")]);
+[0026] (2D) putActorInRoom(10,133);
+[0029] (01) putActor(10,0,63);
+[002D] (11) animateActor(10,251);
+[0030] (11) animateActor(10,24);
+[0033] (30) setBoxFlags(1,0);
+[0036] (19) doSentence(253,652,0,1);
+[003D] (19) doSentence(253,654,0,1);
+[0044] (00) stopObjectCode();
+END

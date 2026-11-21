@@ -1,0 +1,11 @@
+Events:
+   B - 0025
+   C - 0033
+[0025] (48) unless (VAR_ACTIVE_OBJECT2 == 25) goto 0030;
+[002B] (42) startScript(28);
+[002D] (18) goto 0032;
+[0030] (42) startScript(3);
+[0032] (00) stopObjectCode();
+[0033] (42) startScript(68);
+[0035] (00) stopObjectCode();
+END

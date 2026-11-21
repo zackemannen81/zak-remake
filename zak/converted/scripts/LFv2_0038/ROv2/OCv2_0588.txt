@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0038/ROv2/OCv2_0588
+Events:
+   C - 001A
+[001A] (D8) printEgo("Kinshasa Medical School^\x03^Witch Doctor First Class");
+[0049] (00) stopObjectCode();
+END

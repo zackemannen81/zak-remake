@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (19) doSentence(253,281,0,1);
+[001A] (1C) startSound(80);
+[001C] (16) Var[46] = getRandomNr(2);
+[001F] (5A) Var[46] += 289;
+[0023] (85) drawObject(Var[46],25,11);
+[0027] (80) breakHere();
+[0028] (18) goto 001C;
+[002B] (00) stopObjectCode();
+END

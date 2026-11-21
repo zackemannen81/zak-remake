@@ -1,0 +1,12 @@
+# Decompiled with descumm -2
+# Source: LFv2_0046\SCv2_0131
+
+[0000] (48) if (VAR_ACTIVE_OBJECT2 == 194) {
+[0006] (18) } else {
+[0009] (48)   unless (VAR_ACTIVE_OBJECT2 == 220) goto 0018;
+[000F] (**) }
+[000F] (59) doSentence(11,VAR_ACTIVE_OBJECT2,0,0);
+[0015] (18) goto 001D;
+[0018] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[001D] (A0) stopObjectCode();
+END

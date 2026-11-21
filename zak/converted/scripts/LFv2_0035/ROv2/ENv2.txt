@@ -1,0 +1,65 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0035/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (2F) if (!getState04(558)) {
+[0009] (46)   Var[154]++;
+[000B] (**) }
+[000B] (48) if (VAR_ROOM == 195) {
+[0011] (33)   RoomScroll(20,20);
+[0015] (47)   clearState08(550);
+[0018] (47)   clearState08(551);
+[001B] (47)   clearState08(552);
+[001E] (47)   clearState08(545);
+[0021] (17)   clearState02(545);
+[0024] (47)   clearState08(546);
+[0027] (47)   clearState08(547);
+[002A] (30)   setBoxFlags(10,128);
+[002D] (13)   ActorOps(10,[TalkColor(9)]);
+[0031] (13)   ActorOps(10,[Costume(29)]);
+[0035] (13)   ActorOps(10,[Color(3, 1)]);
+[003A] (53)   ActorOps(10,[Name("projection")]);
+[0049] (0C)   loadCostume(29)
+[004C] (0C)   loadScript(47)
+[004F] (0F)   if (!getState08(549)) {
+[0054] (30)     setBoxFlags(4,0);
+[0057] (30)     setBoxFlags(6,0);
+[005A] (18)   } else {
+[005D] (30)     setBoxFlags(4,64);
+[0060] (30)     setBoxFlags(6,64);
+[0063] (1A)     Var[66] = 1;
+[0067] (83)     VAR_RESULT = getActorRoom(Var[66]);
+[006A] (48)     if (VAR_RESULT == 195) {
+[0070] (DB)       setBitVar(1440,Var[66],Var[234]);
+[0075] (FB)       VAR_RESULT = getActorWalkBox(Var[66]);
+[0078] (08)       if (VAR_RESULT != 9) {
+[007E] (AD)         putActorInRoom(Var[66],195);
+[0081] (81)         putActor(Var[66],29,56);
+[0085] (**)       }
+[0085] (**)     }
+[0085] (46)     Var[66]++;
+[0087] (44)     unless (Var[66] > 4) goto 0067;
+[008D] (0C)     loadSound(29)
+[0090] (0C)     loadSound(19)
+[0093] (19)     doSentence(253,554,0,1);
+[009A] (19)     doSentence(253,551,0,1);
+[00A1] (**)   }
+[00A1] (18) } else {
+[00A4] (33)   RoomScroll(60,60);
+[00A8] (30)   setBoxFlags(9,128);
+[00AB] (45)   drawObject(559,Var[161],5);
+[00B0] (45)   drawObject(560,Var[162],8);
+[00B5] (26)   setVarRange(Var[49],2,[57,61]);
+[00BA] (19)   doSentence(253,558,0,1);
+[00C1] (4F)   if (getState08(556)) {
+[00C6] (1C)     startSound(55);
+[00C8] (**)   }
+[00C8] (4F)   if (getState08(557)) {
+[00CD] (1C)     startSound(57);
+[00CF] (**)   }
+[00CF] (0C)   loadSound(9)
+[00D2] (93)   ActorOps(VAR_EGO,[Sound(9)]);
+[00D6] (48)   if (VAR_EGO == 3) {
+[00DC] (19)     doSentence(253,555,0,1);
+[00E3] (**)   }
+[00E3] (**) }
+[00E3] (00) stopObjectCode();
+END

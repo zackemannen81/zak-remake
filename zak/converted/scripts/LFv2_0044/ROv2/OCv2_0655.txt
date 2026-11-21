@@ -1,0 +1,46 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0655
+Events:
+  FD - 0013
+[0013] (19) doSentence(253,653,0,1);
+[001A] (9A) Var[48] = Var[234];
+[001D] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[0020] (80) breakHere();
+[0021] (48) if (VAR_ACTIVE_VERB == 3) {
+[0027] (48)   if (VAR_ACTIVE_OBJECT2 == 10) {
+[002D] (90)     VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0030] (C8)     if (VAR_RESULT == VAR_EGO) {
+[0035] (91)       animateActor(VAR_EGO,255);
+[0038] (8D)       walkActorToActor(VAR_EGO,10,2);
+[003C] (BB)       waitForActor(VAR_EGO);
+[003E] (91)       animateActor(VAR_EGO,247);
+[0041] (BB)       waitForActor(VAR_EGO);
+[0043] (48)       if (VAR_ACTIVE_OBJECT1 == 46) {
+[0049] (48)         if (VAR_EGO == 1) {
+[004F] (14)           print(10,"Sorry, mate, you're not my type!");
+[006D] (18)         } else {
+[0070] (42)           startScript(76);
+[0072] (**)         }
+[0072] (48)       } else if (VAR_EGO == 1) {
+[007B] (14)         print(10,"Don't bother me, I'm on DUTY now.");
+[0099] (18)       } else {
+[009C] (46)         Var[48]++;
+[009E] (48)         if (Var[48] == 1) {
+[00A4] (14)           print(10,"Sorry, luv, I mustn't accept gifts.");
+[00C5] (48)         } else if (Var[48] == 2) {
+[00CE] (14)           print(10,"Have you anything else to offer?");
+[00EC] (18)         } else {
+[00EF] (14)           print(10,"You are very attractive!");
+[0107] (**)         }
+[0107] (AE)         waitForMessage();
+[0108] (11)         animateActor(2,246);
+[010B] (3B)         waitForActor(2);
+[010D] (D8)         printEgo("Yuck!");
+[0114] (**)       }
+[0114] (9A)       VAR_ACTIVE_OBJECT2 = Var[234];
+[0117] (AE)       waitForMessage();
+[0118] (**)     }
+[0118] (**)   }
+[0118] (**) }
+[0118] (18) goto 0020;
+[011B] (00) stopObjectCode();
+END

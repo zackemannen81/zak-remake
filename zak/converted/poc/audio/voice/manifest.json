@@ -1,0 +1,15 @@
+[
+  {
+    "id": "dialogue_00004",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/dialogue/zakv2_en.utf8.txt",
+    "line": 4,
+    "voice": "en-US-AriaNeural",
+    "speaker": "unresolved",
+    "role": "temporary POC voice; not canonical casting",
+    "status": "generated",
+    "text": "Down we go!",
+    "file": "zak/converted/poc/audio/voice/dialogue_00004_6989e2af250c.mp3",
+    "sha256": "e9c05e20c62c0e1433aa7b0825ed2a9d4bb3731ce095717ee630dacf83c99a7d",
+    "request_sha256": "6989e2af250c97b5fd684244256eb4c76b6e3d48e1c37c16906615ff825f6757"
+  }
+]

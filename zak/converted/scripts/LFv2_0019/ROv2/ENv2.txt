@@ -1,0 +1,19 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0019/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (9A) Var[199] = Var[234];
+[0007] (13) ActorOps(10,[TalkColor(7)]);
+[000B] (13) ActorOps(10,[Costume(22)]);
+[000F] (53) ActorOps(10,[Name("Guru")]);
+[0018] (53) ActorOps(10,[Sound(Var[234])]);
+[001C] (9A) Var[50] = Var[234];
+[001F] (19) doSentence(250,381,0,1);
+[0026] (19) doSentence(253,382,0,1);
+[002D] (68) VAR_RESULT = isScriptRunning(42);
+[0030] (28) if (!VAR_RESULT) {
+[0034] (42)   startScript(42);
+[0036] (2D)   putActorInRoom(10,19);
+[0039] (01)   putActor(10,60,56);
+[003D] (11)   animateActor(10,251);
+[0040] (**) }
+[0040] (00) stopObjectCode();
+END

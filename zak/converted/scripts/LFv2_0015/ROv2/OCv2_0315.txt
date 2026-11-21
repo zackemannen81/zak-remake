@@ -1,0 +1,2 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0015/ROv2/OCv2_0315
+Events: none (object header has zero verb terminator)

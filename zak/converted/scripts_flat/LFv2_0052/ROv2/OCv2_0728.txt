@@ -1,0 +1,9 @@
+Events:
+  FD - 001D
+  FF - 0015
+[0015] (19) doSentence(253,728,0,1);
+[001C] (00) stopObjectCode();
+[001D] (28) unless (!Var[122]) goto 0028;
+[0021] (19) doSentence(253,727,0,1);
+[0028] (00) stopObjectCode();
+END

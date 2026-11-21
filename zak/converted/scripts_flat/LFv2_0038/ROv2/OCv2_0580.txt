@@ -1,0 +1,5 @@
+Events:
+   C - 0017
+[0017] (D8) printEgo("CashCards Accepted");
+[002A] (00) stopObjectCode();
+END

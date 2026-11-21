@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0054/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (19) doSentence(253,754,0,1);
+[000B] (1C) startSound(110);
+[000D] (00) stopObjectCode();
+END

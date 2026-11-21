@@ -1,0 +1,22 @@
+Events:
+  11 - 0022
+  FD - 002D
+[0022] (1A) Var[47] = 120;
+[0026] (1A) Var[46] = 56;
+[002A] (42) startScript(24);
+[002C] (00) stopObjectCode();
+[002D] (C3) Var[51] = getActorX(VAR_EGO);
+[0030] (C6) Var[51]--;
+[0032] (78) unless (Var[51] < 5) goto 003C;
+[0038] (1A) Var[51] = 5;
+[003C] (44) unless (Var[51] > 52) goto 0046;
+[0042] (1A) Var[51] = 52;
+[0046] (5E) walkActorTo(10,Var[51],47);
+[004A] (80) breakHere();
+[004B] (43) VAR_RESULT = getActorX(10);
+[004E] (C8) unless (VAR_RESULT == Var[51]) goto 002D;
+[0053] (11) animateActor(10,246);
+[0056] (3B) waitForActor(10);
+[0058] (1A) Var[51] = 255;
+[005C] (00) stopObjectCode();
+END

@@ -1,0 +1,21 @@
+Events:
+   4 - 0023
+   5 - 002F
+   9 - 0023
+   A - 0023
+   B - 0023
+  FD - 004E
+[0023] (28) unless (!Var[58]) goto 002E;
+[0027] (19) doSentence(253,330,0,1);
+[002E] (00) stopObjectCode();
+[002F] (D8) printEgo("There isn't any way to turn it off!");
+[004D] (00) stopObjectCode();
+[004E] (9A) Var[56] = Var[234];
+[0051] (04) unless (VAR_EGO <= 2) goto 0069;
+[0057] (68) VAR_RESULT = isScriptRunning(94);
+[005A] (28) unless (!VAR_RESULT) goto 0069;
+[005E] (03) VAR_RESULT = getActorRoom(7);
+[0061] (48) unless (VAR_RESULT == 4) goto 0069;
+[0067] (42) startScript(94);
+[0069] (00) stopObjectCode();
+END

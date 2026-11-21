@@ -1,0 +1,97 @@
+# Decompiled with descumm -2
+# Source: LFv2_0011\SCv2_0079
+
+Events:
+  FA - 0000
+  1A - 0000
+   9 - 0000
+  D2 - 0000
+  1E - 0009
+  4E - 0036
+  3B - 0009
+  11 - 0009
+  F4 - 003B
+   9 - 00D8
+  57 - 00E5
+  61 - 0072
+  E5 - 006E
+  6F - 00F7
+  6C - 0061
+  6E - 0064
+  69 - 006E
+  67 - 00AE
+  50 - 0072
+  65 - 0070
+  61 - 0072
+  E5 - 0074
+  6F - 0001
+  64 - 0069
+  73 - 0065
+  6D - 0062
+  61 - 0072
+  6B - 002E
+[0000] (2A) Var[Var[1]] += 0;
+[0004] (40) cutscene();
+[0005] (C8) if (VAR_KEYPRESS == VAR_CUTSCENEEXIT_KEY) {
+[000A] (18) } else {
+[000D] (58)   beginOverride();
+[000E] (18)   goto 010B;
+[0011] (1A)   VAR_EGO = 9;
+[0015] (D2)   actorFollowCamera(VAR_EGO);
+[0017] (1E)   walkActorTo(9,78,54);
+[001B] (3B)   waitForActor(9);
+[001D] (11)   animateActor(9,244);
+[0020] (3B)   waitForActor(9);
+[0022] (D8)   printEgo("We are now landing. Prepare to\x01disembark.");
+[0048] (AE)   waitForMessage();
+[0049] (0C)   loadScript(120)
+[004C] (4F)   if (getState08(248)) {
+[0051] (19)     doSentence(253,251,0,1);
+[0058] (**)   }
+[0058] (19)   doSentence(1,256,0,0);
+[005F] (2E)   delay(120);
+[0063] (0F)   if (!getState08(263)) {
+[0068] (9E)     walkActorTo(Var[52],85,54);
+[006C] (BB)     waitForActor(Var[52]);
+[006E] (19)     doSentence(254,258,0,1);
+[0075] (**)   }
+[0075] (9E)   walkActorTo(Var[52],85,54);
+[0079] (4C)   waitForSentence();
+[007A] (0F)   if (!getState08(262)) {
+[007F] (46)     Var[248]++;
+[0081] (19)     doSentence(1,260,0,0);
+[0088] (4C)     waitForSentence();
+[0089] (19)     doSentence(14,262,0,0);
+[0090] (4C)     waitForSentence();
+[0091] (69)     setOwnerOf(22,Var[52]);
+[0095] (BB)     waitForActor(Var[52]);
+[0097] (4D)     walkActorToActor(9,Var[52],4);
+[009B] (D8)     printEgo("Here's your egg.");
+[00AB] (AE)     waitForMessage();
+[00AC] (91)     animateActor(Var[52],245);
+[00AF] (80)     breakHere();
+[00B0] (D8)     printEgo("Next time cook it at home!");
+[00C7] (18)   } else {
+[00CA] (1E)     walkActorTo(9,91,54);
+[00CE] (3B)     waitForActor(9);
+[00D0] (11)     animateActor(9,244);
+[00D3] (BB)     waitForActor(Var[52]);
+[00D5] (91)     animateActor(Var[52],245);
+[00D8] (D8)     printEgo("It's been a JOY having you aboard.\x01Have a nice day.");
+[0104] (**)   }
+[0104] (AE)   waitForMessage();
+[0105] (B6)   walkActorToObject(Var[52],256);
+[0109] (BB)   waitForActor(Var[52]);
+[010B] (**) }
+[010B] (07) setState08(256);
+[010E] (0F) if (!getState08(262)) {
+[0113] (69)   setOwnerOf(22,Var[52]);
+[0117] (**) }
+[0117] (9A) VAR_EGO = Var[52];
+[011A] (D2) actorFollowCamera(VAR_EGO);
+[011C] (60) cursorCommand(247, 1);
+[011F] (19) doSentence(STOP);
+[0121] (19) doSentence(13,256,0,1);
+[0128] (C0) endCutscene();
+[0129] (A0) stopObjectCode();
+END

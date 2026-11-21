@@ -1,0 +1,13 @@
+[0000] (A8) unless (Var[240]) goto 0008;
+[0004] (2E) delay(18000);
+[0008] (80) breakHere();
+[0009] (03) VAR_RESULT = getActorRoom(1);
+[000C] (04) unless (VAR_RESULT <= 2) goto 0015;
+[0012] (18) goto 0008;
+[0015] (46) Var[240]++;
+[0017] (78) unless (Var[240] < 8) goto 002A;
+[001D] (4F) unless (getState08(88)) goto 002A;
+[0022] (0F) unless (!getState08(19)) goto 002A;
+[0027] (27) setState04(88);
+[002A] (A0) stopObjectCode();
+END

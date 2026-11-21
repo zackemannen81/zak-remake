@@ -1,0 +1,50 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (0C) lockSound(72)
+[0007] (0C) lockSound(73)
+[000A] (0C) lockSound(74)
+[000D] (0C) lockSound(75)
+[0010] (0C) lockSound(76)
+[0013] (0C) lockSound(77)
+[0016] (0C) lockSound(45)
+[0019] (1A) Var[51] = 230;
+[001D] (C7) clearState08(Var[51]);
+[001F] (46) Var[51]++;
+[0021] (44) unless (Var[51] > 235) goto 001D;
+[0027] (0C) loadScript(64)
+[002A] (0C) lockScript(64)
+[002D] (0F) if (!getState08(229)) {
+[0032] (30)   setBoxFlags(1,0);
+[0035] (30)   setBoxFlags(2,0);
+[0038] (30)   setBoxFlags(0,128);
+[003B] (18) } else {
+[003E] (30)   setBoxFlags(1,128);
+[0041] (30)   setBoxFlags(2,128);
+[0044] (30)   setBoxFlags(0,0);
+[0047] (**) }
+[0047] (0F) if (!getState08(238)) {
+[004C] (17)   clearState02(238);
+[004F] (30)   setBoxFlags(4,128);
+[0052] (30)   setBoxFlags(5,128);
+[0055] (33)   RoomScroll(20,20);
+[0059] (0C)   loadScript(100)
+[005C] (0C)   loadSound(23)
+[005F] (0C)   lockSound(23)
+[0062] (0C)   loadCostume(28)
+[0065] (18) } else {
+[0068] (19)   doSentence(253,240,0,1);
+[006F] (31)   VAR_RESULT = getBitVar(1573,0);
+[0074] (A8)   if (VAR_RESULT) {
+[0078] (19)     doSentence(250,231,0,1);
+[007F] (**)   }
+[007F] (**) }
+[007F] (68) VAR_RESULT = isScriptRunning(64);
+[0082] (A8) if (VAR_RESULT) {
+[0086] (1C)   startSound(45);
+[0088] (18) } else {
+[008B] (26)   setVarRange(Var[49],3,[0,0,0]);
+[0091] (5B)   setBitVar(1571,0,Var[234]);
+[0096] (5B)   setBitVar(1570,0,Var[234]);
+[009B] (**) }
+[009B] (00) stopObjectCode();
+END

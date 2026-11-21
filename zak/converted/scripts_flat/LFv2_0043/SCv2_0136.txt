@@ -1,0 +1,21 @@
+[0000] (48) unless (VAR_EGO == 2) goto 008C;
+[0006] (40) cutscene();
+[0007] (91) animateActor(VAR_EGO,246);
+[000A] (58) beginOverride();
+[000B] (18) goto 004F;
+[000E] (BB) waitForActor(VAR_EGO);
+[0010] (2F) unless (!getState04(79)) goto 004F;
+[0015] (D8) printEgo("Hm. This is difficult.\x03One moment^\x03It has `words of power` on it:");
+[004E] (AE) waitForMessage();
+[004F] (27) setState04(79);
+[0052] (D8) printEgo("`Gnik Sisi Vle`");
+[0061] (C0) endCutscene();
+[0062] (48) unless (VAR_ROOM == 134) goto 0072;
+[0068] (19) doSentence(253,651,0,1);
+[006F] (18) goto 0089;
+[0072] (2E) delay(180);
+[0076] (14) print(2,"Nothing happened!");
+[0089] (18) goto 00BA;
+[008C] (D8) printEgo("I can't read it. It's written in a\x01bizarre language.");
+[00BA] (A0) stopObjectCode();
+END

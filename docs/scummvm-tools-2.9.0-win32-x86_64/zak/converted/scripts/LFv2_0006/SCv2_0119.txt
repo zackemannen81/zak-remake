@@ -1,0 +1,77 @@
+# Decompiled with descumm -2
+# Source: LFv2_0006\SCv2_0119
+
+[0000] (48) if (VAR_ACTIVE_VERB == 14) {
+[0006] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);
+[0008] (08)   if (VAR_EGO != 2) {
+[000E] (2F)     if (!getState04(169)) {
+[0013] (6F)       if (getState04(114)) {
+[0018] (D8)         printEgo("This looks like an artifact!");
+[0032] (18)       } else {
+[0035] (D8)         printEgo("I wonder who would know what this is.");
+[0055] (**)       }
+[0055] (**)     }
+[0055] (62)     stopScript(0);
+[0057] (**)   }
+[0057] (**) }
+[0057] (40) cutscene();
+[0058] (14) print(2,"Hmm^");
+[005F] (2E) delay(60);
+[0063] (14) print(2,"This \x06\x09 is \x02");
+[0070] (08) if (VAR_ACTIVE_OBJECT1 != 79) {
+[0076] (14)   print(2,"part of the\x01device!");
+[008A] (18) } else {
+[008D] (14)   print(2,"VERY old.");
+[0098] (**) }
+[0098] (AE) waitForMessage();
+[0099] (48) if (VAR_ACTIVE_VERB == 14) {
+[009F] (03)   VAR_RESULT = getActorRoom(1);
+[00A2] (88)   if (VAR_RESULT != VAR_ROOM) {
+[00A7] (18)     goto 02B0;
+[00AA] (**)   }
+[00AA] (0D)   walkActorToActor(2,1,4);
+[00AE] (3B)   waitForActor(2);
+[00B0] (09)   faceActor(2,1);
+[00B3] (00)   stopObjectCode();
+[00B4] (09)   faceActor(1,2);
+[00B7] (00)   stopObjectCode();
+[00B8] (3B)   waitForActor(1);
+[00BA] (**) }
+[00BA] (48) if (VAR_ACTIVE_OBJECT1 == 55) {
+[00C0] (18)   goto 00CC;
+[00C3] (48) } else if (VAR_ACTIVE_OBJECT1 == 81) {
+[00CC] (EF)   if (getState04(VAR_ACTIVE_OBJECT1)) {
+[00D0] (14)     print(2,"And you already know how to use its\x01power.");
+[00F6] (18)   } else {
+[00F9] (14)     print(2,"It also has tremendous power if you're\x01trained to use it.");
+[012C] (**)   }
+[012C] (48) } else if (VAR_ACTIVE_OBJECT1 == 79) {
+[0135] (14)   print(2,"There's some writing on it!");
+[014F] (48) } else if (VAR_ACTIVE_OBJECT1 == 78) {
+[0158] (14)   print(2,"It's the section that generates the\x01device's power.");
+[0188] (48) } else if (VAR_ACTIVE_OBJECT1 == 33) {
+[0191] (10)   Var[66] = getObjectOwner(56);
+[0195] (48)   if (Var[66] == 15) {
+[019B] (14)     print(2,"We must acquire its other half.");
+[01B8] (18)   } else {
+[01BB] (A8)     if (Var[66]) {
+[01BF] (18)       goto 0204;
+[01C2] (**)     }
+[01C2] (18)     goto 01D6;
+[01C5] (**)   }
+[01C5] (48) } else if (VAR_ACTIVE_OBJECT1 == 56) {
+[01CE] (10)   VAR_RESULT = getObjectOwner(33);
+[01D2] (28)   if (!VAR_RESULT) {
+[01D6] (14)     print(2,"We lost its other half! Our mission\x01has failed!");
+[0201] (18)   } else {
+[0204] (14)     print(2,"We can't use it until the two halves are\x01fused together!");
+[0236] (**)   }
+[0236] (48) } else if (VAR_ACTIVE_OBJECT1 == 80) {
+[023F] (14)   print(2,"It will hold the crystals when we build\x01the device");
+[026C] (48) } else if (VAR_ACTIVE_OBJECT1 == 58) {
+[0275] (14)   print(2,"It is the Master Crystal which will\x01focus the device's energy.");
+[02AD] (18)   /* goto 02B0; */
+[02B0] (**) }
+[02B0] (C0) endCutscene();
+[02B1] (A0) stopObjectCode();
+END

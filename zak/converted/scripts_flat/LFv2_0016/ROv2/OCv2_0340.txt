@@ -1,0 +1,5 @@
+Events:
+  FD - 0013
+[0013] (94) print(Var[66],"I can't stand the noise! It's MUCH\x01louder in here!");
+[0040] (00) stopObjectCode();
+END

@@ -1,0 +1,27 @@
+# Decompiled with descumm -2
+# Source: LFv2_0011\SCv2_0116
+
+[0000] (1A) Var[56] = 65;
+[0004] (5E) walkActorTo(9,Var[56],54);
+[0008] (3B) waitForActor(9);
+[000A] (11) animateActor(9,247);
+[000D] (80) breakHere();
+[000E] (2E) delay(30);
+[0012] (48) if (Var[56] == 65) {
+[0018] (10)   VAR_RESULT = getObjectOwner(51);
+[001C] (08)   if (VAR_RESULT != 15) {
+[0022] (18)     goto 0046;
+[0025] (**)   }
+[0025] (50)   pickupObject(51);
+[0028] (**) }
+[0028] (43) VAR_RESULT = getActorX(9);
+[002B] (88) if (VAR_RESULT != Var[56]) {
+[0030] (18)   goto 0004;
+[0033] (**) }
+[0033] (14) print(9,"Here's your meal.");
+[0045] (AE) waitForMessage();
+[0046] (3A) Var[56] -= 11;
+[004A] (78) unless (Var[56] < 21) goto 0004;
+[0050] (19) doSentence(253,261,0,1);
+[0057] (A0) stopObjectCode();
+END

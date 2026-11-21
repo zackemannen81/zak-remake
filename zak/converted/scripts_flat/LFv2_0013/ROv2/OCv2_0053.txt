@@ -1,0 +1,15 @@
+Events:
+   B - 0030
+   E - 0028
+[0028] (19) doSentence(253,275,0,1);
+[002F] (00) stopObjectCode();
+[0030] (90) VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0033] (48) unless (VAR_RESULT == 15) goto 0043;
+[0039] (19) doSentence(253,275,0,1);
+[0040] (18) goto 0060;
+[0043] (48) unless (VAR_ACTIVE_OBJECT2 == 49) goto 005B;
+[0049] (D8) printEgo("Not in my hands!");
+[0058] (18) goto 0060;
+[005B] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0060] (00) stopObjectCode();
+END

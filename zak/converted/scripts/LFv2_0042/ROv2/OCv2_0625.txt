@@ -1,0 +1,26 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0042/ROv2/OCv2_0625
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (83) VAR_RESULT = getActorRoom(VAR_EGO);
+[0017] (C8) unless (VAR_RESULT == VAR_ROOM) goto 0013;
+[001C] (88) if (Var[50] != VAR_EGO) {
+[0021] (9A)   Var[50] = VAR_EGO;
+[0024] (1A)   Var[47] = 3;
+[0028] (**) }
+[0028] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[002B] (44) if (VAR_RESULT > 42) {
+[0031] (88)   if (Var[47] != Var[234]) {
+[0036] (12)     panCameraTo(60);
+[0038] (9A)     Var[47] = Var[234];
+[003B] (**)   }
+[003B] (88) } else if (Var[47] != Var[235]) {
+[0043] (83)   VAR_RESULT = getActorRoom(VAR_EGO);
+[0046] (48)   if (VAR_RESULT == 42) {
+[004C] (D2)     actorFollowCamera(VAR_EGO);
+[004E] (**)   }
+[004E] (9A)   Var[47] = Var[235];
+[0051] (**) }
+[0051] (18) goto 0013;
+[0054] (00) stopObjectCode();
+END

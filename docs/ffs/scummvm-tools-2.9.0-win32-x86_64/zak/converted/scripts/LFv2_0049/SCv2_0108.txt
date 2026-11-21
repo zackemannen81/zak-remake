@@ -1,0 +1,171 @@
+# Decompiled with descumm -2
+# Source: LFv2_0049\SCv2_0108
+
+[0000] (72) loadRoom(0);
+[0002] (60) cursorCommand(4, 0);
+[0005] (62) stopScript(111);
+[0007] (62) stopScript(109);
+[0009] (62) stopScript(127);
+[000B] (0C) unlockSound(81)
+[000E] (0C) unlockSound(95)
+[0011] (0C) unlockScript(109)
+[0014] (0C) unlockCostume(31)
+[0017] (0C) unlockScript(111)
+[001A] (3D) setActorElevation(10,0);
+[001D] (2D) putActorInRoom(10,0);
+[0020] (7A) VerbOps(Delete(1));
+[0023] (7A) VerbOps(Delete(2));
+[0026] (7A) VerbOps(Delete(3));
+[0029] (0C) loadScript(2)
+[002C] (0C) lockScript(2)
+[002F] (0C) loadScript(4)
+[0032] (0C) lockScript(4)
+[0035] (0C) lockSound(10)
+[0038] (0C) lockSound(11)
+[003B] (0C) loadSound(10)
+[003E] (0C) loadSound(11)
+[0041] (0C) lockScript(59)
+[0044] (0C) lockScript(19)
+[0047] (0C) loadSound(84)
+[004A] (0C) lockSound(84)
+[004D] (0C) loadSound(89)
+[0050] (0C) lockSound(89)
+[0053] (0C) loadSound(27)
+[0056] (0C) lockSound(27)
+[0059] (0C) loadSound(29)
+[005C] (0C) lockSound(29)
+[005F] (0C) loadSound(78)
+[0062] (0C) lockSound(78)
+[0065] (0C) loadSound(19)
+[0068] (0C) lockSound(19)
+[006B] (0C) loadSound(38)
+[006E] (0C) lockSound(38)
+[0071] (0C) loadSound(44)
+[0074] (0C) lockSound(44)
+[0077] (0C) loadSound(25)
+[007A] (0C) lockSound(25)
+[007D] (0C) loadSound(2)
+[0080] (0C) lockSound(2)
+[0083] (0C) loadScript(131)
+[0086] (0C) lockScript(131)
+[0089] (0C) loadScript(3)
+[008C] (0C) lockScript(3)
+[008F] (0C) loadScript(20)
+[0092] (0C) lockScript(20)
+[0095] (0C) loadScript(10)
+[0098] (0C) lockScript(10)
+[009B] (0C) loadScript(11)
+[009E] (0C) lockScript(11)
+[00A1] (2D) putActorInRoom(2,6);
+[00A4] (01) putActor(2,20,16);
+[00A8] (2D) putActorInRoom(3,26);
+[00AB] (01) putActor(3,0,0);
+[00AF] (2D) putActorInRoom(4,26);
+[00B2] (01) putActor(4,0,0);
+[00B6] (2D) putActorInRoom(7,4);
+[00B9] (01) putActor(7,22,52);
+[00BD] (11) animateActor(7,250);
+[00C0] (2D) putActorInRoom(8,18);
+[00C3] (01) putActor(8,10,60);
+[00C7] (11) animateActor(8,248);
+[00CA] (13) ActorOps(8,[Costume(26)]);
+[00CE] (13) ActorOps(8,[TalkColor(7)]);
+[00D2] (13) ActorOps(8,[Sound(6)]);
+[00D6] (13) ActorOps(9,[Costume(11)]);
+[00DA] (53) ActorOps(9,[Sound(Var[234])]);
+[00DE] (53) ActorOps(1,[Name("Zak")]);
+[00E6] (53) ActorOps(2,[Name("Annie")]);
+[00F0] (53) ActorOps(3,[Name("Melissa")]);
+[00FC] (53) ActorOps(4,[Name("Leslie")]);
+[0107] (53) ActorOps(7,[Name("representative")]);
+[011A] (13) ActorOps(1,[Costume(1)]);
+[011E] (13) ActorOps(2,[Costume(2)]);
+[0122] (13) ActorOps(3,[Costume(0)]);
+[0126] (13) ActorOps(4,[Costume(0)]);
+[012A] (13) ActorOps(7,[Costume(28)]);
+[012E] (1A) Var[196] = 14;
+[0132] (13) ActorOps(9,[Color(5, 1)]);
+[0137] (13) ActorOps(8,[Color(9, 1)]);
+[013C] (13) ActorOps(8,[Color(3, 0)]);
+[0141] (13) ActorOps(2,[TalkColor(13)]);
+[0145] (13) ActorOps(3,[TalkColor(3)]);
+[0149] (13) ActorOps(4,[TalkColor(13)]);
+[014D] (13) ActorOps(9,[TalkColor(9)]);
+[0151] (13) ActorOps(7,[TalkColor(14)]);
+[0155] (13) ActorOps(6,[TalkColor(10)]);
+[0159] (13) ActorOps(2,[Sound(6)]);
+[015D] (13) ActorOps(3,[Sound(6)]);
+[0161] (13) ActorOps(4,[Sound(6)]);
+[0165] (13) ActorOps(7,[Sound(6)]);
+[0169] (1A) Var[245] = 24;
+[016D] (26) setVarRange(Var[171],13,[0,1,2,3,4,5,6,7,36,9,9,8,8]);
+[017D] (26) setVarRange(VAR_ACTOR_RANGE_MIN,2,[1,4]);
+[0182] (26) setVarRange(Var[42],2,[1,4]);
+[0187] (CC) PseudoRoom(33,61,62,63,54);
+[018E] (CC) PseudoRoom(14,1,2,64,65);
+[0195] (CC) PseudoRoom(40,3,4);
+[019A] (CC) PseudoRoom(44,5,6);
+[019F] (CC) PseudoRoom(21,55,7);
+[01A4] (CC) PseudoRoom(43,8,9,10);
+[01AA] (CC) PseudoRoom(22,11,12);
+[01AF] (CC) PseudoRoom(27,56,57);
+[01B4] (CC) PseudoRoom(35,66,67);
+[01B9] (CC) PseudoRoom(8,13,14,15,16,17);
+[01C1] (CC) PseudoRoom(9,18,19,20,21);
+[01C8] (CC) PseudoRoom(38,22,23);
+[01CD] (CC) PseudoRoom(15,24,60);
+[01D2] (CC) PseudoRoom(29,25,26);
+[01D7] (CC) PseudoRoom(24,27,58);
+[01DC] (CC) PseudoRoom(53,28,29,30,31,32,33,34,35,36,37,38,39);
+[01EB] (CC) PseudoRoom(28,52,53);
+[01F0] (CC) PseudoRoom(37,40,41,42,43,44,45,46,47);
+[01FB] (CC) PseudoRoom(23,79,80,81,82,83,84,85,86,87,88,89,90,91,92,78,59);
+[020E] (CC) PseudoRoom(36,70,71,72,73,74,75,76,77,68,69);
+[021B] (A6) setVarRange(Var[61],5,[0,12250,5405,1138,342]);
+[0228] (26) setVarRange(Var[161],2,[57,57]);
+[022D] (26) setVarRange(Var[205],3,[60,243,240]);
+[0233] (1A) Var[254] = 30;
+[0237] (1A) Var[158] = 49;
+[023B] (1A) Var[14] = 1;
+[023F] (5A) Var[14] += 78;
+[0243] (0A) Var[Var[14]] = 662;
+[0247] (1A) Var[14] = 1;
+[024B] (5A) Var[14] += 154;
+[024F] (0A) Var[Var[14]] = 145;
+[0253] (1A) Var[14] = 1;
+[0257] (5A) Var[14] += 81;
+[025B] (0A) Var[Var[14]] = 260;
+[025F] (5B) setBitVar(1559,0,Var[235]);
+[0264] (42) startScript(9);
+[0266] (42) startScript(19);
+[0268] (A8) if (Var[122]) {
+[026C] (14)   print(255,"");
+[026F] (60)   cursorCommand(4, 0);
+[0272] (2D)   putActorInRoom(1,1);
+[0275] (01)   putActor(1,21,56);
+[0279] (11)   animateActor(1,250);
+[027C] (07)   setState08(90);
+[027F] (68)   VAR_RESULT = isScriptRunning(122);
+[0282] (A8)   if (VAR_RESULT) {
+[0286] (60)     cursorCommand(247, 1);
+[0289] (4A)     chainScript(7);
+[028B] (**)   }
+[028B] (D2)   actorFollowCamera(VAR_EGO);
+[028D] (18) } else {
+[0290] (2D)   putActorInRoom(1,1);
+[0293] (01)   putActor(1,9,52);
+[0297] (D2)   actorFollowCamera(VAR_EGO);
+[0299] (11)   animateActor(1,250);
+[029C] (2E)   delay(60);
+[02A0] (D8)   printEgo("WOW! What a dream!\x03I should make a drawing of that map I\x01saw.");
+[02D4] (2E)   delay(60);
+[02D8] (19)   doSentence(1,90,0,0);
+[02DF] (4C)   waitForSentence();
+[02E0] (1E)   walkActorTo(1,21,56);
+[02E4] (3B)   waitForActor(1);
+[02E6] (**) }
+[02E6] (19) doSentence(RESET);
+[02E8] (AC) drawSentence();
+[02E9] (60) cursorCommand(247, 1);
+[02EC] (A0) stopObjectCode();
+END

@@ -1,0 +1,27 @@
+Events:
+   C - 0018
+  FD - 002B
+[0018] (D8) printEgo("It's a map of Earth.");
+[002A] (00) stopObjectCode();
+[002B] (9A) Var[58] = Var[235];
+[002E] (1C) startSound(27);
+[0030] (47) clearState08(338);
+[0033] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0044;
+[0037] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0039] (80) breakHere();
+[003A] (19) doSentence(250,336,0,1);
+[0041] (18) goto 004E;
+[0044] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0046] (80) breakHere();
+[0047] (19) doSentence(250,335,0,1);
+[004E] (46) Var[56]++;
+[0050] (2E) delay(120);
+[0054] (9A) Var[58] = Var[234];
+[0057] (91) animateActor(VAR_EGO,246);
+[005A] (80) breakHere();
+[005B] (80) breakHere();
+[005C] (D8) printEgo("Oooh! I just felt real stupid.");
+[0077] (AE) waitForMessage();
+[0078] (19) doSentence(253,343,0,1);
+[007F] (00) stopObjectCode();
+END

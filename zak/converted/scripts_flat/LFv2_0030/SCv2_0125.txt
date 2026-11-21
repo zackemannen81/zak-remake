@@ -1,0 +1,8 @@
+[0000] (48) unless (VAR_ACTIVE_OBJECT1 == 72) goto 005D;
+[0006] (48) unless (VAR_ACTIVE_VERB == 12) goto 005D;
+[000C] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0027;
+[0010] (D8) printEgo("I can't see the label.");
+[0024] (18) goto 005D;
+[0027] (D8) printEgo("Razor and the Scummettes Greatest Hit,\x01`Inda Glop Oda Krell`");
+[005D] (A0) stopObjectCode();
+END

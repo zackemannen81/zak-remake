@@ -1,0 +1,29 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0046
+
+[0000] (48) if (VAR_ACTIVE_OBJECT2 == 14) {
+[0006] (C8)   if (Var[138] == Var[234]) {
+[000B] (48)     if (VAR_EGO == 1) {
+[0011] (1A)       Var[138] = 3;
+[0015] (1C)       startSound(36);
+[0017] (54)       setObjectName(14,"fish bowl");
+[0024] (6F)       if (getState04(14)) {
+[0029] (54)         setObjectName(14,"taped fish bowl");
+[003C] (**)       }
+[003C] (D8)       printEgo("Sorry, Sushi, but you're fertilizer now.");
+[0061] (5A)       Var[225] += 5;
+[0065] (48)       if (VAR_ROOM_RESOURCE == 8) {
+[006B] (80)         breakHere();
+[006C] (7C)         VAR_RESULT = isSoundRunning(36);
+[006F] (28)         unless (!VAR_RESULT) goto 006B;
+[0073] (1C)         startSound(87);
+[0075] (**)       }
+[0075] (18)     } else {
+[0078] (D8)       printEgo("That would kill it!");
+[008A] (**)     }
+[008A] (62)     stopScript(0);
+[008C] (**)   }
+[008C] (**) }
+[008C] (42) startScript(3);
+[008E] (A0) stopObjectCode();
+END

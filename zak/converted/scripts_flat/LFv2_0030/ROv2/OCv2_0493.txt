@@ -1,0 +1,10 @@
+Events:
+  FD - 0013
+[0013] (6F) unless (getState04(492)) goto 002C;
+[0018] (80) breakHere();
+[0019] (FC) VAR_RESULT = isSoundRunning(VAR_LAST_SOUND);
+[001C] (28) unless (!VAR_RESULT) goto 0018;
+[0020] (0F) unless (!getState08(73)) goto 002C;
+[0025] (19) doSentence(4,492,0,1);
+[002C] (00) stopObjectCode();
+END

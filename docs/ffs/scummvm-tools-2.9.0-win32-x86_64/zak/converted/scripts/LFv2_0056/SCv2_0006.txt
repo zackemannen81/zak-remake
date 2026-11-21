@@ -1,0 +1,45 @@
+# Decompiled with descumm -2
+# Source: LFv2_0056\SCv2_0006
+
+[0000] (08) if (VAR_CURRENT_LIGHTS != 11) {
+[0006] (9A)   Var[66] = Var[234];
+[0009] (9A)   Var[67] = Var[234];
+[000C] (6F)   if (getState04(49)) {
+[0011] (10)     VAR_RESULT = getObjectOwner(49);
+[0015] (C8)     if (VAR_RESULT == VAR_EGO) {
+[001A] (1A)       Var[66] = 12;
+[001E] (**)     }
+[001E] (**)   }
+[001E] (6F)   if (getState04(69)) {
+[0023] (10)     VAR_RESULT = getObjectOwner(69);
+[0027] (C8)     if (VAR_RESULT == VAR_EGO) {
+[002C] (46)       Var[67]++;
+[002E] (1A)       Var[66] = 12;
+[0032] (**)     }
+[0032] (**)   }
+[0032] (88)   if (VAR_CURRENT_LIGHTS != Var[66]) {
+[0037] (A8)     if (Var[66]) {
+[003B] (A8)       if (Var[67]) {
+[003F] (70)         lights(9,7,1);
+[0043] (18)       } else {
+[0046] (70)         lights(3,3,1);
+[004A] (**)       }
+[004A] (**)     }
+[004A] (F0)     lights(Var[66],0,0);
+[004E] (**)   }
+[004E] (**) }
+[004E] (88) if (Var[199] != Var[204]) {
+[0053] (9A)   Var[204] = Var[199];
+[0056] (A8)   if (Var[199]) {
+[005A] (6F)     if (getState04(169)) {
+[005F] (7A)       VerbOps(New-45(32,21,14,0,"Switch@@"));
+[006E] (18)       goto 0074;
+[0071] (**)     }
+[0071] (**)   }
+[0071] (7A)   VerbOps(Delete(14));
+[0074] (60)   cursorCommand(0, 0);
+[0077] (**) }
+[0077] (80) breakHere();
+[0078] (18) goto 0000;
+[007B] (A0) stopObjectCode();
+END

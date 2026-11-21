@@ -1,0 +1,29 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/OCv2_0229
+Events:
+   B - 001E
+   D - 001E
+  FD - 0029
+[001E] (9A) Var[233] = VAR_EGO;
+[0021] (19) doSentence(253,230,0,1);
+[0028] (00) stopObjectCode();
+[0029] (A8) if (Var[47]) {
+[002D] (2E)   delay(420);
+[0031] (**) }
+[0031] (9A) Var[49] = Var[234];
+[0034] (5B) setBitVar(1570,0,Var[234]);
+[0039] (5B) setBitVar(1571,0,Var[234]);
+[003E] (1A) Var[51] = 230;
+[0042] (87) setState08(Var[51]);
+[0044] (46) Var[51]++;
+[0046] (44) unless (Var[51] > 235) goto 0042;
+[004C] (1A) Var[53] = 77;
+[0050] (9C) startSound(Var[53]);
+[0052] (80) breakHere();
+[0053] (C6) Var[53]--;
+[0055] (78) unless (Var[53] < 72) goto 0050;
+[005B] (1A) Var[51] = 230;
+[005F] (C7) clearState08(Var[51]);
+[0061] (46) Var[51]++;
+[0063] (44) unless (Var[51] > 235) goto 005F;
+[0069] (00) stopObjectCode();
+END

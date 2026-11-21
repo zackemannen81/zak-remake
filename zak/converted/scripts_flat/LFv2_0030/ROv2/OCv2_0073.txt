@@ -1,0 +1,10 @@
+Events:
+   A - 001B
+   B - 0028
+   E - 001B
+[001B] (0F) unless (!getState08(73)) goto 0027;
+[0020] (19) doSentence(33,491,0,1);
+[0027] (00) stopObjectCode();
+[0028] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002D] (00) stopObjectCode();
+END

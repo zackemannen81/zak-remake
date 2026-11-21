@@ -1,0 +1,24 @@
+# Decompiled with descumm -2
+# Source: LFv2_0031\SCv2_0085
+
+[0000] (10) VAR_RESULT = getObjectOwner(48);
+[0004] (C8) if (VAR_RESULT == VAR_EGO) {
+[0009] (6F)   if (getState04(169)) {
+[000E] (2E)     delay(208800);
+[0012] (18)   } else {
+[0015] (40)     cutscene();
+[0016] (72)     loadRoom(0);
+[0018] (EE)     dummy(EE);
+[0019] (14)     print(255,"58 minutes later^");
+[002B] (AE)     waitForMessage();
+[002C] (C0)     endCutscene();
+[002D] (**)   }
+[002D] (**) }
+[002D] (2E) delay(7200);
+[0031] (68) VAR_RESULT = isScriptRunning(49);
+[0034] (A8) if (VAR_RESULT) {
+[0038] (18)   goto 002D;
+[003B] (**) }
+[003B] (4A) chainScript(86);
+[003D] (A0) stopObjectCode();
+END

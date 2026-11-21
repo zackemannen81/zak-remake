@@ -1,0 +1,4 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0048/ROv2/EXv2
+[0000] (5B) setBitVar(1545,0,Var[235]);
+[0005] (00) stopObjectCode();
+END

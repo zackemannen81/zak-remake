@@ -1,0 +1,52 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0018/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (68) VAR_RESULT = isScriptRunning(135);
+[0007] (A8) if (VAR_RESULT) {
+[000B] (18) } else {
+[000E] (68)   VAR_RESULT = isScriptRunning(113);
+[0011] (28)   if (!VAR_RESULT) {
+[0015] (68)     VAR_RESULT = isScriptRunning(112);
+[0018] (28)     if (!VAR_RESULT) {
+[001C] (68)       VAR_RESULT = isScriptRunning(114);
+[001F] (28)       if (!VAR_RESULT) {
+[0023] (68)         VAR_RESULT = isScriptRunning(124);
+[0026] (28)         if (!VAR_RESULT) {
+[002A] (68)           VAR_RESULT = isScriptRunning(118);
+[002D] (28)           if (!VAR_RESULT) {
+[0031] (2D)             putActorInRoom(8,18);
+[0034] (01)             putActor(8,10,60);
+[0038] (11)             animateActor(8,248);
+[003B] (47)             clearState08(368);
+[003E] (03)             VAR_RESULT = getActorRoom(1);
+[0041] (48)             if (VAR_RESULT == 18) {
+[0047] (7B)               VAR_RESULT = getActorWalkBox(1);
+[004A] (48)               if (VAR_RESULT == 7) {
+[0050] (18)                 goto 006B;
+[0053] (**)               }
+[0053] (**)             }
+[0053] (03)             VAR_RESULT = getActorRoom(2);
+[0056] (48)             if (VAR_RESULT == 18) {
+[005C] (7B)               VAR_RESULT = getActorWalkBox(2);
+[005F] (48)               if (VAR_RESULT == 7) {
+[0065] (18)                 goto 006B;
+[0068] (**)               }
+[0068] (**)             }
+[0068] (47)             clearState08(366);
+[006B] (48)             if (VAR_ACTIVE_OBJECT1 == 350) {
+[0071] (19)               doSentence(253,364,0,1);
+[0078] (**)             }
+[0078] (**)           }
+[0078] (**)         }
+[0078] (**)       }
+[0078] (**)     }
+[0078] (**)   }
+[0078] (0F)   if (!getState08(366)) {
+[007D] (30)     setBoxFlags(5,64);
+[0080] (18)   } else {
+[0083] (30)     setBoxFlags(5,0);
+[0086] (**)   }
+[0086] (19)   doSentence(253,371,0,1);
+[008D] (19)   doSentence(250,372,0,1);
+[0094] (**) }
+[0094] (00) stopObjectCode();
+END

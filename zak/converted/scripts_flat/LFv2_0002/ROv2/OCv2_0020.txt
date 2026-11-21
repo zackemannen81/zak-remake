@@ -1,0 +1,12 @@
+Events:
+   3 - 0033
+   A - 0023
+   B - 0023
+   E - 0029
+[0023] (F9) doSentence(VAR_ACTIVE_VERB,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0028] (00) stopObjectCode();
+[0029] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[002B] (19) doSentence(250,127,0,1);
+[0032] (00) stopObjectCode();
+[0033] (00) stopObjectCode();
+END

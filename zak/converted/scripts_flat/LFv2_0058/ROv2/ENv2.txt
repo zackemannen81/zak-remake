@@ -1,0 +1,3 @@
+[0000] (70) lights(11,0,0);
+[0004] (00) stopObjectCode();
+END

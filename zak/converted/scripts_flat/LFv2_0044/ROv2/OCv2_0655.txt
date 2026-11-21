@@ -1,0 +1,41 @@
+Events:
+  FD - 0013
+[0013] (19) doSentence(253,653,0,1);
+[001A] (9A) Var[48] = Var[234];
+[001D] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[0020] (80) breakHere();
+[0021] (48) unless (VAR_ACTIVE_VERB == 3) goto 0118;
+[0027] (48) unless (VAR_ACTIVE_OBJECT2 == 10) goto 0118;
+[002D] (90) VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0030] (C8) unless (VAR_RESULT == VAR_EGO) goto 0118;
+[0035] (91) animateActor(VAR_EGO,255);
+[0038] (8D) walkActorToActor(VAR_EGO,10,2);
+[003C] (BB) waitForActor(VAR_EGO);
+[003E] (91) animateActor(VAR_EGO,247);
+[0041] (BB) waitForActor(VAR_EGO);
+[0043] (48) unless (VAR_ACTIVE_OBJECT1 == 46) goto 0075;
+[0049] (48) unless (VAR_EGO == 1) goto 0070;
+[004F] (14) print(10,"Sorry, mate, you're not my type!");
+[006D] (18) goto 0072;
+[0070] (42) startScript(76);
+[0072] (18) goto 0114;
+[0075] (48) unless (VAR_EGO == 1) goto 009C;
+[007B] (14) print(10,"Don't bother me, I'm on DUTY now.");
+[0099] (18) goto 0114;
+[009C] (46) Var[48]++;
+[009E] (48) unless (Var[48] == 1) goto 00C8;
+[00A4] (14) print(10,"Sorry, luv, I mustn't accept gifts.");
+[00C5] (18) goto 0107;
+[00C8] (48) unless (Var[48] == 2) goto 00EF;
+[00CE] (14) print(10,"Have you anything else to offer?");
+[00EC] (18) goto 0107;
+[00EF] (14) print(10,"You are very attractive!");
+[0107] (AE) waitForMessage();
+[0108] (11) animateActor(2,246);
+[010B] (3B) waitForActor(2);
+[010D] (D8) printEgo("Yuck!");
+[0114] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[0117] (AE) waitForMessage();
+[0118] (18) goto 0020;
+[011B] (00) stopObjectCode();
+END

@@ -1,0 +1,37 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0084
+Events:
+   1 - 001D
+   2 - 005C
+   B - 006D
+   D - 0062
+[001D] (4F) if (getState08(110)) {
+[0022] (D8)   printEgo("I'll remove the rope first.");
+[003B] (19)   doSentence(14,110,0,0);
+[0042] (4C)   waitForSentence();
+[0043] (2E)   delay(60);
+[0047] (0F)   if (!getState08(110)) {
+[004C] (19)     doSentence(1,84,0,0);
+[0053] (**)   }
+[0053] (18) } else {
+[0056] (42)   startScript(10);
+[0058] (07)   setState08(111);
+[005B] (**) }
+[005B] (00) stopObjectCode();
+[005C] (42) startScript(11);
+[005E] (47) clearState08(111);
+[0061] (00) stopObjectCode();
+[0062] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0066] (24)   loadRoomWithEgo(111,2,255,255);
+[006C] (**) }
+[006C] (00) stopObjectCode();
+[006D] (48) if (VAR_ACTIVE_OBJECT2 == 37) {
+[0073] (4F)   if (getState08(108)) {
+[0078] (19)     doSentence(11,108,37,0);
+[007F] (18)   } else {
+[0082] (D8)     printEgo("Not yet.");
+[008B] (**)   }
+[008B] (18) } else {
+[008E] (42)   startScript(3);
+[0090] (**) }
+[0090] (00) stopObjectCode();
+END

@@ -1,0 +1,191 @@
+# Decompiled with descumm -2
+# Source: LFv2_0056\SCv2_0002
+
+[0000] (C8) if (Var[123] == VAR_ACTIVE_OBJECT2) {
+[0005] (C8)   if (Var[124] == VAR_ACTIVE_OBJECT1) {
+[000A] (46)     Var[197]++;
+[000C] (44)     if (Var[197] > 3) {
+[0012] (9A)       Var[197] = Var[234];
+[0015] (A8)       if (Var[123]) {
+[0019] (4A)         chainScript(3);
+[001B] (**)       }
+[001B] (**)     }
+[001B] (18)     goto 0021;
+[001E] (**)   }
+[001E] (**) }
+[001E] (9A) Var[197] = Var[234];
+[0021] (9A) Var[123] = VAR_ACTIVE_OBJECT1;
+[0024] (9A) Var[124] = VAR_ACTIVE_OBJECT2;
+[0027] (48) if (VAR_ACTIVE_VERB == 18) {
+[002D] (68)   VAR_RESULT = isScriptRunning(26);
+[0030] (28)   if (!VAR_RESULT) {
+[0034] (42)     startScript(26);
+[0036] (18)     goto 00E7;
+[0039] (**)   }
+[0039] (**) }
+[0039] (38) if (VAR_ACTIVE_VERB >= 30) {
+[003F] (78)   if (VAR_ACTIVE_VERB < 45) {
+[0045] (18)     goto 00E7;
+[0048] (**)   }
+[0048] (**) }
+[0048] (48) if (VAR_ACTIVE_VERB == 45) {
+[004E] (38)   if (VAR_ACTIVE_OBJECT2 >= 1) {
+[0054] (04)     if (VAR_ACTIVE_OBJECT2 <= 4) {
+[005A] (9A)       VAR_EGO = VAR_ACTIVE_OBJECT2;
+[005D] (42)       startScript(19);
+[005F] (D2)       actorFollowCamera(VAR_EGO);
+[0061] (60)       cursorCommand(247, 1);
+[0064] (18)       goto 00E7;
+[0067] (**)     }
+[0067] (**)   }
+[0067] (42)   startScript(59);
+[0069] (1A)   VAR_SENTENCE_PREPOSITION = 4;
+[006D] (18) } else {
+[0070] (9A)   Var[137] = VAR_EGO;
+[0073] (48)   if (VAR_ACTIVE_VERB == 3) {
+[0079] (44)     if (VAR_ACTIVE_OBJECT2 > 13) {
+[007F] (9D)       if (classOfIs(VAR_ACTIVE_OBJECT2,4)) {
+[0084] (42)         startScript(32);
+[0086] (18)         goto 023A;
+[0089] (**)       }
+[0089] (18)     } else {
+[008C] (90)       VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[008F] (48)       if (VAR_RESULT == 15) {
+[0095] (18)         goto 017C;
+[0098] (**)       }
+[0098] (B1)       VAR_RESULT = getBitVar(1440,Var[137]);
+[009D] (28)       if (!VAR_RESULT) {
+[00A1] (48)         if (VAR_TIMER_NEXT == 6) {
+[00A7] (CD)           walkActorToActor(Var[137],VAR_ACTIVE_OBJECT2,4);
+[00AB] (48)         } else if (VAR_TIMER_NEXT == 8) {
+[00B4] (CD)           walkActorToActor(Var[137],VAR_ACTIVE_OBJECT2,3);
+[00B8] (18)         } else {
+[00BB] (CD)           walkActorToActor(Var[137],VAR_ACTIVE_OBJECT2,1);
+[00BF] (**)         }
+[00BF] (**)       }
+[00BF] (BB)       waitForActor(Var[137]);
+[00C1] (F4)       VAR_RESULT = getDist(Var[137],VAR_ACTIVE_OBJECT2);
+[00C5] (04)       if (VAR_RESULT <= 4) {
+[00CB] (C9)         faceActor(VAR_ACTIVE_OBJECT2,Var[137]);
+[00CE] (C9)         faceActor(Var[137],VAR_ACTIVE_OBJECT2);
+[00D1] (A8)         if (Var[203]) {
+[00D5] (44)           if (VAR_ACTIVE_OBJECT2 > 4) {
+[00DB] (18)             goto 00E7;
+[00DE] (**)           }
+[00DE] (**)         }
+[00DE] (A8)         if (VAR_VERB_ALLOWED) {
+[00E2] (79)           doSentence(3,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,1);
+[00E7] (19)           doSentence(RESET);
+[00E9] (18)           goto 023A;
+[00EC] (04)         } else if (VAR_ACTIVE_OBJECT2 <= 12) {
+[00F5] (42)           startScript(20);
+[00F7] (18)         } else {
+[00FA] (4A)           chainScript(3);
+[00FC] (**)         }
+[00FC] (**)       }
+[00FC] (18)       goto 023A;
+[00FF] (**)     }
+[00FF] (**)   }
+[00FF] (48)   if (VAR_ACTIVE_VERB == 12) {
+[0105] (C8)     if (VAR_CURRENT_LIGHTS == Var[234]) {
+[010A] (D8)       printEgo("It's too dark to read.");
+[011E] (18)       goto 00E7;
+[0121] (**)     }
+[0121] (**)   }
+[0121] (28)   if (!VAR_VERB_ALLOWED) {
+[0125] (9A)     Var[22] = VAR_ACTIVE_OBJECT1;
+[0128] (B1)     VAR_RESULT = getBitVar(1440,Var[137]);
+[012D] (28)     if (!VAR_RESULT) {
+[0131] (90)       VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0134] (48)       if (VAR_RESULT == 15) {
+[013A] (F6)         walkActorToObject(Var[137],Var[22]);
+[013D] (**)       }
+[013D] (**)     }
+[013D] (BB)     waitForActor(Var[137]);
+[013F] (F4)     VAR_RESULT = getDist(Var[137],Var[22]);
+[0143] (04)     if (VAR_RESULT <= 2) {
+[0149] (08)       if (VAR_ACTIVE_VERB != 13) {
+[014F] (4A)         chainScript(3);
+[0151] (**)       }
+[0151] (18)     } else {
+[0154] (18)       goto 01F4;
+[0157] (**)     }
+[0157] (18)   } else {
+[015A] (9A)     Var[66] = Var[234];
+[015D] (08)     if (VAR_ACTIVE_VERB != 12) {
+[0163] (08)       if (VAR_ACTIVE_VERB != 14) {
+[0169] (08)         if (VAR_ACTIVE_VERB != 17) {
+[016F] (90)           VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0172] (48)           if (VAR_RESULT == 15) {
+[0178] (FF)             if (getState01(VAR_ACTIVE_OBJECT1)) {
+[017C] (F9)               doSentence(VAR_ACTIVE_VERB,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,0);
+[0181] (59)               doSentence(14,VAR_ACTIVE_OBJECT1,0,0);
+[0187] (18)               goto 023A;
+[018A] (**)             }
+[018A] (46)             Var[66]++;
+[018C] (**)           }
+[018C] (90)           VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT2);
+[018F] (48)           if (VAR_RESULT == 15) {
+[0195] (FF)             if (getState01(VAR_ACTIVE_OBJECT2)) {
+[0199] (F9)               doSentence(VAR_ACTIVE_VERB,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,0);
+[019E] (59)               doSentence(14,VAR_ACTIVE_OBJECT2,0,0);
+[01A4] (18)               goto 023A;
+[01A7] (**)             }
+[01A7] (46)             Var[66]++;
+[01A9] (**)           }
+[01A9] (48)           if (Var[66] == 2) {
+[01AF] (4A)             chainScript(3);
+[01B1] (**)           }
+[01B1] (**)         }
+[01B1] (**)       }
+[01B1] (**)     }
+[01B1] (08)     if (Var[21] != 3) {
+[01B7] (9A)       Var[22] = VAR_ACTIVE_OBJECT1;
+[01BA] (90)       VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[01BD] (08)       if (VAR_RESULT != 15) {
+[01C3] (A8)         if (VAR_ACTIVE_OBJECT2) {
+[01C7] (90)           VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT2);
+[01CA] (48)           if (VAR_RESULT == 15) {
+[01D0] (9A)             Var[22] = VAR_ACTIVE_OBJECT2;
+[01D3] (**)           }
+[01D3] (**)         }
+[01D3] (**)       }
+[01D3] (B1)       VAR_RESULT = getBitVar(1440,Var[137]);
+[01D8] (28)       if (!VAR_RESULT) {
+[01DC] (90)         VAR_RESULT = getObjectOwner(Var[22]);
+[01DF] (48)         if (VAR_RESULT == 15) {
+[01E5] (F6)           walkActorToObject(Var[137],Var[22]);
+[01E8] (BB)           waitForActor(Var[137]);
+[01EA] (**)         }
+[01EA] (**)       }
+[01EA] (F4)       VAR_RESULT = getDist(Var[137],Var[22]);
+[01EE] (44)       if (VAR_RESULT > 2) {
+[01F4] (C9)         faceActor(Var[137],Var[22]);
+[01F7] (BB)         waitForActor(Var[137]);
+[01F9] (D8)         printEgo("I can't reach it.");
+[0209] (19)         doSentence(RESET);
+[020B] (AC)         drawSentence();
+[020C] (19)         doSentence(STOP);
+[020E] (62)         stopScript(0);
+[0210] (**)       }
+[0210] (B1)       VAR_RESULT = getBitVar(1440,Var[137]);
+[0215] (A8)       if (VAR_RESULT) {
+[0219] (48)         if (VAR_ACTIVE_VERB == 13) {
+[021F] (18)           goto 023A;
+[0222] (**)         }
+[0222] (**)       }
+[0222] (**)     }
+[0222] (A8)     if (VAR_ACTIVE_OBJECT2) {
+[0226] (EC)       VAR_RESULT = getObjPreposition(VAR_ACTIVE_OBJECT1);
+[0229] (28)       if (!VAR_RESULT) {
+[022D] (08)         if (VAR_ACTIVE_OBJECT2 != 55) {
+[0233] (4A)           chainScript(3);
+[0235] (**)         }
+[0235] (**)       }
+[0235] (**)     }
+[0235] (F9)     doSentence(VAR_ACTIVE_VERB,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,1);
+[023A] (**)   }
+[023A] (**) }
+[023A] (AC) drawSentence();
+[023B] (A0) stopObjectCode();
+END

@@ -1,0 +1,5 @@
+Events:
+   C - 0017
+[0017] (D8) printEgo("WARNING: Fence is electrified.");
+[0034] (00) stopObjectCode();
+END

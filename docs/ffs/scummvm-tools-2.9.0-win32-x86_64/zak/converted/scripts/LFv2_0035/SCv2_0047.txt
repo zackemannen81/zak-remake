@@ -1,0 +1,17 @@
+# Decompiled with descumm -2
+# Source: LFv2_0035\SCv2_0047
+
+[0000] (2D) putActorInRoom(10,195);
+[0003] (01) putActor(10,4,58);
+[0007] (11) animateActor(10,250);
+[000A] (2E) delay(120);
+[000E] (11) animateActor(10,245);
+[0011] (80) breakHere();
+[0012] (AE) waitForMessage();
+[0013] (14) print(10,"Greetings!\x03Our race departed this dimension fifty\x01millennia ago.\x03We, the Skolarians, were your guardians.\x03We knew of the corrupt Caponians and\x01took steps to protect you.\x03They will subvert the Earth with their\x01deadly machines.");
+[00DB] (AE) waitForMessage();
+[00DC] (14) print(10,"We sent you dreams to lead you here.\x03You must construct our device to\x01neutralize the Caponian menace.\x03Use these keys to obtain the Power\x01Crystal.\x03Hurry, before they stop you.");
+[0174] (AE) waitForMessage();
+[0175] (18) goto 0007;
+[0178] (A0) stopObjectCode();
+END

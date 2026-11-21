@@ -1,0 +1,28 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0333
+Events:
+   A - 001F
+   B - 003B
+   D - 003B
+   E - 001F
+  FD - 004E
+[001F] (D8) printEgo("It's securely tied upstairs.");
+[003A] (00) stopObjectCode();
+[003B] (D8) printEgo("Up we go!!!");
+[0046] (19) doSentence(253,333,0,1);
+[004D] (00) stopObjectCode();
+[004E] (60) cursorCommand(15, 2);
+[0051] (D3) ActorOps(VAR_EGO,[Sound(Var[234])]);
+[0055] (91) animateActor(VAR_EGO,3);
+[0058] (9A) Var[51] = Var[234];
+[005B] (FD) setActorElevation(VAR_EGO,Var[51]);
+[005E] (80) breakHere();
+[005F] (46) Var[51]++;
+[0061] (44) unless (Var[51] > 48) goto 005B;
+[0067] (93) ActorOps(VAR_EGO,[Sound(6)]);
+[006B] (60) cursorCommand(247, 1);
+[006E] (07) setState08(107);
+[0071] (07) setState08(109);
+[0074] (57) setState02(109);
+[0077] (24) loadRoomWithEgo(108,1,255,255);
+[007D] (00) stopObjectCode();
+END

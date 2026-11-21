@@ -1,0 +1,32 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0110
+Events:
+   B - 002C
+   D - 002C
+   E - 001D
+  FD - 0045
+[001D] (69) setOwnerOf(37,VAR_EGO);
+[0021] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0023] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0025] (47) clearState08(333);
+[0028] (57) setState02(333);
+[002B] (00) stopObjectCode();
+[002C] (D8) printEgo("Down we go!");
+[0037] (9A) Var[49] = Var[235];
+[003A] (91) animateActor(VAR_EGO,245);
+[003D] (19) doSentence(253,110,0,1);
+[0044] (00) stopObjectCode();
+[0045] (60) cursorCommand(15, 2);
+[0048] (0F) if (!getState08(107)) {
+[004D] (19)   doSentence(9,107,0,0);
+[0054] (4C)   waitForSentence();
+[0055] (**) }
+[0055] (1A) Var[48] = 255;
+[0059] (FD) setActorElevation(VAR_EGO,Var[48]);
+[005C] (BA) Var[48] -= Var[49];
+[005F] (80) breakHere();
+[0060] (78) unless (Var[48] < 200) goto 0059;
+[0066] (BD) setActorElevation(VAR_EGO,0);
+[0069] (60) cursorCommand(247, 1);
+[006C] (24) loadRoomWithEgo(334,16,255,255);
+[0072] (00) stopObjectCode();
+END

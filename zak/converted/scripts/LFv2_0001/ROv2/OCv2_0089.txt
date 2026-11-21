@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0089
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (05) drawObject(89,255,255);
+[0019] (80) breakHere();
+[001A] (80) breakHere();
+[001B] (05) drawObject(88,255,255);
+[0020] (18) goto 0013;
+[0023] (00) stopObjectCode();
+END

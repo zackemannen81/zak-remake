@@ -1,0 +1,25 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0342
+Events:
+  FD - 0013
+[0013] (9A) Var[55] = Var[49];
+[0016] (16) Var[48] = getRandomNr(10);
+[0019] (5A) Var[48] += 51;
+[001D] (45) drawObject(338,Var[48],7);
+[0022] (80) breakHere();
+[0023] (45) drawObject(337,Var[48],7);
+[0028] (C8) if (Var[55] == Var[49]) {
+[002D] (16)   Var[55] = getRandomNr(7);
+[0030] (5A)   Var[55] += 53;
+[0034] (**) }
+[0034] (88) if (Var[55] != Var[49]) {
+[0039] (45)   drawObject(335,Var[49],5);
+[003E] (C4)   if (Var[55] > Var[49]) {
+[0043] (46)     Var[49]++;
+[0045] (18)   } else {
+[0048] (C6)     Var[49]--;
+[004A] (**)   }
+[004A] (45)   drawObject(336,Var[49],5);
+[004F] (**) }
+[004F] (18) goto 0016;
+[0052] (00) stopObjectCode();
+END

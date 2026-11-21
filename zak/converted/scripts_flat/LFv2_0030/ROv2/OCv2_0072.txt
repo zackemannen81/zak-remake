@@ -1,0 +1,14 @@
+Events:
+   B - 0038
+   C - 0035
+   E - 0029
+[0029] (6F) unless (getState04(492)) goto 0032;
+[002E] (BC) stopSound(Var[158]);
+[0030] (1C) startSound(50);
+[0032] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0034] (00) stopObjectCode();
+[0035] (42) startScript(125);
+[0037] (00) stopObjectCode();
+[0038] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[003D] (00) stopObjectCode();
+END

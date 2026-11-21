@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0005/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (2F) if (!getState04(169)) {
+[0009] (0C)   loadScript(62)
+[000C] (**) }
+[000C] (30) setBoxFlags(14,128);
+[000F] (4F) if (getState08(162)) {
+[0014] (30)   setBoxFlags(14,0);
+[0017] (**) }
+[0017] (19) doSentence(250,170,0,1);
+[001E] (00) stopObjectCode();
+END

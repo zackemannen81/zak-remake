@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0002/ROv2/EXv2
+[0000] (3C) stopSound(17);
+[0002] (62) stopScript(21);
+[0004] (62) stopScript(22);
+[0006] (3C) stopSound(18);
+[0008] (47) clearState08(119);
+[000B] (19) doSentence(253,128,0,1);
+[0012] (6F) if (getState04(21)) {
+[0017] (19)   doSentence(253,118,0,1);
+[001E] (**) }
+[001E] (00) stopObjectCode();
+END

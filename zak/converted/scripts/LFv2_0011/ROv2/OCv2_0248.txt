@@ -1,0 +1,17 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0248
+Events:
+   C - 0019
+  FD - 0033
+[0019] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[001D] (D8)   printEgo("Vacant");
+[0025] (18) } else {
+[0028] (D8)   printEgo("Occupied");
+[0032] (**) }
+[0032] (00) stopObjectCode();
+[0033] (4F) if (getState08(246)) {
+[0038] (47)   clearState08(246);
+[003B] (1C)   startSound(11);
+[003D] (**) }
+[003D] (30) setBoxFlags(1,64);
+[0040] (00) stopObjectCode();
+END

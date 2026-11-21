@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0002/ROv2/OCv2_0113
+Events:
+   4 - 0017
+   5 - 0017
+[0017] (10) VAR_RESULT = getObjectOwner(21);
+[001B] (C8) if (VAR_RESULT == VAR_EGO) {
+[0020] (D8)   printEgo("I have to use the remote control.");
+[003D] (18) } else {
+[0040] (D8)   printEgo("It doesn't have any controls on it.");
+[005F] (**) }
+[005F] (00) stopObjectCode();
+END

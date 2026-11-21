@@ -1,0 +1,10 @@
+Events:
+   B - 001E
+[001E] (48) unless (VAR_ACTIVE_OBJECT2 == 23) goto 0031;
+[0024] (47) clearState08(623);
+[0027] (17) clearState02(623);
+[002A] (29) setOwnerOf(23,0);
+[002E] (18) goto 0033;
+[0031] (42) startScript(3);
+[0033] (00) stopObjectCode();
+END

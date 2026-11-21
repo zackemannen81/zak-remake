@@ -1,0 +1,7 @@
+Events:
+  FD - 0013
+[0013] (1C) startSound(82);
+[0015] (2E) delay(60);
+[0019] (18) goto 0013;
+[001C] (00) stopObjectCode();
+END

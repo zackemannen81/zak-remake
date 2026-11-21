@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0053/ROv2/OCv2_0751
+Events:
+  FD - 0013
+[0013] (70) lights(11,0,0);
+[0017] (80) breakHere();
+[0018] (16) Var[60] = getRandomNr(2);
+[001B] (5A) Var[60] += 750;
+[001F] (C5) drawObject(Var[60],Var[57],3);
+[0023] (18) goto 0017;
+[0026] (00) stopObjectCode();
+END

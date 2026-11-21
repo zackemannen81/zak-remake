@@ -1,0 +1,43 @@
+Events:
+   B - 0022
+[0022] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,128)) goto 00EC;
+[0027] (1C) startSound(84);
+[0029] (19) doSentence(254,143,0,1);
+[0030] (19) doSentence(254,142,0,1);
+[0037] (14) print(255,"");
+[003A] (9A) Var[14] = VAR_EGO;
+[003D] (5A) Var[14] += 61;
+[0041] (38) unless (Var[14] >= 8) goto 00A5;
+[0047] (9A) Var[14] = VAR_EGO;
+[004A] (5A) Var[14] += 61;
+[004E] (6A) Var[Var[14]] -= 8;
+[0052] (DB) setBitVar(1440,VAR_EGO,Var[235]);
+[0057] (DB) setBitVar(1464,VAR_EGO,Var[235]);
+[005C] (68) VAR_RESULT = isScriptRunning(52);
+[005F] (A8) unless (VAR_RESULT) goto 00A0;
+[0063] (1A) Var[48] = 1;
+[0067] (C8) unless (VAR_EGO == Var[48]) goto 0070;
+[006C] (1A) Var[48] = 2;
+[0070] (19) doSentence(253,149,0,1);
+[0077] (28) unless (!Var[47]) goto 0094;
+[007B] (60) cursorCommand(15, 2);
+[007E] (14) print(255,"C'mon!");
+[0087] (19) doSentence(253,148,0,1);
+[008E] (B6) walkActorToObject(Var[48],150);
+[0092] (BB) waitForActor(Var[48]);
+[0094] (DB) setBitVar(1464,Var[48],Var[235]);
+[0099] (62) stopScript(52);
+[009B] (42) startScript(54);
+[009D] (18) goto 00A2;
+[00A0] (42) startScript(52);
+[00A2] (18) goto 00E9;
+[00A5] (B1) VAR_RESULT = getBitVar(848,VAR_EGO);
+[00AA] (A8) unless (VAR_RESULT) goto 00C4;
+[00AE] (14) print(255,"Hey! No free rides!");
+[00C1] (18) goto 00E4;
+[00C4] (14) print(255,"Sorry bud, but you're low on dough!");
+[00E4] (DB) setBitVar(848,VAR_EGO,Var[235]);
+[00E9] (18) goto 00EE;
+[00EC] (42) startScript(3);
+[00EE] (00) stopObjectCode();
+END

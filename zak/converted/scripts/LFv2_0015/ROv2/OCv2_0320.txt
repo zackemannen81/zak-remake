@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0015/ROv2/OCv2_0320
+Events:
+   C - 001A
+[001A] (D8) printEgo("It looks like there's a special object\x01inside the Martian Pyramid.");
+[0055] (00) stopObjectCode();
+END

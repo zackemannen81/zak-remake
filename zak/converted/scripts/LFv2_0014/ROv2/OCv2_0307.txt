@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0014/ROv2/OCv2_0307
+Events:
+  FD - 0013
+[0013] (4F) if (getState08(307)) {
+[0018] (F0)   lights(Var[234],0,0);
+[001C] (5B)   setBitVar(1559,7,Var[235]);
+[0021] (42)   startScript(119);
+[0023] (18) } else {
+[0026] (D8)   printEgo("I can't get it out.");
+[0037] (19)   doSentence(STOP);
+[0039] (**) }
+[0039] (00) stopObjectCode();
+END

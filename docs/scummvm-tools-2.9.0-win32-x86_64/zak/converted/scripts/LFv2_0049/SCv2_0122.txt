@@ -1,0 +1,15 @@
+# Decompiled with descumm -2
+# Source: LFv2_0049\SCv2_0122
+
+[0000] (80) breakHere();
+[0001] (48) if (VAR_KEYPRESS == 5) {
+[0007] (62)   stopScript(1);
+[0009] (3C)   stopSound(81);
+[000B] (20)   stopMusic();
+[000C] (72)   loadRoom(0);
+[000E] (9A)   Var[122] = Var[235];
+[0011] (42)   startScript(108);
+[0013] (**) }
+[0013] (18) goto 0000;
+[0016] (A0) stopObjectCode();
+END

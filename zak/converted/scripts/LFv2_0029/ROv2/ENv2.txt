@@ -1,0 +1,39 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0029/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (9A) VAR_SENTENCE_OBJECT1 = Var[234];
+[0007] (07) setState08(485);
+[000A] (57) setState02(485);
+[000D] (07) setState08(486);
+[0010] (57) setState02(486);
+[0013] (07) setState08(487);
+[0016] (48) if (VAR_ROOM == 153) {
+[001C] (48)   if (Var[193] == 2) {
+[0022] (18)     goto 0032;
+[0025] (**)   }
+[0025] (18) } else {
+[0028] (33)   RoomColor(7,6);
+[002C] (48)   if (Var[194] == 2) {
+[0032] (47)     clearState08(485);
+[0035] (17)     clearState02(485);
+[0038] (47)     clearState08(486);
+[003B] (17)     clearState02(486);
+[003E] (47)     clearState08(487);
+[0041] (**)   }
+[0041] (**) }
+[0041] (19) doSentence(253,480,0,1);
+[0048] (9A) Var[66] = Var[234];
+[004B] (FA) VerbOps(Delete(Var[66]););
+[004E] (46) Var[66]++;
+[0050] (44) unless (Var[66] > 14) goto 004B;
+[0056] (7A) VerbOps(New-30(32,21,14,0,"Done@@@@"));
+[0065] (68) VAR_RESULT = isScriptRunning(60);
+[0068] (A8) if (VAR_RESULT) {
+[006C] (7A)   VerbOps(New-9(0,200,0,0,"Teleport to"));
+[007E] (18) } else {
+[0081] (7A)   VerbOps(New-9(0,200,12,0,"@"));
+[0089] (**) }
+[0089] (1A) VAR_BACKUP_VERB = 9;
+[008D] (19) doSentence(RESET);
+[008F] (60) cursorCommand(0, 0);
+[0092] (00) stopObjectCode();
+END

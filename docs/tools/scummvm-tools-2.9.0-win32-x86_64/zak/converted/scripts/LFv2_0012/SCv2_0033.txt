@@ -1,0 +1,22 @@
+# Decompiled with descumm -2
+# Source: LFv2_0012\SCv2_0033
+
+[0000] (40) cutscene();
+[0001] (72) loadRoom(0);
+[0003] (07) setState08(267);
+[0006] (58) beginOverride();
+[0007] (18) goto 0028;
+[000A] (EE) dummy(EE);
+[000B] (14) print(255,"After digging for a long time^");
+[0027] (AE) waitForMessage();
+[0028] (14) print(255,"");
+[002B] (C0) endCutscene();
+[002C] (48) if (VAR_ACTIVE_OBJECT2 == 26) {
+[0032] (54)   setObjectName(26,"bent butter knife");
+[0047] (27)   setState04(26);
+[004A] (**) }
+[004A] (2E) delay(60);
+[004E] (11) animateActor(1,246);
+[0051] (D8) printEgo("Sheesh^ that was a lot of work!");
+[006C] (A0) stopObjectCode();
+END

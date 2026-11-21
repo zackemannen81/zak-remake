@@ -1,0 +1,35 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0004/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (1A) Var[245] = 24;
+[0008] (68) VAR_RESULT = isScriptRunning(75);
+[000B] (28) if (!VAR_RESULT) {
+[000F] (68)   VAR_RESULT = isScriptRunning(95);
+[0012] (28)   if (!VAR_RESULT) {
+[0016] (19)     doSentence(253,155,0,1);
+[001D] (19)     doSentence(253,152,0,1);
+[0024] (0F)     if (!getState08(159)) {
+[0029] (2D)       putActorInRoom(7,4);
+[002C] (01)       putActor(7,22,52);
+[0030] (11)       animateActor(7,250);
+[0033] (18)     } else {
+[0036] (2D)       putActorInRoom(7,4);
+[0039] (01)       putActor(7,38,56);
+[003D] (11)       animateActor(7,249);
+[0040] (**)     }
+[0040] (9A)     Var[203] = Var[235];
+[0043] (19)     doSentence(253,159,0,1);
+[004A] (**)   }
+[004A] (**) }
+[004A] (30) setBoxFlags(4,64);
+[004D] (4F) if (getState08(155)) {
+[0052] (30)   setBoxFlags(4,0);
+[0055] (**) }
+[0055] (19) doSentence(250,158,0,1);
+[005C] (19) doSentence(250,154,0,1);
+[0063] (0F) if (!getState08(156)) {
+[0068] (30)   setBoxFlags(2,64);
+[006B] (18) } else {
+[006E] (30)   setBoxFlags(2,0);
+[0071] (**) }
+[0071] (00) stopObjectCode();
+END

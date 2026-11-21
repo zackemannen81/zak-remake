@@ -1,0 +1,7 @@
+Events:
+   9 - 0024
+   A - 0024
+   E - 0024
+[0024] (D8) printEgo("It's stuck in the crystalabra.");
+[0040] (00) stopObjectCode();
+END

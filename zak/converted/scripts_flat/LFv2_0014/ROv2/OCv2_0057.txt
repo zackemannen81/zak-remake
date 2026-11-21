@@ -1,0 +1,10 @@
+Events:
+   B - 0021
+   E - 0019
+[0019] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[001B] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[001D] (07) setState08(308);
+[0020] (00) stopObjectCode();
+[0021] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0026] (00) stopObjectCode();
+END

@@ -1,0 +1,33 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0648
+Events:
+   B - 001E
+[001E] (48) if (VAR_ACTIVE_OBJECT2 == 59) {
+[0024] (29)   setOwnerOf(59,0);
+[0028] (47)   clearState08(647);
+[002B] (17)   clearState02(647);
+[002E] (48) } else if (VAR_ACTIVE_OBJECT2 == 33) {
+[0037] (29)   setOwnerOf(33,14);
+[003B] (4F)   if (getState08(646)) {
+[0040] (47)     clearState08(646);
+[0043] (57)     setState02(646);
+[0046] (18)     goto 006A;
+[0049] (18)   } else {
+[004C] (07)     setState08(645);
+[004F] (17)     clearState02(645);
+[0052] (**)   }
+[0052] (48) } else if (VAR_ACTIVE_OBJECT2 == 56) {
+[005B] (29)   setOwnerOf(56,14);
+[005F] (4F)   if (getState08(645)) {
+[0064] (47)     clearState08(645);
+[0067] (57)     setState02(645);
+[006A] (07)     setState08(653);
+[006D] (17)     clearState02(653);
+[0070] (18)   } else {
+[0073] (07)     setState08(646);
+[0076] (17)     clearState02(646);
+[0079] (**)   }
+[0079] (18) } else {
+[007C] (D8)   printEgo("Nope, doesn't work.");
+[008F] (**) }
+[008F] (00) stopObjectCode();
+END

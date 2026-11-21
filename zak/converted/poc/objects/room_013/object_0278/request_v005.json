@@ -1,0 +1,10 @@
+{
+  "room": 13,
+  "object_id": 278,
+  "prompt": "Recreate ONLY this exact attached small game-state patch in polished premium AAA Unreal Engine 5 quality. Bright yellow/orange FLAMES rising in this exact animation phase, dark red/brown background. Flame is dominant, no room or altar added. Target aspect 56:24. Same crop, perspective, silhouette and animation state. Realistic fine materials, refined lighting. No additional surrounding scene, symbols, text, interface or props. Original is exact composition. Black opaque. Extreme aspect: centered black letterbox preserving proportions.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_013\\object_0278\\frame_000.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-d28780b8-abb0-45a8-b6cc-546de7e2faa3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "single-reference correction after room leakage; review pending"
+}

@@ -1,0 +1,27 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0024/ROv2/OCv2_0416
+Events:
+   B - 0018
+[0018] (48) if (VAR_ACTIVE_OBJECT2 == 49) {
+[001E] (48)   if (VAR_ROOM == 155) {
+[0024] (AF)     if (!getState04(VAR_ACTIVE_OBJECT1)) {
+[0028] (A7)       setState04(VAR_ACTIVE_OBJECT1);
+[002A] (19)       doSentence(250,417,0,1);
+[0031] (18)     } else {
+[0034] (D8)       printEgo("It's already lit.");
+[0045] (**)     }
+[0045] (18)   } else {
+[0048] (D8)     printEgo("There's not enough oxygen to light it!");
+[006A] (**)   }
+[006A] (48) } else if (VAR_ACTIVE_OBJECT2 == 48) {
+[0073] (19)   doSentence(254,417,0,1);
+[007A] (47)   clearState08(417);
+[007D] (47)   clearState08(418);
+[0080] (47)   clearState08(419);
+[0083] (47)   clearState08(416);
+[0086] (19)   doSentence(253,419,0,1);
+[008D] (E7)   clearState04(VAR_ACTIVE_OBJECT1);
+[008F] (18) } else {
+[0092] (42)   startScript(3);
+[0094] (**) }
+[0094] (00) stopObjectCode();
+END

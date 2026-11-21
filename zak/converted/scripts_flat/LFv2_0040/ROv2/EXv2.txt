@@ -1,0 +1,5 @@
+[0000] (3C) stopSound(41);
+[0002] (A8) unless (Var[233]) goto 000B;
+[0006] (DB) setBitVar(1440,Var[233],Var[234]);
+[000B] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+Events:
+  FD - 0013
+[0013] (48) unless (VAR_ACTIVE_VERB == 14) goto 002E;
+[0019] (D8) printEgo("I can't reach it.");
+[0029] (19) doSentence(STOP);
+[002B] (18) goto 0064;
+[002E] (48) unless (VAR_ACTIVE_VERB == 11) goto 0064;
+[0034] (48) unless (VAR_ACTIVE_OBJECT2 == 49) goto 003D;
+[003A] (18) goto 0019;
+[003D] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,2)) goto 004C;
+[0042] (19) doSentence(253,274,0,1);
+[0049] (18) goto 0064;
+[004C] (D8) printEgo("I can't reach it with that.");
+[0064] (00) stopObjectCode();
+END

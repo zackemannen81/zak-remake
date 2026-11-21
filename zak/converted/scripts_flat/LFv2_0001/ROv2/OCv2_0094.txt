@@ -1,0 +1,14 @@
+Events:
+   1 - 0024
+   2 - 002D
+   9 - 002D
+   A - 0024
+[0024] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 002C;
+[0028] (1C) startSound(68);
+[002A] (87) setState08(VAR_ACTIVE_OBJECT1);
+[002C] (00) stopObjectCode();
+[002D] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0035;
+[0031] (1C) startSound(69);
+[0033] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0035] (00) stopObjectCode();
+END

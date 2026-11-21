@@ -1,0 +1,9 @@
+Events:
+  FD - 0022
+[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0024] (17) clearState02(126);
+[0027] (54) setObjectName(25,"yellow crayon");
+[0038] (2E) delay(120);
+[003C] (D8) printEgo("Hmm. Only one yellow crayon left.");
+[005A] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+Events:
+   1 - 002A
+   2 - 002A
+   9 - 002A
+   A - 002A
+   D - 001F
+[001F] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0029;
+[0023] (64) loadRoomWithEgo(403,Var[47],255,255);
+[0029] (00) stopObjectCode();
+[002A] (0F) unless (!getState08(391)) goto 004A;
+[002F] (D8) printEgo("The sand pile is in the way.");
+[0047] (18) goto 0059;
+[004A] (D8) printEgo("It won't budge.");
+[0059] (00) stopObjectCode();
+END

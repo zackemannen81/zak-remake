@@ -1,0 +1,10 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[171] = Var[234];
+[0016] (1E) walkActorTo(5,38,35);
+[001A] (3B) waitForActor(5);
+[001C] (1E) walkActorTo(5,0,35);
+[0020] (3B) waitForActor(5);
+[0022] (18) goto 0016;
+[0025] (00) stopObjectCode();
+END

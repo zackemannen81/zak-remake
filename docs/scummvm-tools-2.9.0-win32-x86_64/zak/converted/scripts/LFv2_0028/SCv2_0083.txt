@@ -1,0 +1,16 @@
+# Decompiled with descumm -2
+# Source: LFv2_0028\SCv2_0083
+
+[0000] (67) clearState04(70);
+[0003] (1A) Var[66] = 1;
+[0007] (88) if (Var[66] != VAR_EGO) {
+[000C] (FB)   VAR_RESULT = getActorWalkBox(Var[66]);
+[000F] (C8)   if (VAR_RESULT == Var[60]) {
+[0014] (27)     setState04(70);
+[0017] (D8)     printEgo("I don't want to hurt my friend!");
+[0032] (**)   }
+[0032] (**) }
+[0032] (46) Var[66]++;
+[0034] (44) unless (Var[66] > 4) goto 0007;
+[003A] (A0) stopObjectCode();
+END

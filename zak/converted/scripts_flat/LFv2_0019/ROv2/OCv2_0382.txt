@@ -1,0 +1,20 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[203] = Var[235];
+[0016] (80) breakHere();
+[0017] (48) unless (VAR_ACTIVE_VERB == 3) goto 00BB;
+[001D] (48) unless (VAR_ACTIVE_OBJECT2 == 10) goto 00BB;
+[0023] (BB) waitForActor(VAR_EGO);
+[0025] (48) unless (VAR_ACTIVE_OBJECT1 == 44) goto 0069;
+[002B] (14) print(10,"I already have a great sand wedge,\x01but I have a friend who needs one.");
+[0066] (18) goto 00B4;
+[0069] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT1,32)) goto 008C;
+[006E] (14) print(10,"You'd better hold on to that!");
+[0089] (18) goto 00B4;
+[008C] (14) print(10,"I have no need of your earthly\x01possessions.");
+[00B4] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[00B7] (AE) waitForMessage();
+[00B8] (11) animateActor(10,247);
+[00BB] (18) goto 0016;
+[00BE] (00) stopObjectCode();
+END

@@ -1,0 +1,9 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (16) Var[66] = getRandomNr(3);
+[0017] (5A) Var[66] += 582;
+[001B] (85) drawObject(Var[66],255,255);
+[001F] (18) goto 0013;
+[0022] (00) stopObjectCode();
+END

@@ -1,0 +1,21 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0040/ROv2/OCv2_0604
+Events:
+  FD - 0013
+[0013] (9A) Var[203] = Var[235];
+[0016] (80) breakHere();
+[0017] (48) if (VAR_ACTIVE_VERB == 3) {
+[001D] (48)   if (VAR_ACTIVE_OBJECT2 == 11) {
+[0023] (AE)     waitForMessage();
+[0024] (48)     if (VAR_ACTIVE_OBJECT1 == 77) {
+[002A] (14)       print(11,"You'd better hold on to that!");
+[0045] (48)     } else if (VAR_ACTIVE_OBJECT1 == 46) {
+[004E] (14)       print(11,"Sure! I'll take a swig!");
+[0064] (18)     } else {
+[0067] (14)       print(11,"Not now! I'm flyin' the plane!");
+[0083] (**)     }
+[0083] (9A)     VAR_ACTIVE_OBJECT2 = Var[234];
+[0086] (**)   }
+[0086] (**) }
+[0086] (18) goto 0016;
+[0089] (00) stopObjectCode();
+END

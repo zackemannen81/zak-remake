@@ -1,0 +1,26 @@
+Events:
+  FD - 0013
+[0013] (1A) Var[66] = 2;
+[0017] (48) unless (VAR_ACTIVE_OBJECT1 == 18) goto 0021;
+[001D] (1A) Var[66] = 1;
+[0021] (9A) Var[14] = Var[66];
+[0024] (5A) Var[14] += 61;
+[0028] (B8) unless (Var[14] >= Var[118]) goto 0055;
+[002D] (40) cutscene();
+[002E] (9A) Var[14] = Var[66];
+[0031] (5A) Var[14] += 61;
+[0035] (EA) Var[Var[14]] -= Var[118];
+[0038] (58) beginOverride();
+[0039] (18) goto 004C;
+[003C] (11) animateActor(10,255);
+[003F] (11) animateActor(10,247);
+[0042] (2E) delay(60);
+[0046] (1C) startSound(84);
+[0048] (2E) delay(120);
+[004C] (49) faceActor(10,VAR_EGO);
+[004F] (3B) waitForActor(10);
+[0051] (C0) endCutscene();
+[0052] (18) goto 0058;
+[0055] (9A) Var[66] = Var[234];
+[0058] (00) stopObjectCode();
+END

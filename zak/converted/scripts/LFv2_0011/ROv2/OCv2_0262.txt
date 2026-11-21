@@ -1,0 +1,40 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0262
+Events:
+   E - 0018
+  FD - 001F
+[0018] (87) setState08(VAR_ACTIVE_OBJECT1);
+[001A] (69) setOwnerOf(22,VAR_EGO);
+[001E] (00) stopObjectCode();
+[001F] (48) if (VAR_EGO == 1) {
+[0025] (A8)   if (Var[248]) {
+[0029] (34)     VAR_RESULT = getDist(9,260);
+[002F] (78)     if (VAR_RESULT < 4) {
+[0035] (50)       pickupObject(50);
+[0038] (C7)       clearState08(VAR_ACTIVE_OBJECT1);
+[003A] (9A)       Var[66] = Var[234];
+[003D] (9A)       Var[14] = Var[66];
+[0040] (5A)       Var[14] += 84;
+[0044] (48)       if (Var[14] == 50) {
+[004A] (9A)         Var[14] = Var[66];
+[004D] (5A)         Var[14] += 84;
+[0051] (8A)         Var[Var[14]] = Var[235];
+[0054] (**)       }
+[0054] (46)       Var[66]++;
+[0056] (44)       unless (Var[66] > 5) goto 003D;
+[005C] (18)     } else {
+[005F] (1A)       Var[103] = 26;
+[0063] (09)       faceActor(1,9);
+[0066] (00)       stopObjectCode();
+[0067] (D8)       printEgo("She might catch me!");
+[0079] (**)     }
+[0079] (18)   } else {
+[007C] (68)     VAR_RESULT = isScriptRunning(105);
+[007F] (28)     if (!VAR_RESULT) {
+[0083] (42)       startScript(105);
+[0085] (**)     }
+[0085] (**)   }
+[0085] (18) } else {
+[0088] (D8)   printEgo("That's ILLEGAL!!");
+[0099] (**) }
+[0099] (00) stopObjectCode();
+END

@@ -1,0 +1,461 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+		<title>SCUMM&nbsp;Explorer Manual</title>
+	</head>
+
+
+<body><div align="center">
+	<br>
+	<p><font size="+3">SCUMM Explorer, version 0.5 - MANUAL<br>
+		</font><br>
+		<br>
+		<br>
+	</p>
+	<p><b>Sections<br>
+		</b><br>
+	</p>
+	<p><a href="#scumm">1. What is SCUMM<br>
+		</a></p>
+	<p><a href="#explorer">2. What is SCUMM Explorer<br>
+		</a></p>
+	<p><a href="#features">3. Features in SCUMM Explorer<br>
+		</a></p>
+	<p><a href="#requirements">4. System Requirements<br>
+		</a></p>
+	<p><a href="#games">5. Supported Games<br>
+		</a></p>
+	<p><a href="#about">6. About the Author<br>
+		</a></p>
+	<p><a href="#history">7. Version History<br>
+		</a></p>
+	<p><a href="#moreinfo">8. More info on SCUMM blocks<br>
+		</a></p>
+	<p><a href="#disclaimer">9. Disclaimer<br>
+		</a><br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="scumm">1. What is SCUMM<br>
+			</a></b><br>
+	</p>
+	<p>SCUMM is a programming language for point'n'click style games developed in 1987 by Aric Wilmunder and Ron Gilbert of LucasArts Entertainment Company (it means Script Creation Utility for Maniac Mansion). If you have never seen one of these wonderful games that uses SCUMM, then you won't understand what this program is about, so go out and try a LEC game first.<br>
+	</p>
+	<p>SCUMM is also an encoding language because it manages various file types like images, sounds, animations, musics, scripts...<br>
+	</p>
+	<p>There are many different versions of SCUMM. The fundamental differences are in the datatypes contained into files, but there are also encryption differences and other things. <br>
+		We can identify various SCUMM branches on the Mac:<br>
+	</p>
+	<table width="60%" border="0" cellspacing="2" cellpadding="0">
+		<tr>
+			<td>
+				<div align="left">
+					<p><br>
+					</p>
+					<ul>
+						<li type="circle">version 1 (Maniac Mansion)<br>
+						<li type="circle">version 3 (Indiana Jones and the Last Crusade, Loom)<br>
+						<li type="circle">version 5 (Monkey Island 1&amp;2, Indiana Jones and the Fate of Atlantis)<br>
+						<li type="circle">version 6 (Sam&amp;Max Hit the Road, Day of the Tentacle)<br>
+						<li type="circle">version 7 (Full Throttle, The Dig)<br>
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<p><br>
+		The last two versions showed a slight variation in the data files, where all the game files were joined together into one huge datafile, while the last version is similar to the previous but its datafiles are no more encrypted and they contain video streams and high quality audio samples.<br>
+		<br>
+	</p>
+	<ul>
+		
+	</ul>
+	<p>If you want to know more about SCUMM blocks supported by SCUMM Explorer, read the section entitled <a href="#moreinfo">More info on SCUMM blocks</a>.<br>
+		<br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="explorer">2. What is SCUMM Explorer<br>
+			</a></b><br>
+	</p>
+	<p>SCUMM Explorer is the first (and only!) program available on Macintosh for viewing SCUMM files from LucasArts Entertainment Company games. When you load a datafile you will be presented a list of all the data in that file divided into blocks. Each block represents an object of the game (an image, a sound, ...) and you can view each block content or export its data (depending on the block type) on disk or also convert it in a different - universal - format. That is, you can discover the &quot;backstage&quot; of the game, its structure and more than you had ever known about it.<br>
+		<br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="features">3. Features in SCUMM Explorer<br>
+			</a></b><br>
+	</p>
+	<p>Once you load one or more SCUMM files you will be able to do the following (depending on the version of the game):<br>
+	</p>
+</div>
+<div align="center">
+	<table width="75%" border="0" cellspacing="2" cellpadding="0">
+		<tr>
+			<td>
+				<div align="center">
+					<p><br>
+					</p>
+					<div align="left">
+						<div align="center">
+							<div align="center">
+								<div align="left">
+									<ul>
+										<li type="circle">Surfing through its blocks from a hierarchical list<br>
+										<li type="circle">Dump a block in hex or ascii (up to 32 MBytes of data) or save its data to a new, separated file<br>
+										<li type="circle">Display the Color LookUp Table (palette) of a certain Room, Actor Costume or Animation Frame and export it to a file containing a Mac 'clut' resource<br>
+										<li type="circle">View a background image from a Room block or save it to a picture file, or to a different file type (using Quicktime)<br>
+										<li type="circle">View an Object image from a Room block or export one of its frames to a picture file, or to a different file type (using Quicktime)<br>
+										<li type="circle">Play sounds in sound blocks of Monkey Island 1 and save them to System 7 sound files<br>
+										<li type="circle">Play music tracks and export them to General Midi files or QuickTime Music files<br>
+										<li type="circle">Decompile game scripts (using DeScumm from the ScummVM project) and save them to text files<br>
+										
+									</ul>
+								</div>
+							</div>
+							<p><br>
+								What you cannot do:<br>
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div align="left">
+					<ul>
+						<li type="circle">Costume (characters animations) viewing<br>
+						<li type="circle">Video playing<br>
+						<li type="circle">Listening of sound and music from later games<br>
+						<li type="circle">Viewing of walkable areas, boxes and other room amenities<br>
+						<li type="circle">editing<br>
+						<li type="circle">everything else here uncovered<br>
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<p><br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="requirements">4. System Requirements<br>
+			</a></b><br>
+	</p>
+	<p>Any MacOS X equipped machine should be more than enough to run SCUMM Explorer. Sorry, MacOS classic is no longer supported since version 0.5 of SCUMM Explorer. Older version of this software are available on request.<br>
+		<br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="games">5. Supported Games<br>
+			</a></b><br>
+	</p>
+	<p>The following games are known to be recognized in SCUMM Explorer (the Mac versions, at least):<br>
+	</p>
+	<p><br>
+	</p>
+	<table width="60%" border="0" cellspacing="2" cellpadding="0">
+		<tr>
+			<td>
+				<div align="left">
+					<p></p>
+					<ul>
+						<li type="circle">Indiana Jones and the Last Crusade<br>
+						<li type="circle">Loom<br>
+						<li type="circle">The Secret of Monkey Island<br>
+						<li type="circle">Monkey Island 2: LeChuck's Revenge<br>
+						<li type="circle">Indiana Jones and the Fate of Atlantis<br>
+						<li type="circle">Sam &amp; Max Hit the Road<br>
+						<li type="circle">Day of the Tentacle<br>
+						<li type="circle">Full Throttle<br>
+						<li type="circle">The Dig<br>
+						<li type="circle">any piece of data extracted from one of these games<br>
+						<li type="circle">demo releases of these listed games<br>
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<p><br>
+	</p>
+	<p>However, as the main rule of adventure gaming suggests, feel free to try everything, and load other game files as well (in the worst case, it won't work).<br>
+		<br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="about">6. About the Author<br>
+			</a></b><br>
+	</p>
+	<p>My name is Enrico Rolfi, I've been an Apple user and fan since I was a child (//e, IIGS, Mac). The first Lucasfilm game I played was Indiana Jones and the Last Crusade. Since then, I started to seek through the game's data to understand how it worked. Some years later I decoded the Monkey Island file format and wrote a SCUMM decryptor. Then I discovered what other SCUMM fans made on PC and decided to code my own SCUMM Explorer.<br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="history">7. Version History<br>
+			</a></b></p>
+	<table width="75%" border="0" cellspacing="2" cellpadding="0">
+		<tr>
+			<td>
+				<div align="left">
+					<p>0.5Beta (20/12/06) - Fifth public beta<br>
+						<br>
+					</p>
+					<p><i>News:<br>
+						</i></p>
+					<blockquote>
+						
+					</blockquote>
+					<ul>
+						<li type="circle">Conversion of Monkey Island 1 musics to MIDI files<br>
+						<li type="circle">Disassembling of game scripts using DeSCUMM (by Ludvig Strigeus and the ScummVM Team)<br>
+						<li type="circle">Viewing of background images from Loom &amp; Indy (Last Crusade)<br>
+						<li type="circle">Major tweaking to midi instruments used in FoA and MI2<br>
+						<li type="circle">Displaying of info for certain block types in the block operation field<br>
+						<li type="circle">Reworked Window menu<br>
+						<li type="circle">Minor bugs fixed<br>
+						
+					</ul>
+					<p><br>
+					</p>
+					<p><i>Added Support for:<br>
+						</i></p>
+					<blockquote>
+						
+					</blockquote>
+					<ul>
+						<li type="circle">Indiana Jones and the Last Crusade<br>
+						<li type="circle">Loom<br>
+							<br>
+							<br>
+						
+					</ul>
+					<p>0.4Beta (02/09/02) - Fourth public beta<br>
+						<br>
+					</p>
+					<p><i>News:<br>
+						</i></p>
+					<ul>
+						<li type="circle">Listening/exporting of a single track from a midi music block<br>
+						<li type="circle">Viewing of frames from object images in Room blocks<br>
+						<li type="circle">Exporting of single frames from object images to picture or other file format<br>
+						<li type="circle">Image windows are now more comfortable and allows resizeing<br>
+						<li type="circle">Hex Dumping is now splitted in sectors to avoid slow loadings of data<br>
+						<li type="circle">Even faster blocks loading<br>
+						<li type="circle">New and redrawn block icons<br>
+						<li type="circle">Alert, Caution and Warning message boxes<br>
+						<li type="circle">Help system introduced<br>
+						<li type="circle">New startup/about box<br>
+						<li type="circle">Other small changes to the interface<br>
+						<li type="circle">Memory management to prevent crashes and heap fillings<br>
+							<br>
+						
+					</ul>
+					<p><i>Bugs Fixed:<br>
+						</i></p>
+					<ul>
+						<li type="circle">Timer for Monkey 1 musics playing now works fine on fast Macs<br>
+						<li type="circle">Watch cursor now correctly disappears after loading QuickTime data<br>
+						<li type="circle">...and it now appears while loading images<br>
+						<li type="circle">Menu bar items are now enabled after an error message occurs<br>
+						<li type="circle">Unreadable files no longer leaves wrong references in Windows menu<br>
+						<li type="circle">Closing windows now frees up memory allocated by them<br>
+						<li type="circle">Better handling of corrupted files containing unknown data<br>
+						<li type="circle">Minor bugs fixed<br>
+						</ul>
+					<br>
+					<i>
+							Added Support for:<br>
+					</i>
+					<ul>
+						<li type="circle">Sound &amp; Speech datafiles<br>
+						<li type="circle">Full Throttle sequence files<br>
+						<li type="circle">The Dig sequence files<br>
+							<br>
+							<br>
+						
+					</ul>
+					<p>0.3Beta (12/08/01) - Third public beta<br>
+						<br>
+					</p>
+					<p><i>News:<br>
+						</i></p>
+					<ul>
+						<li type="circle">Entirely updated and reorganized GUI<br>
+						<li type="circle">Implementation of the windows menu<br>
+						<li type="circle">Viewing of background images from Room blocks<br>
+						<li type="circle">Exporting of background images to picture or differents file formats<br>
+						<li type="circle">Capability of loading any type of file and invisible files<br>
+						<li type="circle">More block types recognized<br>
+						<li type="circle">Fixed a bug that sometimes caused the Palette Viewer to crash<br>
+						<li type="circle">Minor bugs fixed<br>
+				</ul>0.2.4Beta (10/07/01) - Second public beta revision<br>
+					<br>
+					<i>
+							
+							News:<br>
+					</i>
+					<ul>
+						<li type="circle">Playing of sounds in Monkey Island 1 sound blocks<br>
+						<li type="circle">Exporting of sounds in Monkey Island 1 into System 7 soundfiles<br>
+						<li type="circle">Recognition of files containing single blocks<br>
+						<li type="circle">Support for files generated by SCUMM Utils programs<br>
+						<li type="circle">Minor bugs fixed<br>
+						</ul>
+					<br>
+							<br>
+							0.2Beta (07/20/01) - Second public beta<br>
+					<br>
+					<i>News</i>:<br>
+							<ul>
+						<li type="circle">Faster file loading into main window<br>
+						<li type="circle">Better synthesizer for Monkey Island 1 music (now it sounds fine on 68K Macs!)<br>
+						<li type="circle">Added support for packed datafiles containing SCUMM files<br>
+						<li type="circle">Recognition of unencrypted SCUMM files<br>
+						<li type="circle">Viewing of Color LookUp Tables<br>
+						<li type="circle">Exporting of Color LookUp Tables into Macintosh 'clut' resources<br>
+						<li type="circle">More block types are now recognized<br>
+						<li type="circle">Minor bugs fixed<br>
+						</ul>
+					<br>
+					<i>
+							Added Support for:<br>
+					</i>
+					<ul>
+						<li type="circle">Sam &amp; Max Hit the Road<br>
+						<li type="circle">Day of the Tentacle<br>
+						<li type="circle">The Dig<br>
+						<li type="circle">Full Throttle<br>
+						</ul>
+					<br>
+							<br>
+							0.1Beta (06/30/01) - First public beta<br>
+					<br>
+					<i>
+							Features:<br>
+					</i>
+					<ul>
+						<li type="circle">Display an hierarchical list of all the blocks contained in a SCUMM file<br>
+						<li type="circle">Dump in hex or ascii a selected block<br>
+						<li type="circle">Save a block's data to a new file<br>
+						<li type="circle">Play the music blocks from supported games<br>
+						<li type="circle">Export musics to General Midi file format (not available for Monkey Island 1)<br>
+						<li type="circle">Export musics to QuickTime Music file format (not available for Monkey Island 1)<br>
+						</ul>
+					<br>
+					<i>
+							Supported Games:<br>
+					</i>
+					<ul>
+						<li type="circle">The Secret of Monkey Island<br>
+						<li type="circle">Monkey Island 2: LeChuck's Revenge<br>
+						<li type="circle">Indiana Jones and the Fate of Atlantis<br>
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<p><br>
+		<br>
+	</p>
+	<hr>
+	<p><b><a name="moreinfo">8. More info on SCUMM blocks<br>
+			</a></b><br>
+		<br>
+	</p>
+	<p>SCUMM data for newest games is organized into LFLF blocks, whose purpose is the same as that of the &quot;&lt;number&gt;.LFL&quot; files used in old SCUMM games. Each LFLF block (or each xx.LFL file for old games) contains a ROOM sub-block that owns other sub-blocks describing an entire piece of the game, including images, objects, palettes, walking boxes and scripts.<br>
+		A palette block (&quot;CLUT&quot;) is a group of colors, usually 256 - it can be viewed or exported to the standard Mac 'clut' format.<br>
+		A room image block contains a background image which can be viewed and exported to the standard Mac picture format or to a different image format. It is named &quot;RMIM&quot; (or simply Room for the old games).<br>An object image block (&quot;OBIM&quot;) contains all the frames that makes up an animated object. Each single frame can be viewed and exported too.<br>
+		A script block inside a ROOM usually describes objects behaviour (&quot;OBCD&quot; blocks), a room entering or exiting code (&quot;ENCD&quot; or &quot;EXCD&quot;) or a local function (&quot;LSCR&quot;). Scripts can be disassembled using DeSCUMM, a tool from ScummVM which is included in SCUMM Explorer.</p>
+	<p><br>
+	</p>
+	<p>Outside the ROOM block there may be other blocks, such as sounds, scripts and costumes.<br>Sound blocks contains musics or sound samples, so if you select them you'll be able to listen to the music/sound. The sound blocks are usually found under the LFLF blocks. They're named &quot;SOUN&quot; or &quot;SOU&quot;. The musical sound blocks (that you can listen to) are named &quot;MAC&quot;, &quot;SPK&quot;, &quot;ADL&quot;, &quot;ROL&quot;, &quot;GMD &quot;, &quot;MIDI&quot; for most games and &quot;Mac0&quot; for Monkey Island 1. The sound samples blocks supported are named &quot;Mac1&quot;, they can be found in Monkey Island 1. Sound effects can also be found (for talkie games) in a file named &quot;monster.sou&quot;, into blocks named &quot;Crea&quot; that stands for Creative Sound File (though those are not supported by SCUMM&nbsp;Explorer).<br>Last but not least, script blocks are also located outside ROOM blocks, directly in the LFLF blocks as global scripts (&quot;SCRP&quot; blocks). Again, these can be viewed using DeSCUMM.<br>Costumes (&quot;COST&quot; blocks) are the images of characters animations. They're not supported by SCUMM Explorer.<br>
+	</p>
+	<p>That's all you need to know to use this program in its current release, but keep reading if you want to know more on SCUMM blocks.<br>
+		<br>
+		<br>
+		<br>
+	</p>
+	<p><i>The SCUMM blocks<br>
+		</i><br>
+	</p>
+	<p>Here is a brief description of the most important SCUMM blocks:<br>
+	</p>
+	<table width="75%" border="0" cellspacing="2" cellpadding="0">
+		<tr>
+			<td>
+				<div align="left">
+					<ul>
+						<li type="circle">LECF: the main block containing the entire file.<br>
+						<li type="circle">LOFF: the offsets to identify the LFLF blocks position.<br>
+						<li type="circle">LFLF: the blocks which made up most LEC files.<br>
+							<br>
+						</ul>The following blocks are found into the LFLF blocks:<br><ul>
+							<li type="circle">ROOM: a parent block containing all of the info blocks for a specific part of the game.<br>
+							<li type="circle">SCRP: a script block containing the game's code in SCUMM programming language.<br>
+						<li type="circle">SOUN: a sound block which contains one or more sound effects or tunes.<br>
+						<li type="circle">COST: a costume block with all the images that makes up a character's animation sequence.<br>
+							<br>
+						</ul>Those are the main blocks which compose a room:<br><ul>
+							<li type="circle">RMHD: the room header.<br>
+							<li type="circle">BOXD: the desciption of the walking boxes (the areas where characters may walk on).<br>
+						<li type="circle">BOXM: the walking box matrix.<br>
+						<li type="circle">CLUT: the color lookup table.<br>
+						<li type="circle">PALS: another format of color lookup table.<br>
+						<li type="circle">SCAL: the perspective scaling informations for the walking characters.<br>
+						<li type="circle">RMIM: the room's image.<br>
+						<li type="circle">OBIM: an object's image.<br>
+						<li type="circle">OBCD: an object's code.<br>
+						<li type="circle">EXCD: the code executed upon exiting the room.<br>
+						<li type="circle">ENCD:  the code executed upon entering the room.<br>
+							
+							
+						<li type="circle">NLSC: the local scripts count
+							<li type="circle">LSCR: scripts in SCUMM programming language related to the room.<br>
+								<br>
+							
+						</ul>These blocks can be found into a sound block:<br><ul>
+						<li type="circle">GMD : general Midi music.<br>
+						<li type="circle">MIDI: general Midi (again).<br>
+						<li type="circle">MAC : Mac Midi music.<br>
+						<li type="circle">ROL : Roland MT-32 Midi music.<br>
+						<li type="circle">ADL : Ad-Lib Midi music.<br>
+						<li type="circle">SPK : PC speaker Midi sequence.<br>
+						<li type="circle">Mac0: Monkey Island 1 music<br>
+						<li type="circle">Mac1: Mac formatted Sound<br>
+						<li type="circle">SBL : Sound Blaster sound effect<br>
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<p><br>
+	</p>
+	<ul>Well, you'll probably find other block types in a game, but this list should give you an idea of how the SCUMM files are organized.<br>
+		<br>
+		<br>
+	</ul>
+	<hr>
+	<p><b><a name="disclaimer">9. Disclaimer<br>
+			</a></b><br>
+	</p>
+	<p>The author is not responsible for any damage caused from the use of this program. It is recommended that you don't modify the original copies of your games in any way and that you don't change or corrupt any part of this program.<br>
+		If you would like to include this program on a server, magazine, CD or distribuite it by other commercial means, you must first ask my permission and you must also leave the program &quot;as is&quot; with these original documentation files included.<br>
+		<br>
+	</p>
+	<p>DeSCUMM is a program by Ludvig Strigeus and the ScummVM team, and is released under the GNU license. Source code is available at the <a href="http://www.scummvm.org" target="_blank">ScummVM website.</a><br>
+	</p>
+	<p>Image decoding algorithms used in SCUMM Explorer are derived from SCUMM16 sources, a program by Kevin Carnes.<br>
+	</p>
+	<p>Other algorithms, decoding of Monkey Island 1, 2 music and other MacSCUMM-specific file formats, as well as the SCUMM Explorer (SCUMM Xplorer) program itself is &copy;2001/2006 by Enrico Rolfi. All rights reserved.<br>
+	</p>
+	<p>Every other company and program described in this file, such as LucasArts Entertainment Company, Apple, Macintosh, Quicktime, Indiana Jones, Monkey Island, and other names too are property of the respective owners and are here mentioned only for explaination purposes.<br>
+	</p>
+	<hr>
+	<p></p>
+</div></body>
+
+
+</html>

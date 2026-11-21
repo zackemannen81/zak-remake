@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0264
+Events:
+   1 - 002A
+   A - 002A
+   E - 002A
+[002A] (10) VAR_RESULT = getObjectOwner(47);
+[002E] (C8) if (VAR_RESULT == VAR_EGO) {
+[0033] (D8)   printEgo("I already have some toilet paper.");
+[0051] (18) } else {
+[0054] (D8)   printEgo("It's empty.");
+[0060] (**) }
+[0060] (00) stopObjectCode();
+END

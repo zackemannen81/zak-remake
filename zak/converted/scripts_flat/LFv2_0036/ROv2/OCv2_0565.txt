@@ -1,0 +1,11 @@
+Events:
+   D - 001A
+[001A] (48) unless (VAR_ROOM == 200) goto 004C;
+[0020] (48) unless (VAR_EGO == 3) goto 004C;
+[0026] (6F) unless (getState04(555)) goto 004C;
+[002B] (11) animateActor(3,246);
+[002E] (D8) printEgo("No way! I'm SCARED of heights!");
+[0049] (18) goto 0051;
+[004C] (E4) loadRoomWithEgo(Var[48],Var[49],255,255);
+[0051] (00) stopObjectCode();
+END

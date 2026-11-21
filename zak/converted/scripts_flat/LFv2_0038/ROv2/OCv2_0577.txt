@@ -1,0 +1,8 @@
+Events:
+   C - 0017
+[0017] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 002D;
+[001B] (D8) printEgo("The Doctor is IN");
+[002A] (18) goto 003D;
+[002D] (D8) printEgo("The Doctor is OUT");
+[003D] (00) stopObjectCode();
+END

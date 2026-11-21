@@ -1,0 +1,15 @@
+Events:
+  FD - 0013
+[0013] (48) unless (VAR_EGO == 1) goto 0034;
+[0019] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[001B] (19) doSentence(254,357,0,1);
+[0022] (47) clearState08(357);
+[0025] (47) clearState08(358);
+[0028] (68) VAR_RESULT = isScriptRunning(124);
+[002B] (28) unless (!VAR_RESULT) goto 0031;
+[002F] (42) startScript(112);
+[0031] (18) goto 004C;
+[0034] (D8) printEgo("That would be stealing!");
+[004A] (19) doSentence(STOP);
+[004C] (00) stopObjectCode();
+END

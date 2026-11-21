@@ -1,0 +1,9 @@
+{
+  "prompt": "Correct ONLY the misidentified desk equipment in the premium bedroom (first reference), using the original 320x128 background (second reference) as exact truth. Replace the black TYPEWRITER on the desk with a black vintage TELEPHONE sitting on a small black/gray ANSWERING MACHINE: original telephone at x216..240, y48..56 and answering machine x216..240,y56..64. Keep the smooth white/cyan spherical GLOBE LAMP on brass stand immediately to the right at x240..272,y40..72. NO cat clock on the desk or wall: that is a separate animated overlay, absent from this source background. Preserve every other part of the first reference, exact camera, furniture locations, bed, aquarium, plant, windows, floor, door, lighting, premium realistic Unreal Engine 5 materials. No typewriter, no added decorations. Full 2.5:1 image, no borders.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\poc\\backgrounds\\room_001\\concept_v001.png",
+    "C:\\code\\zac\\docs\\scummvm-tools-2.9.0-win32-x86_64\\zak\\converted\\images\\backgrounds\\LFv2_0001.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-8f5c958a-65aa-4860-ba48-900021ff8a6d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "reason": "v002 wrongly relocated a separate clock overlay; restore base background truth"
+}

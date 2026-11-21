@@ -1,0 +1,19 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/OCv2_0069
+Events:
+   4 - 002A
+   5 - 0041
+   B - 002A
+   E - 0027
+[0027] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0029] (00) stopObjectCode();
+[002A] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[002C] (D4) setObjectName(VAR_ACTIVE_OBJECT1,"lit flashlight");
+[003D] (18) goto 0050;
+[0040] (00) stopObjectCode();
+[0041] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[0043] (D4) setObjectName(VAR_ACTIVE_OBJECT1,"flashlight");
+[0050] (48) if (VAR_CURRENT_LIGHTS == 12) {
+[0056] (F0)   lights(Var[234],0,0);
+[005A] (**) }
+[005A] (00) stopObjectCode();
+END

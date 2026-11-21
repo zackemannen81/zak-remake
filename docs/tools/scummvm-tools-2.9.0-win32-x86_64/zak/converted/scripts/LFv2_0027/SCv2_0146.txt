@@ -1,0 +1,33 @@
+# Decompiled with descumm -2
+# Source: LFv2_0027\SCv2_0146
+
+[0000] (40) cutscene();
+[0001] (9A) Var[117] = VAR_EGO;
+[0004] (9A) VAR_EGO = Var[118];
+[0007] (58) beginOverride();
+[0008] (18) goto 00A1;
+[000B] (D2) actorFollowCamera(VAR_EGO);
+[000D] (2E) delay(120);
+[0011] (91) animateActor(VAR_EGO,246);
+[0014] (BB) waitForActor(VAR_EGO);
+[0016] (C3) Var[66] = getActorX(VAR_EGO);
+[0019] (DE) walkActorTo(VAR_EGO,Var[66],63);
+[001D] (D8) printEgo("My helmet reads just \x02");
+[0031] (48) if (Var[254] == 30) {
+[0037] (D8)   printEgo("7\x02");
+[003B] (18) } else {
+[003E] (D8)   printEgo("2\x02");
+[0042] (**) }
+[0042] (D8) printEgo(" minutes of oxygen\x01left!");
+[005A] (AE) waitForMessage();
+[005B] (48) if (Var[254] == 30) {
+[0061] (D8)   printEgo("I'd better hurry and refill it or find\x01a place where I can take it off!");
+[009C] (AE)   waitForMessage();
+[009D] (**) }
+[009D] (2E) delay(60);
+[00A1] (14) print(255,"");
+[00A4] (9A) VAR_EGO = Var[117];
+[00A7] (1A) Var[254] = 10;
+[00AB] (C0) endCutscene();
+[00AC] (A0) stopObjectCode();
+END

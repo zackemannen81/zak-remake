@@ -1,0 +1,8 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0646
+Events:
+   E - 0020
+[0020] (69) setOwnerOf(56,VAR_EGO);
+[0024] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0026] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0028] (00) stopObjectCode();
+END

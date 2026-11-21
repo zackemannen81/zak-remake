@@ -1,0 +1,19 @@
+[0000] (2E) delay(900);
+[0004] (48) unless (Var[169] == 32) goto 001E;
+[000A] (A8) unless (Var[206]) goto 001E;
+[000E] (C6) Var[206]--;
+[0010] (C8) unless (Var[206] == Var[254]) goto 001E;
+[0015] (1A) Var[118] = 3;
+[0019] (C6) Var[206]--;
+[001B] (42) startScript(146);
+[001D] (80) breakHere();
+[001E] (48) unless (Var[170] == 32) goto 0037;
+[0024] (A8) unless (Var[207]) goto 0037;
+[0028] (C6) Var[207]--;
+[002A] (C8) unless (Var[207] == Var[254]) goto 0037;
+[002F] (C6) Var[207]--;
+[0031] (1A) Var[118] = 4;
+[0035] (42) startScript(146);
+[0037] (18) goto 0000;
+[003A] (A0) stopObjectCode();
+END

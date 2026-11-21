@@ -1,0 +1,51 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/OCv2_0466
+Events:
+   9 - 001B
+   B - 001B
+[001B] (1C) startSound(2);
+[001D] (2E) delay(30);
+[0021] (4F) if (getState08(471)) {
+[0026] (0F)   if (!getState08(463)) {
+[002B] (0F)     if (!getState08(465)) {
+[0030] (60)       cursorCommand(15, 2);
+[0033] (1A)       Var[44] = 3;
+[0037] (1C)       startSound(37);
+[0039] (47)       clearState08(467);
+[003C] (47)       clearState08(474);
+[003F] (47)       clearState08(465);
+[0042] (1C)       startSound(38);
+[0044] (80)       breakHere();
+[0045] (07)       setState08(465);
+[0048] (80)       breakHere();
+[0049] (C6)       Var[44]--;
+[004B] (28)       unless (!Var[44]) goto 003F;
+[004F] (07)       setState08(455);
+[0052] (80)       breakHere();
+[0053] (7C)       VAR_RESULT = isSoundRunning(37);
+[0056] (28)       unless (!VAR_RESULT) goto 0052;
+[005A] (2E)       delay(30);
+[005E] (1C)       startSound(25);
+[0060] (07)       setState08(463);
+[0063] (07)       setState08(449);
+[0066] (4F)       if (getState08(464)) {
+[006B] (28)         if (!Var[154]) {
+[006F] (19)           doSentence(253,475,0,1);
+[0076] (**)         }
+[0076] (18)       } else {
+[0079] (2E)         delay(60);
+[007D] (60)         cursorCommand(247, 1);
+[0080] (**)       }
+[0080] (9A)       Var[154] = Var[235];
+[0083] (18)     } else {
+[0086] (18)       goto 005E;
+[0089] (**)     }
+[0089] (18)   } else {
+[008C] (1C)     startSound(25);
+[008E] (47)     clearState08(463);
+[0091] (47)     clearState08(449);
+[0094] (**)   }
+[0094] (18) } else {
+[0097] (D8)   printEgo("It seems to be broken.");
+[00AB] (**) }
+[00AB] (00) stopObjectCode();
+END

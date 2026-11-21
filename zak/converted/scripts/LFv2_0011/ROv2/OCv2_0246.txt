@@ -1,0 +1,26 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0246
+Events:
+   1 - 001D
+   2 - 0025
+   D - 002D
+  FD - 003A
+[001D] (19) doSentence(253,246,0,1);
+[0024] (00) stopObjectCode();
+[0025] (19) doSentence(253,248,0,1);
+[002C] (00) stopObjectCode();
+[002D] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0031] (9E)   walkActorTo(VAR_EGO,10,60);
+[0035] (1A)   VAR_SENTENCE_OBJECT1 = 247;
+[0039] (**) }
+[0039] (00) stopObjectCode();
+[003A] (0F) if (!getState08(248)) {
+[003F] (0F)   if (!getState08(246)) {
+[0044] (07)     setState08(246);
+[0047] (1C)     startSound(10);
+[0049] (**)   }
+[0049] (30)   setBoxFlags(1,0);
+[004C] (18) } else {
+[004F] (D8)   printEgo("It's occupied.");
+[005E] (**) }
+[005E] (00) stopObjectCode();
+END

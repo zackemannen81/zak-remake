@@ -1,0 +1,9 @@
+Events:
+  FD - 0013
+[0013] (78) unless (VAR_VIRT_MOUSE_Y < 67) goto 0026;
+[0019] (F5) VAR_CLICK_OBJECT = findObject(VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[001D] (88) unless (VAR_CLICK_OBJECT != VAR_SENTENCE_OBJECT1) goto 0026;
+[0022] (9A) VAR_SENTENCE_OBJECT1 = VAR_CLICK_OBJECT;
+[0025] (AC) drawSentence();
+[0026] (00) stopObjectCode();
+END

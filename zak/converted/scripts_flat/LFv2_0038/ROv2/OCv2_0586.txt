@@ -1,0 +1,13 @@
+Events:
+   C - 001F
+  FF - 0066
+[001F] (D8) printEgo("They look like a nice set of Pongs\x02");
+[003D] (10) VAR_RESULT = getObjectOwner(44);
+[0041] (A8) unless (VAR_RESULT) goto 0062;
+[0045] (D8) printEgo(",\x01but there's no sand wedge.");
+[005F] (18) goto 0065;
+[0062] (D8) printEgo(".");
+[0065] (00) stopObjectCode();
+[0066] (D8) printEgo("I'd better not touch them^ the doctor\x01might get mad.");
+[0094] (00) stopObjectCode();
+END

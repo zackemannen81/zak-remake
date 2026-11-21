@@ -1,0 +1,38 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0037
+
+[0000] (0F) if (!getState08(108)) {
+[0005] (48)   if (VAR_ACTIVE_OBJECT2 == 26) {
+[000B] (6F)     if (getState04(26)) {
+[0010] (D8)       printEgo("It's bent.");
+[001B] (18)     } else {
+[001E] (27)       setState04(26);
+[0021] (54)       setObjectName(26,"bent butter knife");
+[0036] (D8)       printEgo("Ooops! I bent it!");
+[0046] (**)     }
+[0046] (48)   } else if (VAR_ACTIVE_OBJECT2 == 35) {
+[004F] (18)     goto 005B;
+[0052] (48)   } else if (VAR_ACTIVE_OBJECT2 == 38) {
+[005B] (0C)     loadSound(60)
+[005E] (1C)     startSound(97);
+[0060] (07)     setState08(108);
+[0063] (19)     doSentence(253,108,0,1);
+[006A] (18)   } else {
+[006D] (D8)     printEgo("I can't remove them with that.");
+[0088] (**)   }
+[0088] (48) } else if (VAR_ACTIVE_OBJECT2 == 37) {
+[0091] (4F)   while (getState08(84)) {
+[0096] (19)     doSentence(2,84,0,0);
+[009D] (4C)     waitForSentence();
+[009E] (2E)     delay(60);
+[00A2] (**)   }
+[00A5] (29)   setOwnerOf(37,14);
+[00A9] (07)   setState08(110);
+[00AC] (17)   clearState02(110);
+[00AF] (07)   setState08(333);
+[00B2] (17)   clearState02(333);
+[00B5] (18) } else {
+[00B8] (4A)   chainScript(3);
+[00BA] (**) }
+[00BA] (A0) stopObjectCode();
+END

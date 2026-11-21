@@ -1,0 +1,10 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0016
+
+[0000] (48) if (VAR_ROOM == 1) {
+[0006] (1C)   startSound(12);
+[0008] (**) }
+[0008] (2E) delay(30);
+[000C] (18) goto 0000;
+[000F] (A0) stopObjectCode();
+END

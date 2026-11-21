@@ -1,0 +1,8 @@
+Events:
+  FD - 0013
+[0013] (3A) Var[47] -= 2;
+[0017] (7D) setActorElevation(5,Var[47]);
+[001A] (80) breakHere();
+[001B] (78) unless (Var[47] < 12) goto 0013;
+[0021] (00) stopObjectCode();
+END

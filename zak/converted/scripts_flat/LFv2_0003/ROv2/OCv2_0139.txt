@@ -1,0 +1,63 @@
+Events:
+   2 - 005A
+   C - 001F
+   E - 001F
+  FD - 0067
+[001F] (50) pickupObject(27);
+[0022] (D8) printEgo("It's THE KING FAN CLUB card! Wow, that\x01was fast!");
+[004C] (9A) Var[159] = Var[234];
+[004F] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0051] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0053] (07) setState08(138);
+[0056] (17) clearState02(138);
+[0059] (00) stopObjectCode();
+[005A] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[005C] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[005E] (07) setState08(28);
+[0061] (17) clearState02(28);
+[0064] (1C) startSound(11);
+[0066] (00) stopObjectCode();
+[0067] (80) breakHere();
+[0068] (48) unless (VAR_ACTIVE_VERB == 3) goto 00F6;
+[006E] (04) unless (VAR_ACTIVE_OBJECT2 <= 2) goto 00F6;
+[0074] (78) unless (VAR_CAMERA_POS_X < 69) goto 007D;
+[007A] (18) goto 0067;
+[007D] (9A) Var[50] = VAR_ACTIVE_OBJECT1;
+[0080] (23) VAR_RESULT = getActorY(2);
+[0083] (78) unless (VAR_RESULT < 57) goto 008C;
+[0089] (18) goto 0095;
+[008C] (23) VAR_RESULT = getActorY(1);
+[008F] (78) unless (VAR_RESULT < 57) goto 00F3;
+[0095] (19) doSentence(STOP);
+[0097] (11) animateActor(2,255);
+[009A] (11) animateActor(1,255);
+[009D] (43) Var[66] = getActorX(1);
+[00A0] (43) VAR_RESULT = getActorX(2);
+[00A3] (C4) unless (VAR_RESULT > Var[66]) goto 00B0;
+[00A8] (26) setVarRange(Var[51],2,[1,2]);
+[00AD] (18) goto 00B5;
+[00B0] (26) setVarRange(Var[51],2,[2,1]);
+[00B5] (9E) walkActorTo(Var[51],88,57);
+[00B9] (9E) walkActorTo(Var[52],92,57);
+[00BD] (3B) waitForActor(1);
+[00BF] (3B) waitForActor(2);
+[00C1] (90) VAR_RESULT = getObjectOwner(Var[50]);
+[00C4] (88) unless (VAR_RESULT != VAR_ACTIVE_OBJECT2) goto 00F0;
+[00C9] (88) unless (VAR_ACTIVE_OBJECT1 != Var[50]) goto 00D1;
+[00CE] (18) goto 0067;
+[00D1] (08) unless (VAR_ACTIVE_VERB != 3) goto 00DA;
+[00D7] (18) goto 0067;
+[00DA] (09) faceActor(1,2);
+[00DD] (00) stopObjectCode();
+[00DE] (09) faceActor(2,1);
+[00E1] (00) stopObjectCode();
+[00E2] (A8) unless (VAR_VERB_ALLOWED) goto 00EE;
+[00E6] (79) doSentence(3,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,1);
+[00EB] (18) goto 00F0;
+[00EE] (42) startScript(20);
+[00F0] (19) doSentence(RESET);
+[00F2] (AC) drawSentence();
+[00F3] (9A) VAR_ACTIVE_VERB = Var[234];
+[00F6] (18) goto 0067;
+[00F9] (00) stopObjectCode();
+END

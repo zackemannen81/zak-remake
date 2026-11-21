@@ -1,0 +1,145 @@
+# Decompiled with descumm -2
+# Source: LFv2_0007\SCv2_0024
+
+[0000] (40) cutscene();
+[0001] (28) if (!Var[45]) {
+[0005] (42)   startScript(25);
+[0007] (80)   breakHere();
+[0008] (28)   unless (!Var[45]) goto 0007;
+[000C] (**) }
+[000C] (B1) VAR_RESULT = getBitVar(848,VAR_EGO);
+[0011] (A8) if (VAR_RESULT) {
+[0015] (19)   doSentence(253,184,0,1);
+[001C] (80)   breakHere();
+[001D] (48)   unless (Var[51] == 255) goto 001C;
+[0023] (14)   print(10,"You can't buy somethin with no CashCard!");
+[0048] (AE)   waitForMessage();
+[0049] (91)   animateActor(VAR_EGO,246);
+[004C] (D8)   printEgo("Oh yeah!");
+[0055] (18) } else {
+[0058] (9A)   Var[45] = VAR_ACTIVE_OBJECT1;
+[005B] (90)   VAR_RESULT = getObjectOwner(Var[45]);
+[005E] (C8)   if (VAR_RESULT == VAR_EGO) {
+[0063] (14)     print(10,"You already own that!");
+[0078] (18)     goto 0048;
+[007B] (**)   }
+[007B] (D8)   printEgo("I want to buy the \x06\x2D.");
+[008D] (19)   doSentence(253,182,0,1);
+[0094] (58)   beginOverride();
+[0095] (18)   goto 01E6;
+[0098] (2E)   delay(60);
+[009C] (19)   doSentence(253,185,0,1);
+[00A3] (3B)   waitForActor(10);
+[00A5] (80)   breakHere();
+[00A6] (87)   setState08(Var[45]);
+[00A8] (D7)   setState02(Var[45]);
+[00AA] (80)   breakHere();
+[00AB] (1E)   walkActorTo(10,22,47);
+[00AF] (14)   print(10,"Come over here.");
+[00BF] (80)   breakHere();
+[00C0] (B6)   walkActorToObject(VAR_EGO,181);
+[00C4] (3B)   waitForActor(10);
+[00C6] (11)   animateActor(10,250);
+[00C9] (BB)   waitForActor(VAR_EGO);
+[00CB] (AE)   waitForMessage();
+[00CC] (14)   print(10,"That'll be \x04\x2F bucks, friend.");
+[00E8] (AE)   waitForMessage();
+[00E9] (B1)   VAR_RESULT = getBitVar(848,VAR_EGO);
+[00EE] (A8)   if (VAR_RESULT) {
+[00F2] (D8)     printEgo("Uh, I don't have my CashCard with me.");
+[0112] (AE)     waitForMessage();
+[0113] (14)     print(10,"Can't ya read? `CashCards only!` Come\x01back when ya have it!");
+[0148] (18)   } else {
+[014B] (D8)     printEgo("Here's my CashCard.");
+[015E] (AE)     waitForMessage();
+[015F] (14)     print(10,"Thanks.");
+[0169] (AE)     waitForMessage();
+[016A] (11)     animateActor(10,247);
+[016D] (2E)     delay(60);
+[0171] (1C)     startSound(84);
+[0173] (2E)     delay(120);
+[0177] (11)     animateActor(10,246);
+[017A] (9A)     Var[14] = VAR_EGO;
+[017D] (5A)     Var[14] += 61;
+[0181] (C4)     if (Var[47] > Var[14]) {
+[0186] (14)       print(10,"Sorry, ya don't have enough money.\x01Here's yer card back.");
+[01B9] (2E)       delay(120);
+[01BD] (18)     } else {
+[01C0] (14)       print(10,"Here\x02");
+[01C8] (48)       if (Var[45] == 42) {
+[01CE] (14)         print(10,", and good luck!");
+[01DE] (18)       } else {
+[01E1] (14)         print(10,".");
+[01E5] (**)       }
+[01E5] (AE)       waitForMessage();
+[01E6] (1A)       Var[49] = 181;
+[01EA] (A8)       if (VAR_OVERRIDE) {
+[01EE] (11)         animateActor(10,255);
+[01F1] (91)         animateActor(VAR_EGO,255);
+[01F4] (01)         putActor(10,22,47);
+[01F8] (11)         animateActor(10,250);
+[01FB] (8E)         putActorAtObject(VAR_EGO,181);
+[01FF] (91)         animateActor(VAR_EGO,251);
+[0202] (42)         startScript(5);
+[0204] (87)         setState08(Var[45]);
+[0206] (D7)         setState02(Var[45]);
+[0208] (80)         breakHere();
+[0209] (B1)         VAR_RESULT = getBitVar(848,VAR_EGO);
+[020E] (A8)         if (VAR_RESULT) {
+[0212] (18)           goto 0113;
+[0215] (**)         }
+[0215] (9A)         Var[14] = VAR_EGO;
+[0218] (5A)         Var[14] += 61;
+[021C] (C4)         if (Var[47] > Var[14]) {
+[0221] (18)           goto 0186;
+[0224] (**)         }
+[0224] (08)         if (Var[45] != 42) {
+[022A] (14)           print(10,"It's a bargain at \x04\x2F bucks!");
+[0244] (**)         }
+[0244] (**)       }
+[0244] (FF)       if (getState01(Var[45])) {
+[0248] (D0)         pickupObject(Var[45]);
+[024A] (18)       } else {
+[024D] (E9)         setOwnerOf(Var[46],VAR_EGO);
+[0250] (**)       }
+[0250] (9A)       Var[14] = VAR_EGO;
+[0253] (5A)       Var[14] += 61;
+[0257] (EA)       Var[Var[14]] -= Var[47];
+[025A] (48)       if (Var[45] == 34) {
+[0260] (1A)         Var[66] = 35;
+[0264] (90)         VAR_RESULT = getObjectOwner(Var[66]);
+[0267] (48)         if (VAR_RESULT == 15) {
+[026D] (D0)           pickupObject(Var[66]);
+[026F] (A9)           setOwnerOf(Var[66],12);
+[0272] (**)         }
+[0272] (46)         Var[66]++;
+[0274] (44)         unless (Var[66] > 38) goto 0264;
+[027A] (**)       }
+[027A] (48)       if (Var[45] == 39) {
+[0280] (AE)         waitForMessage();
+[0281] (14)         print(10,"That's my last \x06\x2D with transparent\x01gloves.");
+[02AA] (**)       }
+[02AA] (48)       if (Var[45] == 42) {
+[02B0] (9A)         Var[45] = Var[234];
+[02B3] (5B)         setBitVar(1461,0,Var[235]);
+[02B8] (1A)         Var[119] = 2;
+[02BC] (42)         startScript(15);
+[02BE] (42)         startScript(73);
+[02C0] (80)         breakHere();
+[02C1] (31)         VAR_RESULT = getBitVar(1470,0);
+[02C6] (28)         unless (!VAR_RESULT) goto 02C0;
+[02CA] (18)         goto 02EE;
+[02CD] (**)       }
+[02CD] (9A)       Var[45] = Var[234];
+[02D0] (18)       goto 02EE;
+[02D3] (**)     }
+[02D3] (**)   }
+[02D3] (AE)   waitForMessage();
+[02D4] (42)   startScript(25);
+[02D6] (9E)   walkActorTo(VAR_EGO,24,60);
+[02DA] (BB)   waitForActor(VAR_EGO);
+[02DC] (D8)   printEgo("How embarrassing!");
+[02EE] (**) }
+[02EE] (C0) endCutscene();
+[02EF] (A0) stopObjectCode();
+END

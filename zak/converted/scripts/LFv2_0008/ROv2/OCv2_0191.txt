@@ -1,0 +1,24 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0008/ROv2/OCv2_0191
+Events:
+   1 - 0046
+   D - 0019
+[0019] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[001D] (47)   clearState08(191);
+[0020] (48)   if (VAR_ROOM == 142) {
+[0026] (1A)     Var[58] = 572;
+[002A] (1A)     Var[59] = 191;
+[002E] (9A)     Var[255] = VAR_ROOM;
+[0031] (**)   }
+[0031] (48)   if (VAR_ROOM == 146) {
+[0037] (0C)     loadCostume(9)
+[003A] (**)   }
+[003A] (67)   clearState04(219);
+[003D] (E4)   loadRoomWithEgo(Var[47],Var[48],255,255);
+[0042] (**) }
+[0042] (18) goto 0046;
+[0045] (00) stopObjectCode();
+[0046] (48) if (VAR_ROOM == 143) {
+[004C] (D8)   printEgo("Looks like it's broken.");
+[0062] (**) }
+[0062] (00) stopObjectCode();
+END

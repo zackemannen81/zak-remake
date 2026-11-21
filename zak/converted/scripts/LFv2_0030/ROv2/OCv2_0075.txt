@@ -1,0 +1,21 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0030/ROv2/OCv2_0075
+Events:
+   3 - 0037
+   B - 001F
+   C - 0030
+[001F] (48) if (VAR_EGO == 4) {
+[0025] (79)   doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002A] (18) } else {
+[002D] (42)   startScript(53);
+[002F] (**) }
+[002F] (00) stopObjectCode();
+[0030] (1A) Var[67] = 4;
+[0034] (42) startScript(53);
+[0036] (00) stopObjectCode();
+[0037] (48) if (VAR_ACTIVE_OBJECT2 == 4) {
+[003D] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,4);
+[0040] (18) } else {
+[0043] (42)   startScript(53);
+[0045] (**) }
+[0045] (00) stopObjectCode();
+END

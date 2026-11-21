@@ -1,0 +1,39 @@
+# Decompiled with descumm -2
+# Source: LFv2_0010\SCv2_0101
+
+[0000] (9A) Var[199] = Var[234];
+[0003] (19) doSentence(253,237,0,1);
+[000A] (14) print(11,"Now what shall we do with him?");
+[0025] (9A) Var[55] = Var[235];
+[0028] (AE) waitForMessage();
+[0029] (48) if (Var[55] == 1) {
+[002F] (14)   print(11,"Make him clean the meteor slime off\x01our hull?");
+[0058] (48) } else if (Var[55] == 2) {
+[0061] (14)   print(11,"Make him listen to New Age elevator\x01music?");
+[0088] (48) } else if (Var[55] == 3) {
+[0091] (14)   print(11,"Make him play Ballblazer with Droid 9?");
+[00B4] (48) } else if (Var[55] == 4) {
+[00BD] (14)   print(11,"Glue money to him and toss him into a\x01pit full of lawyers?");
+[00EF] (18)   /* goto 00F2; */
+[00F2] (**) }
+[00F2] (2E) delay(240);
+[00F6] (AE) waitForMessage();
+[00F7] (2E) delay(120);
+[00FB] (AE) waitForMessage();
+[00FC] (14) print(11,"Naw^");
+[0103] (46) Var[55]++;
+[0105] (44) unless (Var[55] > 4) goto 0028;
+[010B] (2E) delay(300);
+[010F] (0C) loadScript(95)
+[0112] (19) doSentence(254,237,0,1);
+[0119] (11) animateActor(11,255);
+[011C] (11) animateActor(11,246);
+[011F] (80) breakHere();
+[0120] (AE) waitForMessage();
+[0121] (14) print(11,"Ah know, let's use the Mindbender.\x03Get him!");
+[0149] (AE) waitForMessage();
+[014A] (42) startScript(95);
+[014C] (2E) delay(60);
+[0150] (19) doSentence(250,233,0,1);
+[0157] (A0) stopObjectCode();
+END

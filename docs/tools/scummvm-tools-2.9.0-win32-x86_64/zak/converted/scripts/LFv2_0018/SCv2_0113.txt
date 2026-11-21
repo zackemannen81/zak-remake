@@ -1,0 +1,230 @@
+# Decompiled with descumm -2
+# Source: LFv2_0018\SCv2_0113
+
+[0000] (40) cutscene();
+[0001] (1A) VAR_EGO = 8;
+[0005] (9A) Var[45] = Var[234];
+[0008] (4F) if (getState08(59)) {
+[000D] (10)   VAR_RESULT = getObjectOwner(59);
+[0011] (48)   if (VAR_RESULT == 2) {
+[0017] (D8)     printEgo("Where's the flag?");
+[0028] (AE)     waitForMessage();
+[0029] (**)   }
+[0029] (**) }
+[0029] (29) setOwnerOf(82,14);
+[002D] (9A) Var[48] = Var[234];
+[0030] (9A) Var[49] = Var[234];
+[0033] (2F) if (!getState04(169)) {
+[0038] (2F)   if (!getState04(372)) {
+[003D] (46)     Var[48]++;
+[003F] (18)   } else {
+[0042] (46)     Var[49]++;
+[0044] (**)   }
+[0044] (18) } else {
+[0047] (5B)   setBitVar(1541,0,Var[235]);
+[004C] (1A)   Var[66] = 14;
+[0050] (08)   if (Var[66] != 49) {
+[0056] (08)     if (Var[66] != 61) {
+[005C] (90)       VAR_RESULT = getObjectOwner(Var[66]);
+[005F] (48)       if (VAR_RESULT == 1) {
+[0065] (A9)         setOwnerOf(Var[66],8);
+[0068] (08)         if (Var[66] != 59) {
+[006E] (46)           Var[45]++;
+[0070] (27)           setState04(368);
+[0073] (**)         }
+[0073] (48)         if (Var[66] == 50) {
+[0079] (19)           doSentence(7,50,0,1);
+[0080] (**)         }
+[0080] (**)       }
+[0080] (**)     }
+[0080] (**)   }
+[0080] (46)   Var[66]++;
+[0082] (44)   unless (Var[66] > 81) goto 0050;
+[0088] (**) }
+[0088] (58) beginOverride();
+[0089] (18) goto 02A1;
+[008C] (08) if (VAR_ROOM != 18) {
+[0092] (D8)   printEgo("You're coming with me!");
+[00A7] (AE)   waitForMessage();
+[00A8] (2D)   putActorInRoom(1,18);
+[00AB] (01)   putActor(1,15,48);
+[00AF] (11)   animateActor(1,248);
+[00B2] (2D)   putActorInRoom(8,18);
+[00B5] (01)   putActor(8,5,48);
+[00B9] (D2)   actorFollowCamera(VAR_EGO);
+[00BB] (2E)   delay(60);
+[00BF] (18) } else {
+[00C2] (D8)   printEgo("Don't move!");
+[00CE] (AE)   waitForMessage();
+[00CF] (**) }
+[00CF] (09) faceActor(1,8);
+[00D2] (00) stopObjectCode();
+[00D3] (0F) if (!getState08(366)) {
+[00D8] (10)   VAR_RESULT = getObjectOwner(60);
+[00DC] (48)   if (VAR_RESULT == 1) {
+[00E2] (D8)     printEgo("I'll take that key!");
+[00F4] (AE)     waitForMessage();
+[00F5] (18)   } else {
+[00F8] (1E)     walkActorTo(8,5,48);
+[00FC] (3B)     waitForActor(8);
+[00FE] (11)     animateActor(8,247);
+[0101] (80)     breakHere();
+[0102] (0F)     if (!getState08(60)) {
+[0107] (19)       doSentence(14,60,0,0);
+[010E] (4C)       waitForSentence();
+[010F] (18)     } else {
+[0112] (D8)       printEgo("Hmm. I'll have to use my spare.");
+[012D] (80)       breakHere();
+[012E] (80)       breakHere();
+[012F] (**)     }
+[012F] (**)   }
+[012F] (19)   doSentence(11,60,370,0);
+[0136] (4C)   waitForSentence();
+[0137] (**) }
+[0137] (1E) walkActorTo(8,16,50);
+[013B] (3B) waitForActor(8);
+[013D] (09) faceActor(8,1);
+[0140] (00) stopObjectCode();
+[0141] (3B) waitForActor(8);
+[0143] (D8) printEgo("OK, get in and make yourself at home,\x01you're in for a LONG\x02");
+[0175] (6F) if (getState04(372)) {
+[017A] (D8)   printEgo("ER\x02");
+[017F] (**) }
+[017F] (D8) printEgo(" stay.");
+[0187] (2E) delay(120);
+[018B] (36) walkActorToObject(1,372);
+[018F] (80) breakHere();
+[0190] (11) animateActor(8,245);
+[0193] (3B) waitForActor(1);
+[0195] (9A) Var[66] = Var[48];
+[0198] (DA) Var[66] += Var[49];
+[019B] (A8) if (Var[66]) {
+[019F] (19)   doSentence(2,366,0,0);
+[01A6] (80)   breakHere();
+[01A7] (0F)   unless (!getState08(366)) goto 01A6;
+[01AC] (**) }
+[01AC] (A8) if (Var[49]) {
+[01B0] (18) } else {
+[01B3] (28)   if (!Var[48]) {
+[01B7] (A8)     if (Var[45]) {
+[01BB] (D8)       printEgo("I'll take your belongings.");
+[01D4] (0D)       walkActorToActor(8,1,1);
+[01D8] (3B)       waitForActor(8);
+[01DA] (11)       animateActor(8,247);
+[01DD] (2E)       delay(30);
+[01E1] (6F)       if (getState04(39)) {
+[01E6] (67)         clearState04(39);
+[01E9] (13)         ActorOps(1,[Costume(1)]);
+[01ED] (1A)         Var[172] = 1;
+[01F1] (1A)         Var[176] = 5;
+[01F5] (1A)         Var[180] = 9;
+[01F9] (**)       }
+[01F9] (1A)       Var[167] = 52;
+[01FD] (1A)       Var[164] = 44;
+[0201] (42)       startScript(5);
+[0203] (**)     }
+[0203] (19)     doSentence(2,366,0,0);
+[020A] (80)     breakHere();
+[020B] (0F)     unless (!getState08(366)) goto 020A;
+[0210] (10)     VAR_RESULT = getObjectOwner(49);
+[0214] (48)     if (VAR_RESULT == 1) {
+[021A] (AE)       waitForMessage();
+[021B] (D8)       printEgo("I won't take your lighter in case you\x01want to smoke.");
+[0248] (AE)       waitForMessage();
+[0249] (**)     }
+[0249] (**)   }
+[0249] (A8)   if (Var[45]) {
+[024D] (19)     doSentence(1,368,0,0);
+[0254] (4C)     waitForSentence();
+[0255] (2E)     delay(60);
+[0259] (19)     doSentence(2,368,0,0);
+[0260] (4C)     waitForSentence();
+[0261] (**)   }
+[0261] (10)   VAR_RESULT = getObjectOwner(60);
+[0265] (48)   if (VAR_RESULT == 8) {
+[026B] (19)     doSentence(253,366,0,1);
+[0272] (80)     breakHere();
+[0273] (A8)     unless (Var[46]) goto 0272;
+[0277] (**)   }
+[0277] (10)   VAR_RESULT = getObjectOwner(59);
+[027B] (48)   if (VAR_RESULT == 8) {
+[0281] (19)     doSentence(253,369,0,1);
+[0288] (80)     breakHere();
+[0289] (A8)     unless (Var[46]) goto 0288;
+[028D] (**)   }
+[028D] (4F)   if (getState08(363)) {
+[0292] (19)     doSentence(2,363,0,0);
+[0299] (4C)     waitForSentence();
+[029A] (**)   }
+[029A] (19)   doSentence(253,367,0,1);
+[02A1] (A8)   if (VAR_OVERRIDE) {
+[02A5] (19)     doSentence(STOP);
+[02A7] (2D)     putActorInRoom(1,18);
+[02AA] (01)     putActor(1,22,40);
+[02AE] (2D)     putActorInRoom(8,18);
+[02B1] (01)     putActor(8,10,60);
+[02B5] (11)     animateActor(1,250);
+[02B8] (11)     animateActor(8,248);
+[02BB] (72)     loadRoom(18);
+[02BD] (1A)     Var[167] = 52;
+[02C1] (1A)     Var[164] = 44;
+[02C5] (6F)     if (getState04(39)) {
+[02CA] (67)       clearState04(39);
+[02CD] (13)       ActorOps(1,[Costume(1)]);
+[02D1] (1A)       Var[172] = 1;
+[02D5] (1A)       Var[176] = 5;
+[02D9] (1A)       Var[180] = 9;
+[02DD] (**)     }
+[02DD] (42)     startScript(5);
+[02DF] (10)     VAR_RESULT = getObjectOwner(59);
+[02E3] (48)     if (VAR_RESULT == 8) {
+[02E9] (1A)       Var[50] = 59;
+[02ED] (19)       doSentence(253,365,0,1);
+[02F4] (**)     }
+[02F4] (10)     VAR_RESULT = getObjectOwner(60);
+[02F8] (48)     if (VAR_RESULT == 8) {
+[02FE] (1A)       Var[50] = 60;
+[0302] (19)       doSentence(253,365,0,1);
+[0309] (**)     }
+[0309] (19)     doSentence(2,368,0,1);
+[0310] (19)     doSentence(2,363,0,1);
+[0317] (19)     doSentence(2,366,0,1);
+[031E] (**)   }
+[031E] (A8)   if (Var[48]) {
+[0322] (10)     VAR_RESULT = getObjectOwner(59);
+[0326] (48)     if (VAR_RESULT == 1) {
+[032C] (1A)       Var[50] = 59;
+[0330] (19)       doSentence(253,365,0,1);
+[0337] (**)     }
+[0337] (58)     beginOverride();
+[0338] (18)     goto 0354;
+[033B] (9A)     Var[48] = Var[234];
+[033E] (72)     loadRoom(0);
+[0340] (EE)     dummy(EE);
+[0341] (14)     print(255,"A LONG time later^");
+[0353] (AE)     waitForMessage();
+[0354] (72)     loadRoom(18);
+[0356] (58)     beginOverride();
+[0357] (18)     goto 039E;
+[035A] (07)     setState08(60);
+[035D] (07)     setState08(366);
+[0360] (30)     setBoxFlags(5,0);
+[0363] (0E)     putActorAtObject(8,366);
+[0367] (2E)     delay(60);
+[036B] (D8)     printEgo("OK, you can go. But don't EVER steal\x01our flag again!");
+[0398] (36)     walkActorToObject(8,60);
+[039C] (3B)     waitForActor(8);
+[039E] (47)     clearState08(60);
+[03A1] (19)     doSentence(253,367,0,1);
+[03A8] (**)   }
+[03A8] (**) }
+[03A8] (27) setState04(372);
+[03AB] (1A) VAR_EGO = 1;
+[03AF] (42) startScript(19);
+[03B1] (C0) endCutscene();
+[03B2] (A8) if (Var[49]) {
+[03B6] (1A)   Var[166] = 4;
+[03BA] (4A)   chainScript(78);
+[03BC] (**) }
+[03BC] (A0) stopObjectCode();
+END

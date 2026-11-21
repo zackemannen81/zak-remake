@@ -1,0 +1,30 @@
+Events:
+   1 - 002A
+   2 - 0034
+   B - 003E
+  FD - 006A
+[002A] (42) startScript(10);
+[002C] (19) doSentence(253,493,0,1);
+[0033] (00) stopObjectCode();
+[0034] (42) startScript(11);
+[0036] (19) doSentence(253,493,0,1);
+[003D] (00) stopObjectCode();
+[003E] (59) doSentence(1,VAR_ACTIVE_OBJECT1,0,0);
+[0044] (48) unless (VAR_ACTIVE_OBJECT2 == 73) goto 0067;
+[004A] (29) setOwnerOf(73,0);
+[004E] (29) setOwnerOf(73,15);
+[0052] (47) clearState08(73);
+[0055] (17) clearState02(73);
+[0058] (4F) unless (getState08(490)) goto 0064;
+[005D] (19) doSentence(253,494,0,1);
+[0064] (18) goto 0069;
+[0067] (42) startScript(3);
+[0069] (00) stopObjectCode();
+[006A] (1C) startSound(37);
+[006C] (19) doSentence(253,493,0,1);
+[0073] (80) breakHere();
+[0074] (7C) VAR_RESULT = isSoundRunning(37);
+[0077] (28) unless (!VAR_RESULT) goto 0073;
+[007B] (9A) Var[154] = Var[234];
+[007E] (00) stopObjectCode();
+END

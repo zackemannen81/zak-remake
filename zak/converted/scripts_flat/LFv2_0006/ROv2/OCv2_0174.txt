@@ -1,0 +1,21 @@
+Events:
+   4 - 001B
+   5 - 0028
+   B - 0035
+[001B] (EF) unless (getState04(VAR_ACTIVE_OBJECT1)) goto 0027;
+[001F] (70) lights(11,0,0);
+[0023] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[0025] (1C) startSound(27);
+[0027] (00) stopObjectCode();
+[0028] (AF) unless (!getState04(VAR_ACTIVE_OBJECT1)) goto 0034;
+[002C] (1C) startSound(27);
+[002E] (F0) lights(Var[234],0,0);
+[0032] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[0034] (00) stopObjectCode();
+[0035] (48) unless (VAR_ACTIVE_OBJECT2 == 14) goto 0061;
+[003B] (C8) unless (Var[138] == Var[234]) goto 0061;
+[0040] (D8) printEgo("There's not enough room in there.");
+[005E] (18) goto 0063;
+[0061] (42) startScript(3);
+[0063] (00) stopObjectCode();
+END

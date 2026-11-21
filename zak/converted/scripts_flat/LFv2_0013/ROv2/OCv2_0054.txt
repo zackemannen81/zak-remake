@@ -1,0 +1,11 @@
+Events:
+   B - 002A
+   E - 0022
+[0022] (19) doSentence(253,276,0,1);
+[0029] (00) stopObjectCode();
+[002A] (48) unless (VAR_ACTIVE_OBJECT2 == 49) goto 0042;
+[0030] (D8) printEgo("Not in my hands!");
+[003F] (18) goto 0047;
+[0042] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0047] (00) stopObjectCode();
+END

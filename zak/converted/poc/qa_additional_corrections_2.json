@@ -1,0 +1,19 @@
+{
+  "74": "Empty BLACK background patch after CashCards removed; two horizontal grey shelf/trim stripes ONLY at the very BOTTOM of canvas. Do not move stripes to middle.",
+  "433": "A flat CYAN glowing rectangular window/panel in a GREY frame with white reflection near upper-left. No bottle, cork, potion or cap.",
+  "434": "A flat DARK BLUE rectangular window/panel, WHITE square reflection upper-left, lavender-blue square lower-right, grey/white left frame. NO question mark, no writing.",
+  "435": "A flat CYAN glowing rectangular window/panel in grey frame, white upper-left reflection. Same as 433. No bottle or cap.",
+  "436": "A flat DARK BLUE rectangular window/panel, white square reflection upper-left, lavender-blue square lower-right, grey frame. No question mark, no symbol.",
+  "438": "One MAGENTA circular glowing ring on flat blue-purple screen, grey frame at right. Match exact single pulse phase. No new button or icon.",
+  "439": "One MAGENTA wider elliptical glowing ring on flat blue-purple screen, grey frame at right. Not two linked rings; no center chain.",
+  "440": "One MAGENTA wide elliptical glowing ring on blue-purple screen, exact pulse phase. Not chain links, no blue connecting bar.",
+  "441": "Dark opening in cracked grey/red structure, exact asymmetric background patch. Not a floating red glyph or pictogram.",
+  "442": "Plain CORAL-RED ground/background state, small grey/brown remnants ONLY near top edge and tiny dark notch at left. No face, animal or red emoji.",
+  "443": "A flat red ground restoration patch with horizontal grey structure at top, tiny GREEN SQUARE near upper-right and grey lower edge. No added green pipe or handle.",
+  "457": "Flat GREY rectangular field filling most upper canvas, ONE light grey horizontal strip at bottom of that field, black below. Not two floating silver bars.",
+  "459": "A rotating PARABOLIC SATELLITE DISH on short black support, side view opening toward right. Cyan/silver rim, magenta/red interior; exact source pose. Not bow and arrow.",
+  "460": "The same PARABOLIC SATELLITE DISH facing viewer, cyan/silver rim with magenta interior and central feed, short black base. Not skull or alien head. Preserve coral background.",
+  "461": "PARABOLIC SATELLITE DISH alternate side view, same cyan/silver rim, purple interior and short black support. Not bow or weapon.",
+  "462": "PARABOLIC SATELLITE DISH angled back/interior view, dark teal circle with central feed, same base. Not a button or badge.",
+  "499": "Natural ocean WATER SPLASH swirling upward with white droplets on deep blue, exactly the source animation silhouette. Realistic water, not glowing pixel blocks."
+}

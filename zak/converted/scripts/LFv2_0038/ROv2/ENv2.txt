@@ -1,0 +1,35 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0038/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (13) ActorOps(10,[TalkColor(14)]);
+[0008] (1C) startSound(85);
+[000A] (1A) Var[66] = 10;
+[000E] (93) ActorOps(Var[66],[Costume(21)]);
+[0012] (D3) ActorOps(Var[66],[Sound(Var[234])]);
+[0016] (D3) ActorOps(Var[66],[Name()]);
+[001B] (46) Var[66]++;
+[001D] (44) unless (Var[66] > 12) goto 000E;
+[0023] (53) ActorOps(10,[Name("Shaman")]);
+[002E] (48) if (VAR_ROOM == 150) {
+[0034] (33)   RoomScroll(20,60);
+[0038] (30)   setBoxFlags(6,128);
+[003B] (30)   setBoxFlags(9,128);
+[003E] (47)   clearState08(582);
+[0041] (47)   clearState08(583);
+[0044] (47)   clearState08(584);
+[0047] (47)   clearState08(585);
+[004A] (10)   VAR_RESULT = getObjectOwner(44);
+[004E] (48)   if (VAR_RESULT == 0) {
+[0054] (68)     VAR_RESULT = isScriptRunning(70);
+[0057] (28)     if (!VAR_RESULT) {
+[005B] (19)       doSentence(250,583,0,1);
+[0062] (**)     }
+[0062] (**)   }
+[0062] (18) } else {
+[0065] (33)   RoomScroll(100,100);
+[0069] (30)   setBoxFlags(1,128);
+[006C] (42)   startScript(34);
+[006E] (0C)   loadScript(45)
+[0071] (19)   doSentence(253,585,0,1);
+[0078] (**) }
+[0078] (00) stopObjectCode();
+END

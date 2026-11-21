@@ -1,0 +1,52 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/OCv2_0147
+Events:
+   9 - 001F
+   B - 001F
+  FD - 006A
+[001F] (48) if (VAR_EGO == 2) {
+[0025] (D8)   printEgo("I don't want to bother them, they're\x01closed.");
+[004D] (18) } else {
+[0050] (1C)   startSound(23);
+[0052] (78)   if (Var[152] < 3) {
+[0058] (68)     VAR_RESULT = isScriptRunning(39);
+[005B] (28)     if (!VAR_RESULT) {
+[005F] (03)       VAR_RESULT = getActorRoom(7);
+[0062] (88)       if (VAR_RESULT != VAR_ROOM) {
+[0067] (42)         startScript(39);
+[0069] (**)       }
+[0069] (**)     }
+[0069] (**)   }
+[0069] (**) }
+[0069] (00) stopObjectCode();
+[006A] (4F) if (getState08(144)) {
+[006F] (08)   if (VAR_ACTIVE_OBJECT1 != 16) {
+[0075] (1C)     startSound(46);
+[0077] (2E)     delay(120);
+[007B] (**)   }
+[007B] (47)   clearState08(144);
+[007E] (2E)   delay(60);
+[0082] (B1)   VAR_RESULT = getBitVar(1467,VAR_EGO);
+[0087] (28)   if (!VAR_RESULT) {
+[008B] (DB)     setBitVar(1467,VAR_EGO,Var[235]);
+[0090] (19)     doSentence(253,148,0,1);
+[0097] (14)     print(255,"Hey! Wadda ya doin' wakin' me up?");
+[00B5] (AE)     waitForMessage();
+[00B6] (14)     print(255,"I guess ya wanna go to the airport.");
+[00D5] (18)   } else {
+[00D8] (80)     breakHere();
+[00D9] (14)     print(255,"Oh, it's you again.");
+[00EC] (**)   }
+[00EC] (19)   doSentence(253,148,0,1);
+[00F3] (AE)   waitForMessage();
+[00F4] (14)   print(255,"Well, climb aboard.");
+[0108] (19)   doSentence(253,148,0,1);
+[010F] (1C)   startSound(47);
+[0111] (2E)   delay(40);
+[0115] (07)   setState08(143);
+[0118] (30)   setBoxFlags(6,0);
+[011B] (57)   setState02(142);
+[011E] (19)   doSentence(253,143,0,1);
+[0125] (19)   doSentence(253,142,0,1);
+[012C] (**) }
+[012C] (00) stopObjectCode();
+END

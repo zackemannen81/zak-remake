@@ -1,0 +1,13 @@
+{
+  "room": 30,
+  "object_id": 493,
+  "prompt": "Recreate ONLY this exact 4:1 game-state patch: black rectangular area with two tiny white points and grey vertical edge areas exactly where shown. High-quality subtle metallic/stone surface shading on the grey portions, black stays black. No added objects, symbols, text, stars beyond the two existing points, or surrounding scene. Preserve exact geometry and proportions.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_030\\object_0493\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_030\\object_0493\\state_v011.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_030\\object_0493\\request_v011.json",
+  "status": "generated; saved after missing-directory recovery",
+  "generated_source": "C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-e8bea252-a95b-4bea-9e9d-dc915d978159.png",
+  "recovery": "Generated source identified by dimensions and visual inspection after copy failed; original generated file retained."
+}

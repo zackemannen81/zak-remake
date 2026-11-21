@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0015/ROv2/OCv2_0314
+Events:
+  FD - 0013
+[0013] (4F) if (getState08(312)) {
+[0018] (50)   pickupObject(58);
+[001B] (F0)   lights(Var[234],0,0);
+[001F] (18) } else {
+[0022] (D8)   printEgo("I can't pick it up, it's being held by\x01a crystalinetic force!");
+[0057] (19)   doSentence(STOP);
+[0059] (**) }
+[0059] (00) stopObjectCode();
+END

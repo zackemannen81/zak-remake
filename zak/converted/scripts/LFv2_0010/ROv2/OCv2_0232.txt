@@ -1,0 +1,28 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/OCv2_0232
+Events:
+   4 - 0027
+   9 - 0027
+   B - 0027
+   D - 0027
+  FD - 003C
+[0027] (28) if (!Var[50]) {
+[002B] (68)   VAR_RESULT = isScriptRunning(64);
+[002E] (28)   if (!VAR_RESULT) {
+[0032] (1C)     startSound(74);
+[0034] (19)     doSentence(253,239,0,1);
+[003B] (**)   }
+[003B] (**) }
+[003B] (00) stopObjectCode();
+[003C] (80) breakHere();
+[003D] (68) VAR_RESULT = isScriptRunning(64);
+[0040] (28) unless (!VAR_RESULT) goto 003C;
+[0044] (03) VAR_RESULT = getActorRoom(1);
+[0047] (48) if (VAR_RESULT == 10) {
+[004D] (5B)   setBitVar(1568,0,Var[235]);
+[0052] (5B)   setBitVar(1559,6,Var[235]);
+[0057] (11)   animateActor(1,246);
+[005A] (3B)   waitForActor(1);
+[005C] (D8)   printEgo("REPORTER BECOMES `SPACE CADET`\x01IN SPACE CADILLAC!");
+[008A] (**) }
+[008A] (00) stopObjectCode();
+END

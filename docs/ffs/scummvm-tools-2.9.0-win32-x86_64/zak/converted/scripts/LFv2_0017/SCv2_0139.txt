@@ -1,0 +1,42 @@
+# Decompiled with descumm -2
+# Source: LFv2_0017\SCv2_0139
+
+[0000] (48) if (VAR_ACTIVE_OBJECT2 == 10) {
+[0006] (9A)   VAR_ACTIVE_OBJECT2 = Var[234];
+[0009] (48)   if (VAR_ACTIVE_OBJECT1 == 45) {
+[000F] (B1)     VAR_RESULT = getBitVar(1478,VAR_EGO);
+[0014] (A8)     if (VAR_RESULT) {
+[0018] (14)       print(10,"Welcome, devotee!");
+[002B] (18)     } else {
+[002E] (DB)       setBitVar(1478,VAR_EGO,Var[235]);
+[0033] (10)       VAR_RESULT = getObjectOwner(46);
+[0037] (08)       if (VAR_RESULT != 15) {
+[003D] (29)         setOwnerOf(45,0);
+[0041] (**)       }
+[0041] (14)       print(10,"Oh! I see you are a follower of Guru!");
+[0061] (**)     }
+[0061] (27)     setState04(45);
+[0064] (AE)     waitForMessage();
+[0065] (19)     doSentence(253,351,0,1);
+[006C] (18)   } else {
+[006F] (14)     print(10,"No, thank you.");
+[007E] (AE)     waitForMessage();
+[007F] (11)     animateActor(10,246);
+[0082] (**)   }
+[0082] (48) } else if (VAR_ACTIVE_OBJECT2 == 8) {
+[008B] (9A)   VAR_ACTIVE_OBJECT2 = Var[234];
+[008E] (68)   VAR_RESULT = isScriptRunning(124);
+[0091] (A8)   if (VAR_RESULT) {
+[0095] (14)     print(8,"NOT NOW!");
+[009F] (48)   } else if (VAR_ACTIVE_OBJECT1 == 59) {
+[00A8] (14)     print(8,"The law was still broken.");
+[00C0] (29)     setOwnerOf(59,8);
+[00C4] (48)   } else if (VAR_ACTIVE_OBJECT1 == 60) {
+[00CD] (14)     print(8,"Thank you.");
+[00D9] (29)     setOwnerOf(60,8);
+[00DD] (18)   } else {
+[00E0] (14)     print(8,"No bribes!");
+[00EC] (**)   }
+[00EC] (**) }
+[00EC] (A0) stopObjectCode();
+END

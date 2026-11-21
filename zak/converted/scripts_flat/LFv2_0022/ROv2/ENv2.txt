@@ -1,0 +1,25 @@
+[0000] (70) lights(11,0,0);
+[0004] (04) unless (VAR_EGO <= 2) goto 0023;
+[000A] (9A) Var[66] = VAR_EGO;
+[000D] (5A) Var[66] += 4;
+[0011] (9A) Var[14] = Var[66];
+[0014] (5A) Var[14] += 171;
+[0018] (D3) ActorOps(VAR_EGO,[Costume(Var[14])]);
+[001C] (93) ActorOps(VAR_EGO,[Sound(7)]);
+[0020] (0C) loadSound(7)
+[0023] (30) setBoxFlags(2,128);
+[0026] (07) setState08(402);
+[0029] (48) unless (VAR_ROOM == 139) goto 0049;
+[002F] (1A) Var[45] = 387;
+[0033] (07) setState08(401);
+[0036] (6F) unless (getState04(387)) goto 0046;
+[003B] (47) clearState08(402);
+[003E] (4F) unless (getState08(400)) goto 0046;
+[0043] (30) setBoxFlags(2,0);
+[0046] (18) goto 0058;
+[0049] (1A) Var[45] = 388;
+[004D] (47) clearState08(401);
+[0050] (6F) unless (getState04(388)) goto 0058;
+[0055] (18) goto 003B;
+[0058] (00) stopObjectCode();
+END

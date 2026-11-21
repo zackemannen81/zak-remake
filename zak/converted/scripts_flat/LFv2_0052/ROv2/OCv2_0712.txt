@@ -1,0 +1,24 @@
+Events:
+  FD - 001D
+  FF - 0015
+[0015] (19) doSentence(253,713,0,1);
+[001C] (00) stopObjectCode();
+[001D] (1C) startSound(44);
+[001F] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0021] (9A) Var[121] = VAR_ACTIVE_OBJECT1;
+[0024] (3A) Var[121] -= 712;
+[0028] (46) Var[120]++;
+[002A] (46) Var[122]++;
+[002C] (80) breakHere();
+[002D] (48) unless (Var[121] == 10) goto 003B;
+[0033] (14) print(255,"*\x02");
+[0038] (18) goto 004F;
+[003B] (48) unless (Var[121] == 11) goto 0049;
+[0041] (14) print(255,"#\x02");
+[0046] (18) goto 004F;
+[0049] (14) print(255,"\x04\x79\x02");
+[004F] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0051] (80) breakHere();
+[0052] (9A) Var[122] = Var[234];
+[0055] (00) stopObjectCode();
+END

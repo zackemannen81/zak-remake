@@ -1,0 +1,21 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/OCv2_0477
+Events:
+   B - 0019
+  FD - 0051
+[0019] (48) if (VAR_EGO == 3) {
+[001F] (D8)   printEgo("No way! Who knows WHAT used it last!");
+[003E] (18) } else {
+[0041] (D8)   printEgo("I'm not sleepy.");
+[0050] (**) }
+[0050] (00) stopObjectCode();
+[0051] (1A) Var[60] = 6;
+[0055] (42) startScript(83);
+[0057] (80) breakHere();
+[0058] (68) VAR_RESULT = isScriptRunning(83);
+[005B] (C8) unless (VAR_RESULT == Var[234]) goto 0057;
+[0060] (2F) if (!getState04(70)) {
+[0065] (30)   setBoxFlags(6,128);
+[0068] (50)   pickupObject(70);
+[006B] (**) }
+[006B] (00) stopObjectCode();
+END

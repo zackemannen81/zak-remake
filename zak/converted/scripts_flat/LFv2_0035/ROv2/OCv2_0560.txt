@@ -1,0 +1,23 @@
+Events:
+  FD - 0013
+[0013] (4F) unless (getState08(557)) goto 0039;
+[0018] (3C) stopSound(58);
+[001A] (1C) startSound(57);
+[001C] (F8) unless (Var[162] < Var[50]) goto 0036;
+[0021] (2E) delay(300);
+[0025] (45) drawObject(562,Var[162],8);
+[002A] (46) Var[162]++;
+[002C] (45) drawObject(560,Var[162],8);
+[0031] (C8) unless (Var[162] == Var[50]) goto 0021;
+[0036] (18) goto 005D;
+[0039] (1C) startSound(58);
+[003B] (2E) delay(60);
+[003F] (3C) stopSound(57);
+[0041] (C4) unless (Var[162] > Var[49]) goto 005D;
+[0046] (2E) delay(120);
+[004A] (45) drawObject(562,Var[162],8);
+[004F] (3A) Var[162] -= 1;
+[0053] (45) drawObject(560,Var[162],8);
+[0058] (C8) unless (Var[162] == Var[49]) goto 0046;
+[005D] (00) stopObjectCode();
+END

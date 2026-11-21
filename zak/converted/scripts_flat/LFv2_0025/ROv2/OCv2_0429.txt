@@ -1,0 +1,18 @@
+Events:
+   E - 0023
+  FD - 002E
+[0023] (07) setState08(429);
+[0026] (57) setState02(429);
+[0029] (69) setOwnerOf(81,VAR_EGO);
+[002D] (00) stopObjectCode();
+[002E] (80) breakHere();
+[002F] (0F) unless (!getState08(428)) goto 004E;
+[0034] (10) Var[66] = getObjectOwner(81);
+[0038] (B4) VAR_RESULT = getDist(Var[66],428);
+[003D] (44) unless (VAR_RESULT > 9) goto 004A;
+[0043] (0B) setObjPreposition(81,0);
+[0047] (18) goto 004E;
+[004A] (0B) setObjPreposition(81,1);
+[004E] (18) goto 002E;
+[0051] (00) stopObjectCode();
+END

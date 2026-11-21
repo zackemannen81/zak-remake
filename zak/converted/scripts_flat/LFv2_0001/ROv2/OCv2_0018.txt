@@ -1,0 +1,15 @@
+Events:
+   3 - 0029
+   B - 001F
+   C - 0022
+[001F] (42) startScript(131);
+[0021] (00) stopObjectCode();
+[0022] (1A) Var[67] = 1;
+[0026] (42) startScript(53);
+[0028] (00) stopObjectCode();
+[0029] (48) unless (VAR_ACTIVE_OBJECT2 == 1) goto 0035;
+[002F] (A9) setOwnerOf(VAR_ACTIVE_OBJECT1,1);
+[0032] (18) goto 0037;
+[0035] (42) startScript(53);
+[0037] (00) stopObjectCode();
+END

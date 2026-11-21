@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0653
+Events:
+   E - 0023
+  FD - 0030
+[0023] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0025] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0027] (69) setOwnerOf(33,VAR_EGO);
+[002B] (69) setOwnerOf(56,VAR_EGO);
+[002F] (00) stopObjectCode();
+[0030] (2E) delay(3600);
+[0034] (AE) waitForMessage();
+[0035] (14) print(10,"It's COLD out here tonight!");
+[004F] (18) goto 0030;
+[0052] (00) stopObjectCode();
+END

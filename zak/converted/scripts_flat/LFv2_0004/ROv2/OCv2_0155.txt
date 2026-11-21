@@ -1,0 +1,50 @@
+Events:
+   1 - 001D
+   2 - 0023
+   D - 0029
+  FD - 006A
+[001D] (42) startScript(10);
+[001F] (07) setState08(329);
+[0022] (00) stopObjectCode();
+[0023] (42) startScript(11);
+[0025] (47) clearState08(329);
+[0028] (00) stopObjectCode();
+[0029] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0069;
+[002D] (30) setBoxFlags(4,0);
+[0030] (9E) walkActorTo(VAR_EGO,30,48);
+[0034] (BB) waitForActor(VAR_EGO);
+[0036] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[0039] (08) unless (VAR_RESULT != 30) goto 0042;
+[003F] (18) goto 0069;
+[0042] (A3) VAR_RESULT = getActorY(VAR_EGO);
+[0045] (08) unless (VAR_RESULT != 48) goto 004E;
+[004B] (18) goto 0069;
+[004E] (19) doSentence(253,151,0,1);
+[0055] (A8) unless (Var[66]) goto 0063;
+[0059] (68) VAR_RESULT = isScriptRunning(77);
+[005C] (28) unless (!VAR_RESULT) goto 0063;
+[0060] (27) setState04(330);
+[0063] (24) loadRoomWithEgo(329,16,255,255);
+[0069] (00) stopObjectCode();
+[006A] (80) breakHere();
+[006B] (68) VAR_RESULT = isScriptRunning(77);
+[006E] (28) unless (!VAR_RESULT) goto 006A;
+[0072] (7B) VAR_RESULT = getActorWalkBox(1);
+[0075] (48) unless (VAR_RESULT == 3) goto 008D;
+[007B] (48) unless (Var[167] == 48) goto 008A;
+[0081] (48) unless (Var[164] == 40) goto 008A;
+[0087] (18) goto 008D;
+[008A] (18) goto 00A5;
+[008D] (7B) VAR_RESULT = getActorWalkBox(2);
+[0090] (48) unless (VAR_RESULT == 3) goto 00B5;
+[0096] (48) unless (Var[168] == 48) goto 00A5;
+[009C] (48) unless (Var[165] == 40) goto 00A5;
+[00A2] (18) goto 006A;
+[00A5] (68) VAR_RESULT = isScriptRunning(95);
+[00A8] (28) unless (!VAR_RESULT) goto 00B5;
+[00AC] (68) VAR_RESULT = isScriptRunning(75);
+[00AF] (28) unless (!VAR_RESULT) goto 00B5;
+[00B3] (42) startScript(95);
+[00B5] (18) goto 006A;
+[00B8] (00) stopObjectCode();
+END

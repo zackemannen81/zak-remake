@@ -1,0 +1,11 @@
+Events:
+   3 - 0030
+   B - 002A
+   E - 0022
+[0022] (19) doSentence(253,479,0,1);
+[0029] (00) stopObjectCode();
+[002A] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002F] (00) stopObjectCode();
+[0030] (94) print(VAR_ACTIVE_OBJECT2,"I'm not touching a dead alien!");
+[004C] (00) stopObjectCode();
+END

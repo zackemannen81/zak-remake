@@ -1,0 +1,23 @@
+Events:
+   D - 0019
+  FD - 0021
+[0019] (19) doSentence(253,571,0,1);
+[0020] (00) stopObjectCode();
+[0021] (16) Var[52] = getRandomNr(3);
+[0024] (5A) Var[52] += 2;
+[0028] (9A) Var[51] = Var[234];
+[002B] (2E) delay(60);
+[002F] (46) Var[51]++;
+[0031] (C4) unless (Var[51] > Var[52]) goto 002B;
+[0036] (16) Var[52] = getRandomNr(12);
+[0039] (28) unless (!Var[52]) goto 0049;
+[003D] (1C) startSound(108);
+[003F] (19) doSentence(253,573,0,1);
+[0046] (18) goto 0056;
+[0049] (78) unless (Var[52] < 7) goto 0054;
+[004F] (1C) startSound(106);
+[0051] (18) goto 0056;
+[0054] (1C) startSound(107);
+[0056] (18) goto 0021;
+[0059] (00) stopObjectCode();
+END

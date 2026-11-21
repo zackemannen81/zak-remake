@@ -1,0 +1,21 @@
+Events:
+   1 - 001B
+   2 - 0021
+   D - 0027
+[001B] (42) startScript(10);
+[001D] (07) setState08(180);
+[0020] (00) stopObjectCode();
+[0021] (42) startScript(11);
+[0023] (47) clearState08(180);
+[0026] (00) stopObjectCode();
+[0027] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0048;
+[002B] (68) VAR_RESULT = isScriptRunning(62);
+[002E] (28) unless (!VAR_RESULT) goto 003E;
+[0032] (27) setState04(180);
+[0035] (24) loadRoomWithEgo(180,7,255,255);
+[003B] (18) goto 0048;
+[003E] (2D) putActorInRoom(1,7);
+[0041] (01) putActor(1,31,56);
+[0045] (11) animateActor(1,251);
+[0048] (00) stopObjectCode();
+END

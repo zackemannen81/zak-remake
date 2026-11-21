@@ -1,0 +1,15 @@
+[0000] (9A) Var[50] = Var[235];
+[0003] (A8) unless (Var[45]) goto 0025;
+[0007] (FF) unless (getState01(Var[45])) goto 0011;
+[000B] (A9) setOwnerOf(Var[45],0);
+[000E] (A9) setOwnerOf(Var[45],15);
+[0011] (19) doSentence(253,185,0,1);
+[0018] (3B) waitForActor(10);
+[001A] (80) breakHere();
+[001B] (97) clearState02(Var[45]);
+[001D] (C7) clearState08(Var[45]);
+[001F] (9A) Var[45] = Var[234];
+[0022] (11) animateActor(10,246);
+[0025] (9A) Var[50] = Var[234];
+[0028] (A0) stopObjectCode();
+END

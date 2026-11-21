@@ -1,0 +1,11 @@
+{
+  "room": 2,
+  "object_id": 126,
+  "prompt": "Create ONLY close-up state patch in reference 1. Reference 2 is original room CONTEXT only; NEVER output whole room. Exact crop x=432, y=80, width=32, height=8. Disconnected grey/silver PLUMBING PIPE in dark space below kitchen sink, cyan edges and blue cabinet. Real plumbing, not mathematical symbols or UI controls. No plus signs or equals signs. Preserve exact source state, silhouette, perspective and palette. Premium polished AAA Unreal Engine 5 materials and lighting, realistic physical surfaces. Tight opaque patch aspect 32:8, no new props/text. For extreme aspect use centered letterbox/pillarbox preserving full target aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0126\\frame_000.png",
+    "C:\\code\\zac\\docs\\scummvm-tools-2.9.0-win32-x86_64\\zak\\converted\\images\\backgrounds\\LFv2_0002.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-bac9cfb3-6f8b-46b6-b24a-0964722da8c6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "semantic correction; review pending"
+}

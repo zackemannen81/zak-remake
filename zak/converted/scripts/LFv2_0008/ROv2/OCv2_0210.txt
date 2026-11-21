@@ -1,0 +1,54 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0008/ROv2/OCv2_0210
+Events:
+  FD - 0013
+[0013] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[0016] (9A) Var[203] = Var[235];
+[0019] (1A) Var[54] = 80;
+[001D] (80) breakHere();
+[001E] (C6) Var[54]--;
+[0020] (28) if (!Var[54]) {
+[0024] (19)   doSentence(250,207,0,1);
+[002B] (**) }
+[002B] (48) if (VAR_ACTIVE_VERB == 3) {
+[0031] (48)   if (VAR_ACTIVE_OBJECT2 == 10) {
+[0037] (BB)     waitForActor(VAR_EGO);
+[0039] (89)     faceActor(VAR_EGO,10);
+[003C] (00)     stopObjectCode();
+[003D] (19)     doSentence(254,211,0,1);
+[0044] (19)     doSentence(254,207,0,1);
+[004B] (11)     animateActor(10,255);
+[004E] (4D)     walkActorToActor(10,VAR_EGO,4);
+[0052] (3B)     waitForActor(10);
+[0054] (49)     faceActor(10,VAR_EGO);
+[0057] (89)     faceActor(VAR_EGO,10);
+[005A] (00)     stopObjectCode();
+[005B] (3B)     waitForActor(10);
+[005D] (9A)     VAR_ACTIVE_OBJECT2 = Var[234];
+[0060] (1A)     Var[54] = 180;
+[0064] (48)     if (VAR_ACTIVE_OBJECT1 == 45) {
+[006A] (19)       doSentence(250,208,0,1);
+[0071] (18)       goto 00FE;
+[0074] (**)     }
+[0074] (9D)     if (classOfIs(VAR_ACTIVE_OBJECT1,64)) {
+[0079] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,10);
+[007C] (14)       print(10,"Tanks, but my life shtill ain' got no\x01meanin'.");
+[00A6] (9D)     } else if (classOfIs(VAR_ACTIVE_OBJECT1,128)) {
+[00AE] (14)       print(10,"One moment^");
+[00BB] (AE)       waitForMessage();
+[00BC] (1A)       Var[118] = 5;
+[00C0] (19)       doSentence(250,209,0,1);
+[00C7] (80)       breakHere();
+[00C8] (A8)       if (Var[66]) {
+[00CC] (18)         goto 007C;
+[00CF] (**)       }
+[00CF] (14)       print(10,"Hey! You're broke too!");
+[00E5] (18)     } else {
+[00E8] (14)       print(10,"No tanks.");
+[00F3] (**)     }
+[00F3] (AE)     waitForMessage();
+[00F4] (19)     doSentence(250,211,0,1);
+[00FB] (**)   }
+[00FB] (**) }
+[00FB] (18) goto 001D;
+[00FE] (00) stopObjectCode();
+END

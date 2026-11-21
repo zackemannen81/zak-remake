@@ -1,0 +1,25 @@
+[0000] (70) lights(11,0,0);
+[0004] (9A) Var[56] = Var[234];
+[0007] (6F) unless (getState04(328)) goto 000F;
+[000C] (47) clearState08(328);
+[000F] (4F) unless (getState08(332)) goto 001E;
+[0014] (19) doSentence(253,332,0,1);
+[001B] (18) goto 0021;
+[001E] (30) setBoxFlags(1,0);
+[0021] (19) doSentence(250,339,0,1);
+[0028] (1A) Var[49] = 53;
+[002C] (9A) Var[58] = Var[234];
+[002F] (68) VAR_RESULT = isScriptRunning(66);
+[0032] (28) unless (!VAR_RESULT) goto 0053;
+[0036] (4F) unless (getState08(343)) goto 0045;
+[003B] (19) doSentence(250,336,0,1);
+[0042] (18) goto 0050;
+[0045] (1A) Var[49] = 60;
+[0049] (19) doSentence(250,335,0,1);
+[0050] (18) goto 005A;
+[0053] (19) doSentence(253,342,0,1);
+[005A] (48) unless (VAR_ACTIVE_OBJECT1 == 108) goto 006C;
+[0060] (0F) unless (!getState08(333)) goto 006C;
+[0065] (19) doSentence(250,334,0,1);
+[006C] (00) stopObjectCode();
+END

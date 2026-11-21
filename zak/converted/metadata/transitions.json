@@ -1,0 +1,1202 @@
+[
+  {
+    "line": 24,
+    "instruction": "[0066] (24)   loadRoomWithEgo(111,2,255,255);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0084.txt",
+    "room": 1
+  },
+  {
+    "line": 30,
+    "instruction": "[006C] (24) loadRoomWithEgo(334,16,255,255);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0110.txt",
+    "room": 1
+  },
+  {
+    "line": 13,
+    "instruction": "[002B] (24)   loadRoomWithEgo(84,1,255,255);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0111.txt",
+    "room": 2
+  },
+  {
+    "line": 18,
+    "instruction": "[003A] (24)     loadRoomWithEgo(134,3,41,53);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0112.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[001C] (24) loadRoomWithEgo(112,2,255,255);",
+    "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0134.txt",
+    "room": 3
+  },
+  {
+    "line": 13,
+    "instruction": "[002B] (24)   loadRoomWithEgo(151,4,255,255);",
+    "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0135.txt",
+    "room": 3
+  },
+  {
+    "line": 5,
+    "instruction": "[0020] (24) loadRoomWithEgo(160,5,5,58);",
+    "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0141.txt",
+    "room": 3
+  },
+  {
+    "line": 23,
+    "instruction": "[004A] (24)   loadRoomWithEgo(135,3,255,255);",
+    "source": "zak/converted/scripts/LFv2_0004/ROv2/OCv2_0151.txt",
+    "room": 4
+  },
+  {
+    "line": 30,
+    "instruction": "[0063] (24)       loadRoomWithEgo(329,16,255,255);",
+    "source": "zak/converted/scripts/LFv2_0004/ROv2/OCv2_0155.txt",
+    "room": 4
+  },
+  {
+    "line": 6,
+    "instruction": "[0025] (24)   loadRoomWithEgo(141,3,93,46);",
+    "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0160.txt",
+    "room": 5
+  },
+  {
+    "line": 16,
+    "instruction": "[0035] (24)     loadRoomWithEgo(180,7,255,255);",
+    "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0161.txt",
+    "room": 5
+  },
+  {
+    "line": 6,
+    "instruction": "[001D] (24)   loadRoomWithEgo(141,3,93,52);",
+    "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0166.txt",
+    "room": 5
+  },
+  {
+    "line": 4,
+    "instruction": "[0019] (24) loadRoomWithEgo(172,6,255,255);",
+    "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0168.txt",
+    "room": 5
+  },
+  {
+    "line": 13,
+    "instruction": "[002B] (24)   loadRoomWithEgo(168,5,46,36);",
+    "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0172.txt",
+    "room": 6
+  },
+  {
+    "line": 13,
+    "instruction": "[002B] (24)   loadRoomWithEgo(161,5,255,255);",
+    "source": "zak/converted/scripts/LFv2_0007/ROv2/OCv2_0180.txt",
+    "room": 7
+  },
+  {
+    "line": 16,
+    "instruction": "[003D] (E4)   loadRoomWithEgo(Var[47],Var[48],255,255);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0191.txt",
+    "room": 8
+  },
+  {
+    "line": 12,
+    "instruction": "[0037] (E4) loadRoomWithEgo(Var[47],Var[48],255,255);",
+    "source": "zak/converted/scripts/LFv2_0009/ROv2/OCv2_0218.txt",
+    "room": 9
+  },
+  {
+    "line": 18,
+    "instruction": "[004F] (E4)   loadRoomWithEgo(Var[45],Var[44],8,60);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0256.txt",
+    "room": 11
+  },
+  {
+    "line": 6,
+    "instruction": "[0021] (24) loadRoomWithEgo(191,144,255,255);",
+    "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0266.txt",
+    "room": 12
+  },
+  {
+    "line": 8,
+    "instruction": "[002A] (24)   loadRoomWithEgo(272,13,5,48);",
+    "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0267.txt",
+    "room": 12
+  },
+  {
+    "line": 4,
+    "instruction": "[001C] (24) loadRoomWithEgo(267,12,255,255);",
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0272.txt",
+    "room": 13
+  },
+  {
+    "line": 6,
+    "instruction": "[0022] (24)   loadRoomWithEgo(297,129,255,255);",
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0281.txt",
+    "room": 13
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (E4) loadRoomWithEgo(Var[46],Var[47],255,255);",
+    "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0297.txt",
+    "room": 14
+  },
+  {
+    "line": 5,
+    "instruction": "[001B] (24) loadRoomWithEgo(564,202,255,255);",
+    "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0300.txt",
+    "room": 14
+  },
+  {
+    "line": 5,
+    "instruction": "[001B] (24) loadRoomWithEgo(565,199,255,255);",
+    "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0302.txt",
+    "room": 14
+  },
+  {
+    "line": 5,
+    "instruction": "[001B] (24) loadRoomWithEgo(564,204,255,255);",
+    "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0304.txt",
+    "room": 14
+  },
+  {
+    "line": 4,
+    "instruction": "[0019] (24) loadRoomWithEgo(420,186,8,44);",
+    "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0311.txt",
+    "room": 15
+  },
+  {
+    "line": 78,
+    "instruction": "[011C] (24)     loadRoomWithEgo(408,220,255,255);",
+    "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0316.txt",
+    "room": 15
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (24) loadRoomWithEgo(408,218,255,255);",
+    "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0323.txt",
+    "room": 15
+  },
+  {
+    "line": 16,
+    "instruction": "[0039] (24)     loadRoomWithEgo(155,4,26,51);",
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0329.txt",
+    "room": 16
+  },
+  {
+    "line": 26,
+    "instruction": "[0077] (24) loadRoomWithEgo(108,1,255,255);",
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0333.txt",
+    "room": 16
+  },
+  {
+    "line": 25,
+    "instruction": "[004C] (24)   loadRoomWithEgo(363,18,255,255);",
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0350.txt",
+    "room": 17
+  },
+  {
+    "line": 21,
+    "instruction": "[004F] (24) loadRoomWithEgo(375,19,5,56);",
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0351.txt",
+    "room": 17
+  },
+  {
+    "line": 13,
+    "instruction": "[002B] (24)   loadRoomWithEgo(350,17,255,255);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0363.txt",
+    "room": 18
+  },
+  {
+    "line": 9,
+    "instruction": "[0028] (24) loadRoomWithEgo(351,17,255,255);",
+    "source": "zak/converted/scripts/LFv2_0019/ROv2/OCv2_0375.txt",
+    "room": 19
+  },
+  {
+    "line": 4,
+    "instruction": "[001F] (24) loadRoomWithEgo(397,135,255,255);",
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/OCv2_0386.txt",
+    "room": 20
+  },
+  {
+    "line": 7,
+    "instruction": "[001D] (24) loadRoomWithEgo(398,139,255,255);",
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/OCv2_0387.txt",
+    "room": 20
+  },
+  {
+    "line": 7,
+    "instruction": "[001D] (24) loadRoomWithEgo(398,140,255,255);",
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/OCv2_0388.txt",
+    "room": 20
+  },
+  {
+    "line": 4,
+    "instruction": "[0022] (24) loadRoomWithEgo(403,207,255,255);",
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/OCv2_0389.txt",
+    "room": 20
+  },
+  {
+    "line": 4,
+    "instruction": "[0018] (24) loadRoomWithEgo(218,146,34,60);",
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/OCv2_0390.txt",
+    "room": 20
+  },
+  {
+    "line": 9,
+    "instruction": "[0023] (64)   loadRoomWithEgo(403,Var[47],255,255);",
+    "source": "zak/converted/scripts/LFv2_0021/ROv2/OCv2_0392.txt",
+    "room": 21
+  },
+  {
+    "line": 4,
+    "instruction": "[001F] (E4) loadRoomWithEgo(Var[45],Var[46],255,255);",
+    "source": "zak/converted/scripts/LFv2_0021/ROv2/OCv2_0396.txt",
+    "room": 21
+  },
+  {
+    "line": 4,
+    "instruction": "[001D] (A4) loadRoomWithEgo(Var[45],20,255,255);",
+    "source": "zak/converted/scripts/LFv2_0022/ROv2/OCv2_0398.txt",
+    "room": 22
+  },
+  {
+    "line": 7,
+    "instruction": "[0039] (24) loadRoomWithEgo(403,207,255,255);",
+    "source": "zak/converted/scripts/LFv2_0022/ROv2/OCv2_0400.txt",
+    "room": 22
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[44],Var[45],255,255);",
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/OCv2_0403.txt",
+    "room": 23
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[46],Var[47],255,255);",
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/OCv2_0404.txt",
+    "room": 23
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[48],Var[49],255,255);",
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/OCv2_0405.txt",
+    "room": 23
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[50],Var[51],255,255);",
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/OCv2_0406.txt",
+    "room": 23
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[52],Var[53],255,255);",
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/OCv2_0407.txt",
+    "room": 23
+  },
+  {
+    "line": 8,
+    "instruction": "[0027] (E4) loadRoomWithEgo(Var[54],Var[55],255,255);",
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/OCv2_0408.txt",
+    "room": 23
+  },
+  {
+    "line": 5,
+    "instruction": "[001F] (E4)   loadRoomWithEgo(Var[47],Var[46],2,60);",
+    "source": "zak/converted/scripts/LFv2_0024/ROv2/OCv2_0420.txt",
+    "room": 24
+  },
+  {
+    "line": 7,
+    "instruction": "[0027] (E4)   loadRoomWithEgo(Var[47],Var[46],42,60);",
+    "source": "zak/converted/scripts/LFv2_0024/ROv2/OCv2_0420.txt",
+    "room": 24
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (E4) loadRoomWithEgo(Var[49],Var[48],255,255);",
+    "source": "zak/converted/scripts/LFv2_0024/ROv2/OCv2_0421.txt",
+    "room": 24
+  },
+  {
+    "line": 4,
+    "instruction": "[0019] (24) loadRoomWithEgo(420,155,8,44);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0422.txt",
+    "room": 25
+  },
+  {
+    "line": 4,
+    "instruction": "[001C] (24) loadRoomWithEgo(534,182,255,255);",
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0444.txt",
+    "room": 27
+  },
+  {
+    "line": 19,
+    "instruction": "[006D] (24)   loadRoomWithEgo(463,181,255,255);",
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0449.txt",
+    "room": 27
+  },
+  {
+    "line": 13,
+    "instruction": "[002B] (24)   loadRoomWithEgo(488,30,255,255);",
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0452.txt",
+    "room": 27
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (24) loadRoomWithEgo(396,183,255,255);",
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0456.txt",
+    "room": 27
+  },
+  {
+    "line": 7,
+    "instruction": "[0024] (24)   loadRoomWithEgo(449,185,255,255);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0463.txt",
+    "room": 28
+  },
+  {
+    "line": 7,
+    "instruction": "[0026] (24)   loadRoomWithEgo(472,180,255,255);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0464.txt",
+    "room": 28
+  },
+  {
+    "line": 19,
+    "instruction": "[006D] (24)   loadRoomWithEgo(464,181,255,255);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0472.txt",
+    "room": 28
+  },
+  {
+    "line": 35,
+    "instruction": "[007C] (24)   loadRoomWithEgo(452,185,255,255);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0488.txt",
+    "room": 30
+  },
+  {
+    "line": 9,
+    "instruction": "[0038] (24)   loadRoomWithEgo(605,41,26,9);",
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/OCv2_0505.txt",
+    "room": 31
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (24) loadRoomWithEgo(538,182,24,50);",
+    "source": "zak/converted/scripts/LFv2_0032/ROv2/OCv2_0507.txt",
+    "room": 32
+  },
+  {
+    "line": 5,
+    "instruction": "[0021] (64) loadRoomWithEgo(515,Var[45],65,5);",
+    "source": "zak/converted/scripts/LFv2_0032/ROv2/OCv2_0508.txt",
+    "room": 32
+  },
+  {
+    "line": 4,
+    "instruction": "[0020] (A4) loadRoomWithEgo(Var[48],32,255,255);",
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0515.txt",
+    "room": 33
+  },
+  {
+    "line": 21,
+    "instruction": "[0093] (E4)   loadRoomWithEgo(Var[49],Var[50],255,255);",
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0517.txt",
+    "room": 33
+  },
+  {
+    "line": 4,
+    "instruction": "[001F] (24) loadRoomWithEgo(444,185,255,255);",
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0534.txt",
+    "room": 33
+  },
+  {
+    "line": 4,
+    "instruction": "[0020] (24) loadRoomWithEgo(507,32,4,52);",
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0538.txt",
+    "room": 33
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (24) loadRoomWithEgo(564,205,255,255);",
+    "source": "zak/converted/scripts/LFv2_0034/ROv2/OCv2_0542.txt",
+    "room": 34
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (24) loadRoomWithEgo(566,196,255,255);",
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0543.txt",
+    "room": 35
+  },
+  {
+    "line": 5,
+    "instruction": "[0019] (24) loadRoomWithEgo(565,200,255,255);",
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0555.txt",
+    "room": 35
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[44],Var[45],255,255);",
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/OCv2_0563.txt",
+    "room": 36
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[46],Var[47],255,255);",
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/OCv2_0564.txt",
+    "room": 36
+  },
+  {
+    "line": 13,
+    "instruction": "[004C] (E4) loadRoomWithEgo(Var[48],Var[49],255,255);",
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/OCv2_0565.txt",
+    "room": 36
+  },
+  {
+    "line": 5,
+    "instruction": "[0020] (E4)   loadRoomWithEgo(Var[54],Var[55],55,48);",
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/OCv2_0566.txt",
+    "room": 36
+  },
+  {
+    "line": 7,
+    "instruction": "[0028] (E4)   loadRoomWithEgo(Var[50],Var[51],255,255);",
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/OCv2_0566.txt",
+    "room": 36
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[52],Var[53],255,255);",
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/OCv2_0567.txt",
+    "room": 36
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[54],Var[55],255,255);",
+    "source": "zak/converted/scripts/LFv2_0036/ROv2/OCv2_0568.txt",
+    "room": 36
+  },
+  {
+    "line": 81,
+    "instruction": "[0119] (E4)     loadRoomWithEgo(Var[56],Var[57],34,60);",
+    "source": "zak/converted/scripts/LFv2_0037/ROv2/OCv2_0571.txt",
+    "room": 37
+  },
+  {
+    "line": 85,
+    "instruction": "[0121] (E4) loadRoomWithEgo(Var[56],Var[57],255,255);",
+    "source": "zak/converted/scripts/LFv2_0037/ROv2/OCv2_0571.txt",
+    "room": 37
+  },
+  {
+    "line": 16,
+    "instruction": "[0045] (A4) loadRoomWithEgo(Var[58],174,255,255);",
+    "source": "zak/converted/scripts/LFv2_0038/ROv2/OCv2_0576.txt",
+    "room": 38
+  },
+  {
+    "line": 6,
+    "instruction": "[001E] (24)   loadRoomWithEgo(579,151,255,255);",
+    "source": "zak/converted/scripts/LFv2_0038/ROv2/OCv2_0578.txt",
+    "room": 38
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (24) loadRoomWithEgo(578,150,255,255);",
+    "source": "zak/converted/scripts/LFv2_0038/ROv2/OCv2_0579.txt",
+    "room": 38
+  },
+  {
+    "line": 8,
+    "instruction": "[002A] (A4) loadRoomWithEgo(Var[58],171,255,255);",
+    "source": "zak/converted/scripts/LFv2_0039/ROv2/OCv2_0593.txt",
+    "room": 39
+  },
+  {
+    "line": 4,
+    "instruction": "[0022] (24) loadRoomWithEgo(745,156,255,255);",
+    "source": "zak/converted/scripts/LFv2_0039/ROv2/OCv2_0594.txt",
+    "room": 39
+  },
+  {
+    "line": 7,
+    "instruction": "[0028] (A4) loadRoomWithEgo(Var[58],169,255,255);",
+    "source": "zak/converted/scripts/LFv2_0039/ROv2/OCv2_0595.txt",
+    "room": 39
+  },
+  {
+    "line": 4,
+    "instruction": "[0022] (24) loadRoomWithEgo(745,157,255,255);",
+    "source": "zak/converted/scripts/LFv2_0039/ROv2/OCv2_0596.txt",
+    "room": 39
+  },
+  {
+    "line": 4,
+    "instruction": "[0022] (24) loadRoomWithEgo(745,158,255,255);",
+    "source": "zak/converted/scripts/LFv2_0039/ROv2/OCv2_0597.txt",
+    "room": 39
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (24) loadRoomWithEgo(505,31,28,86);",
+    "source": "zak/converted/scripts/LFv2_0041/ROv2/OCv2_0605.txt",
+    "room": 41
+  },
+  {
+    "line": 19,
+    "instruction": "[0076] (A4)   loadRoomWithEgo(Var[58],172,255,255);",
+    "source": "zak/converted/scripts/LFv2_0042/ROv2/OCv2_0619.txt",
+    "room": 42
+  },
+  {
+    "line": 12,
+    "instruction": "[005A] (24)   loadRoomWithEgo(638,138,61,51);",
+    "source": "zak/converted/scripts/LFv2_0042/ROv2/OCv2_0620.txt",
+    "room": 42
+  },
+  {
+    "line": 12,
+    "instruction": "[0036] (A4)   loadRoomWithEgo(Var[45],138,255,255);",
+    "source": "zak/converted/scripts/LFv2_0043/ROv2/OCv2_0631.txt",
+    "room": 43
+  },
+  {
+    "line": 4,
+    "instruction": "[0016] (24) loadRoomWithEgo(631,136,255,255);",
+    "source": "zak/converted/scripts/LFv2_0043/ROv2/OCv2_0636.txt",
+    "room": 43
+  },
+  {
+    "line": 4,
+    "instruction": "[0016] (24) loadRoomWithEgo(631,137,255,255);",
+    "source": "zak/converted/scripts/LFv2_0043/ROv2/OCv2_0637.txt",
+    "room": 43
+  },
+  {
+    "line": 4,
+    "instruction": "[0019] (24) loadRoomWithEgo(620,42,255,255);",
+    "source": "zak/converted/scripts/LFv2_0043/ROv2/OCv2_0638.txt",
+    "room": 43
+  },
+  {
+    "line": 5,
+    "instruction": "[001F] (24) loadRoomWithEgo(191,141,255,255);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0639.txt",
+    "room": 44
+  },
+  {
+    "line": 7,
+    "instruction": "[0036] (24)   loadRoomWithEgo(652,134,62,12);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0644.txt",
+    "room": 44
+  },
+  {
+    "line": 5,
+    "instruction": "[0020] (24) loadRoomWithEgo(644,133,22,52);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0652.txt",
+    "room": 44
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[48],Var[49],255,255);",
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0741.txt",
+    "room": 53
+  },
+  {
+    "line": 4,
+    "instruction": "[0019] (E4) loadRoomWithEgo(Var[50],Var[51],255,255);",
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0742.txt",
+    "room": 53
+  },
+  {
+    "line": 4,
+    "instruction": "[0019] (E4) loadRoomWithEgo(Var[52],Var[53],255,255);",
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0743.txt",
+    "room": 53
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[44],Var[45],255,255);",
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0744.txt",
+    "room": 53
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[46],Var[47],255,255);",
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0745.txt",
+    "room": 53
+  },
+  {
+    "line": 4,
+    "instruction": "[0013] (E4) loadRoomWithEgo(Var[46],Var[47],255,255);",
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0746.txt",
+    "room": 53
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (E4) loadRoomWithEgo(Var[54],Var[55],255,255);",
+    "source": "zak/converted/scripts/LFv2_0053/ROv2/OCv2_0747.txt",
+    "room": 53
+  },
+  {
+    "line": 97,
+    "instruction": "[0186] (24) loadRoomWithEgo(134,3,41,53);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0029.txt",
+    "room": 2
+  },
+  {
+    "line": 45,
+    "instruction": "[006D] (72)   loadRoom(16);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0075.txt",
+    "room": 4
+  },
+  {
+    "line": 7,
+    "instruction": "[0008] (72) loadRoom(4);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0077.txt",
+    "room": 4
+  },
+  {
+    "line": 39,
+    "instruction": "[008C] (72) loadRoom(4);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0077.txt",
+    "room": 4
+  },
+  {
+    "line": 32,
+    "instruction": "[0087] (72) loadRoom(16);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0092.txt",
+    "room": 4
+  },
+  {
+    "line": 22,
+    "instruction": "[004F] (72) loadRoom(16);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0093.txt",
+    "room": 4
+  },
+  {
+    "line": 53,
+    "instruction": "[009E] (F2)   loadRoom(Var[66]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0095.txt",
+    "room": 4
+  },
+  {
+    "line": 54,
+    "instruction": "[00A8] (E4)   loadRoomWithEgo(Var[117],Var[120],50,56);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+    "room": 5
+  },
+  {
+    "line": 123,
+    "instruction": "[0226] (72) loadRoom(6);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+    "room": 5
+  },
+  {
+    "line": 182,
+    "instruction": "[050B] (72)   loadRoom(6);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+    "room": 5
+  },
+  {
+    "line": 5,
+    "instruction": "[0001] (72) loadRoom(5);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0148.txt",
+    "room": 5
+  },
+  {
+    "line": 39,
+    "instruction": "[00A1] (24)     loadRoomWithEgo(604,131,255,255);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0009/SCv2_0115.txt",
+    "room": 9
+  },
+  {
+    "line": 57,
+    "instruction": "[00E2] (72)         loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0009/SCv2_0115.txt",
+    "room": 9
+  },
+  {
+    "line": 103,
+    "instruction": "[014B] (72)     loadRoom(143);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+    "room": 10
+  },
+  {
+    "line": 5,
+    "instruction": "[0001] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0012/SCv2_0033.txt",
+    "room": 12
+  },
+  {
+    "line": 9,
+    "instruction": "[000B] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0096.txt",
+    "room": 16
+  },
+  {
+    "line": 13,
+    "instruction": "[0033] (72) loadRoom(16);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0096.txt",
+    "room": 16
+  },
+  {
+    "line": 31,
+    "instruction": "[0053] (F2) loadRoom(Var[239]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0098.txt",
+    "room": 16
+  },
+  {
+    "line": 10,
+    "instruction": "[0011] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0126.txt",
+    "room": 16
+  },
+  {
+    "line": 14,
+    "instruction": "[0030] (72) loadRoom(16);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0126.txt",
+    "room": 16
+  },
+  {
+    "line": 10,
+    "instruction": "[0011] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0140.txt",
+    "room": 16
+  },
+  {
+    "line": 14,
+    "instruction": "[0036] (72) loadRoom(16);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0140.txt",
+    "room": 16
+  },
+  {
+    "line": 25,
+    "instruction": "[006B] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0031.txt",
+    "room": 17
+  },
+  {
+    "line": 30,
+    "instruction": "[008B] (24) loadRoomWithEgo(218,148,34,60);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0031.txt",
+    "room": 17
+  },
+  {
+    "line": 15,
+    "instruction": "[001D] (72) loadRoom(17);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0114.txt",
+    "room": 17
+  },
+  {
+    "line": 168,
+    "instruction": "[02BB] (72)     loadRoom(18);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+    "room": 18
+  },
+  {
+    "line": 202,
+    "instruction": "[033E] (72)     loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+    "room": 18
+  },
+  {
+    "line": 206,
+    "instruction": "[0354] (72)     loadRoom(18);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+    "room": 18
+  },
+  {
+    "line": 29,
+    "instruction": "[004E] (72) loadRoom(18);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0135.txt",
+    "room": 18
+  },
+  {
+    "line": 56,
+    "instruction": "[0231] (72)     loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0019/SCv2_0042.txt",
+    "room": 19
+  },
+  {
+    "line": 60,
+    "instruction": "[0245] (72)     loadRoom(19);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0019/SCv2_0042.txt",
+    "room": 19
+  },
+  {
+    "line": 64,
+    "instruction": "[028C] (72)     loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0019/SCv2_0042.txt",
+    "room": 19
+  },
+  {
+    "line": 68,
+    "instruction": "[02A1] (72)     loadRoom(19);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0019/SCv2_0042.txt",
+    "room": 19
+  },
+  {
+    "line": 72,
+    "instruction": "[02E1] (72)     loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0019/SCv2_0042.txt",
+    "room": 19
+  },
+  {
+    "line": 76,
+    "instruction": "[02F8] (72)     loadRoom(19);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0019/SCv2_0042.txt",
+    "room": 19
+  },
+  {
+    "line": 86,
+    "instruction": "[0383] (72)   loadRoom(19);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0019/SCv2_0042.txt",
+    "room": 19
+  },
+  {
+    "line": 8,
+    "instruction": "[0009] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0021/SCv2_0099.txt",
+    "room": 21
+  },
+  {
+    "line": 19,
+    "instruction": "[0042] (72) loadRoom(183);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0021/SCv2_0099.txt",
+    "room": 21
+  },
+  {
+    "line": 46,
+    "instruction": "[007E] (0C) loadRoom(51)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 47,
+    "instruction": "[0081] (0C) loadRoom(57)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 48,
+    "instruction": "[0084] (0C) loadRoom(16)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 111,
+    "instruction": "[016F] (72) loadRoom(57);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 122,
+    "instruction": "[0192] (72) loadRoom(51);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 138,
+    "instruction": "[01CE] (72) loadRoom(16);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 185,
+    "instruction": "[0297] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 13,
+    "instruction": "[001D] (72) loadRoom(25);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0149.txt",
+    "room": 25
+  },
+  {
+    "line": 27,
+    "instruction": "[0057] (72)   loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 44,
+    "instruction": "[00A7] (72) loadRoom(26);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0051.txt",
+    "room": 27
+  },
+  {
+    "line": 55,
+    "instruction": "[00C3] (F2) loadRoom(Var[50]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0051.txt",
+    "room": 27
+  },
+  {
+    "line": 9,
+    "instruction": "[000A] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0129.txt",
+    "room": 27
+  },
+  {
+    "line": 26,
+    "instruction": "[0078] (72)   loadRoom(153);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0041.txt",
+    "room": 29
+  },
+  {
+    "line": 28,
+    "instruction": "[007D] (72)   loadRoom(154);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0041.txt",
+    "room": 29
+  },
+  {
+    "line": 35,
+    "instruction": "[00A1] (F2) loadRoom(Var[118]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0060.txt",
+    "room": 29
+  },
+  {
+    "line": 86,
+    "instruction": "[014A] (E4)     loadRoomWithEgo(Var[81],Var[195],255,255);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0060.txt",
+    "room": 29
+  },
+  {
+    "line": 101,
+    "instruction": "[0175] (F2)       loadRoom(Var[195]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0060.txt",
+    "room": 29
+  },
+  {
+    "line": 5,
+    "instruction": "[0003] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 9,
+    "instruction": "[000E] (0C) loadRoom(31)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 26,
+    "instruction": "[0049] (72) loadRoom(132);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 69,
+    "instruction": "[00D7] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 74,
+    "instruction": "[00E7] (72) loadRoom(31);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 10,
+    "instruction": "[0016] (72)     loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0085.txt",
+    "room": 31
+  },
+  {
+    "line": 28,
+    "instruction": "[0051] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0087.txt",
+    "room": 31
+  },
+  {
+    "line": 35,
+    "instruction": "[009A] (72) loadRoom(1);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0087.txt",
+    "room": 31
+  },
+  {
+    "line": 75,
+    "instruction": "[0270] (72)   loadRoom(143);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+    "room": 40
+  },
+  {
+    "line": 124,
+    "instruction": "[0369] (72) loadRoom(132);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+    "room": 40
+  },
+  {
+    "line": 132,
+    "instruction": "[0384] (72) loadRoom(54);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+    "room": 40
+  },
+  {
+    "line": 143,
+    "instruction": "[03A8] (72)   loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+    "room": 40
+  },
+  {
+    "line": 153,
+    "instruction": "[03C1] (72) loadRoom(10);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+    "room": 40
+  },
+  {
+    "line": 12,
+    "instruction": "[0034] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0044/SCv2_0076.txt",
+    "room": 44
+  },
+  {
+    "line": 31,
+    "instruction": "[0061] (72)       loadRoom(45);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0030.txt",
+    "room": 45
+  },
+  {
+    "line": 41,
+    "instruction": "[0095] (72) loadRoom(45);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0030.txt",
+    "room": 45
+  },
+  {
+    "line": 7,
+    "instruction": "[0007] (72) loadRoom(48);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0048/SCv2_0028.txt",
+    "room": 48
+  },
+  {
+    "line": 28,
+    "instruction": "[0061] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0048/SCv2_0028.txt",
+    "room": 48
+  },
+  {
+    "line": 8,
+    "instruction": "[0009] (72) loadRoom(48);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0048/SCv2_0068.txt",
+    "room": 48
+  },
+  {
+    "line": 26,
+    "instruction": "[0058] (72) loadRoom(46);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 44,
+    "instruction": "[0084] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 57,
+    "instruction": "[00A8] (0C) loadRoom(55)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 60,
+    "instruction": "[00B1] (0C) loadRoom(51)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 61,
+    "instruction": "[00B4] (0C) loadRoom(49)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 62,
+    "instruction": "[00B7] (0C) loadRoom(58)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 63,
+    "instruction": "[00BA] (0C) loadRoom(56)",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 74,
+    "instruction": "[011C] (72) loadRoom(58);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 89,
+    "instruction": "[014B] (72) loadRoom(51);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 98,
+    "instruction": "[0164] (72) loadRoom(55);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 132,
+    "instruction": "[01C8] (72) loadRoom(49);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 240,
+    "instruction": "[0357] (72)   loadRoom(56);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 368,
+    "instruction": "[04F3] (72)   loadRoom(56);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 394,
+    "instruction": "[0537] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 4,
+    "instruction": "[0000] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 9,
+    "instruction": "[000C] (72)   loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0122.txt",
+    "room": 49
+  },
+  {
+    "line": 4,
+    "instruction": "[0000] (72) loadRoom(0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0127.txt",
+    "room": 49
+  },
+  {
+    "line": 13,
+    "instruction": "[001E] (72) loadRoom(46);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0127.txt",
+    "room": 49
+  },
+  {
+    "line": 9,
+    "instruction": "[000C] (72) loadRoom(50);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0050/SCv2_0007.txt",
+    "room": 50
+  },
+  {
+    "line": 8,
+    "instruction": "[000C] (72) loadRoom(52);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0052/SCv2_0015.txt",
+    "room": 52
+  }
+]

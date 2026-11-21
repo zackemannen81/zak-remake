@@ -1,0 +1,26 @@
+Events:
+  FD - 0013
+[0013] (1A) Var[45] = 53;
+[0017] (68) VAR_RESULT = isScriptRunning(66);
+[001A] (28) unless (!VAR_RESULT) goto 002F;
+[001E] (16) Var[46] = getRandomNr(16);
+[0021] (5A) Var[46] += 4;
+[0025] (80) breakHere();
+[0026] (C6) Var[46]--;
+[0028] (28) unless (!Var[46]) goto 0025;
+[002C] (18) goto 0031;
+[002F] (80) breakHere();
+[0030] (80) breakHere();
+[0031] (1A) Var[47] = 339;
+[0035] (3C) stopSound(83);
+[0037] (1C) startSound(83);
+[0039] (C5) drawObject(Var[47],Var[45],9);
+[003D] (80) breakHere();
+[003E] (46) Var[47]++;
+[0040] (44) unless (Var[47] > 342) goto 0039;
+[0046] (48) unless (Var[45] == 53) goto 0053;
+[004C] (1A) Var[45] = 57;
+[0050] (18) goto 0017;
+[0053] (18) goto 0013;
+[0056] (00) stopObjectCode();
+END

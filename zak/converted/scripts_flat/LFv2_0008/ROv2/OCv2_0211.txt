@@ -1,0 +1,15 @@
+Events:
+  FD - 0013
+[0013] (16) Var[55] = getRandomNr(2);
+[0016] (16) Var[56] = getRandomNr(2);
+[0019] (43) Var[66] = getActorX(10);
+[001C] (DA) Var[55] += Var[66];
+[001F] (C6) Var[55]--;
+[0021] (23) Var[66] = getActorY(10);
+[0024] (DA) Var[56] += Var[66];
+[0027] (C6) Var[56]--;
+[0029] (7E) walkActorTo(10,Var[55],Var[56]);
+[002D] (3B) waitForActor(10);
+[002F] (18) goto 0013;
+[0032] (00) stopObjectCode();
+END

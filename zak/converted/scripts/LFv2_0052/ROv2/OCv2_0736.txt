@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0052/ROv2/OCv2_0736
+Events:
+  FF - 0013
+[0013] (19) doSentence(253,728,0,1);
+[001A] (00) stopObjectCode();
+END

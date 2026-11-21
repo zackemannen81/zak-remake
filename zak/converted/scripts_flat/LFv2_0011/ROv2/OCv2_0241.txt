@@ -1,0 +1,9 @@
+Events:
+   E - 0021
+  FD - 003D
+[0021] (D8) printEgo("I'm not cleaning up that mess!");
+[003C] (00) stopObjectCode();
+[003D] (2E) delay(28800);
+[0041] (46) Var[53]++;
+[0043] (00) stopObjectCode();
+END

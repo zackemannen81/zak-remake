@@ -1,0 +1,22 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/OCv2_0352
+Events:
+   B - 001A
+   C - 0035
+  13 - 003D
+[001A] (9D) if (classOfIs(VAR_ACTIVE_OBJECT2,128)) {
+[001F] (42)   startScript(31);
+[0021] (48) } else if (VAR_ACTIVE_OBJECT2 == 55) {
+[002A] (79)   doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002F] (18) } else {
+[0032] (42)   startScript(3);
+[0034] (**) }
+[0034] (00) stopObjectCode();
+[0035] (19) doSentence(12,356,0,0);
+[003C] (00) stopObjectCode();
+[003D] (9D) if (classOfIs(VAR_ACTIVE_OBJECT2,128)) {
+[0042] (42)   startScript(31);
+[0044] (18) } else {
+[0047] (D8)   printEgo("It doesn't want that.");
+[005B] (**) }
+[005B] (00) stopObjectCode();
+END

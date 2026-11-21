@@ -1,0 +1,87 @@
+# Decompiled with descumm -2
+# Source: LFv2_0031\SCv2_0078
+
+[0000] (40) cutscene();
+[0001] (DB) setBitVar(1470,VAR_EGO,Var[235]);
+[0006] (DB) setBitVar(1505,VAR_EGO,Var[234]);
+[000B] (08) if (Var[166] != 4) {
+[0011] (B2)   setCameraAt(VAR_CAMERA_POS_X);
+[0013] (AD)   putActorInRoom(VAR_EGO,0);
+[0016] (**) }
+[0016] (1A) Var[66] = 14;
+[001A] (90) VAR_RESULT = getObjectOwner(Var[66]);
+[001D] (C8) if (VAR_RESULT == VAR_EGO) {
+[0022] (08)   if (Var[66] != 65) {
+[0028] (A9)     setOwnerOf(Var[66],0);
+[002B] (48)     if (Var[66] == 49) {
+[0031] (67)       clearState04(49);
+[0034] (**)     }
+[0034] (48)     if (Var[66] == 71) {
+[003A] (67)       clearState04(71);
+[003D] (**)     }
+[003D] (**)   }
+[003D] (**) }
+[003D] (46) Var[66]++;
+[003F] (44) unless (Var[66] > 83) goto 001A;
+[0045] (48) if (VAR_ROOM == 31) {
+[004B] (19)   doSentence(254,499,0,1);
+[0052] (19)   doSentence(254,501,0,1);
+[0059] (19)   doSentence(254,504,0,1);
+[0060] (19)   doSentence(254,498,0,1);
+[0067] (2D)   putActorInRoom(5,0);
+[006A] (**) }
+[006A] (14) print(255,"\x06\x00 \x02");
+[0071] (48) if (Var[166] == 1) {
+[0077] (14)   print(255,"fell to his death!");
+[0089] (48) } else if (Var[166] == 2) {
+[0092] (14)   print(255,"drowned.");
+[009D] (48) } else if (Var[166] == 3) {
+[00A6] (14)   print(255,"suffocated from lack of oxygen!");
+[00C4] (48) } else if (Var[166] == 4) {
+[00CD] (14)   print(255,"spent his remaining years in jail\x01for crimes against the Nepalese flag.");
+[010D] (48) } else if (Var[166] == 5) {
+[0116] (14)   print(255,"was viciously ripped to shreds by\x01The Guardian of the Sphinx!");
+[014D] (48) } else if (Var[166] == 6) {
+[0156] (14)   print(255,"died a horrible death as his blood\x01boiled away.");
+[0181] (18)   /* goto 0184; */
+[0184] (**) }
+[0184] (AE) waitForMessage();
+[0185] (6F) if (getState04(169)) {
+[018A] (1A)   VAR_EGO = 1;
+[018E] (B1)   VAR_RESULT = getBitVar(1505,VAR_EGO);
+[0193] (A8)   if (VAR_RESULT) {
+[0197] (18)     goto 0218;
+[019A] (**)   }
+[019A] (46)   VAR_EGO++;
+[019C] (44)   unless (VAR_EGO > 4) goto 018E;
+[01A2] (1A)   VAR_EGO = 1;
+[01A6] (B1)   VAR_RESULT = getBitVar(1470,VAR_EGO);
+[01AB] (28)   if (!VAR_RESULT) {
+[01AF] (9A)     Var[199] = Var[235];
+[01B2] (42)     startScript(19);
+[01B4] (D2)     actorFollowCamera(VAR_EGO);
+[01B6] (18)     goto 0218;
+[01B9] (**)   }
+[01B9] (46)   VAR_EGO++;
+[01BB] (44)   unless (VAR_EGO > 4) goto 01A6;
+[01C1] (**) }
+[01C1] (58) beginOverride();
+[01C2] (18) goto 0214;
+[01C5] (0C) loadSound(103)
+[01C8] (0C) lockSound(103)
+[01CB] (0C) loadSound(104)
+[01CE] (0C) lockSound(104)
+[01D1] (02) startMusic(103);
+[01D3] (42) startScript(128);
+[01D5] (14) print(255,"            THE GAME IS OVER");
+[01EB] (2E) delay(300);
+[01EF] (14) print(255,"      Press ESCAPE to start again.");
+[020D] (2E) delay(300);
+[0211] (18) goto 01D5;
+[0214] (62) stopScript(128);
+[0216] (20) stopMusic();
+[0217] (98) restart();
+[0218] (C0) endCutscene();
+[0219] (60) cursorCommand(247, 1);
+[021C] (A0) stopObjectCode();
+END

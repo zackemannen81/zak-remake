@@ -1,0 +1,26 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0334
+Events:
+   D - 0019
+  FD - 0039
+[0019] (4F) if (getState08(333)) {
+[001E] (19)   doSentence(11,333,0,0);
+[0025] (18) } else {
+[0028] (D8)   printEgo("I can't reach it.");
+[0038] (**) }
+[0038] (00) stopObjectCode();
+[0039] (9A) VAR_ACTIVE_OBJECT1 = Var[234];
+[003C] (46) Var[56]++;
+[003E] (80) breakHere();
+[003F] (11) animateActor(1,32);
+[0042] (11) animateActor(1,28);
+[0045] (5B) setBitVar(1440,1,Var[235]);
+[004A] (2E) delay(60);
+[004E] (D8) printEgo("Ouch!");
+[0055] (2E) delay(120);
+[0059] (11) animateActor(1,6);
+[005C] (11) animateActor(1,10);
+[005F] (11) animateActor(1,16);
+[0062] (5B) setBitVar(1440,1,Var[234]);
+[0067] (19) doSentence(253,343,0,1);
+[006E] (00) stopObjectCode();
+END

@@ -1,0 +1,8 @@
+Events:
+   B - 0025
+   C - 0022
+[0022] (42) startScript(61);
+[0024] (00) stopObjectCode();
+[0025] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002A] (00) stopObjectCode();
+END

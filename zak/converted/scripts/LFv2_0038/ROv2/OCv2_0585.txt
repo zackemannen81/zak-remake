@@ -1,0 +1,65 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0038/ROv2/OCv2_0585
+Events:
+  FD - 0013
+[0013] (9A) Var[203] = Var[235];
+[0016] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[0019] (80) breakHere();
+[001A] (48) if (VAR_ACTIVE_VERB == 3) {
+[0020] (48)   if (VAR_ACTIVE_OBJECT2 == 10) {
+[0026] (BB)     waitForActor(VAR_EGO);
+[0028] (B4)     VAR_RESULT = getDist(VAR_EGO,10);
+[002D] (44)     if (VAR_RESULT > 4) {
+[0033] (8D)       walkActorToActor(VAR_EGO,10,4);
+[0037] (80)       breakHere();
+[0038] (18)       goto 0020;
+[003B] (**)     }
+[003B] (C9)     faceActor(VAR_ACTIVE_OBJECT2,VAR_EGO);
+[003E] (89)     faceActor(VAR_EGO,10);
+[0041] (00)     stopObjectCode();
+[0042] (48)     if (VAR_ACTIVE_OBJECT1 == 44) {
+[0048] (42)       startScript(70);
+[004A] (18)       goto 01C5;
+[004D] (48)     } else if (VAR_ACTIVE_OBJECT1 == 81) {
+[0056] (10)       VAR_RESULT = getObjectOwner(44);
+[005A] (28)       if (!VAR_RESULT) {
+[005E] (42)         startScript(45);
+[0060] (18)         goto 01C5;
+[0063] (18)       } else {
+[0066] (14)         print(10,"I could help you, but I won't.");
+[0081] (**)       }
+[0081] (48)     } else if (VAR_ACTIVE_OBJECT1 == 33) {
+[008A] (18)       goto 0096;
+[008D] (48)     } else if (VAR_ACTIVE_OBJECT1 == 56) {
+[0096] (14)       print(10,"First, make this shard whole again.\x01Find the place and words of power.");
+[00D4] (48)     } else if (VAR_ACTIVE_OBJECT1 == 55) {
+[00DD] (14)       print(10,"That's not my department. See my friend,\x01the Guru.");
+[010B] (48)     } else if (VAR_ACTIVE_OBJECT1 == 45) {
+[0114] (14)       print(10,"I helped research that book!");
+[012F] (48)     } else if (VAR_ACTIVE_OBJECT1 == 79) {
+[0138] (14)       print(10,"Yes, the words of power!");
+[014F] (9D)     } else if (classOfIs(VAR_ACTIVE_OBJECT1,128)) {
+[0157] (10)       VAR_RESULT = getObjectOwner(44);
+[015B] (A8)       if (VAR_RESULT) {
+[015F] (14)         print(10,"I'd rather make a trade.");
+[0176] (18)       } else {
+[0179] (9A)         Var[14] = VAR_EGO;
+[017C] (5A)         Var[14] += 61;
+[0180] (38)         if (Var[14] >= 1000) {
+[0186] (9A)           Var[14] = VAR_EGO;
+[0189] (5A)           Var[14] += 61;
+[018D] (6A)           Var[Var[14]] -= 1000;
+[0191] (42)           startScript(70);
+[0193] (18)           goto 01C5;
+[0196] (**)         }
+[0196] (14)         print(10,"You don't have enough.");
+[01AC] (**)       }
+[01AC] (18)     } else {
+[01AF] (14)       print(10,"No, thank you.");
+[01BE] (**)     }
+[01BE] (19)     doSentence(253,587,0,1);
+[01C5] (9A)     VAR_ACTIVE_VERB = Var[234];
+[01C8] (**)   }
+[01C8] (**) }
+[01C8] (18) goto 0019;
+[01CB] (00) stopObjectCode();
+END

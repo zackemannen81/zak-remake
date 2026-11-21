@@ -1,0 +1,8 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (B4) VAR_RESULT = getDist(VAR_EGO,118);
+[0019] (44) unless (VAR_RESULT > 0) goto 0013;
+[001F] (19) doSentence(253,128,0,1);
+[0026] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0024/ROv2/OCv2_0413
+Events:
+   9 - 001E
+[001E] (48) if (VAR_ROOM == 155) {
+[0024] (D8)   printEgo("I can't move it.");
+[0033] (18) } else {
+[0036] (AF)   if (!getState04(VAR_ACTIVE_OBJECT1)) {
+[003A] (A7)     setState04(VAR_ACTIVE_OBJECT1);
+[003C] (D8)     printEgo("Nothing happens when I push here,\x01maybe if I push its feet.");
+[006F] (AE)     waitForMessage();
+[0070] (**)   }
+[0070] (19)   doSentence(9,414,0,0);
+[0077] (**) }
+[0077] (00) stopObjectCode();
+END

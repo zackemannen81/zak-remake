@@ -1,0 +1,19 @@
+Events:
+   4 - 0021
+   5 - 002B
+   9 - 0035
+   A - 0035
+   B - 0035
+[0021] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0023] (19) doSentence(253,560,0,1);
+[002A] (00) stopObjectCode();
+[002B] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[002D] (19) doSentence(253,560,0,1);
+[0034] (00) stopObjectCode();
+[0035] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 003E;
+[0039] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[003B] (18) goto 0040;
+[003E] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0040] (19) doSentence(253,560,0,1);
+[0047] (00) stopObjectCode();
+END

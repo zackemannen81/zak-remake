@@ -1,0 +1,32 @@
+Events:
+   3 - 0066
+   6 - 0023
+   7 - 0066
+  11 - 001C
+[001C] (1A) Var[47] = 15;
+[0020] (42) startScript(24);
+[0022] (00) stopObjectCode();
+[0023] (9A) Var[14] = VAR_EGO;
+[0026] (5A) Var[14] += 166;
+[002A] (48) unless (Var[14] == 64) goto 0033;
+[0030] (18) goto 0040;
+[0033] (9A) Var[14] = VAR_EGO;
+[0036] (5A) Var[14] += 166;
+[003A] (48) unless (Var[14] == 56) goto 0058;
+[0040] (D8) printEgo("Gotta remove my fishbowl.");
+[0058] (9A) Var[14] = VAR_EGO;
+[005B] (5A) Var[14] += 166;
+[005F] (0A) Var[Var[14]] = 48;
+[0063] (42) startScript(150);
+[0065] (00) stopObjectCode();
+[0066] (9A) Var[14] = VAR_EGO;
+[0069] (5A) Var[14] += 166;
+[006D] (48) unless (Var[14] == 48) goto 0080;
+[0073] (9A) Var[14] = VAR_EGO;
+[0076] (5A) Var[14] += 166;
+[007A] (0A) Var[Var[14]] = 52;
+[007E] (42) startScript(150);
+[0080] (48) unless (VAR_ACTIVE_VERB == 3) goto 0088;
+[0086] (42) startScript(20);
+[0088] (00) stopObjectCode();
+END

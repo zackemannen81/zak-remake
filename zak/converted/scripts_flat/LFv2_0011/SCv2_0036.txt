@@ -1,0 +1,29 @@
+[0000] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0006;
+[0004] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0006] (4F) unless (getState08(241)) goto 0022;
+[000B] (D8) printEgo("It's already cooked!");
+[001F] (18) goto 0086;
+[0022] (4F) unless (getState08(262)) goto 004D;
+[0027] (D8) printEgo("I shouldn't turn on an empty microwave.");
+[004A] (18) goto 0086;
+[004D] (0C) loadSound(19)
+[0050] (0C) loadSound(21)
+[0053] (0C) loadSound(20)
+[0056] (07) setState08(261);
+[0059] (80) breakHere();
+[005A] (1C) startSound(19);
+[005C] (2E) delay(600);
+[0060] (07) setState08(262);
+[0063] (07) setState08(241);
+[0066] (29) setOwnerOf(22,0);
+[006A] (48) unless (VAR_ROOM == 11) goto 0072;
+[0070] (1C) startSound(21);
+[0072] (2E) delay(300);
+[0076] (47) clearState08(261);
+[0079] (80) breakHere();
+[007A] (3C) stopSound(19);
+[007C] (48) unless (VAR_ROOM == 11) goto 0086;
+[0082] (1C) startSound(42);
+[0084] (1C) startSound(20);
+[0086] (A0) stopObjectCode();
+END

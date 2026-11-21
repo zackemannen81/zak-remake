@@ -1,0 +1,17 @@
+Events:
+  FD - 0024
+[0024] (1C) startSound(19);
+[0026] (30) setBoxFlags(1,96);
+[0029] (2F) unless (!getState04(331)) goto 0031;
+[002E] (18) goto 0051;
+[0031] (80) breakHere();
+[0032] (4F) unless (getState08(332)) goto 0045;
+[0037] (19) doSentence(253,344,0,1);
+[003E] (A8) unless (Var[66]) goto 0045;
+[0042] (18) goto 0048;
+[0045] (18) goto 0031;
+[0048] (68) VAR_RESULT = isScriptRunning(93);
+[004B] (28) unless (!VAR_RESULT) goto 0051;
+[004F] (42) startScript(93);
+[0051] (00) stopObjectCode();
+END

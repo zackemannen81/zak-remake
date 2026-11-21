@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0006/ROv2/OCv2_0179
+Events:
+   9 - 0021
+   A - 0021
+   E - 0021
+[0021] (48) if (VAR_EGO == 2) {
+[0027] (D8)   printEgo("No, it's VERY fragile.");
+[003C] (18) } else {
+[003F] (91)   animateActor(VAR_EGO,246);
+[0042] (D8)   printEgo("I'm NOT touching it!");
+[0055] (**) }
+[0055] (00) stopObjectCode();
+END

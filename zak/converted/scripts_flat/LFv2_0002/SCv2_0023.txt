@@ -1,0 +1,28 @@
+[0000] (48) unless (VAR_ROOM == 129) goto 003D;
+[0006] (0F) unless (!getState08(298)) goto 0038;
+[000B] (1C) startSound(25);
+[000D] (07) setState08(298);
+[0010] (67) clearState04(298);
+[0013] (2E) delay(120);
+[0017] (D8) printEgo("I guess I chose the right channel!");
+[0035] (18) goto 003A;
+[0038] (42) startScript(3);
+[003A] (18) goto 00BF;
+[003D] (48) unless (VAR_ROOM == 2) goto 00A5;
+[0043] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[0046] (78) unless (VAR_RESULT < 45) goto 0089;
+[004C] (4F) unless (getState08(118)) goto 006B;
+[0051] (6F) unless (getState04(21)) goto 0063;
+[0056] (67) clearState04(21);
+[0059] (19) doSentence(253,118,0,1);
+[0060] (18) goto 0068;
+[0063] (27) setState04(21);
+[0066] (42) startScript(102);
+[0068] (18) goto 0086;
+[006B] (D8) printEgo("I wonder why it's not working?");
+[0086] (18) goto 00A2;
+[0089] (D8) printEgo("I'm too far away from the TV.");
+[00A2] (18) goto 00BF;
+[00A5] (D8) printEgo("It doesn't seem to work here.");
+[00BF] (A0) stopObjectCode();
+END

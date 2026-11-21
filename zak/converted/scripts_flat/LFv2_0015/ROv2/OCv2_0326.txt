@@ -1,0 +1,35 @@
+Events:
+   9 - 001D
+   B - 001D
+  FD - 002D
+[001D] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 002C;
+[0021] (1C) startSound(27);
+[0023] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0025] (19) doSentence(253,326,0,1);
+[002C] (00) stopObjectCode();
+[002D] (9A) Var[52] = VAR_EGO;
+[0030] (80) breakHere();
+[0031] (0F) unless (!getState08(58)) goto 0080;
+[0036] (19) doSentence(254,313,0,1);
+[003D] (07) setState08(313);
+[0040] (3C) stopSound(70);
+[0042] (80) breakHere();
+[0043] (1C) startSound(71);
+[0045] (80) breakHere();
+[0046] (7C) VAR_RESULT = isSoundRunning(71);
+[0049] (28) unless (!VAR_RESULT) goto 0045;
+[004D] (1C) startSound(111);
+[004F] (07) setState08(312);
+[0052] (19) doSentence(253,312,0,1);
+[0059] (80) breakHere();
+[005A] (B4) VAR_RESULT = getDist(Var[52],58);
+[005F] (78) unless (VAR_RESULT < 3) goto 0068;
+[0065] (18) goto 006C;
+[0068] (A8) unless (Var[53]) goto 0059;
+[006C] (0F) unless (!getState08(58)) goto 0080;
+[0071] (1C) startSound(111);
+[0073] (47) clearState08(326);
+[0076] (47) clearState08(312);
+[0079] (19) doSentence(250,313,0,1);
+[0080] (00) stopObjectCode();
+END

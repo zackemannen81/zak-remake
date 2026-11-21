@@ -1,0 +1,10 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0036/ROv2/OCv2_0566
+Events:
+   D - 001A
+[001A] (48) if (VAR_ROOM == 187) {
+[0020] (E4)   loadRoomWithEgo(Var[54],Var[55],55,48);
+[0025] (18) } else {
+[0028] (E4)   loadRoomWithEgo(Var[50],Var[51],255,255);
+[002D] (**) }
+[002D] (00) stopObjectCode();
+END

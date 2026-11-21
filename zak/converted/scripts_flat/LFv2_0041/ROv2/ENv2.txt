@@ -1,0 +1,11 @@
+[0000] (70) lights(11,0,0);
+[0004] (7A) VerbOps(New-13(13,19,2,0,"Swim to@@"));
+[0014] (60) cursorCommand(0, 0);
+[0017] (19) doSentence(250,615,0,1);
+[001E] (13) ActorOps(5,[Costume(13)]);
+[0022] (1F) unless (getState02(614)) goto 0033;
+[0027] (0F) unless (!getState08(78)) goto 0033;
+[002C] (19) doSentence(250,606,0,1);
+[0033] (19) doSentence(250,614,0,1);
+[003A] (00) stopObjectCode();
+END

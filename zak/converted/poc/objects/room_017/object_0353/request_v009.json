@@ -1,0 +1,12 @@
+{
+  "room": 17,
+  "object_id": 353,
+  "prompt": "Premium AAA Unreal Engine 5 recreation of this EXACT tightly cropped YAK MOUTH animation patch. White horizontal TEETH with black gaps, brown muzzle and red/pink tongue, exact source pose. Only the mouth crop at x328,y88 in the original room; no full yak, no heart icon, no goblet or trophy. Preserve exact teeth/tongue placement, complete source background and image proportions. Realistic fur, teeth and moist tongue, refined lighting. No new border or surrounding scene.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_017\\object_0353\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_017\\object_0353\\state_v009.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_017\\object_0353\\request_v009.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-b1f6b2f2-13c0-4dc5-aa23-20cd4b2bd6ba.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

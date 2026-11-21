@@ -1,0 +1,5 @@
+[0000] (F0) lights(Var[234],0,0);
+[0004] (2F) unless (!getState04(174)) goto 000D;
+[0009] (70) lights(11,0,0);
+[000D] (00) stopObjectCode();
+END

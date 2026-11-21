@@ -1,0 +1,17 @@
+Events:
+  FD - 0013
+[0013] (16) Var[66] = getRandomNr(5);
+[0016] (5A) Var[66] += 2;
+[001A] (9A) Var[47] = Var[234];
+[001D] (11) animateActor(10,12);
+[0020] (80) breakHere();
+[0021] (80) breakHere();
+[0022] (11) animateActor(10,16);
+[0025] (80) breakHere();
+[0026] (80) breakHere();
+[0027] (46) Var[47]++;
+[0029] (C4) unless (Var[47] > Var[66]) goto 001D;
+[002E] (2E) delay(30);
+[0032] (18) goto 0013;
+[0035] (00) stopObjectCode();
+END

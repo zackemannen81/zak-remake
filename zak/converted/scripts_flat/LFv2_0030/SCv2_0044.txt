@@ -1,0 +1,14 @@
+[0000] (48) unless (Var[158] == 49) goto 0068;
+[0006] (27) setState04(495);
+[0009] (40) cutscene();
+[000A] (58) beginOverride();
+[000B] (18) goto 0064;
+[000E] (2E) delay(120);
+[0012] (91) animateActor(VAR_EGO,246);
+[0015] (BB) waitForActor(VAR_EGO);
+[0017] (D8) printEgo("ZWOW! Darkeen tones! Razor's a wayhot\x01jamster!\x03She blows poodles over old noizglunk!");
+[0063] (AE) waitForMessage();
+[0064] (14) print(255,"");
+[0067] (C0) endCutscene();
+[0068] (A0) stopObjectCode();
+END

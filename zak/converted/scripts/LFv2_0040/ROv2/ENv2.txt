@@ -1,0 +1,49 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0040/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (9A) Var[199] = Var[234];
+[0007] (19) doSentence(253,604,0,1);
+[000E] (48) if (VAR_ROOM == 131) {
+[0014] (67)   clearState04(77);
+[0017] (2F)   if (!getState04(602)) {
+[001C] (27)     setState04(602);
+[001F] (10)     VAR_RESULT = getObjectOwner(77);
+[0023] (48)     if (VAR_RESULT == 15) {
+[0029] (50)       pickupObject(77);
+[002C] (**)     }
+[002C] (**)   }
+[002C] (13)   ActorOps(11,[Costume(10)]);
+[0030] (13)   ActorOps(11,[Sound(6)]);
+[0034] (13)   ActorOps(11,[TalkColor(12)]);
+[0038] (53)   ActorOps(11,[Name("pilot")]);
+[0042] (2D)   putActorInRoom(11,131);
+[0045] (01)   putActor(11,62,48);
+[0049] (3D)   setActorElevation(11,0);
+[004C] (11)   animateActor(11,249);
+[004F] (0C)   loadCostume(19)
+[0052] (13)   ActorOps(12,[Costume(19)]);
+[0056] (0C)   loadScript(50)
+[0059] (19)   doSentence(250,598,0,1);
+[0060] (33)   RoomScroll(60,60);
+[0064] (9A)   Var[233] = VAR_EGO;
+[0067] (DB)   setBitVar(1440,Var[233],Var[235]);
+[006C] (1C)   startSound(41);
+[006E] (68)   VAR_RESULT = isScriptRunning(69);
+[0071] (28)   if (!VAR_RESULT) {
+[0075] (42)     startScript(69);
+[0077] (**)   }
+[0077] (18) } else {
+[007A] (71)   VAR_RESULT = getActorCostume(1);
+[007D] (48)   if (VAR_RESULT == 39) {
+[0083] (18)   } else {
+[0086] (71)     VAR_RESULT = getActorCostume(1);
+[0089] (48)     unless (VAR_RESULT == 9) goto 00A2;
+[008F] (**)   }
+[008F] (6F)   if (getState04(77)) {
+[0094] (11)     animateActor(1,72);
+[0097] (18)   } else {
+[009A] (11)     animateActor(1,76);
+[009D] (**)   }
+[009D] (5B)   setBitVar(1441,0,Var[235]);
+[00A2] (**) }
+[00A2] (00) stopObjectCode();
+END

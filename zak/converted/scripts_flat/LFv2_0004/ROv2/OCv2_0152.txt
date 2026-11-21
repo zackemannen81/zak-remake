@@ -1,0 +1,27 @@
+Events:
+   4 - 002C
+   5 - 003D
+   B - 0074
+   C - 0053
+  FD - 007C
+[002C] (D8) printEgo("It's already on.");
+[003C] (00) stopObjectCode();
+[003D] (D8) printEgo("There's no off switch.");
+[0052] (00) stopObjectCode();
+[0053] (D8) printEgo("It lists what everyone in town owes.");
+[0073] (00) stopObjectCode();
+[0074] (19) doSentence(253,153,0,1);
+[007B] (00) stopObjectCode();
+[007C] (1A) Var[47] = 100;
+[0080] (80) breakHere();
+[0081] (C6) Var[47]--;
+[0083] (28) unless (!Var[47]) goto 00A9;
+[0087] (AE) waitForMessage();
+[0088] (0F) unless (!getState08(159)) goto 009C;
+[008D] (14) print(7,"Tum de dum.");
+[0099] (18) goto 00A5;
+[009C] (14) print(7,"Hello?");
+[00A5] (1A) Var[47] = 100;
+[00A9] (18) goto 0080;
+[00AC] (00) stopObjectCode();
+END

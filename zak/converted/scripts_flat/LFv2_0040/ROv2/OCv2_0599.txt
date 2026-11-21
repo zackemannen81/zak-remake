@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (1C) startSound(41);
+[0015] (16) Var[50] = getRandomNr(60);
+[0018] (2B) delayVariable(Var[50]);
+[001A] (3C) stopSound(41);
+[001C] (16) Var[50] = getRandomNr(60);
+[001F] (2B) delayVariable(Var[50]);
+[0021] (18) goto 0013;
+[0024] (00) stopObjectCode();
+END

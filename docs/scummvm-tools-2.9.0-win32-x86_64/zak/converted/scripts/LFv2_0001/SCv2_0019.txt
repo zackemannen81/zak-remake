@@ -1,0 +1,58 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0019
+
+[0000] (7A) VerbOps(New-9(0,19,0,0,"Push@@"));
+[000D] (7A) VerbOps(New-10(0,20,5,0,"Pull@@"));
+[001A] (7A) VerbOps(New-3(0,21,10,4,"Give@@"));
+[0027] (7A) VerbOps(New-1(6,19,1,0,"Open@@@"));
+[0035] (7A) VerbOps(New-2(6,20,6,0,"Close@@"));
+[0043] (7A) VerbOps(New-12(6,21,11,0,"Read@@@"));
+[0051] (7A) VerbOps(New-13(13,19,2,0,"Walk to@@"));
+[0061] (7A) VerbOps(New-14(13,20,7,0,"Pick up@@"));
+[0071] (7A) VerbOps(New-15(13,21,12,0,"What is@@"));
+[0081] (7A) VerbOps(New-6(22,19,3,0,"Put on@@@@"));
+[0092] (7A) VerbOps(New-7(22,20,8,0,"Take off@@"));
+[00A3] (7A) VerbOps(New-11(22,21,13,255,"Use@@@@@@@"));
+[00B4] (7A) VerbOps(New-4(32,19,4,0,"Turn on@"));
+[00C3] (7A) VerbOps(New-5(32,20,9,0,"Turn off"));
+[00D2] (7A) VerbOps(Delete(14));
+[00D5] (A8) if (Var[199]) {
+[00D9] (6F)   if (getState04(169)) {
+[00DE] (7A)     VerbOps(New-45(32,21,14,0,"Switch@@"));
+[00ED] (**)   }
+[00ED] (**) }
+[00ED] (31) VAR_RESULT = getBitVar(1445,0);
+[00F2] (A8) if (VAR_RESULT) {
+[00F6] (19)   doSentence(253,183,0,1);
+[00FD] (**) }
+[00FD] (68) VAR_RESULT = isScriptRunning(49);
+[0100] (A8) if (VAR_RESULT) {
+[0104] (7A)   VerbOps(New-30(32,21,14,0,"To Zak@@"));
+[0113] (48)   if (VAR_EGO == 6) {
+[0119] (7A)     VerbOps(New-13(13,19,2,0,"Fly to@@@"));
+[0129] (**)   }
+[0129] (**) }
+[0129] (48) if (VAR_EGO == 1) {
+[012F] (9A)   Var[66] = Var[234];
+[0132] (B1)   VAR_RESULT = getBitVar(1513,Var[66]);
+[0137] (A8)   if (VAR_RESULT) {
+[013B] (FA)     VerbOps(Delete(Var[66]););
+[013E] (**)   }
+[013E] (46)   Var[66]++;
+[0140] (44)   unless (Var[66] > 13) goto 0132;
+[0146] (**) }
+[0146] (48) if (VAR_EGO == 2) {
+[014C] (9A)   Var[66] = Var[234];
+[014F] (B1)   VAR_RESULT = getBitVar(1527,Var[66]);
+[0154] (A8)   if (VAR_RESULT) {
+[0158] (FA)     VerbOps(Delete(Var[66]););
+[015B] (**)   }
+[015B] (46)   Var[66]++;
+[015D] (44)   unless (Var[66] > 13) goto 014F;
+[0163] (**) }
+[0163] (1A) VAR_BACKUP_VERB = 13;
+[0167] (19) doSentence(RESET);
+[0169] (AC) drawSentence();
+[016A] (60) cursorCommand(0, 0);
+[016D] (A0) stopObjectCode();
+END

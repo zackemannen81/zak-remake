@@ -1,0 +1,32 @@
+Events:
+  FD - 0013
+[0013] (1C) startSound(82);
+[0015] (2E) delay(30);
+[0019] (AE) waitForMessage();
+[001A] (D8) printEgo("Uh oh, I think it's waking up!");
+[0034] (2E) delay(300);
+[0038] (60) cursorCommand(15, 2);
+[003B] (9A) Var[249] = Var[234];
+[003E] (C3) Var[66] = getActorX(VAR_EGO);
+[0041] (DE) walkActorTo(VAR_EGO,Var[66],63);
+[0045] (D8) printEgo("STAY AWAY!");
+[0050] (2E) delay(45);
+[0054] (D8) printEgo("HELP!");
+[005B] (2E) delay(45);
+[005F] (D8) printEgo("ARRRRGHHHH!");
+[006C] (93) ActorOps(VAR_EGO,[Costume(0)]);
+[0070] (2E) delay(120);
+[0074] (14) print(255,"");
+[0077] (2E) delay(120);
+[007B] (1A) Var[44] = 2;
+[007F] (48) unless (VAR_EGO == 2) goto 0089;
+[0085] (1A) Var[44] = 1;
+[0089] (83) VAR_RESULT = getActorRoom(Var[44]);
+[008C] (C8) unless (VAR_RESULT == VAR_ROOM) goto 009B;
+[0091] (AD) putActorInRoom(Var[44],219);
+[0094] (81) putActor(Var[44],21,44);
+[0098] (91) animateActor(Var[44],246);
+[009B] (1A) Var[166] = 5;
+[009F] (42) startScript(78);
+[00A1] (00) stopObjectCode();
+END

@@ -1,0 +1,8 @@
+Events:
+   D - 001D
+[001D] (0F) unless (!getState08(643)) goto 0036;
+[0022] (D8) printEgo("I can't get there!");
+[0033] (18) goto 003C;
+[0036] (24) loadRoomWithEgo(652,134,62,12);
+[003C] (00) stopObjectCode();
+END

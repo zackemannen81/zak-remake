@@ -1,0 +1,12 @@
+[0000] (9A) Var[154] = Var[234];
+[0003] (3C) stopSound(70);
+[0005] (3C) stopSound(71);
+[0007] (0F) unless (!getState08(58)) goto 0012;
+[000C] (47) clearState08(312);
+[000F] (47) clearState08(326);
+[0012] (30) setBoxFlags(0,0);
+[0015] (30) setBoxFlags(1,0);
+[0018] (30) setBoxFlags(5,0);
+[001B] (5B) setBitVar(1545,0,Var[234]);
+[0020] (00) stopObjectCode();
+END

@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/OCv2_0357
+Events:
+  FD - 0013
+[0013] (18) goto 001B;
+[0016] (16) Var[66] = getRandomNr(120);
+[0019] (2B) delayVariable(Var[66]);
+[001B] (05) drawObject(357,255,255);
+[0020] (16) Var[66] = getRandomNr(120);
+[0023] (2B) delayVariable(Var[66]);
+[0025] (05) drawObject(358,255,255);
+[002A] (18) goto 0016;
+[002D] (00) stopObjectCode();
+END

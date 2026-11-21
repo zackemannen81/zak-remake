@@ -1,0 +1,11 @@
+{
+  "room": 6,
+  "object_id": 32,
+  "prompt": "Create ONLY close-up state patch in reference 1. Reference 2 is original room CONTEXT only; NEVER output whole room. Exact crop x=224, y=88, width=16, height=16. An empty part of the library desk after CashCard removal: green desk blotter surface and grey desk trim. Do not add a green electronic button, ports or a card if absent from target. Preserve exact source state, silhouette, perspective and palette. Premium polished AAA Unreal Engine 5 materials and lighting, realistic physical surfaces. Tight opaque patch aspect 16:16, no new props/text. For extreme aspect use centered letterbox/pillarbox preserving full target aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_006\\object_0032\\frame_000.png",
+    "C:\\code\\zac\\docs\\scummvm-tools-2.9.0-win32-x86_64\\zak\\converted\\images\\backgrounds\\LFv2_0006.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-87572df2-1c33-49bb-85f3-d08ab0df10dd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "semantic correction; review pending"
+}

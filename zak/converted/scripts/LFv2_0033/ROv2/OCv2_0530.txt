@@ -1,0 +1,54 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0033/ROv2/OCv2_0530
+Events:
+   B - 0019
+  FD - 003C
+[0019] (48) if (VAR_ACTIVE_OBJECT2 == 70) {
+[001F] (9E)   walkActorTo(VAR_EGO,30,56);
+[0023] (BB)   waitForActor(VAR_EGO);
+[0025] (91)   animateActor(VAR_EGO,247);
+[0028] (80)   breakHere();
+[0029] (29)   setOwnerOf(70,14);
+[002D] (30)   setBoxFlags(10,5);
+[0030] (07)   setState08(536);
+[0033] (17)   clearState02(536);
+[0036] (18) } else {
+[0039] (42)   startScript(3);
+[003B] (**) }
+[003B] (00) stopObjectCode();
+[003C] (9A) Var[52] = VAR_ACTIVE_OBJECT1;
+[003F] (87) setState08(Var[52]);
+[0041] (80) breakHere();
+[0042] (80) breakHere();
+[0043] (C7) clearState08(Var[52]);
+[0045] (80) breakHere();
+[0046] (9A) Var[14] = Var[53];
+[0049] (5A) Var[14] += 131;
+[004D] (88) if (Var[14] != Var[52]) {
+[0052] (9A)   Var[53] = Var[234];
+[0055] (9A)   Var[14] = Var[53];
+[0058] (5A)   Var[14] += 131;
+[005C] (88)   if (Var[14] != Var[52]) {
+[0061] (18)     goto 009B;
+[0064] (**)   }
+[0064] (**) }
+[0064] (46) Var[53]++;
+[0066] (48) if (Var[53] == 6) {
+[006C] (2E)   delay(60);
+[0070] (1C)   startSound(48);
+[0072] (07)   setState08(530);
+[0075] (57)   setState02(530);
+[0078] (07)   setState08(441);
+[007B] (4F)   if (getState08(536)) {
+[0080] (47)     clearState08(536);
+[0083] (57)     setState02(536);
+[0086] (07)     setState08(537);
+[0089] (17)     clearState02(537);
+[008C] (**)   }
+[008C] (30)   setBoxFlags(9,0);
+[008F] (30)   setBoxFlags(12,0);
+[0092] (57)   setState02(531);
+[0095] (57)   setState02(532);
+[0098] (57)   setState02(533);
+[009B] (**) }
+[009B] (00) stopObjectCode();
+END

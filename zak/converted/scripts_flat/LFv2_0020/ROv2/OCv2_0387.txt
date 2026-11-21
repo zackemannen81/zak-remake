@@ -1,0 +1,7 @@
+Events:
+   D - 0016
+[0016] (AF) unless (!getState04(VAR_ACTIVE_OBJECT1)) goto 001D;
+[001A] (27) setState04(388);
+[001D] (24) loadRoomWithEgo(398,139,255,255);
+[0023] (00) stopObjectCode();
+END

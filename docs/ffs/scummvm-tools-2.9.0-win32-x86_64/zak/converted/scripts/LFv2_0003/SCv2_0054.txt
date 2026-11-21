@@ -1,0 +1,48 @@
+# Decompiled with descumm -2
+# Source: LFv2_0003\SCv2_0054
+
+[0000] (80) breakHere();
+[0001] (48) if (VAR_ROOM == 3) {
+[0007] (60)   cursorCommand(15, 2);
+[000A] (80)   breakHere();
+[000B] (7C)   VAR_RESULT = isSoundRunning(84);
+[000E] (28)   unless (!VAR_RESULT) goto 000A;
+[0012] (1C)   startSound(47);
+[0014] (80)   breakHere();
+[0015] (14)   print(255,"All right, let's go!");
+[0029] (19)   doSentence(253,148,0,1);
+[0030] (2E)   delay(40);
+[0034] (47)   clearState08(143);
+[0037] (1C)   startSound(65);
+[0039] (30)   setBoxFlags(6,64);
+[003C] (2E)   delay(180);
+[0040] (14)   print(255,"");
+[0043] (19)   doSentence(254,148,0,1);
+[004A] (60)   cursorCommand(247, 1);
+[004D] (**) }
+[004D] (42) startScript(63);
+[004F] (31) VAR_RESULT = getBitVar(1464,1);
+[0054] (A8) if (VAR_RESULT) {
+[0058] (2D)   putActorInRoom(1,145);
+[005B] (01)   putActor(1,33,60);
+[005F] (11)   animateActor(1,248);
+[0062] (5B)   setBitVar(1464,1,Var[234]);
+[0067] (5B)   setBitVar(1440,1,Var[234]);
+[006C] (**) }
+[006C] (31) VAR_RESULT = getBitVar(1464,2);
+[0071] (A8) if (VAR_RESULT) {
+[0075] (2D)   putActorInRoom(2,145);
+[0078] (01)   putActor(2,36,60);
+[007C] (11)   animateActor(2,248);
+[007F] (5B)   setBitVar(1464,2,Var[234]);
+[0084] (5B)   setBitVar(1440,2,Var[234]);
+[0089] (**) }
+[0089] (D2) actorFollowCamera(VAR_EGO);
+[008B] (07) setState08(166);
+[008E] (57) setState02(166);
+[0091] (07) setState08(142);
+[0094] (57) setState02(142);
+[0097] (57) setState02(144);
+[009A] (57) setState02(150);
+[009D] (A0) stopObjectCode();
+END

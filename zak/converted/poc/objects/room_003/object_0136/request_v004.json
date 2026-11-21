@@ -1,0 +1,11 @@
+{
+  "room": 3,
+  "object_id": 136,
+  "prompt": "Create ONLY close-up state patch in reference 1. Reference 2 is original room CONTEXT only; NEVER output whole room. Exact crop x=120, y=48, width=48, height=64. A stale yellow/brown loaf of BREAD falling/hovering in front of the bakery red-brick wall and cracked grey pavement, exact source pose. Not a pendant or jewel. Preserve exact source state, silhouette, perspective and palette. Premium polished AAA Unreal Engine 5 materials and lighting, realistic physical surfaces. Tight opaque patch aspect 48:64, no new props/text. For extreme aspect use centered letterbox/pillarbox preserving full target aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0136\\frame_000.png",
+    "C:\\code\\zac\\docs\\scummvm-tools-2.9.0-win32-x86_64\\zak\\converted\\images\\backgrounds\\LFv2_0003.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-7c550cbb-6267-4cf3-aac9-ff17477da818.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "semantic correction; review pending"
+}

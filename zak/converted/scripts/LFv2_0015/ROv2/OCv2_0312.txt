@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0015/ROv2/OCv2_0312
+Events:
+  FD - 0025
+[0025] (9A) Var[53] = Var[234];
+[0028] (44) if (VAR_MACHINE_SPEED > 40) {
+[002E] (2E)   delay(120);
+[0032] (18) } else {
+[0035] (2E)   delay(210);
+[0039] (**) }
+[0039] (46) Var[53]++;
+[003B] (00) stopObjectCode();
+END

@@ -1,0 +1,26 @@
+Events:
+  FD - 0013
+[0013] (13) ActorOps(6,[Costume(14)]);
+[0017] (7D) setActorElevation(6,Var[234]);
+[001A] (13) ActorOps(6,[Sound(39)]);
+[001E] (43) VAR_RESULT = getActorX(6);
+[0021] (48) unless (VAR_RESULT == 27) goto 0033;
+[0027] (23) VAR_RESULT = getActorY(6);
+[002A] (48) unless (VAR_RESULT == 31) goto 0033;
+[0030] (18) goto 0048;
+[0033] (1E) walkActorTo(6,29,29);
+[0037] (3B) waitForActor(6);
+[0039] (11) animateActor(6,244);
+[003C] (3B) waitForActor(6);
+[003E] (2E) delay(60);
+[0042] (1E) walkActorTo(6,27,31);
+[0046] (3B) waitForActor(6);
+[0048] (11) animateActor(6,244);
+[004B] (17) clearState02(630);
+[004E] (11) animateActor(6,24);
+[0051] (2E) delay(180);
+[0055] (11) animateActor(6,28);
+[0058] (2E) delay(60);
+[005C] (18) goto 004E;
+[005F] (00) stopObjectCode();
+END

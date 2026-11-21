@@ -1,0 +1,6 @@
+Events:
+   4 - 001B
+   5 - 001B
+[001B] (99) doSentence(VAR_ACTIVE_VERB,129,0,0);
+[0022] (00) stopObjectCode();
+END

@@ -1,0 +1,33 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0012/ROv2/OCv2_0268
+Events:
+   B - 003F
+   E - 002A
+  13 - 0083
+[002A] (D8) printEgo("No way, it'll bite me!");
+[003E] (00) stopObjectCode();
+[003F] (48) if (VAR_ACTIVE_OBJECT2 == 51) {
+[0045] (18) } else {
+[0048] (9D)   if (classOfIs(VAR_ACTIVE_OBJECT2,2)) {
+[004D] (48)     if (VAR_EGO == 1) {
+[0053] (42)       startScript(144);
+[0055] (18)       goto 00A4;
+[0058] (**)     }
+[0058] (D8)     printEgo("That might kill it!");
+[006A] (18)   } else {
+[006D] (D8)     printEgo("That won't do any good.");
+[0082] (**)   }
+[0082] (00)   stopObjectCode();
+[0083] (48)   unless (VAR_ACTIVE_OBJECT2 == 51) goto 00BA;
+[0089] (**) }
+[0089] (9A) Var[147] = Var[235];
+[008C] (D8) printEgo("It took them and left!");
+[00A0] (29) setOwnerOf(51,0);
+[00A4] (19) doSentence(254,269,0,1);
+[00AB] (47) clearState08(268);
+[00AE] (57) setState02(268);
+[00B1] (47) clearState08(269);
+[00B4] (47) clearState08(270);
+[00B7] (18) goto 00D2;
+[00BA] (D8) printEgo("It doesn't seem to want it.");
+[00D2] (00) stopObjectCode();
+END

@@ -1,0 +1,14 @@
+Events:
+  FD - 0013
+[0013] (1A) Var[48] = 61;
+[0017] (45) drawObject(338,Var[48],7);
+[001C] (80) breakHere();
+[001D] (80) breakHere();
+[001E] (45) drawObject(337,Var[48],7);
+[0023] (C6) Var[48]--;
+[0025] (78) unless (Var[48] < 51) goto 0017;
+[002B] (80) breakHere();
+[002C] (80) breakHere();
+[002D] (18) goto 0013;
+[0030] (00) stopObjectCode();
+END

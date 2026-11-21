@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0104
+Events:
+  FD - 0013
+[0013] (70) lights(11,0,0);
+[0017] (0F) if (!getState08(103)) {
+[001C] (0F)   if (!getState08(90)) {
+[0021] (F0)     lights(Var[234],0,0);
+[0025] (**)   }
+[0025] (**) }
+[0025] (00) stopObjectCode();
+END

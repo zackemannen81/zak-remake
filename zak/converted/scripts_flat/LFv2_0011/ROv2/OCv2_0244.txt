@@ -1,0 +1,12 @@
+Events:
+   9 - 0024
+   A - 0024
+   B - 0024
+[0024] (1C) startSound(22);
+[0026] (80) breakHere();
+[0027] (7C) VAR_RESULT = isSoundRunning(22);
+[002A] (28) unless (!VAR_RESULT) goto 0026;
+[002E] (4F) unless (getState08(242)) goto 0035;
+[0033] (1C) startSound(17);
+[0035] (00) stopObjectCode();
+END
