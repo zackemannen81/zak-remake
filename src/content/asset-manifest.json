@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "characters": {
+    "zak": {
+      "kind": "gltf",
+      "source": "temp/zak-walking.glb",
+      "walkAnimation": "walk",
+      "idleAnimation": "walk",
+      "fallback": "procedural-placeholder"
+    }
+  },
+  "music": {
+    "intro": {
+      "kind": "music",
+      "source": "temp/zacke-mac-kracken_intro.m4a",
+      "loop": false,
+      "autoplay": false
+    }
+  }
+}

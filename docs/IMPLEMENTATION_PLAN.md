@@ -1,6 +1,9 @@
 # Autonom utvecklingsplan
 ZMATAMR-0001 · 2026-11-21 · beslutsstandard för fortsatt implementation
 
+## Aktuell checkpoint — 2026-11-22 · ZMATAMR-0002
+Den första TypeScript/Vite/Three.js-runtimen för rum 1–3 finns i `src/`; tester och produktionsbygge passerar. Startläget följer script 108:s skip-intro-position `(21,56)`; full introgrens och globala initiala objektbitars semantik är inte färdigverifierade. Renderbarhet (`objectIsDrawable`, med registrerad visuell resurs) hålls åtskild från hotspot-eligibility (`objectIsTargetable`, source-rect/state-baserad). Katalogens valda bakgrunds- och objektkoncept kan nu visas reversibelt via `?pocAssets=1`; originalgrafik förblir standard och fallback, och koncepten är inte godkända som slutgrafik. `npm test` passerar 11/11 och `npm run build` passerar. Browser-smoke för det nya preview-läget återstår. Nästa: verifiera preview visuellt, sedan implementera den källbaserade introgrenen/dialogen/animationen/musiken; detta är fortsatt en checkpoint, inte godkännande av steg 2–7 eller full SCUMM-kompatibilitet.
+
 ## Fasta arbetsbeslut
 Three.js + TypeScript + Vite, desktop/web, WebGL2, engelska, klassiska verb, numeriska original-ID och deterministisk scheduler. Lokal utveckling utan publicering. Välj kompatibla aktuella stabila paket när projektet initieras och checka in lockfil; uppdatera inte paket under en innehållsmilstolpe utan konkret fel. Ingen charter-review, main-publicering eller användarfråga krävs för dessa val. För prestanda används den tillgängliga datorn som dokumenterad POC-maskin, inte som allmänt minimumlöfte.
 

@@ -1,5 +1,5 @@
 # Current Status
-Updated: 2026-11-21 · ZMATAMR-0001 · Codex
+Updated: 2026-11-22 · ZMATAMR-0002 · Agent 008
 
 ## Verifierad originalpipeline
 - 578/578 OIv2 identifierade med intakta LFL-tabeller och full bytejämförelse; 578 färg-PNG och 578 separata zplane-PNG i `zak/converted/images/objects/`.
@@ -18,9 +18,15 @@ Ny premiumgrafik produceras i `zak/converted/poc/`, med originalbilder som refer
 Anpassat `tools/tts_zak.py` har genererat ett fungerande engelskt POC-talprov. `tools/poc_sfx.py` har skapat tre verifierade mono-PCM-effekter. Ingen full dubbning eller original-SOv2-avkodning påstås.
 
 ## Kvar
-Slutför och granska hela POC-assetmängden, särskilt bakgrundsändrings-/borttagningsbilder och UI. Verifiera två maskgränser med originalruntime. Avkoda kostymer/ljud och runtimevalidera de 323 exporterade gångytorna och kör pusselreplays under spelimplementation. Spelet är ännu inte implementerat. Grundmotor och rum1–3-skiva kan startas med nuvarande register enligt IMPLEMENTATION_PLAN.md.
+Slutför och granska hela POC-assetmängden, särskilt bakgrundsändrings-/borttagningsbilder och UI. Verifiera två maskgränser med originalruntime. Avkoda kostymer/ljud och runtimevalidera de 323 exporterade gångytorna och kör pusselreplays under spelimplementation. En första webbruntime finns för en vertikal slice av rum 1–3, men detta är inte ett färdigt spel eller fullständig SCUMM-runtime.
 
 Kanonisk källa är verktygsmappens LFL; `docs/gamefiles` skiljer sig (6/59 identiska) och har inte ändrats. Ingen commit/push eller publicering har utförts. Befintliga användarändringar och rådump är bevarade.
 
 ### Fördjupad checkpoint: logik och rum
 1 011 platta skriptgrafer, 19 236 instruktioner och 1 475 händelseingångar; kontrollflödestester passerar inklusive cutscene override. 88 byteverifierade PseudoRoom-alias återanvänder de 58 grafiska rumsresurserna. `ROOM_GRAPH.md`, `docs/scenes/room_NNN.md`, `metadata/event_contracts.json` och `metadata/logical_room_map.json` är implementationens källbilagor. Kör `build_event_contracts.py`, `test_event_contracts.py` och `build_room_links.py` efter källkatalogen.
+
+## Spelimplementation — ZMATAMR-0002 (pågående)
+En TypeScript/Vite/Three.js-runtime för rum 1–3 finns nu i `src/`. Rum 1:s state-fabrik använder `(21,56)` från script 108:s skip-intro-gren; normalgrenen börjar vid `(9,52)` och når samma position. `objectIsDrawable` kräver registrerad visuell resurs, medan `objectIsTargetable` avgör hotspot-eligibility utan att saknad grafik i sig tar bort interaktion. Den nuvarande tomma object-state-mapen är ett runtime-default, inte ett påstående om samtliga state-värden efter originalets intro; globala initvärden och objekt 85/95:s fulla draw-semantik är fortfarande öppna källfrågor. `npm test`: 9/9 passerade. `npm run build`: `tsc --noEmit` och Vite production build passerade. Browser smoke har inte körts igen efter den senaste hit-test-ändringen.
+
+### Opt-in POC-grafikpreview
+`?pocAssets=1` laddar katalogens valda rum-1–3-bakgrundskandidater och utvalda rum-1-objektkandidater. Förhandsvisningen är opt-in; originalgrafik är fortsatt standard och fallback. Katalogkandidaterna är koncept, inte godkända produktionsbilder. UV-beskärning och linjär filtrering används för konceptbilder. Efter denna ändring passerade `npm test` 11/11 och `npm run build` (exit 0). Preview-läget har ännu inte browser-smoketestats; inga exakta runtime-saknade bild-ID:n är därför bekräftade. Laddningsfel rapporteras i spelets preview-status och konsol.

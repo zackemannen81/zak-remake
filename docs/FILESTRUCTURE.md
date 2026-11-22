@@ -1,9 +1,14 @@
 # File Structure
-Updated: 2026-11-21
+Updated: 2026-11-22
 
 - `AGENTS.md`, `docs/CURRENT_TASK.md`, `TASK_WORKFLOW.md`, `TASK_IDS.md`, `CONTRIBUTING.md`: docs-first och autonom uppgiftsstatus.
 - `docs/GDD.md`, `SCENE_ATLAS.md`, `PUZZLE_SPEC.md`, `IMPLEMENTATION_PLAN.md`: aktuell spel- och produktionsspecifikation.
-- `docs/ASSET_PIPELINE.md`: formatkontrakt, reproduktion, verifiering och avvikelser.
+- `src/main.ts`, `src/style.css`: app bootstrap and canvas/UI styling.
+- `src/content/`: imported room data, visual manifest/registry catalog and source-object policies; `pocAssets.ts` provides lazy URLs for selected in-review concepts in the opt-in preview.
+- `src/core/`: game state, engine, movement and scheduler; `game.test.ts` covers room data, interactions, movement and save/replay basics.
+- `src/render/GameRenderer.ts`: Three.js room, actor, visual loading and hotspot input, including UV crops, per-kind filtering and original-art fallback. `visualRegistry.test.ts` covers UV conversion and restoring original art after an override is cleared.
+- `src/scenes/`, `src/ui/`, `src/save/`, `src/audio/`: scene scripts, controls, persistence and media manifest/bindings.
+- `package.json`, lockfile, `vite.config.ts`, `tsconfig.json`: local TypeScript/Vite app and reproducible dependencies.
 - `docs/evidence/`: hashbaslinje, källkopiejämförelse, visuella granskningsbilder, äldre GDD och versionsbundna ScummVM-källor.
 - `docs/adr/0001-source-and-runtime.md`: kanonisk källa och designbeslut.
 - `tools/export_objects.py`, `build_source_catalog.py`, `test_pipeline.py`, `verify_delivery.py`: originalpipeline och kontroller.
@@ -30,5 +35,5 @@ Updated: 2026-11-21
 - `tools/build_asset_gallery.py`, `build_object_viewports.py`, `build_poc_provenance.py`: lokal jämförelsevisare, UV-kandidater och prompt/hash-proveniens.
 - `tools/reuse_identical_poc_states.py`: samma genererade bild återanvänds för byteidentiska originalbilder inom samma rum.
 - `tools/build_correction_review.py`: separat granskning av korrigerade versioner.
-- `zak/converted/poc/asset_review.html`: lokal bildvisare; ingen spelmotor.
+- `zak/converted/poc/asset_review.html`: local asset gallery/UV review, separate from the game runtime.
 - `zak/converted/poc/provenance.json`, `reused_state_images.json`, `object_viewports.json`: spårbarhet och föreslagna visningsutsnitt.

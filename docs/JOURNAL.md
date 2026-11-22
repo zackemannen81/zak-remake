@@ -18,3 +18,17 @@ Newest first. Append only.
 ## 2026-11-21 — ZMATAMR-0001 verifierad pipelinecheckpoint
 Original-LFL-tabeller återställda och bytekopplade till samtliga 578 OIv2/OCv2. Exporterat 578 färg-PNG och 578 zplane-PNG, register över 762 tabellplatser. Sex tester passerar inklusive oberoende färgavkodning, omexport och skyddad hashbaslinje med 2 206 filer. Två zplane-gränser i rum 35 dokumenterade för runtimekontroll. GDD, scenatlas, pusselkontrakt och autonom Three.js-plan uppdaterade. 1 011 skript och 1 475 händelseingångar spårade i platta grafer. Nya POC-bilder genereras och granskas separat; ingen fullständig grafikersättning eller spelbar remake hävdas vid denna checkpoint. Ett TTS-prov och tre föreslagna ljudeffekter skapade med anpassade verktyg. Originaldumpen oförändrad.
 Signerad: Codex — 2026-11-21. Uppgiften fortsätter med grafik, granskning och leveransmanifest.
+
+## 2026-11-22 — ZMATAMR-0002 runtime checkpoint
+
+**Result:** Room 1 initial slice start now uses the script-108 skip-intro position `(21,56)`; the normal intro branch starts at `(9,52)` and reaches `(21,56)`. Renderer drawability (`objectIsDrawable`) now additionally requires a registered visual, while engine/hit-test hotspot eligibility uses `objectIsTargetable` and is not coupled to art registration. This prevents missing artwork alone from erasing the source hotspot. No canonical global object-bit initialization was inferred: intro/global state and the full original draw semantics for objects such as 85/95 remain unresolved.
+**Verification:** `npm test` — 9/9 passed. `npm run build` — `tsc --noEmit` and Vite production build passed. The browser smoke recorded in the earlier recovery checkpoint predates this hit-test change; no visual/browser recheck was run here.
+**Updated documentation:** `CURRENT_TASK.md`, `CURRENT_STATUS.md`, `SYSTEMDOC.md`, `FILESTRUCTURE.md`, and `IMPLEMENTATION_PLAN.md` updated for this active slice. User-owned assets and pre-existing worktree content remain untouched.
+**Next:** Verify the full intro/global object state path, then integrate catalog-backed room 1–3 art reversibly and record any missing image IDs; do not claim concept images are final or full SCUMM equivalence.
+
+## 2026-11-22 — ZMATAMR-0002 reversible POC art preview
+
+**Result:** Added an opt-in `?pocAssets=1` preview for selected room-1–3 background concepts and selected room-1 object concepts. Original art remains the normal default and the load-failure fallback; catalog concepts remain unapproved. Candidate UV crops, linear concept filtering, lazy Vite asset URLs, preview failure reporting, and registry tests for UV conversion/original-art restoration are in place.
+**Verification:** `npm test` — 11/11 passed. `npm run build` — exited 0. No browser smoke of the new preview mode has been run yet, so no runtime missing-image IDs are confirmed.
+**Updated documentation:** `CURRENT_TASK.md`, `CURRENT_STATUS.md`, `SYSTEMDOC.md`, `FILESTRUCTURE.md`, and `IMPLEMENTATION_PLAN.md` updated. Existing user assets remain untouched.
+**Next:** Browser-smoke `?pocAssets=1`; then implement the ordinary original intro branch with source-backed dialogue, actor animation, transition, and intro music. Continue documenting exact missing candidate images if runtime loading reveals any.
