@@ -1,5 +1,5 @@
 export type VerbId = 'walk' | 'look' | 'use' | 'open' | 'close' | 'pickup' | 'talk';
-export type Facing = 'left' | 'right';
+export type Facing = 'left' | 'right' | 'up' | 'down';
 export type ObjectVisualKind = 'original-2d' | 'concept-2d' | 'scene-3d';
 
 export interface Point {

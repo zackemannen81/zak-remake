@@ -5,8 +5,9 @@ import { displayObjectName, getRoom, objectImageUrl, objectIsDrawable, objectIsT
 import type { GameState, Point, RoomData, SourceObject } from '../core/types';
 import { ORIGINAL_ROOM_HEIGHT, VIEWPORT_WIDTH } from '../core/types';
 import { shouldDrawObjectVisual, VisualRegistry, type TextureCrop } from './visualRegistry';
+import { actorDepthScale, actorYaw } from './actorPose';
 
-const ACTOR_HEIGHT = 44;
+const ACTOR_HEIGHT = 70;
 
 /** Wrap the GLB so its feet meet the logical actor anchor without changing its animation root. */
 export function createGroundedActorVisual(model: THREE.Group, targetHeight: number): THREE.Group | undefined {
@@ -58,6 +59,7 @@ export class GameRenderer {
   private actorAction?: THREE.AnimationAction;
   private actorMixer?: THREE.AnimationMixer;
   private externalActor?: THREE.Group;
+  private externalActorModel?: THREE.Group;
   private lastFrameTime = 0;
   onPointer?: (point: Point, target?: SourceObject) => void;
   onCharacterStatus?: (message: string) => void;
@@ -105,7 +107,10 @@ export class GameRenderer {
     this.scrollX = Math.max(0, Math.min(room.width - VIEWPORT_WIDTH, state.actor.x - VIEWPORT_WIDTH / 2));
     this.world.position.x = -this.scrollX;
     this.actorRoot.position.set(state.actor.x, state.actor.y, 5);
-    this.actorRoot.scale.x = state.actor.facing === 'left' ? -1 : 1;
+    // Foot-anchored visual depth; gameplay/hotspot coordinates stay unchanged.
+    this.actorRoot.scale.setScalar(actorDepthScale(state.actor.y));
+    // Model-local Y yaw works with the existing skinned GLB animation.
+    if (this.externalActorModel) this.externalActorModel.rotation.y = actorYaw(state.actor.facing);
     this.actorPlaceholder.visible = !this.externalActor;
     if (this.externalActor) this.externalActor.visible = true;
 
@@ -345,6 +350,7 @@ export class GameRenderer {
         }
       });
       this.externalActor = visual;
+      this.externalActorModel = model;
       this.actorRoot.add(visual);
       this.actorPlaceholder.visible = false;
 

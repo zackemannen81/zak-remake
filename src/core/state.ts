@@ -23,7 +23,7 @@ export function createInitialState(room: RoomData, options: InitialStateOptions 
     schemaVersion: 1,
     tick: 0,
     roomId: room.id,
-    actor: { ...spawn, path: [], facing: 'right', pose: 'idle' },
+    actor: { ...spawn, path: [], facing: 'down', pose: 'idle' },
     variables: Array.from({ length: 256 }, () => 0),
     flags: {},
     objectOwners: {},

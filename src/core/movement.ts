@@ -60,6 +60,13 @@ function nearestBox(point: Point, boxes: Walkbox[]): { box: Walkbox; projected: 
   return nearest;
 }
 
+export function facingForMotion(dx: number, dy: number, previous: GameState['actor']['facing']): GameState['actor']['facing'] {
+  if (dx === 0 && dy === 0) return previous;
+  return Math.abs(dx) >= Math.abs(dy)
+    ? (dx < 0 ? 'left' : 'right')
+    : (dy < 0 ? 'up' : 'down');
+}
+
 export function scriptActorToRoomPixels(point: Point): Point {
   // The extracted walkboxes pair actor coordinates with pixels at x×8 and y×2.
   return { x: point.x * 8, y: point.y * 2 };
@@ -71,7 +78,7 @@ export function planWalk(state: GameState, room: RoomData, requested: Point): Po
     const target = { x: Math.round(requested.x), y: Math.round(requested.y) };
     state.actor.path = [target];
     state.actor.pose = 'walk';
-    state.actor.facing = target.x < state.actor.x ? 'left' : 'right';
+    state.actor.facing = facingForMotion(target.x - state.actor.x, target.y - state.actor.y, state.actor.facing);
     return target;
   }
 
@@ -92,7 +99,7 @@ export function planWalk(state: GameState, room: RoomData, requested: Point): Po
 
   state.actor.path = route;
   state.actor.pose = route.length > 0 ? 'walk' : 'idle';
-  state.actor.facing = target.x < state.actor.x ? 'left' : 'right';
+  state.actor.facing = facingForMotion(route[0]!.x - state.actor.x, route[0]!.y - state.actor.y, state.actor.facing);
   return target;
 }
 
@@ -114,7 +121,7 @@ export function advanceActorOneStep(state: GameState, pixelsPerTick = 2): void {
     state.actor.x = Math.round(state.actor.x + (dx / distance) * pixelsPerTick);
     state.actor.y = Math.round(state.actor.y + (dy / distance) * pixelsPerTick);
   }
-  if (dx !== 0) state.actor.facing = dx < 0 ? 'left' : 'right';
+  state.actor.facing = facingForMotion(dx, dy, state.actor.facing);
   state.actor.pose = state.actor.path.length > 0 ? 'walk' : 'idle';
 }
 
