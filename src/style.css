@@ -49,17 +49,20 @@ h1 span { color: #b7ad96; font-weight: 400; }
 .panel-heading { display: flex; align-items: center; gap: 10px; margin-bottom: 13px; }
 .panel-index { color: var(--accent); font: 10px 'DM Mono', monospace; }
 .panel-heading h3 { margin: 0; font-size: 14px; font-weight: 500; }
-.verb-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.actionbar-panel { margin-top: 20px; padding: 18px clamp(14px, 3vw, 42px) 12px; border: 1px solid var(--line); background: #191712 url('/assets/actionbar/actionbar_template.png') center / 100% 100% no-repeat; }
+.actionbar-panel .panel-heading { margin-bottom: 12px; }
+.verb-bar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
 .verb-button, .secondary-button, .music-button, .inventory-item { min-height: 36px; border: 1px solid #474237; border-radius: 2px; background: #27241d; color: #c7bea9; cursor: pointer; transition: background .15s ease, border-color .15s ease, color .15s ease; }
-.verb-button { padding: 7px 8px; text-align: left; font-size: 11px; }
-.verb-button:hover, .inventory-item:hover, .secondary-button:hover { border-color: #82704b; background: #302b20; color: var(--ink); }
-.verb-button.is-active { border-color: #aa8749; background: #473922; color: var(--accent-hot); }
+.verb-button { display: grid; place-items: center; min-width: 0; min-height: 42px; aspect-ratio: 328 / 94; padding: 6px 10px; border: 0; border-radius: 0; background: url('/assets/actionbar/action_button_template.png') center / 100% 100% no-repeat; color: #eee6d3; text-align: center; font-size: 12px; font-weight: 600; text-shadow: 0 1px 2px #000; }
+.verb-button:hover, .inventory-item:hover { filter: brightness(1.12); color: var(--ink); }
+.verb-button.is-active { background-image: url('/assets/actionbar/selected_action_button_template.png'); color: var(--accent-hot); }
+.secondary-button:hover { border-color: #82704b; background: #302b20; color: var(--ink); }
 .selected-item-note { min-height: 14px; margin: 10px 0 0; color: #baaa84; font-size: 10px; }
 .small-copy { margin: -4px 0 12px; color: var(--muted); font-size: 10px; line-height: 1.5; }
-.inventory-list { display: grid; gap: 6px; }
-.inventory-empty { margin: 0; padding: 10px; border: 1px dashed #4b4639; color: #918a7b; font-size: 10px; line-height: 1.5; }
-.inventory-item { padding: 8px 10px; text-align: left; font-size: 11px; }
-.inventory-item.is-selected { border-color: var(--accent); background: #4a3b20; color: var(--accent-hot); }
+.inventory-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.inventory-empty { grid-column: 1 / -1; margin: 0; padding: 10px; border: 1px dashed #4b4639; color: #918a7b; font-size: 10px; line-height: 1.5; }
+.inventory-item { display: grid; place-items: center; min-width: 0; min-height: 76px; aspect-ratio: 185 / 157; padding: 10px 8px; border: 0; border-radius: 0; background: url('/assets/actionbar/inventory_slot_template.png') center / 100% 100% no-repeat; color: #eee6d3; text-align: center; font-size: 10px; overflow-wrap: anywhere; text-shadow: 0 1px 2px #000; }
+.inventory-item.is-selected { background-image: url('/assets/actionbar/selected_inventory_slot_template.png'); color: var(--accent-hot); }
 .button-row { display: flex; gap: 7px; margin: 8px 0; }
 .secondary-button, .music-button { flex: 1; padding: 8px; font-size: 10px; }
 .music-button { border-color: #856b3a; background: #48391f; color: var(--accent-hot); }
@@ -75,6 +78,8 @@ h1 span { color: #b7ad96; font-weight: 400; }
 @media (max-width: 980px) {
   .game-layout { grid-template-columns: minmax(0, 1fr) 260px; gap: 16px; }
   .panel-block { padding: 13px; }
+  .actionbar-panel { padding: 13px clamp(14px, 3vw, 42px) 10px; }
+  .verb-bar { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
   .game-shell { padding: 14px; }
@@ -85,12 +90,16 @@ h1 span { color: #b7ad96; font-weight: 400; }
   .viewport { aspect-ratio: 5 / 2; }
   .side-panel { display: grid; grid-template-columns: 1fr 1fr; }
   .status-block { margin-top: 0; }
+  .actionbar-panel { padding: 12px 14px 10px; }
+  .verb-bar { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 @media (max-width: 480px) {
   h1 span { display: block; margin-top: 2px; }
   .topbar-status { display: none; }
   .scene-heading h2 { font-size: 18px; }
   .side-panel { grid-template-columns: 1fr; }
+  .actionbar-panel { padding: 12px 10px 10px; }
+  .verb-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
   .footer-note { flex-direction: column; }
 }
 

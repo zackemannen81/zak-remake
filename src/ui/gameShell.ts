@@ -3,11 +3,17 @@ import { displayObjectName, getRoom } from '../content/rooms';
 
 const verbs: Array<{ id: VerbId; label: string }> = [
   { id: 'walk', label: 'Walk to' },
-  { id: 'look', label: 'Look at' },
+  { id: 'putOn', label: 'Put on' },
+  { id: 'turnOn', label: 'Turn on' },
+  { id: 'pull', label: 'Pull' },
+  { id: 'give', label: 'Give' },
   { id: 'use', label: 'Use' },
+  { id: 'pickup', label: 'Pick up' },
+  { id: 'takeOff', label: 'Take off' },
+  { id: 'turnOff', label: 'Turn off' },
+  { id: 'look', label: 'Look at' },
   { id: 'open', label: 'Open' },
   { id: 'close', label: 'Close' },
-  { id: 'pickup', label: 'Pick up' },
   { id: 'talk', label: 'Talk to' },
 ];
 
@@ -46,16 +52,20 @@ export class GameUI {
             <div class="scene-heading"><div><p class="eyebrow">Current location</p><h2 id="room-title">Loading room…</h2></div><span id="room-coordinates" class="room-coordinate"></span></div>
             <div id="viewport" class="viewport" aria-label="Point-and-click game canvas"></div>
             <div id="dialogue" class="dialogue" aria-live="polite">Loading the first room…</div>
-            <p class="control-hint">Click a place to walk. Choose a verb, then click a hotspot. Walk to the room doors to travel.</p>
-            <section class="log-panel"><h3>Recent events</h3><div id="message-log" class="message-log"></div></section>
           </section>
           <aside class="side-panel" aria-label="Game controls">
-            <section class="panel-block"><div class="panel-heading"><span class="panel-index">01</span><h3>Actions</h3></div><div id="verb-bar" class="verb-bar"></div><p class="selected-item-note" id="selected-item-note">Select a verb to begin.</p></section>
             <section class="panel-block inventory-block"><div class="panel-heading"><span class="panel-index">02</span><h3>Inventory</h3></div><p class="small-copy">Choose an item to use it on a hotspot.</p><div id="inventory" class="inventory-list"></div></section>
             <section class="panel-block"><div class="panel-heading"><span class="panel-index">03</span><h3>Game</h3></div><div class="button-row"><button id="save-button" class="secondary-button">Save</button><button id="load-button" class="secondary-button">Load</button></div><div class="button-row music-row"><button id="play-music-button" class="music-button">Play intro</button><button id="stop-music-button" class="secondary-button">Stop</button></div><p id="music-status" class="small-copy" aria-live="polite">Your intro track is loaded on demand.</p><p id="notice" class="notice" aria-live="polite"></p></section>
             <section class="panel-block status-block"><div class="panel-heading"><span class="panel-index">04</span><h3>State</h3></div><p id="engine-readout" class="engine-readout"></p><p class="small-copy">Source room/object IDs are preserved through rendering and interaction.</p></section>
           </aside>
         </main>
+        <section class="panel-block actionbar-panel" aria-label="Actions">
+          <!-- <div class="panel-heading"><span class="panel-index">01</span><h2>Actions</h2></div> -->
+          <div id="verb-bar" class="verb-bar" role="group" aria-label="Choose an action"></div>
+          <!-- <p class="selected-item-note" id="selected-item-note">Select an action to begin.</p> -->
+            <!-- <p class="control-hint">Click a place to walk. Choose a verb, then click a hotspot. Walk to the room doors to travel.</p> -->            
+          </section>
+<section class="log-panel"><h3>Recent events</h3><div id="message-log" class="message-log"></div></section>
         <footer class="footer-note"><span>ROOM SLICE 01–03</span><span>Original art fallback · Three.js · deterministic 30 Hz simulation</span></footer>
       </div>`;
 

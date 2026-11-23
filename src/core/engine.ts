@@ -171,6 +171,14 @@ export class GameEngine {
       case 'talk':
         this.speak(room.id === 3 && target.object_id === 144 ? 'The driver is busy with the bus.' : `There is nobody to talk to at ${name.toLowerCase()}.`);
         break;
+      case 'putOn':
+      case 'takeOff':
+      case 'turnOn':
+      case 'turnOff':
+      case 'pull':
+      case 'give':
+        this.speak('That action is not implemented yet.');
+        break;
       default: {
         const exhaustive: never = pending.verb;
         return exhaustive;
