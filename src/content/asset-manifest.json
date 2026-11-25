@@ -3,7 +3,7 @@
   "characters": {
     "zak": {
       "kind": "gltf",
-      "source": "temp/zak-walking.glb",
+      "source": "assets/characters/zak-walking.glb",
       "walkAnimation": "walk",
       "idleAnimation": "walk",
       "fallback": "procedural-placeholder"
@@ -12,7 +12,7 @@
   "music": {
     "intro": {
       "kind": "music",
-      "source": "temp/zacke-mac-kracken_intro.m4a",
+      "source": "assets/audio/music/zacke-mac-kracken_intro.m4a",
       "loop": false,
       "autoplay": false
     }

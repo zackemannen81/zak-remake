@@ -97,6 +97,7 @@ export interface GameState {
   objectNames?: Record<string, string>;
   scriptSequence?: ScriptSequence;
   scriptLockedUntil?: number;
+  apartmentExit?: { steps: Array<'tv' | 'disposal' | 'water' | 'fridge'>; phase: 'next' | 'walking' | 'waiting' | 'exit'; nextTick: number };
   tvStartedTick?: number;
   tvSegment?: number;
   bakeryStartedTick?: number;

@@ -1,9 +1,9 @@
+import runtimeAssets from './runtime-assets.json';
+import { assetUrl } from './runtimeAssets';
 import objectClasses from './object-classes.json';
+import labelsJson from '../../zak/converted/metadata/scene_labels.json';
 import roomsJson from '../../zak/converted/metadata/rooms.json';
 import walkboxesJson from '../../zak/converted/metadata/walkboxes.json';
-import background1 from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0001.png';
-import background2 from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0002.png';
-import background3 from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0003.png';
 import { ROOM_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type Point, type RoomData, type SourceObject, type VerbId, type Walkbox } from '../core/types';
 
 interface SourceRoomRecord {
@@ -26,20 +26,25 @@ function toPoint(coordinate: Point | [number, number]): Point {
   return Array.isArray(coordinate) ? { x: coordinate[0], y: coordinate[1] } : coordinate;
 }
 
-const backgroundByRoom: Record<number, string> = { 1: background1, 2: background2, 3: background3 };
+const backgrounds = Object.fromEntries(runtimeAssets.backgrounds.map(path => [path, assetUrl(path)]));
+const backgroundByRoom: Record<number, string> = {};
+for (const [path, url] of Object.entries(backgrounds)) {
+  const match = path.match(/LFv2_(\d+)\.png$/);
+  if (match) backgroundByRoom[Number(match[1])] = url;
+}
 const roomNames: Record<number, string> = { 1: "Zak's bedroom", 2: 'Apartment', 3: 'San Francisco street' };
 const sourceRooms = roomsJson as unknown as SourceRoomRecord[];
 const sourceWalkboxes = walkboxesJson as unknown as SourceWalkboxRecord[];
 
 const roomMap = new Map<number, RoomData>();
-for (const id of [1, 2, 3]) {
+for (const { room: id } of sourceRooms) {
   const source = sourceRooms.find((room) => room.room === id);
   const walkboxSource = sourceWalkboxes.find((room) => room.room === id);
   const backgroundUrl = backgroundByRoom[id];
   if (!source || !walkboxSource || !backgroundUrl) throw new Error(`Missing canonical source data for room ${id}`);
   roomMap.set(id, {
     id,
-    name: roomNames[id]!,
+    name: roomNames[id] ?? labelsJson.find(label => label.room === id)?.label ?? `Room ${id}`,
     width: source.width,
     height: source.height,
     backgroundUrl,
@@ -53,29 +58,23 @@ for (const id of [1, 2, 3]) {
   });
 }
 
-export const playableRoomIds = [1, 2, 3] as const;
+export const playableRoomIds: readonly number[] = [...roomMap.keys()];
 export function getRoom(id: number): RoomData {
   const room = roomMap.get(id);
   if (!room) throw new Error(`Room ${id} is outside the current playable slice`);
   return room;
 }
 
-const originalObjectImages = import.meta.glob<string>(
-  '../../zak/converted/images/objects/room_00{1,2,3}/object_*/frame_*.png',
-  { eager: true, query: '?url', import: 'default' },
-);
-const originalObjectZplanes = import.meta.glob<string>(
-  '../../zak/converted/images/objects/room_00{1,2,3}/object_*/zplane_000.png',
-  { eager: true, query: '?url', import: 'default' },
-);
+const originalObjectImages = Object.fromEntries(runtimeAssets.objects.filter(path => path.includes('/frame_')).map(path => [path, assetUrl(path)]));
+const originalObjectZplanes = Object.fromEntries(runtimeAssets.objects.filter(path => path.endsWith('/zplane_000.png')).map(path => [path, assetUrl(path)]));
 const zplaneByObject = new Map<string, string>();
 for (const [path, url] of Object.entries(originalObjectZplanes)) {
-  const match = path.match(/room_00([123])\/object_(\d+)\/zplane_000\.png$/);
+  const match = path.match(/room_(\d+)\/object_(\d+)\/zplane_000\.png$/);
   if (match) zplaneByObject.set(`${Number(match[1])}:${Number(match[2])}`, url);
 }
 const imageByObject = new Map<string, string>();
 for (const [path, url] of Object.entries(originalObjectImages)) {
-  const match = path.match(/room_00([123])\/object_(\d+)\/frame_(\d+)\.png$/);
+  const match = path.match(/room_(\d+)\/object_(\d+)\/frame_(\d+)\.png$/);
   if (!match) continue;
   const key = `${Number(match[1])}:${Number(match[2])}`;
   const frame = Number(match[3]);
@@ -130,11 +129,6 @@ export function objectHasClass(id: number, mask: number): boolean {
 }
 
 export function objectIsTargetable(room: RoomData, owners: Record<string, number>, states: Record<string, number>, object: SourceObject): boolean {
-  // The original card hotspot has a closed-parent flag in the dump, but the
-  // playable desk drawer exposes it when open. Keep its under-desk proxy usable.
-  if (room.id === 1 && object.object_id === 106) {
-    return Boolean((states['94']! & 8) || (states['106']! & 8)) && !(states['106']! & 2) && owners['18'] !== 1;
-  }
   return objectIsAvailable(room, states, object) && (owners[String(object.object_id)] ?? ROOM_OWNER_ID) === ROOM_OWNER_ID && !((states[String(object.object_id)] ?? 0) & OBJECT_UNTOUCHABLE);
 }
 
@@ -147,7 +141,8 @@ export function hitTestRoomObject(room: RoomData, owners: Record<string, number>
   const hits = room.objects.filter(object =>
     objectIsTargetable(room, owners, states, object)
     && point.x >= object.x && point.x < object.x + object.width
-    && point.y >= object.y && point.y < object.y + object.height,
+    && point.y >= (room.id === 1 && object.object_id === 106 ? object.y + 8 : object.y)
+    && point.y < object.y + object.height + (room.id === 1 && object.object_id === 106 ? 8 : 0),
   ).sort((a, b) => a.slot - b.slot);
   // Keep the container accessible for explicit open/close even when a child overlaps.
   if (verb === 'open' || verb === 'close') {

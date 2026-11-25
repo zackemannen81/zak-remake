@@ -3,7 +3,7 @@ from pathlib import Path
 import struct
 from PIL import Image
 root=Path('docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump')
-out=Path('src/content/costumeFrames');out.mkdir(exist_ok=True)
+out=Path('public/assets/costumes');out.mkdir(parents=True,exist_ok=True)
 palette=[(0,0,0),(0,0,170),(0,170,0),(0,170,170),(170,0,0),(170,0,170),(170,85,0),(170,170,170),(85,85,85),(85,85,255),(85,255,85),(85,255,255),(255,85,85),(255,85,255),(255,255,85),(255,255,255)]
 def export(n,region,anchor,anims):
  b=next(root.rglob(f'COv2_{n:04}')).read_bytes()

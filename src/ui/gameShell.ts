@@ -68,7 +68,7 @@ export class GameUI {
             <!-- <p class="control-hint">Click a place to walk. Choose a verb, then click a hotspot. Walk to the room doors to travel.</p> -->            
           </section>
 <section class="log-panel"><h3>Recent events</h3><div id="message-log" class="message-log"></div></section>
-        <footer class="footer-note"><span>ROOM SLICE 01–03</span><span>Original art fallback · Three.js · deterministic 30 Hz simulation</span></footer>
+        <footer class="footer-note"><span>58 ORIGINAL ROOM RESOURCES</span><span>Original art fallback · Three.js · deterministic 30 Hz simulation</span></footer>
       </div>`;
 
     this.viewport = root.querySelector<HTMLElement>('#viewport')!;

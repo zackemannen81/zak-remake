@@ -13,7 +13,7 @@ function stateFor(roomId: number): GameState {
 
 describe('rooms 1–3 source-backed slice', () => {
   it('loads original room dimensions, walkboxes, and object coordinates', () => {
-    expect(playableRoomIds).toEqual([1, 2, 3]);
+    expect(playableRoomIds).toEqual(Array.from({length:58}, (_,i)=>i+1));
     expect([getRoom(1).width, getRoom(2).width, getRoom(3).width]).toEqual([320, 640, 960]);
     expect(getRoom(1).height).toBe(128);
     expect(getRoom(1).objects.find((object) => object.object_id === 84)).toMatchObject({ x: 296, y: 32, walk_x: 280, walk_y: 112 });
@@ -388,7 +388,7 @@ describe('Sushi, CashCard and bus puzzle chains', () => {
   function click(engine: GameEngine, id: number, verb: import('./types').VerbId) {
     const o = engine.room.objects.find(o => o.object_id === id)!;
     engine.setVerb(verb);
-    const point = { x: o.x + o.width / 2, y: o.y + o.height / 2 };
+    const point = { x: o.x + o.width / 2, y: o.y + o.height / 2 + (id === 106 ? 8 : 0) };
     engine.handleClick(point, hitTestRoomObject(engine.room, engine.state.objectOwners, engine.state.objectStates, point, verb));
     engine.advance(650);
   }
@@ -405,7 +405,7 @@ describe('Sushi, CashCard and bus puzzle chains', () => {
   });
   it('pushes card under desk and retrieves it with butter knife, not egg', () => {
     const e = new GameEngine(stateFor(1));
-    click(e,94,'open'); click(e,106,'pickup');
+    click(e,106,'pickup');
     expect(e.state.objectStates['106'] & 8).toBe(8);
     expect(e.state.inventory).not.toContain(18);
     e.state.inventory.push(22,26); e.state.objectOwners['22']=1; e.state.objectOwners['26']=1;
@@ -423,5 +423,67 @@ describe('Sushi, CashCard and bus puzzle chains', () => {
     expect(e.state.objectStates['144'] & 8).toBe(0);
     expect(e.state.objectStates['143'] & 8).toBe(8);
     expect(e.state.inventory).toContain(29);
+  });
+});
+
+describe('apartment exit script 29 and card hitbox', () => {
+  it('keeps card below closed drawer and hides it when drawer opens', () => {
+    const e = new GameEngine(stateFor(1));
+    const hit = (x:number,y:number) => hitTestRoomObject(e.room,e.state.objectOwners,e.state.objectStates,{x,y},'pickup')?.object_id;
+    expect(hit(250,92)).toBe(94);
+    expect(hit(250,100)).toBe(106);
+    e.state.objectStates['94']=8;
+    expect(hit(250,84)).toBe(16);
+    expect(hit(250,100)).not.toBe(106);
+  });
+  it('automatically turns off TV, disposal, water and closes fridge before travel', () => {
+    const e = new GameEngine(stateFor(2));
+    const s=e.state;
+    s.inventory.push(21); s.objectOwners['21']=1;
+    s.objectStates['21']=4; s.objectStates['118']=8; s.objectStates['122']=4;
+    s.objectStates['129']=8; s.objectStates['123']=8; s.objectStates['125']=8; s.objectStates['112']=8;
+    const door=e.room.objects.find(o=>o.object_id===112)!;
+    e.setVerb('walk'); e.handleClick({x:door.x,y:door.y},door);
+    e.advance(2500);
+    expect(s.roomId).toBe(3);
+    expect(s.objectStates['21']&4).toBe(0);
+    expect(s.objectStates['122']&4).toBe(0);
+    expect(s.objectStates['129']&8).toBe(0);
+    expect(s.objectStates['123']&8).toBe(0);
+    expect(s.objectStates['125']&8).toBe(0);
+    expect(s.objectStates['118']&8).toBe(8);
+    expect(s.messages.map(m=>m.text)).toEqual(expect.arrayContaining(['I need to turn the TV off.', "I don't want to leave the disposal on.", "I can't leave with the water running.", 'I forgot to close the fridge.']));
+  });
+});
+
+describe('expanded room registry and source interpreter', () => {
+  it('loads and round-trips saves for every extracted room', () => {
+    for(const id of playableRoomIds) {
+      const room=getRoom(id);
+      expect(room.backgroundUrl).toBeTruthy();
+      expect(deserializeSave(serializeSave(stateFor(id))).roomId).toBe(id);
+    }
+  });
+  it('walks from street to phone company and back using original scripts', () => {
+    const e=new GameEngine(stateFor(3));
+    function click(id:number,verb:import('./types').VerbId) {
+      const o=e.room.objects.find(o=>o.object_id===id)!;
+      e.setVerb(verb); e.handleClick({x:o.x,y:o.y},o); e.advance(1000);
+    }
+    click(135,'open'); expect(e.state.objectStates['135']&8).toBe(8);
+    click(135,'walk'); expect(e.state.roomId).toBe(4);
+    click(151,'walk');
+    expect(e.state.roomId).toBe(3);
+  });
+  it('executes terminal look and direct room transition to shop street', () => {
+    const e=new GameEngine(stateFor(4));
+    const o=e.room.objects.find(o=>o.object_id===152)!;
+    e.setVerb('look'); e.handleClick({x:o.x,y:o.y},o); e.advance(650);
+    expect(e.state.messages.some(m=>m.text.includes('everyone in town owes'))).toBe(true);
+    const street=new GameEngine(stateFor(3));
+    const exit=street.room.objects.find(o=>o.object_id===141)!;
+    street.setVerb('walk');street.handleClick({x:exit.x,y:exit.y},exit);street.advance(1000);
+    // Original uses the FF default handler for the street exit.
+    expect(street.state.roomId).toBe(5);
   });
 });

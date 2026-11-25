@@ -1,10 +1,11 @@
-import officeRoom from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0046.png';
-import bedroomRoom from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0001.png';
-import dreamRoom from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0058.png';
-import dreamPanorama from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0051.png';
-import dreamCloseup from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0055.png';
-import dreamStreet from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0049.png';
-import dreamExit from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0056.png';
+import { assetUrl } from '../content/runtimeAssets';
+const officeRoom = assetUrl('backgrounds/LFv2_0046.png');
+const bedroomRoom = assetUrl('backgrounds/LFv2_0001.png');
+const dreamRoom = assetUrl('backgrounds/LFv2_0058.png');
+const dreamPanorama = assetUrl('backgrounds/LFv2_0051.png');
+const dreamCloseup = assetUrl('backgrounds/LFv2_0055.png');
+const dreamStreet = assetUrl('backgrounds/LFv2_0049.png');
+const dreamExit = assetUrl('backgrounds/LFv2_0056.png');
 
 interface IntroBeat {
   roomId: number;

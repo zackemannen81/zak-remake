@@ -18,8 +18,8 @@ const originalExits = new Map<string, RoomExit>([
 ]);
 
 const exitsOutsideSlice = new Map<string, number>([
-  ['3:135', 4],
-  ['3:141', 5],
+
+
 ]);
 
 const pickupHandlers = new Map<number, Set<number>>([
@@ -248,6 +248,61 @@ const TV_SEGMENTS = [
   { ticks: 180, patch: 116, text: 'We had dreams in which an alien told us how to convert our van into a spaceship.' },
   { ticks: 180, patch: 120, text: 'Scientists are baffled by a mysterious buzz that is affecting people worldwide.' },
 ] as const;
+// SCv2_0029: the exit cutscene tidies the apartment before room travel.
+export function beginApartmentExit(state: GameState): boolean {
+  const steps: Array<'tv' | 'disposal' | 'water' | 'fridge'> = [];
+  if (state.objectStates['21']! & 4) steps.push('tv');
+  if (state.objectStates['122']! & 4) steps.push('disposal');
+  if (state.objectStates['129']! & 8) steps.push('water');
+  if (state.objectStates['125']! & 8) steps.push('fridge');
+  if (!steps.length) return false;
+  state.apartmentExit = { steps, phase: 'next', nextTick: state.tick };
+  return true;
+}
+
+export function advanceApartmentExit(state: GameState): void {
+  const seq = state.apartmentExit;
+  if (!seq || state.roomId !== 2 || state.tick < seq.nextTick) return;
+  const step = seq.steps[0];
+  const targets = { tv: 118, disposal: 122, water: 129, fridge: 125 };
+  const lines = { tv: 'I need to turn the TV off.', disposal: "I don't want to leave the disposal on.", water: "I can't leave with the water running.", fridge: 'I forgot to close the fridge.' };
+  if (seq.phase === 'next') {
+    if (!step) {
+      const door = getRoom(2).objects.find(o => o.object_id === 112)!;
+      planWalk(state, getRoom(2), { x: door.walk_x, y: door.walk_y });
+      seq.phase = 'exit';
+      return;
+    }
+    scheduleAction(state, 1, { type: 'say', text: lines[step], durationTicks: 120 });
+    if (step === 'tv' && state.inventory.includes(21)) {
+      planWalk(state, getRoom(2), { x: 32 * 8, y: 56 * 2 });
+    } else {
+      const target = getRoom(2).objects.find(o => o.object_id === targets[step])!;
+      planWalk(state, getRoom(2), { x: target.walk_x, y: target.walk_y });
+    }
+    seq.phase = 'walking';
+    return;
+  }
+  if (seq.phase === 'walking' && state.actor.path.length === 0 && step) {
+    if (step === 'tv') {
+      if (state.inventory.includes(21)) toggleTv(state, false);
+      else applyRoomScriptVerb(state, 2, 118, 'pull', null);
+    } else if (step === 'disposal') setBits(state, 122, 4, false);
+    else if (step === 'water') { setBits(state, 129, 8, false); setBits(state, 123, 8, false); }
+    else setBits(state, 125, 8, false);
+    seq.steps.shift();
+    seq.phase = 'waiting';
+    seq.nextTick = state.tick + 60;
+    return;
+  }
+  if (seq.phase === 'waiting') { seq.phase = 'next'; return; }
+  if (seq.phase === 'exit' && state.actor.path.length === 0) {
+    const arrival = getRoom(3).objects.find(o => o.object_id === 134)!;
+    delete state.apartmentExit;
+    scheduleAction(state, 1, { type: 'travel', roomId: 3, x: arrival.walk_x, y: arrival.walk_y });
+  }
+}
+
 export function advanceSceneScripts(state: GameState): void {
   if (state.flags.lampFishHeating && state.variables[138] === 1 && (state.objectStates['103']! & 8)) {
     state.variables[46] = (state.variables[46] ?? 0) + 1;
@@ -262,7 +317,7 @@ export function advanceSceneScripts(state: GameState): void {
       scheduleAction(state,1,{type:'say',text:'Uh oh. Goldfish chowder.'});
     }
   } else if (state.roomId === 1) state.variables[46] = 0;
-  if (state.roomId !== 2 || !(state.objectStates['21']! & 4) || !(state.objectStates['118']! & 8)) return;
+  if (state.apartmentExit || state.roomId !== 2 || !(state.objectStates['21']! & 4) || !(state.objectStates['118']! & 8)) return;
   state.tvStartedTick ??= state.tick;
   const cycle = TV_SEGMENTS.reduce((sum, seg) => sum + seg.ticks, 0);
   let time = (state.tick - state.tvStartedTick) % cycle;

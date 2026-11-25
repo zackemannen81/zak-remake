@@ -1,8 +1,9 @@
+import { runObjectProgram } from './objectInterpreter';
 import { advanceActorOneStep, planWalk, scriptActorToRoomPixels } from './movement';
 import { advanceScheduler, scheduleAction } from './scheduler';
 import { PLAYER_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type Point, type RoomData, type SourceObject, type VerbId } from './types';
 import { getRoom, displayObjectName, inventoryObjectName, objectIsTargetable } from '../content/rooms';
-import { advanceSceneScripts, applyInventoryVerb, applyInventoryUse, applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
+import { beginApartmentExit, advanceApartmentExit, advanceSceneScripts, applyInventoryVerb, applyInventoryUse, applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
 
 export class GameEngine {
   constructor(public state: GameState) {}
@@ -12,13 +13,13 @@ export class GameEngine {
   }
 
   setVerb(verb: VerbId): void {
-    if (this.state.scriptSequence || (this.state.scriptLockedUntil ?? 0) > this.state.tick) return;
+    if (this.state.apartmentExit || this.state.scriptSequence || (this.state.scriptLockedUntil ?? 0) > this.state.tick) return;
     this.state.activeVerb = verb;
     if (verb !== 'use') this.state.selectedItemId = null;
   }
 
   selectInventoryItem(objectId: number): void {
-    if (this.state.scriptSequence || this.state.intro || (this.state.scriptLockedUntil ?? 0) > this.state.tick || !this.state.inventory.includes(objectId)) return;
+    if (this.state.apartmentExit || this.state.scriptSequence || this.state.intro || (this.state.scriptLockedUntil ?? 0) > this.state.tick || !this.state.inventory.includes(objectId)) return;
     const scripted = applyInventoryVerb(this.state, objectId, this.state.activeVerb);
     if (scripted !== undefined) { this.speak(scripted, 120); this.state.selectedItemId = null; return; }
     if (this.state.activeVerb === 'use' && this.state.selectedItemId !== null && this.state.selectedItemId !== objectId) {
@@ -43,7 +44,7 @@ export class GameEngine {
 
   handleClick(point: Point, target?: SourceObject): void {
     // The original script holds control until its dream dialogue and walk finish.
-    if (this.state.intro || this.state.scriptSequence || (this.state.scriptLockedUntil ?? 0) > this.state.tick) return;
+    if (this.state.apartmentExit || this.state.intro || this.state.scriptSequence || (this.state.scriptLockedUntil ?? 0) > this.state.tick) return;
 
     const room = this.room;
     if (!target || !this.targetableObjects().some((object) => object.object_id === target.object_id)) {
@@ -67,6 +68,7 @@ export class GameEngine {
     advanceSceneScripts(this.state);
     this.advanceScript108Intro();
     if (this.state.actor.path.length > 0) advanceActorOneStep(this.state);
+    advanceApartmentExit(this.state);
     this.advanceScript108WindowShadeSentence();
     if (this.state.intro?.phase === 'walking' && this.state.actor.path.length === 0) delete this.state.intro;
     if (this.state.actor.path.length === 0 && this.state.scriptSequence) {
@@ -117,6 +119,12 @@ export class GameEngine {
       return;
     }
 
+    // Existing verified room 1–3 handlers retain precedence. New rooms use source programs.
+    if (room.id > 3 || (room.id === 3 && [135,141].includes(target.object_id))) {
+      const vm = runObjectProgram(this.state,target.object_id,pending.verb,pending.selectedItemId);
+      if (vm === 'handled') { this.state.selectedItemId = null; return; }
+      if (vm === 'unsupported') { this.speak('This original script needs additional engine support.'); return; }
+    }
     if (pending.verb === 'walk') {
       const exit = getOriginalExit(room.id, target.object_id);
       if (exit) {
@@ -129,6 +137,7 @@ export class GameEngine {
           this.speak(`The original exit points to room ${exit.roomId}, but its arrival object is missing from the slice.`);
           return;
         }
+        if (room.id === 2 && target.object_id === 112 && beginApartmentExit(this.state)) { this.state.selectedItemId = null; return; }
         scheduleAction(this.state, 1, { type: 'travel', roomId: exit.roomId, x: arrival.walk_x, y: arrival.walk_y });
         this.state.selectedItemId = null;
         return;

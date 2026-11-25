@@ -1,7 +1,7 @@
 import './style.css';
 import { IntroMusic } from './audio/music';
 import { assetManifest } from './content/assetManifest';
-import { getRoom } from './content/rooms';
+import { getRoom, playableRoomIds } from './content/rooms';
 import { GameEngine } from './core/engine';
 import { FIXED_STEP_MS } from './core/types';
 import { createInitialState } from './core/state';
@@ -16,7 +16,9 @@ if (!app) throw new Error('Missing #app root element.');
 
 const ui = new GameUI(app);
 const searchParams = new URLSearchParams(window.location.search);
-const engine = new GameEngine(createInitialState(getRoom(1), { skipIntro: searchParams.get('skipIntro') === '1' }));
+const requestedRoom = Number(searchParams.get('room'));
+const initialRoom = playableRoomIds.includes(requestedRoom) ? requestedRoom : 1;
+const engine = new GameEngine(createInitialState(getRoom(initialRoom), { skipIntro: searchParams.get('skipIntro') === '1' }));
 let renderer: GameRenderer | undefined;
 const visualRegistry = new VisualRegistry();
 

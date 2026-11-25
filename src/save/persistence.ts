@@ -13,7 +13,7 @@ export function deserializeSave(serialized: string): GameState {
   if (value === null || typeof value !== 'object') throw new Error('Save file must contain a state object.');
   const candidate = value as Partial<GameState>;
   if (candidate.schemaVersion !== 1) throw new Error('Unsupported save version.');
-  if (!Number.isInteger(candidate.roomId) || !playableRoomIds.includes(candidate.roomId as 1 | 2 | 3)) throw new Error('Save refers to a room outside the playable slice.');
+  if (!Number.isInteger(candidate.roomId) || !playableRoomIds.includes(candidate.roomId!)) throw new Error('Save refers to a room outside the playable slice.');
   getRoom(candidate.roomId!);
   if (!Number.isInteger(candidate.tick) || (candidate.tick ?? -1) < 0) throw new Error('Save has an invalid scheduler tick.');
   if (!Array.isArray(candidate.variables) || candidate.variables.length !== 256 || candidate.variables.some((item) => !Number.isFinite(item))) throw new Error('Save has invalid game variables.');

@@ -1,3 +1,5 @@
+import runtimeAssets from '../content/runtime-assets.json';
+import { assetUrl } from '../content/runtimeAssets';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { assetManifest } from '../content/assetManifest';
@@ -11,7 +13,7 @@ import { composeRoomMaskPixels, scummV2MaskBufferIndex } from './zPlaneMask';
 import { applyScummV2ZPlanePatch } from './zPlaneShader';
 
 const ACTOR_HEIGHT = 70;
-const costumeImages = import.meta.glob<string>('../content/costumeFrames/*.png', { eager: true, query: '?url', import: 'default' });
+const costumeImages = new Set(runtimeAssets.costumes);
 
 /** Wrap the GLB so its feet meet the logical actor anchor without changing its animation root. */
 export function createGroundedActorVisual(model: THREE.Group, targetHeight: number): THREE.Group | undefined {
@@ -230,7 +232,8 @@ export class GameRenderer {
     }
     this.scriptActorLayer.clear();
     for (const sprite of sprites) {
-      const url = costumeImages[`../content/costumeFrames/costume_${sprite.id}_${frame}.png`];
+      const path = `costumes/costume_${sprite.id}_${frame}.png`;
+      const url = costumeImages.has(path) ? assetUrl(path) : undefined;
       if (!url) continue;
       const mesh = new THREE.Mesh(new THREE.PlaneGeometry(sprite.w, sprite.h),
         new THREE.MeshBasicMaterial({ map: this.getTexture(url), transparent: true, depthWrite: false }));
