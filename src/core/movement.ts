@@ -125,6 +125,10 @@ export function advanceActorOneStep(state: GameState, pixelsPerTick = 2): void {
   state.actor.pose = state.actor.path.length > 0 ? 'walk' : 'idle';
 }
 
+export function walkboxAtPoint(room: RoomData, point: Point): Walkbox | undefined {
+  return room.walkboxes.find((box) => pointInPolygon(point, box.pixel_coordinates));
+}
+
 export function isInsideWalkbox(room: RoomData, point: Point): boolean {
-  return room.walkboxes.some((box) => pointInPolygon(point, box.pixel_coordinates));
+  return walkboxAtPoint(room, point) !== undefined;
 }

@@ -1,11 +1,14 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { assetManifest } from '../content/assetManifest';
-import { displayObjectName, getRoom, objectImageUrl, objectIsDrawable, objectIsTargetable } from '../content/rooms';
+import { displayObjectName, getRoom, objectImageUrl, objectIsDrawable, objectIsTargetable, objectZplaneUrl } from '../content/rooms';
+import { walkboxAtPoint } from '../core/movement';
 import type { GameState, Point, RoomData, SourceObject } from '../core/types';
 import { ORIGINAL_ROOM_HEIGHT, VIEWPORT_WIDTH } from '../core/types';
 import { shouldDrawObjectVisual, VisualRegistry, type TextureCrop } from './visualRegistry';
 import { actorDepthScale, actorYaw } from './actorPose';
+import { composeRoomMaskPixels, scummV2MaskBufferIndex } from './zPlaneMask';
+import { applyScummV2ZPlanePatch } from './zPlaneShader';
 
 const ACTOR_HEIGHT = 70;
 
@@ -37,6 +40,56 @@ interface TextureLoadOptions {
   onPrimaryError?: () => void;
 }
 
+interface LoadedZPlaneImage {
+  width: number;
+  height: number;
+  pixels: Uint8ClampedArray;
+}
+
+function loadZPlaneImage(url: string): Promise<LoadedZPlaneImage> {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => {
+      const width = image.naturalWidth;
+      const height = image.naturalHeight;
+      if (width <= 0 || height <= 0) {
+        reject(new Error(`Z-plane image has no pixels: ${url}`));
+        return;
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const context = canvas.getContext('2d', { willReadFrequently: true });
+      if (!context) {
+        reject(new Error('A 2D canvas context is unavailable for Z-plane decoding.'));
+        return;
+      }
+      context.drawImage(image, 0, 0);
+      try {
+        resolve({ width, height, pixels: context.getImageData(0, 0, width, height).data });
+      } catch (error) {
+        reject(error);
+      }
+    };
+    image.onerror = () => reject(new Error(`Unable to load Z-plane image: ${url}`));
+    image.src = url;
+  });
+}
+
+/** Binary red-channel depth data; sampled to clip actor fragments, never used for object transparency. */
+function createZPlaneDepthTexture(width: number, height: number, pixels: Uint8Array): THREE.DataTexture {
+  const texture = new THREE.DataTexture(pixels, width, height, THREE.RGBAFormat);
+  texture.colorSpace = THREE.NoColorSpace;
+  texture.flipY = false;
+  texture.wrapS = THREE.ClampToEdgeWrapping;
+  texture.wrapT = THREE.ClampToEdgeWrapping;
+  texture.magFilter = THREE.NearestFilter;
+  texture.minFilter = THREE.NearestFilter;
+  texture.generateMipmaps = false;
+  texture.needsUpdate = true;
+  return texture;
+}
+
 export class GameRenderer {
   readonly canvas: HTMLCanvasElement;
   private readonly renderer: THREE.WebGLRenderer;
@@ -46,6 +99,16 @@ export class GameRenderer {
   private readonly roomLayer = new THREE.Group();
   private readonly actorRoot = new THREE.Group();
   private readonly actorPlaceholder = new THREE.Group();
+  private readonly emptyZPlaneMask = createZPlaneDepthTexture(1, 1, new Uint8Array([0, 0, 0, 255]));
+  private readonly actorZPlaneUniforms = {
+    mask: { value: this.emptyZPlaneMask },
+    roomSize: { value: new THREE.Vector2(1, 1) },
+    enabled: { value: 0 },
+    scrollX: { value: 0 },
+    sourceOriginY: { value: ORIGINAL_ROOM_HEIGHT },
+  };
+  private currentZPlaneMaskTexture?: THREE.DataTexture;
+  private zPlaneLoadGeneration = 0;
   private readonly textureLoader = new THREE.TextureLoader();
   private readonly gltfLoader = new GLTFLoader();
   private readonly textureCache = new Map<string, THREE.Texture>();
@@ -88,6 +151,7 @@ export class GameRenderer {
     keyLight.position.set(120, 180, 100);
     this.scene.add(keyLight);
     this.createActorPlaceholder();
+    this.applyZPlaneOcclusion(this.actorPlaceholder);
     this.actorRoot.add(this.actorPlaceholder);
     this.renderer.domElement.addEventListener('pointerdown', this.handlePointerDown);
     this.resizeObserver = new ResizeObserver(() => this.resize());
@@ -107,6 +171,9 @@ export class GameRenderer {
     this.scrollX = Math.max(0, Math.min(room.width - VIEWPORT_WIDTH, state.actor.x - VIEWPORT_WIDTH / 2));
     this.world.position.x = -this.scrollX;
     this.actorRoot.position.set(state.actor.x, state.actor.y, 5);
+    const actorWalkbox = walkboxAtPoint(room, { x: state.actor.x, y: state.actor.y });
+    this.actorZPlaneUniforms.enabled.value = scummV2MaskBufferIndex(actorWalkbox?.mask ?? 0) === 1 ? 1 : 0;
+    this.actorZPlaneUniforms.scrollX.value = this.scrollX;
     // Foot-anchored visual depth; gameplay/hotspot coordinates stay unchanged.
     this.actorRoot.scale.setScalar(actorDepthScale(state.actor.y));
     // Model-local Y yaw works with the existing skinned GLB animation.
@@ -126,11 +193,14 @@ export class GameRenderer {
   }
 
   destroy(): void {
+    this.zPlaneLoadGeneration += 1;
     this.resizeObserver.disconnect();
     this.renderer.domElement.removeEventListener('pointerdown', this.handlePointerDown);
     this.renderer.dispose();
     for (const texture of this.textureCache.values()) texture.dispose();
     this.textureCache.clear();
+    this.currentZPlaneMaskTexture?.dispose();
+    this.emptyZPlaneMask.dispose();
   }
 
   private resize(): void {
@@ -216,6 +286,77 @@ export class GameRenderer {
         });
       }
     }
+    this.loadRoomZPlaneMask(room, drawableObjects.map(({ object }) => object));
+  }
+
+  private loadRoomZPlaneMask(room: RoomData, objects: SourceObject[]): void {
+    const generation = ++this.zPlaneLoadGeneration;
+    this.actorZPlaneUniforms.enabled.value = 0;
+    this.actorZPlaneUniforms.mask.value = this.emptyZPlaneMask;
+    this.actorZPlaneUniforms.roomSize.value.set(room.width, room.height);
+    this.currentZPlaneMaskTexture?.dispose();
+    this.currentZPlaneMaskTexture = undefined;
+
+    const sources = objects
+      .map((object) => ({ object, url: objectZplaneUrl(room.id, object.object_id) }))
+      .filter((source): source is { object: SourceObject; url: string } => source.url !== undefined);
+    if (sources.length === 0) return;
+
+    void Promise.all(sources.map(async ({ object, url }) => {
+      try {
+        const image = await loadZPlaneImage(url);
+        if (image.width !== object.width || image.height !== object.height) {
+          console.warn(`Z-plane size does not match object ${object.object_id} in room ${room.id}.`);
+          return undefined;
+        }
+        return { object, image };
+      } catch (error) {
+        console.warn(`Unable to decode Z-plane for object ${object.object_id} in room ${room.id}.`, error);
+        return undefined;
+      }
+    })).then((loaded) => {
+      if (generation !== this.zPlaneLoadGeneration) return;
+
+      const roomPixels = new Uint8Array(room.width * room.height * 4);
+      let hasCoveredPixels = false;
+      for (const entry of loaded) {
+        if (!entry) continue;
+        const objectPixels = composeRoomMaskPixels(
+          room.width,
+          room.height,
+          entry.object.x,
+          entry.object.y,
+          entry.image.width,
+          entry.image.height,
+          entry.image.pixels,
+        );
+        for (let index = 0; index < objectPixels.length; index += 4) {
+          if (objectPixels[index] < 128) continue;
+          roomPixels[index] = 255;
+          roomPixels[index + 1] = 255;
+          roomPixels[index + 2] = 255;
+          roomPixels[index + 3] = 255;
+          hasCoveredPixels = true;
+        }
+      }
+      if (!hasCoveredPixels) return;
+
+      const texture = createZPlaneDepthTexture(room.width, room.height, roomPixels);
+      this.currentZPlaneMaskTexture = texture;
+      this.actorZPlaneUniforms.mask.value = texture;
+    }).catch((error: unknown) => {
+      console.error(`Unable to compose Z-planes for room ${room.id}.`, error);
+    });
+  }
+
+  private applyZPlaneOcclusion(root: THREE.Object3D): void {
+    root.traverse((node) => {
+      if (!(node instanceof THREE.Mesh)) return;
+      const materials = Array.isArray(node.material) ? node.material : [node.material];
+      for (const material of materials) {
+        applyScummV2ZPlanePatch(material, this.actorZPlaneUniforms);
+      }
+    });
   }
 
   private clearRoomLayer(): void {
@@ -351,6 +492,7 @@ export class GameRenderer {
       });
       this.externalActor = visual;
       this.externalActorModel = model;
+      this.applyZPlaneOcclusion(visual);
       this.actorRoot.add(visual);
       this.actorPlaceholder.visible = false;
 

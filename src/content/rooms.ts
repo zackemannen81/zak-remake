@@ -63,6 +63,15 @@ const originalObjectImages = import.meta.glob<string>(
   '../../zak/converted/images/objects/room_00{1,2,3}/object_*/frame_*.png',
   { eager: true, query: '?url', import: 'default' },
 );
+const originalObjectZplanes = import.meta.glob<string>(
+  '../../zak/converted/images/objects/room_00{1,2,3}/object_*/zplane_000.png',
+  { eager: true, query: '?url', import: 'default' },
+);
+const zplaneByObject = new Map<string, string>();
+for (const [path, url] of Object.entries(originalObjectZplanes)) {
+  const match = path.match(/room_00([123])\/object_(\d+)\/zplane_000\.png$/);
+  if (match) zplaneByObject.set(`${Number(match[1])}:${Number(match[2])}`, url);
+}
 const imageByObject = new Map<string, string>();
 for (const [path, url] of Object.entries(originalObjectImages)) {
   const match = path.match(/room_00([123])\/object_(\d+)\/frame_(\d+)\.png$/);
@@ -75,6 +84,10 @@ for (const [path, url] of Object.entries(originalObjectImages)) {
 
 export function objectImageUrl(roomId: number, objectId: number): string | undefined {
   return imageByObject.get(`${roomId}:${objectId}`);
+}
+
+export function objectZplaneUrl(roomId: number, objectId: number): string | undefined {
+  return zplaneByObject.get(`${roomId}:${objectId}`);
 }
 
 export function displayObjectName(object: SourceObject): string {
