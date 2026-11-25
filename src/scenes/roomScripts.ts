@@ -61,14 +61,82 @@ function setBits(state: GameState, objectId: number, mask: number, value: boolea
   state.objectStates[key] = value ? old | mask : old & ~mask;
 }
 
+// SCv2_0023: remote requires power and proximity; TV image is object 115.
+function toggleTv(state: GameState, desired?: boolean): string {
+  if (state.roomId !== 2) return "It doesn't seem to work here.";
+  if (state.actor.x >= 45 * 8) return "I'm too far away from the TV.";
+  if (!(state.objectStates['118']! & 8)) return "I wonder why it's not working?";
+  const on = desired ?? !(state.objectStates['21']! & 4);
+  setBits(state, 21, 4, on);
+  for (const id of [114,115,116,120,133]) setBits(state, id, 8, on && id === 115);
+  return on ? 'Good morning San Francisco.' : 'Turned off the TV.';
+}
+
+export function applyInventoryVerb(state: GameState, id: number, verb: VerbId): string | undefined {
+  if (id === 21 && (verb === 'use' || verb === 'turnOn' || verb === 'turnOff') && state.selectedItemId === null) {
+    return toggleTv(state, verb === 'use' ? undefined : verb === 'turnOn');
+  }
+  if (verb === 'look') return id === 27 ? 'THE KING FAN CLUB — Member in good standing since 1997.' : undefined;
+  return undefined;
+}
+
 export function applyRoomScriptVerb(state: GameState, roomId: number, objectId: number, verb: VerbId, itemId: number | null = state.selectedItemId): string | undefined {
+  // OCv2_0139: the letter is a scene proxy for inventory object 27.
+  if (roomId === 3 && objectId === 139 && (verb === 'pickup' || verb === 'look' || verb === 'close')) {
+    if (verb !== 'close') {
+      scheduleAction(state, 1, { type: 'set-owner', objectId: 27, ownerId: PLAYER_OWNER_ID });
+      setBits(state, 27, 10, true);
+      state.variables[159] = 0;
+    }
+    setBits(state, 139, 8, false);
+    setBits(state, 139, 2, true);
+    const next = verb === 'close' ? 28 : 138;
+    setBits(state, next, 8, true);
+    setBits(state, next, 2, false);
+    return verb === 'close' ? 'Closed the mailbox.' : "It's THE KING FAN CLUB card! Wow, that was fast!";
+  }
+  // OCv2_0147 -> SCv2_0039: three visits; the final visit drops bread.
+  if (roomId === 3 && objectId === 147 && (verb === 'push' || verb === 'use')) {
+    if (state.variables[152]! >= 3) return 'Nobody answers.';
+    const count = ++state.variables[152]!;
+    setBits(state, 137, 8, true);
+    state.scriptLockedUntil = state.tick + (count === 3 ? 150 : 90);
+    if (count === 3) {
+      scheduleAction(state, 60, { type: 'set-object-state', objectId: 148, mask: 8, value: true });
+      scheduleAction(state, 150, { type: 'set-object-state', objectId: 137, mask: 8, value: false });
+    }
+    return ["We're closed, and we're out of fresh bread anyway.", "Listen, you DON'T want the bread we have left! Go away!", "OK, you asked for it!"][count - 1]!;
+  }
+  if (roomId === 2 && objectId === 113 && (verb === 'turnOn' || verb === 'turnOff' || verb === 'use')) {
+    if (itemId === 21 || (state.inventory.includes(21) && verb !== 'use')) return toggleTv(state, verb === 'use' ? undefined : verb === 'turnOn');
+    return state.inventory.includes(21) ? 'I have to use the remote control.' : "It doesn't have any controls on it.";
+  }
+  if (roomId === 1 && (objectId === 107 || objectId === 109) && ['push','pull','pickup','use'].includes(verb)) {
+    const on = !(state.objectStates['107']! & 8);
+    setBits(state, 107, 8, on);
+    setBits(state, 109, 10, on);
+    return on ? 'Lifted the rug corner.' : 'Put the rug corner back.';
+  }
+  if (roomId === 2 && [129,123,122].includes(objectId) && ['turnOn','turnOff','use','push'].includes(verb) && itemId === null) {
+    const id = objectId === 122 ? 122 : 129;
+    const bit = id === 122 ? 4 : 8;
+    const on = verb === 'turnOn' ? true : verb === 'turnOff' ? false : !(state.objectStates[String(id)]! & bit);
+    setBits(state, id, bit, on);
+    if (id === 129) setBits(state, 123, 8, on);
+    return on ? 'Turned on.' : 'Turned off.';
+  }
+  if (roomId === 2 && objectId === 129 && verb === 'use' && itemId === 29) {
+    scheduleAction(state, 1, { type: 'set-owner', objectId: 29, ownerId: 14 });
+    setBits(state, 130, 8, true); setBits(state, 130, 2, false);
+    return 'Put the stale bread in the sink.';
+  }
   // OCv2_0119: lift the right seat cushion, expose remote; no inventory transfer.
-  if (roomId === 2 && objectId === 119 && (verb === 'pickup' || verb === 'open' || verb === 'pull' || verb === 'close')) {
-    setBits(state, 119, OBJECT_INTRINSIC, verb === 'close' ? false : verb === 'pull' ? !(state.objectStates['119']! & 8) : true);
+  if (roomId === 2 && objectId === 119 && (verb === 'pickup' || verb === 'open' || verb === 'push' || verb === 'pull' || verb === 'close')) {
+    setBits(state, 119, OBJECT_INTRINSIC, verb === 'close' ? false : (verb === 'pull' || verb === 'push') ? !(state.objectStates['119']! & 8) : true);
     return verb === 'close' ? 'Put the cushion back.' : 'Moved the seat cushion.';
   }
   // OCv2_0131: clear the left cushion hotspot, walk to object 132, then clear its patch.
-  if (roomId === 2 && objectId === 131 && (verb === 'pickup' || verb === 'pull')) {
+  if (roomId === 2 && objectId === 131 && (verb === 'pickup' || verb === 'pull' || verb === 'push')) {
     const destination = getRoom(2).objects.find(o => o.object_id === 132)!;
     setBits(state, 131, OBJECT_INTRINSIC | OBJECT_UNTOUCHABLE, true);
     planWalk(state, getRoom(2), { x: destination.walk_x, y: destination.walk_y });

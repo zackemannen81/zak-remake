@@ -303,3 +303,60 @@ describe('inventory combinations and scripted scene objects', () => {
     expect(engine.state.scriptSequence).toBeUndefined();
   });
 });
+
+describe('mailbox, powered TV and repeated bakery actions', () => {
+  function click(engine: GameEngine, id: number, verb: import('./types').VerbId) {
+    const object = engine.room.objects.find(o => o.object_id === id)!;
+    engine.setVerb(verb);
+    const point = { x: object.x + object.width / 2, y: object.y + object.height / 2 };
+    engine.handleClick(point, hitTestRoomObject(engine.room, engine.state.objectOwners, engine.state.objectStates, point, verb));
+    engine.advance(650);
+  }
+  it('unlocks mailbox, collects the fan club card and removes letter hotspot', () => {
+    const engine = new GameEngine(stateFor(3));
+    engine.state.inventory.push(24); engine.state.objectOwners['24'] = 1;
+    engine.selectInventoryItem(24);
+    click(engine, 28, 'use');
+    expect(engine.state.objectStates['139'] & 8).toBe(8);
+    click(engine, 139, 'pickup');
+    expect(engine.state.inventory).toContain(27);
+    expect(engine.state.inventory).not.toContain(139);
+    expect(engine.state.objectStates['139'] & 10).toBe(2);
+    expect(engine.state.objectStates['138'] & 8).toBe(8);
+  });
+  it('requires TV power, then toggles the screen with the remote', () => {
+    const engine = new GameEngine(stateFor(2));
+    click(engine, 119, 'pickup'); click(engine, 21, 'pickup');
+    engine.setVerb('turnOn'); engine.selectInventoryItem(21); engine.advance(2);
+    expect(engine.state.objectStates['21'] & 4).toBe(0);
+    click(engine, 131, 'pickup'); click(engine, 20, 'pickup');
+    engine.selectInventoryItem(20); click(engine, 118, 'use');
+    engine.setVerb('turnOn'); engine.selectInventoryItem(21); engine.advance(2);
+    expect(engine.state.objectStates['21'] & 4).toBe(4);
+    expect(engine.state.objectStates['115'] & 8).toBe(8);
+    engine.setVerb('turnOff'); engine.selectInventoryItem(21); engine.advance(2);
+    expect(engine.state.objectStates['115'] & 8).toBe(0);
+  });
+  it('rings three times with distinct responses and makes bread collectible', () => {
+    const engine = new GameEngine(stateFor(3));
+    click(engine, 147, 'push');
+    expect(engine.state.variables[152]).toBe(1);
+    expect(engine.state.objectStates['148'] & 8).toBe(0);
+    click(engine, 147, 'use');
+    expect(engine.state.variables[152]).toBe(2);
+    click(engine, 147, 'push');
+    expect(engine.state.variables[152]).toBe(3);
+    expect(engine.state.objectStates['148'] & 8).toBe(8);
+    click(engine, 29, 'pickup');
+    expect(engine.state.inventory).toContain(29);
+    click(engine, 147, 'push');
+    expect(engine.state.variables[152]).toBe(3);
+  });
+  it('toggles rug corner with push and pull', () => {
+    const engine = new GameEngine(stateFor(1));
+    click(engine, 107, 'pull');
+    expect(engine.state.objectStates['107'] & 8).toBe(8);
+    click(engine, 107, 'push');
+    expect(engine.state.objectStates['107'] & 8).toBe(0);
+  });
+});

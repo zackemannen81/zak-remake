@@ -1,4 +1,4 @@
-export type VerbId = 'walk' | 'look' | 'use' | 'open' | 'close' | 'pickup' | 'talk' | 'putOn' | 'takeOff' | 'turnOn' | 'turnOff' | 'pull' | 'give';
+export type VerbId = 'walk' | 'look' | 'use' | 'open' | 'close' | 'pickup' | 'talk' | 'putOn' | 'takeOff' | 'turnOn' | 'turnOff' | 'push' | 'pull' | 'give';
 export type Facing = 'left' | 'right' | 'up' | 'down';
 export type ObjectVisualKind = 'original-2d' | 'concept-2d' | 'scene-3d';
 
@@ -96,6 +96,7 @@ export interface GameState {
   inventory: number[];
   objectNames?: Record<string, string>;
   scriptSequence?: ScriptSequence;
+  scriptLockedUntil?: number;
   activeVerb: VerbId;
   selectedItemId: number | null;
   pendingInteraction: PendingInteraction | null;

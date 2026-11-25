@@ -144,6 +144,10 @@ export function hitTestRoomObject(room: RoomData, owners: Record<string, number>
     const container = hits.find(object => [84, 90, 92, 94, 111, 112, 121, 125].includes(object.object_id));
     if (container) return container;
   }
+  if (room.id === 1 && (verb === 'push' || verb === 'pull')) {
+    const rug = hits.find(object => object.object_id === 107 || object.object_id === 109);
+    if (rug) return rug;
+  }
   return hits[0];
 }
 

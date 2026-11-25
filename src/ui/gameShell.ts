@@ -5,6 +5,7 @@ const verbs: Array<{ id: VerbId; label: string }> = [
   { id: 'walk', label: 'Walk to' },
   { id: 'putOn', label: 'Put on' },
   { id: 'turnOn', label: 'Turn on' },
+  { id: 'push', label: 'Push' },
   { id: 'pull', label: 'Pull' },
   { id: 'give', label: 'Give' },
   { id: 'use', label: 'Use' },

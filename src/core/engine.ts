@@ -2,7 +2,7 @@ import { advanceActorOneStep, planWalk, scriptActorToRoomPixels } from './moveme
 import { advanceScheduler, scheduleAction } from './scheduler';
 import { PLAYER_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type Point, type RoomData, type SourceObject, type VerbId } from './types';
 import { getRoom, displayObjectName, inventoryObjectName, objectIsTargetable } from '../content/rooms';
-import { applyInventoryUse, applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
+import { applyInventoryVerb, applyInventoryUse, applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
 
 export class GameEngine {
   constructor(public state: GameState) {}
@@ -12,12 +12,15 @@ export class GameEngine {
   }
 
   setVerb(verb: VerbId): void {
+    if (this.state.scriptSequence || (this.state.scriptLockedUntil ?? 0) > this.state.tick) return;
     this.state.activeVerb = verb;
     if (verb !== 'use') this.state.selectedItemId = null;
   }
 
   selectInventoryItem(objectId: number): void {
-    if (this.state.scriptSequence || this.state.intro || !this.state.inventory.includes(objectId)) return;
+    if (this.state.scriptSequence || this.state.intro || (this.state.scriptLockedUntil ?? 0) > this.state.tick || !this.state.inventory.includes(objectId)) return;
+    const scripted = applyInventoryVerb(this.state, objectId, this.state.activeVerb);
+    if (scripted !== undefined) { this.speak(scripted, 120); this.state.selectedItemId = null; return; }
     if (this.state.activeVerb === 'use' && this.state.selectedItemId !== null && this.state.selectedItemId !== objectId) {
       const first = this.state.selectedItemId;
       const result = applyInventoryUse(this.state, first, objectId);
@@ -40,7 +43,7 @@ export class GameEngine {
 
   handleClick(point: Point, target?: SourceObject): void {
     // The original script holds control until its dream dialogue and walk finish.
-    if (this.state.intro || this.state.scriptSequence) return;
+    if (this.state.intro || this.state.scriptSequence || (this.state.scriptLockedUntil ?? 0) > this.state.tick) return;
 
     const room = this.room;
     if (!target || !this.targetableObjects().some((object) => object.object_id === target.object_id)) {
@@ -194,9 +197,10 @@ export class GameEngine {
       case 'takeOff':
       case 'turnOn':
       case 'turnOff':
+      case 'push':
       case 'pull':
       case 'give':
-        this.speak('That action is not implemented yet.');
+        this.speak(`I can't do that with ${name.toLowerCase()}.`);
         break;
       default: {
         const exhaustive: never = pending.verb;
