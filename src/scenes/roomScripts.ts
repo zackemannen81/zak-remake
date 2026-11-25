@@ -1,7 +1,7 @@
 import { PLAYER_OWNER_ID, ROOM_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type VerbId, type ScheduledAction } from '../core/types';
 import { scheduleAction } from '../core/scheduler';
 import { planWalk } from '../core/movement';
-import { getRoom } from '../content/rooms';
+import { getRoom, objectHasClass } from '../content/rooms';
 
 export interface RoomExit {
   roomId: number;
@@ -83,6 +83,55 @@ export function applyInventoryVerb(state: GameState, id: number, verb: VerbId): 
 }
 
 export function applyRoomScriptVerb(state: GameState, roomId: number, objectId: number, verb: VerbId, itemId: number | null = state.selectedItemId): string | undefined {
+  // OCv2_0103: Sushi moves between the bowl and the lamp; the bowl remains owned.
+  if (roomId === 1 && objectId === 103 && verb === 'use' && itemId === 14 && state.inventory.includes(14)) {
+    if (state.variables[138] === 3 || state.variables[138] === 2) return "Sushi's not here.";
+    const inLamp = state.variables[138] === 1;
+    state.variables[138] = inLamp ? 0 : 1;
+    (state.objectNames ??= {})['14'] = inLamp ? 'Sushi in fish bowl' : 'fish bowl';
+    state.objectNames['103'] = inLamp ? 'lamp' : 'Sushi in lamp';
+    if (inLamp) { setBits(state, 104, 8, false); setBits(state, 105, 8, false); }
+    else if (state.objectStates['103']! & 8) state.flags.lampFishHeating = true;
+    if (inLamp) state.flags.lampFishHeating = false;
+    return inLamp ? "Isn't it nice to be home, Sushi?" : "Hope you're happy in there, Sushi.";
+  }
+  if (roomId === 1 && objectId === 103 && ['turnOn','turnOff'].includes(verb)) {
+    if (verb === 'turnOn' && (state.objectStates['103']! & 4)) return "It's broken.";
+    const on = verb === 'turnOn';
+    setBits(state, 103, 8, on);
+    state.flags.lampFishHeating = on && state.variables[138] === 1;
+    if (!on) { setBits(state,104,8,false); setBits(state,105,8,false); }
+    return on ? 'Turned on the lamp.' : 'Turned off the lamp.';
+  }
+  // OCv2_0106 / 0093: first pickup pushes the card away; a class 1/2 tool retrieves it.
+  if (roomId === 1 && objectId === 106) {
+    if (verb === 'pickup') {
+      if (state.objectStates['106']! & 8) return "It's way under the desk.";
+      setBits(state,106,8,true); setBits(state,18,8,true);
+      return 'Oh no, I pushed it way under the desk!';
+    }
+    if (verb === 'use' && itemId !== null && state.inventory.includes(itemId)) {
+      if (!objectHasClass(itemId, 3)) return "I can't reach it with that.";
+      setBits(state,106,10,true); setBits(state,18,8,false); setBits(state,18,2,true);
+      scheduleAction(state,1,{type:'set-owner',objectId:18,ownerId:PLAYER_OWNER_ID});
+      return "Yay, it's my CashCard.";
+    }
+    if (verb === 'look') return "I can't make out what it says.";
+  }
+  // OCv2_0142 -> OCv2_0147 FD: knocking with a class 2/16 item wakes the driver.
+  if (roomId === 3 && (objectId === 142 || objectId === 144) && verb === 'use' && itemId !== null && state.inventory.includes(itemId)) {
+    if (!objectHasClass(itemId,18) && itemId !== 16) return "That won't wake him up.";
+    if (!(state.objectStates['144']! & 8)) return "He's already awake.";
+    setBits(state,144,8,false);
+    state.scriptLockedUntil = state.tick + 240;
+    const seen = state.flags.busDriverAwakened;
+    state.flags.busDriverAwakened = true;
+    scheduleAction(state,80,{type:'say',text:"I guess ya wanna go to the airport.",durationTicks:80});
+    scheduleAction(state,160,{type:'say',text:'Well, climb aboard.',durationTicks:80});
+    scheduleAction(state,220,{type:'set-object-state',objectId:143,mask:8,value:true});
+    scheduleAction(state,220,{type:'set-object-state',objectId:142,mask:2,value:true});
+    return seen ? "Oh, it's you again." : "Hey! Wadda ya doin' wakin' me up?";
+  }
   // OCv2_0139: the letter is a scene proxy for inventory object 27.
   if (roomId === 3 && objectId === 139 && (verb === 'pickup' || verb === 'look' || verb === 'close')) {
     if (verb !== 'close') {
@@ -200,6 +249,19 @@ const TV_SEGMENTS = [
   { ticks: 180, patch: 120, text: 'Scientists are baffled by a mysterious buzz that is affecting people worldwide.' },
 ] as const;
 export function advanceSceneScripts(state: GameState): void {
+  if (state.flags.lampFishHeating && state.variables[138] === 1 && (state.objectStates['103']! & 8)) {
+    state.variables[46] = (state.variables[46] ?? 0) + 1;
+    const phase = Math.floor(state.variables[46]! / 5);
+    setBits(state,104,8,phase % 2 === 0);
+    setBits(state,105,8,phase % 2 === 1);
+    if (phase >= 12) {
+      state.flags.lampFishHeating = false;
+      state.variables[138] = 3; state.variables[46] = 0;
+      setBits(state,104,8,false); setBits(state,105,8,false); setBits(state,103,8,false); setBits(state,103,4,true);
+      (state.objectNames ??= {})['103'] = 'lamp'; state.objectNames['14'] = 'fish bowl';
+      scheduleAction(state,1,{type:'say',text:'Uh oh. Goldfish chowder.'});
+    }
+  } else if (state.roomId === 1) state.variables[46] = 0;
   if (state.roomId !== 2 || !(state.objectStates['21']! & 4) || !(state.objectStates['118']! & 8)) return;
   state.tvStartedTick ??= state.tick;
   const cycle = TV_SEGMENTS.reduce((sum, seg) => sum + seg.ticks, 0);

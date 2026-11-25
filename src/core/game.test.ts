@@ -383,3 +383,45 @@ describe('scene animation and cord ownership', () => {
     expect(state.inventory).not.toContain(20);
   });
 });
+
+describe('Sushi, CashCard and bus puzzle chains', () => {
+  function click(engine: GameEngine, id: number, verb: import('./types').VerbId) {
+    const o = engine.room.objects.find(o => o.object_id === id)!;
+    engine.setVerb(verb);
+    const point = { x: o.x + o.width / 2, y: o.y + o.height / 2 };
+    engine.handleClick(point, hitTestRoomObject(engine.room, engine.state.objectOwners, engine.state.objectStates, point, verb));
+    engine.advance(650);
+  }
+  it('transfers Sushi to lamp and back without consuming bowl', () => {
+    const e = new GameEngine(stateFor(1));
+    click(e,14,'pickup');
+    e.selectInventoryItem(14); click(e,103,'use');
+    expect(e.state.variables[138]).toBe(1);
+    expect(e.state.objectNames?.['14']).toBe('fish bowl');
+    expect(e.state.inventory).toContain(14);
+    e.selectInventoryItem(14); click(e,103,'use');
+    expect(e.state.variables[138]).toBe(0);
+    expect(e.state.objectNames?.['14']).toBe('Sushi in fish bowl');
+  });
+  it('pushes card under desk and retrieves it with butter knife, not egg', () => {
+    const e = new GameEngine(stateFor(1));
+    click(e,94,'open'); click(e,106,'pickup');
+    expect(e.state.objectStates['106'] & 8).toBe(8);
+    expect(e.state.inventory).not.toContain(18);
+    e.state.inventory.push(22,26); e.state.objectOwners['22']=1; e.state.objectOwners['26']=1;
+    e.selectInventoryItem(22); click(e,106,'use');
+    expect(e.state.inventory).not.toContain(18);
+    e.selectInventoryItem(26); click(e,106,'use');
+    expect(e.state.inventory).toContain(18);
+    expect(e.state.inventory).toContain(26);
+    expect(e.targetableObjects().some(o=>o.object_id===106)).toBe(false);
+  });
+  it('wakes bus driver with bread and opens bus without consuming bread', () => {
+    const e = new GameEngine(stateFor(3));
+    e.state.inventory.push(29); e.state.objectOwners['29']=1;
+    e.selectInventoryItem(29); click(e,142,'use');
+    expect(e.state.objectStates['144'] & 8).toBe(0);
+    expect(e.state.objectStates['143'] & 8).toBe(8);
+    expect(e.state.inventory).toContain(29);
+  });
+});

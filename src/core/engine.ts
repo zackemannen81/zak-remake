@@ -147,7 +147,7 @@ export class GameEngine {
       return;
     }
 
-    const name = displayObjectName(target);
+    const name = this.state.objectNames?.[String(target.object_id)] ?? displayObjectName(target);
     switch (pending.verb) {
       case 'look':
         this.state.variables[1] = target.object_id;

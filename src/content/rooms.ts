@@ -1,3 +1,4 @@
+import objectClasses from './object-classes.json';
 import roomsJson from '../../zak/converted/metadata/rooms.json';
 import walkboxesJson from '../../zak/converted/metadata/walkboxes.json';
 import background1 from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0001.png';
@@ -124,7 +125,16 @@ export function objectIsVisible(room: RoomData, owners: Record<string, number>, 
   return objectIsAvailable(room, states, object) && Boolean((states[String(object.object_id)] ?? 0) & OBJECT_INTRINSIC);
 }
 
+export function objectHasClass(id: number, mask: number): boolean {
+  return Boolean(((objectClasses as Record<string, number>)[String(id)] ?? 0) & mask);
+}
+
 export function objectIsTargetable(room: RoomData, owners: Record<string, number>, states: Record<string, number>, object: SourceObject): boolean {
+  // The original card hotspot has a closed-parent flag in the dump, but the
+  // playable desk drawer exposes it when open. Keep its under-desk proxy usable.
+  if (room.id === 1 && object.object_id === 106) {
+    return Boolean((states['94']! & 8) || (states['106']! & 8)) && !(states['106']! & 2) && owners['18'] !== 1;
+  }
   return objectIsAvailable(room, states, object) && (owners[String(object.object_id)] ?? ROOM_OWNER_ID) === ROOM_OWNER_ID && !((states[String(object.object_id)] ?? 0) & OBJECT_UNTOUCHABLE);
 }
 
@@ -147,6 +157,16 @@ export function hitTestRoomObject(room: RoomData, owners: Record<string, number>
   if (room.id === 1 && (verb === 'push' || verb === 'pull')) {
     const rug = hits.find(object => object.object_id === 107 || object.object_id === 109);
     if (rug) return rug;
+  }
+  if (room.id === 1 && (verb === 'pickup' || verb === 'use' || verb === 'look')) {
+    const card = hits.find(o => o.object_id === 106);
+    if (card) return card;
+  }
+  if (room.id === 3 && verb === 'use') {
+    const reader = hits.find(o => o.object_id === 150);
+    if (reader) return reader;
+    const bus = hits.find(o => o.object_id === 142);
+    if (bus) return bus;
   }
   return hits[0];
 }
