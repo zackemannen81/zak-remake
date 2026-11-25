@@ -53,6 +53,7 @@ export type ScheduledAction =
   | { type: 'set-variable'; index: number; value: number }
   | { type: 'add-variable'; index: number; amount: number }
   | { type: 'set-flag'; name: string; value: boolean }
+  | { type: 'set-object-name'; objectId: number; name: string }
   | { type: 'set-owner'; objectId: number; ownerId: number }
   | { type: 'set-object-state'; objectId: number; mask: number; value: boolean }
   | { type: 'travel'; roomId: number; x: number; y: number };
@@ -75,6 +76,8 @@ export interface PendingInteraction {
   selectedItemId: number | null;
 }
 
+export interface ScriptSequence { roomId: number; afterWalk: ScheduledAction[]; }
+
 export interface GameState {
   schemaVersion: 1;
   tick: number;
@@ -91,6 +94,8 @@ export interface GameState {
   objectOwners: Record<string, number>;
   objectStates: Record<string, number>;
   inventory: number[];
+  objectNames?: Record<string, string>;
+  scriptSequence?: ScriptSequence;
   activeVerb: VerbId;
   selectedItemId: number | null;
   pendingInteraction: PendingInteraction | null;

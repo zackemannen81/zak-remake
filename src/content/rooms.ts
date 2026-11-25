@@ -90,6 +90,15 @@ export function objectZplaneUrl(roomId: number, objectId: number): string | unde
   return zplaneByObject.get(`${roomId}:${objectId}`);
 }
 
+export function inventoryObjectName(objectId: number, names: Record<string, string> = {}): string {
+  if (names[String(objectId)]) return names[String(objectId)]!;
+  for (const room of roomMap.values()) {
+    const object = room.objects.find(o => o.object_id === objectId);
+    if (object) return displayObjectName(object);
+  }
+  return `Object ${objectId}`;
+}
+
 export function displayObjectName(object: SourceObject): string {
   const clean = object.name.replace(/@+$/g, '').trim();
   return clean || `Object ${object.object_id}`;

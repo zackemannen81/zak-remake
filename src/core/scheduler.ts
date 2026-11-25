@@ -29,10 +29,14 @@ function applyAction(state: GameState, action: ScheduledAction): void {
     case 'set-flag':
       state.flags[action.name] = action.value;
       break;
+    case 'set-object-name':
+      (state.objectNames ??= {})[String(action.objectId)] = action.name;
+      break;
     case 'set-owner':
       state.objectOwners[String(action.objectId)] = action.ownerId;
       state.inventory = state.inventory.filter((id) => id !== action.objectId);
       if (action.ownerId === PLAYER_OWNER_ID) state.inventory.push(action.objectId);
+      else if (state.selectedItemId === action.objectId) state.selectedItemId = null;
       break;
     case 'set-object-state': {
       const key = String(action.objectId);

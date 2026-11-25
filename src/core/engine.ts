@@ -1,8 +1,8 @@
 import { advanceActorOneStep, planWalk, scriptActorToRoomPixels } from './movement';
 import { advanceScheduler, scheduleAction } from './scheduler';
 import { PLAYER_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type Point, type RoomData, type SourceObject, type VerbId } from './types';
-import { getRoom, displayObjectName, objectIsTargetable } from '../content/rooms';
-import { applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
+import { getRoom, displayObjectName, inventoryObjectName, objectIsTargetable } from '../content/rooms';
+import { applyInventoryUse, applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
 
 export class GameEngine {
   constructor(public state: GameState) {}
@@ -17,8 +17,15 @@ export class GameEngine {
   }
 
   selectInventoryItem(objectId: number): void {
-    if (!this.state.inventory.includes(objectId)) return;
-    this.state.selectedItemId = objectId;
+    if (this.state.scriptSequence || this.state.intro || !this.state.inventory.includes(objectId)) return;
+    if (this.state.activeVerb === 'use' && this.state.selectedItemId !== null && this.state.selectedItemId !== objectId) {
+      const first = this.state.selectedItemId;
+      const result = applyInventoryUse(this.state, first, objectId);
+      this.speak(result ?? `${inventoryObjectName(first, this.state.objectNames)} doesn't seem to work with ${inventoryObjectName(objectId, this.state.objectNames)}.`, 120);
+      this.state.selectedItemId = null;
+      return;
+    }
+    this.state.selectedItemId = this.state.selectedItemId === objectId ? null : objectId;
     this.state.activeVerb = 'use';
   }
 
@@ -33,7 +40,7 @@ export class GameEngine {
 
   handleClick(point: Point, target?: SourceObject): void {
     // The original script holds control until its dream dialogue and walk finish.
-    if (this.state.intro) return;
+    if (this.state.intro || this.state.scriptSequence) return;
 
     const room = this.room;
     if (!target || !this.targetableObjects().some((object) => object.object_id === target.object_id)) {
@@ -58,6 +65,11 @@ export class GameEngine {
     if (this.state.actor.path.length > 0) advanceActorOneStep(this.state);
     this.advanceScript108WindowShadeSentence();
     if (this.state.intro?.phase === 'walking' && this.state.actor.path.length === 0) delete this.state.intro;
+    if (this.state.actor.path.length === 0 && this.state.scriptSequence) {
+      const sequence = this.state.scriptSequence;
+      delete this.state.scriptSequence;
+      if (sequence.roomId === this.state.roomId) for (const action of sequence.afterWalk) scheduleAction(this.state, 1, action);
+    }
     if (this.state.actor.path.length === 0 && this.state.pendingInteraction) this.resolvePendingInteraction();
   }
 
@@ -124,8 +136,9 @@ export class GameEngine {
       return;
     }
 
-    const scripted = applyRoomScriptVerb(this.state, room.id, target.object_id, pending.verb);
+    const scripted = applyRoomScriptVerb(this.state, room.id, target.object_id, pending.verb, pending.selectedItemId);
     if (scripted) {
+      if (pending.verb === 'use') this.state.selectedItemId = null;
       this.speak(scripted, 120);
       return;
     }
@@ -168,8 +181,7 @@ export class GameEngine {
         if (itemId === null || !this.state.inventory.includes(itemId)) {
           this.speak('Choose an inventory item first, then use it on an object.');
         } else {
-          const item = room.objects.find((object) => object.object_id === itemId);
-          const itemName = item ? displayObjectName(item) : `object ${itemId}`;
+          const itemName = inventoryObjectName(itemId, this.state.objectNames);
           this.state.variables[2] += 1;
           this.speak(`${itemName} doesn't seem to work with ${name.toLowerCase()}.`);
         }

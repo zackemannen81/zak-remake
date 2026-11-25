@@ -247,3 +247,59 @@ describe('coordinate-based container interactions', () => {
     },
   );
 });
+
+describe('inventory combinations and scripted scene objects', () => {
+  function click(engine: GameEngine, id: number, verb: 'pickup' | 'open' | 'use' | 'walk') {
+    const object = engine.room.objects.find(o => o.object_id === id)!;
+    engine.setVerb(verb);
+    const point = { x: object.x + object.width / 2, y: object.y + object.height / 2 };
+    engine.handleClick(point, hitTestRoomObject(engine.room, engine.state.objectOwners, engine.state.objectStates, point, verb));
+    engine.advance(650);
+  }
+  it.each([[17,25],[25,17]])('combines inventory items %i and %i, persists the map and keeps both items', (first,second) => {
+    const engine = new GameEngine(stateFor(1));
+    click(engine, 17, 'pickup');
+    expect(engine.state.inventory).toContain(17);
+    click(engine, 84, 'open');
+    click(engine, 84, 'walk');
+    expect(engine.state.roomId).toBe(2);
+    click(engine, 121, 'open');
+    click(engine, 25, 'pickup');
+    expect(engine.state.objectNames?.['25']).toBe('yellow crayon');
+    engine.selectInventoryItem(first);
+    engine.selectInventoryItem(second);
+    engine.advance(2);
+    expect(engine.state.objectNames?.['17']).toBe('wallpaper map');
+    expect(engine.state.variables[193]).toBe(1);
+    expect(engine.state.inventory).toEqual(expect.arrayContaining([17,25]));
+    expect(engine.state.selectedItemId).toBeNull();
+    const restored = deserializeSave(serializeSave(engine.state));
+    expect(restored.objectNames?.['17']).toBe('wallpaper map');
+    engine.selectInventoryItem(first);
+    engine.selectInventoryItem(second);
+    engine.advance(2);
+    expect(engine.state.dialogue).toBe('It already has a map on it.');
+  });
+  it('moves the right cushion without inventory pickup and exposes the remote', () => {
+    const engine = new GameEngine(stateFor(2));
+    click(engine, 119, 'pickup');
+    expect(engine.state.objectStates['119'] & 8).toBe(8);
+    expect(engine.state.inventory).not.toContain(119);
+    click(engine, 21, 'pickup');
+    expect(engine.state.inventory).toContain(21);
+  });
+  it('moves the left cushion, walks to the scripted destination and exposes the cord', () => {
+    const engine = new GameEngine(stateFor(2));
+    click(engine, 131, 'pickup');
+    expect(engine.state.objectStates['131'] & 10).toBe(10);
+    expect(engine.state.objectStates['132'] & 8).toBe(0);
+    expect(engine.state.scriptSequence).toBeUndefined();
+    expect(engine.state.inventory).not.toContain(131);
+    click(engine, 20, 'pickup');
+    expect(engine.state.inventory).toContain(20);
+    engine.selectInventoryItem(20);
+    click(engine, 118, 'use');
+    expect(engine.state.objectStates['118'] & 8).toBe(8);
+    expect(engine.state.scriptSequence).toBeUndefined();
+  });
+});

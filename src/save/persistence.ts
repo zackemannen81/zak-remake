@@ -2,7 +2,7 @@ import { getRoom, playableRoomIds } from '../content/rooms';
 import type { GameState, VerbId } from '../core/types';
 
 export const SAVE_STORAGE_KEY = 'zak-remake-save-v1';
-const validVerbs: VerbId[] = ['walk', 'look', 'use', 'open', 'close', 'pickup', 'talk'];
+const validVerbs: VerbId[] = ['walk', 'look', 'use', 'open', 'close', 'pickup', 'talk', 'putOn', 'takeOff', 'turnOn', 'turnOff', 'pull', 'give'];
 
 export function serializeSave(state: GameState): string {
   return JSON.stringify(state);

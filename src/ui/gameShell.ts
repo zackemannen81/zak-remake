@@ -1,5 +1,5 @@
 import type { GameState, RoomData, VerbId } from '../core/types';
-import { displayObjectName, getRoom } from '../content/rooms';
+import { inventoryObjectName } from '../content/rooms';
 
 const verbs: Array<{ id: VerbId; label: string }> = [
   { id: 'walk', label: 'Walk to' },
@@ -39,6 +39,7 @@ export class GameUI {
   private readonly musicStatus: HTMLElement;
   private readonly callbacks: Partial<GameUICallbacks> = {};
   private lastMessages = '';
+  private lastInventory = '';
 
   constructor(root: HTMLElement) {
     root.innerHTML = `
@@ -54,7 +55,7 @@ export class GameUI {
             <div id="dialogue" class="dialogue" aria-live="polite">Loading the first room…</div>
           </section>
           <aside class="side-panel" aria-label="Game controls">
-            <section class="panel-block inventory-block"><div class="panel-heading"><span class="panel-index">02</span><h3>Inventory</h3></div><p class="small-copy">Choose an item to use it on a hotspot.</p><div id="inventory" class="inventory-list"></div></section>
+            <section class="panel-block inventory-block"><div class="panel-heading"><span class="panel-index">02</span><h3>Inventory</h3></div><p class="small-copy">Choose an item, then another item or a scene hotspot.</p><div id="inventory" class="inventory-list"></div></section>
             <section class="panel-block"><div class="panel-heading"><span class="panel-index">03</span><h3>Game</h3></div><div class="button-row"><button id="save-button" class="secondary-button">Save</button><button id="load-button" class="secondary-button">Load</button></div><div class="button-row music-row"><button id="play-music-button" class="music-button">Play intro</button><button id="stop-music-button" class="secondary-button">Stop</button></div><p id="music-status" class="small-copy" aria-live="polite">Your intro track is loaded on demand.</p><p id="notice" class="notice" aria-live="polite"></p></section>
             <section class="panel-block status-block"><div class="panel-heading"><span class="panel-index">04</span><h3>State</h3></div><p id="engine-readout" class="engine-readout"></p><p class="small-copy">Source room/object IDs are preserved through rendering and interaction.</p></section>
           </aside>
@@ -62,7 +63,7 @@ export class GameUI {
         <section class="panel-block actionbar-panel" aria-label="Actions">
           <!-- <div class="panel-heading"><span class="panel-index">01</span><h2>Actions</h2></div> -->
           <div id="verb-bar" class="verb-bar" role="group" aria-label="Choose an action"></div>
-          <!-- <p class="selected-item-note" id="selected-item-note">Select an action to begin.</p> -->
+          <p class="selected-item-note" id="selected-item-note">Select an action to begin.</p>
             <!-- <p class="control-hint">Click a place to walk. Choose a verb, then click a hotspot. Walk to the room doors to travel.</p> -->            
           </section>
 <section class="log-panel"><h3>Recent events</h3><div id="message-log" class="message-log"></div></section>
@@ -104,8 +105,11 @@ export class GameUI {
     for (const button of this.verbBar.querySelectorAll<HTMLButtonElement>('[data-verb]')) {
       button.classList.toggle('is-active', button.dataset.verb === state.activeVerb);
     }
-    const selectedItem = state.selectedItemId === null ? null : this.objectLabel(state.selectedItemId);
+    const selectedItem = state.selectedItemId === null ? null : inventoryObjectName(state.selectedItemId, state.objectNames);
     rootSelectedNote(this.verbBar.parentElement?.querySelector<HTMLElement>('#selected-item-note') ?? null, selectedItem);
+    const inventoryKey = JSON.stringify([state.inventory, state.selectedItemId, state.objectNames]);
+    if (inventoryKey !== this.lastInventory) {
+    this.lastInventory = inventoryKey;
     this.inventory.replaceChildren();
     if (state.inventory.length === 0) {
       const empty = document.createElement('p');
@@ -117,11 +121,12 @@ export class GameUI {
         const button = document.createElement('button');
         button.className = 'inventory-item';
         button.classList.toggle('is-selected', state.selectedItemId === objectId);
-        button.textContent = this.objectLabel(objectId);
-        button.title = `Use ${this.objectLabel(objectId)}`;
+        button.textContent = inventoryObjectName(objectId, state.objectNames);
+        button.title = `Use ${inventoryObjectName(objectId, state.objectNames)}`;
         button.addEventListener('click', () => this.callbacks.onInventoryItem?.(objectId));
         this.inventory.append(button);
       }
+    }
     }
     const visibleDialogue = state.dialogue ?? state.messages.at(-1)?.text ?? 'Click a place to walk, or choose a verb and a hotspot.';
     this.dialogue.textContent = visibleDialogue;
@@ -151,13 +156,6 @@ export class GameUI {
     this.musicStatus.textContent = message;
   }
 
-  private objectLabel(objectId: number): string {
-    for (const roomId of [1, 2, 3]) {
-      const object = getRoom(roomId).objects.find((candidate) => candidate.object_id === objectId);
-      if (object) return displayObjectName(object);
-    }
-    return `Object ${objectId}`;
-  }
 }
 
 function rootSelectedNote(node: HTMLElement | null, selectedItem: string | null): void {
