@@ -97,6 +97,9 @@ export interface GameState {
   objectNames?: Record<string, string>;
   scriptSequence?: ScriptSequence;
   scriptLockedUntil?: number;
+  tvStartedTick?: number;
+  tvSegment?: number;
+  bakeryStartedTick?: number;
   activeVerb: VerbId;
   selectedItemId: number | null;
   pendingInteraction: PendingInteraction | null;

@@ -2,7 +2,7 @@ import { advanceActorOneStep, planWalk, scriptActorToRoomPixels } from './moveme
 import { advanceScheduler, scheduleAction } from './scheduler';
 import { PLAYER_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type Point, type RoomData, type SourceObject, type VerbId } from './types';
 import { getRoom, displayObjectName, inventoryObjectName, objectIsTargetable } from '../content/rooms';
-import { applyInventoryVerb, applyInventoryUse, applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
+import { advanceSceneScripts, applyInventoryVerb, applyInventoryUse, applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
 
 export class GameEngine {
   constructor(public state: GameState) {}
@@ -64,6 +64,7 @@ export class GameEngine {
 
   advanceOneTick(): void {
     advanceScheduler(this.state);
+    advanceSceneScripts(this.state);
     this.advanceScript108Intro();
     if (this.state.actor.path.length > 0) advanceActorOneStep(this.state);
     this.advanceScript108WindowShadeSentence();

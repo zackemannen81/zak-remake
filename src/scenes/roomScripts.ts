@@ -1,4 +1,4 @@
-import { PLAYER_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type VerbId, type ScheduledAction } from '../core/types';
+import { PLAYER_OWNER_ID, ROOM_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type VerbId, type ScheduledAction } from '../core/types';
 import { scheduleAction } from '../core/scheduler';
 import { planWalk } from '../core/movement';
 import { getRoom } from '../content/rooms';
@@ -69,6 +69,8 @@ function toggleTv(state: GameState, desired?: boolean): string {
   const on = desired ?? !(state.objectStates['21']! & 4);
   setBits(state, 21, 4, on);
   for (const id of [114,115,116,120,133]) setBits(state, id, 8, on && id === 115);
+  if (on) { state.tvStartedTick = state.tick; state.tvSegment = -1; }
+  else { delete state.tvStartedTick; delete state.tvSegment; }
   return on ? 'Good morning San Francisco.' : 'Turned off the TV.';
 }
 
@@ -100,10 +102,12 @@ export function applyRoomScriptVerb(state: GameState, roomId: number, objectId: 
     if (state.variables[152]! >= 3) return 'Nobody answers.';
     const count = ++state.variables[152]!;
     setBits(state, 137, 8, true);
-    state.scriptLockedUntil = state.tick + (count === 3 ? 150 : 90);
+    state.bakeryStartedTick = state.tick;
+    state.scriptLockedUntil = state.tick + (count === 3 ? 180 : 120);
+    if (count < 3) scheduleAction(state, 120, { type: 'set-object-state', objectId: 137, mask: 8, value: false });
     if (count === 3) {
-      scheduleAction(state, 60, { type: 'set-object-state', objectId: 148, mask: 8, value: true });
-      scheduleAction(state, 150, { type: 'set-object-state', objectId: 137, mask: 8, value: false });
+      scheduleAction(state, 100, { type: 'set-object-state', objectId: 148, mask: 8, value: true });
+      scheduleAction(state, 180, { type: 'set-object-state', objectId: 137, mask: 8, value: false });
     }
     return ["We're closed, and we're out of fresh bread anyway.", "Listen, you DON'T want the bread we have left! Go away!", "OK, you asked for it!"][count - 1]!;
   }
@@ -154,8 +158,19 @@ export function applyRoomScriptVerb(state: GameState, roomId: number, objectId: 
   }
   if (verb === 'use' && itemId !== null && !state.inventory.includes(itemId)) return undefined;
   // OCv2_0118: plug the power cord into the outlet.
+  if (roomId === 2 && objectId === 118 && (verb === 'pull' || verb === 'pickup') && (state.objectStates['118']! & 8)) {
+    setBits(state, 118, 8, false);
+    setBits(state, 20, 10, false);
+    setBits(state, 21, 4, false);
+    for (const id of [114,115,116,120,133]) setBits(state, id, 8, false);
+    delete state.tvStartedTick; delete state.tvSegment;
+    scheduleAction(state, 1, { type: 'set-owner', objectId: 20, ownerId: ROOM_OWNER_ID });
+    scheduleAction(state, 1, { type: 'set-object-name', objectId: 118, name: 'power outlet' });
+    return 'Unplugged the power cord.';
+  }
   if (roomId === 2 && objectId === 118 && verb === 'use' && itemId === 20) {
     setBits(state, 118, 8, true);
+    scheduleAction(state, 1, { type: 'set-owner', objectId: 20, ownerId: 0 });
     planWalk(state, getRoom(2), { x: 27 * 8, y: 57 * 2 });
     state.scriptSequence = { roomId, afterWalk: [{ type: 'set-object-name', objectId: 118, name: 'power cord' }] };
     return 'Plugged in the power cord.';
@@ -173,4 +188,27 @@ export function applyRoomScriptVerb(state: GameState, roomId: number, objectId: 
     return 'The small key opens the mailbox. (Original room script: object 28 + key 24.)';
   }
   return undefined;
+}
+
+const TV_SEGMENTS = [
+  { ticks: 150, patch: 115, text: 'Good morning San Francisco, this is Lori Amore.' },
+  { ticks: 150, patch: 115, text: "Today's top story: Yale coeds' mission to Mars." },
+  { ticks: 180, patch: 114, text: "Hello, I'm Annie Larris from The Society for Ancient Wisdom in San Francisco." },
+  { ticks: 180, patch: 114, text: 'Please deposit artifacts in our 14th Avenue drop slot.' },
+  { ticks: 150, patch: 115, text: 'Now from Mars, Melissa China.' },
+  { ticks: 180, patch: 116, text: 'We had dreams in which an alien told us how to convert our van into a spaceship.' },
+  { ticks: 180, patch: 120, text: 'Scientists are baffled by a mysterious buzz that is affecting people worldwide.' },
+] as const;
+export function advanceSceneScripts(state: GameState): void {
+  if (state.roomId !== 2 || !(state.objectStates['21']! & 4) || !(state.objectStates['118']! & 8)) return;
+  state.tvStartedTick ??= state.tick;
+  const cycle = TV_SEGMENTS.reduce((sum, seg) => sum + seg.ticks, 0);
+  let time = (state.tick - state.tvStartedTick) % cycle;
+  let index = 0;
+  while (time >= TV_SEGMENTS[index]!.ticks) { time -= TV_SEGMENTS[index]!.ticks; index++; }
+  if (state.tvSegment === index) return;
+  state.tvSegment = index;
+  const seg = TV_SEGMENTS[index]!;
+  for (const id of [114,115,116,120,133]) setBits(state, id, 8, id === seg.patch);
+  scheduleAction(state, 1, { type: 'say', text: seg.text, durationTicks: seg.ticks - 1 });
 }

@@ -11,6 +11,7 @@ import { composeRoomMaskPixels, scummV2MaskBufferIndex } from './zPlaneMask';
 import { applyScummV2ZPlanePatch } from './zPlaneShader';
 
 const ACTOR_HEIGHT = 70;
+const costumeImages = import.meta.glob<string>('../content/costumeFrames/*.png', { eager: true, query: '?url', import: 'default' });
 
 /** Wrap the GLB so its feet meet the logical actor anchor without changing its animation root. */
 export function createGroundedActorVisual(model: THREE.Group, targetHeight: number): THREE.Group | undefined {
@@ -97,6 +98,8 @@ export class GameRenderer {
   private readonly camera = new THREE.OrthographicCamera(-VIEWPORT_WIDTH / 2, VIEWPORT_WIDTH / 2, ORIGINAL_ROOM_HEIGHT / 2, -ORIGINAL_ROOM_HEIGHT / 2, 0.1, 1000);
   private readonly world = new THREE.Group();
   private readonly roomLayer = new THREE.Group();
+  private readonly scriptActorLayer = new THREE.Group();
+  private scriptActorSignature = '';
   private readonly actorRoot = new THREE.Group();
   private readonly actorPlaceholder = new THREE.Group();
   private readonly emptyZPlaneMask = createZPlaneDepthTexture(1, 1, new Uint8Array([0, 0, 0, 255]));
@@ -144,7 +147,7 @@ export class GameRenderer {
     // projection matrix, so Three.js can account for winding on every mesh.
     this.world.scale.y = -1;
     this.world.position.y = ORIGINAL_ROOM_HEIGHT;
-    this.world.add(this.roomLayer, this.actorRoot);
+    this.world.add(this.roomLayer, this.scriptActorLayer, this.actorRoot);
     this.scene.add(this.world);
     this.scene.add(new THREE.HemisphereLight(0xfff4e4, 0x727d95, 2.0));
     const keyLight = new THREE.DirectionalLight(0xffffff, 2.2);
@@ -169,6 +172,7 @@ export class GameRenderer {
       this.mountRoom(room, state);
     }
 
+    this.updateScriptActors(room, state);
     this.scrollX = Math.max(0, Math.min(room.width - VIEWPORT_WIDTH, state.actor.x - VIEWPORT_WIDTH / 2));
     this.world.position.x = -this.scrollX;
     this.actorRoot.position.set(state.actor.x, state.actor.y, 5);
@@ -202,6 +206,38 @@ export class GameRenderer {
     this.textureCache.clear();
     this.currentZPlaneMaskTexture?.dispose();
     this.emptyZPlaneMask.dispose();
+  }
+
+  private updateScriptActors(room: RoomData, state: GameState): void {
+    const sprites: Array<{ id: number; x: number; y: number; w: number; h: number }> = [];
+    if (room.id === 2 && (state.objectStates['21']! & 4) && (state.objectStates['118']! & 8)) {
+      const id = (state.objectStates['114']! & 8) ? 2 : (state.objectStates['116']! & 8) ? 3 : (state.objectStates['115']! & 8) ? 34 : 0;
+      if (id) sprites.push({ id, x: 120, y: 32, w: 64, h: 32 });
+    }
+    if (room.id === 3 && (state.objectStates['137']! & 8)) {
+      sprites.push({ id: 17, x: 168, y: 0, w: 104, h: 40 });
+      const elapsed = state.tick - (state.bakeryStartedTick ?? state.tick);
+      if (state.variables[152] === 3 && elapsed >= 60 && elapsed < 100) {
+        sprites.push({ id: 18, x: 160, y: 64 - Math.round((100 - elapsed) * 0.75), w: 56, h: 56 });
+      }
+    }
+    const frame = Math.floor(state.tick / 5) % 4;
+    const signature = JSON.stringify([room.id, sprites, sprites.length ? frame : 0]);
+    if (signature === this.scriptActorSignature) return;
+    this.scriptActorSignature = signature;
+    for (const child of [...this.scriptActorLayer.children]) {
+      if (child instanceof THREE.Mesh) { child.geometry.dispose(); (child.material as THREE.Material).dispose(); }
+    }
+    this.scriptActorLayer.clear();
+    for (const sprite of sprites) {
+      const url = costumeImages[`../content/costumeFrames/costume_${sprite.id}_${frame}.png`];
+      if (!url) continue;
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(sprite.w, sprite.h),
+        new THREE.MeshBasicMaterial({ map: this.getTexture(url), transparent: true, depthWrite: false }));
+      mesh.position.set(sprite.x + sprite.w / 2, sprite.y + sprite.h / 2, 2);
+      mesh.renderOrder = 2;
+      this.scriptActorLayer.add(mesh);
+    }
   }
 
   private resize(): void {

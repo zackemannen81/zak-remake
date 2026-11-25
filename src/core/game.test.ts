@@ -360,3 +360,26 @@ describe('mailbox, powered TV and repeated bakery actions', () => {
     expect(engine.state.objectStates['107'] & 8).toBe(0);
   });
 });
+
+describe('scene animation and cord ownership', () => {
+  it('runs TV segments deterministically and stops on unplug', () => {
+    const engine = new GameEngine(stateFor(2));
+    const state = engine.state;
+    state.actor.x = 216; state.actor.y = 114;
+    state.inventory.push(20,21); state.objectOwners['20']=1; state.objectOwners['21']=1;
+    state.objectStates['131']=10;
+    const outlet=engine.room.objects.find(o=>o.object_id===118)!;
+    engine.selectInventoryItem(20); engine.handleClick({x:210,y:75},outlet); engine.advance(650);
+    expect(state.inventory).not.toContain(20);
+    engine.setVerb('turnOn'); engine.selectInventoryItem(21); engine.advance(2);
+    expect(state.objectStates['115']&8).toBe(8);
+    engine.advance(320);
+    expect(state.objectStates['114']&8).toBe(8);
+    engine.setVerb('pull'); engine.handleClick({x:210,y:75},outlet); engine.advance(650);
+    expect(state.objectStates['118']&8).toBe(0);
+    expect(state.objectStates['21']&4).toBe(0);
+    expect(state.objectOwners['20']).toBe(15);
+    expect(state.objectStates['20']&10).toBe(0);
+    expect(state.inventory).not.toContain(20);
+  });
+});
