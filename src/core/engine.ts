@@ -1,6 +1,6 @@
 import { advanceActorOneStep, planWalk, scriptActorToRoomPixels } from './movement';
 import { advanceScheduler, scheduleAction } from './scheduler';
-import { PLAYER_OWNER_ID, type GameState, type Point, type RoomData, type SourceObject, type VerbId } from './types';
+import { PLAYER_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type Point, type RoomData, type SourceObject, type VerbId } from './types';
 import { getRoom, displayObjectName, objectIsTargetable } from '../content/rooms';
 import { applyRoomScriptVerb, getOriginalExit, getOutOfSliceDestination, hasPickupHandler } from '../scenes/roomScripts';
 
@@ -104,6 +104,10 @@ export class GameEngine {
     if (pending.verb === 'walk') {
       const exit = getOriginalExit(room.id, target.object_id);
       if (exit) {
+        if ([84, 111, 112].includes(target.object_id) && !((this.state.objectStates[String(target.object_id)] ?? 0) & OBJECT_INTRINSIC)) {
+          this.speak('The door is closed.');
+          return;
+        }
         const arrival = getRoom(exit.roomId).objects.find((object) => object.object_id === exit.arrivalObjectId);
         if (!arrival) {
           this.speak(`The original exit points to room ${exit.roomId}, but its arrival object is missing from the slice.`);
@@ -139,21 +143,24 @@ export class GameEngine {
           this.speak(`I already have ${name.toLowerCase()}.`);
         } else {
           scheduleAction(this.state, 1, { type: 'set-owner', objectId: target.object_id, ownerId: PLAYER_OWNER_ID });
+          scheduleAction(this.state, 1, { type: 'set-object-state', objectId: target.object_id, mask: OBJECT_INTRINSIC | OBJECT_UNTOUCHABLE, value: true });
           this.speak(`Picked up: ${name}.`);
         }
         break;
       case 'open': {
-        const children = room.objects.filter((object) => object.parent_slot === target.slot && object.parent_state !== 0);
-        if (children.length === 0) {
+        if (![84, 90, 92, 94, 111, 112, 121, 125].includes(target.object_id)) {
           this.speak(`I can't open ${name.toLowerCase()}.`);
           break;
         }
         scheduleAction(this.state, 1, { type: 'set-object-state', objectId: target.object_id, mask: 0x08, value: true });
+        if (target.object_id === 84 || target.object_id === 111) scheduleAction(this.state, 1, { type: 'set-object-state', objectId: target.object_id === 84 ? 111 : 84, mask: 8, value: true });
         this.speak(`Opened ${name.toLowerCase()}.`);
         break;
       }
       case 'close':
+        if (![84, 90, 92, 94, 111, 112, 121, 125].includes(target.object_id)) { this.speak(`I can't close ${name.toLowerCase()}.`); break; }
         scheduleAction(this.state, 1, { type: 'set-object-state', objectId: target.object_id, mask: 0x08, value: false });
+        if (target.object_id === 84 || target.object_id === 111) scheduleAction(this.state, 1, { type: 'set-object-state', objectId: target.object_id === 84 ? 111 : 84, mask: 8, value: false });
         this.speak(`Closed ${name.toLowerCase()}.`);
         break;
       case 'use': {

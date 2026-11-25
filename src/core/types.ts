@@ -102,7 +102,10 @@ export interface GameState {
   nextEventSequence: number;
 }
 
-export const PLAYER_OWNER_ID = 15;
+export const ROOM_OWNER_ID = 15;
+export const PLAYER_OWNER_ID = 1;
+export const OBJECT_INTRINSIC = 0x08;
+export const OBJECT_UNTOUCHABLE = 0x02;
 export const VIEWPORT_WIDTH = 320;
 export const ORIGINAL_ROOM_HEIGHT = 128;
 export const FIXED_STEP_MS = 1000 / 30;

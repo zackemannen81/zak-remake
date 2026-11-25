@@ -1,4 +1,4 @@
-import type { GameState, ScheduledAction } from './types';
+import { PLAYER_OWNER_ID, type GameState, type ScheduledAction } from './types';
 
 export function scheduleAction(state: GameState, delayTicks: number, action: ScheduledAction): void {
   state.scheduled.push({
@@ -32,7 +32,7 @@ function applyAction(state: GameState, action: ScheduledAction): void {
     case 'set-owner':
       state.objectOwners[String(action.objectId)] = action.ownerId;
       state.inventory = state.inventory.filter((id) => id !== action.objectId);
-      if (action.ownerId === 15) state.inventory.push(action.objectId);
+      if (action.ownerId === PLAYER_OWNER_ID) state.inventory.push(action.objectId);
       break;
     case 'set-object-state': {
       const key = String(action.objectId);

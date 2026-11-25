@@ -20,8 +20,8 @@ const exitsOutsideSlice = new Map<string, number>([
 ]);
 
 const pickupHandlers = new Map<number, Set<number>>([
-  [1, new Set([15, 16])],
-  [2, new Set([20, 21, 23, 24, 26])],
+  [1, new Set([14, 15, 16, 17])],
+  [2, new Set([20, 21, 22, 23, 24, 25, 26])],
   [3, new Set([29])],
 ]);
 

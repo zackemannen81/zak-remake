@@ -4,7 +4,7 @@ import { advanceActorOneStep, isInsideWalkbox, planWalk, scriptActorToRoomPixels
 import { advanceSchedulerBy, scheduleAction } from './scheduler';
 import { canonicalStateJson, createInitialState, stateHash } from './state';
 import type { GameState } from './types';
-import { getRoom, objectIsDrawable, objectIsTargetable, objectIsVisible, playableRoomIds, roomAssetSummary } from '../content/rooms';
+import { getRoom, hitTestRoomObject, objectIsDrawable, objectIsTargetable, objectIsVisible, playableRoomIds, roomAssetSummary } from '../content/rooms';
 import { deserializeSave, serializeSave } from '../save/persistence';
 
 function stateFor(roomId: number): GameState {
@@ -29,8 +29,8 @@ describe('rooms 1–3 source-backed slice', () => {
     expect(scriptActorToRoomPixels(firstWalkbox.actor_coordinates![0]!)).toEqual(firstWalkbox.pixel_coordinates[0]);
     expect(state.actor).toMatchObject({ x: 72, y: 104, pose: 'idle' });
     expect(state.intro).toMatchObject({ source: 'SCv2_0108', phase: 'waiting-to-walk', nextTick: 120 });
-    expect(state.objectOwners).toEqual({});
-    expect(state.objectStates).toEqual({});
+    expect(state.objectOwners['26']).toBe(15);
+    expect(state.objectStates['26']).toBe(1);
     expect(state.inventory).toEqual([]);
   });
 
@@ -38,8 +38,8 @@ describe('rooms 1–3 source-backed slice', () => {
     const state = createInitialState(getRoom(1), { skipIntro: true });
     expect(state.actor).toMatchObject({ x: 168, y: 112 });
     expect(state.intro).toBeUndefined();
-    expect(state.objectStates).toEqual({ '90': 0x08 });
-    expect(state.objectOwners).toEqual({});
+    expect(state.objectStates['90']).toBe(0x08);
+    expect(state.objectOwners['26']).toBe(15);
     expect(state.inventory).toEqual([]);
   });
 
@@ -118,18 +118,26 @@ describe('rooms 1–3 source-backed slice', () => {
     expect(child.parent_state).toBe(8);
     expect(objectIsVisible(room, state.objectOwners, state.objectStates, child)).toBe(false);
     state.objectStates[String(parent.object_id)] = 8;
-    expect(objectIsVisible(room, state.objectOwners, state.objectStates, child)).toBe(true);
+    expect(objectIsTargetable(room, state.objectOwners, state.objectStates, child)).toBe(true);
+    expect(objectIsVisible(room, state.objectOwners, state.objectStates, child)).toBe(false);
   });
 
   it('follows verified original room 1 → 2 → 3 → 2 transitions', () => {
     const engine = new GameEngine(stateFor(1));
     const door1 = getRoom(1).objects.find((object) => object.object_id === 84)!;
+    engine.setVerb('open');
+    engine.handleClick({ x: door1.x, y: door1.y }, door1);
+    engine.advance(450);
     engine.setVerb('walk');
     engine.handleClick({ x: door1.x, y: door1.y }, door1);
     engine.advance(450);
     expect(engine.state.roomId).toBe(2);
 
     const door2 = getRoom(2).objects.find((object) => object.object_id === 112)!;
+    engine.setVerb('open');
+    engine.handleClick({ x: door2.x, y: door2.y }, door2);
+    engine.advance(650);
+    engine.setVerb('walk');
     engine.handleClick({ x: door2.x, y: door2.y }, door2);
     engine.advance(650);
     expect(engine.state.roomId).toBe(3);
@@ -147,7 +155,7 @@ describe('rooms 1–3 source-backed slice', () => {
     engine.handleClick({ x: key.x, y: key.y }, key);
     engine.advance(450);
     expect(engine.state.inventory).toContain(24);
-    expect(engine.state.objectOwners['24']).toBe(15);
+    expect(engine.state.objectOwners['24']).toBe(1);
 
     const saved = deserializeSave(serializeSave(engine.state));
     expect(canonicalStateJson(saved)).toBe(canonicalStateJson(engine.state));
@@ -157,7 +165,7 @@ describe('rooms 1–3 source-backed slice', () => {
   it('runs the source-backed key-on-mailbox interaction with persistent object bits', () => {
     const state = stateFor(3);
     state.inventory.push(24);
-    state.objectOwners['24'] = 15;
+    state.objectOwners['24'] = 1;
     state.selectedItemId = 24;
     const mailbox = getRoom(3).objects.find((object) => object.object_id === 28)!;
     state.actor.x = mailbox.walk_x;
@@ -170,4 +178,72 @@ describe('rooms 1–3 source-backed slice', () => {
     expect(engine.state.objectStates['28']! & 0x02).toBe(0x02);
     expect(engine.state.objectStates['139']! & 0x08).toBe(0x08);
   });
+});
+
+describe('SCUMM v2 intrinsic patches', () => {
+  it('renders the knife removal patch only after pickup and disables its hotspot', () => {
+    const room = getRoom(2);
+    const engine = new GameEngine(stateFor(2));
+    const knife = room.objects.find(o => o.object_id === 26)!;
+    const drawable = () => objectIsDrawable(room, engine.state.objectOwners, engine.state.objectStates, knife, true);
+    expect(drawable()).toBe(false);
+    expect(engine.targetableObjects()).toContain(knife);
+    engine.setVerb('pickup');
+    engine.handleClick({ x: knife.x, y: knife.y }, knife);
+    engine.advance(650);
+    expect(engine.state.inventory).toContain(26);
+    expect(drawable()).toBe(true);
+    expect(engine.targetableObjects()).not.toContain(knife);
+  });
+  it('keeps closed drawer patches off and gates contents and door travel', () => {
+    const room = getRoom(1);
+    const engine = new GameEngine(stateFor(1));
+    const drawer = room.objects.find(o => o.object_id === 92)!;
+    const bill = room.objects.find(o => o.object_id === 15)!;
+    const door = room.objects.find(o => o.object_id === 84)!;
+    const drawable = () => objectIsDrawable(room, engine.state.objectOwners, engine.state.objectStates, drawer, true);
+    expect(drawable()).toBe(false);
+    expect(engine.targetableObjects()).not.toContain(bill);
+    engine.handleClick({ x: door.x, y: door.y }, door);
+    engine.advance(650);
+    expect(engine.state.roomId).toBe(1);
+    engine.setVerb('open');
+    engine.handleClick({ x: drawer.x, y: drawer.y }, drawer);
+    engine.advance(650);
+    expect(drawable()).toBe(true);
+    expect(engine.targetableObjects()).toContain(bill);
+    engine.setVerb('close');
+    engine.handleClick({ x: drawer.x, y: drawer.y }, drawer);
+    engine.advance(650);
+    expect(drawable()).toBe(false);
+    expect(engine.targetableObjects()).not.toContain(bill);
+  });
+});
+
+describe('coordinate-based container interactions', () => {
+  it.each([[1, 94, 16], [1, 92, 15], [2, 125, 22], [2, 121, 25]])(
+    'room %i: container %i exposes item %i to actual coordinate hit tests',
+    (roomId, containerId, itemId) => {
+      const room = getRoom(roomId);
+      const engine = new GameEngine(stateFor(roomId));
+      const item = room.objects.find(o => o.object_id === itemId)!;
+      const point = { x: item.x + item.width / 2, y: item.y + item.height / 2 };
+      const hit = () => hitTestRoomObject(room, engine.state.objectOwners, engine.state.objectStates, point, engine.state.activeVerb);
+      const click = (verb: 'open' | 'close' | 'pickup') => {
+        engine.setVerb(verb);
+        engine.handleClick(point, hit());
+        engine.advance(650);
+      };
+      expect(hit()?.object_id).not.toBe(itemId);
+      click('open');
+      engine.setVerb('pickup');
+      expect(hit()?.object_id).toBe(itemId);
+      click('close');
+      expect(hit()?.object_id).not.toBe(itemId);
+      click('open');
+      click('pickup');
+      expect(engine.state.inventory).toContain(itemId);
+      expect(hit()?.object_id).not.toBe(itemId);
+    },
+  );
 });

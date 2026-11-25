@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { getRoom, objectZplaneUrl } from '../content/rooms';
+import { getRoom, objectZplaneUrl, roomOcclusionObjects } from '../content/rooms';
+import { createInitialState } from '../core/state';
 import { walkboxAtPoint } from '../core/movement';
 import { composeRoomMaskPixels, scummV2MaskBufferIndex } from './zPlaneMask';
 
@@ -42,4 +43,13 @@ describe('SCUMM V2 Z-plane masking', () => {
     expect(coveredAt(1)).toBe(true);
     expect(coveredAt(2)).toBe(true);
   });
+});
+
+it('retains the bed foreground mask even when its color patch is inactive', () => {
+  const room = getRoom(1);
+  const state = createInitialState(room);
+  expect(state.objectStates['85'] & 8).toBe(0);
+  expect(roomOcclusionObjects(room, state.objectStates).map(o => o.object_id)).toContain(85);
+  state.objectStates['94'] = 8;
+  expect(roomOcclusionObjects(room, state.objectStates).map(o => o.object_id)).toContain(85);
 });

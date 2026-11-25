@@ -3,7 +3,7 @@ import walkboxesJson from '../../zak/converted/metadata/walkboxes.json';
 import background1 from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0001.png';
 import background2 from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0002.png';
 import background3 from '../../docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/images/backgrounds/LFv2_0003.png';
-import type { Point, RoomData, SourceObject, Walkbox } from '../core/types';
+import { ROOM_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type Point, type RoomData, type SourceObject, type VerbId, type Walkbox } from '../core/types';
 
 interface SourceRoomRecord {
   room: number;
@@ -95,25 +95,58 @@ export function displayObjectName(object: SourceObject): string {
   return clean || `Object ${object.object_id}`;
 }
 
-function objectIsAvailable(room: RoomData, owners: Record<string, number>, states: Record<string, number>, object: SourceObject): boolean {
-  if (object.width <= 0 || object.height <= 0 || (owners[String(object.object_id)] ?? 0) === 15) return false;
-  if (object.parent_slot === 0) return true;
-  const parent = room.objects.find((candidate) => candidate.slot === object.parent_slot);
-  if (!parent) return false;
-  const parentState = states[String(parent.object_id)] ?? 0;
-  return (parentState & object.parent_state) === object.parent_state;
+// SCUMM v2 object.cpp: parent chain compares the intrinsic bit, including expected zero.
+function objectIsAvailable(room: RoomData, states: Record<string, number>, object: SourceObject): boolean {
+  if (object.width <= 0 || object.height <= 0) return false;
+  const visited = new Set<number>();
+  let child = object;
+  while (child.parent_slot !== 0) {
+    if (visited.has(child.slot)) return false;
+    visited.add(child.slot);
+    const parent = room.objects.find((candidate) => candidate.slot === child.parent_slot);
+    if (!parent || ((states[String(parent.object_id)] ?? 0) & OBJECT_INTRINSIC) !== child.parent_state) return false;
+    child = parent;
+  }
+  return true;
 }
 
 export function objectIsVisible(room: RoomData, owners: Record<string, number>, states: Record<string, number>, object: SourceObject): boolean {
-  return objectIsAvailable(room, owners, states, object);
+  // An OI is an opaque replacement patch; picked-up objects can still draw it.
+  return objectIsAvailable(room, states, object) && Boolean((states[String(object.object_id)] ?? 0) & OBJECT_INTRINSIC);
 }
 
 export function objectIsTargetable(room: RoomData, owners: Record<string, number>, states: Record<string, number>, object: SourceObject): boolean {
-  return objectIsAvailable(room, owners, states, object);
+  return objectIsAvailable(room, states, object) && (owners[String(object.object_id)] ?? ROOM_OWNER_ID) === ROOM_OWNER_ID && !((states[String(object.object_id)] ?? 0) & OBJECT_UNTOUCHABLE);
 }
 
 export function objectIsDrawable(room: RoomData, owners: Record<string, number>, states: Record<string, number>, object: SourceObject, hasRegisteredVisual: boolean): boolean {
   return hasRegisteredVisual && objectIsVisible(room, owners, states, object);
+}
+
+// Original findObject scans ascending source slots, with half-open rectangles.
+export function hitTestRoomObject(room: RoomData, owners: Record<string, number>, states: Record<string, number>, point: Point, verb?: VerbId): SourceObject | undefined {
+  const hits = room.objects.filter(object =>
+    objectIsTargetable(room, owners, states, object)
+    && point.x >= object.x && point.x < object.x + object.width
+    && point.y >= object.y && point.y < object.y + object.height,
+  ).sort((a, b) => a.slot - b.slot);
+  // Keep the container accessible for explicit open/close even when a child overlaps.
+  if (verb === 'open' || verb === 'close') {
+    const container = hits.find(object => [84, 90, 92, 94, 111, 112, 121, 125].includes(object.object_id));
+    if (container) return container;
+  }
+  return hits[0];
+}
+
+/** The bed is a permanent foreground mask in the current room-1 artwork.
+ * Other masks follow their active replacement patches, not hotspot eligibility.
+ */
+export function roomOcclusionObjects(room: RoomData, states: Record<string, number>): SourceObject[] {
+  return room.objects.filter(object =>
+    objectZplaneUrl(room.id, object.object_id) !== undefined
+    && objectIsAvailable(room, states, object)
+    && ((room.id === 1 && object.object_id === 85) || Boolean((states[String(object.object_id)] ?? 0) & OBJECT_INTRINSIC)),
+  );
 }
 
 export function roomAssetSummary(): { rooms: number; objects: number; images: number; walkboxes: number } {

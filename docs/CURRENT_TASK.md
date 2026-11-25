@@ -75,3 +75,6 @@ User requests acceleration toward the modern visual prototype and original intro
 - Verification after the changes: `npm test` — 11/11 passed; `npm run build` — passed (exit 0). Browser smoke of the new preview URL has not yet been run, so runtime image failures are not yet confirmed or ruled out.
 - Next: smoke-test `?pocAssets=1`, implement the ordinary original intro branch and its dialogue/animation/music using extracted sources, then report any exact candidate-image gaps observed at runtime.
 
+
+## Runtime correction checkpoint
+2026-11-25 — ChatGPT / GPT-6.2, ZMATAMR-0002 runtime correction: initialized original 780 global object owner/state bytes from XOR-decoded 00.LFL; room owner 15, Zak owner 1; intrinsic-bit patches separate from touchability; recursive exact parent-state gating; pickup sets intrinsic/untouchable; closed door gate. Follow-up uses ascending source slot hotspot priority, explicit open/close container preference, reverse source patch layering and permanent room-1 bed occlusion mask independent of color state. 34/34 Vitest tests pass, including coordinate-based kazoo, bill, egg, crayons and bed mask selection. Browser visual verification and full SCUMM script coverage remain open. User PNG edits preserved; no commit.

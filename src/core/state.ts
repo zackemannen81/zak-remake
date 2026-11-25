@@ -1,6 +1,7 @@
 import { scriptActorToRoomPixels } from './movement';
 import { scheduleAction } from './scheduler';
 import type { GameState, Point, RoomData } from './types';
+import initialObjects from '../content/initial-objects.json';
 
 export interface InitialStateOptions {
   /** Start on script 108's already-arrived branch instead of its ordinary opening. */
@@ -26,9 +27,9 @@ export function createInitialState(room: RoomData, options: InitialStateOptions 
     actor: { ...spawn, path: [], facing: 'down', pose: 'idle' },
     variables: Array.from({ length: 256 }, () => 0),
     flags: {},
-    objectOwners: {},
+    objectOwners: Object.fromEntries(initialObjects.map((value, id) => [id, value & 15])),
     // Script 108's skip branch explicitly calls setState08(90).
-    objectStates: skipIntro ? { '90': 0x08 } : {},
+    objectStates: { ...Object.fromEntries(initialObjects.map((value, id) => [id, value >> 4])), ...(skipIntro ? { '90': 0x08 } : {}) },
     inventory: [],
     activeVerb: 'walk',
     selectedItemId: null,

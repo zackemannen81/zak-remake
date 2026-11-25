@@ -37,3 +37,6 @@ Updated: 2026-11-22
 - `tools/build_correction_review.py`: separat granskning av korrigerade versioner.
 - `zak/converted/poc/asset_review.html`: local asset gallery/UV review, separate from the game runtime.
 - `zak/converted/poc/provenance.json`, `reused_state_images.json`, `object_viewports.json`: spårbarhet och föreslagna visningsutsnitt.
+
+## Runtime correction checkpoint
+2026-11-25 — ChatGPT / GPT-6.2, ZMATAMR-0002 runtime correction: initialized original 780 global object owner/state bytes from XOR-decoded 00.LFL; room owner 15, Zak owner 1; intrinsic-bit patches separate from touchability; recursive exact parent-state gating; pickup sets intrinsic/untouchable; closed door gate. Follow-up uses ascending source slot hotspot priority, explicit open/close container preference, reverse source patch layering and permanent room-1 bed occlusion mask independent of color state. 34/34 Vitest tests pass, including coordinate-based kazoo, bill, egg, crayons and bed mask selection. Browser visual verification and full SCUMM script coverage remain open. User PNG edits preserved; no commit.

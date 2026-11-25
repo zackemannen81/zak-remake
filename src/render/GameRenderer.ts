@@ -1,9 +1,9 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { assetManifest } from '../content/assetManifest';
-import { displayObjectName, getRoom, objectImageUrl, objectIsDrawable, objectIsTargetable, objectZplaneUrl } from '../content/rooms';
+import { displayObjectName, getRoom, objectImageUrl, objectIsDrawable, hitTestRoomObject, roomOcclusionObjects, objectZplaneUrl } from '../content/rooms';
 import { walkboxAtPoint } from '../core/movement';
-import type { GameState, Point, RoomData, SourceObject } from '../core/types';
+import type { GameState, Point, RoomData, SourceObject, VerbId } from '../core/types';
 import { ORIGINAL_ROOM_HEIGHT, VIEWPORT_WIDTH } from '../core/types';
 import { shouldDrawObjectVisual, VisualRegistry, type TextureCrop } from './visualRegistry';
 import { actorDepthScale, actorYaw } from './actorPose';
@@ -161,6 +161,7 @@ export class GameRenderer {
   }
 
   update(room: RoomData, state: GameState): void {
+    this.currentVerb = state.activeVerb;
     const visualSignature = `${room.id}|${JSON.stringify(state.objectOwners)}|${JSON.stringify(state.objectStates)}`;
     if (this.currentRoom?.id !== room.id || visualSignature !== this.currentVisualSignature) {
       this.currentRoom = room;
@@ -224,13 +225,10 @@ export class GameRenderer {
 
   hitTest(point: Point): SourceObject | undefined {
     if (!this.currentRoom) return undefined;
-    return [...this.currentRoom.objects].reverse().find((object) =>
-      objectIsTargetable(this.currentRoom!, this.currentStateOwners, this.currentStateObjects, object)
-      && point.x >= object.x && point.x <= object.x + object.width
-      && point.y >= object.y && point.y <= object.y + object.height,
-    );
+    return hitTestRoomObject(this.currentRoom, this.currentStateOwners, this.currentStateObjects, point, this.currentVerb);
   }
 
+  private currentVerb: VerbId = 'walk';
   private currentStateOwners: Record<string, number> = {};
   private currentStateObjects: Record<string, number> = {};
   private readonly failedConceptBackgroundRooms = new Set<number>();
@@ -273,7 +271,7 @@ export class GameRenderer {
         objectIsDrawable(room, state.objectOwners, state.objectStates, object, visual !== undefined)
         && shouldDrawObjectVisual(usesConceptRoomImage, explicitVisual !== undefined),
       )
-      .sort((a, b) => a.object.slot - b.object.slot);
+      .sort((a, b) => b.object.slot - a.object.slot);
     for (const { object, visual } of drawableObjects) {
       if (!visual) continue;
       if (visual.kind === 'scene-3d') {
@@ -286,7 +284,8 @@ export class GameRenderer {
         });
       }
     }
-    this.loadRoomZPlaneMask(room, drawableObjects.map(({ object }) => object));
+    // Occlusion follows original state, independently of whether modern artwork has a patch.
+    this.loadRoomZPlaneMask(room, roomOcclusionObjects(room, state.objectStates));
   }
 
   private loadRoomZPlaneMask(room: RoomData, objects: SourceObject[]): void {
@@ -378,7 +377,7 @@ export class GameRenderer {
       new THREE.PlaneGeometry(object.width, object.height),
       new THREE.MeshBasicMaterial({ map: texture, transparent: true, depthWrite: false }),
     );
-    mesh.position.set(object.x + object.width / 2, object.y + object.height / 2, object.slot / 1000);
+    mesh.position.set(object.x + object.width / 2, object.y + object.height / 2, 1 - object.slot / 1000);
     mesh.userData.objectId = object.object_id;
     this.roomLayer.add(mesh);
   }
@@ -406,7 +405,7 @@ export class GameRenderer {
     const size = bounds.getSize(new THREE.Vector3());
     const factor = Math.min(object.width / Math.max(size.x, 0.01), object.height / Math.max(size.y, 0.01));
     model.scale.multiplyScalar(factor);
-    model.position.set(object.x + object.width / 2, object.y + object.height, object.slot / 1000);
+    model.position.set(object.x + object.width / 2, object.y + object.height, 1 - object.slot / 1000);
     model.rotation.z = Math.PI;
     model.userData.originalObjectId = object.object_id;
     this.roomLayer.add(model);
