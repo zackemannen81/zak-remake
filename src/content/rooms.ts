@@ -105,7 +105,7 @@ export function displayObjectName(object: SourceObject): string {
 }
 
 // SCUMM v2 object.cpp: parent chain compares the intrinsic bit, including expected zero.
-function objectIsAvailable(room: RoomData, states: Record<string, number>, object: SourceObject): boolean {
+export function objectIsAvailable(room: RoomData, states: Record<string, number>, object: SourceObject): boolean {
   if (object.width <= 0 || object.height <= 0) return false;
   const visited = new Set<number>();
   let child = object;

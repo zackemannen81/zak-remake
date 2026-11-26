@@ -1,0 +1,149 @@
+<LOCATION San Francisco>
+You start in Zak's room.
+First pick up Sushi in fishbowl.
+Open dresserdrawer and pick up phonebill.
+Open deskdrawer , pick kazoo and close deskdrawer.
+Pick up torn wallpaper (on the wall left from the door).
+Open the door and walk to door.
+Pick up seatcushion (right form the TV).
+Pick up seatcushion (the left one).
+Pick up remote control (under cushion).
+Use powercord in power outlet.
+Now you can turn on the TV if you want (use remote control).
+Walk to the right and pick up butterknife (on the wall).
+Open refrigirator and pick up egg.
+Pick up small key (right from the door).
+Walk back to Zak's room.
+Use butterknife with plastic card (green card under desk).
+Leave the room and walk to the right to the front door.
+Open the door and walk to door.
+Walk to the right untill you see a bus.
+Then walk to 14th avenue (at the top of the screen,left from the
+bridge).
+Walk to lou's loans door,open door and go in.
+Buy:the golfclub,the wetsuit,the toolkit,the hat and noseglasses.
+Leave the shop .
+Walk to the right untill you see a boddy pin sign.
+Open toolkit and use wirecutter on boddy pin sign.
+Walk back the 13th avenue.
+Walk to the left untill you see a bakery.
+Push the doorbell at the bakery.
+Keep pushing the doorbell untill the baker drops a stale bread.
+Walk to the stairs (your house).
+Open the cabinet (under the sink).
+pick up box of crayons.
+use yellow crayon on torn wallpaper.
+Use monkey wrench on pipe (in cabinet).
+Use stale bread in sink.
+Turn on switch (yellow).
+Pick up breadcrumps in the cabinet.
+Use Sushi in fishbowl.
+Walk to Zak's room.
+Put on : nose glasses , hat , wet suit.
+Pull rug corner (right,under).
+Use monkey wrench on loose board (under rugcorner)
+Use rope on hole and walk to hole.
+Walk to the left and open the door and go in.
+Use computer terminal.
+Open counter door.
+Pick up application (white paper at the left)
+Use application with crayon.
+Read pay phone (not really neccesary)
+Open the (white) door and leave.
+Use smallkey in mailbox (right from the stairs)
+Use application with mailbox.
+walk to the right to the busstop.
+Use kazoo.
+Wait untill the doors open and use cashcard in cashcardreader.
+<LOCATION airport>
+Walk to the devotee.
+Give cashcard to devotee.
+Walk to the gate to planes.
+</LOCATION>
+<LOCATION Airplane>
+You are now in the plane on your way to seattle.
+Walk to the left to the toilet.
+Open the door and go in.
+Use toiletpaper in sink.
+Turn on the sink and wait untill the floor is blue.
+Then push the call button.
+Walk to the right quickly untill you see a microwave oven.
+Wait untill you here the stewardes scream "oh what a mess"
+Open the oven and use egg in oven.
+Turn on the oven and walk back to your seat.
+Wait untill the stewardes screams who did this.
+Open all the bins untill you find an oxygen tank.
+Pick up the tank .
+Walk to the first seat in the plane and pick up the cushion.
+You now see a lighter falling , pick the lighter up.
+Now press return.
+<LOCATION>
+<LOCATION Seattle>
+You are now in Seattle.
+Walk to the right to the door.
+You now see Mount Rainier.
+Pick up the tree branch.
+Walk to the right untill you see the 2 headed squirrel.
+Give peanuts to squirrel.
+Use branch with loose dirt.
+You now see a cave entrance , go in.
+Turn on the lighter and look for an abandoned birdnest.
+(it's a little bit to the right and the up).
+Use branch on birdsnest.
+Use branch with firepit,use nest in firepit.
+Use lighter on firepit.
+Walk to the right (untill the wall).
+Use yellow crayon on strange markings.
+Walk to the Ankh door.
+Use remote control.
+Pick up blue crystal and walk back to the door.
+Leave the cave.
+Walk to the right back to the airport.
+</LOCATION>
+<LOCATION airport>
+Use reservation terminal and go to San Francisco.
+Walk to the right and leave the airport.
+</LOCATION>
+<LOCATION San Francisco>
+Walk to your house and use small key on mailbox.
+Pick up letter.
+Walk to the 14th avenue.
+Walk to the second door.
+Use blue crystal on drop slot.
+Wait untill the door opens.
+You now have a new command "switch".
+Leave room , put on nose glasses and go to the busstop on
+13th avenue.
+Use kazoo , use cashcard in cashcardreader.
+</LOCATION>
+<LOCATION airport>
+Use terminal and go to London.
+</LOCATION LONDON>
+In London now !
+</LOCATION>
+<LOCATION airport>
+Use terminal and go to Nepal.
+</LOCATION>
+</LOCATION NEPAL>
+In Nepal now !
+Go outside.
+Walk to the right and give book to guard.
+He'll open the door for you , walk to the door.
+Walk to the right untill you see a Guru.
+He'll teach you how to use the blue crystal.
+Leave the Guru's home.
+Walk to the right.
+Use lighter on hay...It will burn.
+Walk to the left and pick up the flagpole.
+Walk to the Yak
+Use Yak with cashcard.
+Use terminal and go to Zaire.
+In Zaire now !
+Go outside and walk threw the jungle untill you see a hut.
+Walk to the hut of the doctor (at the left).
+Enter the hut and give golfclub to shaman.
+They will perform a dance and when the fire burns....
+They will bent their knees, write down a 1 if the first person
+bent his knees , a 2 if the second ect untill you get a number
+of 6 numbers long.
+</LOCATION>

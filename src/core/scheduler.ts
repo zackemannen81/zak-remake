@@ -1,4 +1,5 @@
 import { PLAYER_OWNER_ID, type GameState, type ScheduledAction } from './types';
+import { resourceRoom } from './roomIdentity';
 
 export function scheduleAction(state: GameState, delayTicks: number, action: ScheduledAction): void {
   state.scheduled.push({
@@ -45,7 +46,9 @@ function applyAction(state: GameState, action: ScheduledAction): void {
       break;
     }
     case 'travel':
-      state.roomId = action.roomId;
+      state.logicalRoomId = action.roomId;
+      state.roomId = resourceRoom(action.roomId);
+      delete state.choiceMenu;
       state.actor.x = action.x;
       state.actor.y = action.y;
       state.actor.path = [];

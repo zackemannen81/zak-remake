@@ -94,6 +94,14 @@ function createZPlaneDepthTexture(width: number, height: number, pixels: Uint8Ar
 }
 
 export class GameRenderer {
+  private labTextures = new Map<number, THREE.CanvasTexture>();
+  labHitTest?: (point:Point,room:RoomData,state:GameState)=>SourceObject|undefined;
+  private labState?:GameState;
+  setLabCanvas(roomId:number,canvas:HTMLCanvasElement):void {
+    let texture=this.labTextures.get(roomId);
+    if(!texture){texture=new THREE.CanvasTexture(canvas);texture.flipY=false;texture.colorSpace=THREE.SRGBColorSpace;texture.minFilter=THREE.LinearFilter;texture.magFilter=THREE.LinearFilter;texture.generateMipmaps=false;this.labTextures.set(roomId,texture);this.currentVisualSignature='';}
+    texture.needsUpdate=true;
+  }
   readonly canvas: HTMLCanvasElement;
   private readonly renderer: THREE.WebGLRenderer;
   private readonly scene = new THREE.Scene();
@@ -168,6 +176,7 @@ export class GameRenderer {
   }
 
   update(room: RoomData, state: GameState): void {
+    this.labState=state;
     this.currentVerb = state.activeVerb;
     const visualSignature = `${room.id}|${JSON.stringify(state.objectOwners)}|${JSON.stringify(state.objectStates)}`;
     if (this.currentRoom?.id !== room.id || visualSignature !== this.currentVisualSignature) {
@@ -206,6 +215,7 @@ export class GameRenderer {
   }
 
   destroy(): void {
+    for(const texture of this.labTextures.values())texture.dispose();
     this.zPlaneLoadGeneration += 1;
     this.resizeObserver.disconnect();
     this.renderer.domElement.removeEventListener('pointerdown', this.handlePointerDown);
@@ -270,6 +280,7 @@ export class GameRenderer {
 
   hitTest(point: Point): SourceObject | undefined {
     if (!this.currentRoom) return undefined;
+    if(this.labHitTest&&this.labState&&this.labTextures.has(this.currentRoom.id))return this.labHitTest(point,this.currentRoom,this.labState);
     return hitTestRoomObject(this.currentRoom, this.currentStateOwners, this.currentStateObjects, point, this.currentVerb);
   }
 
@@ -286,8 +297,8 @@ export class GameRenderer {
     const backgroundVisual = this.failedConceptBackgroundRooms.has(room.id)
       ? undefined
       : this.visualRegistry.resolveBackground(room.id);
-    const usesConceptRoomImage = backgroundVisual?.kind === 'concept-2d';
-    const backgroundTexture = this.getTexture(backgroundVisual?.url ?? room.backgroundUrl, {
+    const usesConceptRoomImage = this.labTextures.has(room.id)||backgroundVisual?.kind === 'concept-2d';
+    const backgroundTexture = this.labTextures.get(room.id)??this.getTexture(backgroundVisual?.url ?? room.backgroundUrl, {
       crop: backgroundVisual?.crop,
       filter: backgroundVisual?.kind === 'concept-2d' ? 'linear' : 'nearest',
       fallbackUrl: backgroundVisual?.kind === 'concept-2d' ? room.backgroundUrl : undefined,

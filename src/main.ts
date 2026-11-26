@@ -1,7 +1,7 @@
 import './style.css';
 import { IntroMusic } from './audio/music';
 import { assetManifest } from './content/assetManifest';
-import { getRoom, playableRoomIds } from './content/rooms';
+import { getRoom, playableRoomIds, displayObjectName } from './content/rooms';
 import { GameEngine } from './core/engine';
 import { FIXED_STEP_MS } from './core/types';
 import { createInitialState } from './core/state';
@@ -16,6 +16,11 @@ if (!app) throw new Error('Missing #app root element.');
 
 const ui = new GameUI(app);
 const searchParams = new URLSearchParams(window.location.search);
+const isLabPlay=searchParams.get('labPlay')==='1'&&window.parent!==window;
+const storageKey=isLabPlay?SAVE_STORAGE_KEY+':scene-lab':SAVE_STORAGE_KEY;
+let missingSignature='';
+const missingItemsPanel=document.createElement('div');missingItemsPanel.style.cssText='padding:8px;color:#e6c78b;font:13px system-ui';if(isLabPlay)ui.viewport.after(missingItemsPanel);
+let labRuntime:import('./lab/playRuntime').LabPlayRuntime|undefined;
 const requestedRoom = Number(searchParams.get('room'));
 const initialRoom = playableRoomIds.includes(requestedRoom) ? requestedRoom : 1;
 const engine = new GameEngine(createInitialState(getRoom(initialRoom), { skipIntro: searchParams.get('skipIntro') === '1' }));
@@ -25,6 +30,7 @@ const visualRegistry = new VisualRegistry();
 function startRenderer(): void {
   try {
     renderer = new GameRenderer(ui.viewport, visualRegistry);
+    if(labRuntime)labRuntime.attach(renderer);
     renderer.onPointer = (point, target) => engine.handleClick(point, target);
     renderer.onCharacterStatus = (message) => ui.setNotice(message);
   } catch (error) {
@@ -33,13 +39,13 @@ function startRenderer(): void {
   }
 }
 
-if (searchParams.get('pocAssets') === '1') {
+if (searchParams.get('originalAssets') !== '1') {
   void import('./content/pocAssets')
     .then(({ registerPocPreviewAssets }) => {
       const report = registerPocPreviewAssets(visualRegistry);
       ui.setNotice(report.missing.length
-        ? `POC preview: ${report.registered} complete-room backgrounds enabled; ${report.missing.length} background images missing (see console).`
-        : `POC preview: ${report.registered} complete-room backgrounds enabled; object candidates remain opt-in.`);
+        ? `Cropped backgrounds: ${report.registered} room backgrounds loaded; ${report.missing.length} background images missing (see console).`
+        : `Cropped backgrounds: ${report.registered} room backgrounds loaded.`);
       if (report.missing.length) console.warn('Missing POC candidate images:', report.missing);
       startRenderer();
     })
@@ -71,11 +77,12 @@ function playIntro(): void {
   introSequence.start();
 }
 ui.bind({
+  onSceneAction: (id) => { if (!introSequence) engine.chooseSceneAction(id); },
   onVerb: (verb) => { if (!introSequence) engine.setVerb(verb); },
   onInventoryItem: (objectId) => { if (!introSequence) engine.selectInventoryItem(objectId); },
   onSave: () => {
     try {
-      localStorage.setItem(SAVE_STORAGE_KEY, serializeSave(engine.state));
+      localStorage.setItem(storageKey, serializeSave(engine.state));
       ui.setNotice('Saved locally in this browser.');
     } catch (error) {
       ui.setNotice(`Save failed: ${error instanceof Error ? error.message : 'browser storage is unavailable'}`);
@@ -83,7 +90,7 @@ ui.bind({
   },
   onLoad: () => {
     try {
-      const saved = localStorage.getItem(SAVE_STORAGE_KEY);
+      const saved = localStorage.getItem(storageKey);
       if (!saved) {
         ui.setNotice('No local save found yet.');
         return;
@@ -99,6 +106,12 @@ ui.bind({
   onStopMusic: () => music.stop(),
 });
 
+window.addEventListener('keydown', event => {
+  if(event.key==='Enter' && !event.repeat && !introSequence && engine.state.roomId===11 &&
+    !(event.target instanceof HTMLInputElement) && !(event.target instanceof HTMLTextAreaElement) &&
+    !(event.target instanceof HTMLButtonElement)) { event.preventDefault();engine.chooseSceneAction('land'); }
+});
+
 if (searchParams.get('intro') === '1') requestAnimationFrame(playIntro);
 
 let previousTime = performance.now();
@@ -108,12 +121,14 @@ function frame(now: number): void {
   previousTime = now;
   let steps = 0;
   while (accumulator >= FIXED_STEP_MS && steps < 8) {
-    if (!introSequence) engine.advanceOneTick();
+    if (!introSequence&&(!isLabPlay||labRuntime)) engine.advanceOneTick();
     accumulator -= FIXED_STEP_MS;
     steps += 1;
   }
   if (steps === 8 && accumulator >= FIXED_STEP_MS) accumulator %= FIXED_STEP_MS;
   const room = engine.room;
+  if(renderer&&labRuntime)labRuntime.update(room,engine.state,renderer);
+  if(labRuntime){const items=labRuntime.missingItems(room,engine.state);const signature=JSON.stringify([room.id,items.map(o=>o.object_id),engine.state.activeVerb]);if(signature!==missingSignature){missingSignature=signature;missingItemsPanel.replaceChildren();if(items.length){const label=document.createElement('div');label.textContent='Öppen behållare – föremål utan eget bildlager. Välj verb och klicka namnet:';missingItemsPanel.append(label);for(const object of items){const button=document.createElement('button');button.textContent=displayObjectName(object);button.style.cssText='margin:4px;padding:6px 10px;cursor:pointer';button.onclick=()=>engine.handleClick({x:object.walk_x,y:object.walk_y},object);missingItemsPanel.append(button);}}}}
   renderer?.update(room, engine.state);
   ui.update(engine.state, room);
   requestAnimationFrame(frame);
@@ -123,3 +138,11 @@ ui.update(engine.state, engine.room);
 requestAnimationFrame(frame);
 
 if (!music.available) ui.setMusicStatus('Intro audio was not found through the asset manifest.');
+
+if(isLabPlay){
+ ui.setNotice('Väntar på editorns rum…');
+ window.addEventListener('message',async event=>{if(event.origin!==location.origin||event.source!==window.parent||event.data?.type!=='zak-lab-projects'||labRuntime)return;
+ try{const {LabPlayRuntime}=await import('./lab/playRuntime');labRuntime=await LabPlayRuntime.create(event.data.projects);if(renderer)labRuntime.attach(renderer);ui.setNotice('Provspel: editorns grafik + originalets spelregler. Gångytor och z-masker är ännu originalets.');}catch(error){ui.setNotice(`Provspel kunde inte laddas: ${error instanceof Error?error.message:String(error)}`);}
+ });
+ window.parent.postMessage({type:'zak-lab-ready'},location.origin);
+}

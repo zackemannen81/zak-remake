@@ -1,0 +1,524 @@
+[
+  {
+    "room": 1,
+    "source": "zak/converted/poc/backgrounds_cropped/room_001/concept_v003.png",
+    "path": "cropped/backgrounds/room_001/concept_v003.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "88ff15bb95bceeba328a3faa65901011004163ff6ccf4ddf02f6efbfff3fa228"
+  },
+  {
+    "room": 2,
+    "source": "zak/converted/poc/backgrounds_cropped/room_002/concept_v003.png",
+    "path": "cropped/backgrounds/room_002/concept_v003.png",
+    "width": 2172,
+    "height": 435,
+    "aspectError": 0.0013793103448275223,
+    "sha256": "d86fae7b7934d9dc75a8b53b306a1a3d4af6584101b554f67dd65306cdce9b47"
+  },
+  {
+    "room": 3,
+    "source": "zak/converted/poc/backgrounds_cropped/room_003/concept_v002.png",
+    "path": "cropped/backgrounds/room_003/concept_v002.png",
+    "width": 2172,
+    "height": 725,
+    "aspectError": 0.600551724137931,
+    "sha256": "013247725cc155f6521e83561bace97c98780b608cfcc7c7ad234e75970acc04"
+  },
+  {
+    "room": 4,
+    "source": "zak/converted/poc/backgrounds_cropped/room_004/concept_v001.png",
+    "path": "cropped/backgrounds/room_004/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "4c49ebe44b4326f00486cc00a3276fd642279da6cf5b68513eae8c0749e25317"
+  },
+  {
+    "room": 5,
+    "source": "zak/converted/poc/backgrounds_cropped/room_005/concept_v002.png",
+    "path": "cropped/backgrounds/room_005/concept_v002.png",
+    "width": 2172,
+    "height": 431,
+    "aspectError": 0.00788863109048732,
+    "sha256": "b78412d26bd2616b544cbc551239bacac7317147970a0b659ed0e7d10f844a96"
+  },
+  {
+    "room": 6,
+    "source": "zak/converted/poc/backgrounds_cropped/room_006/concept_v001.png",
+    "path": "cropped/backgrounds/room_006/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "c5d1f806d25dc92caaf20eda105dee4094bc8455075e11c0dc6d3e4b1f6bfdf2"
+  },
+  {
+    "room": 7,
+    "source": "zak/converted/poc/backgrounds_cropped/room_007/concept_v001.png",
+    "path": "cropped/backgrounds/room_007/concept_v001.png",
+    "width": 2172,
+    "height": 580,
+    "aspectError": 0.0013793103448275223,
+    "sha256": "984f65782869c1db5deafc5f71a627abe2bca54b68fd74983333ab19e1f2c51e"
+  },
+  {
+    "room": 8,
+    "source": "zak/converted/poc/backgrounds_cropped/room_008/concept_v001.png",
+    "path": "cropped/backgrounds/room_008/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "76818adba30375dfde04d4b83e34c492efbc3537bea0daac4df76fc7965db643"
+  },
+  {
+    "room": 9,
+    "source": "zak/converted/poc/backgrounds_cropped/room_009/concept_v001.png",
+    "path": "cropped/backgrounds/room_009/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "f597f04357414797d04708b75c164272796a54e6bd41cf5dcfb58b209c58e3d9"
+  },
+  {
+    "room": 10,
+    "source": "zak/converted/poc/backgrounds_cropped/room_010/concept_v001.png",
+    "path": "cropped/backgrounds/room_010/concept_v001.png",
+    "width": 2172,
+    "height": 359,
+    "aspectError": 0.008356545961002881,
+    "sha256": "09c32b5837bcf8bcec16c1f8ce07d7f5dc39e362a5494a3dc8f80bc0c2c37b7c"
+  },
+  {
+    "room": 11,
+    "source": "zak/converted/poc/backgrounds_cropped/room_011/concept_v001.png",
+    "path": "cropped/backgrounds/room_011/concept_v001.png",
+    "width": 2172,
+    "height": 307,
+    "aspectError": 0.13198697068403908,
+    "sha256": "68141c8c9dea40fe15710ba21734ce4c9139bb7ea85f835840fe3a9ddbfe2ee4"
+  },
+  {
+    "room": 12,
+    "source": "zak/converted/poc/backgrounds_cropped/room_012/concept_v001.png",
+    "path": "cropped/backgrounds/room_012/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "6acf8dc16cf5b322fe6fd7347df9396a513a273523ab895971476162cbb44a12"
+  },
+  {
+    "room": 13,
+    "source": "zak/converted/poc/backgrounds_cropped/room_013/concept_v001.png",
+    "path": "cropped/backgrounds/room_013/concept_v001.png",
+    "width": 2172,
+    "height": 580,
+    "aspectError": 0.0013793103448275223,
+    "sha256": "ac06fbfa744156f8174a1eba3c72bdf846f6303ecbc22c4edc144201178bb89f"
+  },
+  {
+    "room": 14,
+    "source": "zak/converted/poc/backgrounds_cropped/room_014/concept_v001.png",
+    "path": "cropped/backgrounds/room_014/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "25545a002499ed6917c9b169687555aecc8ab364872f30153fb70dfd05438fdf"
+  },
+  {
+    "room": 15,
+    "source": "zak/converted/poc/backgrounds_cropped/room_015/concept_v001.png",
+    "path": "cropped/backgrounds/room_015/concept_v001.png",
+    "width": 2172,
+    "height": 429,
+    "aspectError": 0.012587412587412583,
+    "sha256": "2f7b011bf20a846c2ce5698d7a6d8c40e5f0139b778977902244f17242468c86"
+  },
+  {
+    "room": 16,
+    "source": "zak/converted/poc/backgrounds_cropped/room_016/concept_v001.png",
+    "path": "cropped/backgrounds/room_016/concept_v001.png",
+    "width": 2172,
+    "height": 344,
+    "aspectError": 0.01023255813953483,
+    "sha256": "af17ceec8bd8b167007fdd872c42f8495b156beac878d3616a95141c16b277e4"
+  },
+  {
+    "room": 17,
+    "source": "zak/converted/poc/backgrounds_cropped/room_017/concept_v001.png",
+    "path": "cropped/backgrounds/room_017/concept_v001.png",
+    "width": 2172,
+    "height": 281,
+    "aspectError": 0.03060498220640584,
+    "sha256": "41cbd31c1ca028002ac8b7031a08f76c750b36e89bbf2479fd74d256df49da13"
+  },
+  {
+    "room": 18,
+    "source": "zak/converted/poc/backgrounds_cropped/room_018/concept_v001.png",
+    "path": "cropped/backgrounds/room_018/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "f22dbc5a7a50bc5868b5b8fc38863f11b2132caa67f4858305ff5e73326781a3"
+  },
+  {
+    "room": 19,
+    "source": "zak/converted/poc/backgrounds_cropped/room_019/concept_v001.png",
+    "path": "cropped/backgrounds/room_019/concept_v001.png",
+    "width": 2172,
+    "height": 434,
+    "aspectError": 0.0009216589861751334,
+    "sha256": "79343e7746df35c4239a473312d83a93b89459a4f21d37907cb78d75e0f3278d"
+  },
+  {
+    "room": 20,
+    "source": "zak/converted/poc/backgrounds_cropped/room_020/concept_v001.png",
+    "path": "cropped/backgrounds/room_020/concept_v001.png",
+    "width": 2172,
+    "height": 346,
+    "aspectError": 0.004393063583814971,
+    "sha256": "f641c05baf377ce43e33b629991b190640ca4355826a0136b244aeb5c42dd14c"
+  },
+  {
+    "room": 21,
+    "source": "zak/converted/poc/backgrounds_cropped/room_021/concept_v001.png",
+    "path": "cropped/backgrounds/room_021/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "cd90ddea9035511d82807117e53669e4e1180a4e8b08dddb6014bb2166f2d163"
+  },
+  {
+    "room": 22,
+    "source": "zak/converted/poc/backgrounds_cropped/room_022/concept_v001.png",
+    "path": "cropped/backgrounds/room_022/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "d1f96f69931746be16b2aea21456f01ccbd8cfa598b68f6d7f16855c33297cda"
+  },
+  {
+    "room": 23,
+    "source": "zak/converted/poc/backgrounds_cropped/room_023/concept_v001.png",
+    "path": "cropped/backgrounds/room_023/concept_v001.png",
+    "width": 2172,
+    "height": 288,
+    "aspectError": 0.005555555555555536,
+    "sha256": "72bc5ece438b0d9c8fc951b703cb830542f408f55d8fbc1ecbb42eb139b7b112"
+  },
+  {
+    "room": 24,
+    "source": "zak/converted/poc/backgrounds_cropped/room_024/concept_v001.png",
+    "path": "cropped/backgrounds/room_024/concept_v001.png",
+    "width": 2172,
+    "height": 588,
+    "aspectError": 0.014965986394557818,
+    "sha256": "c2c0abc40b2683eff37ed444571c430f4308562c2829236cfd913f60d1853d46"
+  },
+  {
+    "room": 25,
+    "source": "zak/converted/poc/backgrounds_cropped/room_025/concept_v001.png",
+    "path": "cropped/backgrounds/room_025/concept_v001.png",
+    "width": 2172,
+    "height": 724,
+    "aspectError": 0.0,
+    "sha256": "53dde81f4765d4a6f0149dc58bc83f5018afe280bf6cef6376a201a3f1bb8616"
+  },
+  {
+    "room": 26,
+    "source": "zak/converted/poc/backgrounds_cropped/room_026/concept_v001.png",
+    "path": "cropped/backgrounds/room_026/concept_v001.png",
+    "width": 2172,
+    "height": 308,
+    "aspectError": 0.02573789846517105,
+    "sha256": "44cdaca9e2dc258bc407fb385b1d64716232db70ffef7558088912b2ff0fa67b"
+  },
+  {
+    "room": 27,
+    "source": "zak/converted/poc/backgrounds_cropped/room_027/concept_v001.png",
+    "path": "cropped/backgrounds/room_027/concept_v001.png",
+    "width": 2172,
+    "height": 290,
+    "aspectError": 0.0013793103448275223,
+    "sha256": "01dc194ca677424a0610fbda7551b6d308d39acdb30fc16f1cc2c638abd49fc5"
+  },
+  {
+    "room": 28,
+    "source": "zak/converted/poc/backgrounds_cropped/room_028/concept_v001.png",
+    "path": "cropped/backgrounds/room_028/concept_v001.png",
+    "width": 2172,
+    "height": 376,
+    "aspectError": 0.0061770761839397,
+    "sha256": "1895c7ee2262df28dfb2f28a8c5f7eb129608a0d39e1be3211c873ed65b7fd93"
+  },
+  {
+    "room": 29,
+    "source": "zak/converted/poc/backgrounds_cropped/room_029/concept_v001.png",
+    "path": "cropped/backgrounds/room_029/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "c7eccb48e93a07224fe1f3f60b76c7eee88ad9b375dabddb5f2c201919c22c7c"
+  },
+  {
+    "room": 30,
+    "source": "zak/converted/poc/backgrounds_cropped/room_030/concept_v001.png",
+    "path": "cropped/backgrounds/room_030/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "8039a01a738a4d090bd3bc672e7651802b777bfbce69b6d9b282ae9b92ae7d8d"
+  },
+  {
+    "room": 31,
+    "source": "zak/converted/poc/backgrounds_cropped/room_031/concept_v001.png",
+    "path": "cropped/backgrounds/room_031/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "1c5cb0f2b51accc599f423795d42e483f889fb35c9864acd25d7317910e8cd2f"
+  },
+  {
+    "room": 32,
+    "source": "zak/converted/poc/backgrounds_cropped/room_032/concept_v001.png",
+    "path": "cropped/backgrounds/room_032/concept_v001.png",
+    "width": 2172,
+    "height": 289,
+    "aspectError": 0.0020761245674740803,
+    "sha256": "95cb2983649958d0a278e6abe75fc4d1521f392b7672c5b3677d297492083456"
+  },
+  {
+    "room": 33,
+    "source": "zak/converted/poc/backgrounds_cropped/room_033/concept_v001.png",
+    "path": "cropped/backgrounds/room_033/concept_v001.png",
+    "width": 2172,
+    "height": 432,
+    "aspectError": 0.005555555555555536,
+    "sha256": "51b62fdfe8e2023e59b833a63c02152b0f5f7c2cd1c890eea6400b59bba19bb5"
+  },
+  {
+    "room": 34,
+    "source": "zak/converted/poc/backgrounds_cropped/room_034/concept_v002.png",
+    "path": "cropped/backgrounds/room_034/concept_v002.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "147b6cc5ec0b289557d54138bb63b2533a6f6dd28e5d82fdea8705c70629a08c"
+  },
+  {
+    "room": 35,
+    "source": "zak/converted/poc/backgrounds_cropped/room_035/concept_v001.png",
+    "path": "cropped/backgrounds/room_035/concept_v001.png",
+    "width": 2169,
+    "height": 435,
+    "aspectError": 0.0027586206896550447,
+    "sha256": "fe5a9daeaafa7c3205693c585438cd8028d093527db5bff6d77ed4f661c13f27"
+  },
+  {
+    "room": 36,
+    "source": "zak/converted/poc/backgrounds_cropped/room_036/concept_v001.png",
+    "path": "cropped/backgrounds/room_036/concept_v001.png",
+    "width": 2172,
+    "height": 289,
+    "aspectError": 0.0020761245674740803,
+    "sha256": "ae009c66f847e445933570b35ef5a7e230ba7155db3c13745f63f1d3a237b01c"
+  },
+  {
+    "room": 37,
+    "source": "zak/converted/poc/backgrounds_cropped/room_037/concept_v001.png",
+    "path": "cropped/backgrounds/room_037/concept_v001.png",
+    "width": 2172,
+    "height": 536,
+    "aspectError": 0.0025258323765786628,
+    "sha256": "692665f471c2a9ed63b78923d80df3b9fec23a608c84350ca480515991474309"
+  },
+  {
+    "room": 38,
+    "source": "zak/converted/poc/backgrounds_cropped/room_038/concept_v001.png",
+    "path": "cropped/backgrounds/room_038/concept_v001.png",
+    "width": 2172,
+    "height": 290,
+    "aspectError": 0.0013793103448275223,
+    "sha256": "8a9d09d32c1728e87a8297b33c78e2b010fe6489d18c05c67665c75319fef1da"
+  },
+  {
+    "room": 39,
+    "source": "zak/converted/poc/backgrounds_cropped/room_039/concept_v001.png",
+    "path": "cropped/backgrounds/room_039/concept_v001.png",
+    "width": 2172,
+    "height": 433,
+    "aspectError": 0.0032332563510393264,
+    "sha256": "651350f22bd13fb4e0f88ea7fd174f6867dd72d0541a699582f25b952fb6db19"
+  },
+  {
+    "room": 40,
+    "source": "zak/converted/poc/backgrounds_cropped/room_040/concept_v001.png",
+    "path": "cropped/backgrounds/room_040/concept_v001.png",
+    "width": 2172,
+    "height": 432,
+    "aspectError": 0.005555555555555536,
+    "sha256": "2855a0486d35b0051b596c74c818c5efb9857e93ef9fac1c1f280e4c21aede83"
+  },
+  {
+    "room": 41,
+    "source": "zak/converted/poc/backgrounds_cropped/room_041/concept_v001.png",
+    "path": "cropped/backgrounds/room_041/concept_v001.png",
+    "width": 2172,
+    "height": 436,
+    "aspectError": 0.003669724770642313,
+    "sha256": "06b76363c8fe69fcc45d0e0e521983ed60dc0702673c4fd54b1f485784ebd57f"
+  },
+  {
+    "room": 42,
+    "source": "zak/converted/poc/backgrounds_cropped/room_042/concept_v001.png",
+    "path": "cropped/backgrounds/room_042/concept_v001.png",
+    "width": 2172,
+    "height": 437,
+    "aspectError": 0.005949656750572019,
+    "sha256": "7a3c5be5d30431698144a6f5a97b08a345b7132818c410e9b7ce177a484fb2af"
+  },
+  {
+    "room": 43,
+    "source": "zak/converted/poc/backgrounds_cropped/room_043/concept_v001.png",
+    "path": "cropped/backgrounds/room_043/concept_v001.png",
+    "width": 2172,
+    "height": 430,
+    "aspectError": 0.01023255813953483,
+    "sha256": "cacc40861f52585465cf81766554e796d4dbec62234432e128b7b0d80a9b59d1"
+  },
+  {
+    "room": 44,
+    "source": "zak/converted/poc/backgrounds_cropped/room_044/concept_v001.png",
+    "path": "cropped/backgrounds/room_044/concept_v001.png",
+    "width": 2172,
+    "height": 434,
+    "aspectError": 0.0009216589861751334,
+    "sha256": "3b2c723afefcc8d709f2779f0562b3ede288577980b5e08b2a5acd15a02c558f"
+  },
+  {
+    "room": 45,
+    "source": "zak/converted/poc/backgrounds_cropped/room_045/concept_v001.png",
+    "path": "cropped/backgrounds/room_045/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "de3d20352de3413a709e7cf8683f0beb0c405d66a30985ff04f40d8ba1e1b9c9"
+  },
+  {
+    "room": 46,
+    "source": "zak/converted/poc/backgrounds_cropped/room_046/concept_v001.png",
+    "path": "cropped/backgrounds/room_046/concept_v001.png",
+    "width": 2172,
+    "height": 434,
+    "aspectError": 0.0009216589861751334,
+    "sha256": "d566508d9b981b43c9e83b2d6ab0c5a2dfde54a42d4ca055958883581afeafe8"
+  },
+  {
+    "room": 47,
+    "source": "zak/converted/poc/backgrounds_cropped/room_047/concept_v001.png",
+    "path": "cropped/backgrounds/room_047/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "3e60053808fd5eafb5dad4e596bc764af4d72b9c04961313b7fcf3fe4eb50d66"
+  },
+  {
+    "room": 48,
+    "source": "zak/converted/poc/backgrounds_cropped/room_048/concept_v001.png",
+    "path": "cropped/backgrounds/room_048/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "034575bf3b41a65bf256085d50a343974716c720abc773d3809a7a82c29ad901"
+  },
+  {
+    "room": 49,
+    "source": "zak/converted/poc/backgrounds_cropped/room_049/concept_v001.png",
+    "path": "cropped/backgrounds/room_049/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "db415a003e06692a2e0a7389f76a46872c7e0b53bcaf6b476e1aa22bb63a7eef"
+  },
+  {
+    "room": 50,
+    "source": "zak/converted/poc/backgrounds_cropped/room_050/concept_v001.png",
+    "path": "cropped/backgrounds/room_050/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "516b582cb3bf5123e39e10d3f8931f6a8b69c07baa72693e0908b3664fdb246d"
+  },
+  {
+    "room": 51,
+    "source": "zak/converted/poc/backgrounds_cropped/room_051/concept_v001.png",
+    "path": "cropped/backgrounds/room_051/concept_v001.png",
+    "width": 2172,
+    "height": 430,
+    "aspectError": 0.01023255813953483,
+    "sha256": "50a52e13afee10f1f9dcfab6f6e3128e3b0cfa290cf3cf90a77aee9505f60a88"
+  },
+  {
+    "room": 52,
+    "source": "zak/converted/poc/backgrounds_cropped/room_052/concept_v001.png",
+    "path": "cropped/backgrounds/room_052/concept_v001.png",
+    "width": 2172,
+    "height": 335,
+    "aspectError": 0.2967164179104478,
+    "sha256": "08f45efd02aba64fafb90b68ea8ef82b453364734900bc87dec512afb5ffe0d2"
+  },
+  {
+    "room": 53,
+    "source": "zak/converted/poc/backgrounds_cropped/room_053/concept_v001.png",
+    "path": "cropped/backgrounds/room_053/concept_v001.png",
+    "width": 2172,
+    "height": 288,
+    "aspectError": 0.005555555555555536,
+    "sha256": "4ddb78ebd7287c63e25df802fe5febebf3fb92ced2f42e5aa203b295b03417f9"
+  },
+  {
+    "room": 54,
+    "source": "zak/converted/poc/backgrounds_cropped/room_054/concept_v001.png",
+    "path": "cropped/backgrounds/room_054/concept_v001.png",
+    "width": 1983,
+    "height": 748,
+    "aspectError": 0.0604278074866309,
+    "sha256": "36cbab55c83e903ea0e92a9e0c662a8d5336529e32e3119de7b65a97913311d6"
+  },
+  {
+    "room": 55,
+    "source": "zak/converted/poc/backgrounds_cropped/room_055/concept_v001.png",
+    "path": "cropped/backgrounds/room_055/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "ea1d709a27b6e8e187ea62740b6ec8e60406aca929e2da1c79fcb83596372e62"
+  },
+  {
+    "room": 56,
+    "source": "zak/converted/poc/backgrounds_cropped/room_056/concept_v001.png",
+    "path": "cropped/backgrounds/room_056/concept_v001.png",
+    "width": 2172,
+    "height": 433,
+    "aspectError": 0.0032332563510393264,
+    "sha256": "4cbcb399b3ab93bac60c00a3aa92b21389d9bed74eed9c5908d64948d2268c81"
+  },
+  {
+    "room": 57,
+    "source": "zak/converted/poc/backgrounds_cropped/room_057/concept_v001.png",
+    "path": "cropped/backgrounds/room_057/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "198cebce13d20fd361e2c5957c5a74686b8059be1b9d5ddcaa26be3574b6454b"
+  },
+  {
+    "room": 58,
+    "source": "zak/converted/poc/backgrounds_cropped/room_058/concept_v001.png",
+    "path": "cropped/backgrounds/room_058/concept_v001.png",
+    "width": 1983,
+    "height": 793,
+    "aspectError": 0.00025220680958382147,
+    "sha256": "51172f8e7702e143812982d701d40fc441cc0d75ec85b15483fe54a198fe5db8"
+  }
+]

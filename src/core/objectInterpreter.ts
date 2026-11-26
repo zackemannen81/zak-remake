@@ -2,6 +2,7 @@ import programsJson from '../content/object-programs.json';
 import { getRoom, playableRoomIds, objectHasClass } from '../content/rooms';
 import { scheduleAction } from './scheduler';
 import type { GameState, VerbId, ScheduledAction } from './types';
+import { resourceRoom } from './roomIdentity';
 
 type Edge = {target:number;kind:string};
 type Program = {events:Record<string,number>;nodes:Record<string,[string,Edge[]]>};
@@ -15,7 +16,7 @@ export function runObjectProgram(state:GameState,id:number,verb:VerbId,item:numb
   if (!program || entry===undefined) return 'missing';
   const draft=structuredClone(state);
   const effects: Array<{delay:number;action:ScheduledAction}>=[];
-  let delay=1, result=0, pc=entry;
+  let delay=1, result=0, pc=entry, instruction='';
   const emit=(action:ScheduledAction)=>effects.push({delay,action});
   const val=(raw:string):number=>{
     const s=raw.trim();
@@ -24,7 +25,7 @@ export function runObjectProgram(state:GameState,id:number,verb:VerbId,item:numb
     if(s==='VAR_ACTIVE_OBJECT2')return item??0;
     if(s==='VAR_ACTIVE_VERB')return verbs[verb];
     if(s==='VAR_EGO')return 1;
-    if(s==='VAR_ROOM')return state.roomId;
+    if(s==='VAR_ROOM')return state.logicalRoomId ?? state.roomId;
     if(s==='VAR_RESULT')return result;
     const v=s.match(/^Var\[(\d+)\]$/);
     if(v)return Number(v[1])===235?1:Number(v[1])===234?0:draft.variables[Number(v[1])]??0;
@@ -32,6 +33,8 @@ export function runObjectProgram(state:GameState,id:number,verb:VerbId,item:numb
     if(st)return (draft.objectStates[String(val(st[2]!))]??0)&Number(st[1]);
     const owner=s.match(/^getObjectOwner\((.+)\)$/);
     if(owner)return draft.objectOwners[String(val(owner[1]!))]??0;
+    const bv=s.match(/^getBitVar\(([^,]+),(.+)\)$/);
+    if(bv)return Number(draft.flags[`bit:${val(bv[1]!)+val(bv[2]!)}`]??false);
     const cls=s.match(/^classOfIs\(([^,]+),(.+)\)$/);
     if(cls)return Number(objectHasClass(val(cls[1]!),val(cls[2]!)));
     if(/^getActorWalkBox\(7\)$/.test(s))return -1; // NPC simulation not active in the current runtime
@@ -59,7 +62,7 @@ export function runObjectProgram(state:GameState,id:number,verb:VerbId,item:numb
     for(let budget=0;budget<256;budget++){
       const node=program.nodes[String(pc)];
       if(!node)throw Error('Missing instruction');
-      const [raw,edges]=node, s=raw.trim();
+      const [raw,edges]=node, s=raw.trim(); instruction=s;
       if (/^(stopObjectCode|stopScript\(0\))/.test(s)){
         for(const e of effects)scheduleAction(state,e.delay,e.action);
         if(delay>1)state.scriptLockedUntil=state.tick+delay;
@@ -72,6 +75,7 @@ export function runObjectProgram(state:GameState,id:number,verb:VerbId,item:numb
       else if((m=s.match(/^(set|clear)State(01|02|04|08)\((.+)\);$/)))bit(val(m[3]!),Number(m[2]),m[1]==='set');
       else if((m=s.match(/^pickupObject\((.+)\);$/))){const o=val(m[1]!);owner(o,1);bit(o,10,true);}
       else if((m=s.match(/^setOwnerOf\(([^,]+),(.+)\);$/)))owner(val(m[1]!),val(m[2]!));
+      else if((m=s.match(/^setBitVar\(([^,]+),([^,]+),(.+)\);$/))){const name=`bit:${val(m[1]!)+val(m[2]!)}`,value=Boolean(val(m[3]!));draft.flags[name]=value;emit({type:'set-flag',name,value});}
       else if((m=s.match(/^VAR_RESULT = (.+);$/)))result=val(m[1]!);
       else if((m=s.match(/^Var\[(\d+)\] = (.+);$/))){const i=Number(m[1]),v=val(m[2]!);draft.variables[i]=v;emit({type:'set-variable',index:i,value:v});}
       else if((m=s.match(/^Var\[(\d+)\](\+\+|--);$/))){const i=Number(m[1]),v=(draft.variables[i]??0)+(m[2]==='++'?1:-1);draft.variables[i]=v;emit({type:'set-variable',index:i,value:v});}
@@ -79,10 +83,11 @@ export function runObjectProgram(state:GameState,id:number,verb:VerbId,item:numb
       else if((m=s.match(/^delay\((\d+)\);$/)))delay+=Number(m[1]);
       else if(/^breakHere\(\);$/.test(s))delay++;
       else if(/^startScript\((10|11)\);$/.test(s))bit(id,8,s.includes('(10)')); // standard door open/close
+      else if((m=s.match(/^setObjectName\(([^,]+),"(.*)"\);$/)))emit({type:'set-object-name',objectId:val(m[1]!),name:m[2]!});
       else if((m=s.match(/^loadRoomWithEgo\(([^,]+),([^,]+),([^,]+),([^,]+)\);$/))){
         const obj=val(m[1]!),room=val(m[2]!);
-        if(!playableRoomIds.includes(room))throw Error('Logical room mapping unsupported');
-        const dest=getRoom(room).objects.find(o=>o.object_id===obj);
+        if(!playableRoomIds.includes(resourceRoom(room)))throw Error('Unknown room');
+        const dest=getRoom(resourceRoom(room)).objects.find(o=>o.object_id===obj);
         if(!dest)throw Error('Missing arrival');
         const x=val(m[3]!),y=val(m[4]!);
         emit({type:'travel',roomId:room,x:x===255?dest.walk_x:x*8,y:y===255?dest.walk_y:y*2});
@@ -92,6 +97,7 @@ export function runObjectProgram(state:GameState,id:number,verb:VerbId,item:numb
       if(!next)throw Error('Missing successor '+branch);
       pc=next.target;
     }
-  }catch{return 'unsupported';}
+  }catch(error){state.scriptDiagnostic={room:state.logicalRoomId??state.roomId,object:id,verb,instruction,reason:String(error)};return 'unsupported';}
+  state.scriptDiagnostic={room:state.logicalRoomId??state.roomId,object:id,verb,instruction,reason:'Instruction budget exceeded'};
   return 'unsupported';
 }

@@ -1,4 +1,5 @@
 import { runObjectProgram } from './objectInterpreter';
+import { advanceProgression, chooseSceneAction, progressionCombination, progressionInventory, progressionVerb } from '../scenes/progression';
 import { advanceActorOneStep, planWalk, scriptActorToRoomPixels } from './movement';
 import { advanceScheduler, scheduleAction } from './scheduler';
 import { PLAYER_OWNER_ID, OBJECT_INTRINSIC, OBJECT_UNTOUCHABLE, type GameState, type Point, type RoomData, type SourceObject, type VerbId } from './types';
@@ -15,23 +16,26 @@ export class GameEngine {
   setVerb(verb: VerbId): void {
     if (this.state.apartmentExit || this.state.scriptSequence || (this.state.scriptLockedUntil ?? 0) > this.state.tick) return;
     this.state.activeVerb = verb;
-    if (verb !== 'use') this.state.selectedItemId = null;
+    if (verb !== 'use' && verb !== 'give') this.state.selectedItemId = null;
   }
 
   selectInventoryItem(objectId: number): void {
     if (this.state.apartmentExit || this.state.scriptSequence || this.state.intro || (this.state.scriptLockedUntil ?? 0) > this.state.tick || !this.state.inventory.includes(objectId)) return;
-    const scripted = applyInventoryVerb(this.state, objectId, this.state.activeVerb);
-    if (scripted !== undefined) { this.speak(scripted, 120); this.state.selectedItemId = null; return; }
+    const scripted = progressionInventory(this.state, objectId, this.state.activeVerb) ?? applyInventoryVerb(this.state, objectId, this.state.activeVerb);
+    if (scripted !== undefined) { this.speak(scripted, 120); this.state.selectedItemId = null; this.state.activeVerb = 'walk'; return; }
     if (this.state.activeVerb === 'use' && this.state.selectedItemId !== null && this.state.selectedItemId !== objectId) {
       const first = this.state.selectedItemId;
-      const result = applyInventoryUse(this.state, first, objectId);
+      const result = progressionCombination(this.state, first, objectId) ?? applyInventoryUse(this.state, first, objectId);
       this.speak(result ?? `${inventoryObjectName(first, this.state.objectNames)} doesn't seem to work with ${inventoryObjectName(objectId, this.state.objectNames)}.`, 120);
       this.state.selectedItemId = null;
+      this.state.activeVerb = 'walk';
       return;
     }
     this.state.selectedItemId = this.state.selectedItemId === objectId ? null : objectId;
-    this.state.activeVerb = 'use';
+    this.state.activeVerb = this.state.selectedItemId === null ? 'walk' : this.state.activeVerb==='give'?'give':'use';
   }
+
+  chooseSceneAction(id: string): void { chooseSceneAction(this.state,id); }
 
   replaceState(state: GameState): void {
     this.state = state;
@@ -65,6 +69,7 @@ export class GameEngine {
 
   advanceOneTick(): void {
     advanceScheduler(this.state);
+    advanceProgression(this.state);
     advanceSceneScripts(this.state);
     this.advanceScript108Intro();
     if (this.state.actor.path.length > 0) advanceActorOneStep(this.state);
@@ -76,7 +81,9 @@ export class GameEngine {
       delete this.state.scriptSequence;
       if (sequence.roomId === this.state.roomId) for (const action of sequence.afterWalk) scheduleAction(this.state, 1, action);
     }
-    if (this.state.actor.path.length === 0 && this.state.pendingInteraction) this.resolvePendingInteraction();
+    if (this.state.actor.path.length === 0 && this.state.pendingInteraction) {
+      try { this.resolvePendingInteraction(); } finally { this.state.activeVerb = 'walk'; this.state.selectedItemId = null; }
+    }
   }
 
   advance(ticks: number): void {
@@ -119,7 +126,7 @@ export class GameEngine {
       return;
     }
 
-    const early = applyRoomScriptVerb(this.state, room.id, target.object_id, pending.verb, pending.selectedItemId);
+    const early = progressionVerb(this.state,target.object_id,pending.verb,pending.selectedItemId) ?? applyRoomScriptVerb(this.state, room.id, target.object_id, pending.verb, pending.selectedItemId);
     if (early !== undefined) {
       this.state.selectedItemId = null;
       this.speak(early, 120);

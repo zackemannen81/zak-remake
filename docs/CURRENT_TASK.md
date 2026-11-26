@@ -84,3 +84,49 @@ User requests acceleration toward the modern visual prototype and original intro
 
 ## Scene animation checkpoint
 2026-11-25: Added bounded SCUMM v2 costume extraction for 2,3,17,18,34, transparent scene overlays, abbreviated deterministic TV timeline and baker bread drop, and cord ownership transfer/unplug. 43/43 tests passed. Original assets preserved. Costume placement, palette and visual playback await browser verification; not a full costume VM or original broadcast.
+
+## ZMATAMR-0002 bounded scene-lab work — 2026-11-26
+User requests the smallest working PoC for visual alternatives before choosing a production pipeline. Status: In Progress. Existing gameplay scope remains open.
+Deliver a separate /scene-lab.html for rooms 1–2: scaled source rectangles, draggable quadrilateral masks, independent state layers, full-background masked patch import/export, clean-plate input, approximate hinged/sliding preview, master comparison, overlap diagnostics and JSON round-trip. Use supplied room-1 examples as optional demo assets; preserve originals. No paid generation, full 3D editor, runtime integration or automatic script changes in this experiment.
+Acceptance: typecheck/build and meaningful geometry/project tests; browser exercise of selection, mask editing, combinations and export/import where available. Document geometric-preview limitations and next decision.
+
+## Scene Lab checkpoint — 2026-11-26
+Bounded visual experiment delivered at /scene-lab.html; see SCENE_LAB.md for workflow and limits. Rooms 1–2, scaled source areas, adjustable quad masks, supplied room-1 demo states, masked patch import/export, approximate hinged/sliding preview, clean plate, combinations, undo and self-contained project JSON. 58/58 tests passed; build passed; headless browser verified round-trip, pixel preservation, masks, movement, drag/undo and room change. The original gameplay task remains In Progress; no runtime state integration or full 3D implementation is claimed.
+
+## Scene Lab 02 — 2026-11-26
+In Progress: user authorizes real Three.js door/drawer geometry, local per-object reveal surfaces, side/back materials and removable drawer content. Preserve v1 projects and existing experimental work. Verify geometry, round-trip and browser rendering. No external image generation or gameplay integration.
+
+### Scene Lab 02 verification — 2026-11-26
+Delivered real Three.js hinge/sliding geometry, editable depth/thickness/materials, object-local reveal input and procedural placeholders, separate removable drawer card with occlusion-aware ray picking. Room-1 preset available. v1 projects preserved. 61/61 tests and build pass; headless UI verifies material imports, round-trip, old project loading, visible pickup/undo and export without page errors. Bounded PoC complete; parent gameplay task still In Progress. No external generation or runtime integration.
+
+## Scene Lab 03 — room lighting experiment
+In Progress: shared serializable room lighting/tint, optional baked-front relighting, procedural cavity shading and adjustable invisible shadow receivers. Use saved user JSON read-only as a reference. Verify shadows change with light/movement, disabled comparison and save/load; no character integration claimed.
+
+### Scene Lab 03 checkpoint — 2026-11-26
+Bounded lighting experiment delivered: shared project light profile, Lambert side/interior lighting with optional front relighting, UV cavity approximation, real per-object shadow maps and transparent screen-plane shadow receivers with margin/helpers. Saved user dresser project imported read-only for browser verification. 62 tests and build passed; UI light/shadow toggles, direction, helper and light roundtrip verified without shader/page errors. Character/shared room-scene integration remains open; parent task In Progress.
+
+## Scene Lab 04 — playable editor preview
+In Progress: launch actual game from editor with in-memory authored room projects, shared compositing, state-driven layers, adjusted hit targets and isolated playtest saves. Preserve author data on return. Rooms without a loaded project use normal assets. Validate actual interaction/state/render flow and roundtrip. Original walkboxes/masks remain unless explicitly authored.
+
+### Scene Lab 04 delivery checkpoint — 2026-11-26
+Playable editor overlay implemented with actual game engine, shared authored compositor, state bindings, interpolation, canonical-ID target mapping and isolated saves. Original authoring session preserved on return; loaded room drafts retained. 64 tests/build passed; actual browser Open/Close and source bit transitions verified from saved user project. Original movement/z-mask data and shared actor depth/shadows remain limitations. Parent task remains In Progress.
+
+## Playtest pickup correction — In Progress
+Investigate authored container hit interception, add explicit present-in-room visual binding for item sprites, and expose missing-art contained items without generating artwork. Verify source pickup/rename and egg ownership transitions; preserve user JSON.
+
+### Pickup correction checkpoint — 2026-11-26
+Fixed source-child hit interception by authored container faces; added missing-art contained-item verb buttons and explicit room-owned/parent-gated present binding for item sprites. User egg binding remains explicit, not automatically changed. 66 tests and build passed; source kazoo/crayon pickup and rename regressions covered. Missing artwork is still missing, with a temporary playtest interaction aid.
+
+## Cropped backgrounds and compact game UI — In Progress
+User completed San Francisco through airport. Import all available cropped backgrounds with explicit source/version selection and no second UV crop; default runtime with original opt-out and authored room precedence. Compact verbs/inventory dock, paginated readable inventory, collapsible game/debug menus. Reset completed interactions to Walk to, preserving pending walk and two-item selection. Validate assets, logic and desktop/narrow UI.
+
+### Cropped rollout / UI checkpoint — 2026-11-26
+Delivered 58 imported cropped backgrounds by default, authored lab precedence, compact paginated inventory/control dock and collapsible menus, action reset to Walk with combinations preserved. 69 tests pass; build and browser checked airport load, 23 inventory entries, responsive widths, actual lab Open/reset. Source aspect mismatches recorded in docs/evidence/cropped-background-import.json. Gameplay charter remains In Progress; no claim to missing airport script support.
+
+## Walkthrough-driven scripting — 2026-11-26 — In Progress
+User authorizes missing gameplay/script functionality using supplied walkthrough. Preserve existing artwork/editor projects. Audit source contracts and implement/test the supplied progression (San Francisco, flights, Seattle, Nepal, Zaire), including negative prerequisites and save/resume. The supplied text ends at the Zaire dance, so full-game completion remains unverified. Prefer explicit source-backed adapters over silently ignoring unsupported instructions; expose precise diagnostics for remaining VM gaps.
+
+### Walkthrough implementation checkpoint — 2026-11-26
+Added source-backed progression adapters for missing SF interactions, tickets and logical airports, cabin puzzle, Seattle crystal, summarized Annie meeting, Nepal and Zaire dance clue. Named NPC interaction fallback and exact unsupported-script diagnostics added. 79 tests pass, including ten staged engine-action regressions and mid-timer save/resume. Browser verified devotee purchase, terminal, ticket, boarding, Seattle arrival and saved money/identity. See SCRIPT_PROGRESS.md for exact coverage and deliberate substitutions. Task stays In Progress: full actor/script VM, Switch, multi-character progression, complete choreography and later/endgame chains are not finished. Do not equate alias resolution or staged fixture tests with a complete game.
+
+Verification completion: production build passed (both entries); existing bundle-size advisory remains. Browser screenshots inspected. No commit or push.

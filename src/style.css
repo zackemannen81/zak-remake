@@ -206,3 +206,46 @@ h1 span { color: #b7ad96; font-weight: 400; }
 @keyframes intro-pan-wide { from { transform:translateX(-50%); } to { transform:translateX(0); } }
 @media(prefers-reduced-motion:reduce) { .intro-scene[data-pan="true"] { animation:none; } }
 .intro-card:empty { display:none; }
+
+/* Compact play layout: scene, dialogue and controls stay together regardless of inventory size. */
+.compact-game{width:min(1320px,100%);padding:12px 22px 18px}
+.compact-game .topbar{padding:0 0 12px;gap:12px}
+.compact-game .brand-mark{width:32px;height:32px;font-size:19px}
+.compact-game h1{font-size:18px}
+.compact-game h1 span{font-size:13px;color:var(--muted)}
+.compact-game .game-layout{display:block;margin-top:12px;gap:0}
+.compact-game .scene-heading{margin:0 0 8px;padding:0;align-items:center}
+.compact-game .scene-heading h2{font-size:18px;margin:0}
+.compact-game .viewport{width:100%;aspect-ratio:2.5;min-height:0;height:auto;max-height:none}
+.compact-game .dialogue{margin:8px 0;min-height:42px;padding:10px 14px;font-size:14px;line-height:1.5}
+.interaction-dock{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(260px,1fr);gap:12px;align-items:stretch;border:1px solid #544633;background:#1a1915;border-radius:8px;padding:12px}
+.compact-game .actionbar-panel{margin:0;padding:0;border:0;background:none;box-shadow:none;min-width:0}
+.compact-game .verb-bar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.compact-game .verb-button{min-height:43px;height:auto;padding:8px 4px;font-size:12px;border:1px solid #5b5140;border-radius:5px;background:linear-gradient(#332e25,#211f1b);color:#e8dfca;box-shadow:none;text-shadow:none}
+.compact-game .verb-button.is-active{background:#d6b46c;color:#17150f;border-color:#eacf92;font-weight:700}
+.compact-game .verb-button:hover{border-color:#eacf92}
+.compact-game .selected-item-note{font-size:12px;margin:8px 0 0;line-height:1.4}
+.compact-game .inventory-block{border-left:1px solid #484032;padding:0 0 0 12px;min-width:0}
+.inventory-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;gap:8px}
+.inventory-heading h3{margin:0;font-size:12px;color:#cbb98d}
+.inventory-paging{display:flex;gap:9px;align-items:center;font-size:11px;color:#cbb98d}
+.inventory-paging button{width:27px;height:25px;border:1px solid #5b5140;border-radius:4px;background:#29251d;color:#f1d28b;cursor:pointer;font-size:20px;line-height:1}
+.inventory-paging button:disabled{opacity:.3;cursor:default}
+.compact-game .inventory-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,30px);gap:5px;min-height:100px}
+.compact-game .inventory-item{aspect-ratio:auto;min-height:0;height:30px;padding:4px 8px;background:#29251e;border:1px solid #504431;border-radius:4px;font-size:12px;text-shadow:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;text-align:left}
+.compact-game .inventory-item.is-selected{background:#584629;border-color:#e5c37a;color:#fff0c9}
+.compact-game .inventory-empty{grid-row:1/-1;padding:10px;font-size:12px;align-self:center}
+.game-menu{position:relative;font-size:12px;flex-shrink:0}
+.game-menu summary{cursor:pointer;border:1px solid #655338;border-radius:5px;padding:8px 12px;list-style:none}
+.game-menu .menu-content{position:absolute;right:0;top:38px;width:310px;max-width:85vw;z-index:20;background:#211e17;border:1px solid #655338;border-radius:7px;padding:14px;box-shadow:0 12px 40px #000a}
+.game-menu .button-row{margin-bottom:8px}
+.game-menu .small-copy,.game-menu .notice{margin:8px 0 0;font-size:12px}
+.debug-drawer{margin-top:12px;color:#9b927f;font-size:11px}
+.debug-drawer summary{cursor:pointer}.debug-content{display:grid;grid-template-columns:2fr 1fr;gap:15px;padding:10px}
+@media(max-width:850px){.compact-game{padding:10px}.interaction-dock{grid-template-columns:minmax(0,1.6fr) minmax(220px,1fr);padding:8px;gap:8px}.compact-game .verb-bar{grid-template-columns:repeat(4,minmax(0,1fr))}.compact-game .verb-button{min-height:32px;font-size:11px;padding:5px 2px}.compact-game .inventory-list{grid-template-rows:repeat(3,34px)}.compact-game .inventory-item{height:34px}.compact-game h1 span{display:none}}
+@media(max-width:540px){.interaction-dock{grid-template-columns:1fr}.compact-game .inventory-block{border-left:0;border-top:1px solid #484032;padding:8px 0 0}.compact-game .verb-bar{grid-template-columns:repeat(4,minmax(0,1fr))}.compact-game .room-coordinate{display:none}.compact-game .dialogue{font-size:12px}.compact-game .brand-lockup{gap:8px}}
+.compact-game .verb-button{aspect-ratio:auto;width:100%}
+
+.scene-actions { display:flex; gap:8px; flex-wrap:wrap; padding:8px 0; }
+.scene-actions:empty { display:none; }
+.scene-actions button { min-height:38px; }

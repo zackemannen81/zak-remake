@@ -1,5 +1,6 @@
 import type { GameState, RoomData, VerbId } from '../core/types';
 import { inventoryObjectName } from '../content/rooms';
+import { sceneChoices, locationName } from '../scenes/progression';
 
 const verbs: Array<{ id: VerbId; label: string }> = [
   { id: 'walk', label: 'Walk to' },
@@ -25,6 +26,7 @@ export interface GameUICallbacks {
   onLoad: () => void;
   onPlayIntro: () => void;
   onStopMusic: () => void;
+  onSceneAction: (id:string) => void;
 }
 
 export class GameUI {
@@ -41,36 +43,42 @@ export class GameUI {
   private readonly callbacks: Partial<GameUICallbacks> = {};
   private lastMessages = '';
   private lastInventory = '';
+  private inventoryPage = 0;
+  private readonly pageSize = 6;
+  private readonly inventoryPrevious: HTMLButtonElement;
+  private readonly inventoryNext: HTMLButtonElement;
+  private readonly inventoryPageLabel: HTMLElement;
+  private readonly sceneActions: HTMLElement;
+  private lastChoices = '';
 
   constructor(root: HTMLElement) {
     root.innerHTML = `
-      <div class="game-shell">
+      <div class="game-shell compact-game">
         <header class="topbar">
-          <div class="brand-lockup"><span class="brand-mark" aria-hidden="true">Z</span><div><p class="eyebrow">A playable work in progress</p><h1>Zak McKracken <span>and the Alien Mindbenders</span></h1></div></div>
-          <div class="topbar-status"><span class="status-light"></span><span id="engine-status">ENGINE READY</span></div>
+          <div class="brand-lockup"><span class="brand-mark" aria-hidden="true">Z</span><h1>Zak McKracken <span>and the Alien Mindbenders</span></h1></div>
+          <details class="game-menu"><summary>Game menu</summary><div class="menu-content"><div class="button-row"><button id="save-button" class="secondary-button">Save</button><button id="load-button" class="secondary-button">Load</button></div><div class="button-row"><button id="play-music-button" class="secondary-button">Play intro</button><button id="stop-music-button" class="secondary-button">Stop music</button></div><p id="music-status" class="small-copy"></p><p id="notice" class="notice" aria-live="polite"></p></div></details>
         </header>
         <main class="game-layout">
           <section class="play-column" aria-label="Game scene">
-            <div class="scene-heading"><div><p class="eyebrow">Current location</p><h2 id="room-title">Loading room…</h2></div><span id="room-coordinates" class="room-coordinate"></span></div>
+            <div class="scene-heading"><h2 id="room-title">Loading room…</h2><span id="room-coordinates" class="room-coordinate"></span></div>
             <div id="viewport" class="viewport" aria-label="Point-and-click game canvas"></div>
             <div id="dialogue" class="dialogue" aria-live="polite">Loading the first room…</div>
+            <div id="scene-actions" class="scene-actions" aria-label="Scene interactions"></div>
           </section>
-          <aside class="side-panel" aria-label="Game controls">
-            <section class="panel-block inventory-block"><div class="panel-heading"><span class="panel-index">02</span><h3>Inventory</h3></div><p class="small-copy">Choose an item, then another item or a scene hotspot.</p><div id="inventory" class="inventory-list"></div></section>
-            <section class="panel-block"><div class="panel-heading"><span class="panel-index">03</span><h3>Game</h3></div><div class="button-row"><button id="save-button" class="secondary-button">Save</button><button id="load-button" class="secondary-button">Load</button></div><div class="button-row music-row"><button id="play-music-button" class="music-button">Play intro</button><button id="stop-music-button" class="secondary-button">Stop</button></div><p id="music-status" class="small-copy" aria-live="polite">Your intro track is loaded on demand.</p><p id="notice" class="notice" aria-live="polite"></p></section>
-            <section class="panel-block status-block"><div class="panel-heading"><span class="panel-index">04</span><h3>State</h3></div><p id="engine-readout" class="engine-readout"></p><p class="small-copy">Source room/object IDs are preserved through rendering and interaction.</p></section>
-          </aside>
         </main>
-        <section class="panel-block actionbar-panel" aria-label="Actions">
-          <!-- <div class="panel-heading"><span class="panel-index">01</span><h2>Actions</h2></div> -->
-          <div id="verb-bar" class="verb-bar" role="group" aria-label="Choose an action"></div>
-          <p class="selected-item-note" id="selected-item-note">Select an action to begin.</p>
-            <!-- <p class="control-hint">Click a place to walk. Choose a verb, then click a hotspot. Walk to the room doors to travel.</p> -->            
-          </section>
-<section class="log-panel"><h3>Recent events</h3><div id="message-log" class="message-log"></div></section>
-        <footer class="footer-note"><span>58 ORIGINAL ROOM RESOURCES</span><span>Original art fallback · Three.js · deterministic 30 Hz simulation</span></footer>
+        <section class="interaction-dock" aria-label="Game controls">
+          <div class="actionbar-panel"><div id="verb-bar" class="verb-bar" role="group" aria-label="Choose an action"></div><p class="selected-item-note" id="selected-item-note"></p></div>
+          <section class="inventory-block" aria-label="Inventory"><div class="inventory-heading"><h3>Inventory</h3><div class="inventory-paging"><button id="inventory-prev" aria-label="Previous inventory page">‹</button><span id="inventory-page" aria-live="polite">1 / 1</span><button id="inventory-next" aria-label="Next inventory page">›</button></div></div><div id="inventory" class="inventory-list"></div></section>
+        </section>
+        <details class="debug-drawer"><summary>Recent events & diagnostics</summary><div class="debug-content"><div id="message-log" class="message-log"></div><p id="engine-readout" class="engine-readout"></p></div></details>
       </div>`;
 
+    this.inventoryPrevious=root.querySelector<HTMLButtonElement>('#inventory-prev')!;
+    this.sceneActions=root.querySelector<HTMLElement>('#scene-actions')!;
+    this.inventoryNext=root.querySelector<HTMLButtonElement>('#inventory-next')!;
+    this.inventoryPageLabel=root.querySelector<HTMLElement>('#inventory-page')!;
+    this.inventoryPrevious.onclick=()=>{this.inventoryPage=Math.max(0,this.inventoryPage-1);this.lastInventory='';};
+    this.inventoryNext.onclick=()=>{this.inventoryPage++;this.lastInventory='';};
     this.viewport = root.querySelector<HTMLElement>('#viewport')!;
     this.roomTitle = root.querySelector<HTMLElement>('#room-title')!;
     this.roomCoordinates = root.querySelector<HTMLElement>('#room-coordinates')!;
@@ -101,14 +109,25 @@ export class GameUI {
   }
 
   update(state: GameState, room: RoomData): void {
-    this.roomTitle.textContent = room.name;
+    this.roomTitle.textContent = locationName(state) ?? room.name;
+    const choices=sceneChoices(state), key=JSON.stringify(choices);
+    if(key!==this.lastChoices) {
+      this.lastChoices=key;this.sceneActions.replaceChildren();
+      for(const choice of choices) { const b=document.createElement('button');b.className='secondary-button';b.textContent=choice.label;b.onclick=()=>this.callbacks.onSceneAction?.(choice.id);this.sceneActions.append(b); }
+    }
+    for(const button of this.sceneActions.querySelectorAll('button')) button.disabled=(state.scriptLockedUntil??0)>state.tick || !!state.pendingInteraction || state.actor.path.length>0;
     this.roomCoordinates.textContent = `ROOM ${String(room.id).padStart(2, '0')} · ${room.width} × ${room.height}`;
     for (const button of this.verbBar.querySelectorAll<HTMLButtonElement>('[data-verb]')) {
       button.classList.toggle('is-active', button.dataset.verb === state.activeVerb);
+      button.setAttribute('aria-pressed',String(button.dataset.verb === state.activeVerb));
     }
     const selectedItem = state.selectedItemId === null ? null : inventoryObjectName(state.selectedItemId, state.objectNames);
     rootSelectedNote(this.verbBar.parentElement?.querySelector<HTMLElement>('#selected-item-note') ?? null, selectedItem);
-    const inventoryKey = JSON.stringify([state.inventory, state.selectedItemId, state.objectNames]);
+    const pages=Math.max(1,Math.ceil(state.inventory.length/this.pageSize));
+    this.inventoryPage=Math.max(0,Math.min(pages-1,this.inventoryPage));
+    this.inventoryPrevious.disabled=this.inventoryPage===0;this.inventoryNext.disabled=this.inventoryPage===pages-1;
+    this.inventoryPageLabel.textContent=`${this.inventoryPage+1} / ${pages}`;
+    const inventoryKey = JSON.stringify([state.inventory, state.selectedItemId, state.objectNames,this.inventoryPage]);
     if (inventoryKey !== this.lastInventory) {
     this.lastInventory = inventoryKey;
     this.inventory.replaceChildren();
@@ -118,10 +137,11 @@ export class GameUI {
       empty.textContent = 'Nothing yet. Try “Pick up” on loose items.';
       this.inventory.append(empty);
     } else {
-      for (const objectId of state.inventory) {
+      for (const objectId of state.inventory.slice(this.inventoryPage*this.pageSize,(this.inventoryPage+1)*this.pageSize)) {
         const button = document.createElement('button');
         button.className = 'inventory-item';
         button.classList.toggle('is-selected', state.selectedItemId === objectId);
+        button.setAttribute('aria-pressed',String(state.selectedItemId===objectId));
         button.textContent = inventoryObjectName(objectId, state.objectNames);
         button.title = `Use ${inventoryObjectName(objectId, state.objectNames)}`;
         button.addEventListener('click', () => this.callbacks.onInventoryItem?.(objectId));
@@ -147,6 +167,7 @@ export class GameUI {
       }
     }
     this.status.textContent = `TICK ${state.tick.toString().padStart(6, '0')}\nROOM ${room.id} · EGO ${Math.round(state.actor.x)},${Math.round(state.actor.y)}\nVAR[1] ${state.variables[1]} · VAR[2] ${state.variables[2]}`;
+    if(state.scriptDiagnostic)this.status.textContent+='\n'+JSON.stringify(state.scriptDiagnostic);
   }
 
   setNotice(message: string): void {
@@ -161,5 +182,5 @@ export class GameUI {
 
 function rootSelectedNote(node: HTMLElement | null, selectedItem: string | null): void {
   if (!node) return;
-  node.textContent = selectedItem ? `Selected for use: ${selectedItem}` : 'Select a verb to begin.';
+  node.textContent = selectedItem ? `Selected for use: ${selectedItem}` : 'Click to walk · choose a verb to interact.';
 }

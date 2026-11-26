@@ -42,3 +42,31 @@ En TypeScript/Vite/Three.js-runtime för rum 1–3 finns nu i `src/`. Rum 1:s st
 
 ## Runtime asset consolidation
 2026-11-25: Consolidated runtime assets in public/assets; 58 normal backgrounds, 578 object patches and 578 masks, 20 costume frames, 58 opt-in previews, actor and music. Existing UI retained. Source dumps and POC files unchanged. runtime-assets.json indexes public paths; tools/index_runtime_assets.py refreshes index for new PNGs. 51 tests passed. User room 1/2 and fish bowl images verified byte-identical.
+
+## Scene Lab — 2026-11-26
+Separate visual PoC available at `/scene-lab.html`, rooms 1–2. Supplied room-1 master/edit examples are copied under public/assets/scene-lab. Independent masked patches and approximate hinged/sliding previews can be compared and saved; full-resolution masks and patch-coordinate bundles export locally. 58/58 unit tests, production build and headless UI smoke passed. Not integrated with gameplay scripts. See SCENE_LAB.md.
+
+## Scene Lab 02 — 2026-11-26
+Hinged/sliding now use actual Three.js geometry under an oblique orthographic projection. Desk drawer and door preset includes local reveal placeholders, material/depth controls and removable, depth-occluded test card. Local images embed on save; prior projects load. 61 tests, build and headless UI checks passed. This remains an editor PoC with no game logic integration or calibrated camera. See SCENE_LAB.md for current limitations.
+
+## Scene Lab 03 — 2026-11-26
+Room light/tint/ambient, approximate cavity shading and dynamic per-object shadow receivers added. User's saved dresser drawer verified in headless browser; 62 tests and build passed. Shared light profile serializes with project. Receivers remain screen-aligned local planes; characters and room-wide shadow interaction are not yet integrated. See SCENE_LAB.md.
+
+## Scene Lab 04 runtime preview — 2026-11-26
+Added header playtest overlay using real engine and same-origin in-memory project transfer. Shared compositor generates dynamic canvas backgrounds from original object state; adjusted quad/front hit-testing retains canonical object IDs. Moving layers interpolate; user-selectable visual state binding. Session room drafts survive editor room changes; test saves isolated; return preserves authoring data. 64 tests/build and headless real Open/Close interaction passed. Original walkboxes/z-masks remain; actor/prop shared geometry/light/shadow integration is still open.
+
+## Playtest pickup correction — 2026-11-26
+Container hit priority fixed for un-authored children. Preview lists targetable contained items without art so original pickup scripts can be tested. New present binding supports egg/item sprites disappearing on pickup while respecting parent state. 66 tests/build passed. User artwork and JSON untouched.
+
+## Cropped rollout and compact UI — 2026-11-26
+User reports completing San Francisco through airport. All 58 cropped room backgrounds copied byte-identically to `public/assets/cropped/backgrounds/`; manifest now uses full-image UV (null), default game loads these, authored lab room canvases take precedence, `?originalAssets=1` restores original backgrounds. `tools/import_cropped_backgrounds.py` preserves selected version basename where available, otherwise selects last version; report includes source, size, hash and aspect mismatch. Originals and user's saved editor files preserved.
+
+UI now has one bounded scene/dialogue/verb+inventory layout; inventory has six readable items per page with Previous/Next controls, selected item text persists across pages, menu holds Save/Load/intro/status and diagnostics are collapsed. Completed object actions and completed inventory combinations reset to Walk to; first inventory selection and pending approach preserve the intended action.
+
+Verification: 69 tests and build passed; browser verified airport background, 23-item pagination (four pages), desktop layout and 800/390 widths without overflow, and real editor drawer open followed by Walk reset and isolated save. Six existing cropped inputs have aspect deviations >2% (rooms 3,11,17,26,52,54; see evidence report); no hidden recropping/stretching of files was performed. Renderer still fits backgrounds to original room geometry. Missing script support at airport remains outside this change.
+
+## Walkthrough-driven progression — 2026-11-26
+Implemented bounded adapters from the supplied walkthrough through the Zaire clue: missing SF tools/disguise/application/pipe behavior, original airport fares and ticket replacement, logical destination identity, cabin flooding/egg/oxygen/lighter chain, Seattle cave/crystal, summarized Annie artifact exchange, Nepal guard/Guru/yak and Zaire traversal/trade. UI provides named NPC fallback controls and flight destination choices; Give retains its selected item and completed actions return to Walk.
+79 automated tests pass. Ten new scenarios use actual engine action dispatch with chapter inventory fixtures; timer and dance resume deterministically. Headless browser independently verified CashCard book purchase, flight terminal, Seattle ticket, boarding/arrival and saved balance/logical room, without page errors. These checks do not establish a full fresh-game completion. Full Switch/companion control, remaining original scripts, original NPC timelines and the ending remain open. Details and source contracts: SCRIPT_PROGRESS.md.
+
+Verification completion: production build passed (both entries); existing bundle-size advisory remains. Browser screenshots inspected. No commit or push.

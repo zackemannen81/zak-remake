@@ -110,6 +110,13 @@ export interface GameState {
   intro?: Script108Intro;
   scheduled: ScheduledEvent[];
   nextEventSequence: number;
+  /** Original logical room; multiple locations can share the same room artwork. */
+  logicalRoomId?: number;
+  flight?: { origin: number; destination: number; fare: number; boarded: boolean };
+  choiceMenu?: 'flights';
+  planeSinkTicks?: number;
+  randomSeed?: number;
+  scriptDiagnostic?: { room: number; object: number; verb: VerbId; instruction: string; reason: string };
 }
 
 export const ROOM_OWNER_ID = 15;

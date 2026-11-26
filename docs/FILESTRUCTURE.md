@@ -49,3 +49,25 @@ Updated: 2026-11-22
 
 ## Runtime asset consolidation
 2026-11-25: Consolidated runtime assets in public/assets; 58 normal backgrounds, 578 object patches and 578 masks, 20 costume frames, 58 opt-in previews, actor and music. Existing UI retained. Source dumps and POC files unchanged. runtime-assets.json indexes public paths; tools/index_runtime_assets.py refreshes index for new PNGs. 51 tests passed. User room 1/2 and fish bowl images verified byte-identical.
+
+## Scene Lab files — 2026-11-26
+- `scene-lab.html`, `src/lab/main.ts`, `lab.css`: separate local experiment UI.
+- `src/lab/model.ts`, `render.ts`, `model.test.ts`: project/geometry validation, compositing and tests.
+- `public/assets/scene-lab/`: copied user room-1 master/edit examples and cropped room-2 master; source images preserved.
+- `docs/SCENE_LAB.md`: minimum scope, usage, verification and limitations.
+- `vite.config.ts`: game and lab HTML production entry points.
+
+- 2026-11-26 Scene Lab 02: `src/lab/geometry.ts` (Three.js mesh preview and ray picking), `src/lab/geometry.test.ts` (closed registration, hinge/thickness invariants and settings validation). Existing lab UI/model extended for local reveals, side/back textures and movable content.
+
+- 2026-11-26 Scene Lab 03 extends existing `model.ts`, `geometry.ts`, `main.ts` and `geometry.test.ts` with validated room lighting, shadow receivers, comparison controls and round-trip checks. No new source media; downloaded user project read-only.
+
+- Scene Lab 04: `src/lab/compositor.ts` shared rendering; `playRuntime.ts` validated project loading/state animation/canvas updates; `playState.ts` visual eligibility and hit mapping; `playState.test.ts` real engine open/close regression. `src/main.ts` adds opt-in iframe handoff/isolation; `GameRenderer.ts` adds authored canvas/hit hooks. Existing normal game path preserved.
+
+- Pickup correction: existing lab playState/model/main/playRuntime and game bootstrap updated; no new asset or source file paths.
+
+- 2026-11-26: `tools/import_cropped_backgrounds.py`, `docs/evidence/cropped-background-import.json`, `public/assets/cropped/backgrounds/room_NNN/` implement reproducible cropped asset rollout. `src/core/actionReset.test.ts` covers post-action Walk and two-item selection. `src/ui/gameShell.ts`/`style.css` provide compact controls and six-item paging.
+
+- `src/scenes/progression.ts`: reviewed walkthrough gameplay, airport route tables, named NPC choices and timed adapters.
+- `src/core/roomIdentity.ts`, `src/content/logical-rooms.json`, `tools/export_logical_rooms.py`: source-verified logical/resource room mapping.
+- `src/core/progression.test.ts`: ten staged real-engine puzzle, travel, ownership, prerequisite and save/resume scenarios.
+- `docs/SCRIPT_PROGRESS.md`, `docs/evidence/user-walkthrough.txt`: explicit implementation matrix, source contracts, known omissions and supplied walkthrough.
