@@ -16,10 +16,12 @@ describe('visual registry', () => {
     expect(candidateUvToTextureCrop([0.8, 0.2, 0.3, 0.4])).toBeUndefined();
   });
 
-  it('does not auto-stack source sprites over a complete concept room image', () => {
-    expect(shouldDrawObjectVisual(true, false)).toBe(false);
-    expect(shouldDrawObjectVisual(true, true)).toBe(true);
-    expect(shouldDrawObjectVisual(false, false)).toBe(true);
+  it('keeps object fallback over a new background unless that object is already composited', () => {
+    const registry=new VisualRegistry();
+    registry.registerBackground(2,{kind:'concept-2d',url:'/new-room.png'});
+    expect(registry.resolve(2,125)).toEqual({kind:'original-2d',url:objectImageUrl(2,125)});
+    expect(shouldDrawObjectVisual(false)).toBe(true);
+    expect(shouldDrawObjectVisual(true)).toBe(false);
   });
 
   it('keeps original object art as the default and permits an explicit preview override', () => {

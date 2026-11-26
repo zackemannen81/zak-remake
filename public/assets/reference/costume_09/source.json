@@ -1,0 +1,687 @@
+{
+  "id": 9,
+  "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0040/COv2_0009",
+  "sha256": "f3ca6a3c0edc136e0bc6f7064fef5b0a057f4012f837b7cb1815f10eef37a9c3",
+  "channels": {
+    "0": {
+      "1": {
+        "start": 0,
+        "loop": true,
+        "commands": [
+          129,
+          2,
+          3
+        ]
+      },
+      "2": null
+    },
+    "1": {
+      "1": {
+        "start": 0,
+        "loop": true,
+        "commands": [
+          129,
+          2,
+          3
+        ]
+      },
+      "2": null
+    },
+    "2": {
+      "1": {
+        "start": 3,
+        "loop": true,
+        "commands": [
+          8,
+          5,
+          6,
+          135
+        ]
+      },
+      "2": null
+    },
+    "3": {
+      "1": {
+        "start": 7,
+        "loop": true,
+        "commands": [
+          4,
+          5,
+          6,
+          135
+        ]
+      },
+      "2": {
+        "start": 11,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "4": {
+      "1": {
+        "start": 11,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      },
+      "2": null
+    },
+    "5": {
+      "1": {
+        "start": 11,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      },
+      "2": null
+    },
+    "6": {
+      "1": {
+        "start": 7,
+        "loop": true,
+        "commands": [
+          4
+        ]
+      },
+      "2": null
+    },
+    "7": {
+      "1": {
+        "start": 7,
+        "loop": true,
+        "commands": [
+          4
+        ]
+      },
+      "2": {
+        "start": 11,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "52": {
+      "4": null
+    },
+    "53": {
+      "4": null
+    },
+    "54": {
+      "4": null
+    },
+    "55": {
+      "4": null
+    },
+    "56": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "57": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "58": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "59": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "64": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "65": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "66": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "67": {
+      "4": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "72": {
+      "3": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "73": {
+      "3": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "74": {
+      "3": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "75": {
+      "3": {
+        "start": 11,
+        "loop": false,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "76": {
+      "1": {
+        "start": 12,
+        "loop": true,
+        "commands": [
+          9,
+          10,
+          11,
+          10
+        ]
+      },
+      "2": null
+    },
+    "77": {
+      "1": {
+        "start": 12,
+        "loop": true,
+        "commands": [
+          9,
+          10,
+          11,
+          10
+        ]
+      },
+      "2": null
+    },
+    "78": {
+      "1": {
+        "start": 12,
+        "loop": true,
+        "commands": [
+          9,
+          10,
+          11,
+          10
+        ]
+      },
+      "2": null
+    },
+    "79": {
+      "1": {
+        "start": 12,
+        "loop": true,
+        "commands": [
+          9,
+          10,
+          11,
+          10
+        ]
+      },
+      "2": null
+    }
+  },
+  "cels": {
+    "1:1": {
+      "file": "cel_01_001.png",
+      "x": 2,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 4,
+      "height": 11,
+      "offset": 317
+    },
+    "1:2": {
+      "file": "cel_01_002.png",
+      "x": 0,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 11,
+      "offset": 352
+    },
+    "1:3": {
+      "file": "cel_01_003.png",
+      "x": -2,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 8,
+      "height": 11,
+      "offset": 384
+    },
+    "1:5": {
+      "file": "cel_01_005.png",
+      "x": 0,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 11,
+      "offset": 456
+    },
+    "1:6": {
+      "file": "cel_01_006.png",
+      "x": 0,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 11,
+      "offset": 489
+    },
+    "1:7": {
+      "file": "cel_01_007.png",
+      "x": 0,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 11,
+      "offset": 522
+    },
+    "1:8": {
+      "file": "cel_01_008.png",
+      "x": 0,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 11,
+      "offset": 554
+    },
+    "1:4": {
+      "file": "cel_01_004.png",
+      "x": 0,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 11,
+      "offset": 424
+    },
+    "2:0": {
+      "file": "cel_02_000.png",
+      "x": 2,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 2,
+      "height": 3,
+      "offset": 713
+    },
+    "1:0": {
+      "file": "cel_01_000.png",
+      "x": 2,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 2,
+      "height": 11,
+      "offset": 295
+    },
+    "4:0": {
+      "file": "cel_04_000.png",
+      "x": 0,
+      "y": -11,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 5,
+      "offset": 840
+    },
+    "3:0": {
+      "file": "cel_03_000.png",
+      "x": -8,
+      "y": -21,
+      "dx": 0,
+      "dy": 0,
+      "width": 22,
+      "height": 15,
+      "offset": 729
+    },
+    "1:9": {
+      "file": "cel_01_009.png",
+      "x": -2,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 10,
+      "height": 11,
+      "offset": 586
+    },
+    "1:10": {
+      "file": "cel_01_010.png",
+      "x": -2,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 10,
+      "height": 10,
+      "offset": 629
+    },
+    "1:11": {
+      "file": "cel_01_011.png",
+      "x": -2,
+      "y": -10,
+      "dx": 0,
+      "dy": 0,
+      "width": 10,
+      "height": 11,
+      "offset": 671
+    }
+  },
+  "animations": [
+    {
+      "id": 0,
+      "file": "costume_09/anim_00.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 1,
+      "file": "costume_09/anim_01.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 2,
+      "file": "costume_09/anim_02.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 3,
+      "file": "costume_09/anim_03.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 4,
+      "file": "costume_09/anim_04.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 5,
+      "file": "costume_09/anim_05.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 6,
+      "file": "costume_09/anim_06.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 7,
+      "file": "costume_09/anim_07.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 52,
+      "file": "costume_09/anim_52.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 53,
+      "file": "costume_09/anim_53.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 54,
+      "file": "costume_09/anim_54.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 55,
+      "file": "costume_09/anim_55.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 56,
+      "file": "costume_09/anim_56.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 57,
+      "file": "costume_09/anim_57.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 58,
+      "file": "costume_09/anim_58.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 59,
+      "file": "costume_09/anim_59.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 64,
+      "file": "costume_09/anim_64.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 65,
+      "file": "costume_09/anim_65.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 66,
+      "file": "costume_09/anim_66.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 67,
+      "file": "costume_09/anim_67.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 72,
+      "file": "costume_09/anim_72.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 73,
+      "file": "costume_09/anim_73.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 74,
+      "file": "costume_09/anim_74.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 75,
+      "file": "costume_09/anim_75.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 76,
+      "file": "costume_09/anim_76.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 77,
+      "file": "costume_09/anim_77.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 78,
+      "file": "costume_09/anim_78.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 79,
+      "file": "costume_09/anim_79.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    }
+  ]
+}

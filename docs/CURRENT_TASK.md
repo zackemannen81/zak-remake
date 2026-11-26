@@ -130,3 +130,44 @@ User authorizes missing gameplay/script functionality using supplied walkthrough
 Added source-backed progression adapters for missing SF interactions, tickets and logical airports, cabin puzzle, Seattle crystal, summarized Annie meeting, Nepal and Zaire dance clue. Named NPC interaction fallback and exact unsupported-script diagnostics added. 79 tests pass, including ten staged engine-action regressions and mid-timer save/resume. Browser verified devotee purchase, terminal, ticket, boarding, Seattle arrival and saved money/identity. See SCRIPT_PROGRESS.md for exact coverage and deliberate substitutions. Task stays In Progress: full actor/script VM, Switch, multi-character progression, complete choreography and later/endgame chains are not finished. Do not equate alias resolution or staged fixture tests with a complete game.
 
 Verification completion: production build passed (both entries); existing bundle-size advisory remains. Browser screenshots inspected. No commit or push.
+
+## Restore per-object fallback — 2026-11-26 — In Progress
+User reports invisible state patches over cropped backgrounds, compared with read-only A008 snapshot. Restore original object graphics for missing replacements, including un-authored objects in lab previews. Preserve new backgrounds and authored object overrides. Verify browser Open/Close, visible original patches and actual item pickup, plus explicit replacement precedence.
+
+Fallback verification: browser exercised real fridge Open/Close, visible original open-fridge patch, egg pickup, cabinet Open and crayon pickup in both the normal game and an editor room with a new background but no object replacements. Original frame requests returned 200; screenshots inspected; no page errors. Existing saved 3D-drawer project also passed Open/Walk-reset/save smoke. 80 tests and build passed.
+
+This bounded fallback correction is delivered; parent gameplay task remains In Progress. No rollback of scripting, no asset edits and no commit/push.
+
+## Mountain and cabin retry correction — 2026-11-26 — In Progress
+Trace room-12 unsupported interactions and cabin coordinate targeting against source scripts. Restore consumed toilet paper on subsequent flights, preserve a retry path for the egg distraction, and test actual hit-test dispatch plus save/re-entry. Preserve artwork and authored projects.
+
+### Mountain/cabin checkpoint — 2026-11-26
+Delivered source-class digging tools/knife conditions, oven/bin command hit priority and next-flight paper reset. Retry accommodations preserve unheated egg and allow reheating exploded remains; landing waits for pending cooking effects. 83 tests pass. Browser real clicks verified oven Open, egg placement, Turn on and timed explosion; no page errors, screenshot inspected. Parent gameplay task remains In Progress; see SCRIPT_PROGRESS.md for deliberate simplifications.
+
+Production build passed (TypeScript and both Vite entries); existing chunk-size advisory only. No commit/push.
+
+## Dream map, initial ticket and original reference coverage — In Progress
+Implement source-backed map inspection and boss ticket; inventory all rooms/logical variants and costume resources, export animation reference assets and integrate verified NPC visuals. Provide an explicit missing-view/behavior list; do not label extracted assets as complete actor scripting. Preserve user artwork and projects.
+
+User extension: after missing views, complete script/actor/animation/functionality support, expose the rest of the game in Scene Lab for master-background authoring. This is an outstanding parent-task phase, not a claim that the current extraction milestone completes gameplay.
+
+## Original reference, map and ticket checkpoint — 2026-11-26
+Delivered Look at for drawn wallpaper/phone-bill maps using original room-29 composition and modal Done/Escape; cave/actor state retained and simulation paused. New bedroom games receive source ticket 82 (SF→Seattle, value260), including intro skip. Existing saves are not retroactively refunded or given duplicate tickets.
+
+All 39 COv2 costume resources decoded into 771 cel images, 984 directional animation previews and lossless channel metadata/provenance. Original reference browser exposes all 58 backgrounds, object patches and costume previews. docs/MISSING_VIEWS.md inventories every resource/logical variant and special-view gap. Full source audit: 1,011 script files / 19,236 instructions; extraction does not mean interpreter coverage.
+
+Reviewed visual fallback placements added for Lou, SF devotee, London bum, stewardess, Nepal guard and Guru; moving/talking stewardess follows adapter state. Palette overrides, full original actor choreography, generic script VM and all companion/endgame logic remain open. NPC art uses original positions and may need authoring alignment to replacement backgrounds.
+
+Verification: 86 tests pass and production build passes. Fresh Chromium tested map Look/Done/cave return, gallery room/animation selection and NPC room load without page errors; screenshots inspected. User room-3 and room-11 background changes preserved. No commit/push. Remaining parent scope and requested later all-room Scene Lab stage are NOT completed.
+
+## Intro checkpoint — 2026-11-26 (In Progress)
+User priority: restore the original opening. Compare SC1/127/111/109/122, restore actors, ordered dream changes and camera direction, safe startup/skip/replay. Verify tests/build/browser; disclose timing/audio deviations from the original interpreter.
+
+## Original opening adaptation — 2026-11-26
+- Replaced the abbreviated slideshow with 53 source-ordered phases based on SC1, SC127, SC111 and SC109: office actors and pacing, black intertitles, sequential 766/767/768, vision frames, concurrent credits, street transformations, chase, opposing panorama directions and flashing 761. Reuses original backgrounds/object patches and exported costume 30/31/32 atlases.
+- Normal fresh entry starts the opening. Explicit room, skipIntro=1, intro=0 and editor play bypass it. Skip enters SC108 skip branch; completion enters ordinary wake-up. Menu replay freezes and resumes existing game instead of replacing it. Renderer gets a separate child surface so async loading cannot erase intro. Game input/save is blocked during playback.
+- Verification: 89 unit/content tests pass. Browser checked office actors, startup survival, skip, replay and full phase traversal; original office/dream screenshots inspected.
+- Remaining fidelity work: this is a deterministic authored adaptation, NOT execution of SC1 bytecode. Walk paths, frame cycling, palette remaps, credit trigger timing and wait-for-music timing are not exact SCUMM behavior. User intro track is retained; original sound81/music95 playback is not implemented. Full-script and all-room Scene Lab work remains open.
+
+## All-room Scene Lab — 2026-11-26 (In Progress)
+User now wants to author other rooms. Expose all extracted resource rooms, cropped/original master fallback, retain room1/2 projects, round-trip and browser-check additional rooms. This advances authoring without claiming all game scripts complete.

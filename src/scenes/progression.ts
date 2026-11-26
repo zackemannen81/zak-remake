@@ -1,7 +1,7 @@
 /** Source-backed gameplay adapters for scripts requiring UI, actors or timed tasks.
  * See docs/SCRIPT_PROGRESS.md for source contracts and presentation differences.
  */
-import { getRoom } from '../content/rooms';
+import { getRoom, objectHasClass } from '../content/rooms';
 import { resourceRoom } from '../core/roomIdentity';
 import { scheduleAction } from '../core/scheduler';
 import type { GameState, VerbId } from '../core/types';
@@ -29,6 +29,15 @@ function travel(s: GameState, logical: number, arrival: number) {
   scheduleAction(s,1,{type:'travel',roomId:logical,x:o.walk_x,y:o.walk_y});
 }
 
+function finishFlight(s: GameState): string {
+  if (!s.flight?.boarded) return 'There is no flight to continue.';
+  // Do not carry delayed oven effects into a different room/flight.
+  if (s.flags.eggCooking && !s.flags.stewardessAtOven) return 'The microwave is still running. Wait for it to finish.';
+  travel(s,s.flight.destination,s.flight.destination<=145?190:217);
+  delete s.flight;
+  return 'The flight has arrived.';
+}
+
 // ENv2 airport fare tables and SCv2_0120 destination mapping.
 export const airports: Record<number,{name:string; routes:Array<[number,number]>; outside?:[number,number]}> = {
   141:{name:'Miami',routes:[[146,795],[148,1589],[142,779],[143,511],[145,808]],outside:[133,639]},
@@ -47,6 +56,7 @@ export function locationName(s: GameState): string | undefined {
 
 export interface SceneChoice { id:string; label:string }
 export function sceneChoices(s: GameState): SceneChoice[] {
+  if(s.flags.inspectMap)return [{id:'close-map',label:'Done'}];
   if (s.choiceMenu==='flights') {
     const current=s.logicalRoomId ?? 145;
     return [...(airports[current]?.routes ?? []).map(([id,fare])=>({id:`flight:${id}`,label:`${airports[id]!.name} · $${fare}`})),{id:'cancel',label:'Cancel'}];
@@ -62,6 +72,7 @@ export function sceneChoices(s: GameState): SceneChoice[] {
 }
 
 export function chooseSceneAction(s: GameState, id: string): void {
+  if(id==='close-map'){s.flags.inspectMap=false;return;}
   if ((s.scriptLockedUntil ?? 0)>s.tick || s.pendingInteraction || s.actor.path.length || s.scriptSequence || s.intro) return;
   if (!sceneChoices(s).some(c=>c.id===id)) return;
   const item=s.selectedItemId, verb=s.activeVerb;
@@ -84,8 +95,7 @@ export function chooseSceneAction(s: GameState, id: string): void {
     } else say(s,'A book of wisdom for $42. Use your CashCard if you want one.');
   } else if(id==='land') {
     if(!s.flight?.boarded) return;
-    travel(s,s.flight.destination,s.flight.destination<=145?190:217);
-    delete s.flight; say(s,'The flight has arrived.');
+    say(s,finishFlight(s));
   } else if(id==='guard') {
     if(item===45 && owns(s,45) && ['give','use'].includes(verb)) {
       s.flags.guruAdmitted=true;bits(s,351,8,true);bits(s,351,2,false);say(s,'You may enter.');
@@ -114,6 +124,13 @@ export function chooseSceneAction(s: GameState, id: string): void {
 
 export function progressionInventory(s: GameState,id:number,verb:VerbId): string|undefined {
   if(!owns(s,id)) return;
+  if([17,15].includes(id)&&verb==='look') {
+    if(!s.variables[id===17?193:194])return id===17?"There's nothing on it.":'$1138! I had better pay this soon!';
+    s.flags.inspectMap=true;s.flags.inspectMapMars=s.variables[id===17?193:194]===2;
+    s.flags.inspectMapBill=id===15;
+    return 'The map from my dream.';
+  }
+  if(id===82&&verb==='look')return s.flight?`Ticket from ${airports[s.flight.origin]?.name} to ${airports[s.flight.destination]?.name}.`:'A used airline ticket.';
   if([39,40,43].includes(id) && ['putOn','takeOff'].includes(verb)) {
     bits(s,id,4,verb==='putOn');
     if(id===40)s.variables[164]=verb==='putOn'?40:44;
@@ -211,15 +228,15 @@ export function progressionVerb(s:GameState,id:number,verb:VerbId,item:number|nu
     if(id===242&&use&&item===47){owner(s,47,0);bits(s,242,4,true);return 'The paper clogs the sink.';}
     if(id===242&&['turnOn','turnOff'].includes(verb)){bits(s,242,8,verb==='turnOn');return verb==='turnOn'?'Turned on the tap.':'Turned off the tap.';}
     if(id===245&&['push','use'].includes(verb)) {
-      if(!bit(s,265))return 'Please take your seat.';
+      if(!bit(s,265))return bit(s,242,4)?'Turn on the tap and wait for the sink to overflow, then call her again.':'There is no mess for the stewardess to clean yet.';
       s.flags.stewardessCleaning=true;s.variables[248]=1;bits(s,242,8,false);say(s,'Stewardess: Oh no! What a mess!',60);return 'Called the stewardess.';
     }
     if(id===260) {
-      if(!s.flags.stewardessCleaning)return 'The stewardess asks me to leave the microwave alone.';
+      if(!s.flags.stewardessCleaning)return 'The stewardess is watching. I need to flood the sink and push the call button first.';
       if(['open','close'].includes(verb)){bits(s,260,8,verb==='open');return verb==='open'?'Opened the microwave.':'Closed the microwave.';}
       if(use&&item===22){if(!bit(s,260))return 'The door is closed.';owner(s,22,14);bits(s,262,8,false);return 'Put the egg in the microwave.';}
       if(verb==='turnOn') {
-        if(bit(s,241))return 'It is already cooked!';
+        if(bit(s,241)){s.flags.stewardessAtOven=true;return 'Reheated the egg mess. The smell draws the stewardess back to the microwave.';}
         if(s.objectOwners[22]!==14)return 'I should not run an empty microwave.';
         if(s.flags.eggCooking)return 'It is already running.';
         bits(s,260,8,false);s.flags.eggCooking=true;
@@ -244,11 +261,20 @@ export function progressionVerb(s:GameState,id:number,verb:VerbId,item:number|nu
       pickup(s,48);bits(s,49,10,false);return 'There is a lighter under the cushion.';
     }
     if(id===255&&['walk','use'].includes(verb))return 'Seated. Press Return to continue the flight.';
-    if(id===256&&verb==='walk'&&s.flight?.boarded){travel(s,s.flight.destination,s.flight.destination<=145?190:217);delete s.flight;return 'Arrived at the destination.';}
+    if(id===256&&verb==='walk'&&s.flight?.boarded)return finishFlight(s);
   }
   if(r===12&&id===52&&verb==='pickup'){pickup(s,52);return 'Picked up the tree branch.';}
   if(r===12&&id===268&&use&&item===51){owner(s,51,0);s.variables[147]=1;bits(s,268,2,true);bits(s,268,8,false);return 'It took the peanuts and left!';}
-  if(r===12&&id===267&&use&&item===52) {if(!s.variables[147])return 'Not with a vicious squirrel in my way.';bits(s,267,8,true);name(s,267,'cave entrance');return 'Dug out the cave entrance.';}
+  if(r===12&&id===267&&use) {
+    if(item===null||!objectHasClass(item,2))return "I can't dig with that.";
+    if(!s.variables[147])return 'Not with a vicious squirrel in my way.';
+    if(bit(s,267))return 'The cave entrance is already clear.';
+    if(item===26&&bit(s,26,4))return "It's too bent to dig with.";
+    bits(s,267,8,true);name(s,267,'cave entrance');
+    if(item===26){bits(s,26,4,true);name(s,26,'bent butter knife');}
+    return 'After digging for a long time… the cave entrance is clear.';
+  }
+  if(r===12&&id===271&&verb==='pickup'){bits(s,271,4,true);return 'Come on… get real.';}
   if(r===13&&id===53&&use&&item===52){pickup(s,53);return 'Knocked down the abandoned bird nest.';}
   if(r===13&&id===273&&use) {
     if(item===52||item===53) {owner(s,item,0);s.flags[item===52?'fireWood':'fireNest']=true;s.variables[153]=s.flags.fireWood&&s.flags.fireNest?3:s.flags.fireWood?2:1;return 'Added kindling to the fire pit.';}
@@ -281,7 +307,12 @@ export function advanceProgression(s:GameState):void {
       s.flags.planeInitialized=true;
       if(!owns(s,51))pickup(s,51); // cabin service supplies peanuts
       bits(s,48,2,owns(s,48));bits(s,49,2,!owns(s,48));bits(s,50,2,true);bits(s,263,8,true);
-      bits(s,242,12,false);bits(s,265,8,false);bits(s,265,2,true);bits(s,241,8,false);
+      bits(s,242,12,false);bits(s,265,8,false);bits(s,265,2,true);
+      // SCv2_0120 restores consumed paper; retained inventory paper is not duplicated.
+      if(s.objectOwners[47]===0){owner(s,47,15);bits(s,47,10,false);}
+      bits(s,260,8,false);bits(s,262,8,true);s.variables[248]=0;
+      // Return an unheated egg left behind, so an interrupted attempt is retryable.
+      if(s.objectOwners[22]===14&&!bit(s,241))pickup(s,22);
       s.flags.stewardessCleaning=false;s.flags.stewardessAtOven=false;s.flags.eggCooking=false;s.flags.planeBinSearched=false;s.planeSinkTicks=0;
     }
     if(bit(s,242)&&bit(s,242,4)&&!bit(s,265)) {

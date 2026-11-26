@@ -144,9 +144,15 @@ export function hitTestRoomObject(room: RoomData, owners: Record<string, number>
     && point.y >= (room.id === 1 && object.object_id === 106 ? object.y + 8 : object.y)
     && point.y < object.y + object.height + (room.id === 1 && object.object_id === 106 ? 8 : 0),
   ).sort((a, b) => a.slot - b.slot);
+  // The oven's internal script/egg rectangles overlap its door and controls.
+  // Player commands operate the oven, not its background actor-control script.
+  if (room.id === 11 && ['open', 'close', 'use', 'turnOn', 'turnOff'].includes(verb ?? '')) {
+    const oven = hits.find(object => object.object_id === 260);
+    if (oven) return oven;
+  }
   // Keep the container accessible for explicit open/close even when a child overlaps.
   if (verb === 'open' || verb === 'close') {
-    const container = hits.find(object => [84, 90, 92, 94, 111, 112, 121, 125].includes(object.object_id));
+    const container = hits.find(object => [84, 90, 92, 94, 111, 112, 121, 125, 249, 250, 251, 252, 253, 254].includes(object.object_id));
     if (container) return container;
   }
   if (room.id === 1 && (verb === 'push' || verb === 'pull')) {

@@ -1,0 +1,279 @@
+{
+  "id": 33,
+  "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0021/COv2_0033",
+  "sha256": "1f10f4fe8913ff2d3308944ffe435dca39518e2bc59ba2f819f1db3ce0917255",
+  "channels": {
+    "0": {
+      "1": {
+        "start": 0,
+        "loop": true,
+        "commands": [
+          128,
+          1,
+          2
+        ]
+      },
+      "2": {
+        "start": 1,
+        "loop": true,
+        "commands": [
+          1
+        ]
+      }
+    },
+    "1": {
+      "1": {
+        "start": 0,
+        "loop": true,
+        "commands": [
+          128,
+          1,
+          2
+        ]
+      },
+      "2": {
+        "start": 1,
+        "loop": true,
+        "commands": [
+          1
+        ]
+      }
+    },
+    "2": {
+      "1": {
+        "start": 0,
+        "loop": true,
+        "commands": [
+          128,
+          1,
+          2
+        ]
+      },
+      "2": {
+        "start": 3,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "3": {
+      "1": {
+        "start": 0,
+        "loop": true,
+        "commands": [
+          128,
+          1,
+          2
+        ]
+      },
+      "2": {
+        "start": 2,
+        "loop": true,
+        "commands": [
+          2
+        ]
+      }
+    },
+    "4": {
+      "1": {
+        "start": 3,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      },
+      "2": {
+        "start": 1,
+        "loop": true,
+        "commands": [
+          1
+        ]
+      }
+    },
+    "5": {
+      "1": {
+        "start": 3,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      },
+      "2": {
+        "start": 1,
+        "loop": true,
+        "commands": [
+          1
+        ]
+      }
+    },
+    "6": {
+      "1": {
+        "start": 3,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      },
+      "2": {
+        "start": 3,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      }
+    },
+    "7": {
+      "1": {
+        "start": 3,
+        "loop": true,
+        "commands": [
+          0
+        ]
+      },
+      "2": {
+        "start": 2,
+        "loop": true,
+        "commands": [
+          2
+        ]
+      }
+    }
+  },
+  "cels": {
+    "1:0": {
+      "file": "cel_01_000.png",
+      "x": 2,
+      "y": -43,
+      "dx": 0,
+      "dy": 0,
+      "width": 4,
+      "height": 43,
+      "offset": 109
+    },
+    "1:1": {
+      "file": "cel_01_001.png",
+      "x": 0,
+      "y": -43,
+      "dx": 0,
+      "dy": 0,
+      "width": 6,
+      "height": 42,
+      "offset": 136
+    },
+    "1:2": {
+      "file": "cel_01_002.png",
+      "x": -2,
+      "y": -41,
+      "dx": 0,
+      "dy": -2,
+      "width": 8,
+      "height": 38,
+      "offset": 178
+    },
+    "2:1": {
+      "file": "cel_02_001.png",
+      "x": 0,
+      "y": -65,
+      "dx": 0,
+      "dy": 1,
+      "width": 10,
+      "height": 22,
+      "offset": 338
+    },
+    "2:0": {
+      "file": "cel_02_000.png",
+      "x": -2,
+      "y": -65,
+      "dx": 0,
+      "dy": 0,
+      "width": 14,
+      "height": 22,
+      "offset": 238
+    },
+    "2:2": {
+      "file": "cel_02_002.png",
+      "x": -4,
+      "y": -65,
+      "dx": 0,
+      "dy": 1,
+      "width": 16,
+      "height": 22,
+      "offset": 391
+    }
+  },
+  "animations": [
+    {
+      "id": 0,
+      "file": "costume_33/anim_00.png",
+      "frames": 3,
+      "width": 12,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 1,
+      "file": "costume_33/anim_01.png",
+      "frames": 3,
+      "width": 12,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 2,
+      "file": "costume_33/anim_02.png",
+      "frames": 3,
+      "width": 14,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 3,
+      "file": "costume_33/anim_03.png",
+      "frames": 3,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 4,
+      "file": "costume_33/anim_04.png",
+      "frames": 1,
+      "width": 10,
+      "height": 65,
+      "x": 0,
+      "y": -65
+    },
+    {
+      "id": 5,
+      "file": "costume_33/anim_05.png",
+      "frames": 1,
+      "width": 10,
+      "height": 65,
+      "x": 0,
+      "y": -65
+    },
+    {
+      "id": 6,
+      "file": "costume_33/anim_06.png",
+      "frames": 1,
+      "width": 14,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 7,
+      "file": "costume_33/anim_07.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    }
+  ]
+}

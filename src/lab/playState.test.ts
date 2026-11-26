@@ -2,11 +2,18 @@ import {it,expect} from 'vitest';
 import {getRoom} from '../content/rooms';
 import {createInitialState} from '../core/state';
 import {GameEngine} from '../core/engine';
-import {layerActive,playHitTest,missingContainerItems} from './playState';
+import {layerActive,playHitTest,missingContainerItems,replacedObjectIds} from './playState';
 import {rectangle,type Layer,type Project} from './model';
 const room=getRoom(1);
 const layer:Layer={key:'drawer',objectId:92,state:'open',enabled:true,mode:'sliding',quad:rectangle(230,300,50,60),image:'',amount:1,dx:70,dy:4,pivot:'left'};
 const project:Project={version:1,roomId:1,width:1640,height:656,master:'./assets/scene-lab/room1-master.png',plate:'',layers:[layer]};
+it('replaces only authored objects, retaining fallback and original hotspots for empty or disabled layers',()=>{
+ const p:Project={...project,layers:[layer,{...layer,key:'empty',objectId:94,mode:'patch',image:''},{...layer,key:'off',objectId:84,enabled:false},{...layer,key:'patch',objectId:107,mode:'patch',image:'/edit.png'}]};
+ expect(replacedObjectIds(p)).toEqual([92,107]);
+ const state=createInitialState(room,{skipIntro:true});state.activeVerb='open';
+ const drawer=room.objects.find(o=>o.object_id===94)!;
+ expect(playHitTest(p,room,state,{x:drawer.x+drawer.width/2,y:drawer.y+drawer.height/2})?.object_id).toBe(94);
+});
 it('binds open state and static/pickup patches without interpreting labels',()=>{const state=createInitialState(room,{skipIntro:true});state.objectStates['92']=0;expect(layerActive(layer,room,state)).toBe(false);state.objectStates['92']=8;expect(layerActive(layer,room,state)).toBe(true);expect(layerActive({...layer,binding:'clear'},room,state)).toBe(false);expect(layerActive({...layer,binding:'always'},room,state)).toBe(true);state.objectOwners['92']=1;expect(layerActive({...layer,binding:'picked'},room,state)).toBe(true);expect(layerActive({...layer,enabled:false},room,state)).toBe(false);});
 it('maps authored coordinates into original object identity and runs actual open/close',()=>{const engine=new GameEngine(createInitialState(room,{skipIntro:true}));engine.state.objectStates['92']=0;engine.setVerb('open');const target=playHitTest(project,room,engine.state,{x:250/1640*320,y:330/656*128});expect(target?.object_id).toBe(92);engine.handleClick({x:50,y:65},target);for(let i=0;i<600;i++)engine.advanceOneTick();expect(layerActive(layer,room,engine.state)).toBe(true);engine.setVerb('close');const extended=playHitTest(project,room,engine.state,{x:320/1640*320,y:334/656*128});expect(extended?.object_id).toBe(92);engine.handleClick({x:60,y:65},extended);for(let i=0;i<600;i++)engine.advanceOneTick();expect(layerActive(layer,room,engine.state)).toBe(false);});
 

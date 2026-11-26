@@ -25,8 +25,9 @@ export function candidateUvToTextureCrop(uv: readonly number[] | null | undefine
   return { u, v: 1 - top - height, width, height };
 }
 
-export function shouldDrawObjectVisual(overConceptRoomImage: boolean, explicitlyOverridden: boolean): boolean {
-  return !overConceptRoomImage || explicitlyOverridden;
+/** Background replacement never disables object fallback. Only an authored object does. */
+export function shouldDrawObjectVisual(objectInRoomComposite: boolean): boolean {
+  return !objectInRoomComposite;
 }
 
 /** Visual choice is keyed by stable original IDs, never by UI labels. */

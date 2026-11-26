@@ -45,3 +45,14 @@ Unknown object programs record room, object, verb, instruction and error in `scr
 `npm test` includes `src/core/progression.test.ts`. Its ten scenario tests use real engine selection, target eligibility, path completion and scheduled effects, with inventory fixtures at chapter boundaries. They are not a continuous fresh-game-to-ending playthrough. `npm run build` checks TypeScript and bundles both game/editor.
 
 The browser smoke uses a fresh isolated Chromium context and an airport inventory fixture. It clicks real inventory/NPC/terminal/gate controls, lands in Seattle, and validates the saved destination and cash. Screenshots were inspected. It does not establish all NPC visuals or every hotspot against the new artwork.
+
+## Mountain/cabin correction — 2026-11-26
+OC267 now accepts source class-2 digging tools, preserves the squirrel prerequisite and bent-knife rejection, and applies SC33 knife bending after digging. OC271 pickup returns its source refusal without requiring actor animation.
+
+Cabin hit testing routes explicit oven commands across overlapping egg/control rectangles to oven 260; Open/Close selects overhead bins over their contents. SC120-style entry restores consumed paper (owner 0 → 15, clear state 10), resets oven/egg cover and service variable. An unheated egg left in the oven returns to inventory on the next cabin visit. Deliberate retry accommodation: exploded egg remains and can be reheated on a later flight to restore the distraction. Landing is blocked while the 600-tick cooking events are outstanding so these cannot fire after normal departure. No automatic flight deadline is implemented; Continue flight/Return remains the explicit departure control.
+
+Verification: 83 tests passed, including coordinate-to-engine oven dispatch, second-flight paper/distraction retry after save/load, and five digging tools plus bent-knife rejection. Fresh Chromium UI test clicked Open at the oven control edge, selected the egg, placed it, clicked Turn on and observed the timed smell dialogue without page errors; screenshot inspected. This is a bounded correction, not full room-12 script/actor coverage.
+
+## Map, ticket and reference coverage — 2026-11-26
+SC41 map inspection is now available via Look at drawn wallpaper/phone bill (vars193/194). EN29 composition includes Mars only when map variable2; Done/Escape restores gameplay without travel. SC0001 grants ticket82 before the skippable intro; SC108 establishes SF145→Seattle662 and fare260. New game initialization now preserves that ticket. SC115 consumes it; no round-trip entitlement added. Existing saves remain unchanged.
+All original costume resources are exported for inspection; six reviewed NPC fallback placements are connected. This does not remove the actor/script scheduling gaps listed above. See MISSING_VIEWS.md and the original-reference browser. Verification baseline: 86 tests and build pass; real browser map modal/gallery and NPC scene inspected.

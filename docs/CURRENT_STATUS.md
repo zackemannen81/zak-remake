@@ -70,3 +70,21 @@ Implemented bounded adapters from the supplied walkthrough through the Zaire clu
 79 automated tests pass. Ten new scenarios use actual engine action dispatch with chapter inventory fixtures; timer and dance resume deterministically. Headless browser independently verified CashCard book purchase, flight terminal, Seattle ticket, boarding/arrival and saved balance/logical room, without page errors. These checks do not establish a full fresh-game completion. Full Switch/companion control, remaining original scripts, original NPC timelines and the ending remain open. Details and source contracts: SCRIPT_PROGRESS.md.
 
 Verification completion: production build passed (both entries); existing bundle-size advisory remains. Browser screenshots inspected. No commit or push.
+
+## Object fallback restored — 2026-11-26
+Fixed invisible state changes over new backgrounds: the room-wide concept-image filter incorrectly suppressed original object patches. Original art now remains available per object; authored lab replacements suppress only their own object IDs. New cropped backgrounds, source state gating, item ownership and user-authored geometry are retained. 80 tests and production build pass.
+
+Fallback verification: browser exercised real fridge Open/Close, visible original open-fridge patch, egg pickup, cabinet Open and crayon pickup in both the normal game and an editor room with a new background but no object replacements. Original frame requests returned 200; screenshots inspected; no page errors. Existing saved 3D-drawer project also passed Open/Walk-reset/save smoke. 80 tests and build passed.
+
+## Mountain/cabin gameplay correction — 2026-11-26
+Added source-compatible digging tool/knife conditions and oven/bin coordinate command targeting. Consumed toilet paper returns on next cabin entry. Interrupted egg attempts remain retryable; pending cooking must finish before landing. 83 tests passed; real browser oven Open/egg/Turn on/explosion verified. Full source actor/room scripting remains incomplete; retry accommodations are documented in SCRIPT_PROGRESS.md.
+
+## Original-reference delivery — 2026-11-26
+Look at drawn maps now opens original room29 in a modal without leaving current location. New games include the boss's Seattle ticket; source evidence supports one-way consumption, not a free return. Original reference browser at /original-reference.html (also Game menu) contains 58 rooms, 39 costumes, 984 directional animation previews and 771 cel images. MISSING_VIEWS.md lists every room/logical variant and remaining special-view/runtime work; full-script-inventory.json records 1,011 source files and 19,236 instructions.
+Six reviewed NPC placements use extracted original visuals; full actor script choreography, palettes, masking/alignment against new backgrounds and companion/game completion remain incomplete. 86 tests and build pass; browser map/gallery/NPC smoke passed. All-room Scene Lab remains a later requested phase after complete gameplay support.
+
+## Original opening adaptation — 2026-11-26
+- Replaced the abbreviated slideshow with 53 source-ordered phases based on SC1, SC127, SC111 and SC109: office actors and pacing, black intertitles, sequential 766/767/768, vision frames, concurrent credits, street transformations, chase, opposing panorama directions and flashing 761. Reuses original backgrounds/object patches and exported costume 30/31/32 atlases.
+- Normal fresh entry starts the opening. Explicit room, skipIntro=1, intro=0 and editor play bypass it. Skip enters SC108 skip branch; completion enters ordinary wake-up. Menu replay freezes and resumes existing game instead of replacing it. Renderer gets a separate child surface so async loading cannot erase intro. Game input/save is blocked during playback.
+- Verification: 89 unit/content tests pass. Browser checked office actors, startup survival, skip, replay and full phase traversal; original office/dream screenshots inspected.
+- Remaining fidelity work: this is a deterministic authored adaptation, NOT execution of SC1 bytecode. Walk paths, frame cycling, palette remaps, credit trigger timing and wait-for-music timing are not exact SCUMM behavior. User intro track is retained; original sound81/music95 playback is not implemented. Full-script and all-room Scene Lab work remains open.

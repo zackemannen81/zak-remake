@@ -3,7 +3,7 @@ import {objectIsAvailable} from '../content/rooms';
 import {GeometryPreview} from './geometry';
 import {composeProject} from './compositor';
 import {canvas} from './render';
-import {layerActive,playHitTest,missingContainerItems} from './playState';
+import {layerActive,playHitTest,missingContainerItems,replacedObjectIds} from './playState';
 import type {GameState,RoomData} from '../core/types';
 import type {GameRenderer} from '../render/GameRenderer';
 
@@ -22,6 +22,6 @@ export class LabPlayRuntime {
  const amounts=p.layers.map((l,i)=>{const key=room.id+':'+l.key,target=active[i]?l.amount:0,old=this.amounts.get(key)??target,next=old+Math.sign(target-old)*Math.min(Math.abs(target-old),step);this.amounts.set(key,next);return Math.round(next*30)/30;});
  const signature=JSON.stringify([room.id,active,amounts,state.objectStates]);if(signature===this.signature)return;this.signature=signature;
  const visual:Project={...p,lighting:p.lighting?{...p.lighting,helpers:false}:undefined,layers:p.layers.map((l,i)=>{const object=room.objects.find(o=>o.object_id===l.objectId);return {...l,enabled:l.enabled&&(l.mode==='patch'?active[i]:!!object&&objectIsAvailable(room,state.objectStates,object)),amount:amounts[i],geometry:{...(l.geometry??geometryDefaults),item:false}};})};
- const rendered=composeProject(visual,this.images,this.geometry),surface=this.surfaces.get(room.id)!;surface.getContext('2d')!.clearRect(0,0,p.width,p.height);surface.getContext('2d')!.drawImage(rendered,0,0);renderer.setLabCanvas(room.id,surface);
+ const rendered=composeProject(visual,this.images,this.geometry),surface=this.surfaces.get(room.id)!;surface.getContext('2d')!.clearRect(0,0,p.width,p.height);surface.getContext('2d')!.drawImage(rendered,0,0);renderer.setLabCanvas(room.id,surface,replacedObjectIds(p));
  }
 }

@@ -31,7 +31,7 @@ describe('rooms 1–3 source-backed slice', () => {
     expect(state.intro).toMatchObject({ source: 'SCv2_0108', phase: 'waiting-to-walk', nextTick: 120 });
     expect(state.objectOwners['26']).toBe(15);
     expect(state.objectStates['26']).toBe(1);
-    expect(state.inventory).toEqual([]);
+    expect(state.inventory).toEqual([82]); // SC0001: boss ticket survives intro skip
   });
 
   it('preserves the script 108 skip-intro branch and its verified object-90 state', () => {
@@ -40,7 +40,7 @@ describe('rooms 1–3 source-backed slice', () => {
     expect(state.intro).toBeUndefined();
     expect(state.objectStates['90']).toBe(0x08);
     expect(state.objectOwners['26']).toBe(15);
-    expect(state.inventory).toEqual([]);
+    expect(state.inventory).toEqual([82]); // SC0001: boss ticket survives intro skip
   });
 
   it('plays the source 108 dialogue, locks control, walks to the window shade, then reaches the interactive start position', () => {

@@ -71,3 +71,15 @@ Updated: 2026-11-22
 - `src/core/roomIdentity.ts`, `src/content/logical-rooms.json`, `tools/export_logical_rooms.py`: source-verified logical/resource room mapping.
 - `src/core/progression.test.ts`: ten staged real-engine puzzle, travel, ownership, prerequisite and save/resume scenarios.
 - `docs/SCRIPT_PROGRESS.md`, `docs/evidence/user-walkthrough.txt`: explicit implementation matrix, source contracts, known omissions and supplied walkthrough.
+
+- Fallback correction extends existing GameRenderer/visualRegistry and lab playRuntime/playState; no artwork, source assets or project format changes. Registry and playState regressions cover background-only replacement and disabled/empty authoring layers.
+
+- Mountain/cabin correction updates existing rooms.ts, progression.ts and progression.test.ts. No new runtime files or assets; three regression scenarios add coordinate targeting, repeat-flight save/resume and digging-tool conditions.
+
+- tools/export_original_reference.py → public/assets/reference/ (maps, 39 costume folders, catalog.json), src/content/costume-reference.json. Raw commands/source hashes retained; preview timing is not full SCUMM execution.
+- public/original-reference.html: browser for all original rooms, object patches and costume animations; linked from Game menu.
+- tools/build_remaining_coverage.py → docs/MISSING_VIEWS.md and docs/evidence/full-script-inventory.json.
+- src/scenes/npcVisuals.ts / npcVisuals.test.ts: reviewed fallback placements and state-dependent cabin pose. Existing gameShell/progression/state/engine cover map inspection and initial ticket; tests extend progression/game suites.
+
+- src/scenes/intro.ts: source-ordered cinematic adaptation, original costume atlas animation, camera and patch placement.
+- src/scenes/introPolicy.ts / intro.test.ts: entry policy and source asset/sequence regression checks.

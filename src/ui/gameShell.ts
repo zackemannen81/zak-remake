@@ -1,6 +1,7 @@
 import type { GameState, RoomData, VerbId } from '../core/types';
 import { inventoryObjectName } from '../content/rooms';
 import { sceneChoices, locationName } from '../scenes/progression';
+import { assetUrl } from '../content/runtimeAssets';
 
 const verbs: Array<{ id: VerbId; label: string }> = [
   { id: 'walk', label: 'Walk to' },
@@ -50,6 +51,7 @@ export class GameUI {
   private readonly inventoryPageLabel: HTMLElement;
   private readonly sceneActions: HTMLElement;
   private lastChoices = '';
+  private readonly mapDialog: HTMLDialogElement;
 
   constructor(root: HTMLElement) {
     root.innerHTML = `
@@ -72,6 +74,15 @@ export class GameUI {
         </section>
         <details class="debug-drawer"><summary>Recent events & diagnostics</summary><div class="debug-content"><div id="message-log" class="message-log"></div><p id="engine-readout" class="engine-readout"></p></div></details>
       </div>`;
+
+    this.mapDialog=document.createElement('dialog');
+    this.mapDialog.className='map-inspection';
+    this.mapDialog.innerHTML='<h2>Dream map</h2><img alt="Map drawn from Zak’s dream"><p>Original map · look at its symbols for clues.</p><button>Done</button>';
+    root.append(this.mapDialog);
+    this.mapDialog.querySelector('button')!.onclick=()=>this.callbacks.onSceneAction?.('close-map');
+    this.mapDialog.addEventListener('cancel',event=>{event.preventDefault();this.callbacks.onSceneAction?.('close-map');});
+    const reference=document.createElement('a');reference.href=import.meta.env.BASE_URL+'original-reference.html';reference.target='_blank';reference.rel='noopener';reference.textContent='Original artwork & animations';
+    root.querySelector('.menu-content')!.append(reference);
 
     this.inventoryPrevious=root.querySelector<HTMLButtonElement>('#inventory-prev')!;
     this.sceneActions=root.querySelector<HTMLElement>('#scene-actions')!;
@@ -109,6 +120,12 @@ export class GameUI {
   }
 
   update(state: GameState, room: RoomData): void {
+    if(state.flags.inspectMap) {
+      const src=assetUrl(`reference/map-${state.flags.inspectMapBill?'bill':'wallpaper'}-${state.flags.inspectMapMars?'mars':'dream'}.png`);
+      const img=this.mapDialog.querySelector('img')!;
+      if(img.getAttribute('src')!==src)img.setAttribute('src',src);
+      if(!this.mapDialog.open)this.mapDialog.showModal();
+    } else if(this.mapDialog.open)this.mapDialog.close();
     this.roomTitle.textContent = locationName(state) ?? room.name;
     const choices=sceneChoices(state), key=JSON.stringify(choices);
     if(key!==this.lastChoices) {

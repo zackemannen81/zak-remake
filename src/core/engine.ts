@@ -68,6 +68,7 @@ export class GameEngine {
   }
 
   advanceOneTick(): void {
+    if(this.state.flags.inspectMap)return;
     advanceScheduler(this.state);
     advanceProgression(this.state);
     advanceSceneScripts(this.state);

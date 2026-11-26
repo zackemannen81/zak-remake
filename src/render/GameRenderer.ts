@@ -1,4 +1,5 @@
 import runtimeAssets from '../content/runtime-assets.json';
+import { npcVisuals } from '../scenes/npcVisuals';
 import { assetUrl } from '../content/runtimeAssets';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
@@ -95,9 +96,14 @@ function createZPlaneDepthTexture(width: number, height: number, pixels: Uint8Ar
 
 export class GameRenderer {
   private labTextures = new Map<number, THREE.CanvasTexture>();
+  private labObjectIds = new Map<number, Set<number>>();
   labHitTest?: (point:Point,room:RoomData,state:GameState)=>SourceObject|undefined;
   private labState?:GameState;
-  setLabCanvas(roomId:number,canvas:HTMLCanvasElement):void {
+  setLabCanvas(roomId:number,canvas:HTMLCanvasElement,replacedObjectIds:readonly number[]=[]):void {
+    const previous=this.labObjectIds.get(roomId),next=new Set(replacedObjectIds);
+    if(!previous || previous.size!==next.size || [...next].some(id=>!previous.has(id))) {
+      this.labObjectIds.set(roomId,next);this.currentVisualSignature='';
+    }
     let texture=this.labTextures.get(roomId);
     if(!texture){texture=new THREE.CanvasTexture(canvas);texture.flipY=false;texture.colorSpace=THREE.SRGBColorSpace;texture.minFilter=THREE.LinearFilter;texture.magFilter=THREE.LinearFilter;texture.generateMipmaps=false;this.labTextures.set(roomId,texture);this.currentVisualSignature='';}
     texture.needsUpdate=true;
@@ -240,11 +246,12 @@ export class GameRenderer {
       }
     }
     const frame = Math.floor(state.tick / 5) % 4;
-    const signature = JSON.stringify([room.id, sprites, sprites.length ? frame : 0]);
+    const npcs=npcVisuals(state);
+    const signature = JSON.stringify([room.id, sprites, sprites.length ? frame : 0,npcs]);
     if (signature === this.scriptActorSignature) return;
     this.scriptActorSignature = signature;
     for (const child of [...this.scriptActorLayer.children]) {
-      if (child instanceof THREE.Mesh) { child.geometry.dispose(); (child.material as THREE.Material).dispose(); }
+      if (child instanceof THREE.Mesh) { child.geometry.dispose(); if(child.userData.atlas)(child.material as THREE.MeshBasicMaterial).map?.dispose();(child.material as THREE.Material).dispose(); }
     }
     this.scriptActorLayer.clear();
     for (const sprite of sprites) {
@@ -255,6 +262,15 @@ export class GameRenderer {
         new THREE.MeshBasicMaterial({ map: this.getTexture(url), transparent: true, depthWrite: false }));
       mesh.position.set(sprite.x + sprite.w / 2, sprite.y + sprite.h / 2, 2);
       mesh.renderOrder = 2;
+      this.scriptActorLayer.add(mesh);
+    }
+    for(const npc of npcs) {
+      const a=npc.animation;
+      const texture=this.getTexture(assetUrl('reference/'+a.file)).clone();
+      texture.repeat.set(1/a.frames,1);texture.offset.set(npc.phase/a.frames,0);
+      texture.needsUpdate=true;
+      const mesh=new THREE.Mesh(new THREE.PlaneGeometry(a.width,a.height),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false}));
+      mesh.position.set(npc.x+a.x+a.width/2,npc.y+a.y+a.height/2,2);mesh.renderOrder=2;mesh.userData.atlas=true;
       this.scriptActorLayer.add(mesh);
     }
   }
@@ -320,12 +336,11 @@ export class GameRenderer {
       .filter((object) => object.width > 0 && object.height > 0)
       .map((object) => ({
         object,
-        explicitVisual: this.visualRegistry.resolveOverride(room.id, object.object_id),
         visual: this.visualRegistry.resolve(room.id, object.object_id),
       }))
-      .filter(({ object, explicitVisual, visual }) =>
+      .filter(({ object, visual }) =>
         objectIsDrawable(room, state.objectOwners, state.objectStates, object, visual !== undefined)
-        && shouldDrawObjectVisual(usesConceptRoomImage, explicitVisual !== undefined),
+        && shouldDrawObjectVisual(this.labObjectIds.get(room.id)?.has(object.object_id) ?? false),
       )
       .sort((a, b) => b.object.slot - a.object.slot);
     for (const { object, visual } of drawableObjects) {

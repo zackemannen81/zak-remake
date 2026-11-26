@@ -1,0 +1,8936 @@
+{
+  "1": [
+    {
+      "id": 0,
+      "file": "costume_01/anim_00.png",
+      "frames": 8,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 1,
+      "file": "costume_01/anim_01.png",
+      "frames": 8,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 2,
+      "file": "costume_01/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 3,
+      "file": "costume_01/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 4,
+      "file": "costume_01/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 5,
+      "file": "costume_01/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 6,
+      "file": "costume_01/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 7,
+      "file": "costume_01/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 8,
+      "file": "costume_01/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 9,
+      "file": "costume_01/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 10,
+      "file": "costume_01/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 11,
+      "file": "costume_01/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 12,
+      "file": "costume_01/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 13,
+      "file": "costume_01/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 14,
+      "file": "costume_01/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 15,
+      "file": "costume_01/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 16,
+      "file": "costume_01/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 17,
+      "file": "costume_01/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 18,
+      "file": "costume_01/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 19,
+      "file": "costume_01/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 20,
+      "file": "costume_01/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 21,
+      "file": "costume_01/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 22,
+      "file": "costume_01/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 23,
+      "file": "costume_01/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 24,
+      "file": "costume_01/anim_24.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 25,
+      "file": "costume_01/anim_25.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 26,
+      "file": "costume_01/anim_26.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 27,
+      "file": "costume_01/anim_27.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 28,
+      "file": "costume_01/anim_28.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 29,
+      "file": "costume_01/anim_29.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 30,
+      "file": "costume_01/anim_30.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 31,
+      "file": "costume_01/anim_31.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 32,
+      "file": "costume_01/anim_32.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 33,
+      "file": "costume_01/anim_33.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 34,
+      "file": "costume_01/anim_34.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 35,
+      "file": "costume_01/anim_35.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 36,
+      "file": "costume_01/anim_36.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 37,
+      "file": "costume_01/anim_37.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 38,
+      "file": "costume_01/anim_38.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 39,
+      "file": "costume_01/anim_39.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 40,
+      "file": "costume_01/anim_40.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 41,
+      "file": "costume_01/anim_41.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 42,
+      "file": "costume_01/anim_42.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 43,
+      "file": "costume_01/anim_43.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 44,
+      "file": "costume_01/anim_44.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 45,
+      "file": "costume_01/anim_45.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 46,
+      "file": "costume_01/anim_46.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 47,
+      "file": "costume_01/anim_47.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 48,
+      "file": "costume_01/anim_48.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 49,
+      "file": "costume_01/anim_49.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 50,
+      "file": "costume_01/anim_50.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 51,
+      "file": "costume_01/anim_51.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 52,
+      "file": "costume_01/anim_52.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 53,
+      "file": "costume_01/anim_53.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 54,
+      "file": "costume_01/anim_54.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 55,
+      "file": "costume_01/anim_55.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 56,
+      "file": "costume_01/anim_56.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 57,
+      "file": "costume_01/anim_57.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 58,
+      "file": "costume_01/anim_58.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 59,
+      "file": "costume_01/anim_59.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 60,
+      "file": "costume_01/anim_60.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 61,
+      "file": "costume_01/anim_61.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 62,
+      "file": "costume_01/anim_62.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 63,
+      "file": "costume_01/anim_63.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 64,
+      "file": "costume_01/anim_64.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 65,
+      "file": "costume_01/anim_65.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 66,
+      "file": "costume_01/anim_66.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 67,
+      "file": "costume_01/anim_67.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 68,
+      "file": "costume_01/anim_68.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 69,
+      "file": "costume_01/anim_69.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 70,
+      "file": "costume_01/anim_70.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 71,
+      "file": "costume_01/anim_71.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    }
+  ],
+  "2": [
+    {
+      "id": 0,
+      "file": "costume_02/anim_00.png",
+      "frames": 8,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 1,
+      "file": "costume_02/anim_01.png",
+      "frames": 8,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 2,
+      "file": "costume_02/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 3,
+      "file": "costume_02/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 4,
+      "file": "costume_02/anim_04.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 5,
+      "file": "costume_02/anim_05.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 6,
+      "file": "costume_02/anim_06.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 7,
+      "file": "costume_02/anim_07.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 8,
+      "file": "costume_02/anim_08.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 9,
+      "file": "costume_02/anim_09.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 10,
+      "file": "costume_02/anim_10.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 11,
+      "file": "costume_02/anim_11.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 12,
+      "file": "costume_02/anim_12.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 13,
+      "file": "costume_02/anim_13.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 14,
+      "file": "costume_02/anim_14.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 15,
+      "file": "costume_02/anim_15.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 16,
+      "file": "costume_02/anim_16.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 17,
+      "file": "costume_02/anim_17.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 18,
+      "file": "costume_02/anim_18.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 19,
+      "file": "costume_02/anim_19.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 20,
+      "file": "costume_02/anim_20.png",
+      "frames": 4,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 21,
+      "file": "costume_02/anim_21.png",
+      "frames": 4,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 22,
+      "file": "costume_02/anim_22.png",
+      "frames": 4,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 23,
+      "file": "costume_02/anim_23.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 24,
+      "file": "costume_02/anim_24.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 25,
+      "file": "costume_02/anim_25.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 26,
+      "file": "costume_02/anim_26.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 27,
+      "file": "costume_02/anim_27.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 28,
+      "file": "costume_02/anim_28.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 29,
+      "file": "costume_02/anim_29.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 30,
+      "file": "costume_02/anim_30.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 31,
+      "file": "costume_02/anim_31.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 40,
+      "file": "costume_02/anim_40.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 41,
+      "file": "costume_02/anim_41.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 42,
+      "file": "costume_02/anim_42.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 43,
+      "file": "costume_02/anim_43.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 44,
+      "file": "costume_02/anim_44.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 45,
+      "file": "costume_02/anim_45.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 46,
+      "file": "costume_02/anim_46.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 47,
+      "file": "costume_02/anim_47.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 48,
+      "file": "costume_02/anim_48.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 49,
+      "file": "costume_02/anim_49.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 50,
+      "file": "costume_02/anim_50.png",
+      "frames": 1,
+      "width": 22,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 51,
+      "file": "costume_02/anim_51.png",
+      "frames": 1,
+      "width": 22,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 52,
+      "file": "costume_02/anim_52.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 53,
+      "file": "costume_02/anim_53.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 54,
+      "file": "costume_02/anim_54.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 55,
+      "file": "costume_02/anim_55.png",
+      "frames": 1,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    }
+  ],
+  "3": [
+    {
+      "id": 0,
+      "file": "costume_03/anim_00.png",
+      "frames": 8,
+      "width": 28,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 1,
+      "file": "costume_03/anim_01.png",
+      "frames": 8,
+      "width": 28,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 2,
+      "file": "costume_03/anim_02.png",
+      "frames": 4,
+      "width": 24,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 3,
+      "file": "costume_03/anim_03.png",
+      "frames": 4,
+      "width": 24,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 4,
+      "file": "costume_03/anim_04.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 5,
+      "file": "costume_03/anim_05.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 6,
+      "file": "costume_03/anim_06.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 7,
+      "file": "costume_03/anim_07.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 8,
+      "file": "costume_03/anim_08.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 9,
+      "file": "costume_03/anim_09.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 10,
+      "file": "costume_03/anim_10.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 11,
+      "file": "costume_03/anim_11.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 12,
+      "file": "costume_03/anim_12.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 13,
+      "file": "costume_03/anim_13.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 14,
+      "file": "costume_03/anim_14.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 15,
+      "file": "costume_03/anim_15.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 16,
+      "file": "costume_03/anim_16.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 17,
+      "file": "costume_03/anim_17.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 18,
+      "file": "costume_03/anim_18.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 19,
+      "file": "costume_03/anim_19.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 20,
+      "file": "costume_03/anim_20.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 21,
+      "file": "costume_03/anim_21.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 22,
+      "file": "costume_03/anim_22.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 23,
+      "file": "costume_03/anim_23.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 24,
+      "file": "costume_03/anim_24.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 25,
+      "file": "costume_03/anim_25.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 26,
+      "file": "costume_03/anim_26.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 27,
+      "file": "costume_03/anim_27.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 28,
+      "file": "costume_03/anim_28.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 29,
+      "file": "costume_03/anim_29.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 30,
+      "file": "costume_03/anim_30.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 31,
+      "file": "costume_03/anim_31.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 32,
+      "file": "costume_03/anim_32.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 33,
+      "file": "costume_03/anim_33.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 34,
+      "file": "costume_03/anim_34.png",
+      "frames": 1,
+      "width": 32,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 35,
+      "file": "costume_03/anim_35.png",
+      "frames": 1,
+      "width": 34,
+      "height": 66,
+      "x": -18,
+      "y": -66
+    },
+    {
+      "id": 36,
+      "file": "costume_03/anim_36.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 37,
+      "file": "costume_03/anim_37.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 38,
+      "file": "costume_03/anim_38.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 39,
+      "file": "costume_03/anim_39.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    }
+  ],
+  "4": [
+    {
+      "id": 0,
+      "file": "costume_04/anim_00.png",
+      "frames": 8,
+      "width": 28,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 1,
+      "file": "costume_04/anim_01.png",
+      "frames": 8,
+      "width": 28,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 2,
+      "file": "costume_04/anim_02.png",
+      "frames": 4,
+      "width": 24,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 3,
+      "file": "costume_04/anim_03.png",
+      "frames": 4,
+      "width": 24,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 4,
+      "file": "costume_04/anim_04.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 5,
+      "file": "costume_04/anim_05.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 6,
+      "file": "costume_04/anim_06.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 7,
+      "file": "costume_04/anim_07.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 8,
+      "file": "costume_04/anim_08.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 9,
+      "file": "costume_04/anim_09.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 10,
+      "file": "costume_04/anim_10.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 11,
+      "file": "costume_04/anim_11.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 12,
+      "file": "costume_04/anim_12.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 13,
+      "file": "costume_04/anim_13.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 14,
+      "file": "costume_04/anim_14.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 15,
+      "file": "costume_04/anim_15.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 16,
+      "file": "costume_04/anim_16.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 17,
+      "file": "costume_04/anim_17.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 18,
+      "file": "costume_04/anim_18.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 19,
+      "file": "costume_04/anim_19.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 20,
+      "file": "costume_04/anim_20.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 21,
+      "file": "costume_04/anim_21.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 22,
+      "file": "costume_04/anim_22.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 23,
+      "file": "costume_04/anim_23.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 24,
+      "file": "costume_04/anim_24.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 25,
+      "file": "costume_04/anim_25.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 26,
+      "file": "costume_04/anim_26.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 27,
+      "file": "costume_04/anim_27.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 28,
+      "file": "costume_04/anim_28.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 29,
+      "file": "costume_04/anim_29.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 30,
+      "file": "costume_04/anim_30.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 31,
+      "file": "costume_04/anim_31.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 32,
+      "file": "costume_04/anim_32.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 33,
+      "file": "costume_04/anim_33.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 34,
+      "file": "costume_04/anim_34.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 35,
+      "file": "costume_04/anim_35.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 36,
+      "file": "costume_04/anim_36.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 37,
+      "file": "costume_04/anim_37.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 38,
+      "file": "costume_04/anim_38.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 39,
+      "file": "costume_04/anim_39.png",
+      "frames": 1,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    }
+  ],
+  "5": [
+    {
+      "id": 0,
+      "file": "costume_05/anim_00.png",
+      "frames": 4,
+      "width": 14,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 1,
+      "file": "costume_05/anim_01.png",
+      "frames": 4,
+      "width": 14,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 2,
+      "file": "costume_05/anim_02.png",
+      "frames": 4,
+      "width": 12,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 3,
+      "file": "costume_05/anim_03.png",
+      "frames": 4,
+      "width": 12,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 4,
+      "file": "costume_05/anim_04.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 5,
+      "file": "costume_05/anim_05.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 6,
+      "file": "costume_05/anim_06.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 7,
+      "file": "costume_05/anim_07.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 40,
+      "file": "costume_05/anim_40.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 41,
+      "file": "costume_05/anim_41.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 42,
+      "file": "costume_05/anim_42.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 43,
+      "file": "costume_05/anim_43.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 44,
+      "file": "costume_05/anim_44.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 45,
+      "file": "costume_05/anim_45.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 46,
+      "file": "costume_05/anim_46.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 47,
+      "file": "costume_05/anim_47.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 48,
+      "file": "costume_05/anim_48.png",
+      "frames": 1,
+      "width": 10,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 49,
+      "file": "costume_05/anim_49.png",
+      "frames": 1,
+      "width": 10,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 50,
+      "file": "costume_05/anim_50.png",
+      "frames": 1,
+      "width": 12,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 51,
+      "file": "costume_05/anim_51.png",
+      "frames": 1,
+      "width": 12,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 52,
+      "file": "costume_05/anim_52.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 53,
+      "file": "costume_05/anim_53.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 54,
+      "file": "costume_05/anim_54.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 55,
+      "file": "costume_05/anim_55.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 56,
+      "file": "costume_05/anim_56.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 57,
+      "file": "costume_05/anim_57.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 58,
+      "file": "costume_05/anim_58.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 59,
+      "file": "costume_05/anim_59.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 60,
+      "file": "costume_05/anim_60.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 61,
+      "file": "costume_05/anim_61.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 62,
+      "file": "costume_05/anim_62.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 63,
+      "file": "costume_05/anim_63.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 64,
+      "file": "costume_05/anim_64.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 65,
+      "file": "costume_05/anim_65.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 66,
+      "file": "costume_05/anim_66.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 67,
+      "file": "costume_05/anim_67.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 68,
+      "file": "costume_05/anim_68.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 69,
+      "file": "costume_05/anim_69.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 70,
+      "file": "costume_05/anim_70.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 71,
+      "file": "costume_05/anim_71.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    }
+  ],
+  "6": [
+    {
+      "id": 0,
+      "file": "costume_06/anim_00.png",
+      "frames": 4,
+      "width": 14,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 1,
+      "file": "costume_06/anim_01.png",
+      "frames": 4,
+      "width": 14,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 2,
+      "file": "costume_06/anim_02.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 3,
+      "file": "costume_06/anim_03.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 4,
+      "file": "costume_06/anim_04.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 5,
+      "file": "costume_06/anim_05.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 6,
+      "file": "costume_06/anim_06.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 7,
+      "file": "costume_06/anim_07.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 40,
+      "file": "costume_06/anim_40.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 41,
+      "file": "costume_06/anim_41.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 42,
+      "file": "costume_06/anim_42.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 43,
+      "file": "costume_06/anim_43.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 44,
+      "file": "costume_06/anim_44.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 45,
+      "file": "costume_06/anim_45.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 46,
+      "file": "costume_06/anim_46.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 47,
+      "file": "costume_06/anim_47.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 48,
+      "file": "costume_06/anim_48.png",
+      "frames": 1,
+      "width": 10,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 49,
+      "file": "costume_06/anim_49.png",
+      "frames": 1,
+      "width": 10,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 50,
+      "file": "costume_06/anim_50.png",
+      "frames": 1,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 51,
+      "file": "costume_06/anim_51.png",
+      "frames": 1,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 52,
+      "file": "costume_06/anim_52.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 53,
+      "file": "costume_06/anim_53.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 54,
+      "file": "costume_06/anim_54.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 55,
+      "file": "costume_06/anim_55.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    }
+  ],
+  "7": [
+    {
+      "id": 0,
+      "file": "costume_07/anim_00.png",
+      "frames": 4,
+      "width": 16,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 1,
+      "file": "costume_07/anim_01.png",
+      "frames": 4,
+      "width": 16,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 2,
+      "file": "costume_07/anim_02.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 3,
+      "file": "costume_07/anim_03.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 4,
+      "file": "costume_07/anim_04.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 5,
+      "file": "costume_07/anim_05.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 6,
+      "file": "costume_07/anim_06.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 7,
+      "file": "costume_07/anim_07.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 32,
+      "file": "costume_07/anim_32.png",
+      "frames": 1,
+      "width": 14,
+      "height": 29,
+      "x": -6,
+      "y": -29
+    },
+    {
+      "id": 33,
+      "file": "costume_07/anim_33.png",
+      "frames": 1,
+      "width": 14,
+      "height": 29,
+      "x": -6,
+      "y": -29
+    },
+    {
+      "id": 34,
+      "file": "costume_07/anim_34.png",
+      "frames": 1,
+      "width": 16,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 35,
+      "file": "costume_07/anim_35.png",
+      "frames": 1,
+      "width": 14,
+      "height": 29,
+      "x": -6,
+      "y": -29
+    },
+    {
+      "id": 36,
+      "file": "costume_07/anim_36.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 37,
+      "file": "costume_07/anim_37.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 38,
+      "file": "costume_07/anim_38.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 39,
+      "file": "costume_07/anim_39.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    }
+  ],
+  "8": [
+    {
+      "id": 0,
+      "file": "costume_08/anim_00.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 1,
+      "file": "costume_08/anim_01.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 2,
+      "file": "costume_08/anim_02.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 3,
+      "file": "costume_08/anim_03.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 4,
+      "file": "costume_08/anim_04.png",
+      "frames": 1,
+      "width": 4,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 5,
+      "file": "costume_08/anim_05.png",
+      "frames": 1,
+      "width": 4,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 6,
+      "file": "costume_08/anim_06.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 7,
+      "file": "costume_08/anim_07.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 32,
+      "file": "costume_08/anim_32.png",
+      "frames": 1,
+      "width": 4,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 33,
+      "file": "costume_08/anim_33.png",
+      "frames": 1,
+      "width": 4,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 34,
+      "file": "costume_08/anim_34.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 35,
+      "file": "costume_08/anim_35.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 36,
+      "file": "costume_08/anim_36.png",
+      "frames": 1,
+      "width": 4,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 37,
+      "file": "costume_08/anim_37.png",
+      "frames": 1,
+      "width": 4,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 38,
+      "file": "costume_08/anim_38.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 39,
+      "file": "costume_08/anim_39.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    }
+  ],
+  "9": [
+    {
+      "id": 0,
+      "file": "costume_09/anim_00.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 1,
+      "file": "costume_09/anim_01.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 2,
+      "file": "costume_09/anim_02.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 3,
+      "file": "costume_09/anim_03.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 4,
+      "file": "costume_09/anim_04.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 5,
+      "file": "costume_09/anim_05.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 6,
+      "file": "costume_09/anim_06.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 7,
+      "file": "costume_09/anim_07.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 52,
+      "file": "costume_09/anim_52.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 53,
+      "file": "costume_09/anim_53.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 54,
+      "file": "costume_09/anim_54.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 55,
+      "file": "costume_09/anim_55.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 56,
+      "file": "costume_09/anim_56.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 57,
+      "file": "costume_09/anim_57.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 58,
+      "file": "costume_09/anim_58.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 59,
+      "file": "costume_09/anim_59.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 64,
+      "file": "costume_09/anim_64.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 65,
+      "file": "costume_09/anim_65.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 66,
+      "file": "costume_09/anim_66.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 67,
+      "file": "costume_09/anim_67.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 72,
+      "file": "costume_09/anim_72.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 73,
+      "file": "costume_09/anim_73.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 74,
+      "file": "costume_09/anim_74.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 75,
+      "file": "costume_09/anim_75.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 76,
+      "file": "costume_09/anim_76.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 77,
+      "file": "costume_09/anim_77.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 78,
+      "file": "costume_09/anim_78.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 79,
+      "file": "costume_09/anim_79.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    }
+  ],
+  "10": [
+    {
+      "id": 0,
+      "file": "costume_10/anim_00.png",
+      "frames": 6,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 1,
+      "file": "costume_10/anim_01.png",
+      "frames": 6,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 2,
+      "file": "costume_10/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 3,
+      "file": "costume_10/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 4,
+      "file": "costume_10/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 5,
+      "file": "costume_10/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 6,
+      "file": "costume_10/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 7,
+      "file": "costume_10/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 8,
+      "file": "costume_10/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 9,
+      "file": "costume_10/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 10,
+      "file": "costume_10/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 11,
+      "file": "costume_10/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 12,
+      "file": "costume_10/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 13,
+      "file": "costume_10/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 14,
+      "file": "costume_10/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 15,
+      "file": "costume_10/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 16,
+      "file": "costume_10/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 17,
+      "file": "costume_10/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 18,
+      "file": "costume_10/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 19,
+      "file": "costume_10/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 20,
+      "file": "costume_10/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 21,
+      "file": "costume_10/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 22,
+      "file": "costume_10/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 23,
+      "file": "costume_10/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    }
+  ],
+  "11": [
+    {
+      "id": 0,
+      "file": "costume_11/anim_00.png",
+      "frames": 6,
+      "width": 26,
+      "height": 67,
+      "x": -10,
+      "y": -67
+    },
+    {
+      "id": 1,
+      "file": "costume_11/anim_01.png",
+      "frames": 6,
+      "width": 26,
+      "height": 67,
+      "x": -10,
+      "y": -67
+    },
+    {
+      "id": 2,
+      "file": "costume_11/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 3,
+      "file": "costume_11/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 4,
+      "file": "costume_11/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 5,
+      "file": "costume_11/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 6,
+      "file": "costume_11/anim_06.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 7,
+      "file": "costume_11/anim_07.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 8,
+      "file": "costume_11/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 9,
+      "file": "costume_11/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 10,
+      "file": "costume_11/anim_10.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 11,
+      "file": "costume_11/anim_11.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 12,
+      "file": "costume_11/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 13,
+      "file": "costume_11/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 14,
+      "file": "costume_11/anim_14.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 15,
+      "file": "costume_11/anim_15.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 16,
+      "file": "costume_11/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 17,
+      "file": "costume_11/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 18,
+      "file": "costume_11/anim_18.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 19,
+      "file": "costume_11/anim_19.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 20,
+      "file": "costume_11/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 21,
+      "file": "costume_11/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 67,
+      "x": -4,
+      "y": -67
+    },
+    {
+      "id": 22,
+      "file": "costume_11/anim_22.png",
+      "frames": 4,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 23,
+      "file": "costume_11/anim_23.png",
+      "frames": 1,
+      "width": 18,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    }
+  ],
+  "12": [
+    {
+      "id": 0,
+      "file": "costume_12/anim_00.png",
+      "frames": 1,
+      "width": 26,
+      "height": 35,
+      "x": -8,
+      "y": -35
+    },
+    {
+      "id": 1,
+      "file": "costume_12/anim_01.png",
+      "frames": 1,
+      "width": 26,
+      "height": 35,
+      "x": -8,
+      "y": -35
+    },
+    {
+      "id": 2,
+      "file": "costume_12/anim_02.png",
+      "frames": 1,
+      "width": 30,
+      "height": 35,
+      "x": -12,
+      "y": -35
+    },
+    {
+      "id": 3,
+      "file": "costume_12/anim_03.png",
+      "frames": 1,
+      "width": 30,
+      "height": 35,
+      "x": -12,
+      "y": -35
+    },
+    {
+      "id": 4,
+      "file": "costume_12/anim_04.png",
+      "frames": 1,
+      "width": 26,
+      "height": 35,
+      "x": -8,
+      "y": -35
+    },
+    {
+      "id": 5,
+      "file": "costume_12/anim_05.png",
+      "frames": 1,
+      "width": 26,
+      "height": 35,
+      "x": -8,
+      "y": -35
+    },
+    {
+      "id": 6,
+      "file": "costume_12/anim_06.png",
+      "frames": 1,
+      "width": 30,
+      "height": 35,
+      "x": -12,
+      "y": -35
+    },
+    {
+      "id": 7,
+      "file": "costume_12/anim_07.png",
+      "frames": 1,
+      "width": 30,
+      "height": 35,
+      "x": -12,
+      "y": -35
+    }
+  ],
+  "13": [
+    {
+      "id": 0,
+      "file": "costume_13/anim_00.png",
+      "frames": 4,
+      "width": 32,
+      "height": 11,
+      "x": -14,
+      "y": -9
+    },
+    {
+      "id": 1,
+      "file": "costume_13/anim_01.png",
+      "frames": 4,
+      "width": 32,
+      "height": 11,
+      "x": -14,
+      "y": -9
+    },
+    {
+      "id": 2,
+      "file": "costume_13/anim_02.png",
+      "frames": 4,
+      "width": 14,
+      "height": 11,
+      "x": -2,
+      "y": -9
+    },
+    {
+      "id": 3,
+      "file": "costume_13/anim_03.png",
+      "frames": 4,
+      "width": 14,
+      "height": 11,
+      "x": -2,
+      "y": -9
+    },
+    {
+      "id": 4,
+      "file": "costume_13/anim_04.png",
+      "frames": 8,
+      "width": 32,
+      "height": 11,
+      "x": -14,
+      "y": -9
+    },
+    {
+      "id": 5,
+      "file": "costume_13/anim_05.png",
+      "frames": 8,
+      "width": 32,
+      "height": 11,
+      "x": -14,
+      "y": -9
+    },
+    {
+      "id": 6,
+      "file": "costume_13/anim_06.png",
+      "frames": 8,
+      "width": 14,
+      "height": 11,
+      "x": -2,
+      "y": -9
+    },
+    {
+      "id": 7,
+      "file": "costume_13/anim_07.png",
+      "frames": 8,
+      "width": 14,
+      "height": 11,
+      "x": -2,
+      "y": -9
+    }
+  ],
+  "14": [
+    {
+      "id": 0,
+      "file": "costume_14/anim_00.png",
+      "frames": 3,
+      "width": 26,
+      "height": 19,
+      "x": -10,
+      "y": -18
+    },
+    {
+      "id": 1,
+      "file": "costume_14/anim_01.png",
+      "frames": 3,
+      "width": 26,
+      "height": 19,
+      "x": -10,
+      "y": -18
+    },
+    {
+      "id": 2,
+      "file": "costume_14/anim_02.png",
+      "frames": 3,
+      "width": 24,
+      "height": 14,
+      "x": -10,
+      "y": -15
+    },
+    {
+      "id": 3,
+      "file": "costume_14/anim_03.png",
+      "frames": 3,
+      "width": 24,
+      "height": 14,
+      "x": -10,
+      "y": -15
+    },
+    {
+      "id": 4,
+      "file": "costume_14/anim_04.png",
+      "frames": 3,
+      "width": 26,
+      "height": 19,
+      "x": -10,
+      "y": -18
+    },
+    {
+      "id": 5,
+      "file": "costume_14/anim_05.png",
+      "frames": 3,
+      "width": 26,
+      "height": 19,
+      "x": -10,
+      "y": -18
+    },
+    {
+      "id": 6,
+      "file": "costume_14/anim_06.png",
+      "frames": 3,
+      "width": 24,
+      "height": 14,
+      "x": -10,
+      "y": -15
+    },
+    {
+      "id": 7,
+      "file": "costume_14/anim_07.png",
+      "frames": 3,
+      "width": 24,
+      "height": 14,
+      "x": -10,
+      "y": -15
+    },
+    {
+      "id": 24,
+      "file": "costume_14/anim_24.png",
+      "frames": 5,
+      "width": 22,
+      "height": 12,
+      "x": -6,
+      "y": -10
+    },
+    {
+      "id": 25,
+      "file": "costume_14/anim_25.png",
+      "frames": 5,
+      "width": 22,
+      "height": 12,
+      "x": -6,
+      "y": -10
+    },
+    {
+      "id": 26,
+      "file": "costume_14/anim_26.png",
+      "frames": 5,
+      "width": 22,
+      "height": 12,
+      "x": -6,
+      "y": -10
+    },
+    {
+      "id": 27,
+      "file": "costume_14/anim_27.png",
+      "frames": 5,
+      "width": 22,
+      "height": 13,
+      "x": -6,
+      "y": -11
+    },
+    {
+      "id": 28,
+      "file": "costume_14/anim_28.png",
+      "frames": 7,
+      "width": 22,
+      "height": 12,
+      "x": -6,
+      "y": -10
+    },
+    {
+      "id": 29,
+      "file": "costume_14/anim_29.png",
+      "frames": 7,
+      "width": 22,
+      "height": 12,
+      "x": -6,
+      "y": -10
+    },
+    {
+      "id": 30,
+      "file": "costume_14/anim_30.png",
+      "frames": 7,
+      "width": 22,
+      "height": 12,
+      "x": -6,
+      "y": -10
+    },
+    {
+      "id": 31,
+      "file": "costume_14/anim_31.png",
+      "frames": 7,
+      "width": 22,
+      "height": 13,
+      "x": -6,
+      "y": -11
+    }
+  ],
+  "15": [
+    {
+      "id": 0,
+      "file": "costume_15/anim_00.png",
+      "frames": 3,
+      "width": 8,
+      "height": 7,
+      "x": -2,
+      "y": -6
+    },
+    {
+      "id": 1,
+      "file": "costume_15/anim_01.png",
+      "frames": 3,
+      "width": 8,
+      "height": 7,
+      "x": -2,
+      "y": -6
+    },
+    {
+      "id": 2,
+      "file": "costume_15/anim_02.png",
+      "frames": 3,
+      "width": 14,
+      "height": 7,
+      "x": -4,
+      "y": -6
+    },
+    {
+      "id": 3,
+      "file": "costume_15/anim_03.png",
+      "frames": 3,
+      "width": 14,
+      "height": 7,
+      "x": -4,
+      "y": -6
+    },
+    {
+      "id": 4,
+      "file": "costume_15/anim_04.png",
+      "frames": 3,
+      "width": 8,
+      "height": 7,
+      "x": -2,
+      "y": -6
+    },
+    {
+      "id": 5,
+      "file": "costume_15/anim_05.png",
+      "frames": 3,
+      "width": 8,
+      "height": 7,
+      "x": -2,
+      "y": -6
+    },
+    {
+      "id": 6,
+      "file": "costume_15/anim_06.png",
+      "frames": 3,
+      "width": 14,
+      "height": 7,
+      "x": -4,
+      "y": -6
+    },
+    {
+      "id": 7,
+      "file": "costume_15/anim_07.png",
+      "frames": 3,
+      "width": 14,
+      "height": 7,
+      "x": -4,
+      "y": -6
+    }
+  ],
+  "16": [
+    {
+      "id": 0,
+      "file": "costume_16/anim_00.png",
+      "frames": 8,
+      "width": 30,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 1,
+      "file": "costume_16/anim_01.png",
+      "frames": 8,
+      "width": 30,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 2,
+      "file": "costume_16/anim_02.png",
+      "frames": 4,
+      "width": 24,
+      "height": 63,
+      "x": -10,
+      "y": -63
+    },
+    {
+      "id": 3,
+      "file": "costume_16/anim_03.png",
+      "frames": 4,
+      "width": 24,
+      "height": 63,
+      "x": -10,
+      "y": -63
+    },
+    {
+      "id": 4,
+      "file": "costume_16/anim_04.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 5,
+      "file": "costume_16/anim_05.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 6,
+      "file": "costume_16/anim_06.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 7,
+      "file": "costume_16/anim_07.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 8,
+      "file": "costume_16/anim_08.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 9,
+      "file": "costume_16/anim_09.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 10,
+      "file": "costume_16/anim_10.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 11,
+      "file": "costume_16/anim_11.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 12,
+      "file": "costume_16/anim_12.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 13,
+      "file": "costume_16/anim_13.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 14,
+      "file": "costume_16/anim_14.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 15,
+      "file": "costume_16/anim_15.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 16,
+      "file": "costume_16/anim_16.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 17,
+      "file": "costume_16/anim_17.png",
+      "frames": 1,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 18,
+      "file": "costume_16/anim_18.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 19,
+      "file": "costume_16/anim_19.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 20,
+      "file": "costume_16/anim_20.png",
+      "frames": 4,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 21,
+      "file": "costume_16/anim_21.png",
+      "frames": 4,
+      "width": 20,
+      "height": 62,
+      "x": -4,
+      "y": -62
+    },
+    {
+      "id": 22,
+      "file": "costume_16/anim_22.png",
+      "frames": 4,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    },
+    {
+      "id": 23,
+      "file": "costume_16/anim_23.png",
+      "frames": 1,
+      "width": 24,
+      "height": 62,
+      "x": -10,
+      "y": -62
+    }
+  ],
+  "17": [
+    {
+      "id": 0,
+      "file": "costume_17/anim_00.png",
+      "frames": 4,
+      "width": 18,
+      "height": 42,
+      "x": -6,
+      "y": -42
+    },
+    {
+      "id": 1,
+      "file": "costume_17/anim_01.png",
+      "frames": 4,
+      "width": 18,
+      "height": 42,
+      "x": -6,
+      "y": -42
+    },
+    {
+      "id": 2,
+      "file": "costume_17/anim_02.png",
+      "frames": 4,
+      "width": 16,
+      "height": 42,
+      "x": -6,
+      "y": -42
+    },
+    {
+      "id": 3,
+      "file": "costume_17/anim_03.png",
+      "frames": 4,
+      "width": 16,
+      "height": 42,
+      "x": -6,
+      "y": -42
+    },
+    {
+      "id": 4,
+      "file": "costume_17/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 5,
+      "file": "costume_17/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 6,
+      "file": "costume_17/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 7,
+      "file": "costume_17/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 8,
+      "file": "costume_17/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 9,
+      "file": "costume_17/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 10,
+      "file": "costume_17/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 11,
+      "file": "costume_17/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 12,
+      "file": "costume_17/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 13,
+      "file": "costume_17/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 14,
+      "file": "costume_17/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 15,
+      "file": "costume_17/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 16,
+      "file": "costume_17/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 17,
+      "file": "costume_17/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 18,
+      "file": "costume_17/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 19,
+      "file": "costume_17/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 20,
+      "file": "costume_17/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 21,
+      "file": "costume_17/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 41,
+      "x": -4,
+      "y": -41
+    },
+    {
+      "id": 22,
+      "file": "costume_17/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    },
+    {
+      "id": 23,
+      "file": "costume_17/anim_23.png",
+      "frames": 4,
+      "width": 20,
+      "height": 41,
+      "x": -8,
+      "y": -41
+    }
+  ],
+  "18": [
+    {
+      "id": 0,
+      "file": "costume_18/anim_00.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    },
+    {
+      "id": 1,
+      "file": "costume_18/anim_01.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    },
+    {
+      "id": 2,
+      "file": "costume_18/anim_02.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    },
+    {
+      "id": 3,
+      "file": "costume_18/anim_03.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    },
+    {
+      "id": 4,
+      "file": "costume_18/anim_04.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    },
+    {
+      "id": 5,
+      "file": "costume_18/anim_05.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    },
+    {
+      "id": 6,
+      "file": "costume_18/anim_06.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    },
+    {
+      "id": 7,
+      "file": "costume_18/anim_07.png",
+      "frames": 1,
+      "width": 10,
+      "height": 31,
+      "x": -2,
+      "y": -31
+    }
+  ],
+  "19": [
+    {
+      "id": 0,
+      "file": "costume_19/anim_00.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    },
+    {
+      "id": 1,
+      "file": "costume_19/anim_01.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    },
+    {
+      "id": 2,
+      "file": "costume_19/anim_02.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    },
+    {
+      "id": 3,
+      "file": "costume_19/anim_03.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    },
+    {
+      "id": 4,
+      "file": "costume_19/anim_04.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    },
+    {
+      "id": 5,
+      "file": "costume_19/anim_05.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    },
+    {
+      "id": 6,
+      "file": "costume_19/anim_06.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    },
+    {
+      "id": 7,
+      "file": "costume_19/anim_07.png",
+      "frames": 2,
+      "width": 28,
+      "height": 15,
+      "x": -10,
+      "y": -13
+    }
+  ],
+  "20": [
+    {
+      "id": 0,
+      "file": "costume_20/anim_00.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    },
+    {
+      "id": 1,
+      "file": "costume_20/anim_01.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    },
+    {
+      "id": 2,
+      "file": "costume_20/anim_02.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    },
+    {
+      "id": 3,
+      "file": "costume_20/anim_03.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    },
+    {
+      "id": 4,
+      "file": "costume_20/anim_04.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    },
+    {
+      "id": 5,
+      "file": "costume_20/anim_05.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    },
+    {
+      "id": 6,
+      "file": "costume_20/anim_06.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    },
+    {
+      "id": 7,
+      "file": "costume_20/anim_07.png",
+      "frames": 2,
+      "width": 22,
+      "height": 5,
+      "x": -8,
+      "y": -3
+    }
+  ],
+  "21": [
+    {
+      "id": 0,
+      "file": "costume_21/anim_00.png",
+      "frames": 6,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 1,
+      "file": "costume_21/anim_01.png",
+      "frames": 6,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 2,
+      "file": "costume_21/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 3,
+      "file": "costume_21/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 4,
+      "file": "costume_21/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 5,
+      "file": "costume_21/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 6,
+      "file": "costume_21/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 7,
+      "file": "costume_21/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 8,
+      "file": "costume_21/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 9,
+      "file": "costume_21/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 10,
+      "file": "costume_21/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 11,
+      "file": "costume_21/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 12,
+      "file": "costume_21/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 13,
+      "file": "costume_21/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 14,
+      "file": "costume_21/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 15,
+      "file": "costume_21/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 16,
+      "file": "costume_21/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 17,
+      "file": "costume_21/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 18,
+      "file": "costume_21/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 19,
+      "file": "costume_21/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 24,
+      "file": "costume_21/anim_24.png",
+      "frames": 1,
+      "width": 18,
+      "height": 69,
+      "x": -4,
+      "y": -69
+    },
+    {
+      "id": 25,
+      "file": "costume_21/anim_25.png",
+      "frames": 1,
+      "width": 18,
+      "height": 69,
+      "x": -4,
+      "y": -69
+    },
+    {
+      "id": 26,
+      "file": "costume_21/anim_26.png",
+      "frames": 1,
+      "width": 22,
+      "height": 68,
+      "x": -8,
+      "y": -68
+    },
+    {
+      "id": 27,
+      "file": "costume_21/anim_27.png",
+      "frames": 1,
+      "width": 22,
+      "height": 68,
+      "x": -8,
+      "y": -68
+    },
+    {
+      "id": 32,
+      "file": "costume_21/anim_32.png",
+      "frames": 5,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 33,
+      "file": "costume_21/anim_33.png",
+      "frames": 5,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 34,
+      "file": "costume_21/anim_34.png",
+      "frames": 5,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 35,
+      "file": "costume_21/anim_35.png",
+      "frames": 5,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    }
+  ],
+  "22": [
+    {
+      "id": 0,
+      "file": "costume_22/anim_00.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 1,
+      "file": "costume_22/anim_01.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 2,
+      "file": "costume_22/anim_02.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 3,
+      "file": "costume_22/anim_03.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 4,
+      "file": "costume_22/anim_04.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 5,
+      "file": "costume_22/anim_05.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 6,
+      "file": "costume_22/anim_06.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 7,
+      "file": "costume_22/anim_07.png",
+      "frames": 8,
+      "width": 26,
+      "height": 60,
+      "x": -10,
+      "y": -59
+    },
+    {
+      "id": 12,
+      "file": "costume_22/anim_12.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 13,
+      "file": "costume_22/anim_13.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 14,
+      "file": "costume_22/anim_14.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 15,
+      "file": "costume_22/anim_15.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 16,
+      "file": "costume_22/anim_16.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 17,
+      "file": "costume_22/anim_17.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 18,
+      "file": "costume_22/anim_18.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 19,
+      "file": "costume_22/anim_19.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 20,
+      "file": "costume_22/anim_20.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 21,
+      "file": "costume_22/anim_21.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 22,
+      "file": "costume_22/anim_22.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    },
+    {
+      "id": 23,
+      "file": "costume_22/anim_23.png",
+      "frames": 8,
+      "width": 26,
+      "height": 59,
+      "x": -10,
+      "y": -58
+    }
+  ],
+  "23": [
+    {
+      "id": 0,
+      "file": "costume_23/anim_00.png",
+      "frames": 6,
+      "width": 28,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 1,
+      "file": "costume_23/anim_01.png",
+      "frames": 6,
+      "width": 28,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 2,
+      "file": "costume_23/anim_02.png",
+      "frames": 4,
+      "width": 24,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 3,
+      "file": "costume_23/anim_03.png",
+      "frames": 4,
+      "width": 24,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 4,
+      "file": "costume_23/anim_04.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 5,
+      "file": "costume_23/anim_05.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 6,
+      "file": "costume_23/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 7,
+      "file": "costume_23/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 8,
+      "file": "costume_23/anim_08.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 9,
+      "file": "costume_23/anim_09.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 10,
+      "file": "costume_23/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 11,
+      "file": "costume_23/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 12,
+      "file": "costume_23/anim_12.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 13,
+      "file": "costume_23/anim_13.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 14,
+      "file": "costume_23/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 15,
+      "file": "costume_23/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 16,
+      "file": "costume_23/anim_16.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 17,
+      "file": "costume_23/anim_17.png",
+      "frames": 1,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 18,
+      "file": "costume_23/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 19,
+      "file": "costume_23/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 20,
+      "file": "costume_23/anim_20.png",
+      "frames": 4,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 21,
+      "file": "costume_23/anim_21.png",
+      "frames": 4,
+      "width": 20,
+      "height": 65,
+      "x": -6,
+      "y": -65
+    },
+    {
+      "id": 22,
+      "file": "costume_23/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 23,
+      "file": "costume_23/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    }
+  ],
+  "24": [
+    {
+      "id": 0,
+      "file": "costume_24/anim_00.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 1,
+      "file": "costume_24/anim_01.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 2,
+      "file": "costume_24/anim_02.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 3,
+      "file": "costume_24/anim_03.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 4,
+      "file": "costume_24/anim_04.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 5,
+      "file": "costume_24/anim_05.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 6,
+      "file": "costume_24/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 7,
+      "file": "costume_24/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 8,
+      "file": "costume_24/anim_08.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 9,
+      "file": "costume_24/anim_09.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 10,
+      "file": "costume_24/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 11,
+      "file": "costume_24/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 12,
+      "file": "costume_24/anim_12.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 13,
+      "file": "costume_24/anim_13.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 14,
+      "file": "costume_24/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 15,
+      "file": "costume_24/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 16,
+      "file": "costume_24/anim_16.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 17,
+      "file": "costume_24/anim_17.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 18,
+      "file": "costume_24/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 19,
+      "file": "costume_24/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 20,
+      "file": "costume_24/anim_20.png",
+      "frames": 4,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 21,
+      "file": "costume_24/anim_21.png",
+      "frames": 4,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 22,
+      "file": "costume_24/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 23,
+      "file": "costume_24/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 24,
+      "file": "costume_24/anim_24.png",
+      "frames": 3,
+      "width": 26,
+      "height": 49,
+      "x": -10,
+      "y": -51
+    },
+    {
+      "id": 25,
+      "file": "costume_24/anim_25.png",
+      "frames": 3,
+      "width": 26,
+      "height": 49,
+      "x": -10,
+      "y": -51
+    },
+    {
+      "id": 26,
+      "file": "costume_24/anim_26.png",
+      "frames": 3,
+      "width": 26,
+      "height": 49,
+      "x": -10,
+      "y": -51
+    },
+    {
+      "id": 27,
+      "file": "costume_24/anim_27.png",
+      "frames": 3,
+      "width": 26,
+      "height": 49,
+      "x": -10,
+      "y": -51
+    },
+    {
+      "id": 28,
+      "file": "costume_24/anim_28.png",
+      "frames": 6,
+      "width": 26,
+      "height": 51,
+      "x": -10,
+      "y": -53
+    },
+    {
+      "id": 29,
+      "file": "costume_24/anim_29.png",
+      "frames": 6,
+      "width": 26,
+      "height": 51,
+      "x": -10,
+      "y": -53
+    },
+    {
+      "id": 30,
+      "file": "costume_24/anim_30.png",
+      "frames": 6,
+      "width": 26,
+      "height": 51,
+      "x": -10,
+      "y": -53
+    },
+    {
+      "id": 31,
+      "file": "costume_24/anim_31.png",
+      "frames": 6,
+      "width": 26,
+      "height": 51,
+      "x": -10,
+      "y": -53
+    }
+  ],
+  "25": [
+    {
+      "id": 0,
+      "file": "costume_25/anim_00.png",
+      "frames": 6,
+      "width": 28,
+      "height": 67,
+      "x": -10,
+      "y": -67
+    },
+    {
+      "id": 1,
+      "file": "costume_25/anim_01.png",
+      "frames": 6,
+      "width": 28,
+      "height": 67,
+      "x": -10,
+      "y": -67
+    },
+    {
+      "id": 2,
+      "file": "costume_25/anim_02.png",
+      "frames": 4,
+      "width": 24,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 3,
+      "file": "costume_25/anim_03.png",
+      "frames": 4,
+      "width": 24,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 4,
+      "file": "costume_25/anim_04.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 5,
+      "file": "costume_25/anim_05.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 6,
+      "file": "costume_25/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 7,
+      "file": "costume_25/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 8,
+      "file": "costume_25/anim_08.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 9,
+      "file": "costume_25/anim_09.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 10,
+      "file": "costume_25/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 11,
+      "file": "costume_25/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 12,
+      "file": "costume_25/anim_12.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 13,
+      "file": "costume_25/anim_13.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 14,
+      "file": "costume_25/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 15,
+      "file": "costume_25/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 16,
+      "file": "costume_25/anim_16.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 17,
+      "file": "costume_25/anim_17.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 18,
+      "file": "costume_25/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 19,
+      "file": "costume_25/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 20,
+      "file": "costume_25/anim_20.png",
+      "frames": 4,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 21,
+      "file": "costume_25/anim_21.png",
+      "frames": 4,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 22,
+      "file": "costume_25/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 23,
+      "file": "costume_25/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    }
+  ],
+  "26": [
+    {
+      "id": 0,
+      "file": "costume_26/anim_00.png",
+      "frames": 6,
+      "width": 26,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 1,
+      "file": "costume_26/anim_01.png",
+      "frames": 6,
+      "width": 26,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 2,
+      "file": "costume_26/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 3,
+      "file": "costume_26/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 4,
+      "file": "costume_26/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 5,
+      "file": "costume_26/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 6,
+      "file": "costume_26/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 7,
+      "file": "costume_26/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 8,
+      "file": "costume_26/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 9,
+      "file": "costume_26/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 10,
+      "file": "costume_26/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 11,
+      "file": "costume_26/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 12,
+      "file": "costume_26/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 13,
+      "file": "costume_26/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 14,
+      "file": "costume_26/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 15,
+      "file": "costume_26/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 16,
+      "file": "costume_26/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 17,
+      "file": "costume_26/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 18,
+      "file": "costume_26/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 19,
+      "file": "costume_26/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 20,
+      "file": "costume_26/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 21,
+      "file": "costume_26/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 22,
+      "file": "costume_26/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    },
+    {
+      "id": 23,
+      "file": "costume_26/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 66,
+      "x": -8,
+      "y": -66
+    }
+  ],
+  "27": [
+    {
+      "id": 0,
+      "file": "costume_27/anim_00.png",
+      "frames": 4,
+      "width": 24,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 1,
+      "file": "costume_27/anim_01.png",
+      "frames": 4,
+      "width": 24,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 2,
+      "file": "costume_27/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 3,
+      "file": "costume_27/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 4,
+      "file": "costume_27/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 5,
+      "file": "costume_27/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 6,
+      "file": "costume_27/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 7,
+      "file": "costume_27/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 8,
+      "file": "costume_27/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 9,
+      "file": "costume_27/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 10,
+      "file": "costume_27/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 11,
+      "file": "costume_27/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 12,
+      "file": "costume_27/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 13,
+      "file": "costume_27/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 14,
+      "file": "costume_27/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 15,
+      "file": "costume_27/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 16,
+      "file": "costume_27/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 17,
+      "file": "costume_27/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 18,
+      "file": "costume_27/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 19,
+      "file": "costume_27/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 20,
+      "file": "costume_27/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 21,
+      "file": "costume_27/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 22,
+      "file": "costume_27/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 23,
+      "file": "costume_27/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 24,
+      "file": "costume_27/anim_24.png",
+      "frames": 1,
+      "width": 16,
+      "height": 71,
+      "x": -4,
+      "y": -71
+    },
+    {
+      "id": 25,
+      "file": "costume_27/anim_25.png",
+      "frames": 1,
+      "width": 16,
+      "height": 71,
+      "x": -4,
+      "y": -71
+    },
+    {
+      "id": 26,
+      "file": "costume_27/anim_26.png",
+      "frames": 1,
+      "width": 20,
+      "height": 71,
+      "x": -8,
+      "y": -71
+    },
+    {
+      "id": 27,
+      "file": "costume_27/anim_27.png",
+      "frames": 1,
+      "width": 20,
+      "height": 71,
+      "x": -8,
+      "y": -71
+    },
+    {
+      "id": 28,
+      "file": "costume_27/anim_28.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 29,
+      "file": "costume_27/anim_29.png",
+      "frames": 1,
+      "width": 16,
+      "height": 70,
+      "x": -4,
+      "y": -70
+    },
+    {
+      "id": 30,
+      "file": "costume_27/anim_30.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 31,
+      "file": "costume_27/anim_31.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    }
+  ],
+  "28": [
+    {
+      "id": 0,
+      "file": "costume_28/anim_00.png",
+      "frames": 4,
+      "width": 24,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 1,
+      "file": "costume_28/anim_01.png",
+      "frames": 4,
+      "width": 24,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 2,
+      "file": "costume_28/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 3,
+      "file": "costume_28/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 4,
+      "file": "costume_28/anim_04.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 5,
+      "file": "costume_28/anim_05.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 6,
+      "file": "costume_28/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 7,
+      "file": "costume_28/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 8,
+      "file": "costume_28/anim_08.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 9,
+      "file": "costume_28/anim_09.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 10,
+      "file": "costume_28/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 11,
+      "file": "costume_28/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 12,
+      "file": "costume_28/anim_12.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 13,
+      "file": "costume_28/anim_13.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 14,
+      "file": "costume_28/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 15,
+      "file": "costume_28/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 16,
+      "file": "costume_28/anim_16.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 17,
+      "file": "costume_28/anim_17.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 18,
+      "file": "costume_28/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 19,
+      "file": "costume_28/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 20,
+      "file": "costume_28/anim_20.png",
+      "frames": 4,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 21,
+      "file": "costume_28/anim_21.png",
+      "frames": 4,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 22,
+      "file": "costume_28/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 23,
+      "file": "costume_28/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 24,
+      "file": "costume_28/anim_24.png",
+      "frames": 1,
+      "width": 20,
+      "height": 72,
+      "x": -6,
+      "y": -72
+    },
+    {
+      "id": 25,
+      "file": "costume_28/anim_25.png",
+      "frames": 1,
+      "width": 20,
+      "height": 72,
+      "x": -6,
+      "y": -72
+    },
+    {
+      "id": 26,
+      "file": "costume_28/anim_26.png",
+      "frames": 1,
+      "width": 20,
+      "height": 72,
+      "x": -8,
+      "y": -72
+    },
+    {
+      "id": 27,
+      "file": "costume_28/anim_27.png",
+      "frames": 1,
+      "width": 20,
+      "height": 72,
+      "x": -8,
+      "y": -72
+    },
+    {
+      "id": 28,
+      "file": "costume_28/anim_28.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 29,
+      "file": "costume_28/anim_29.png",
+      "frames": 1,
+      "width": 14,
+      "height": 70,
+      "x": -2,
+      "y": -70
+    },
+    {
+      "id": 30,
+      "file": "costume_28/anim_30.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    },
+    {
+      "id": 31,
+      "file": "costume_28/anim_31.png",
+      "frames": 1,
+      "width": 20,
+      "height": 70,
+      "x": -8,
+      "y": -70
+    }
+  ],
+  "29": [
+    {
+      "id": 0,
+      "file": "costume_29/anim_00.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 1,
+      "file": "costume_29/anim_01.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 2,
+      "file": "costume_29/anim_02.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 3,
+      "file": "costume_29/anim_03.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 4,
+      "file": "costume_29/anim_04.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 5,
+      "file": "costume_29/anim_05.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 6,
+      "file": "costume_29/anim_06.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 7,
+      "file": "costume_29/anim_07.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 8,
+      "file": "costume_29/anim_08.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 9,
+      "file": "costume_29/anim_09.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 10,
+      "file": "costume_29/anim_10.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 11,
+      "file": "costume_29/anim_11.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 12,
+      "file": "costume_29/anim_12.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 13,
+      "file": "costume_29/anim_13.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 14,
+      "file": "costume_29/anim_14.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 15,
+      "file": "costume_29/anim_15.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 16,
+      "file": "costume_29/anim_16.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 17,
+      "file": "costume_29/anim_17.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 18,
+      "file": "costume_29/anim_18.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 19,
+      "file": "costume_29/anim_19.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 20,
+      "file": "costume_29/anim_20.png",
+      "frames": 4,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 21,
+      "file": "costume_29/anim_21.png",
+      "frames": 4,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 22,
+      "file": "costume_29/anim_22.png",
+      "frames": 4,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    },
+    {
+      "id": 23,
+      "file": "costume_29/anim_23.png",
+      "frames": 1,
+      "width": 22,
+      "height": 98,
+      "x": -8,
+      "y": -98
+    }
+  ],
+  "30": [
+    {
+      "id": 0,
+      "file": "costume_30/anim_00.png",
+      "frames": 8,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 1,
+      "file": "costume_30/anim_01.png",
+      "frames": 8,
+      "width": 26,
+      "height": 64,
+      "x": -10,
+      "y": -64
+    },
+    {
+      "id": 2,
+      "file": "costume_30/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 3,
+      "file": "costume_30/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 65,
+      "x": -8,
+      "y": -65
+    },
+    {
+      "id": 4,
+      "file": "costume_30/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 5,
+      "file": "costume_30/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 6,
+      "file": "costume_30/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 7,
+      "file": "costume_30/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 8,
+      "file": "costume_30/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 9,
+      "file": "costume_30/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 10,
+      "file": "costume_30/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 11,
+      "file": "costume_30/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 12,
+      "file": "costume_30/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 13,
+      "file": "costume_30/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 14,
+      "file": "costume_30/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 15,
+      "file": "costume_30/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 16,
+      "file": "costume_30/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 17,
+      "file": "costume_30/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 18,
+      "file": "costume_30/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 19,
+      "file": "costume_30/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 20,
+      "file": "costume_30/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 21,
+      "file": "costume_30/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 22,
+      "file": "costume_30/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 23,
+      "file": "costume_30/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 24,
+      "file": "costume_30/anim_24.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 25,
+      "file": "costume_30/anim_25.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 26,
+      "file": "costume_30/anim_26.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 27,
+      "file": "costume_30/anim_27.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 28,
+      "file": "costume_30/anim_28.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 29,
+      "file": "costume_30/anim_29.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 30,
+      "file": "costume_30/anim_30.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 31,
+      "file": "costume_30/anim_31.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    }
+  ],
+  "31": [
+    {
+      "id": 0,
+      "file": "costume_31/anim_00.png",
+      "frames": 4,
+      "width": 20,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    },
+    {
+      "id": 1,
+      "file": "costume_31/anim_01.png",
+      "frames": 4,
+      "width": 20,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    },
+    {
+      "id": 2,
+      "file": "costume_31/anim_02.png",
+      "frames": 4,
+      "width": 18,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    },
+    {
+      "id": 3,
+      "file": "costume_31/anim_03.png",
+      "frames": 4,
+      "width": 18,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    },
+    {
+      "id": 4,
+      "file": "costume_31/anim_04.png",
+      "frames": 4,
+      "width": 20,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    },
+    {
+      "id": 5,
+      "file": "costume_31/anim_05.png",
+      "frames": 4,
+      "width": 20,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    },
+    {
+      "id": 6,
+      "file": "costume_31/anim_06.png",
+      "frames": 4,
+      "width": 18,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    },
+    {
+      "id": 7,
+      "file": "costume_31/anim_07.png",
+      "frames": 4,
+      "width": 18,
+      "height": 22,
+      "x": -6,
+      "y": -70
+    }
+  ],
+  "32": [
+    {
+      "id": 0,
+      "file": "costume_32/anim_00.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 1,
+      "file": "costume_32/anim_01.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 2,
+      "file": "costume_32/anim_02.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 3,
+      "file": "costume_32/anim_03.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 4,
+      "file": "costume_32/anim_04.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 5,
+      "file": "costume_32/anim_05.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 6,
+      "file": "costume_32/anim_06.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 7,
+      "file": "costume_32/anim_07.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 12,
+      "file": "costume_32/anim_12.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 13,
+      "file": "costume_32/anim_13.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 14,
+      "file": "costume_32/anim_14.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 15,
+      "file": "costume_32/anim_15.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 16,
+      "file": "costume_32/anim_16.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 17,
+      "file": "costume_32/anim_17.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 18,
+      "file": "costume_32/anim_18.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 19,
+      "file": "costume_32/anim_19.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 20,
+      "file": "costume_32/anim_20.png",
+      "frames": 4,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 21,
+      "file": "costume_32/anim_21.png",
+      "frames": 4,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 22,
+      "file": "costume_32/anim_22.png",
+      "frames": 4,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 23,
+      "file": "costume_32/anim_23.png",
+      "frames": 4,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 24,
+      "file": "costume_32/anim_24.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 25,
+      "file": "costume_32/anim_25.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 26,
+      "file": "costume_32/anim_26.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 27,
+      "file": "costume_32/anim_27.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 28,
+      "file": "costume_32/anim_28.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 29,
+      "file": "costume_32/anim_29.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 30,
+      "file": "costume_32/anim_30.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    },
+    {
+      "id": 31,
+      "file": "costume_32/anim_31.png",
+      "frames": 1,
+      "width": 50,
+      "height": 31,
+      "x": -22,
+      "y": -20
+    }
+  ],
+  "33": [
+    {
+      "id": 0,
+      "file": "costume_33/anim_00.png",
+      "frames": 3,
+      "width": 12,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 1,
+      "file": "costume_33/anim_01.png",
+      "frames": 3,
+      "width": 12,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 2,
+      "file": "costume_33/anim_02.png",
+      "frames": 3,
+      "width": 14,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 3,
+      "file": "costume_33/anim_03.png",
+      "frames": 3,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    },
+    {
+      "id": 4,
+      "file": "costume_33/anim_04.png",
+      "frames": 1,
+      "width": 10,
+      "height": 65,
+      "x": 0,
+      "y": -65
+    },
+    {
+      "id": 5,
+      "file": "costume_33/anim_05.png",
+      "frames": 1,
+      "width": 10,
+      "height": 65,
+      "x": 0,
+      "y": -65
+    },
+    {
+      "id": 6,
+      "file": "costume_33/anim_06.png",
+      "frames": 1,
+      "width": 14,
+      "height": 65,
+      "x": -2,
+      "y": -65
+    },
+    {
+      "id": 7,
+      "file": "costume_33/anim_07.png",
+      "frames": 1,
+      "width": 16,
+      "height": 65,
+      "x": -4,
+      "y": -65
+    }
+  ],
+  "34": [
+    {
+      "id": 0,
+      "file": "costume_34/anim_00.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 1,
+      "file": "costume_34/anim_01.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 2,
+      "file": "costume_34/anim_02.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 3,
+      "file": "costume_34/anim_03.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 4,
+      "file": "costume_34/anim_04.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 5,
+      "file": "costume_34/anim_05.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 6,
+      "file": "costume_34/anim_06.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 7,
+      "file": "costume_34/anim_07.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 12,
+      "file": "costume_34/anim_12.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 13,
+      "file": "costume_34/anim_13.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 14,
+      "file": "costume_34/anim_14.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 15,
+      "file": "costume_34/anim_15.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 16,
+      "file": "costume_34/anim_16.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 17,
+      "file": "costume_34/anim_17.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 18,
+      "file": "costume_34/anim_18.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 19,
+      "file": "costume_34/anim_19.png",
+      "frames": 1,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 20,
+      "file": "costume_34/anim_20.png",
+      "frames": 4,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 21,
+      "file": "costume_34/anim_21.png",
+      "frames": 4,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 22,
+      "file": "costume_34/anim_22.png",
+      "frames": 4,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    },
+    {
+      "id": 23,
+      "file": "costume_34/anim_23.png",
+      "frames": 4,
+      "width": 18,
+      "height": 62,
+      "x": -6,
+      "y": -62
+    }
+  ],
+  "35": [
+    {
+      "id": 0,
+      "file": "costume_35/anim_00.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    },
+    {
+      "id": 1,
+      "file": "costume_35/anim_01.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    },
+    {
+      "id": 2,
+      "file": "costume_35/anim_02.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    },
+    {
+      "id": 3,
+      "file": "costume_35/anim_03.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    },
+    {
+      "id": 4,
+      "file": "costume_35/anim_04.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    },
+    {
+      "id": 5,
+      "file": "costume_35/anim_05.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    },
+    {
+      "id": 6,
+      "file": "costume_35/anim_06.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    },
+    {
+      "id": 7,
+      "file": "costume_35/anim_07.png",
+      "frames": 2,
+      "width": 52,
+      "height": 87,
+      "x": -12,
+      "y": -75
+    }
+  ],
+  "36": [
+    {
+      "id": 0,
+      "file": "costume_36/anim_00.png",
+      "frames": 4,
+      "width": 16,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 1,
+      "file": "costume_36/anim_01.png",
+      "frames": 4,
+      "width": 16,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 2,
+      "file": "costume_36/anim_02.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 3,
+      "file": "costume_36/anim_03.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 4,
+      "file": "costume_36/anim_04.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 5,
+      "file": "costume_36/anim_05.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 6,
+      "file": "costume_36/anim_06.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 7,
+      "file": "costume_36/anim_07.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 32,
+      "file": "costume_36/anim_32.png",
+      "frames": 1,
+      "width": 14,
+      "height": 29,
+      "x": -6,
+      "y": -29
+    },
+    {
+      "id": 33,
+      "file": "costume_36/anim_33.png",
+      "frames": 1,
+      "width": 14,
+      "height": 29,
+      "x": -6,
+      "y": -29
+    },
+    {
+      "id": 34,
+      "file": "costume_36/anim_34.png",
+      "frames": 1,
+      "width": 12,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 35,
+      "file": "costume_36/anim_35.png",
+      "frames": 1,
+      "width": 12,
+      "height": 29,
+      "x": -4,
+      "y": -29
+    },
+    {
+      "id": 36,
+      "file": "costume_36/anim_36.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 37,
+      "file": "costume_36/anim_37.png",
+      "frames": 1,
+      "width": 12,
+      "height": 28,
+      "x": -6,
+      "y": -28
+    },
+    {
+      "id": 38,
+      "file": "costume_36/anim_38.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 39,
+      "file": "costume_36/anim_39.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    }
+  ],
+  "37": [
+    {
+      "id": 0,
+      "file": "costume_37/anim_00.png",
+      "frames": 8,
+      "width": 26,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 1,
+      "file": "costume_37/anim_01.png",
+      "frames": 8,
+      "width": 26,
+      "height": 65,
+      "x": -10,
+      "y": -65
+    },
+    {
+      "id": 2,
+      "file": "costume_37/anim_02.png",
+      "frames": 4,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 3,
+      "file": "costume_37/anim_03.png",
+      "frames": 4,
+      "width": 22,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 4,
+      "file": "costume_37/anim_04.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 5,
+      "file": "costume_37/anim_05.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 6,
+      "file": "costume_37/anim_06.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 7,
+      "file": "costume_37/anim_07.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 8,
+      "file": "costume_37/anim_08.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 9,
+      "file": "costume_37/anim_09.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 10,
+      "file": "costume_37/anim_10.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 11,
+      "file": "costume_37/anim_11.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 12,
+      "file": "costume_37/anim_12.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 13,
+      "file": "costume_37/anim_13.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 14,
+      "file": "costume_37/anim_14.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 15,
+      "file": "costume_37/anim_15.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 16,
+      "file": "costume_37/anim_16.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 17,
+      "file": "costume_37/anim_17.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 18,
+      "file": "costume_37/anim_18.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 19,
+      "file": "costume_37/anim_19.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 20,
+      "file": "costume_37/anim_20.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 21,
+      "file": "costume_37/anim_21.png",
+      "frames": 4,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 22,
+      "file": "costume_37/anim_22.png",
+      "frames": 4,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 23,
+      "file": "costume_37/anim_23.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 24,
+      "file": "costume_37/anim_24.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 25,
+      "file": "costume_37/anim_25.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 26,
+      "file": "costume_37/anim_26.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 27,
+      "file": "costume_37/anim_27.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 28,
+      "file": "costume_37/anim_28.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 29,
+      "file": "costume_37/anim_29.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 30,
+      "file": "costume_37/anim_30.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 31,
+      "file": "costume_37/anim_31.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 32,
+      "file": "costume_37/anim_32.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 33,
+      "file": "costume_37/anim_33.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 34,
+      "file": "costume_37/anim_34.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 35,
+      "file": "costume_37/anim_35.png",
+      "frames": 1,
+      "width": 22,
+      "height": 49,
+      "x": -8,
+      "y": -49
+    },
+    {
+      "id": 36,
+      "file": "costume_37/anim_36.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 37,
+      "file": "costume_37/anim_37.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 38,
+      "file": "costume_37/anim_38.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 39,
+      "file": "costume_37/anim_39.png",
+      "frames": 1,
+      "width": 24,
+      "height": 19,
+      "x": -10,
+      "y": -19
+    },
+    {
+      "id": 40,
+      "file": "costume_37/anim_40.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 41,
+      "file": "costume_37/anim_41.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 42,
+      "file": "costume_37/anim_42.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 43,
+      "file": "costume_37/anim_43.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 44,
+      "file": "costume_37/anim_44.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 45,
+      "file": "costume_37/anim_45.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 46,
+      "file": "costume_37/anim_46.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 47,
+      "file": "costume_37/anim_47.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 48,
+      "file": "costume_37/anim_48.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 49,
+      "file": "costume_37/anim_49.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -6,
+      "y": -67
+    },
+    {
+      "id": 50,
+      "file": "costume_37/anim_50.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 51,
+      "file": "costume_37/anim_51.png",
+      "frames": 1,
+      "width": 20,
+      "height": 67,
+      "x": -8,
+      "y": -67
+    },
+    {
+      "id": 52,
+      "file": "costume_37/anim_52.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 53,
+      "file": "costume_37/anim_53.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 54,
+      "file": "costume_37/anim_54.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 55,
+      "file": "costume_37/anim_55.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 56,
+      "file": "costume_37/anim_56.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 57,
+      "file": "costume_37/anim_57.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 58,
+      "file": "costume_37/anim_58.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 59,
+      "file": "costume_37/anim_59.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 60,
+      "file": "costume_37/anim_60.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 61,
+      "file": "costume_37/anim_61.png",
+      "frames": 1,
+      "width": 18,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 62,
+      "file": "costume_37/anim_62.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 63,
+      "file": "costume_37/anim_63.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 64,
+      "file": "costume_37/anim_64.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 65,
+      "file": "costume_37/anim_65.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 66,
+      "file": "costume_37/anim_66.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 67,
+      "file": "costume_37/anim_67.png",
+      "frames": 1,
+      "width": 26,
+      "height": 66,
+      "x": -10,
+      "y": -66
+    },
+    {
+      "id": 68,
+      "file": "costume_37/anim_68.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 69,
+      "file": "costume_37/anim_69.png",
+      "frames": 1,
+      "width": 16,
+      "height": 64,
+      "x": -4,
+      "y": -64
+    },
+    {
+      "id": 70,
+      "file": "costume_37/anim_70.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    },
+    {
+      "id": 71,
+      "file": "costume_37/anim_71.png",
+      "frames": 1,
+      "width": 20,
+      "height": 64,
+      "x": -8,
+      "y": -64
+    }
+  ],
+  "38": [
+    {
+      "id": 0,
+      "file": "costume_38/anim_00.png",
+      "frames": 4,
+      "width": 14,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 1,
+      "file": "costume_38/anim_01.png",
+      "frames": 4,
+      "width": 14,
+      "height": 28,
+      "x": -4,
+      "y": -28
+    },
+    {
+      "id": 2,
+      "file": "costume_38/anim_02.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 3,
+      "file": "costume_38/anim_03.png",
+      "frames": 4,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 4,
+      "file": "costume_38/anim_04.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 5,
+      "file": "costume_38/anim_05.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 6,
+      "file": "costume_38/anim_06.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 7,
+      "file": "costume_38/anim_07.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 40,
+      "file": "costume_38/anim_40.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 41,
+      "file": "costume_38/anim_41.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 42,
+      "file": "costume_38/anim_42.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 43,
+      "file": "costume_38/anim_43.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 44,
+      "file": "costume_38/anim_44.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 45,
+      "file": "costume_38/anim_45.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 46,
+      "file": "costume_38/anim_46.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 47,
+      "file": "costume_38/anim_47.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 48,
+      "file": "costume_38/anim_48.png",
+      "frames": 1,
+      "width": 10,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 49,
+      "file": "costume_38/anim_49.png",
+      "frames": 1,
+      "width": 10,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 50,
+      "file": "costume_38/anim_50.png",
+      "frames": 1,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 51,
+      "file": "costume_38/anim_51.png",
+      "frames": 1,
+      "width": 10,
+      "height": 29,
+      "x": -2,
+      "y": -29
+    },
+    {
+      "id": 52,
+      "file": "costume_38/anim_52.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 53,
+      "file": "costume_38/anim_53.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 54,
+      "file": "costume_38/anim_54.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 55,
+      "file": "costume_38/anim_55.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 56,
+      "file": "costume_38/anim_56.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 57,
+      "file": "costume_38/anim_57.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 58,
+      "file": "costume_38/anim_58.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 59,
+      "file": "costume_38/anim_59.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 60,
+      "file": "costume_38/anim_60.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 61,
+      "file": "costume_38/anim_61.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 62,
+      "file": "costume_38/anim_62.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 63,
+      "file": "costume_38/anim_63.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 64,
+      "file": "costume_38/anim_64.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 65,
+      "file": "costume_38/anim_65.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 66,
+      "file": "costume_38/anim_66.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 67,
+      "file": "costume_38/anim_67.png",
+      "frames": 1,
+      "width": 12,
+      "height": 30,
+      "x": -4,
+      "y": -30
+    },
+    {
+      "id": 68,
+      "file": "costume_38/anim_68.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 69,
+      "file": "costume_38/anim_69.png",
+      "frames": 1,
+      "width": 8,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 70,
+      "file": "costume_38/anim_70.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    },
+    {
+      "id": 71,
+      "file": "costume_38/anim_71.png",
+      "frames": 1,
+      "width": 10,
+      "height": 28,
+      "x": -2,
+      "y": -28
+    }
+  ],
+  "39": [
+    {
+      "id": 0,
+      "file": "costume_39/anim_00.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 1,
+      "file": "costume_39/anim_01.png",
+      "frames": 3,
+      "width": 8,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 2,
+      "file": "costume_39/anim_02.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 3,
+      "file": "costume_39/anim_03.png",
+      "frames": 4,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 4,
+      "file": "costume_39/anim_04.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 5,
+      "file": "costume_39/anim_05.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 6,
+      "file": "costume_39/anim_06.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 7,
+      "file": "costume_39/anim_07.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 52,
+      "file": "costume_39/anim_52.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 53,
+      "file": "costume_39/anim_53.png",
+      "frames": 1,
+      "width": 2,
+      "height": 11,
+      "x": 2,
+      "y": -10
+    },
+    {
+      "id": 54,
+      "file": "costume_39/anim_54.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 55,
+      "file": "costume_39/anim_55.png",
+      "frames": 1,
+      "width": 6,
+      "height": 11,
+      "x": 0,
+      "y": -10
+    },
+    {
+      "id": 56,
+      "file": "costume_39/anim_56.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 57,
+      "file": "costume_39/anim_57.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 58,
+      "file": "costume_39/anim_58.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 59,
+      "file": "costume_39/anim_59.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 64,
+      "file": "costume_39/anim_64.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 65,
+      "file": "costume_39/anim_65.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 66,
+      "file": "costume_39/anim_66.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 67,
+      "file": "costume_39/anim_67.png",
+      "frames": 1,
+      "width": 6,
+      "height": 12,
+      "x": 0,
+      "y": -11
+    },
+    {
+      "id": 72,
+      "file": "costume_39/anim_72.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 73,
+      "file": "costume_39/anim_73.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 74,
+      "file": "costume_39/anim_74.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 75,
+      "file": "costume_39/anim_75.png",
+      "frames": 1,
+      "width": 22,
+      "height": 22,
+      "x": -8,
+      "y": -21
+    },
+    {
+      "id": 76,
+      "file": "costume_39/anim_76.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 77,
+      "file": "costume_39/anim_77.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 78,
+      "file": "costume_39/anim_78.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    },
+    {
+      "id": 79,
+      "file": "costume_39/anim_79.png",
+      "frames": 4,
+      "width": 10,
+      "height": 11,
+      "x": -2,
+      "y": -10
+    }
+  ]
+}

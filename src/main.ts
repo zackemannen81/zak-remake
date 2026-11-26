@@ -9,6 +9,7 @@ import { GameRenderer } from './render/GameRenderer';
 import { VisualRegistry } from './render/visualRegistry';
 import { deserializeSave, SAVE_STORAGE_KEY, serializeSave } from './save/persistence';
 import { GameUI } from './ui/gameShell';
+import { shouldStartIntro } from './scenes/introPolicy';
 import { IntroSequence } from './scenes/intro';
 
 const app = document.querySelector<HTMLElement>('#app');
@@ -29,9 +30,12 @@ const visualRegistry = new VisualRegistry();
 
 function startRenderer(): void {
   try {
-    renderer = new GameRenderer(ui.viewport, visualRegistry);
+    const surface = document.createElement('div');
+    surface.className = 'game-render-surface';
+    ui.viewport.prepend(surface);
+    renderer = new GameRenderer(surface, visualRegistry);
     if(labRuntime)labRuntime.attach(renderer);
-    renderer.onPointer = (point, target) => engine.handleClick(point, target);
+    renderer.onPointer = (point, target) => { if (!introSequence) engine.handleClick(point, target); };
     renderer.onCharacterStatus = (message) => ui.setNotice(message);
   } catch (error) {
     ui.viewport.innerHTML = '<div class="renderer-error">WebGL could not start in this browser. The game logic is still available for testing.</div>';
@@ -60,7 +64,7 @@ if (searchParams.get('originalAssets') !== '1') {
 
 const music = new IntroMusic(assetManifest.introMusic.url, (message) => ui.setMusicStatus(message));
 let introSequence: IntroSequence | undefined;
-function playIntro(): void {
+function playIntro(newGame = false): void {
   introSequence?.dispose();
   music.stop();
   introSequence = new IntroSequence(ui.viewport, {
@@ -68,7 +72,8 @@ function playIntro(): void {
     onFinish: (skipped) => {
       introSequence = undefined;
       music.stop();
-      engine.replaceState(createInitialState(getRoom(1), { skipIntro: skipped }));
+      if (newGame) engine.replaceState(createInitialState(getRoom(1), { skipIntro: skipped }));
+      if (!newGame) { ui.setNotice('Intro replay finished. Your game is unchanged.'); return; }
       ui.setNotice(skipped
         ? 'Intro skipped. Zak starts at the original SCv2_0108 skip position.'
         : 'Intro complete. The original SCv2_0108 wake-up sequence is starting.');
@@ -81,6 +86,7 @@ ui.bind({
   onVerb: (verb) => { if (!introSequence) engine.setVerb(verb); },
   onInventoryItem: (objectId) => { if (!introSequence) engine.selectInventoryItem(objectId); },
   onSave: () => {
+    if (introSequence) return;
     try {
       localStorage.setItem(storageKey, serializeSave(engine.state));
       ui.setNotice('Saved locally in this browser.');
@@ -102,7 +108,7 @@ ui.bind({
       ui.setNotice(`Load failed: ${error instanceof Error ? error.message : 'invalid save'}`);
     }
   },
-  onPlayIntro: playIntro,
+  onPlayIntro: () => playIntro(false),
   onStopMusic: () => music.stop(),
 });
 
@@ -112,7 +118,7 @@ window.addEventListener('keydown', event => {
     !(event.target instanceof HTMLButtonElement)) { event.preventDefault();engine.chooseSceneAction('land'); }
 });
 
-if (searchParams.get('intro') === '1') requestAnimationFrame(playIntro);
+if (shouldStartIntro(searchParams, isLabPlay)) playIntro(true);
 
 let previousTime = performance.now();
 let accumulator = 0;

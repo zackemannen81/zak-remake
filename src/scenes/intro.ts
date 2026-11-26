@@ -1,15 +1,16 @@
 import { getRoom, objectImageUrl } from '../content/rooms';
+import costumes from '../content/costume-reference.json';
 import { assetUrl } from '../content/runtimeAssets';
 const officeRoom = assetUrl('intro/office.png');
 const logoRoom = assetUrl('intro/logo.png');
-const bedroomRoom = assetUrl('backgrounds/LFv2_0001.png');
 const dreamRoom = assetUrl('backgrounds/LFv2_0058.png');
 const dreamPanorama = assetUrl('backgrounds/LFv2_0051.png');
 const dreamCloseup = assetUrl('backgrounds/LFv2_0055.png');
 const dreamStreet = assetUrl('backgrounds/LFv2_0049.png');
 const dreamExit = assetUrl('backgrounds/LFv2_0056.png');
 
-interface IntroBeat {
+export interface IntroActor { costume: number; x: number; y: number; animation: number; toX?: number; toY?: number }
+export interface IntroBeat {
   roomId: number;
   image: string;
   label: string;
@@ -20,6 +21,10 @@ interface IntroBeat {
   durationMs?: number;
   pan?: boolean;
   patches?: number[];
+  actors?: IntroActor[];
+  camera?: [number, number];
+  placements?: Record<number, [number, number]>;
+  creditText?: string;
 }
 
 const officeDialogue: IntroBeat[] = [
@@ -48,21 +53,44 @@ const credits: IntroBeat[] = [
   { roomId: 58, image: dreamRoom, label: 'SCv2_0111 · Original credits', text: 'Project Directed by David Fox', credit: true },
 ];
 
+// Coordinates below come from SC1/127: actor x * 8, y * 2; drawObject x/y * 8.
+const zak = (x: number, y = 56, toX = x, animation = 10): IntroActor => ({ costume: 30, x: x * 8, y: y * 2, toX: toX * 8, animation });
+const pursuer = (x: number, toX: number, y = 55): IntroActor => ({ costume: 31, x: x * 8, y: y * 2, toX: toX * 8, animation: toX >= x ? 5 : 4 });
+const street = (patches: number[], actors: IntroActor[], durationMs: number, extra: Partial<IntroBeat> = {}): IntroBeat => ({ roomId: 49, image: dreamStreet, label: 'SC1 · Dream', patches, actors, durationMs, ...extra });
 export const introBeats: IntroBeat[] = [
-  { roomId: 46, image: logoRoom, label: "Opening logo", durationMs: 5000 },
-  ...officeDialogue,
-  { roomId: 1, image: bedroomRoom, label: 'SCv2_0001 · Later that night', text: 'Later that night, Zak’s in bed…' },
-  { roomId: 1, image: bedroomRoom, label: 'SCv2_0001 · Later that night', text: 'Alone… again.' },
-  { roomId: 58, image: dreamRoom, label: 'SCv2_0001 · Dream sequence', durationMs: 3000 },
-  ...credits,
-  { roomId: 58, image: dreamRoom, label: 'SCv2_0001 · Dream sequence', durationMs: 3000, patches: [766, 767, 768] },
-  { roomId: 51, image: dreamPanorama, label: 'SCv2_0001 · Dream / music cue 95', durationMs: 8000, pan: true, musicCue: true },
-  ...[756, 757, 758, 759, 760].map(id => ({ roomId: 55, image: dreamCloseup, label: 'Dream vision', durationMs: 1600, patches: [id] })),
-  { roomId: 49, image: dreamStreet, label: 'SCv2_0001 · Dream sequence', text: "Hey! That's ME!", patches: [701] },
-  { roomId: 49, image: dreamStreet, label: 'Dream sequence', speaker: 'Zak', text: 'TABLOID REPORTER SPACES OUT IN DREAM.', patches: [699,700] },
-  { roomId: 49, image: dreamStreet, label: 'Dream sequence', speaker: 'Zak', text: 'AIEEEEE!', patches: [702] },
-  { roomId: 56, image: dreamExit, label: 'SCv2_0001 · Return transition', durationMs: 6000, pan: true, patches: [761] },
-  { roomId: 1, image: bedroomRoom, label: 'SCv2_0108 · Wake-up', durationMs: 1800 },
+  { roomId: 46, image: logoRoom, label: 'Opening logo', durationMs: 5000 },
+  ...officeDialogue.map((beat, index) => ({ ...beat, actors: [
+    // Office image is the right-hand 320 pixels of room 46.
+    { costume: 32, x: 58 * 8 - 320, y: 64, animation: beat.speaker === 'The Boss' ? 18 : 4 },
+    { costume: 30, x: (index < 3 ? (index % 2 ? 45 : 55) : index < 6 ? 49 : index < 8 ? 56 : 60) * 8 - 320, toX: (index < 3 ? (index % 2 ? 74 : 45) : index < 6 ? 49 : index < 8 ? 56 : 60) * 8 - 320, y: index < 6 ? 116 : 120, animation: index < 3 ? (index % 2 ? 5 : 4) : beat.speaker === 'Zak' ? 16 : 8 },
+  ] })),
+  { roomId: 0, image: '', label: 'SC1 · 00BE', text: "Later that night, Zak's in bed…", durationMs: 2000 },
+  { roomId: 0, image: '', label: 'SC1 · 00BE', text: "Later that night, Zak's in bed…\nalone…", durationMs: 3000 },
+  { roomId: 0, image: '', label: 'SC1 · 00BE', text: "Later that night, Zak's in bed…\nalone… again.", durationMs: 3000 },
+  { roomId: 58, image: dreamRoom, label: 'SC1 · 011C', durationMs: 3000 },
+  { roomId: 58, image: dreamRoom, label: 'SC1 · 011C', patches: [766], durationMs: 3000 },
+  { roomId: 58, image: dreamRoom, label: 'SC1 · 011C', patches: [766,767], durationMs: 4000 },
+  { roomId: 58, image: dreamRoom, label: 'SC1 · 011C', patches: [766,767,768], durationMs: 3000 },
+  { roomId: 51, image: dreamPanorama, label: 'SC1 · 0148', durationMs: 8000, camera: [320,0], musicCue: true },
+  ...[756,757,758,759,760].map((id,i) => ({ roomId: 55, image: dreamCloseup, label: 'SC1 · Dream vision', durationMs: 3000, patches: [id], creditText: credits[i]!.text })),
+  street([701], [zak(30)], 2750, { speaker: 'Zak', text: "Hey! That's ME!", creditText: credits[5]!.text }),
+  street([701], [zak(30)], 3750, { speaker: 'Zak', text: 'TABLOID REPORTER `SPACES OUT` IN DREAM.' }),
+  street([701], [zak(30,56,14,6)], 2500),
+  street([699], [zak(14,56,14,12)], 1500, { placements: {699:[80,16]} }),
+  street([699,700,696], [zak(14,56,33,5)], 3000, { placements: {699:[80,16],700:[80,48],696:[240,24]} }),
+  ...[4,7,10,13,16].map(x => street([697], [zak(33,45,33,24)], 180, {placements:{697:[x*8,48]}})),
+  street([697], [zak(33,45,27,6)], 1600, {placements:{697:[128,48]}}),
+  street([698], [zak(25,55,25,16)], 2000, {placements:{698:[152,32]}}),
+  street([697], [zak(25,55,19,6)], 2000, {placements:{697:[128,48]}}),
+  street([], [zak(19,55,19,28),pursuer(0,5)], 2000),
+  street([], [zak(19,55,34,5),pursuer(5,25)], 2400, {speaker:'Zak',text:'AIEEEEE!'}),
+  street([], [zak(34,56,8,6),pursuer(25,14)], 2800),
+  street([702], [zak(8,56,18,5),pursuer(14,18)], 1600),
+  { roomId:56,image:dreamExit,label:'SC1 · Escape',durationMs:3500,camera:[0,0],actors:[zak(0,48,26,5)] },
+  { roomId:56,image:dreamExit,label:'SC1 / SC109 · Chase',durationMs:3000,camera:[0,0],actors:[zak(26,48,47,5),pursuer(0,26,48)] },
+  { roomId:56,image:dreamExit,label:'SC1 · Camera',durationMs:4000,camera:[0,320],actors:[zak(47,48),pursuer(26,0,48)] },
+  ...[true,false,true,false].map(visible => ({roomId:56,image:dreamExit,label:'SC1 · 761',durationMs:200,camera:[320,320] as [number,number],patches:visible?[761]:[],actors:[zak(47,48)]})),
+  { roomId:56,image:dreamExit,label:'SC1 · 050A',durationMs:3000,camera:[320,320],actors:[zak(47,48,20,6)] },
 ];
 
 export function introBeatDuration(beat: IntroBeat): number {
@@ -74,13 +102,13 @@ export interface IntroSequenceCallbacks {
   onFinish: (skipped: boolean) => void;
 }
 
-/** Replays the extracted opening beats over their original room backgrounds. */
+/** Source-ordered opening adaptation. Timing/cel cycling is approximate, not a SCUMM VM. */
 export class IntroSequence {
   private readonly overlay = document.createElement('section');
   private index = 0;
   private finished = false;
   private timer?: ReturnType<typeof setTimeout>;
-  private imageKey = "";
+  private animationFrame = 0;
   private readonly art = document.createElement("div");
 
   constructor(private readonly viewport: HTMLElement, private readonly callbacks: IntroSequenceCallbacks) {
@@ -97,6 +125,8 @@ export class IntroSequence {
   }
 
   start(): void {
+    this.viewport.closest('.game-shell')?.classList.add('playing-intro');
+    this.viewport.closest('.game-shell')?.querySelector('details.game-menu')?.removeAttribute('open');
     this.viewport.append(this.overlay);
     this.renderBeat();
     this.overlay.focus();
@@ -105,8 +135,10 @@ export class IntroSequence {
   dispose(): void {
     this.finished = true;
     clearTimeout(this.timer);
+    cancelAnimationFrame(this.animationFrame);
     this.overlay.removeEventListener('keydown', this.handleKeyDown);
     this.overlay.remove();
+    this.viewport.closest('.game-shell')?.classList.remove('playing-intro');
   }
 
   private readonly handleKeyDown = (event: KeyboardEvent): void => {
@@ -145,19 +177,21 @@ export class IntroSequence {
     this.timer = setTimeout(() => this.advance(), introBeatDuration(beat));
     this.overlay.replaceChildren();
 
-    const key = JSON.stringify([beat.image, beat.patches, beat.pan]);
-    if (key !== this.imageKey) {
-      this.imageKey = key;
+    cancelAnimationFrame(this.animationFrame);
+    {
       this.art.className = 'intro-scene';
-      this.art.dataset.pan = beat.pan ? 'true' : 'false';
+      this.art.dataset.pan = 'false';
       this.art.replaceChildren();
       const image = document.createElement('img');
       image.className = 'intro-art';
-      image.src = beat.image;
+      if (beat.image) image.src = beat.image;
+      else image.hidden = true;
       image.alt = beat.label;
       image.draggable = false;
       this.art.append(image);
-      const roomWidth = beat.roomId === 51 || beat.roomId === 56 ? 640 : 320;
+      const roomWidth = beat.camera ? getRoom(beat.roomId).width : 320;
+      this.art.style.width = `${roomWidth / 320 * 100}%`;
+      this.art.style.transform = `translateX(-${(beat.camera?.[0] ?? 0) / roomWidth * 100}%)`;
       for (const id of beat.patches ?? []) {
         const object = getRoom(beat.roomId).objects.find(o => o.object_id === id);
         const url = objectImageUrl(beat.roomId, id);
@@ -165,9 +199,36 @@ export class IntroSequence {
         const patch = document.createElement('img');
         patch.className = 'intro-patch';
         patch.src = url;
-        Object.assign(patch.style, { left: (object.x / roomWidth * 100) + '%', top: (object.y / 128 * 100) + '%', width: (object.width / roomWidth * 100) + '%', height: (object.height / 128 * 100) + '%' });
+        Object.assign(patch.style, { left: ((beat.placements?.[id]?.[0] ?? object.x) / roomWidth * 100) + '%', top: ((beat.placements?.[id]?.[1] ?? object.y) / 128 * 100) + '%', width: (object.width / roomWidth * 100) + '%', height: (object.height / 128 * 100) + '%' });
         this.art.append(patch);
       }
+      const sprites = (beat.actors ?? []).flatMap(actor => {
+        const list = (costumes as Record<string, typeof costumes['1']>)[String(actor.costume)];
+        const cel = list?.find(a => a.id === actor.animation) ?? list?.find(a => a.id === 10);
+        if (!cel) return [];
+        const sprite = document.createElement('div');
+        sprite.className = 'intro-actor';
+        sprite.dataset.costume = String(actor.costume);
+        Object.assign(sprite.style, { width: `${cel.width / roomWidth * 100}%`, height: `${cel.height / 128 * 100}%`, backgroundImage: `url("${assetUrl('reference/' + cel.file)}")`, backgroundSize: `${cel.frames * 100}% 100%` });
+        this.art.append(sprite);
+        return [{actor,cel,sprite}];
+      });
+      const started = performance.now();
+      const animate = (now: number): void => {
+        if (this.finished) return;
+        const elapsed = now - started;
+        const t = Math.min(1, elapsed / introBeatDuration(beat));
+        const camera = beat.camera ?? [0,0];
+        this.art.style.transform = `translateX(-${(camera[0]! + (camera[1]! - camera[0]!) * t) / roomWidth * 100}%)`;
+        for (const {actor,cel,sprite} of sprites) {
+          sprite.style.left = `${(actor.x + ((actor.toX ?? actor.x) - actor.x) * t + cel.x) / roomWidth * 100}%`;
+          sprite.style.top = `${(actor.y + ((actor.toY ?? actor.y) - actor.y) * t + cel.y) / 128 * 100}%`;
+          const frame = Math.floor(elapsed / 140) % cel.frames;
+          sprite.style.backgroundPositionX = `${cel.frames > 1 ? frame / (cel.frames - 1) * 100 : 0}%`;
+        }
+        this.animationFrame = requestAnimationFrame(animate);
+      };
+      animate(started);
     }
 
     const shade = document.createElement('div');
@@ -218,6 +279,9 @@ export class IntroSequence {
     actions.append(skip, next);
     footer.append(hint, actions);
 
-    this.overlay.append(this.art, shade, header, card, footer);
+    const credit = document.createElement('p');
+    credit.className = 'intro-concurrent-credit';
+    credit.textContent = beat.creditText ?? '';
+    this.overlay.append(this.art, shade, header, card, credit, footer);
   }
 }

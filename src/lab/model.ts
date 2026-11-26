@@ -1,3 +1,4 @@
+import {labRooms,labMasterUrls} from './roomCatalog';
 export type Point = {x:number;y:number};
 export type Quad = [Point,Point,Point,Point];
 export type GeometrySettings = {depth:number;thickness:number;angle:number;color:string;reveal:string;side:string;back:string;item:boolean;revealKind:'dark'|'corridor'};
@@ -21,8 +22,8 @@ export function destination(l:Layer):Quad {
 }
 export function parseProject(raw:unknown):Project {
   const p=raw as Project;
-  const image=(v:unknown)=>typeof v==='string'&&(v===''||v.startsWith('data:image/png;base64,')||v.startsWith('data:image/jpeg;base64,')||v.startsWith('data:image/webp;base64,')||/^\.\/assets\/scene-lab\/[\w-]+\.png$/.test(v));
-  if(!p||p.version!==1||![1,2].includes(p.roomId)||!Number.isInteger(p.width)||!Number.isInteger(p.height)||p.width<1||p.height<1||p.width>8192||p.height>8192||!image(p.master)||!p.master||!image(p.plate)||!Array.isArray(p.layers)||p.layers.length>100)throw Error('Ogiltigt projektformat.');
+  const image=(v:unknown)=>typeof v==='string'&&(v===''||labMasterUrls.has(v)||v.startsWith('data:image/png;base64,')||v.startsWith('data:image/jpeg;base64,')||v.startsWith('data:image/webp;base64,')||/^\.\/assets\/scene-lab\/[\w-]+\.png$/.test(v));
+  if(!p||p.version!==1||!labRooms.some(r=>r.id===p.roomId)||!Number.isInteger(p.width)||!Number.isInteger(p.height)||p.width<1||p.height<1||p.width>8192||p.height>8192||!image(p.master)||!p.master||!image(p.plate)||!Array.isArray(p.layers)||p.layers.length>100)throw Error('Ogiltigt projektformat.');
   const keys=new Set<string>();
   for(const l of p.layers){if(!l||typeof l.key!=='string'||keys.has(l.key)||!Number.isInteger(l.objectId)||typeof l.state!=='string'||typeof l.enabled!=='boolean'||!['patch','hinged','sliding'].includes(l.mode)||!['left','right'].includes(l.pivot)||![l.amount,l.dx,l.dy].every(Number.isFinite)||l.amount<0||l.amount>1||!image(l.image)||!Array.isArray(l.quad)||l.quad.length!==4||!l.quad.every(v=>v&&Number.isFinite(v.x)&&Number.isFinite(v.y)&&v.x>=0&&v.y>=0&&v.x<=p.width&&v.y<=p.height)||!validQuad(l.quad))throw Error('Ogiltigt objektlager.');keys.add(l.key);}
   for(const l of p.layers)if(l.geometry){const g=l.geometry;if(![g.depth,g.thickness,g.angle].every(Number.isFinite)||g.depth<1||g.depth>1000||g.thickness<1||g.thickness>100||Math.abs(g.angle)>160||!/^#[0-9a-f]{6}$/i.test(g.color)||![g.reveal,g.side,g.back].every(image)||typeof g.item!=='boolean'||!['dark','corridor'].includes(g.revealKind))throw Error('Ogiltiga 3D-inställningar.');}

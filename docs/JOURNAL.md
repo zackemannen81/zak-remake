@@ -69,3 +69,24 @@ Audited supplied partial walkthrough against original flat scripts. Implemented 
 Remaining work is explicit: full VM/actor scheduling, Switch/companions, original time-window/maze/choreography fidelity and subsequent puzzles/ending. This checkpoint is not full-game completion. Signed: Codex — 2026-11-26.
 
 Verification completion: production build passed (both entries); existing bundle-size advisory remains. Browser screenshots inspected. No commit or push.
+
+## 2026-11-26 — ZMATAMR-0002 object fallback regression
+Compared A008 snapshot read-only. Both copies contained the background-wide suppression rule; enabling concept backgrounds by default exposed the issue across rooms. Replaced it with object-specific authoring coverage, including disabled/empty-layer hotspot fallback. User media (including existing room-3 background edit) and saved projects preserved. 80 tests and production build pass. Signed: Codex — 2026-11-26.
+
+Fallback verification: browser exercised real fridge Open/Close, visible original open-fridge patch, egg pickup, cabinet Open and crayon pickup in both the normal game and an editor room with a new background but no object replacements. Original frame requests returned 200; screenshots inspected; no page errors. Existing saved 3D-drawer project also passed Open/Walk-reset/save smoke. 80 tests and build passed.
+
+## 2026-11-26 — ZMATAMR-0002 mountain/cabin correction
+Traced OC267/SC33, OC260/261/262 and cabin SC120 reset. Implemented source-class digging and knife conditions, appliance/bin hit priority, consumed-paper restoration and explicit egg retry accommodations. 83 tests passed; isolated Chromium UI verified oven-control-edge Open, egg placement, Turn on and timed smell dialogue; screenshot inspected, no page errors. Artwork, saved user projects and existing fallback work preserved. Full source scripting remains open. Signed: Codex — 2026-11-26.
+
+Verification completion: npm run build passed; existing bundle-size advisory remains. No commit/push.
+
+## 2026-11-26 — ZMATAMR-0002 original reference and missing-view audit
+Read SC41/EN29, SC0001/SC108/SC127/SC115. Implemented original map inspection and initial Seattle ticket without inventing a round trip. Generalized existing costume decoder with bounds checks and command metadata: 39 costumes, 984 directional animation records, 771 cels; browsable 58-room/object/animation reference. Added six bounded NPC visual placements and explicit coverage report. Format cross-check: ScummVM costume.cpp; no copied implementation.
+86 tests and production build pass. Isolated browser verified Look at wallpaper map, modal Done returning to cave, gallery selectors and Lou fallback load; screenshots inspected, no page errors. NPC original placement does not guarantee alignment/occlusion against new art. Full script/actor VM, Switch and ending remain open; requested all-room Scene Lab phase follows those. User artwork including room11 edits preserved. Signed: Codex — 2026-11-26.
+
+## Original opening adaptation — 2026-11-26
+- Replaced the abbreviated slideshow with 53 source-ordered phases based on SC1, SC127, SC111 and SC109: office actors and pacing, black intertitles, sequential 766/767/768, vision frames, concurrent credits, street transformations, chase, opposing panorama directions and flashing 761. Reuses original backgrounds/object patches and exported costume 30/31/32 atlases.
+- Normal fresh entry starts the opening. Explicit room, skipIntro=1, intro=0 and editor play bypass it. Skip enters SC108 skip branch; completion enters ordinary wake-up. Menu replay freezes and resumes existing game instead of replacing it. Renderer gets a separate child surface so async loading cannot erase intro. Game input/save is blocked during playback.
+- Verification: 89 unit/content tests pass. Browser checked office actors, startup survival, skip, replay and full phase traversal; original office/dream screenshots inspected.
+- Remaining fidelity work: this is a deterministic authored adaptation, NOT execution of SC1 bytecode. Walk paths, frame cycling, palette remaps, credit trigger timing and wait-for-music timing are not exact SCUMM behavior. User intro track is retained; original sound81/music95 playback is not implemented. Full-script and all-room Scene Lab work remains open.
+Signed: Codex — 2026-11-26.

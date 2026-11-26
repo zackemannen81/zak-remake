@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { GameEngine } from './engine';
 import { createInitialState, stateHash } from './state';
-import { getRoom } from '../content/rooms';
+import { getRoom, hitTestRoomObject } from '../content/rooms';
 import { deserializeSave, serializeSave } from '../save/persistence';
 import { scheduleAction } from './scheduler';
 import type { VerbId } from './types';
@@ -27,6 +27,64 @@ function buy(e:GameEngine,destination:number) {act(e,e.state.roomId===8?194:220,
 function fly(e:GameEngine,destination:number) {buy(e,destination);act(e,e.state.roomId===8?190:217,'walk');}
 
 describe('walkthrough progression through actual engine actions',()=>{
+  it('starts with the boss ticket and boards Seattle without charging the CashCard',()=>{
+    const e=fixture(1,[18]);const cash=e.state.variables[62];
+    expect(e.state.inventory).toContain(82);expect(e.state.flight?.destination).toBe(144);
+    go(e,145,8);act(e,190,'walk');expect(e.state.roomId).toBe(11);expect(e.state.variables[62]).toBe(cash);
+    e.chooseSceneAction('land');e.advance(2);expect(e.state.logicalRoomId).toBe(144);
+    act(e,190,'walk');expect(e.state.roomId).toBe(8); // no invented free return leg
+  });
+  it('inspects a drawn map without changing the cave or advancing its simulation, including save/load',()=>{
+    const e=fixture(13,[17,15,25]);
+    e.setVerb('look');e.selectInventoryItem(17);expect(e.state.flags.inspectMap).not.toBe(true);
+    e.selectInventoryItem(25);e.selectInventoryItem(17);e.advance(2);
+    const position={...e.state.actor},tick=e.state.tick;
+    e.setVerb('look');e.selectInventoryItem(17);expect(e.state.flags.inspectMap).toBe(true);
+    e.advance(100);expect(e.state.tick).toBe(tick);expect(e.state.actor).toEqual(position);expect(e.state.roomId).toBe(13);
+    const resumed=new GameEngine(deserializeSave(serializeSave(e.state)));resumed.chooseSceneAction('close-map');resumed.advance(1);expect(resumed.state.tick).toBe(tick+1);
+    resumed.state.variables[194]=2;resumed.setVerb('look');resumed.selectInventoryItem(15);
+    expect(resumed.state.flags.inspectMapBill).toBe(true);expect(resumed.state.flags.inspectMapMars).toBe(true);
+  });
+  it('routes oven controls and overlapping bin contents through coordinate targeting',()=>{
+    const e=fixture(11,[22]);e.state.flags.stewardessCleaning=true;
+    function click(x:number,y:number,verb:VerbId,item?:number) {
+      e.setVerb(verb);if(item!==undefined)e.selectInventoryItem(item);
+      const target=hitTestRoomObject(getRoom(11),e.state.objectOwners,e.state.objectStates,{x,y},e.state.activeVerb);
+      expect(target?.object_id).toBe(260);
+      e.handleClick({x,y},target);
+      for(let n=0;e.state.pendingInteraction&&n<5000;n++)e.advance(1);
+      e.advance(2);expect(e.state.scriptDiagnostic).toBeUndefined();
+    }
+    click(772,72,'open');expect(e.state.objectStates[260]!&8).toBe(8);
+    click(752,74,'use',22);expect(e.state.objectOwners[22]).toBe(14);
+    click(772,72,'turnOn');e.advance(601);expect(e.state.flags.stewardessAtOven).toBe(true);
+    const bin=hitTestRoomObject(getRoom(11),e.state.objectOwners,e.state.objectStates,{x:160,y:40},'open');
+    expect(bin?.object_id).toBe(249);
+  });
+  it('restocks paper on the next flight and allows retrying the distraction after cooking the only egg',()=>{
+    const e=fixture(8,[18,22]);fly(e,144);
+    act(e,47,'pickup');act(e,242,'use',47);act(e,242,'turnOn');e.advance(601);act(e,245,'push');
+    act(e,260,'open');act(e,260,'use',22);act(e,260,'turnOn',undefined,0);
+    e.chooseSceneAction('land');e.advance(2);expect(e.state.roomId).toBe(11);
+    e.advance(601);e.chooseSceneAction('land');e.advance(2);expect(e.state.logicalRoomId).toBe(144);
+    const resumed=new GameEngine(deserializeSave(serializeSave(e.state)));
+    fly(resumed,145);expect(resumed.state.roomId).toBe(11);
+    expect(resumed.state.objectOwners[47]).toBe(15);
+    act(resumed,47,'pickup');act(resumed,242,'use',47);act(resumed,242,'turnOn');resumed.advance(601);act(resumed,245,'push');
+    act(resumed,260,'turnOn');act(resumed,252,'open');act(resumed,50,'pickup');
+    expect(resumed.state.inventory).toContain(50);
+  });
+  it('supports source class-2 digging tools and bends the knife only after successful digging',()=>{
+    for(const tool of [26,35,38,44,52]) {
+      const e=fixture(12,[tool,51]);
+      act(e,267,'use',tool);expect(e.state.objectStates[267]!&8).toBe(0);
+      act(e,268,'use',51);act(e,267,'use',tool);expect(e.state.objectStates[267]!&8).toBe(8);
+      if(tool===26)expect(e.state.objectStates[26]!&4).toBe(4);
+      act(e,267,'walk');expect(e.state.roomId).toBe(13);
+    }
+    const e=fixture(12,[26,51]);e.state.objectStates[26]!|=4;
+    act(e,268,'use',51);act(e,267,'use',26);expect(e.state.objectStates[267]!&8).toBe(0);
+  });
   it('issues/replaces tickets without double charging, requires cash and retains logical airport on save',()=>{
     const e=fixture(8,[18]);const balance=e.state.variables[62]!;
     act(e,190,'walk');expect(e.state.roomId).toBe(8);

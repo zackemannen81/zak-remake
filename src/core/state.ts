@@ -41,6 +41,14 @@ export function createInitialState(room: RoomData, options: InitialStateOptions 
     nextEventSequence: 0,
   };
 
+  if(room.id===1) {
+    // SCv2_0001 picks up 82 before the skippable boss sequence (SCv2_0127).
+    state.inventory.push(82);state.objectOwners[82]=1;state.objectStates[82]=11;
+    state.objectNames={'82':'ticket to Seattle'};
+    state.flight={origin:145,destination:144,fare:260,boarded:false};
+    state.variables[79]=662;state.variables[155]=145;state.variables[82]=260;
+  }
+
   if (startsScript108Intro) {
     // SCv2_0108: delay(60), then printEgo's extracted line; the next 60 ticks lead into the walk.
     scheduleAction(state, 60, {
