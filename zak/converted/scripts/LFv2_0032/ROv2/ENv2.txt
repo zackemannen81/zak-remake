@@ -1,0 +1,32 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0032/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (2F) if (!getState04(558)) {
+[0009] (46)   Var[154]++;
+[000B] (**) }
+[000B] (6F) if (getState04(508)) {
+[0010] (05)   drawObject(514,9,9);
+[0015] (**) }
+[0015] (6F) if (getState04(509)) {
+[001A] (05)   drawObject(514,54,9);
+[001F] (**) }
+[001F] (6F) if (getState04(510)) {
+[0024] (05)   drawObject(514,99,9);
+[0029] (**) }
+[0029] (1A) Var[66] = 508;
+[002D] (D4) setObjectName(Var[66],"massive door");
+[003C] (CF) if (getState08(Var[66])) {
+[0040] (D4)   setObjectName(Var[66],"doorway");
+[004A] (**) }
+[004A] (46) Var[66]++;
+[004C] (44) unless (Var[66] > 510) goto 002D;
+[0052] (04) if (VAR_EGO <= 4) {
+[0058] (9A)   Var[46] = VAR_EGO;
+[005B] (5A)   Var[46] += 8;
+[005F] (9A)   Var[14] = Var[46];
+[0062] (5A)   Var[14] += 171;
+[0066] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);
+[006A] (93)   ActorOps(VAR_EGO,[Sound(9)]);
+[006E] (**) }
+[006E] (0C) loadSound(9)
+[0071] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+Events:
+   1 - 0022
+   2 - 002A
+   9 - 002A
+   A - 0022
+  FD - 0032
+[0022] (19) doSentence(1,368,0,0);
+[0029] (00) stopObjectCode();
+[002A] (19) doSentence(2,368,0,0);
+[0031] (00) stopObjectCode();
+[0032] (1E) walkActorTo(8,10,60);
+[0036] (3B) waitForActor(8);
+[0038] (11) animateActor(8,244);
+[003B] (00) stopObjectCode();
+END

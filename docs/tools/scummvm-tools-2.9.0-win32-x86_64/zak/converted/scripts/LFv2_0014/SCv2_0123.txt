@@ -1,0 +1,16 @@
+# Decompiled with descumm -2
+# Source: LFv2_0014\SCv2_0123
+
+[0000] (9A) Var[117] = Var[234];
+[0003] (11) animateActor(1,249);
+[0006] (80) breakHere();
+[0007] (11) animateActor(1,251);
+[000A] (80) breakHere();
+[000B] (11) animateActor(1,248);
+[000E] (80) breakHere();
+[000F] (11) animateActor(1,250);
+[0012] (80) breakHere();
+[0013] (46) Var[117]++;
+[0015] (18) goto 0003;
+[0018] (A0) stopObjectCode();
+END

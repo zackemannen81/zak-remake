@@ -1,0 +1,40 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[51] = VAR_ACTIVE_OBJECT1;
+[0016] (9A) Var[50] = Var[235];
+[0019] (28) unless (!Var[49]) goto 0027;
+[001D] (5B) setBitVar(1570,0,Var[234]);
+[0022] (5B) setBitVar(1571,0,Var[234]);
+[0027] (85) drawObject(Var[51],255,255);
+[002B] (2E) delay(36);
+[002F] (C7) clearState08(Var[51]);
+[0031] (9A) Var[47] = Var[235];
+[0034] (19) doSentence(253,229,0,1);
+[003B] (9A) Var[14] = Var[49];
+[003E] (5A) Var[14] += 113;
+[0042] (9A) Var[66] = Var[14];
+[0045] (88) unless (Var[66] != Var[51]) goto 004F;
+[004A] (5B) setBitVar(1570,0,Var[235]);
+[004F] (46) Var[49]++;
+[0051] (DA) Var[66] += Var[49];
+[0054] (44) unless (Var[66] > 235) goto 0062;
+[005A] (3A) Var[66] -= 235;
+[005E] (5A) Var[66] += 229;
+[0062] (88) unless (Var[66] != Var[51]) goto 006C;
+[0067] (5B) setBitVar(1571,0,Var[235]);
+[006C] (48) unless (Var[49] == 4) goto 00BF;
+[0072] (19) doSentence(254,229,0,1);
+[0079] (31) VAR_RESULT = getBitVar(1571,0);
+[007E] (28) unless (!VAR_RESULT) goto 0085;
+[0082] (18) goto 008E;
+[0085] (31) VAR_RESULT = getBitVar(1570,0);
+[008A] (28) unless (!VAR_RESULT) goto 0093;
+[008E] (42) startScript(64);
+[0090] (18) goto 00BF;
+[0093] (9A) Var[47] = Var[234];
+[0096] (19) doSentence(253,229,0,1);
+[009D] (2E) delay(60);
+[00A1] (D8) printEgo("I must have played the wrong tune.");
+[00BF] (9A) Var[50] = Var[234];
+[00C2] (00) stopObjectCode();
+END

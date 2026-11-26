@@ -1,0 +1,26 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0018/ROv2/OCv2_0369
+Events:
+   C - 0022
+  FD - 00A0
+[0022] (48) if (VAR_EGO == 1) {
+[0028] (D8)   printEgo("I can't read the words, but there's a\x01photo of a meteor on it!");
+[005C] (18) } else {
+[005F] (D8)   printEgo("WANTED: For gobs of terrible things,\x01one murderous purple slimy meteor.");
+[009F] (**) }
+[009F] (00) stopObjectCode();
+[00A0] (9A) Var[46] = Var[234];
+[00A3] (1E) walkActorTo(8,2,54);
+[00A7] (3B) waitForActor(8);
+[00A9] (11) animateActor(8,244);
+[00AC] (80) breakHere();
+[00AD] (13) ActorOps(8,[Costume(0)]);
+[00B1] (2E) delay(120);
+[00B5] (1A) Var[50] = 59;
+[00B9] (19) doSentence(253,365,0,1);
+[00C0] (11) animateActor(8,249);
+[00C3] (13) ActorOps(8,[Costume(26)]);
+[00C7] (13) ActorOps(8,[Color(9, 1)]);
+[00CC] (13) ActorOps(8,[Color(3, 0)]);
+[00D1] (46) Var[46]++;
+[00D3] (00) stopObjectCode();
+END

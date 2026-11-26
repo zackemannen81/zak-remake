@@ -1,0 +1,31 @@
+Events:
+   9 - 001C
+   A - 001C
+   B - 001C
+[001C] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0033;
+[0020] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0022] (1C) startSound(78);
+[0024] (47) clearState08(422);
+[0027] (57) setState02(422);
+[002A] (30) setBoxFlags(1,0);
+[002D] (30) setBoxFlags(3,128);
+[0030] (18) goto 008D;
+[0033] (1A) Var[49] = 2;
+[0037] (48) unless (VAR_EGO == 2) goto 0041;
+[003D] (1A) Var[49] = 1;
+[0041] (83) VAR_RESULT = getActorRoom(Var[49]);
+[0044] (C8) unless (VAR_RESULT == VAR_ROOM) goto 007D;
+[0049] (FB) VAR_RESULT = getActorWalkBox(Var[49]);
+[004C] (48) unless (VAR_RESULT == 1) goto 007D;
+[0052] (9E) walkActorTo(Var[49],22,60);
+[0056] (94) print(Var[49],"Not with me standing there you don't!");
+[0078] (BB) waitForActor(Var[49]);
+[007A] (91) animateActor(Var[49],244);
+[007D] (87) setState08(VAR_ACTIVE_OBJECT1);
+[007F] (1C) startSound(78);
+[0081] (07) setState08(422);
+[0084] (17) clearState02(422);
+[0087] (30) setBoxFlags(1,64);
+[008A] (30) setBoxFlags(3,1);
+[008D] (00) stopObjectCode();
+END

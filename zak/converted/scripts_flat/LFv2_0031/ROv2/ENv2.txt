@@ -1,0 +1,31 @@
+[0000] (70) lights(11,0,0);
+[0004] (D3) ActorOps(VAR_EGO,[Sound(Var[234])]);
+[0008] (7A) VerbOps(New-13(13,19,2,0,"Swim to@@"));
+[0018] (60) cursorCommand(0, 0);
+[001B] (13) ActorOps(5,[Costume(13)]);
+[001F] (0C) loadCostume(12)
+[0022] (0C) lockCostume(12)
+[0025] (10) VAR_RESULT = getObjectOwner(77);
+[0029] (C8) unless (VAR_RESULT == VAR_EGO) goto 0036;
+[002E] (29) setOwnerOf(77,0);
+[0032] (29) setOwnerOf(77,15);
+[0036] (6F) unless (getState04(504)) goto 0042;
+[003B] (19) doSentence(250,504,0,1);
+[0042] (68) VAR_RESULT = isScriptRunning(50);
+[0045] (28) unless (!VAR_RESULT) goto 0080;
+[0049] (C4) unless (Var[171] > Var[234]) goto 006E;
+[004E] (78) unless (Var[171] < 4) goto 006B;
+[0054] (9A) Var[47] = Var[234];
+[0057] (5F) unless (!getState02(504)) goto 0060;
+[005C] (1A) Var[47] = 30;
+[0060] (19) doSentence(250,498,0,1);
+[0067] (13) ActorOps(5,[Costume(12)]);
+[006B] (18) goto 0075;
+[006E] (19) doSentence(250,499,0,1);
+[0075] (1A) Var[46] = 12;
+[0079] (19) doSentence(250,497,0,1);
+[0080] (3D) setActorElevation(7,10);
+[0083] (53) ActorOps(7,[Sound(Var[234])]);
+[0087] (19) doSentence(253,506,0,1);
+[008E] (00) stopObjectCode();
+END

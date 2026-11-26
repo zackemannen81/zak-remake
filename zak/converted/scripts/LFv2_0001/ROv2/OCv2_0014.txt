@@ -1,0 +1,37 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0014
+Events:
+   3 - 00A0
+   6 - 003B
+   7 - 00A0
+   B - 0035
+   E - 002D
+[002D] (19) doSentence(253,98,0,1);
+[0034] (00) stopObjectCode();
+[0035] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[003A] (00) stopObjectCode();
+[003B] (08) if (VAR_EGO != 1) {
+[0041] (D8)   printEgo("Forget it!");
+[004C] (C8) } else if (Var[138] == Var[234]) {
+[0054] (D8)   printEgo("I have to put Sushi somewhere first.");
+[0074] (18) } else {
+[0077] (48)   if (Var[167] == 48) {
+[007D] (D8)     printEgo("Gotta remove my hat.");
+[0090] (**)   }
+[0090] (1A)   Var[167] = 56;
+[0094] (6F)   if (getState04(14)) {
+[0099] (1A)     Var[167] = 64;
+[009D] (**)   }
+[009D] (42)   startScript(150);
+[009F] (**) }
+[009F] (00) stopObjectCode();
+[00A0] (48) if (Var[167] == 64) {
+[00A6] (18) } else {
+[00A9] (48)   unless (Var[167] == 56) goto 00B5;
+[00AF] (**) }
+[00AF] (1A) Var[167] = 52;
+[00B3] (42) startScript(150);
+[00B5] (48) if (VAR_ACTIVE_VERB == 3) {
+[00BB] (42)   startScript(20);
+[00BD] (**) }
+[00BD] (00) stopObjectCode();
+END

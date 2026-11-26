@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ui_select",
+    "file": "zak/converted/poc/audio/sfx/ui_select.wav",
+    "status": "proposed POC effect; no original sound-ID mapping",
+    "sha256": "87fb05b3261c2bea72a2fab2f0d594cb491149cbc4fd1234a9b34e7352b94264",
+    "rate": 44100,
+    "frames": 3969
+  },
+  {
+    "id": "drawer_click",
+    "file": "zak/converted/poc/audio/sfx/drawer_click.wav",
+    "status": "proposed POC effect; no original sound-ID mapping",
+    "sha256": "389406f88cb458d005526f954a2a0931bb59232bb9ce674ac865e4d04ab946eb",
+    "rate": 44100,
+    "frames": 7056
+  },
+  {
+    "id": "switch_click",
+    "file": "zak/converted/poc/audio/sfx/switch_click.wav",
+    "status": "proposed POC effect; no original sound-ID mapping",
+    "sha256": "2590b1775a9a48dcd18dce26c16254565c2affc995b8b6db450d5e4940171bb3",
+    "rate": 44100,
+    "frames": 3087
+  }
+]

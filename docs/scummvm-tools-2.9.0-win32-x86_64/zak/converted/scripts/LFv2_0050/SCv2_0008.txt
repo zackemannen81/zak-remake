@@ -1,0 +1,42 @@
+# Decompiled with descumm -2
+# Source: LFv2_0050\SCv2_0008
+
+[0000] (80) breakHere();
+[0001] (9A) Var[119] = Var[117];
+[0004] (48) if (Var[117] == 0) {
+[000A] (14)   print(255,"           The game was saved.");
+[0023] (**) }
+[0023] (48) if (Var[117] == 2) {
+[0029] (14)   print(255,"         The game was NOT saved.");
+[0044] (**) }
+[0044] (48) if (Var[117] == 5) {
+[004A] (14)   print(255,"        The game was NOT loaded.");
+[0065] (**) }
+[0065] (48) if (Var[117] == 8) {
+[006B] (14)   print(255,"  There are no saved games on the disk.");
+[008D] (**) }
+[008D] (48) if (Var[117] == 4) {
+[0093] (A8)   if (Var[243]) {
+[0097] (04)     if (Var[243] <= 2) {
+[009D] (14)       print(255," Put a save-load game disk in Drive \x02");
+[00BE] (C8)       if (Var[243] == Var[235]) {
+[00C3] (14)         print(255,"A.");
+[00C8] (**)       }
+[00C8] (48)       if (Var[243] == 2) {
+[00CE] (14)         print(255,"B.");
+[00D3] (**)       }
+[00D3] (18)       goto 00D9;
+[00D6] (**)     }
+[00D6] (**)   }
+[00D6] (14)   print(255,"");
+[00D9] (**) }
+[00D9] (9A) Var[120] = Var[235];
+[00DC] (2E) delay(10);
+[00E0] (88) if (Var[119] != Var[117]) {
+[00E5] (18)   goto 0001;
+[00E8] (**) }
+[00E8] (46) Var[120]++;
+[00EA] (44) unless (Var[120] > 35) goto 00DC;
+[00F0] (18) goto 0004;
+[00F3] (A0) stopObjectCode();
+END

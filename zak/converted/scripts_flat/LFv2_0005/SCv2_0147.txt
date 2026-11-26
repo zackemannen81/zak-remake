@@ -1,0 +1,8 @@
+[0000] (2E) delay(108000);
+[0004] (2E) delay(300);
+[0008] (03) VAR_RESULT = getActorRoom(1);
+[000B] (48) unless (VAR_RESULT == 5) goto 0014;
+[0011] (18) goto 0004;
+[0014] (4A) chainScript(148);
+[0016] (A0) stopObjectCode();
+END

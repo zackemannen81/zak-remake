@@ -1,0 +1,20 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (66) Var[45] = getClosestObjActor(54);
+[0018] (B4) VAR_RESULT = getDist(Var[45],54);
+[001D] (78) unless (VAR_RESULT < 6) goto 002D;
+[0023] (19) doSentence(250,285,0,1);
+[002A] (18) goto 004B;
+[002D] (5F) unless (!getState02(285)) goto 004B;
+[0032] (68) VAR_RESULT = isScriptRunning(67);
+[0035] (28) unless (!VAR_RESULT) goto 004B;
+[0039] (57) setState02(285);
+[003C] (57) setState02(286);
+[003F] (57) setState02(287);
+[0042] (47) clearState08(285);
+[0045] (47) clearState08(286);
+[0048] (47) clearState08(287);
+[004B] (18) goto 0013;
+[004E] (00) stopObjectCode();
+END

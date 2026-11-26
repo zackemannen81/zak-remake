@@ -1,0 +1,8 @@
+Events:
+  FD - 0013
+[0013] (1C) startSound(34);
+[0015] (50) pickupObject(17);
+[0018] (2E) delay(30);
+[001C] (D8) printEgo("Whoops!");
+[0025] (00) stopObjectCode();
+END

@@ -1,0 +1,13 @@
+Events:
+  FD - 0013
+[0013] (05) drawObject(606,255,255);
+[0018] (80) breakHere();
+[0019] (05) drawObject(607,255,255);
+[001E] (80) breakHere();
+[001F] (05) drawObject(608,255,255);
+[0024] (80) breakHere();
+[0025] (05) drawObject(607,255,255);
+[002A] (80) breakHere();
+[002B] (18) goto 0013;
+[002E] (00) stopObjectCode();
+END

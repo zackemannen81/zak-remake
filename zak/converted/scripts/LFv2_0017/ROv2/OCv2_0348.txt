@@ -1,0 +1,10 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/OCv2_0348
+Events:
+   C - 0017
+[0017] (48) if (VAR_EGO == 1) {
+[001D] (D8)   printEgo("I think it's the name of a cigarette.");
+[003D] (18) } else {
+[0040] (D8)   printEgo("It obviously says `JAIL.`");
+[0058] (**) }
+[0058] (00) stopObjectCode();
+END

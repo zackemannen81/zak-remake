@@ -1,0 +1,18 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[203] = Var[235];
+[0016] (80) breakHere();
+[0017] (48) unless (VAR_ACTIVE_VERB == 3) goto 0086;
+[001D] (48) unless (VAR_ACTIVE_OBJECT2 == 11) goto 0086;
+[0023] (AE) waitForMessage();
+[0024] (48) unless (VAR_ACTIVE_OBJECT1 == 77) goto 0048;
+[002A] (14) print(11,"You'd better hold on to that!");
+[0045] (18) goto 0083;
+[0048] (48) unless (VAR_ACTIVE_OBJECT1 == 46) goto 0067;
+[004E] (14) print(11,"Sure! I'll take a swig!");
+[0064] (18) goto 0083;
+[0067] (14) print(11,"Not now! I'm flyin' the plane!");
+[0083] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[0086] (18) goto 0016;
+[0089] (00) stopObjectCode();
+END

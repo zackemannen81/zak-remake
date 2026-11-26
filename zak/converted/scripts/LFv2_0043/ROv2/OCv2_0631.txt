@@ -1,0 +1,28 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0043/ROv2/OCv2_0631
+Events:
+   B - 001D
+   D - 001D
+  FD - 003C
+[001D] (48) if (VAR_EGO == 1) {
+[0023] (31)   VAR_RESULT = getBitVar(1440,1);
+[0028] (28)   if (!VAR_RESULT) {
+[002C] (19)     doSentence(253,631,0,1);
+[0033] (**)   }
+[0033] (18) } else {
+[0036] (A4)   loadRoomWithEgo(Var[45],138,255,255);
+[003B] (**) }
+[003B] (00) stopObjectCode();
+[003C] (5B) setBitVar(1440,1,Var[235]);
+[0041] (3D) setActorElevation(1,4);
+[0044] (80) breakHere();
+[0045] (3D) setActorElevation(1,8);
+[0048] (80) breakHere();
+[0049] (3D) setActorElevation(1,4);
+[004C] (80) breakHere();
+[004D] (3D) setActorElevation(1,0);
+[0050] (1C) startSound(6);
+[0052] (D8) printEgo("I see a valley and a river far below.");
+[0071] (80) breakHere();
+[0072] (5B) setBitVar(1440,1,Var[234]);
+[0077] (00) stopObjectCode();
+END

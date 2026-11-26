@@ -1,0 +1,11 @@
+Events:
+   1 - 0022
+   2 - 0025
+   9 - 0025
+   A - 0022
+   E - 0022
+[0022] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0024] (00) stopObjectCode();
+[0025] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0027] (00) stopObjectCode();
+END

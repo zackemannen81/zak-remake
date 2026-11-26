@@ -1,0 +1,43 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0107
+
+[0000] (07) setState08(89);
+[0003] (A8) if (Var[240]) {
+[0007] (78)   if (Var[240] < 6) {
+[000D] (13)     ActorOps(0,[TalkColor(5)]);
+[0011] (14)     print(255,"Zachary darling, this is your mother.\x01Why don't you ever call me?");
+[004B] (AE)     waitForMessage();
+[004C] (**)   }
+[004C] (**) }
+[004C] (48) if (Var[240] == 0) {
+[0052] (13)   ActorOps(0,[TalkColor(14)]);
+[0056] (14)   print(255,"This is The Phone Company calling.\x01Your telephone has been disconnected.\x03Please stop by our office to settle your\x01bill. See ya.");
+[00C6] (48) } else if (Var[240] == 1) {
+[00CF] (14)   print(255,"Have you seen that girl on TV looking\x01for artifacts?\x03She looks like your type, Zachary, and\x01lives so close to you!\x03Why don't you ever bring home nice girls\x01like her?");
+[015D] (48) } else if (Var[240] == 2) {
+[0166] (14)   print(255,"So, did you see those cute girls on Mars\x01with their darling little spaceship?\x03You're a smart boy, Zachary, why don't\x01YOU build a spaceship?");
+[01DF] (48) } else if (Var[240] == 3) {
+[01E8] (14)   print(255,"I just loved your `Vegetarian Vampire`\x01article! Did you REALLY get to meet one?\x03My good friend Jayne was just telling me\x01about a Golfing Guru in Katmandu!\x03You should do a story about him!");
+[0288] (48) } else if (Var[240] == 4) {
+[0291] (14)   print(255,"My friend Jayne told me that Space\x01Aliens are running The Phone Company!\x03She said they wear big cowboy hats\x01and don't have knees^or was that noses?\x03I know you're doing a story on them.\x01Be careful! They could be DANGEROUS!");
+[034E] (48) } else if (Var[240] == 5) {
+[0357] (14)   print(255,"My friend Jayne's daughter Sally is home\x01from school, and would like to meet you!\x03She's a nice, polite girl, not like that\x01tramp Sandy you brought home last month!");
+[03E3] (48) } else if (Var[240] == 6) {
+[03EC] (13)   ActorOps(0,[TalkColor(7)]);
+[03F0] (14)   print(255,"Zak, this is your boss calling.\x01How's the squirrel story coming?\x03I'd better see some great copy on my\x01desk soon, or you're out of a job!");
+[0464] (48) } else if (Var[240] == 7) {
+[046D] (13)   ActorOps(0,[TalkColor(1)]);
+[0471] (14)   print(255,"This is Ed calling for Sandy. Are we on\x01for the Monster Truck Show tomorrow?\x03I've got the Edsel all polished up and\x01ready to go! I'll pick you up at 7:30.\x03See ya!");
+[04F9] (18)   /* goto 04FC; */
+[04FC] (**) }
+[04FC] (A8) if (Var[240]) {
+[0500] (42)   startScript(134);
+[0502] (78)   if (Var[240] < 6) {
+[0508] (AE)     waitForMessage();
+[0509] (14)     print(255,"Bye dear. Don't forget to call!");
+[0526] (AE)     waitForMessage();
+[0527] (**)   }
+[0527] (**) }
+[0527] (19) doSentence(253,88,0,1);
+[052E] (A0) stopObjectCode();
+END

@@ -1,0 +1,22 @@
+Events:
+   1 - 001B
+   2 - 0023
+  FD - 002B
+[001B] (19) doSentence(253,251,0,1);
+[0022] (00) stopObjectCode();
+[0023] (19) doSentence(253,252,0,1);
+[002A] (00) stopObjectCode();
+[002B] (9A) Var[203] = Var[235];
+[002E] (80) breakHere();
+[002F] (48) unless (VAR_ACTIVE_VERB == 3) goto 0079;
+[0035] (48) unless (VAR_ACTIVE_OBJECT2 == 9) goto 0079;
+[003B] (BB) waitForActor(VAR_EGO);
+[003D] (0F) unless (!getState08(248)) goto 0076;
+[0042] (48) unless (VAR_EGO == 1) goto 0069;
+[0048] (14) print(9,"There's NOTHING I want from you!");
+[0066] (18) goto 0076;
+[0069] (14) print(9,"No, thanks.");
+[0076] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[0079] (18) goto 002E;
+[007C] (00) stopObjectCode();
+END

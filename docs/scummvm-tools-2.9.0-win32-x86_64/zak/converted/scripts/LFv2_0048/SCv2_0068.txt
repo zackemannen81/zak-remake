@@ -1,0 +1,29 @@
+# Decompiled with descumm -2
+# Source: LFv2_0048\SCv2_0068
+
+[0000] (80) breakHere();
+[0001] (9A) Var[149] = VAR_ROOM;
+[0004] (40) cutscene();
+[0005] (1A) Var[122] = -1;
+[0009] (72) loadRoom(48);
+[000B] (08) if (Var[122] != -1) {
+[0011] (9A)   Var[119] = Var[121];
+[0014] (9A)   Var[120] = Var[122];
+[0017] (**) }
+[0017] (1A) Var[118] = 672;
+[001B] (9A) Var[66] = Var[234];
+[001E] (B1) VAR_RESULT = getBitVar(1904,Var[66]);
+[0023] (A8) if (VAR_RESULT) {
+[0027] (87)   setState08(Var[118]);
+[0029] (18) } else {
+[002C] (C7)   clearState08(Var[118]);
+[002E] (**) }
+[002E] (46) Var[118]++;
+[0030] (46) Var[66]++;
+[0032] (44) unless (Var[118] > 695) goto 001E;
+[0038] (58) beginOverride();
+[0039] (18) goto 0040;
+[003C] (2E) delay(600);
+[0040] (C0) endCutscene();
+[0041] (A0) stopObjectCode();
+END

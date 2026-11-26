@@ -1,0 +1,13 @@
+Events:
+   3 - 0033
+   B - 002D
+   E - 0025
+[0025] (19) doSentence(253,607,0,1);
+[002C] (00) stopObjectCode();
+[002D] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0032] (00) stopObjectCode();
+[0033] (48) unless (VAR_ACTIVE_OBJECT2 == 1) goto 003D;
+[0039] (1A) Var[171] = 4;
+[003D] (42) startScript(20);
+[003F] (00) stopObjectCode();
+END

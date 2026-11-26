@@ -1,0 +1,36 @@
+Events:
+   1 - 0020
+   2 - 0048
+   B - 004B
+   C - 00B9
+[0020] (D8) printEgo("It's \x02");
+[0027] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0037;
+[002B] (D8) printEgo("locked.");
+[0034] (18) goto 0047;
+[0037] (D8) printEgo("already opened.");
+[0047] (00) stopObjectCode();
+[0048] (42) startScript(11);
+[004A] (00) stopObjectCode();
+[004B] (48) unless (VAR_ACTIVE_OBJECT2 == 24) goto 005C;
+[0051] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0059;
+[0055] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0057] (1C) startSound(26);
+[0059] (18) goto 00B8;
+[005C] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 00AB;
+[0060] (48) unless (VAR_ACTIVE_OBJECT2 == 30) goto 0097;
+[0066] (28) unless (!Var[160]) goto 0080;
+[006A] (D8) printEgo("It's not filled out.");
+[007D] (18) goto 0094;
+[0080] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0082] (19) doSentence(2,139,0,1);
+[0089] (9A) Var[159] = Var[160];
+[008C] (5A) Var[159] += 10;
+[0090] (29) setOwnerOf(30,0);
+[0094] (18) goto 00A8;
+[0097] (D8) printEgo("I can't mail that!");
+[00A8] (18) goto 00B8;
+[00AB] (D8) printEgo("It's locked.");
+[00B8] (00) stopObjectCode();
+[00B9] (D8) printEgo("Zachary McKracken, 5858 13th Ave.");
+[00D8] (00) stopObjectCode();
+END

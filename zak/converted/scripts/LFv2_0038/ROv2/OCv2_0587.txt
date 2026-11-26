@@ -1,0 +1,14 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0038/ROv2/OCv2_0587
+Events:
+   C - 001C
+  FD - 0051
+[001C] (D8) printEgo("Watsamatta University^\x03^Master of Cranial Diminishment");
+[0050] (00) stopObjectCode();
+[0051] (AE) waitForMessage();
+[0052] (1E) walkActorTo(10,98,46);
+[0056] (3B) waitForActor(10);
+[0058] (11) animateActor(10,246);
+[005B] (80) breakHere();
+[005C] (3D) setActorElevation(10,250);
+[005F] (00) stopObjectCode();
+END

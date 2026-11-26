@@ -1,0 +1,17 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/OCv2_0149
+Events:
+   C - 0019
+  FD - 003B
+[0019] (D8) printEgo("CLOSED\x01For service, push doorbell.");
+[003A] (00) stopObjectCode();
+[003B] (9A) Var[47] = Var[234];
+[003E] (FB) VAR_RESULT = getActorWalkBox(Var[48]);
+[0041] (48) if (VAR_RESULT == 6) {
+[0047] (46)   Var[47]++;
+[0049] (**) }
+[0049] (FB) VAR_RESULT = getActorWalkBox(Var[48]);
+[004C] (48) if (VAR_RESULT == 7) {
+[0052] (46)   Var[47]++;
+[0054] (**) }
+[0054] (00) stopObjectCode();
+END

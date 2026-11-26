@@ -1,0 +1,8 @@
+Events:
+   B - 0019
+[0019] (48) unless (VAR_EGO == 1) goto 0024;
+[001F] (42) startScript(38);
+[0021] (18) goto 0033;
+[0024] (D8) printEgo("I don't have to!");
+[0033] (00) stopObjectCode();
+END

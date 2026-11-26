@@ -1,0 +1,14 @@
+Events:
+   C - 0019
+  FD - 0033
+[0019] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0028;
+[001D] (D8) printEgo("Vacant");
+[0025] (18) goto 0032;
+[0028] (D8) printEgo("Occupied");
+[0032] (00) stopObjectCode();
+[0033] (4F) unless (getState08(246)) goto 003D;
+[0038] (47) clearState08(246);
+[003B] (1C) startSound(11);
+[003D] (30) setBoxFlags(1,64);
+[0040] (00) stopObjectCode();
+END

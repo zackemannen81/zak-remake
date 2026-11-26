@@ -1,0 +1,12 @@
+[0000] (62) stopScript(65);
+[0002] (10) Var[66] = getObjectOwner(81);
+[0006] (A8) unless (Var[66]) goto 0014;
+[000A] (08) unless (Var[66] != 15) goto 0014;
+[0010] (0B) setObjPreposition(81,0);
+[0014] (3C) stopSound(98);
+[0016] (47) clearState08(433);
+[0019] (47) clearState08(434);
+[001C] (47) clearState08(435);
+[001F] (47) clearState08(436);
+[0022] (00) stopObjectCode();
+END

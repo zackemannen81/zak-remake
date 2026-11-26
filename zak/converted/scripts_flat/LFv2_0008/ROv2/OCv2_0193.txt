@@ -1,0 +1,9 @@
+Events:
+   B - 001E
+   C - 001E
+[001E] (80) breakHere();
+[001F] (7C) VAR_RESULT = isSoundRunning(19);
+[0022] (28) unless (!VAR_RESULT) goto 001E;
+[0026] (42) startScript(80);
+[0028] (00) stopObjectCode();
+END

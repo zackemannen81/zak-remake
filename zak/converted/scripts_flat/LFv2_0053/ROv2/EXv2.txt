@@ -1,0 +1,5 @@
+[0000] (9A) Var[154] = Var[234];
+[0003] (30) setBoxFlags(1,0);
+[0006] (30) setBoxFlags(3,0);
+[0009] (00) stopObjectCode();
+END

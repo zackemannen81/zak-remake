@@ -1,0 +1,5 @@
+Events:
+   C - 0017
+[0017] (D8) printEgo("Miami closed for repairs.");
+[002F] (00) stopObjectCode();
+END

@@ -1,0 +1,32 @@
+Events:
+  13 - 001F
+  FD - 0053
+[001F] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,128)) goto 003B;
+[0024] (1A) Var[66] = 150;
+[0028] (14) print(255,"Use it in the \x06\x42.");
+[0038] (18) goto 004B;
+[003B] (14) print(255,"I don't want it!");
+[004B] (19) doSentence(253,148,0,1);
+[0052] (00) stopObjectCode();
+[0053] (80) breakHere();
+[0054] (83) VAR_RESULT = getActorRoom(VAR_EGO);
+[0057] (C8) unless (VAR_RESULT == VAR_ROOM) goto 0053;
+[005C] (4F) unless (getState08(142)) goto 0064;
+[0061] (18) goto 0086;
+[0064] (88) unless (Var[46] != VAR_EGO) goto 0070;
+[0069] (9A) Var[46] = VAR_EGO;
+[006C] (1A) Var[44] = 3;
+[0070] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[0073] (44) unless (VAR_RESULT > 82) goto 0086;
+[0079] (88) unless (Var[44] != Var[234]) goto 0083;
+[007E] (12) panCameraTo(100);
+[0080] (9A) Var[44] = Var[234];
+[0083] (18) goto 0099;
+[0086] (88) unless (Var[44] != Var[235]) goto 0099;
+[008B] (83) VAR_RESULT = getActorRoom(VAR_EGO);
+[008E] (48) unless (VAR_RESULT == 3) goto 0096;
+[0094] (D2) actorFollowCamera(VAR_EGO);
+[0096] (9A) Var[44] = Var[235];
+[0099] (18) goto 0053;
+[009C] (00) stopObjectCode();
+END

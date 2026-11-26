@@ -1,0 +1,5 @@
+Events:
+  FF - 0013
+[0013] (19) doSentence(253,713,0,1);
+[001A] (00) stopObjectCode();
+END

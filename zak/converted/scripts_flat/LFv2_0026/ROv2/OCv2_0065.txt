@@ -1,0 +1,36 @@
+Events:
+   3 - 008E
+   6 - 001F
+   7 - 005E
+   C - 009E
+[001F] (9A) Var[14] = VAR_EGO;
+[0022] (5A) Var[14] += 203;
+[0026] (A8) unless (Var[14]) goto 004F;
+[002A] (9A) Var[14] = VAR_EGO;
+[002D] (5A) Var[14] += 166;
+[0031] (48) unless (Var[14] == 36) goto 004C;
+[0037] (9A) Var[14] = VAR_EGO;
+[003A] (5A) Var[14] += 166;
+[003E] (0A) Var[Var[14]] = 32;
+[0042] (9A) Var[14] = VAR_EGO;
+[0045] (5A) Var[14] += 166;
+[0049] (D1) animateActor(VAR_EGO,Var[14]);
+[004C] (18) goto 005D;
+[004F] (D8) printEgo("I'm out of air!");
+[005D] (00) stopObjectCode();
+[005E] (A8) unless (Var[154]) goto 0078;
+[0062] (D8) printEgo("There's no air here!");
+[0075] (18) goto 008D;
+[0078] (9A) Var[14] = VAR_EGO;
+[007B] (5A) Var[14] += 166;
+[007F] (0A) Var[Var[14]] = 36;
+[0083] (9A) Var[14] = VAR_EGO;
+[0086] (5A) Var[14] += 166;
+[008A] (D1) animateActor(VAR_EGO,Var[14]);
+[008D] (00) stopObjectCode();
+[008E] (D8) printEgo("It only fits me.");
+[009D] (00) stopObjectCode();
+[009E] (9A) Var[66] = Var[206];
+[00A1] (42) startScript(71);
+[00A3] (00) stopObjectCode();
+END

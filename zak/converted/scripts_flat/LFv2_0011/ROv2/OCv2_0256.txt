@@ -1,0 +1,23 @@
+Events:
+   1 - 001D
+   2 - 0043
+   D - 0046
+  FD - 0055
+[001D] (08) unless (VAR_EGO != 9) goto 0040;
+[0023] (D8) printEgo("I'd depressurize the plane!");
+[003D] (18) goto 0042;
+[0040] (42) startScript(10);
+[0042] (00) stopObjectCode();
+[0043] (42) startScript(11);
+[0045] (00) stopObjectCode();
+[0046] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0054;
+[004A] (9A) Var[52] = VAR_EGO;
+[004D] (42) startScript(120);
+[004F] (E4) loadRoomWithEgo(Var[45],Var[44],8,60);
+[0054] (00) stopObjectCode();
+[0055] (4F) unless (getState08(260)) goto 005F;
+[005A] (1C) startSound(11);
+[005C] (47) clearState08(260);
+[005F] (57) setState02(241);
+[0062] (00) stopObjectCode();
+END

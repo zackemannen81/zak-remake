@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0033/ROv2/OCv2_0535
+Events:
+   E - 0019
+[0019] (1A) Var[60] = 11;
+[001D] (42) startScript(83);
+[001F] (19) doSentence(253,537,0,1);
+[0026] (2F) if (!getState04(70)) {
+[002B] (E7)   clearState04(Var[54]);
+[002D] (**) }
+[002D] (00) stopObjectCode();
+END

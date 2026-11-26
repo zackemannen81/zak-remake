@@ -1,0 +1,24 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0027/ROv2/OCv2_0451
+Events:
+   B - 005B
+   E - 0023
+  FD - 0083
+[0023] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0027] (D8)   printEgo("It's too much to carry.");
+[003C] (18) } else {
+[003F] (D8)   printEgo("Sure, I'll put it in my pocket.");
+[005A] (**) }
+[005A] (00) stopObjectCode();
+[005B] (48) if (VAR_ACTIVE_OBJECT2 == 68) {
+[0061] (8F)   if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0065] (42)     startScript(129);
+[0067] (18)   } else {
+[006A] (D8)     printEgo("They look fine to me.");
+[007D] (**)   }
+[007D] (18) } else {
+[0080] (42)   startScript(3);
+[0082] (**) }
+[0082] (00) stopObjectCode();
+[0083] (54) setObjectName(451,"solar panels");
+[0093] (00) stopObjectCode();
+END

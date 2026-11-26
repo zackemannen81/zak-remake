@@ -1,0 +1,31 @@
+Events:
+   B - 001E
+[001E] (48) unless (VAR_ACTIVE_OBJECT2 == 59) goto 0031;
+[0024] (29) setOwnerOf(59,0);
+[0028] (47) clearState08(647);
+[002B] (17) clearState02(647);
+[002E] (18) goto 008F;
+[0031] (48) unless (VAR_ACTIVE_OBJECT2 == 33) goto 0055;
+[0037] (29) setOwnerOf(33,14);
+[003B] (4F) unless (getState08(646)) goto 004C;
+[0040] (47) clearState08(646);
+[0043] (57) setState02(646);
+[0046] (18) goto 006A;
+[0049] (18) goto 0052;
+[004C] (07) setState08(645);
+[004F] (17) clearState02(645);
+[0052] (18) goto 008F;
+[0055] (48) unless (VAR_ACTIVE_OBJECT2 == 56) goto 007C;
+[005B] (29) setOwnerOf(56,14);
+[005F] (4F) unless (getState08(645)) goto 0073;
+[0064] (47) clearState08(645);
+[0067] (57) setState02(645);
+[006A] (07) setState08(653);
+[006D] (17) clearState02(653);
+[0070] (18) goto 0079;
+[0073] (07) setState08(646);
+[0076] (17) clearState02(646);
+[0079] (18) goto 008F;
+[007C] (D8) printEgo("Nope, doesn't work.");
+[008F] (00) stopObjectCode();
+END

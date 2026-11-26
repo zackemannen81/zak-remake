@@ -1,0 +1,21 @@
+[0000] (70) lights(11,0,0);
+[0004] (4F) unless (getState08(423)) goto 0012;
+[0009] (30) setBoxFlags(1,64);
+[000C] (30) setBoxFlags(3,1);
+[000F] (18) goto 0018;
+[0012] (30) setBoxFlags(1,0);
+[0015] (30) setBoxFlags(3,128);
+[0018] (68) VAR_RESULT = isScriptRunning(149);
+[001B] (28) unless (!VAR_RESULT) goto 0044;
+[001F] (42) startScript(65);
+[0021] (10) Var[66] = getObjectOwner(81);
+[0025] (A8) unless (Var[66]) goto 0036;
+[0029] (08) unless (Var[66] != 15) goto 0036;
+[002F] (19) doSentence(253,429,0,1);
+[0036] (6F) unless (getState04(433)) goto 0044;
+[003B] (19) doSentence(250,433,0,1);
+[0042] (1C) startSound(98);
+[0044] (0F) unless (!getState08(427)) goto 0050;
+[0049] (19) doSentence(250,427,0,1);
+[0050] (00) stopObjectCode();
+END

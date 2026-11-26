@@ -1,0 +1,26 @@
+Events:
+   9 - 003F
+   A - 003F
+   B - 0029
+   E - 003F
+  FD - 0055
+[0029] (48) unless (VAR_ACTIVE_OBJECT2 == 80) goto 003C;
+[002F] (29) setOwnerOf(80,0);
+[0033] (47) clearState08(428);
+[0036] (17) clearState02(428);
+[0039] (18) goto 003E;
+[003C] (42) startScript(3);
+[003E] (00) stopObjectCode();
+[003F] (D8) printEgo("It's stuck on the base.");
+[0054] (00) stopObjectCode();
+[0055] (05) drawObject(438,255,255);
+[005A] (2E) delay(6);
+[005E] (05) drawObject(439,255,255);
+[0063] (2E) delay(6);
+[0067] (05) drawObject(440,255,255);
+[006C] (2E) delay(6);
+[0070] (05) drawObject(439,255,255);
+[0075] (2E) delay(6);
+[0079] (18) goto 0055;
+[007C] (00) stopObjectCode();
+END

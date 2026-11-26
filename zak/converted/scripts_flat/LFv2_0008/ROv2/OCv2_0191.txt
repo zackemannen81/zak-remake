@@ -1,0 +1,19 @@
+Events:
+   1 - 0046
+   D - 0019
+[0019] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0042;
+[001D] (47) clearState08(191);
+[0020] (48) unless (VAR_ROOM == 142) goto 0031;
+[0026] (1A) Var[58] = 572;
+[002A] (1A) Var[59] = 191;
+[002E] (9A) Var[255] = VAR_ROOM;
+[0031] (48) unless (VAR_ROOM == 146) goto 003A;
+[0037] (0C) loadCostume(9)
+[003A] (67) clearState04(219);
+[003D] (E4) loadRoomWithEgo(Var[47],Var[48],255,255);
+[0042] (18) goto 0046;
+[0045] (00) stopObjectCode();
+[0046] (48) unless (VAR_ROOM == 143) goto 0062;
+[004C] (D8) printEgo("Looks like it's broken.");
+[0062] (00) stopObjectCode();
+END

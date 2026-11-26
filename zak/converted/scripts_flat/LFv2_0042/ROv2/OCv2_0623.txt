@@ -1,0 +1,8 @@
+Events:
+   E - 001F
+[001F] (48) unless (VAR_EGO == 6) goto 0038;
+[0025] (D8) printEgo("Yuck! Bird food!");
+[0035] (18) goto 0051;
+[0038] (D8) printEgo("I'll leave it for the birds.");
+[0051] (00) stopObjectCode();
+END

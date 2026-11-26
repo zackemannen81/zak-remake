@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/OCv2_0140
+Events:
+   D - 0027
+  FD - 003F
+[0027] (D8) printEgo("That's a bit too far!");
+[003A] (9E) walkActorTo(VAR_EGO,92,48);
+[003E] (00) stopObjectCode();
+[003F] (14) print(255,"Hey! I'm a busy guy! Just put your\x01CashCard in the card reader.");
+[0076] (19) doSentence(253,148,0,1);
+[007D] (00) stopObjectCode();
+END

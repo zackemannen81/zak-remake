@@ -1,0 +1,7 @@
+[0000] (93) ActorOps(VAR_EGO,[Sound(6)]);
+[0004] (9A) Var[255] = Var[234];
+[0007] (30) setBoxFlags(0,0);
+[000A] (30) setBoxFlags(1,0);
+[000D] (30) setBoxFlags(2,0);
+[0010] (00) stopObjectCode();
+END

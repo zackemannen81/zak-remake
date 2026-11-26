@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0013/ROv2/OCv2_0284
+Events:
+  FD - 0013
+[0013] (19) doSentence(253,282,0,1);
+[001A] (2E) delay(60);
+[001E] (B6) walkActorToObject(VAR_EGO,273);
+[0022] (D8) printEgo("Oh no! The fire has gone out!");
+[003B] (00) stopObjectCode();
+END

@@ -1,0 +1,40 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0007/ROv2/OCv2_0189
+Events:
+   C - 00AA
+  11 - 001C
+  FD - 00D5
+[001C] (48) if (VAR_EGO == 1) {
+[0022] (78)   if (Var[232] < 5) {
+[0028] (10)     VAR_RESULT = getObjectOwner(42);
+[002C] (48)     if (VAR_RESULT == 15) {
+[0032] (1A)       VAR_ACTIVE_OBJECT1 = 42;
+[0036] (1A)       Var[47] = 10;
+[003A] (42)       startScript(24);
+[003C] (18)     } else {
+[003F] (14)       print(10,"Dontcha know the law?\x01Only one Lotto ticket per person.");
+[0071] (**)     }
+[0071] (18)   } else {
+[0074] (14)     print(10,"I told ya, NO MORE LOTTO TICKETS!");
+[0092] (**)   }
+[0092] (18) } else {
+[0095] (11)   animateActor(2,246);
+[0098] (3B)   waitForActor(2);
+[009A] (D8)   printEgo("I don't gamble.");
+[00A9] (**) }
+[00A9] (00) stopObjectCode();
+[00AA] (D8) printEgo("PLAY LOTTO\x01`If you don't play, you can't lose!`");
+[00D4] (00) stopObjectCode();
+[00D5] (5B) setBitVar(1461,0,Var[234]);
+[00DA] (1E) walkActorTo(1,23,60);
+[00DE] (3B) waitForActor(1);
+[00E0] (D8) printEgo("Gee, I hope I win!");
+[00F0] (AE) waitForMessage();
+[00F1] (2F) if (!getState04(189)) {
+[00F6] (27)   setState04(189);
+[00F9] (14)   print(10,"Come back after the numbers are picked\x01and I'll tell ya if yer a winner.");
+[0137] (11)   animateActor(1,247);
+[013A] (AE)   waitForMessage();
+[013B] (D8)   printEgo("Thanks!");
+[0144] (**) }
+[0144] (00) stopObjectCode();
+END

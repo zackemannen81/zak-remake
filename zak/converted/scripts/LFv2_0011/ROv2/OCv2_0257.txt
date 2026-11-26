@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0257
+Events:
+   1 - 0021
+   2 - 0021
+   A - 0021
+   E - 0021
+[0021] (D8) printEgo("I'd better not, the owner might get mad.");
+[0044] (00) stopObjectCode();
+END

@@ -1,0 +1,6 @@
+Events:
+   D - 001A
+[001A] (5B) setBitVar(1572,0,Var[235]);
+[001F] (24) loadRoomWithEgo(191,141,255,255);
+[0025] (00) stopObjectCode();
+END

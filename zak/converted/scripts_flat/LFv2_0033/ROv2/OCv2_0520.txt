@@ -1,0 +1,63 @@
+Events:
+   4 - 002B
+   5 - 002B
+   9 - 002B
+   A - 002B
+   B - 002B
+   E - 002B
+[002B] (60) cursorCommand(15, 2);
+[002E] (1A) Var[66] = 1;
+[0032] (83) VAR_RESULT = getActorRoom(Var[66]);
+[0035] (C8) unless (VAR_RESULT == VAR_ROOM) goto 004A;
+[003A] (FB) VAR_RESULT = getActorWalkBox(Var[66]);
+[003D] (48) unless (VAR_RESULT == 7) goto 004A;
+[0043] (C3) Var[67] = getActorX(Var[66]);
+[0046] (DE) walkActorTo(Var[66],Var[67],52);
+[004A] (46) Var[66]++;
+[004C] (44) unless (Var[66] > 4) goto 0032;
+[0052] (1C) startSound(32);
+[0054] (6F) unless (getState04(71)) goto 006E;
+[0059] (62) stopScript(55);
+[005B] (1A) Var[158] = 32;
+[005F] (67) clearState04(71);
+[0062] (54) setObjectName(71,"boom box");
+[006E] (1A) Var[46] = 521;
+[0072] (1A) Var[47] = 526;
+[0076] (0F) unless (!getState08(517)) goto 007F;
+[007B] (85) drawObject(Var[47],255,255);
+[007F] (08) unless (VAR_ROOM != 190) goto 009B;
+[0085] (48) unless (Var[158] == 32) goto 0097;
+[008B] (31) VAR_RESULT = getBitVar(1440,0);
+[0090] (A8) unless (VAR_RESULT) goto 0097;
+[0094] (18) goto 009B;
+[0097] (85) drawObject(Var[46],255,255);
+[009B] (80) breakHere();
+[009C] (46) Var[46]++;
+[009E] (46) Var[47]++;
+[00A0] (44) unless (Var[46] > 524) goto 0076;
+[00A6] (7C) VAR_RESULT = isSoundRunning(32);
+[00A9] (28) unless (!VAR_RESULT) goto 006E;
+[00AD] (47) clearState08(524);
+[00B0] (47) clearState08(529);
+[00B3] (3C) stopSound(32);
+[00B5] (2E) delay(60);
+[00B9] (1C) startSound(48);
+[00BB] (0F) unless (!getState08(517)) goto 00C8;
+[00C0] (57) setState02(525);
+[00C3] (87) setState08(Var[48]);
+[00C5] (18) goto 00CD;
+[00C8] (17) clearState02(525);
+[00CB] (C7) clearState08(Var[48]);
+[00CD] (19) doSentence(253,521,0,1);
+[00D4] (2E) delay(60);
+[00D8] (48) unless (Var[158] == 32) goto 00EC;
+[00DE] (31) VAR_RESULT = getBitVar(1440,0);
+[00E3] (A8) unless (VAR_RESULT) goto 00EC;
+[00E7] (5B) setBitVar(1440,0,Var[234]);
+[00EC] (31) VAR_RESULT = getBitVar(1558,0);
+[00F1] (28) unless (!VAR_RESULT) goto 0134;
+[00F5] (D8) printEgo("Waycool earstuff! Those old aliens\x01sure played herenow noizbop!");
+[012F] (5B) setBitVar(1558,0,Var[235]);
+[0134] (60) cursorCommand(247, 1);
+[0137] (00) stopObjectCode();
+END

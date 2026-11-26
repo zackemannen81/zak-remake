@@ -1,0 +1,20 @@
+[0000] (46) Var[237]++;
+[0002] (44) unless (Var[237] > 14) goto 000C;
+[0008] (1A) Var[237] = 14;
+[000C] (2E) delay(900);
+[0010] (14) print(2,"I'm feeling better now.");
+[0027] (2B) delayVariable(Var[251]);
+[0029] (A8) unless (Var[237]) goto 002F;
+[002D] (C6) Var[237]--;
+[002F] (48) unless (Var[237] == 2) goto 0037;
+[0035] (C6) Var[237]--;
+[0037] (DB) setBitVar(1527,Var[237],Var[234]);
+[003C] (03) VAR_RESULT = getActorRoom(2);
+[003F] (C8) unless (VAR_RESULT == VAR_ROOM) goto 004C;
+[0044] (48) unless (VAR_EGO == 2) goto 004C;
+[004A] (42) startScript(19);
+[004C] (28) unless (!Var[237]) goto 0027;
+[0050] (AE) waitForMessage();
+[0051] (14) print(2,"Ah, back to normal!");
+[0064] (A0) stopObjectCode();
+END

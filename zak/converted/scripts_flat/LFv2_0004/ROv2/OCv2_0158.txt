@@ -1,0 +1,9 @@
+Events:
+  FD - 001A
+[001A] (80) breakHere();
+[001B] (FB) VAR_RESULT = getActorWalkBox(VAR_EGO);
+[001E] (48) unless (VAR_RESULT == 4) goto 0027;
+[0024] (18) goto 001A;
+[0027] (30) setBoxFlags(4,64);
+[002A] (00) stopObjectCode();
+END

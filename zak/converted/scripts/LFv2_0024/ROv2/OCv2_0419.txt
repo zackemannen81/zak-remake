@@ -1,0 +1,10 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0024/ROv2/OCv2_0419
+Events:
+  FD - 0013
+[0013] (33) RoomColor(0,4);
+[0017] (33) RoomColor(7,14);
+[001B] (33) RoomColor(7,12);
+[001F] (33) RoomColor(8,6);
+[0023] (F0) lights(Var[234],0,0);
+[0027] (00) stopObjectCode();
+END

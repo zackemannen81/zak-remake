@@ -1,0 +1,19 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0052/ROv2/OCv2_0727
+Events:
+  FD - 001D
+  FF - 0015
+[0015] (19) doSentence(253,728,0,1);
+[001C] (00) stopObjectCode();
+[001D] (1C) startSound(44);
+[001F] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0021] (9A) Var[121] = VAR_ACTIVE_OBJECT1;
+[0024] (3A) Var[121] -= 727;
+[0028] (46) Var[120]++;
+[002A] (46) Var[122]++;
+[002C] (80) breakHere();
+[002D] (14) print(255,"#\x02");
+[0032] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0034] (80) breakHere();
+[0035] (9A) Var[122] = Var[234];
+[0038] (00) stopObjectCode();
+END

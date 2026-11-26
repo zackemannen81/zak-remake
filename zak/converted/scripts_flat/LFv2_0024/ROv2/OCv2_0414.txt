@@ -1,0 +1,14 @@
+Events:
+   9 - 0023
+[0023] (0F) unless (!getState08(415)) goto 0046;
+[0028] (1C) startSound(67);
+[002A] (07) setState08(415);
+[002D] (07) setState08(420);
+[0030] (17) clearState02(420);
+[0033] (30) setBoxFlags(9,0);
+[0036] (07) setState08(311);
+[0039] (17) clearState02(311);
+[003C] (9A) Var[202] = VAR_EGO;
+[003F] (19) doSentence(253,415,0,1);
+[0046] (00) stopObjectCode();
+END

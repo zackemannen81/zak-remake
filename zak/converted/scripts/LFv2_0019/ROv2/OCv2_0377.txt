@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0019/ROv2/OCv2_0377
+Events:
+   C - 0018
+[0018] (D8) printEgo("Buy `How To Raise Your Consciousness\x01And Lower Your Golf Scores`,\x03available at airports around the world.");
+[0075] (00) stopObjectCode();
+END

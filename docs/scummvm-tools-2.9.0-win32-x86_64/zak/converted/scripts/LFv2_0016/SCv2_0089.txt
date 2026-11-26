@@ -1,0 +1,28 @@
+# Decompiled with descumm -2
+# Source: LFv2_0016\SCv2_0089
+
+[0000] (46) Var[236]++;
+[0002] (44) if (Var[236] > 14) {
+[0008] (1A)   Var[236] = 14;
+[000C] (**) }
+[000C] (2E) delay(900);
+[0010] (14) print(1,"I'm feeling better now.");
+[0027] (2B) delayVariable(Var[250]);
+[0029] (A8) if (Var[236]) {
+[002D] (C6)   Var[236]--;
+[002F] (**) }
+[002F] (48) if (Var[236] == 2) {
+[0035] (C6)   Var[236]--;
+[0037] (**) }
+[0037] (DB) setBitVar(1513,Var[236],Var[234]);
+[003C] (03) VAR_RESULT = getActorRoom(1);
+[003F] (C8) if (VAR_RESULT == VAR_ROOM) {
+[0044] (48)   if (VAR_EGO == 1) {
+[004A] (42)     startScript(19);
+[004C] (**)   }
+[004C] (**) }
+[004C] (28) unless (!Var[236]) goto 0027;
+[0050] (AE) waitForMessage();
+[0051] (14) print(1,"Ah, back to normal!");
+[0064] (A0) stopObjectCode();
+END

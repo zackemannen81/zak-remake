@@ -1,0 +1,216 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0036/ROv2/ENv2
+[0000] (F0) lights(Var[234],0,0);
+[0004] (1A) Var[44] = 563;
+[0008] (C7) clearState08(Var[44]);
+[000A] (D7) setState02(Var[44]);
+[000C] (46) Var[44]++;
+[000E] (44) unless (Var[44] > 569) goto 0008;
+[0014] (54) setObjectName(565,"doorway");
+[001F] (54) setObjectName(564,"doorway");
+[002A] (2F) if (!getState04(558)) {
+[002F] (46)   Var[154]++;
+[0031] (**) }
+[0031] (48) if (VAR_ROOM == 196) {
+[0037] (33)   RoomScroll(20,34);
+[003B] (05)   drawObject(566,41,0);
+[0040] (05)   drawObject(569,49,0);
+[0045] (30)   setBoxFlags(1,64);
+[0048] (05)   drawObject(563,0,0);
+[004D] (17)   clearState02(563);
+[0050] (17)   clearState02(566);
+[0053] (1A)   Var[44] = 517;
+[0057] (1A)   Var[45] = 191;
+[005B] (1A)   Var[50] = 543;
+[005F] (1A)   Var[51] = 195;
+[0063] (48) } else if (VAR_ROOM == 197) {
+[006C] (33)   RoomScroll(20,34);
+[0070] (05)   drawObject(568,41,0);
+[0075] (05)   drawObject(569,49,0);
+[007A] (30)   setBoxFlags(1,64);
+[007D] (05)   drawObject(563,0,0);
+[0082] (17)   clearState02(563);
+[0085] (17)   clearState02(568);
+[0088] (1A)   Var[44] = 517;
+[008C] (1A)   Var[45] = 190;
+[0090] (1A)   Var[54] = 297;
+[0094] (1A)   Var[55] = 192;
+[0098] (48) } else if (VAR_ROOM == 198) {
+[00A1] (33)   RoomScroll(20,56);
+[00A5] (30)   setBoxFlags(3,128);
+[00A8] (4F)   if (getState08(508)) {
+[00AD] (05)     drawObject(563,0,0);
+[00B2] (17)     clearState02(563);
+[00B5] (1A)     Var[44] = 517;
+[00B9] (1A)     Var[45] = 189;
+[00BD] (**)   }
+[00BD] (05)   drawObject(565,19,0);
+[00C2] (05)   drawObject(566,30,0);
+[00C7] (05)   drawObject(567,52,0);
+[00CC] (05)   drawObject(568,63,0);
+[00D1] (05)   drawObject(564,71,0);
+[00D6] (17)   clearState02(565);
+[00D9] (17)   clearState02(566);
+[00DC] (17)   clearState02(567);
+[00DF] (17)   clearState02(568);
+[00E2] (17)   clearState02(564);
+[00E5] (1A)   Var[48] = 564;
+[00E9] (1A)   Var[49] = 199;
+[00ED] (1A)   Var[50] = 563;
+[00F1] (1A)   Var[51] = 203;
+[00F5] (1A)   Var[52] = 566;
+[00F9] (1A)   Var[53] = 202;
+[00FD] (1A)   Var[54] = 567;
+[0101] (1A)   Var[55] = 202;
+[0105] (1A)   Var[46] = 566;
+[0109] (1A)   Var[47] = 201;
+[010D] (48) } else if (VAR_ROOM == 199) {
+[0116] (33)   RoomScroll(20,100);
+[011A] (4F)   if (getState08(302)) {
+[011F] (05)     drawObject(565,41,0);
+[0124] (17)     clearState02(565);
+[0127] (1A)     Var[48] = 302;
+[012B] (1A)     Var[49] = 193;
+[012F] (54)     setObjectName(565,"tunnel");
+[0139] (**)   }
+[0139] (05)   drawObject(568,8,0);
+[013E] (05)   drawObject(566,63,0);
+[0143] (05)   drawObject(567,96,0);
+[0148] (05)   drawObject(564,115,0);
+[014D] (17)   clearState02(568);
+[0150] (17)   clearState02(566);
+[0153] (17)   clearState02(567);
+[0156] (17)   clearState02(564);
+[0159] (1A)   Var[54] = 564;
+[015D] (1A)   Var[55] = 200;
+[0161] (1A)   Var[50] = 568;
+[0165] (1A)   Var[51] = 203;
+[0169] (1A)   Var[52] = 565;
+[016D] (1A)   Var[53] = 203;
+[0171] (1A)   Var[46] = 565;
+[0175] (1A)   Var[47] = 198;
+[0179] (48) } else if (VAR_ROOM == 200) {
+[0182] (33)   RoomScroll(20,56);
+[0186] (30)   setBoxFlags(3,128);
+[0189] (05)   drawObject(567,8,0);
+[018E] (05)   drawObject(568,19,0);
+[0193] (05)   drawObject(565,41,0);
+[0198] (05)   drawObject(566,52,0);
+[019D] (05)   drawObject(564,71,0);
+[01A2] (17)   clearState02(567);
+[01A5] (17)   clearState02(568);
+[01A8] (17)   clearState02(565);
+[01AB] (17)   clearState02(566);
+[01AE] (17)   clearState02(564);
+[01B1] (1A)   Var[52] = 564;
+[01B5] (1A)   Var[53] = 201;
+[01B9] (1A)   Var[54] = 563;
+[01BD] (1A)   Var[55] = 205;
+[01C1] (1A)   Var[48] = 555;
+[01C5] (1A)   Var[49] = 194;
+[01C9] (1A)   Var[50] = 567;
+[01CD] (1A)   Var[51] = 204;
+[01D1] (1A)   Var[46] = 568;
+[01D5] (1A)   Var[47] = 199;
+[01D9] (48) } else if (VAR_ROOM == 201) {
+[01E2] (33)   RoomScroll(20,100);
+[01E6] (05)   drawObject(566,19,0);
+[01EB] (05)   drawObject(567,30,0);
+[01F0] (05)   drawObject(568,63,0);
+[01F5] (05)   drawObject(565,85,0);
+[01FA] (05)   drawObject(564,115,0);
+[01FF] (17)   clearState02(566);
+[0202] (17)   clearState02(567);
+[0205] (17)   clearState02(568);
+[0208] (17)   clearState02(565);
+[020B] (17)   clearState02(564);
+[020E] (1A)   Var[50] = 564;
+[0212] (1A)   Var[51] = 198;
+[0216] (1A)   Var[52] = 563;
+[021A] (1A)   Var[53] = 202;
+[021E] (1A)   Var[54] = 565;
+[0222] (1A)   Var[55] = 205;
+[0226] (1A)   Var[48] = 566;
+[022A] (1A)   Var[49] = 205;
+[022E] (1A)   Var[46] = 567;
+[0232] (1A)   Var[47] = 200;
+[0236] (48) } else if (VAR_ROOM == 202) {
+[023F] (33)   RoomScroll(20,34);
+[0243] (4F)   if (getState08(304)) {
+[0248] (05)     drawObject(564,49,0);
+[024D] (17)     clearState02(564);
+[0250] (1A)     Var[46] = 300;
+[0254] (1A)     Var[47] = 193;
+[0258] (54)     setObjectName(564,"tunnel");
+[0262] (30)     setBoxFlags(1,128);
+[0265] (18)   } else {
+[0268] (05)     drawObject(569,49,0);
+[026D] (30)     setBoxFlags(1,64);
+[0270] (**)   }
+[0270] (05)   drawObject(563,0,0);
+[0275] (05)   drawObject(567,8,0);
+[027A] (05)   drawObject(566,19,0);
+[027F] (17)   clearState02(563);
+[0282] (17)   clearState02(567);
+[0285] (17)   clearState02(566);
+[0288] (1A)   Var[44] = 567;
+[028C] (1A)   Var[45] = 201;
+[0290] (1A)   Var[52] = 568;
+[0294] (1A)   Var[53] = 198;
+[0298] (1A)   Var[50] = 567;
+[029C] (1A)   Var[51] = 198;
+[02A0] (48) } else if (VAR_ROOM == 203) {
+[02A9] (33)   RoomScroll(20,56);
+[02AD] (30)   setBoxFlags(3,64);
+[02B0] (05)   drawObject(569,71,0);
+[02B5] (05)   drawObject(563,0,0);
+[02BA] (05)   drawObject(565,19,0);
+[02BF] (05)   drawObject(568,52,0);
+[02C4] (17)   clearState02(563);
+[02C7] (17)   clearState02(565);
+[02CA] (17)   clearState02(568);
+[02CD] (1A)   Var[44] = 566;
+[02D1] (1A)   Var[45] = 198;
+[02D5] (1A)   Var[48] = 567;
+[02D9] (1A)   Var[49] = 199;
+[02DD] (1A)   Var[54] = 566;
+[02E1] (1A)   Var[55] = 199;
+[02E5] (48) } else if (VAR_ROOM == 204) {
+[02EE] (33)   RoomScroll(20,34);
+[02F2] (4F)   if (getState08(300)) {
+[02F7] (05)     drawObject(564,49,0);
+[02FC] (17)     clearState02(564);
+[02FF] (1A)     Var[46] = 304;
+[0303] (1A)     Var[47] = 193;
+[0307] (54)     setObjectName(564,"tunnel");
+[0311] (30)     setBoxFlags(1,128);
+[0314] (18)   } else {
+[0317] (05)     drawObject(569,49,0);
+[031C] (30)     setBoxFlags(1,64);
+[031F] (**)   }
+[031F] (05)   drawObject(567,19,0);
+[0324] (17)   clearState02(567);
+[0327] (1A)   Var[52] = 566;
+[032B] (1A)   Var[53] = 200;
+[032F] (48) } else if (VAR_ROOM == 205) {
+[0338] (33)   RoomScroll(20,56);
+[033C] (30)   setBoxFlags(3,128);
+[033F] (05)   drawObject(563,0,0);
+[0344] (05)   drawObject(566,30,0);
+[0349] (05)   drawObject(565,52,0);
+[034E] (05)   drawObject(564,71,0);
+[0353] (17)   clearState02(563);
+[0356] (17)   clearState02(566);
+[0359] (17)   clearState02(565);
+[035C] (17)   clearState02(564);
+[035F] (1A)   Var[44] = 568;
+[0363] (1A)   Var[45] = 200;
+[0367] (1A)   Var[50] = 565;
+[036B] (1A)   Var[51] = 201;
+[036F] (1A)   Var[48] = 568;
+[0373] (1A)   Var[49] = 201;
+[0377] (1A)   Var[46] = 542;
+[037B] (1A)   Var[47] = 34;
+[037F] (18)   /* goto 0382; */
+[0382] (**) }
+[0382] (00) stopObjectCode();
+END

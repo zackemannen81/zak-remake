@@ -1,0 +1,74 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0037/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (0C) loadSound(8)
+[0007] (93) ActorOps(VAR_EGO,[Sound(8)]);
+[000B] (30) setBoxFlags(0,128);
+[000E] (30) setBoxFlags(1,128);
+[0011] (30) setBoxFlags(2,128);
+[0014] (78) if (VAR_ROOM < 170) {
+[001A] (30)   setBoxFlags(0,0);
+[001D] (33)   RoomScroll(20,24);
+[0021] (78) } else if (VAR_ROOM < 174) {
+[002A] (30)   setBoxFlags(1,0);
+[002D] (33)   RoomScroll(20,45);
+[0031] (18) } else {
+[0034] (30)   setBoxFlags(2,0);
+[0037] (33)   RoomScroll(35,51);
+[003B] (**) }
+[003B] (9A) Var[14] = VAR_EGO;
+[003E] (5A) Var[14] += 222;
+[0042] (48) if (Var[14] == 150) {
+[0048] (18) } else {
+[004B] (9A)   Var[14] = VAR_EGO;
+[004E] (5A)   Var[14] += 222;
+[0052] (48)   unless (Var[14] == 147) goto 005C;
+[0058] (**) }
+[0058] (33) RoomColor(14,10);
+[005C] (9A) Var[14] = VAR_EGO;
+[005F] (5A) Var[14] += 222;
+[0063] (48) if (Var[14] == 42) {
+[0069] (18) } else {
+[006C] (9A)   Var[14] = VAR_EGO;
+[006F] (5A)   Var[14] += 222;
+[0073] (48)   unless (Var[14] == 149) goto 0085;
+[0079] (**) }
+[0079] (33) RoomColor(2,6);
+[007D] (33) RoomColor(11,10);
+[0081] (33) RoomColor(10,2);
+[0085] (1A) Var[44] = 572;
+[0089] (D7) setState02(Var[44]);
+[008B] (C7) clearState08(Var[44]);
+[008D] (46) Var[44]++;
+[008F] (44) unless (Var[44] > 575) goto 0089;
+[0095] (28) if (!Var[255]) {
+[0099] (9A)   Var[58] = Var[56];
+[009C] (**) }
+[009C] (9A) Var[57] = VAR_ROOM;
+[009F] (19) doSentence(253,570,0,1);
+[00A6] (A8) if (Var[45]) {
+[00AA] (17)   clearState02(572);
+[00AD] (45)   drawObject(572,Var[47],0);
+[00B2] (18) } else {
+[00B5] (45)   drawObject(570,Var[47],0);
+[00BA] (**) }
+[00BA] (A8) if (Var[46]) {
+[00BE] (17)   clearState02(573);
+[00C1] (45)   drawObject(573,Var[48],0);
+[00C6] (18) } else {
+[00C9] (45)   drawObject(571,Var[48],0);
+[00CE] (**) }
+[00CE] (A8) if (Var[49]) {
+[00D2] (17)   clearState02(574);
+[00D5] (45)   drawObject(574,Var[49],0);
+[00DA] (**) }
+[00DA] (A8) if (Var[50]) {
+[00DE] (17)   clearState02(575);
+[00E1] (45)   drawObject(575,Var[50],0);
+[00E6] (**) }
+[00E6] (6F) if (getState04(575)) {
+[00EB] (19)   doSentence(253,575,0,1);
+[00F2] (**) }
+[00F2] (19) doSentence(253,572,0,1);
+[00F9] (60) cursorCommand(247, 1);
+[00FC] (00) stopObjectCode();
+END

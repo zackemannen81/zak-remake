@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0081
+Events:
+   B - 0023
+   E - 0036
+[0023] (6C) VAR_RESULT = getObjPreposition(81);
+[0027] (28) if (!VAR_RESULT) {
+[002B] (42)   startScript(60);
+[002D] (18) } else {
+[0030] (79)   doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0035] (**) }
+[0035] (00) stopObjectCode();
+[0036] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0038] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[003A] (00) stopObjectCode();
+END

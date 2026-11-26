@@ -1,0 +1,10 @@
+Events:
+  FD - 0025
+[0025] (9A) Var[53] = Var[234];
+[0028] (44) unless (VAR_MACHINE_SPEED > 40) goto 0035;
+[002E] (2E) delay(120);
+[0032] (18) goto 0039;
+[0035] (2E) delay(210);
+[0039] (46) Var[53]++;
+[003B] (00) stopObjectCode();
+END

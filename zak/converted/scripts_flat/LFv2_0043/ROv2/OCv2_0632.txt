@@ -1,0 +1,8 @@
+Events:
+  FD - 001B
+[001B] (48) unless (VAR_EGO == 6) goto 0033;
+[0021] (D8) printEgo("It's too heavy.");
+[0030] (18) goto 0035;
+[0033] (42) startScript(119);
+[0035] (00) stopObjectCode();
+END

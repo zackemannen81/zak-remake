@@ -1,0 +1,18 @@
+Events:
+   3 - 0037
+   B - 001F
+   C - 0030
+[001F] (48) unless (VAR_EGO == 4) goto 002D;
+[0025] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[002A] (18) goto 002F;
+[002D] (42) startScript(53);
+[002F] (00) stopObjectCode();
+[0030] (1A) Var[67] = 4;
+[0034] (42) startScript(53);
+[0036] (00) stopObjectCode();
+[0037] (48) unless (VAR_ACTIVE_OBJECT2 == 4) goto 0043;
+[003D] (A9) setOwnerOf(VAR_ACTIVE_OBJECT1,4);
+[0040] (18) goto 0045;
+[0043] (42) startScript(53);
+[0045] (00) stopObjectCode();
+END

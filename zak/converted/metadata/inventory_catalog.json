@@ -1,0 +1,3355 @@
+{
+  "objects": [
+    {
+      "object_id": 14,
+      "names": [
+        "Sushi in fish bowl"
+      ],
+      "programs": [
+        {
+          "room": 1,
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0014.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "00A0"
+            },
+            {
+              "verb_hex": "6",
+              "entry_offset": "003B"
+            },
+            {
+              "verb_hex": "7",
+              "entry_offset": "00A0"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0035"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "002D"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 15,
+          "instruction": "[0041] (29)     setOwnerOf(14,0);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0091.txt",
+          "room": 1,
+          "object_expression": "14",
+          "association": "literal object ID"
+        },
+        {
+          "line": 16,
+          "instruction": "[0045] (29)     setOwnerOf(14,15);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0091.txt",
+          "room": 1,
+          "object_expression": "14",
+          "association": "literal object ID"
+        },
+        {
+          "line": 6,
+          "instruction": "[002D] (50) pickupObject(14);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0098.txt",
+          "room": 1,
+          "object_expression": "14",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 15,
+      "names": [
+        "phone bill@@@@"
+      ],
+      "programs": [
+        {
+          "room": 1,
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0015.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "002B"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0028"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0025"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 6,
+          "instruction": "[0025] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0015.txt",
+          "room": 1,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 22,
+          "instruction": "[0089] (29)       setOwnerOf(15,0);",
+          "source": "zak/converted/scripts/LFv2_0004/ROv2/OCv2_0153.txt",
+          "room": 4,
+          "object_expression": "15",
+          "association": "literal object ID"
+        },
+        {
+          "line": 53,
+          "instruction": "[018E] (29) setOwnerOf(15,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0074.txt",
+          "room": 4,
+          "object_expression": "15",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 16,
+      "names": [
+        "kazoo"
+      ],
+      "programs": [
+        {
+          "room": 1,
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0016.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "001F"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "001F"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001C"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 6,
+          "instruction": "[001C] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0016.txt",
+          "room": 1,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 17,
+      "names": [
+        "torn wallpaper"
+      ],
+      "programs": [
+        {
+          "room": 1,
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0017.txt",
+          "events": [
+            {
+              "verb_hex": "A",
+              "entry_offset": "0027"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0038"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "003E"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0027"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0015] (50) pickupObject(17);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0097.txt",
+          "room": 1,
+          "object_expression": "17",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 18,
+      "names": [
+        "CashCard"
+      ],
+      "programs": [
+        {
+          "room": 1,
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0018.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0029"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "001F"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 12,
+          "instruction": "[002F] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,1);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0018.txt",
+          "room": 1,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 9,
+          "instruction": "[0029] (50)   pickupObject(18);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0093.txt",
+          "room": 1,
+          "object_expression": "18",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 19,
+      "names": [
+        "receiver"
+      ],
+      "programs": [
+        {
+          "room": 1,
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0019.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "001F"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "002C"
+            },
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0067"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 4,
+          "instruction": "[0000] (50) pickupObject(19);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0014.txt",
+          "room": 1,
+          "object_expression": "19",
+          "association": "literal object ID"
+        },
+        {
+          "line": 21,
+          "instruction": "[0030] (29) setOwnerOf(19,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0014.txt",
+          "room": 1,
+          "object_expression": "19",
+          "association": "literal object ID"
+        },
+        {
+          "line": 22,
+          "instruction": "[0034] (29) setOwnerOf(19,15);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0014.txt",
+          "room": 1,
+          "object_expression": "19",
+          "association": "literal object ID"
+        },
+        {
+          "line": 4,
+          "instruction": "[0000] (29) setOwnerOf(19,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0018.txt",
+          "room": 1,
+          "object_expression": "19",
+          "association": "literal object ID"
+        },
+        {
+          "line": 5,
+          "instruction": "[0004] (29) setOwnerOf(19,15);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0018.txt",
+          "room": 1,
+          "object_expression": "19",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 20,
+      "names": [
+        "power cord"
+      ],
+      "programs": [
+        {
+          "room": 2,
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0020.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0033"
+            },
+            {
+              "verb_hex": "A",
+              "entry_offset": "0023"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0023"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0029"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 9,
+          "instruction": "[0029] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0020.txt",
+          "room": 2,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 4,
+          "instruction": "[0013] (29) setOwnerOf(20,0);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0128.txt",
+          "room": 2,
+          "object_expression": "20",
+          "association": "literal object ID"
+        },
+        {
+          "line": 5,
+          "instruction": "[0017] (29) setOwnerOf(20,15);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0128.txt",
+          "room": 2,
+          "object_expression": "20",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 21,
+      "names": [
+        "remote control"
+      ],
+      "programs": [
+        {
+          "room": 2,
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0021.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0026"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0023"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0023] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0021.txt",
+          "room": 2,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 22,
+      "names": [
+        "egg"
+      ],
+      "programs": [
+        {
+          "room": 2,
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0022.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "001B"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0018"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0018] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0022.txt",
+          "room": 2,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 16,
+          "instruction": "[0055] (29)         setOwnerOf(22,14);",
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0260.txt",
+          "room": 11,
+          "object_expression": "22",
+          "association": "literal object ID"
+        },
+        {
+          "line": 6,
+          "instruction": "[001A] (69) setOwnerOf(22,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0262.txt",
+          "room": 11,
+          "object_expression": "22",
+          "association": "literal object ID"
+        },
+        {
+          "line": 21,
+          "instruction": "[0066] (29)   setOwnerOf(22,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0036.txt",
+          "room": 11,
+          "object_expression": "22",
+          "association": "literal object ID"
+        },
+        {
+          "line": 66,
+          "instruction": "[0091] (69)     setOwnerOf(22,Var[52]);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0079.txt",
+          "room": 11,
+          "object_expression": "22",
+          "association": "literal object ID"
+        },
+        {
+          "line": 88,
+          "instruction": "[0113] (69)   setOwnerOf(22,Var[52]);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0079.txt",
+          "room": 11,
+          "object_expression": "22",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 23,
+      "names": [
+        "bread crumbs"
+      ],
+      "programs": [
+        {
+          "room": 2,
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0023.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0028"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0021"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0023.txt",
+          "room": 2,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 7,
+          "instruction": "[002A] (29)   setOwnerOf(23,0);",
+          "source": "zak/converted/scripts/LFv2_0042/ROv2/OCv2_0621.txt",
+          "room": 42,
+          "object_expression": "23",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 24,
+      "names": [
+        "small key"
+      ],
+      "programs": [
+        {
+          "room": 2,
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0024.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0021"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001E"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[001E] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0024.txt",
+          "room": 2,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 26,
+      "names": [
+        "butter knife@@@@@"
+      ],
+      "programs": [
+        {
+          "room": 2,
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0026.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0029"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0026"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0026] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0026.txt",
+          "room": 2,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 27,
+      "names": [
+        "fan club card"
+      ],
+      "programs": [
+        {
+          "room": 3,
+          "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0027.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0025"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 7,
+          "instruction": "[001F] (50) pickupObject(27);",
+          "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0139.txt",
+          "room": 3,
+          "object_expression": "27",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 29,
+      "names": [
+        "stale bread"
+      ],
+      "programs": [
+        {
+          "room": 3,
+          "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0029.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0023"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0020"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 20,
+          "instruction": "[003E] (29)   setOwnerOf(29,14);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0129.txt",
+          "room": 2,
+          "object_expression": "29",
+          "association": "literal object ID"
+        },
+        {
+          "line": 6,
+          "instruction": "[0022] (69) setOwnerOf(29,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0130.txt",
+          "room": 2,
+          "object_expression": "29",
+          "association": "literal object ID"
+        },
+        {
+          "line": 5,
+          "instruction": "[0020] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0029.txt",
+          "room": 3,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 9,
+          "instruction": "[0011] (29)   setOwnerOf(29,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0021.txt",
+          "room": 2,
+          "object_expression": "29",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 30,
+      "names": [
+        "application"
+      ],
+      "programs": [
+        {
+          "room": 4,
+          "source": "zak/converted/scripts/LFv2_0004/ROv2/OCv2_0030.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0025"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0036"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 30,
+          "instruction": "[0090] (29)       setOwnerOf(30,0);",
+          "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0138.txt",
+          "room": 3,
+          "object_expression": "30",
+          "association": "literal object ID"
+        },
+        {
+          "line": 6,
+          "instruction": "[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0004/ROv2/OCv2_0030.txt",
+          "room": 4,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 31,
+      "names": [
+        "bobby pin sign"
+      ],
+      "programs": [
+        {
+          "room": 5,
+          "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0031.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "002B"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0023"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 12,
+          "instruction": "[0051] (50)   pickupObject(31);",
+          "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0167.txt",
+          "room": 5,
+          "object_expression": "31",
+          "association": "literal object ID"
+        },
+        {
+          "line": 7,
+          "instruction": "[0027] (29)   setOwnerOf(31,0);",
+          "source": "zak/converted/scripts/LFv2_0021/ROv2/OCv2_0393.txt",
+          "room": 21,
+          "object_expression": "31",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 32,
+      "names": [
+        "CashCard"
+      ],
+      "programs": [
+        {
+          "room": 6,
+          "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0032.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0039"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0024"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0032"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0021"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 7,
+          "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0032.txt",
+          "room": 6,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 19,
+          "instruction": "[003F] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,2);",
+          "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0032.txt",
+          "room": 6,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 33,
+      "names": [
+        "crystal shard"
+      ],
+      "programs": [
+        {
+          "room": 6,
+          "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0033.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0025"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0033.txt",
+          "room": 6,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 4,
+          "instruction": "[0020] (69) setOwnerOf(33,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0645.txt",
+          "room": 44,
+          "object_expression": "33",
+          "association": "literal object ID"
+        },
+        {
+          "line": 9,
+          "instruction": "[0037] (29)   setOwnerOf(33,14);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0648.txt",
+          "room": 44,
+          "object_expression": "33",
+          "association": "literal object ID"
+        },
+        {
+          "line": 35,
+          "instruction": "[006F] (29)     setOwnerOf(33,0);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0651.txt",
+          "room": 44,
+          "object_expression": "33",
+          "association": "literal object ID"
+        },
+        {
+          "line": 7,
+          "instruction": "[0027] (69) setOwnerOf(33,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0653.txt",
+          "room": 44,
+          "object_expression": "33",
+          "association": "literal object ID"
+        },
+        {
+          "line": 188,
+          "instruction": "[0520] (50)     pickupObject(33);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+          "room": 5,
+          "object_expression": "33",
+          "association": "literal object ID"
+        },
+        {
+          "line": 190,
+          "instruction": "[0523] (29)   setOwnerOf(33,1);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+          "room": 5,
+          "object_expression": "33",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 37,
+      "names": [
+        "rope"
+      ],
+      "programs": [
+        {
+          "room": 7,
+          "source": "zak/converted/scripts/LFv2_0007/ROv2/OCv2_0037.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0017"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 7,
+          "instruction": "[001D] (69) setOwnerOf(37,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0110.txt",
+          "room": 1,
+          "object_expression": "37",
+          "association": "literal object ID"
+        },
+        {
+          "line": 29,
+          "instruction": "[00A5] (29)   setOwnerOf(37,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0037.txt",
+          "room": 1,
+          "object_expression": "37",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 40,
+      "names": [
+        "nose glasses"
+      ],
+      "programs": [
+        {
+          "room": 7,
+          "source": "zak/converted/scripts/LFv2_0007/ROv2/OCv2_0040.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0062"
+            },
+            {
+              "verb_hex": "6",
+              "entry_offset": "002C"
+            },
+            {
+              "verb_hex": "7",
+              "entry_offset": "0062"
+            },
+            {
+              "verb_hex": "11",
+              "entry_offset": "0025"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 18,
+          "instruction": "[0045] (29) setOwnerOf(40,7);",
+          "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0234.txt",
+          "room": 10,
+          "object_expression": "40",
+          "association": "literal object ID"
+        },
+        {
+          "line": 57,
+          "instruction": "[0126] (29)       setOwnerOf(40,7);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0141.txt",
+          "room": 4,
+          "object_expression": "40",
+          "association": "literal object ID"
+        },
+        {
+          "line": 97,
+          "instruction": "[0159] (29)     setOwnerOf(40,7);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0098.txt",
+          "room": 16,
+          "object_expression": "40",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 42,
+      "names": [
+        "Lotto ticket"
+      ],
+      "programs": [
+        {
+          "room": 7,
+          "source": "zak/converted/scripts/LFv2_0007/ROv2/OCv2_0042.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0021"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0021"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 80,
+          "instruction": "[0252] (29) setOwnerOf(42,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0072.txt",
+          "room": 7,
+          "object_expression": "42",
+          "association": "literal object ID"
+        },
+        {
+          "line": 81,
+          "instruction": "[0256] (29) setOwnerOf(42,15);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0072.txt",
+          "room": 7,
+          "object_expression": "42",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 43,
+      "names": [
+        "hat"
+      ],
+      "programs": [
+        {
+          "room": 7,
+          "source": "zak/converted/scripts/LFv2_0007/ROv2/OCv2_0043.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0066"
+            },
+            {
+              "verb_hex": "6",
+              "entry_offset": "0023"
+            },
+            {
+              "verb_hex": "7",
+              "entry_offset": "0066"
+            },
+            {
+              "verb_hex": "11",
+              "entry_offset": "001C"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 19,
+          "instruction": "[0049] (29) setOwnerOf(43,7);",
+          "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0234.txt",
+          "room": 10,
+          "object_expression": "43",
+          "association": "literal object ID"
+        },
+        {
+          "line": 58,
+          "instruction": "[012A] (29)       setOwnerOf(43,7);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0141.txt",
+          "room": 4,
+          "object_expression": "43",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 44,
+      "names": [
+        "golf club"
+      ],
+      "programs": [
+        {
+          "room": 7,
+          "source": "zak/converted/scripts/LFv2_0007/ROv2/OCv2_0044.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "003D"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0027"
+            },
+            {
+              "verb_hex": "11",
+              "entry_offset": "0020"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 11,
+          "instruction": "[0042] (29)   setOwnerOf(44,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0038/SCv2_0070.txt",
+          "room": 38,
+          "object_expression": "44",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 45,
+      "names": [
+        "book"
+      ],
+      "programs": [
+        {
+          "room": 8,
+          "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0045.txt",
+          "events": [
+            {
+              "verb_hex": "C",
+              "entry_offset": "0017"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 21,
+          "instruction": "[00B1] (29)   setOwnerOf(45,0);",
+          "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0208.txt",
+          "room": 8,
+          "object_expression": "45",
+          "association": "literal object ID"
+        },
+        {
+          "line": 27,
+          "instruction": "[0092] (50)     pickupObject(45);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0008/SCv2_0043.txt",
+          "room": 8,
+          "object_expression": "45",
+          "association": "literal object ID"
+        },
+        {
+          "line": 14,
+          "instruction": "[003D] (29)         setOwnerOf(45,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0139.txt",
+          "room": 17,
+          "object_expression": "45",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 46,
+      "names": [
+        "whiskey"
+      ],
+      "programs": [
+        {
+          "room": 8,
+          "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0046.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "001C"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "001C"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 36,
+          "instruction": "[0107] (50) pickupObject(46);",
+          "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0208.txt",
+          "room": 8,
+          "object_expression": "46",
+          "association": "literal object ID"
+        },
+        {
+          "line": 17,
+          "instruction": "[0050] (29) setOwnerOf(46,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0044/SCv2_0076.txt",
+          "room": 44,
+          "object_expression": "46",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 47,
+      "names": [
+        "toilet paper"
+      ],
+      "programs": [
+        {
+          "room": 11,
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0047.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0024"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0021"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0047.txt",
+          "room": 11,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 69,
+          "instruction": "[0124] (29)     setOwnerOf(47,15);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0106.txt",
+          "room": 11,
+          "object_expression": "47",
+          "association": "literal object ID"
+        },
+        {
+          "line": 16,
+          "instruction": "[0028] (29)   setOwnerOf(47,15);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0120.txt",
+          "room": 11,
+          "object_expression": "47",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 48,
+      "names": [
+        "cushion"
+      ],
+      "programs": [
+        {
+          "room": 11,
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0048.txt",
+          "events": [
+            {
+              "verb_hex": "A",
+              "entry_offset": "001E"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0026"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001E"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 12,
+          "instruction": "[0035] (50)     pickupObject(48);",
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0259.txt",
+          "room": 11,
+          "object_expression": "48",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 49,
+      "names": [
+        "lighter@@@@"
+      ],
+      "programs": [
+        {
+          "room": 11,
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0049.txt",
+          "events": [
+            {
+              "verb_hex": "4",
+              "entry_offset": "0054"
+            },
+            {
+              "verb_hex": "5",
+              "entry_offset": "009A"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0027"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0024"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 7,
+          "instruction": "[0024] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0049.txt",
+          "room": 11,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 50,
+      "names": [
+        "oxygen tank"
+      ],
+      "programs": [
+        {
+          "room": 11,
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0050.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0076"
+            },
+            {
+              "verb_hex": "6",
+              "entry_offset": "0032"
+            },
+            {
+              "verb_hex": "7",
+              "entry_offset": "0076"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0032"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0093"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0099"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 12,
+          "instruction": "[0035] (50)       pickupObject(50);",
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0262.txt",
+          "room": 11,
+          "object_expression": "50",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 51,
+      "names": [
+        "peanuts"
+      ],
+      "programs": [
+        {
+          "room": 11,
+          "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0051.txt",
+          "events": []
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 24,
+          "instruction": "[00A0] (29) setOwnerOf(51,0);",
+          "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0268.txt",
+          "room": 12,
+          "object_expression": "51",
+          "association": "literal object ID"
+        },
+        {
+          "line": 78,
+          "instruction": "[01F8] (50)     pickupObject(51);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0104.txt",
+          "room": 11,
+          "object_expression": "51",
+          "association": "literal object ID"
+        },
+        {
+          "line": 15,
+          "instruction": "[0025] (50)   pickupObject(51);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0116.txt",
+          "room": 11,
+          "object_expression": "51",
+          "association": "literal object ID"
+        },
+        {
+          "line": 19,
+          "instruction": "[003F] (29)   setOwnerOf(51,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0012/SCv2_0144.txt",
+          "room": 12,
+          "object_expression": "51",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 52,
+      "names": [
+        "tree branch"
+      ],
+      "programs": [
+        {
+          "room": 12,
+          "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0052.txt",
+          "events": [
+            {
+              "verb_hex": "A",
+              "entry_offset": "0022"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 10,
+          "instruction": "[002D] (50) pickupObject(52);",
+          "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0266.txt",
+          "room": 12,
+          "object_expression": "52",
+          "association": "literal object ID"
+        },
+        {
+          "line": 60,
+          "instruction": "[0171] (29)     setOwnerOf(52,0);",
+          "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0273.txt",
+          "room": 13,
+          "object_expression": "52",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 55,
+      "names": [
+        "blue crystal"
+      ],
+      "programs": [
+        {
+          "room": 14,
+          "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0055.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0029"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0021"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 17,
+          "instruction": "[0057] (29)   setOwnerOf(55,14);",
+          "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0428.txt",
+          "room": 25,
+          "object_expression": "55",
+          "association": "literal object ID"
+        },
+        {
+          "line": 6,
+          "instruction": "[0025] (69) setOwnerOf(55,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0431.txt",
+          "room": 25,
+          "object_expression": "55",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 56,
+      "names": [
+        "crystal shard"
+      ],
+      "programs": [
+        {
+          "room": 14,
+          "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0056.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 4,
+          "instruction": "[0020] (69) setOwnerOf(56,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0646.txt",
+          "room": 44,
+          "object_expression": "56",
+          "association": "literal object ID"
+        },
+        {
+          "line": 19,
+          "instruction": "[005B] (29)   setOwnerOf(56,14);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0648.txt",
+          "room": 44,
+          "object_expression": "56",
+          "association": "literal object ID"
+        },
+        {
+          "line": 36,
+          "instruction": "[0073] (29)     setOwnerOf(56,0);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0651.txt",
+          "room": 44,
+          "object_expression": "56",
+          "association": "literal object ID"
+        },
+        {
+          "line": 8,
+          "instruction": "[002B] (69) setOwnerOf(56,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0653.txt",
+          "room": 44,
+          "object_expression": "56",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 57,
+      "names": [
+        "ankh"
+      ],
+      "programs": [
+        {
+          "room": 14,
+          "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0057.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0021"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0019"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0019] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0057.txt",
+          "room": 14,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 12,
+          "instruction": "[0052] (29)   setOwnerOf(57,0);",
+          "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0549.txt",
+          "room": 35,
+          "object_expression": "57",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 58,
+      "names": [
+        "white crystal"
+      ],
+      "programs": [
+        {
+          "room": 15,
+          "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0058.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0018] (50)   pickupObject(58);",
+          "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0314.txt",
+          "room": 15,
+          "object_expression": "58",
+          "association": "literal object ID"
+        },
+        {
+          "line": 12,
+          "instruction": "[003D] (29)   setOwnerOf(58,0);",
+          "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0428.txt",
+          "room": 25,
+          "object_expression": "58",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 59,
+      "names": [
+        "flagpole"
+      ],
+      "programs": [
+        {
+          "room": 17,
+          "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0059.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "001D"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0023"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0024] (29)   setOwnerOf(59,0);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0648.txt",
+          "room": 44,
+          "object_expression": "59",
+          "association": "literal object ID"
+        },
+        {
+          "line": 33,
+          "instruction": "[00C0] (29)     setOwnerOf(59,8);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0139.txt",
+          "room": 17,
+          "object_expression": "59",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 60,
+      "names": [
+        "jail key"
+      ],
+      "programs": [
+        {
+          "room": 18,
+          "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0060.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "002B"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001D"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 7,
+          "instruction": "[0028] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0060.txt",
+          "room": 18,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 35,
+          "instruction": "[0085] (29) setOwnerOf(60,0);",
+          "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0366.txt",
+          "room": 18,
+          "object_expression": "60",
+          "association": "literal object ID"
+        },
+        {
+          "line": 36,
+          "instruction": "[0089] (29) setOwnerOf(60,15);",
+          "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0366.txt",
+          "room": 18,
+          "object_expression": "60",
+          "association": "literal object ID"
+        },
+        {
+          "line": 36,
+          "instruction": "[00D9] (29)     setOwnerOf(60,8);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0139.txt",
+          "room": 17,
+          "object_expression": "60",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 61,
+      "names": [
+        "token@"
+      ],
+      "programs": [
+        {
+          "room": 27,
+          "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0061.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "001D"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "003F"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "003C"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 93,
+          "instruction": "[024D] (50) pickupObject(61);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "61",
+          "association": "literal object ID"
+        },
+        {
+          "line": 94,
+          "instruction": "[0250] (29) setOwnerOf(61,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "61",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 62,
+      "names": [
+        "token@"
+      ],
+      "programs": [
+        {
+          "room": 27,
+          "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0062.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "001D"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0020"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "001D"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 95,
+          "instruction": "[0254] (50) pickupObject(62);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "62",
+          "association": "literal object ID"
+        },
+        {
+          "line": 96,
+          "instruction": "[0257] (29) setOwnerOf(62,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "62",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 63,
+      "names": [
+        "token@"
+      ],
+      "programs": [
+        {
+          "room": 27,
+          "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0063.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "001D"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0020"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "001D"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 97,
+          "instruction": "[025B] (50) pickupObject(63);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "63",
+          "association": "literal object ID"
+        },
+        {
+          "line": 98,
+          "instruction": "[025E] (29) setOwnerOf(63,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "63",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 64,
+      "names": [
+        "burnt fuse"
+      ],
+      "programs": [
+        {
+          "room": 28,
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0064.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "002B"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0021"
+            },
+            {
+              "verb_hex": "FD",
+              "entry_offset": "003F"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 6,
+          "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0064.txt",
+          "room": 28,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 17,
+          "instruction": "[0066] (29) setOwnerOf(64,0);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0064.txt",
+          "room": 28,
+          "object_expression": "64",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 65,
+      "names": [
+        "helmet"
+      ],
+      "programs": [
+        {
+          "room": 26,
+          "source": "zak/converted/scripts/LFv2_0026/ROv2/OCv2_0065.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "008E"
+            },
+            {
+              "verb_hex": "6",
+              "entry_offset": "001F"
+            },
+            {
+              "verb_hex": "7",
+              "entry_offset": "005E"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "009E"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 46,
+          "instruction": "[0111] (29)       setOwnerOf(65,14);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0494.txt",
+          "room": 30,
+          "object_expression": "65",
+          "association": "literal object ID"
+        },
+        {
+          "line": 56,
+          "instruction": "[0138] (29)         setOwnerOf(65,0);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0494.txt",
+          "room": 30,
+          "object_expression": "65",
+          "association": "literal object ID"
+        },
+        {
+          "line": 9,
+          "instruction": "[0009] (50) pickupObject(65);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "65",
+          "association": "literal object ID"
+        },
+        {
+          "line": 10,
+          "instruction": "[000C] (29) setOwnerOf(65,3);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "65",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 66,
+      "names": [
+        "helmet"
+      ],
+      "programs": [
+        {
+          "room": 26,
+          "source": "zak/converted/scripts/LFv2_0026/ROv2/OCv2_0066.txt",
+          "events": [
+            {
+              "verb_hex": "C",
+              "entry_offset": "001B"
+            },
+            {
+              "verb_hex": "FF",
+              "entry_offset": "0021"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 52,
+          "instruction": "[0127] (29)       setOwnerOf(66,0);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0494.txt",
+          "room": 30,
+          "object_expression": "66",
+          "association": "literal object ID"
+        },
+        {
+          "line": 8,
+          "instruction": "[0006] (50) pickupObject(66);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "66",
+          "association": "literal object ID"
+        },
+        {
+          "line": 11,
+          "instruction": "[0010] (29) setOwnerOf(66,4);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+          "room": 26,
+          "object_expression": "66",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 67,
+      "names": [
+        "vinyl tape"
+      ],
+      "programs": [
+        {
+          "room": 28,
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0067.txt",
+          "events": [
+            {
+              "verb_hex": "A",
+              "entry_offset": "0021"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0026"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0021"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 6,
+          "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0067.txt",
+          "room": 28,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 12,
+          "instruction": "[0049] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,0);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0067.txt",
+          "room": 28,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 68,
+      "names": [
+        "broom alien"
+      ],
+      "programs": [
+        {
+          "room": 28,
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0068.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0030"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 27,
+          "instruction": "[00C8] (50)   pickupObject(68);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0479.txt",
+          "room": 28,
+          "object_expression": "68",
+          "association": "literal object ID"
+        },
+        {
+          "line": 5,
+          "instruction": "[0001] (29) setOwnerOf(68,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0021/SCv2_0099.txt",
+          "room": 21,
+          "object_expression": "68",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 69,
+      "names": [
+        "flashlight@@@@"
+      ],
+      "programs": [
+        {
+          "room": 28,
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0069.txt",
+          "events": [
+            {
+              "verb_hex": "4",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "5",
+              "entry_offset": "0041"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0027"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 7,
+          "instruction": "[0027] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0069.txt",
+          "room": 28,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 70,
+      "names": [
+        "ladder"
+      ],
+      "programs": [
+        {
+          "room": 28,
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0070.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0023"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001B"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 18,
+          "instruction": "[0068] (50)   pickupObject(70);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0477.txt",
+          "room": 28,
+          "object_expression": "70",
+          "association": "literal object ID"
+        },
+        {
+          "line": 5,
+          "instruction": "[0021] (29)   setOwnerOf(70,14);",
+          "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0518.txt",
+          "room": 33,
+          "object_expression": "70",
+          "association": "literal object ID"
+        },
+        {
+          "line": 10,
+          "instruction": "[0029] (29)   setOwnerOf(70,14);",
+          "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0530.txt",
+          "room": 33,
+          "object_expression": "70",
+          "association": "literal object ID"
+        },
+        {
+          "line": 13,
+          "instruction": "[0031] (69)   setOwnerOf(70,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0537.txt",
+          "room": 33,
+          "object_expression": "70",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 72,
+      "names": [
+        "Digital Audio Tape"
+      ],
+      "programs": [
+        {
+          "room": 30,
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0072.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0038"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0035"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0029"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 10,
+          "instruction": "[0032] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0072.txt",
+          "room": 30,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 27,
+          "instruction": "[0068] (29)   setOwnerOf(72,0);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0492.txt",
+          "room": 30,
+          "object_expression": "72",
+          "association": "literal object ID"
+        },
+        {
+          "line": 28,
+          "instruction": "[006C] (29)   setOwnerOf(72,15);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0492.txt",
+          "room": 30,
+          "object_expression": "72",
+          "association": "literal object ID"
+        },
+        {
+          "line": 23,
+          "instruction": "[00AF] (29)       setOwnerOf(72,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+          "room": 30,
+          "object_expression": "72",
+          "association": "literal object ID"
+        },
+        {
+          "line": 25,
+          "instruction": "[00B6] (29)       setOwnerOf(72,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+          "room": 30,
+          "object_expression": "72",
+          "association": "literal object ID"
+        },
+        {
+          "line": 151,
+          "instruction": "[0303] (69)       setOwnerOf(72,VAR_EGO);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+          "room": 30,
+          "object_expression": "72",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 73,
+      "names": [
+        "fuse"
+      ],
+      "programs": [
+        {
+          "room": 30,
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0073.txt",
+          "events": [
+            {
+              "verb_hex": "A",
+              "entry_offset": "001B"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0028"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001B"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 35,
+          "instruction": "[00A1] (29)     setOwnerOf(73,14);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0470.txt",
+          "room": 28,
+          "object_expression": "73",
+          "association": "literal object ID"
+        },
+        {
+          "line": 4,
+          "instruction": "[0017] (69) setOwnerOf(73,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0471.txt",
+          "room": 28,
+          "object_expression": "73",
+          "association": "literal object ID"
+        },
+        {
+          "line": 15,
+          "instruction": "[004A] (29)   setOwnerOf(73,0);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0489.txt",
+          "room": 30,
+          "object_expression": "73",
+          "association": "literal object ID"
+        },
+        {
+          "line": 16,
+          "instruction": "[004E] (29)   setOwnerOf(73,15);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0489.txt",
+          "room": 30,
+          "object_expression": "73",
+          "association": "literal object ID"
+        },
+        {
+          "line": 23,
+          "instruction": "[0077] (50)   pickupObject(73);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0491.txt",
+          "room": 30,
+          "object_expression": "73",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 74,
+      "names": [
+        "CashCards"
+      ],
+      "programs": [
+        {
+          "room": 30,
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0074.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0042"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "002A"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "003B"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 19,
+          "instruction": "[0048] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,3);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0074.txt",
+          "room": 30,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 5,
+          "instruction": "[0015] (50) pickupObject(74);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0495.txt",
+          "room": 30,
+          "object_expression": "74",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 75,
+      "names": [
+        "CashCard"
+      ],
+      "programs": [
+        {
+          "room": 30,
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0075.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0037"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "001F"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0030"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 16,
+          "instruction": "[003D] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,4);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0075.txt",
+          "room": 30,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        },
+        {
+          "line": 6,
+          "instruction": "[0018] (50) pickupObject(75);",
+          "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0495.txt",
+          "room": 30,
+          "object_expression": "75",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 76,
+      "names": [
+        "golden key"
+      ],
+      "programs": [
+        {
+          "room": 35,
+          "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0076.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0022"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001F"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 8,
+          "instruction": "[0022] (29)   setOwnerOf(76,0);",
+          "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0325.txt",
+          "room": 15,
+          "object_expression": "76",
+          "association": "literal object ID"
+        },
+        {
+          "line": 5,
+          "instruction": "[001F] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0076.txt",
+          "room": 35,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 77,
+      "names": [
+        "parachute"
+      ],
+      "programs": [
+        {
+          "room": 40,
+          "source": "zak/converted/scripts/LFv2_0040/ROv2/OCv2_0077.txt",
+          "events": [
+            {
+              "verb_hex": "1",
+              "entry_offset": "0075"
+            },
+            {
+              "verb_hex": "6",
+              "entry_offset": "0051"
+            },
+            {
+              "verb_hex": "7",
+              "entry_offset": "0068"
+            },
+            {
+              "verb_hex": "A",
+              "entry_offset": "0075"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0075"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "0026"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 11,
+          "instruction": "[002E] (29)   setOwnerOf(77,0);",
+          "source": "zak/converted/scripts/LFv2_0031/ROv2/ENv2.txt",
+          "room": 31,
+          "object_expression": "77",
+          "association": "literal object ID"
+        },
+        {
+          "line": 12,
+          "instruction": "[0032] (29)   setOwnerOf(77,15);",
+          "source": "zak/converted/scripts/LFv2_0031/ROv2/ENv2.txt",
+          "room": 31,
+          "object_expression": "77",
+          "association": "literal object ID"
+        },
+        {
+          "line": 11,
+          "instruction": "[0029] (50)       pickupObject(77);",
+          "source": "zak/converted/scripts/LFv2_0040/ROv2/ENv2.txt",
+          "room": 40,
+          "object_expression": "77",
+          "association": "literal object ID"
+        },
+        {
+          "line": 101,
+          "instruction": "[0143] (29)     setOwnerOf(77,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+          "room": 10,
+          "object_expression": "77",
+          "association": "literal object ID"
+        },
+        {
+          "line": 102,
+          "instruction": "[0147] (29)     setOwnerOf(77,15);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+          "room": 10,
+          "object_expression": "77",
+          "association": "literal object ID"
+        },
+        {
+          "line": 85,
+          "instruction": "[029C] (29)   setOwnerOf(77,0);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+          "room": 40,
+          "object_expression": "77",
+          "association": "literal object ID"
+        },
+        {
+          "line": 86,
+          "instruction": "[02A0] (29)   setOwnerOf(77,15);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+          "room": 40,
+          "object_expression": "77",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 78,
+      "names": [
+        "glowing object"
+      ],
+      "programs": [
+        {
+          "room": 41,
+          "source": "zak/converted/scripts/LFv2_0041/ROv2/OCv2_0078.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "0033"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "002D"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0025"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[001D] (29)   setOwnerOf(78,0);",
+          "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0426.txt",
+          "room": 25,
+          "object_expression": "78",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 79,
+      "names": [
+        "scroll"
+      ],
+      "programs": [
+        {
+          "room": 43,
+          "source": "zak/converted/scripts/LFv2_0043/ROv2/OCv2_0079.txt",
+          "events": [
+            {
+              "verb_hex": "C",
+              "entry_offset": "001E"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001B"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 37,
+          "instruction": "[0077] (29)     setOwnerOf(79,0);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0651.txt",
+          "room": 44,
+          "object_expression": "79",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 80,
+      "names": [
+        "candelabra"
+      ],
+      "programs": [
+        {
+          "room": 43,
+          "source": "zak/converted/scripts/LFv2_0043/ROv2/OCv2_0080.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0027"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "001F"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 9,
+          "instruction": "[002F] (29)   setOwnerOf(80,0);",
+          "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0427.txt",
+          "room": 25,
+          "object_expression": "80",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 81,
+      "names": [
+        "yellow crystal"
+      ],
+      "programs": [
+        {
+          "room": 44,
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0081.txt",
+          "events": [
+            {
+              "verb_hex": "B",
+              "entry_offset": "0023"
+            },
+            {
+              "verb_hex": "E",
+              "entry_offset": "0036"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 8,
+          "instruction": "[002A] (29)   setOwnerOf(81,14);",
+          "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0428.txt",
+          "room": 25,
+          "object_expression": "81",
+          "association": "literal object ID"
+        },
+        {
+          "line": 7,
+          "instruction": "[0029] (69) setOwnerOf(81,VAR_EGO);",
+          "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0429.txt",
+          "room": 25,
+          "object_expression": "81",
+          "association": "literal object ID"
+        },
+        {
+          "line": 12,
+          "instruction": "[0036] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0081.txt",
+          "room": 44,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 82,
+      "names": [
+        "ticket"
+      ],
+      "programs": [
+        {
+          "room": 46,
+          "source": "zak/converted/scripts/LFv2_0046/ROv2/OCv2_0082.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "001D"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0020"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "001D"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 29,
+          "instruction": "[007E] (29)     setOwnerOf(82,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0009/SCv2_0115.txt",
+          "room": 9,
+          "object_expression": "82",
+          "association": "literal object ID"
+        },
+        {
+          "line": 14,
+          "instruction": "[0029] (29) setOwnerOf(82,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+          "room": 18,
+          "object_expression": "82",
+          "association": "literal object ID"
+        },
+        {
+          "line": 161,
+          "instruction": "[023C] (29)     setOwnerOf(82,1);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0030.txt",
+          "room": 45,
+          "object_expression": "82",
+          "association": "literal object ID"
+        },
+        {
+          "line": 21,
+          "instruction": "[009B] (29)       setOwnerOf(82,1);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0058.txt",
+          "room": 45,
+          "object_expression": "82",
+          "association": "literal object ID"
+        },
+        {
+          "line": 30,
+          "instruction": "[0063] (50) pickupObject(82);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+          "room": 49,
+          "object_expression": "82",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 83,
+      "names": [
+        "ticket"
+      ],
+      "programs": [
+        {
+          "room": 46,
+          "source": "zak/converted/scripts/LFv2_0046/ROv2/OCv2_0083.txt",
+          "events": [
+            {
+              "verb_hex": "3",
+              "entry_offset": "001D"
+            },
+            {
+              "verb_hex": "B",
+              "entry_offset": "0020"
+            },
+            {
+              "verb_hex": "C",
+              "entry_offset": "001D"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 31,
+          "instruction": "[0085] (29)     setOwnerOf(83,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0009/SCv2_0115.txt",
+          "room": 9,
+          "object_expression": "83",
+          "association": "literal object ID"
+        },
+        {
+          "line": 159,
+          "instruction": "[0235] (29)     setOwnerOf(83,2);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0030.txt",
+          "room": 45,
+          "object_expression": "83",
+          "association": "literal object ID"
+        },
+        {
+          "line": 11,
+          "instruction": "[001E] (29)     setOwnerOf(83,2);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0058.txt",
+          "room": 45,
+          "object_expression": "83",
+          "association": "literal object ID"
+        },
+        {
+          "line": 28,
+          "instruction": "[005C] (50) pickupObject(83);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+          "room": 49,
+          "object_expression": "83",
+          "association": "literal object ID"
+        },
+        {
+          "line": 29,
+          "instruction": "[005F] (29) setOwnerOf(83,14);",
+          "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+          "room": 49,
+          "object_expression": "83",
+          "association": "literal object ID"
+        }
+      ]
+    },
+    {
+      "object_id": 117,
+      "names": [
+        "infrared sensor"
+      ],
+      "programs": [
+        {
+          "room": 2,
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0117.txt",
+          "events": [
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0022"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 4,
+          "instruction": "[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0117.txt",
+          "room": 2,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 210,
+      "names": [],
+      "programs": [
+        {
+          "room": 8,
+          "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0210.txt",
+          "events": [
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0013"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 33,
+          "instruction": "[0079] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,10);",
+          "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0210.txt",
+          "room": 8,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 236,
+      "names": [
+        "viewscreen"
+      ],
+      "programs": [
+        {
+          "room": 10,
+          "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0236.txt",
+          "events": [
+            {
+              "verb_hex": "C",
+              "entry_offset": "001F"
+            },
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0033"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 29,
+          "instruction": "[00BF] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,0);",
+          "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0236.txt",
+          "room": 10,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 274,
+      "names": [],
+      "programs": [
+        {
+          "room": 13,
+          "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0274.txt",
+          "events": [
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0013"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 4,
+          "instruction": "[0013] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0274.txt",
+          "room": 13,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 276,
+      "names": [],
+      "programs": [
+        {
+          "room": 13,
+          "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0276.txt",
+          "events": [
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0013"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 8,
+          "instruction": "[003D] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0276.txt",
+          "room": 13,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 358,
+      "names": [],
+      "programs": [
+        {
+          "room": 17,
+          "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0358.txt",
+          "events": [
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0013"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[0019] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0358.txt",
+          "room": 17,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 371,
+      "names": [
+        "flyer"
+      ],
+      "programs": [
+        {
+          "room": 18,
+          "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0371.txt",
+          "events": [
+            {
+              "verb_hex": "C",
+              "entry_offset": "001A"
+            },
+            {
+              "verb_hex": "FD",
+              "entry_offset": "009B"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 52,
+          "instruction": "[0173] (A9)             setOwnerOf(VAR_ACTIVE_OBJECT1,2);",
+          "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0371.txt",
+          "room": 18,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    },
+    {
+      "object_id": 607,
+      "names": [],
+      "programs": [
+        {
+          "room": 41,
+          "source": "zak/converted/scripts/LFv2_0041/ROv2/OCv2_0607.txt",
+          "events": [
+            {
+              "verb_hex": "FD",
+              "entry_offset": "0013"
+            }
+          ]
+        }
+      ],
+      "ownership_operations": [
+        {
+          "line": 5,
+          "instruction": "[001A] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+          "source": "zak/converted/scripts/LFv2_0041/ROv2/OCv2_0607.txt",
+          "room": 41,
+          "object_expression": "VAR_ACTIVE_OBJECT1",
+          "association": "contextual object program; runtime active object must still be checked"
+        }
+      ]
+    }
+  ],
+  "dynamic_operations": [
+    {
+      "line": 37,
+      "instruction": "[00D8] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT2,2);",
+      "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0169.txt",
+      "room": 5,
+      "object_expression": "VAR_ACTIVE_OBJECT2",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 11,
+      "instruction": "[0017] (A9)   setOwnerOf(Var[45],0);",
+      "source": "zak/converted/scripts/LFv2_0007/ROv2/EXv2.txt",
+      "room": 7,
+      "object_expression": "Var[45]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 12,
+      "instruction": "[001A] (A9)   setOwnerOf(Var[45],15);",
+      "source": "zak/converted/scripts/LFv2_0007/ROv2/EXv2.txt",
+      "room": 7,
+      "object_expression": "Var[45]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 27,
+      "instruction": "[00C5] (E9)   setOwnerOf(Var[66],VAR_EGO);",
+      "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0208.txt",
+      "room": 8,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 25,
+      "instruction": "[007D] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+      "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0242.txt",
+      "room": 11,
+      "object_expression": "VAR_ACTIVE_OBJECT2",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 20,
+      "instruction": "[00B1] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+      "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0273.txt",
+      "room": 13,
+      "object_expression": "VAR_ACTIVE_OBJECT2",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 46,
+      "instruction": "[013F] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+      "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0273.txt",
+      "room": 13,
+      "object_expression": "VAR_ACTIVE_OBJECT2",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 15,
+      "instruction": "[0041] (E9)       setOwnerOf(Var[50],VAR_EGO);",
+      "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0328.txt",
+      "room": 16,
+      "object_expression": "Var[50]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 4,
+      "instruction": "[001A] (A9) setOwnerOf(Var[50],0);",
+      "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0365.txt",
+      "room": 18,
+      "object_expression": "Var[50]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 5,
+      "instruction": "[001D] (A9) setOwnerOf(Var[50],15);",
+      "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0365.txt",
+      "room": 18,
+      "object_expression": "Var[50]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 34,
+      "instruction": "[00AD] (E9)     setOwnerOf(Var[66],VAR_EGO);",
+      "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0368.txt",
+      "room": 18,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 33,
+      "instruction": "[00BD] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT2,14);",
+      "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0445.txt",
+      "room": 27,
+      "object_expression": "VAR_ACTIVE_OBJECT2",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 13,
+      "instruction": "[004D] (A9) setOwnerOf(Var[61],14);",
+      "source": "zak/converted/scripts/LFv2_0045/ROv2/OCv2_0670.txt",
+      "room": 45,
+      "object_expression": "Var[61]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 13,
+      "instruction": "[0022] (A9)     setOwnerOf(Var[66],7);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0141.txt",
+      "room": 4,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 191,
+      "instruction": "[0527] (A9)   setOwnerOf(Var[119],1);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+      "room": 5,
+      "object_expression": "Var[119]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 5,
+      "instruction": "[0006] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0006/SCv2_0119.txt",
+      "room": 6,
+      "object_expression": "VAR_ACTIVE_OBJECT1",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 101,
+      "instruction": "[0248] (D0)         pickupObject(Var[45]);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+      "room": 7,
+      "object_expression": "Var[45]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 103,
+      "instruction": "[024D] (E9)         setOwnerOf(Var[46],VAR_EGO);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+      "room": 7,
+      "object_expression": "Var[46]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 112,
+      "instruction": "[026D] (D0)           pickupObject(Var[66]);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+      "room": 7,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 113,
+      "instruction": "[026F] (A9)           setOwnerOf(Var[66],12);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+      "room": 7,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 7,
+      "instruction": "[000B] (A9)     setOwnerOf(Var[45],0);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0025.txt",
+      "room": 7,
+      "object_expression": "Var[45]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 8,
+      "instruction": "[000E] (A9)     setOwnerOf(Var[45],15);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0025.txt",
+      "room": 7,
+      "object_expression": "Var[45]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 154,
+      "instruction": "[0343] (A9)     setOwnerOf(Var[52],14);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+      "room": 7,
+      "object_expression": "Var[52]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 160,
+      "instruction": "[035C] (A9)         setOwnerOf(Var[66],0);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+      "room": 7,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 161,
+      "instruction": "[035F] (A9)         setOwnerOf(Var[66],15);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+      "room": 7,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 173,
+      "instruction": "[03B4] (A9)       setOwnerOf(Var[52],0);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+      "room": 7,
+      "object_expression": "Var[52]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 34,
+      "instruction": "[0132] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,0);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+      "room": 7,
+      "object_expression": "VAR_ACTIVE_OBJECT1",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 107,
+      "instruction": "[024E] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+      "room": 7,
+      "object_expression": "VAR_ACTIVE_OBJECT2",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 156,
+      "instruction": "[0334] (E9)         setOwnerOf(Var[66],Var[61]);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+      "room": 7,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 30,
+      "instruction": "[0065] (A9)         setOwnerOf(Var[66],8);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+      "room": 18,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 8,
+      "instruction": "[0010] (A9)   setOwnerOf(Var[66],0);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+      "room": 25,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 22,
+      "instruction": "[004E] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT1,14);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0145.txt",
+      "room": 27,
+      "object_expression": "VAR_ACTIVE_OBJECT1",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 39,
+      "instruction": "[0085] (E9)     setOwnerOf(Var[66],VAR_ACTIVE_OBJECT2);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0145.txt",
+      "room": 27,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 9,
+      "instruction": "[0054] (D0)     pickupObject(VAR_ACTIVE_OBJECT1);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+      "room": 30,
+      "object_expression": "VAR_ACTIVE_OBJECT1",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 15,
+      "instruction": "[0028] (A9)     setOwnerOf(Var[66],0);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0078.txt",
+      "room": 31,
+      "object_expression": "Var[66]",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 24,
+      "instruction": "[00A7] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,14);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0058.txt",
+      "room": 45,
+      "object_expression": "VAR_ACTIVE_OBJECT1",
+      "association": "unresolved dynamic object expression"
+    },
+    {
+      "line": 5,
+      "instruction": "[0006] (E9)   setOwnerOf(VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2);",
+      "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0056/SCv2_0020.txt",
+      "room": 56,
+      "object_expression": "VAR_ACTIVE_OBJECT1",
+      "association": "unresolved dynamic object expression"
+    }
+  ]
+}

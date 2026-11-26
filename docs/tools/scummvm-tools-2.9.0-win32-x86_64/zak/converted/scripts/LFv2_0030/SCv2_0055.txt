@@ -1,0 +1,174 @@
+# Decompiled with descumm -2
+# Source: LFv2_0030\SCv2_0055
+
+[0000] (48) if (VAR_ACTIVE_VERB == 12) {
+[0006] (D8)   printEgo("Mitachisoniba DAT Recorder\x01Property of Melissa China - Don't Touch!");
+[0043] (48) } else if (VAR_ACTIVE_VERB == 14) {
+[004C] (48)   if (VAR_EGO == 3) {
+[0052] (B7)     setState01(VAR_ACTIVE_OBJECT1);
+[0054] (D0)     pickupObject(VAR_ACTIVE_OBJECT1);
+[0056] (6F)     if (getState04(454)) {
+[005B] (07)       setState08(495);
+[005E] (**)     }
+[005E] (18)   } else {
+[0061] (D8)     printEgo("No Way! Melissa would KILL me!");
+[007C] (19)     doSentence(STOP);
+[007E] (**)   }
+[007E] (48) } else if (VAR_ACTIVE_VERB == 3) {
+[0087] (D8)   printEgo("No way, it's mine!");
+[0098] (48) } else if (VAR_ACTIVE_VERB == 11) {
+[00A1] (48)   if (VAR_ACTIVE_OBJECT2 == 72) {
+[00A7] (47)     clearState08(493);
+[00AA] (6F)     if (getState04(493)) {
+[00AF] (29)       setOwnerOf(72,0);
+[00B3] (18)     } else {
+[00B6] (29)       setOwnerOf(72,14);
+[00BA] (**)     }
+[00BA] (18)   } else {
+[00BD] (42)     startScript(3);
+[00BF] (**)   }
+[00BF] (48) } else if (VAR_ACTIVE_VERB == 4) {
+[00C8] (4F)   if (getState08(493)) {
+[00CD] (D8)     printEgo("There's no tape in it.");
+[00E1] (62)     stopScript(0);
+[00E3] (18)   } else {
+[00E6] (40)     cutscene();
+[00E7] (9A)     Var[66] = Var[234];
+[00EA] (FA)     VerbOps(Delete(Var[66]););
+[00ED] (46)     Var[66]++;
+[00EF] (44)     unless (Var[66] > 14) goto 00EA;
+[00F5] (7A)     VerbOps(New-32(0,20,10,0,"        Play@@@@@@@@"));
+[0110] (7A)     VerbOps(New-31(20,20,11,0,"      Record@@@@@@@@"));
+[012B] (60)     cursorCommand(0, 0);
+[012E] (60)     cursorCommand(159, 3);
+[0131] (58)     beginOverride();
+[0132] (18)     goto 0144;
+[0135] (9A)     VAR_ACTIVE_VERB = Var[234];
+[0138] (9A)     VAR_SENTENCE_VERB = Var[234];
+[013B] (1A)     VAR_BACKUP_VERB = 34;
+[013F] (80)     breakHere();
+[0140] (A8)     unless (VAR_ACTIVE_VERB) goto 013F;
+[0144] (42)     startScript(19);
+[0146] (C0)     endCutscene();
+[0147] (48)     if (VAR_ACTIVE_VERB == 32) {
+[014D] (28)       if (!Var[158]) {
+[0151] (D8)         printEgo("The DAT is blank.");
+[0161] (62)         stopScript(0);
+[0163] (**)       }
+[0163] (48)       if (VAR_ROOM == 188) {
+[0169] (7C)         VAR_RESULT = isSoundRunning(70);
+[016C] (A8)         if (VAR_RESULT) {
+[0170] (D8)           printEgo("Hmmm, it won't play in here. Perhaps\x01it's the crystalinetic force!");
+[01AB] (62)           stopScript(0);
+[01AD] (**)         }
+[01AD] (**)       }
+[01AD] (5B)       setBitVar(1440,0,Var[235]);
+[01B2] (48)       if (VAR_ROOM_RESOURCE == 33) {
+[01B8] (08)         if (VAR_ROOM != 182) {
+[01BE] (48)           if (Var[158] == 32) {
+[01C4] (19)             doSentence(11,520,0,1);
+[01CB] (62)             stopScript(0);
+[01CD] (**)           }
+[01CD] (**)         }
+[01CD] (**)       }
+[01CD] (9C)       startSound(Var[158]);
+[01CF] (2F)       if (!getState04(495)) {
+[01D4] (42)         startScript(44);
+[01D6] (**)       }
+[01D6] (9A)       Var[149] = VAR_ROOM;
+[01D9] (9A)       Var[231] = Var[230];
+[01DC] (88)       if (Var[149] != VAR_ROOM) {
+[01E1] (18)       } else {
+[01E4] (80)         breakHere();
+[01E5] (C6)         Var[231]--;
+[01E7] (28)         unless (!Var[231]) goto 01DC;
+[01EB] (**)       }
+[01EB] (BC)       stopSound(Var[158]);
+[01ED] (5B)       setBitVar(1440,0,Var[234]);
+[01F2] (48)     } else if (VAR_ACTIVE_VERB == 31) {
+[01FB] (31)       VAR_RESULT = getBitVar(1440,0);
+[0200] (A8)       if (VAR_RESULT) {
+[0204] (5B)         setBitVar(1440,0,Var[234]);
+[0209] (BC)         stopSound(Var[158]);
+[020B] (**)       }
+[020B] (6F)       if (getState04(493)) {
+[0210] (27)         setState04(71);
+[0213] (54)         setObjectName(71,"recording boom box");
+[0229] (18)       } else {
+[022C] (D8)         printEgo("It won't record!\x03I think the DAT is write-protected.");
+[025B] (**)       }
+[025B] (**)     }
+[025B] (6F)     if (getState04(71)) {
+[0260] (1A)       Var[230] = 240;
+[0264] (9A)       Var[149] = VAR_ROOM;
+[0267] (7C)       VAR_RESULT = isSoundRunning(86);
+[026A] (A8)       if (VAR_RESULT) {
+[026E] (1A)         Var[158] = 86;
+[0272] (18)       } else {
+[0275] (7C)         VAR_RESULT = isSoundRunning(70);
+[0278] (A8)         unless (VAR_RESULT) goto 0287;
+[027C] (1A)         Var[158] = 70;
+[0280] (**)       }
+[0280] (2E)       delay(240);
+[0284] (18)       goto 033D;
+[0287] (9A)       VAR_LAST_SOUND = Var[234];
+[028A] (9A)       Var[158] = VAR_LAST_SOUND;
+[028D] (88)       if (Var[149] != VAR_ROOM) {
+[0292] (18)         goto 033D;
+[0295] (**)       }
+[0295] (A8)       if (VAR_LAST_SOUND) {
+[0299] (1A)         Var[66] = 6;
+[029D] (C8)         if (VAR_LAST_SOUND == Var[66]) {
+[02A2] (18)         } else {
+[02A5] (46)           Var[66]++;
+[02A7] (44)           unless (Var[66] > 9) goto 029D;
+[02AD] (9A)           Var[158] = VAR_LAST_SOUND;
+[02B0] (9A)           Var[230] = Var[234];
+[02B3] (80)           breakHere();
+[02B4] (46)           Var[230]++;
+[02B6] (FC)           VAR_RESULT = isSoundRunning(VAR_LAST_SOUND);
+[02B9] (28)           if (!VAR_RESULT) {
+[02BD] (78)             if (Var[230] < 5) {
+[02C3] (1A)               Var[230] = 5;
+[02C7] (**)             }
+[02C7] (18)             goto 033D;
+[02CA] (**)           }
+[02CA] (48)           unless (Var[230] == 240) goto 02B3;
+[02D0] (18)           goto 033D;
+[02D3] (**)         }
+[02D3] (**)       }
+[02D3] (80)       breakHere();
+[02D4] (C6)       Var[230]--;
+[02D6] (28)       unless (!Var[230]) goto 028D;
+[02DA] (18)       goto 033D;
+[02DD] (**)     }
+[02DD] (**)   }
+[02DD] (48) } else if (VAR_ACTIVE_VERB == 1) {
+[02E6] (0F)   if (!getState08(493)) {
+[02EB] (2F)     if (!getState04(493)) {
+[02F0] (07)       setState08(493);
+[02F3] (D8)       printEgo("The DAT fell out.");
+[0303] (69)       setOwnerOf(72,VAR_EGO);
+[0307] (18)     } else {
+[030A] (D8)       printEgo("The DAT is stuck inside.");
+[0320] (**)     }
+[0320] (18)     goto 0331;
+[0323] (**)   }
+[0323] (48) } else if (VAR_ACTIVE_VERB == 5) {
+[032C] (0F)   if (!getState08(493)) {
+[0331] (2F)     if (!getState04(71)) {
+[0336] (5B)       setBitVar(1440,0,Var[234]);
+[033B] (BC)       stopSound(Var[158]);
+[033D] (**)     }
+[033D] (67)     clearState04(71);
+[0340] (54)     setObjectName(71,"boom box");
+[034C] (48)     if (VAR_ROOM == 30) {
+[0352] (6F)       if (getState04(492)) {
+[0357] (19)         doSentence(4,492,0,1);
+[035E] (**)       }
+[035E] (**)     }
+[035E] (**)   }
+[035E] (18)   /* goto 0361; */
+[0361] (**) }
+[0361] (A0) stopObjectCode();
+END

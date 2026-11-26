@@ -1,0 +1,9 @@
+[0000] (0F) unless (!getState08(350)) goto 001B;
+[0005] (07) setState08(350);
+[0008] (07) setState08(363);
+[000B] (48) unless (VAR_ROOM == 18) goto 0013;
+[0011] (1C) startSound(10);
+[0013] (48) unless (VAR_ROOM == 17) goto 001B;
+[0019] (1C) startSound(10);
+[001B] (A0) stopObjectCode();
+END

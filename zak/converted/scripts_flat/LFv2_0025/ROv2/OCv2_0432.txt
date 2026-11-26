@@ -1,0 +1,12 @@
+Events:
+  FD - 0017
+[0017] (80) breakHere();
+[0018] (7C) VAR_RESULT = isSoundRunning(102);
+[001B] (28) unless (!VAR_RESULT) goto 0017;
+[001F] (02) startMusic(104);
+[0021] (80) breakHere();
+[0022] (7C) VAR_RESULT = isSoundRunning(104);
+[0025] (28) unless (!VAR_RESULT) goto 0021;
+[0029] (18) goto 001F;
+[002C] (00) stopObjectCode();
+END

@@ -1,0 +1,57 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0041/ROv2/OCv2_0614
+Events:
+   9 - 0020
+   A - 0020
+   E - 0020
+  FD - 0038
+[0020] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0022] (47) clearState08(615);
+[0025] (47) clearState08(616);
+[0028] (47) clearState08(617);
+[002B] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[002D] (17) clearState02(78);
+[0030] (19) doSentence(250,606,0,1);
+[0037] (00) stopObjectCode();
+[0038] (5F) if (!getState02(614)) {
+[003D] (05)   drawObject(617,255,255);
+[0042] (**) }
+[0042] (5F) if (!getState02(609)) {
+[0047] (05)   drawObject(612,18,9);
+[004C] (**) }
+[004C] (5F) if (!getState02(610)) {
+[0051] (05)   drawObject(611,61,12);
+[0056] (**) }
+[0056] (2E) delay(30);
+[005A] (5F) if (!getState02(614)) {
+[005F] (05)   drawObject(616,255,255);
+[0064] (**) }
+[0064] (5F) if (!getState02(609)) {
+[0069] (05)   drawObject(613,18,9);
+[006E] (**) }
+[006E] (5F) if (!getState02(610)) {
+[0073] (05)   drawObject(612,61,12);
+[0078] (**) }
+[0078] (2E) delay(30);
+[007C] (5F) if (!getState02(614)) {
+[0081] (05)   drawObject(615,255,255);
+[0086] (**) }
+[0086] (5F) if (!getState02(609)) {
+[008B] (05)   drawObject(612,18,9);
+[0090] (**) }
+[0090] (5F) if (!getState02(610)) {
+[0095] (05)   drawObject(613,61,12);
+[009A] (**) }
+[009A] (2E) delay(30);
+[009E] (5F) if (!getState02(614)) {
+[00A3] (05)   drawObject(616,255,255);
+[00A8] (**) }
+[00A8] (5F) if (!getState02(609)) {
+[00AD] (05)   drawObject(611,18,9);
+[00B2] (**) }
+[00B2] (5F) if (!getState02(610)) {
+[00B7] (05)   drawObject(612,61,12);
+[00BC] (**) }
+[00BC] (2E) delay(30);
+[00C0] (18) goto 0038;
+[00C3] (00) stopObjectCode();
+END

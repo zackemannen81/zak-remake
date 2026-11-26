@@ -1,0 +1,41 @@
+# Decompiled with descumm -2
+# Source: LFv2_0003\SCv2_0052
+
+[0000] (1A) Var[198] = 1;
+[0004] (48) if (VAR_EGO == 1) {
+[000A] (1A)   Var[198] = 2;
+[000E] (**) }
+[000E] (9A) Var[48] = Var[198];
+[0011] (83) VAR_RESULT = getActorRoom(Var[198]);
+[0014] (48) if (VAR_RESULT == 3) {
+[001A] (C3)   VAR_RESULT = getActorX(Var[198]);
+[001D] (44)   if (VAR_RESULT > 78) {
+[0023] (B1)     VAR_RESULT = getBitVar(848,Var[198]);
+[0028] (28)     if (!VAR_RESULT) {
+[002C] (19)       doSentence(253,149,0,1);
+[0033] (A8)       if (Var[47]) {
+[0037] (14)         print(255,"Don't just stand there. Pay your fare.");
+[005A] (18)       } else {
+[005D] (14)         print(255,"Hey, does your friend wanna come?\x01I'll be leaving in 15 seconds!");
+[0096] (**)       }
+[0096] (19)       doSentence(253,148,0,1);
+[009D] (2E)       delay(900);
+[00A1] (**)     }
+[00A1] (**)   }
+[00A1] (19)   doSentence(253,149,0,1);
+[00A8] (A8)   if (Var[47]) {
+[00AC] (14)     print(255,"Are ya gonna pay or what?");
+[00C3] (19)     doSentence(253,148,0,1);
+[00CA] (AE)     waitForMessage();
+[00CB] (2E)     delay(300);
+[00CF] (19)     doSentence(253,149,0,1);
+[00D6] (A8)     if (Var[47]) {
+[00DA] (14)       print(255,"OK, outta here ya bum!");
+[00EF] (19)       doSentence(253,141,0,1);
+[00F6] (80)       breakHere();
+[00F7] (**)     }
+[00F7] (**)   }
+[00F7] (**) }
+[00F7] (4A) chainScript(54);
+[00F9] (A0) stopObjectCode();
+END

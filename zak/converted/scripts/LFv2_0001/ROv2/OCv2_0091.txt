@@ -1,0 +1,27 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0091
+Events:
+   1 - 0022
+   2 - 0022
+   9 - 0022
+   A - 0022
+   B - 0029
+[0022] (B9) doSentence(VAR_ACTIVE_VERB,92,VAR_ACTIVE_OBJECT2,1);
+[0028] (00) stopObjectCode();
+[0029] (48) if (VAR_ACTIVE_OBJECT2 == 14) {
+[002F] (C8)   if (Var[138] == Var[234]) {
+[0034] (47)     clearState08(14);
+[0037] (17)     clearState02(14);
+[003A] (19)     doSentence(250,101,0,1);
+[0041] (29)     setOwnerOf(14,0);
+[0045] (29)     setOwnerOf(14,15);
+[0049] (6F)     if (getState04(14)) {
+[004E] (07)       setState08(93);
+[0051] (**)     }
+[0051] (18)   } else {
+[0054] (D8)     printEgo("Not without Sushi in it!");
+[006A] (**)   }
+[006A] (18) } else {
+[006D] (42)   startScript(3);
+[006F] (**) }
+[006F] (00) stopObjectCode();
+END

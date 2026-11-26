@@ -1,0 +1,16 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0037/ROv2/OCv2_0575
+Events:
+   D - 0019
+  FD - 0021
+[0019] (19) doSentence(253,571,0,1);
+[0020] (00) stopObjectCode();
+[0021] (67) clearState04(575);
+[0024] (2E) delay(60);
+[0028] (16) Var[44] = getRandomNr(3);
+[002B] (28) if (!Var[44]) {
+[002F] (D8)   printEgo("Will I ever see civilization again?");
+[004F] (18) } else {
+[0052] (D8)   printEgo("Oh no. I'm hopelessly lost.");
+[006B] (**) }
+[006B] (00) stopObjectCode();
+END

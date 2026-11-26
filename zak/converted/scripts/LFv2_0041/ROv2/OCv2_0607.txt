@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0041/ROv2/OCv2_0607
+Events:
+  FD - 0013
+[0013] (19) doSentence(254,606,0,1);
+[001A] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[001C] (6F) if (getState04(169)) {
+[0021] (D8)   printEgo("This looks like the bottom part of the\x01device!");
+[004A] (18) } else {
+[004D] (D8)   printEgo("Didn't I see this in my dream?");
+[0067] (**) }
+[0067] (00) stopObjectCode();
+END

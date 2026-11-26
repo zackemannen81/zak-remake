@@ -1,0 +1,32 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0023/ROv2/OCv2_0409
+Events:
+  FD - 0013
+[0013] (2E) delay(120);
+[0017] (AE) waitForMessage();
+[0018] (C8) if (Var[249] == Var[235]) {
+[001D] (D8)   printEgo("I don't like the sound of this.");
+[0038] (18) } else {
+[003B] (D8)   printEgo("It sounds like a vicious sleeping beast.\x01I wouldn't want to wake it.");
+[0076] (**) }
+[0076] (AE) waitForMessage();
+[0077] (2E) delay(180);
+[007B] (60) cursorCommand(15, 2);
+[007E] (AE) waitForMessage();
+[007F] (D8) printEgo("I'm getting out of here!");
+[0095] (2E) delay(120);
+[0099] (B6) walkActorToObject(VAR_EGO,408);
+[009D] (BB) waitForActor(VAR_EGO);
+[009F] (1A) Var[44] = 2;
+[00A3] (48) if (VAR_EGO == 2) {
+[00A9] (1A)   Var[44] = 1;
+[00AD] (**) }
+[00AD] (83) VAR_RESULT = getActorRoom(Var[44]);
+[00B0] (C8) if (VAR_RESULT == VAR_ROOM) {
+[00B5] (AD)   putActorInRoom(Var[44],219);
+[00B8] (81)   putActor(Var[44],22,44);
+[00BC] (91)   animateActor(Var[44],246);
+[00BF] (**) }
+[00BF] (60) cursorCommand(247, 1);
+[00C2] (19) doSentence(13,408,0,1);
+[00C9] (00) stopObjectCode();
+END

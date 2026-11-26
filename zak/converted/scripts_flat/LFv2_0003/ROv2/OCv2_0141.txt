@@ -1,0 +1,16 @@
+Events:
+  FD - 0027
+  FF - 0020
+[0020] (24) loadRoomWithEgo(160,5,5,58);
+[0026] (00) stopObjectCode();
+[0027] (60) cursorCommand(15, 2);
+[002A] (19) doSentence(253,148,0,1);
+[0031] (2E) delay(60);
+[0035] (1A) Var[66] = 90;
+[0039] (48) unless (Var[48] == 2) goto 0043;
+[003F] (1A) Var[66] = 86;
+[0043] (DE) walkActorTo(Var[48],Var[66],60);
+[0047] (BB) waitForActor(Var[48]);
+[0049] (60) cursorCommand(247, 1);
+[004C] (00) stopObjectCode();
+END

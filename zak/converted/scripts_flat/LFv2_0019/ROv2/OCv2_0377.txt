@@ -1,0 +1,5 @@
+Events:
+   C - 0018
+[0018] (D8) printEgo("Buy `How To Raise Your Consciousness\x01And Lower Your Golf Scores`,\x03available at airports around the world.");
+[0075] (00) stopObjectCode();
+END

@@ -1,0 +1,45 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0242
+Events:
+   4 - 001D
+   5 - 0029
+   B - 0037
+  FD - 00A2
+[001D] (87) setState08(VAR_ACTIVE_OBJECT1);
+[001F] (1C) startSound(17);
+[0021] (19) doSentence(253,242,0,1);
+[0028] (00) stopObjectCode();
+[0029] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[002B] (19) doSentence(254,242,0,1);
+[0032] (3C) stopSound(17);
+[0034] (1C) startSound(42);
+[0036] (00) stopObjectCode();
+[0037] (48) if (VAR_ACTIVE_OBJECT2 == 14) {
+[003D] (C8)   if (Var[138] == Var[234]) {
+[0042] (D8)     printEgo("I'd never get her back!");
+[0057] (18)     goto 00A1;
+[005A] (**)   }
+[005A] (**) }
+[005A] (EF) if (getState04(VAR_ACTIVE_OBJECT1)) {
+[005E] (D8)   printEgo("It's already clogged up.");
+[0075] (9D) } else if (classOfIs(VAR_ACTIVE_OBJECT2,1)) {
+[007D] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT2,0);
+[0080] (A7)   setState04(VAR_ACTIVE_OBJECT1);
+[0082] (D8)   printEgo("OK, but that could clog it up.");
+[009C] (18) } else {
+[009F] (42)   startScript(3);
+[00A1] (**) }
+[00A1] (00) stopObjectCode();
+[00A2] (80) breakHere();
+[00A3] (6F) unless (getState04(242)) goto 00A2;
+[00A8] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[00AB] (78) if (VAR_RESULT < 15) {
+[00B1] (AE)   waitForMessage();
+[00B2] (0F)   if (!getState08(265)) {
+[00B7] (D8)     printEgo("It's going to overflow!");
+[00CD] (**)   }
+[00CD] (**) }
+[00CD] (2E) delay(600);
+[00D1] (07) setState08(265);
+[00D4] (17) clearState02(265);
+[00D7] (00) stopObjectCode();
+END

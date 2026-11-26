@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0005/ROv2/EXv2
+[0000] (03) VAR_RESULT = getActorRoom(1);
+[0003] (08) if (VAR_RESULT != 7) {
+[0009] (03)   VAR_RESULT = getActorRoom(2);
+[000C] (08)   if (VAR_RESULT != 7) {
+[0012] (47)     clearState08(161);
+[0015] (47)     clearState08(180);
+[0018] (**)   }
+[0018] (**) }
+[0018] (3C) stopSound(19);
+[001A] (00) stopObjectCode();
+END

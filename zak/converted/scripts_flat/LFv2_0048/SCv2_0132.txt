@@ -1,0 +1,12 @@
+[0000] (80) breakHere();
+[0001] (03) VAR_RESULT = getActorRoom(1);
+[0004] (C8) unless (VAR_RESULT == VAR_ROOM) goto 001E;
+[0009] (03) VAR_RESULT = getActorRoom(3);
+[000C] (C8) unless (VAR_RESULT == VAR_ROOM) goto 0014;
+[0011] (18) goto 001C;
+[0014] (03) VAR_RESULT = getActorRoom(4);
+[0017] (C8) unless (VAR_RESULT == VAR_ROOM) goto 001E;
+[001C] (4A) chainScript(133);
+[001E] (18) goto 0000;
+[0021] (A0) stopObjectCode();
+END

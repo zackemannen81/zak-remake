@@ -1,0 +1,29 @@
+Events:
+   4 - 007D
+   5 - 0073
+   A - 005C
+   C - 0026
+   E - 005C
+  FD - 0087
+[0026] (AF) unless (!getState04(VAR_ACTIVE_OBJECT1)) goto 0044;
+[002A] (D8) printEgo("Gosh, it's getting late.");
+[0041] (18) goto 005B;
+[0044] (D8) printEgo("It seems to have stopped.");
+[005B] (00) stopObjectCode();
+[005C] (D8) printEgo("It's nailed to the wall.");
+[0072] (00) stopObjectCode();
+[0073] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[0075] (19) doSentence(254,95,0,1);
+[007C] (00) stopObjectCode();
+[007D] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[007F] (19) doSentence(250,95,0,1);
+[0086] (00) stopObjectCode();
+[0087] (05) drawObject(95,255,255);
+[008C] (1C) startSound(2);
+[008E] (2E) delay(60);
+[0092] (05) drawObject(96,255,255);
+[0097] (1C) startSound(2);
+[0099] (2E) delay(60);
+[009D] (18) goto 0087;
+[00A0] (00) stopObjectCode();
+END

@@ -1,0 +1,882 @@
+[
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 101,
+    "offset": 391,
+    "storage_room": 49,
+    "logical_room": 189,
+    "mapper_index": 61,
+    "resource_room": 33,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 101,
+    "offset": 391,
+    "storage_room": 49,
+    "logical_room": 190,
+    "mapper_index": 62,
+    "resource_room": 33,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 101,
+    "offset": 391,
+    "storage_room": 49,
+    "logical_room": 191,
+    "mapper_index": 63,
+    "resource_room": 33,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 101,
+    "offset": 391,
+    "storage_room": 49,
+    "logical_room": 182,
+    "mapper_index": 54,
+    "resource_room": 33,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 102,
+    "offset": 398,
+    "storage_room": 49,
+    "logical_room": 129,
+    "mapper_index": 1,
+    "resource_room": 14,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 102,
+    "offset": 398,
+    "storage_room": 49,
+    "logical_room": 130,
+    "mapper_index": 2,
+    "resource_room": 14,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 102,
+    "offset": 398,
+    "storage_room": 49,
+    "logical_room": 192,
+    "mapper_index": 64,
+    "resource_room": 14,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 102,
+    "offset": 398,
+    "storage_room": 49,
+    "logical_room": 193,
+    "mapper_index": 65,
+    "resource_room": 14,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 103,
+    "offset": 405,
+    "storage_room": 49,
+    "logical_room": 131,
+    "mapper_index": 3,
+    "resource_room": 40,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 103,
+    "offset": 405,
+    "storage_room": 49,
+    "logical_room": 132,
+    "mapper_index": 4,
+    "resource_room": 40,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 104,
+    "offset": 410,
+    "storage_room": 49,
+    "logical_room": 133,
+    "mapper_index": 5,
+    "resource_room": 44,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 104,
+    "offset": 410,
+    "storage_room": 49,
+    "logical_room": 134,
+    "mapper_index": 6,
+    "resource_room": 44,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 105,
+    "offset": 415,
+    "storage_room": 49,
+    "logical_room": 183,
+    "mapper_index": 55,
+    "resource_room": 21,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 105,
+    "offset": 415,
+    "storage_room": 49,
+    "logical_room": 135,
+    "mapper_index": 7,
+    "resource_room": 21,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 106,
+    "offset": 420,
+    "storage_room": 49,
+    "logical_room": 136,
+    "mapper_index": 8,
+    "resource_room": 43,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 106,
+    "offset": 420,
+    "storage_room": 49,
+    "logical_room": 137,
+    "mapper_index": 9,
+    "resource_room": 43,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 106,
+    "offset": 420,
+    "storage_room": 49,
+    "logical_room": 138,
+    "mapper_index": 10,
+    "resource_room": 43,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 107,
+    "offset": 426,
+    "storage_room": 49,
+    "logical_room": 139,
+    "mapper_index": 11,
+    "resource_room": 22,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 107,
+    "offset": 426,
+    "storage_room": 49,
+    "logical_room": 140,
+    "mapper_index": 12,
+    "resource_room": 22,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 108,
+    "offset": 431,
+    "storage_room": 49,
+    "logical_room": 184,
+    "mapper_index": 56,
+    "resource_room": 27,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 108,
+    "offset": 431,
+    "storage_room": 49,
+    "logical_room": 185,
+    "mapper_index": 57,
+    "resource_room": 27,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 109,
+    "offset": 436,
+    "storage_room": 49,
+    "logical_room": 194,
+    "mapper_index": 66,
+    "resource_room": 35,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 109,
+    "offset": 436,
+    "storage_room": 49,
+    "logical_room": 195,
+    "mapper_index": 67,
+    "resource_room": 35,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 110,
+    "offset": 441,
+    "storage_room": 49,
+    "logical_room": 141,
+    "mapper_index": 13,
+    "resource_room": 8,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 110,
+    "offset": 441,
+    "storage_room": 49,
+    "logical_room": 142,
+    "mapper_index": 14,
+    "resource_room": 8,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 110,
+    "offset": 441,
+    "storage_room": 49,
+    "logical_room": 143,
+    "mapper_index": 15,
+    "resource_room": 8,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 110,
+    "offset": 441,
+    "storage_room": 49,
+    "logical_room": 144,
+    "mapper_index": 16,
+    "resource_room": 8,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 110,
+    "offset": 441,
+    "storage_room": 49,
+    "logical_room": 145,
+    "mapper_index": 17,
+    "resource_room": 8,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 111,
+    "offset": 449,
+    "storage_room": 49,
+    "logical_room": 146,
+    "mapper_index": 18,
+    "resource_room": 9,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 111,
+    "offset": 449,
+    "storage_room": 49,
+    "logical_room": 147,
+    "mapper_index": 19,
+    "resource_room": 9,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 111,
+    "offset": 449,
+    "storage_room": 49,
+    "logical_room": 148,
+    "mapper_index": 20,
+    "resource_room": 9,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 111,
+    "offset": 449,
+    "storage_room": 49,
+    "logical_room": 149,
+    "mapper_index": 21,
+    "resource_room": 9,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 112,
+    "offset": 456,
+    "storage_room": 49,
+    "logical_room": 150,
+    "mapper_index": 22,
+    "resource_room": 38,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 112,
+    "offset": 456,
+    "storage_room": 49,
+    "logical_room": 151,
+    "mapper_index": 23,
+    "resource_room": 38,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 113,
+    "offset": 461,
+    "storage_room": 49,
+    "logical_room": 152,
+    "mapper_index": 24,
+    "resource_room": 15,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 113,
+    "offset": 461,
+    "storage_room": 49,
+    "logical_room": 188,
+    "mapper_index": 60,
+    "resource_room": 15,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 114,
+    "offset": 466,
+    "storage_room": 49,
+    "logical_room": 153,
+    "mapper_index": 25,
+    "resource_room": 29,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 114,
+    "offset": 466,
+    "storage_room": 49,
+    "logical_room": 154,
+    "mapper_index": 26,
+    "resource_room": 29,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 115,
+    "offset": 471,
+    "storage_room": 49,
+    "logical_room": 155,
+    "mapper_index": 27,
+    "resource_room": 24,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 115,
+    "offset": 471,
+    "storage_room": 49,
+    "logical_room": 186,
+    "mapper_index": 58,
+    "resource_room": 24,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 156,
+    "mapper_index": 28,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 157,
+    "mapper_index": 29,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 158,
+    "mapper_index": 30,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 159,
+    "mapper_index": 31,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 160,
+    "mapper_index": 32,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 161,
+    "mapper_index": 33,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 162,
+    "mapper_index": 34,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 163,
+    "mapper_index": 35,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 164,
+    "mapper_index": 36,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 165,
+    "mapper_index": 37,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 166,
+    "mapper_index": 38,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 116,
+    "offset": 476,
+    "storage_room": 49,
+    "logical_room": 167,
+    "mapper_index": 39,
+    "resource_room": 53,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 117,
+    "offset": 491,
+    "storage_room": 49,
+    "logical_room": 180,
+    "mapper_index": 52,
+    "resource_room": 28,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 117,
+    "offset": 491,
+    "storage_room": 49,
+    "logical_room": 181,
+    "mapper_index": 53,
+    "resource_room": 28,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 168,
+    "mapper_index": 40,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 169,
+    "mapper_index": 41,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 170,
+    "mapper_index": 42,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 171,
+    "mapper_index": 43,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 172,
+    "mapper_index": 44,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 173,
+    "mapper_index": 45,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 174,
+    "mapper_index": 46,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 118,
+    "offset": 496,
+    "storage_room": 49,
+    "logical_room": 175,
+    "mapper_index": 47,
+    "resource_room": 37,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 207,
+    "mapper_index": 79,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 208,
+    "mapper_index": 80,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 209,
+    "mapper_index": 81,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 210,
+    "mapper_index": 82,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 211,
+    "mapper_index": 83,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 212,
+    "mapper_index": 84,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 213,
+    "mapper_index": 85,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 214,
+    "mapper_index": 86,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 215,
+    "mapper_index": 87,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 216,
+    "mapper_index": 88,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 217,
+    "mapper_index": 89,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 218,
+    "mapper_index": 90,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 219,
+    "mapper_index": 91,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 220,
+    "mapper_index": 92,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 206,
+    "mapper_index": 78,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 119,
+    "offset": 507,
+    "storage_room": 49,
+    "logical_room": 187,
+    "mapper_index": 59,
+    "resource_room": 23,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 198,
+    "mapper_index": 70,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 199,
+    "mapper_index": 71,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 200,
+    "mapper_index": 72,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 201,
+    "mapper_index": 73,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 202,
+    "mapper_index": 74,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 203,
+    "mapper_index": 75,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 204,
+    "mapper_index": 76,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 205,
+    "mapper_index": 77,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 196,
+    "mapper_index": 68,
+    "resource_room": 36,
+    "raw_verified": true
+  },
+  {
+    "source": "zak/converted/scripts_flat/LFv2_0049/SCv2_0108.txt",
+    "line": 120,
+    "offset": 526,
+    "storage_room": 49,
+    "logical_room": 197,
+    "mapper_index": 69,
+    "resource_room": 36,
+    "raw_verified": true
+  }
+]

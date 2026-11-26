@@ -1,0 +1,8 @@
+Events:
+  FD - 0013
+[0013] (D8) printEgo("Come with me, Sushi.");
+[0026] (19) doSentence(254,101,0,1);
+[002D] (50) pickupObject(14);
+[0030] (47) clearState08(93);
+[0033] (00) stopObjectCode();
+END

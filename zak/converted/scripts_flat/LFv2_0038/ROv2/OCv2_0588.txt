@@ -1,0 +1,5 @@
+Events:
+   C - 001A
+[001A] (D8) printEgo("Kinshasa Medical School^\x03^Witch Doctor First Class");
+[0049] (00) stopObjectCode();
+END

@@ -1,0 +1,8 @@
+{
+  "room": 1,
+  "object_id": 16,
+  "reference": "room_001/object_0016/frame_000.png",
+  "prompt": "Precision style-transfer for a premium AAA Unreal Engine 5 adventure game STATE PATCH. Image 1 is the exact patch to modernize. Image 2 is the full original room ONLY FOR CONTEXT; DO NOT OUTPUT THE WHOLE ROOM. Patch belongs at x=248,y=80, width=24,height=8 in original room 1. Metadata name \"kazoo\" is provenance, not permission to add an object: many patches REMOVE a named object and contain only the empty wall/floor behind it. Reproduce ONLY THE ACTUAL VISIBLE CONTENT of Image 1, keeping exact silhouette, camera, state, colors, geometry and relative placement. If no prop is visible do not invent one. For a fire/water/forcefield animation preserve that exact phase. For interface/text preserve exact visible glyphs and graphic layout. Elevate surface materials, light and details to polished AAA quality consistent with original composition. Match the exact source patch aspect ratio 24:8, with no crop or added surroundings. This is an opaque rectangular state overlay, not a generic isolated inventory prop. No labels, new items or people.",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-aff9dd17-30b3-4bb5-ba7c-a3d39fdecf2b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "generated; state/placement QA pending"
+}

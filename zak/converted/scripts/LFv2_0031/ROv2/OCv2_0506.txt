@@ -1,0 +1,20 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0031/ROv2/OCv2_0506
+Events:
+  FD - 0013
+[0013] (9A) Var[203] = Var[235];
+[0016] (80) breakHere();
+[0017] (48) if (VAR_ACTIVE_VERB == 3) {
+[001D] (48)   if (VAR_ACTIVE_OBJECT2 == 5) {
+[0023] (71)     VAR_RESULT = getActorCostume(5);
+[0026] (48)     if (VAR_RESULT == 12) {
+[002C] (BB)       waitForActor(VAR_EGO);
+[002E] (D8)       printEgo("It won't take it.");
+[003E] (18)     } else {
+[0041] (D8)       printEgo("It's too far away.");
+[0052] (**)     }
+[0052] (9A)     VAR_ACTIVE_OBJECT2 = Var[234];
+[0055] (**)   }
+[0055] (**) }
+[0055] (18) goto 0016;
+[0058] (00) stopObjectCode();
+END

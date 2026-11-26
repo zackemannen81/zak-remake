@@ -1,0 +1,17 @@
+Events:
+  FD - 0013
+[0013] (48) unless (Var[153] == 2) goto 002D;
+[0019] (54) setObjectName(273,"branch in pit");
+[002A] (18) goto 0084;
+[002D] (C8) unless (Var[153] == Var[235]) goto 0044;
+[0032] (54) setObjectName(273,"nest in pit");
+[0041] (18) goto 0084;
+[0044] (48) unless (Var[153] == 3) goto 0060;
+[004A] (54) setObjectName(273,"nest and branch");
+[005D] (18) goto 0084;
+[0060] (48) unless (Var[153] == 4) goto 0078;
+[0066] (54) setObjectName(273,"pit of fire");
+[0075] (18) goto 0084;
+[0078] (54) setObjectName(273,"fire pit");
+[0084] (00) stopObjectCode();
+END

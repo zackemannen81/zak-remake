@@ -1,0 +1,11 @@
+{
+  "room": 1,
+  "object_id": 98,
+  "prompt": "Create ONLY close-up state patch in reference 1. Reference 2 is original room CONTEXT only; NEVER output whole room. Exact crop x=24, y=40, width=24, height=8. Fishbowl water and fish animation close crop, exact source phase. Realistic tiny orange/gold fish and water highlights following the original shapes; no abstract wall art. Preserve exact source state, silhouette, perspective and palette. Premium polished AAA Unreal Engine 5 materials and lighting, realistic physical surfaces. Tight opaque patch aspect 24:8, no new props/text. For extreme aspect use centered letterbox/pillarbox preserving full target aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0098\\frame_000.png",
+    "C:\\code\\zac\\docs\\scummvm-tools-2.9.0-win32-x86_64\\zak\\converted\\images\\backgrounds\\LFv2_0001.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-46bb5447-45df-4a0b-8f25-4798d8847083.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "semantic correction; review pending"
+}

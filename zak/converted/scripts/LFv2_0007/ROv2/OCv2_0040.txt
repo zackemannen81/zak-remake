@@ -1,0 +1,33 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0007/ROv2/OCv2_0040
+Events:
+   3 - 0062
+   6 - 002C
+   7 - 0062
+  11 - 0025
+[0025] (1A) Var[47] = 3;
+[0029] (42) startScript(24);
+[002B] (00) stopObjectCode();
+[002C] (9A) Var[14] = VAR_EGO;
+[002F] (5A) Var[14] += 163;
+[0033] (48) if (Var[14] == 60) {
+[0039] (D8)   printEgo("Gotta remove my mask.");
+[004D] (19)   doSentence(7,50,0,1);
+[0054] (**) }
+[0054] (9A) Var[14] = VAR_EGO;
+[0057] (5A) Var[14] += 163;
+[005B] (0A) Var[Var[14]] = 40;
+[005F] (42) startScript(150);
+[0061] (00) stopObjectCode();
+[0062] (9A) Var[14] = VAR_EGO;
+[0065] (5A) Var[14] += 163;
+[0069] (48) if (Var[14] == 40) {
+[006F] (9A)   Var[14] = VAR_EGO;
+[0072] (5A)   Var[14] += 163;
+[0076] (0A)   Var[Var[14]] = 44;
+[007A] (42)   startScript(150);
+[007C] (**) }
+[007C] (48) if (VAR_ACTIVE_VERB == 3) {
+[0082] (42)   startScript(20);
+[0084] (**) }
+[0084] (00) stopObjectCode();
+END

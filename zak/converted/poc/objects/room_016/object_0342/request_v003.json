@@ -1,0 +1,16 @@
+{
+  "room": 16,
+  "object_id": 342,
+  "name": "",
+  "png": "room_016/object_0342/frame_000.png",
+  "x": 456,
+  "y": 72,
+  "width": 24,
+  "height": 16,
+  "prompt": "Recreate THIS EXACT tightly cropped retro game image as an exquisite polished AAA Unreal Engine 5 render. Preserve every visible shape, placement, silhouette, camera angle, color palette, background and animation phase. This reference IS the entire output composition. Do not zoom out or add surrounding scene. Original image aspect 24:16; keep complete composition with exact proportions.  This is a state patch from room 16. Historical label '' is uncertain context: it can refer to an item REMOVED from this state, so never add a named object that is absent. Convert visible surfaces into beautifully realistic materials and subtle detailed lighting. Do not interpret small pixel details as new writing, buttons or ornaments. Preserve existing symbols literally. No new text, objects, interface, borders or clues. Black areas remain opaque. If aspect is extreme, place full proportion-preserving patch centrally in black letterbox/pillarbox.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_016\\object_0342\\frame_000.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-3daabe4f-7e25-4c2b-92fe-a5d801f35ad4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "single-reference generation; visual QA pending"
+}

@@ -1,0 +1,27 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (16) Var[49] = getRandomNr(5);
+[0017] (5A) Var[49] += 381;
+[001B] (85) drawObject(Var[49],55,5);
+[001F] (16) Var[49] = getRandomNr(5);
+[0022] (5A) Var[49] += 381;
+[0026] (85) drawObject(Var[49],65,5);
+[002A] (16) Var[49] = getRandomNr(5);
+[002D] (5A) Var[49] += 381;
+[0031] (85) drawObject(Var[49],51,5);
+[0035] (16) Var[49] = getRandomNr(5);
+[0038] (5A) Var[49] += 381;
+[003C] (85) drawObject(Var[49],69,5);
+[0040] (16) Var[49] = getRandomNr(5);
+[0043] (5A) Var[49] += 381;
+[0047] (85) drawObject(Var[49],53,4);
+[004B] (16) Var[49] = getRandomNr(5);
+[004E] (5A) Var[49] += 381;
+[0052] (85) drawObject(Var[49],67,4);
+[0056] (16) Var[49] = getRandomNr(5);
+[0059] (5A) Var[49] += 381;
+[005D] (85) drawObject(Var[49],56,2);
+[0061] (18) goto 0013;
+[0064] (00) stopObjectCode();
+END

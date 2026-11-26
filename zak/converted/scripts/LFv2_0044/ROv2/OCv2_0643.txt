@@ -1,0 +1,30 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0643
+Events:
+  FF - 0018
+[0018] (0F) if (!getState08(642)) {
+[001D] (1C)   startSound(29);
+[001F] (19)   doSentence(STOP);
+[0021] (2E)   delay(30);
+[0025] (91)   animateActor(VAR_EGO,246);
+[0028] (D8)   printEgo("YOWL!!!");
+[0031] (48) } else if (VAR_ACTIVE_VERB == 11) {
+[003A] (48)   if (VAR_ACTIVE_OBJECT2 == 38) {
+[0040] (60)     cursorCommand(15, 2);
+[0043] (9A)     Var[50] = Var[234];
+[0046] (1C)     startSound(2);
+[0048] (2E)     delay(18);
+[004C] (46)     Var[50]++;
+[004E] (44)     unless (Var[50] > 6) goto 0046;
+[0054] (07)     setState08(643);
+[0057] (57)     setState02(643);
+[005A] (30)     setBoxFlags(2,0);
+[005D] (30)     setBoxFlags(3,0);
+[0060] (60)     cursorCommand(247, 1);
+[0063] (18)     goto 006E;
+[0066] (**)   }
+[0066] (**) }
+[0066] (08) if (VAR_ACTIVE_VERB != 13) {
+[006C] (42)   startScript(3);
+[006E] (**) }
+[006E] (00) stopObjectCode();
+END

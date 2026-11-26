@@ -1,0 +1,58 @@
+# Decompiled with descumm -2
+# Source: LFv2_0016\SCv2_0088
+
+[0000] (62) stopScript(89);
+[0002] (5A) Var[250] += 300;
+[0006] (80) breakHere();
+[0007] (48) unless (Var[21] == 1) goto 0006;
+[000D] (2E) delay(120);
+[0011] (1A) Var[66] = 1;
+[0015] (19) doSentence(253,340,0,1);
+[001C] (2E) delay(300);
+[0020] (48) if (Var[236] == 2) {
+[0026] (46)   Var[236]++;
+[0028] (**) }
+[0028] (03) VAR_RESULT = getActorRoom(1);
+[002B] (08) if (VAR_RESULT != 16) {
+[0031] (4A)   chainScript(89);
+[0033] (**) }
+[0033] (DB) setBitVar(1513,Var[236],Var[235]);
+[0038] (48) if (VAR_ROOM == 16) {
+[003E] (7B)   VAR_RESULT = getActorWalkBox(1);
+[0041] (08)   if (VAR_RESULT != 6) {
+[0047] (4A)     chainScript(89);
+[0049] (**)   }
+[0049] (31)   VAR_RESULT = getBitVar(1547,0);
+[004E] (A8)   if (VAR_RESULT) {
+[0052] (28)     if (!Var[236]) {
+[0056] (14)       print(1,"Not again!");
+[0062] (18)     } else {
+[0065] (14)       print(1,"Ohhh^");
+[006D] (**)     }
+[006D] (C8)   } else if (Var[236] == Var[234]) {
+[0075] (14)     print(1,"I'm losing my mind!");
+[0088] (C8)   } else if (Var[236] == Var[235]) {
+[0090] (14)     print(1,"SLEAZY TABLOID REPORTER\x01ABDUCTED BY SPACE ALIENS.");
+[00BF] (48)   } else if (Var[236] == 4) {
+[00C8] (14)     print(1,"TEASING SLABOID, uh, PORTER AB, AB,\x01er, TAKEN BY SPACE ALIASES.");
+[0101] (48)   } else if (Var[236] == 6) {
+[010A] (14)     print(1,"TEDING SLOBORT, uh, TABES\x01SPADES ALIABUH.");
+[0132] (48)   } else if (Var[236] == 8) {
+[013B] (5B)     setBitVar(1547,0,Var[235]);
+[0140] (14)     print(1,"SLEEBLE DEEDOB, uh,\x01PACEALOO BALEAZZ.");
+[0165] (18)     /* goto 0168; */
+[0168] (**)   }
+[0168] (48)   if (VAR_EGO == 1) {
+[016E] (FA)     VerbOps(Delete(Var[236]););
+[0171] (60)     cursorCommand(0, 0);
+[0174] (**)   }
+[0174] (**) }
+[0174] (46) Var[236]++;
+[0176] (44) unless (Var[236] > 13) goto 001C;
+[017C] (42) startScript(92);
+[017E] (80) breakHere();
+[017F] (03) VAR_RESULT = getActorRoom(1);
+[0182] (08) unless (VAR_RESULT != 16) goto 017E;
+[0188] (42) startScript(89);
+[018A] (A0) stopObjectCode();
+END

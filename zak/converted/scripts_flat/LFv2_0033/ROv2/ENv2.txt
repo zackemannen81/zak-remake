@@ -1,0 +1,72 @@
+[0000] (70) lights(11,0,0);
+[0004] (48) unless (VAR_ROOM == 182) goto 0080;
+[000A] (33) RoomScroll(20,20);
+[000E] (46) Var[154]++;
+[0010] (9A) Var[53] = Var[234];
+[0013] (30) setBoxFlags(0,128);
+[0016] (30) setBoxFlags(3,128);
+[0019] (30) setBoxFlags(4,128);
+[001C] (30) setBoxFlags(9,64);
+[001F] (30) setBoxFlags(12,64);
+[0022] (30) setBoxFlags(10,64);
+[0025] (4F) unless (getState08(537)) goto 002D;
+[002A] (30) setBoxFlags(10,5);
+[002D] (4F) unless (getState08(530)) goto 003B;
+[0032] (30) setBoxFlags(9,0);
+[0035] (30) setBoxFlags(12,0);
+[0038] (18) goto 006B;
+[003B] (4F) unless (getState08(536)) goto 0046;
+[0040] (30) setBoxFlags(10,5);
+[0043] (18) goto 006B;
+[0046] (1A) Var[66] = 1;
+[004A] (83) VAR_RESULT = getActorRoom(Var[66]);
+[004D] (48) unless (VAR_RESULT == 182) goto 0063;
+[0053] (FB) VAR_RESULT = getActorWalkBox(Var[66]);
+[0056] (48) unless (VAR_RESULT == 10) goto 0063;
+[005C] (AD) putActorInRoom(Var[66],182);
+[005F] (81) putActor(Var[66],30,59);
+[0063] (46) Var[66]++;
+[0065] (44) unless (Var[66] > 4) goto 004A;
+[006B] (0C) loadSound(92)
+[006E] (0C) lockSound(92)
+[0071] (0C) loadSound(91)
+[0074] (0C) lockSound(91)
+[0077] (0C) loadSound(90)
+[007A] (0C) lockSound(90)
+[007D] (18) goto 0100;
+[0080] (33) RoomScroll(60,60);
+[0084] (0C) loadSound(32)
+[0087] (0C) lockSound(32)
+[008A] (0C) loadSound(48)
+[008D] (0C) lockSound(48)
+[0090] (2F) unless (!getState04(558)) goto 0097;
+[0095] (46) Var[154]++;
+[0097] (30) setBoxFlags(8,128);
+[009A] (91) animateActor(VAR_EGO,251);
+[009D] (47) clearState08(517);
+[00A0] (1A) Var[49] = 563;
+[00A4] (48) unless (VAR_ROOM == 189) goto 00B6;
+[00AA] (1A) Var[48] = 508;
+[00AE] (1A) Var[54] = 508;
+[00B2] (1A) Var[50] = 198;
+[00B6] (48) unless (VAR_ROOM == 190) goto 00D1;
+[00BC] (1A) Var[48] = 509;
+[00C0] (1A) Var[54] = 509;
+[00C4] (07) setState08(519);
+[00C7] (57) setState02(520);
+[00CA] (1A) Var[50] = 197;
+[00CE] (18) goto 00D7;
+[00D1] (47) clearState08(519);
+[00D4] (17) clearState02(520);
+[00D7] (48) unless (VAR_ROOM == 191) goto 00E9;
+[00DD] (1A) Var[48] = 510;
+[00E1] (1A) Var[50] = 196;
+[00E5] (1A) Var[54] = 510;
+[00E9] (19) doSentence(253,521,0,1);
+[00F0] (30) setBoxFlags(11,64);
+[00F3] (EF) unless (getState04(Var[54])) goto 0100;
+[00F7] (07) setState08(535);
+[00FA] (17) clearState02(535);
+[00FD] (30) setBoxFlags(11,5);
+[0100] (00) stopObjectCode();
+END

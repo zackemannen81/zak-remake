@@ -1,0 +1,35 @@
+# Decompiled with descumm -2
+# Source: LFv2_0002\SCv2_0023
+
+[0000] (48) if (VAR_ROOM == 129) {
+[0006] (0F)   if (!getState08(298)) {
+[000B] (1C)     startSound(25);
+[000D] (07)     setState08(298);
+[0010] (67)     clearState04(298);
+[0013] (2E)     delay(120);
+[0017] (D8)     printEgo("I guess I chose the right channel!");
+[0035] (18)   } else {
+[0038] (42)     startScript(3);
+[003A] (**)   }
+[003A] (48) } else if (VAR_ROOM == 2) {
+[0043] (C3)   VAR_RESULT = getActorX(VAR_EGO);
+[0046] (78)   if (VAR_RESULT < 45) {
+[004C] (4F)     if (getState08(118)) {
+[0051] (6F)       if (getState04(21)) {
+[0056] (67)         clearState04(21);
+[0059] (19)         doSentence(253,118,0,1);
+[0060] (18)       } else {
+[0063] (27)         setState04(21);
+[0066] (42)         startScript(102);
+[0068] (**)       }
+[0068] (18)     } else {
+[006B] (D8)       printEgo("I wonder why it's not working?");
+[0086] (**)     }
+[0086] (18)   } else {
+[0089] (D8)     printEgo("I'm too far away from the TV.");
+[00A2] (**)   }
+[00A2] (18) } else {
+[00A5] (D8)   printEgo("It doesn't seem to work here.");
+[00BF] (**) }
+[00BF] (A0) stopObjectCode();
+END

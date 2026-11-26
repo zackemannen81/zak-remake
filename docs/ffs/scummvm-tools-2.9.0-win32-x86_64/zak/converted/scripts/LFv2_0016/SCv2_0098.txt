@@ -1,0 +1,139 @@
+# Decompiled with descumm -2
+# Source: LFv2_0016\SCv2_0098
+
+[0000] (40) cutscene();
+[0001] (9A) Var[238] = Var[234];
+[0004] (68) Var[118] = isScriptRunning(49);
+[0007] (48) if (Var[239] == 4) {
+[000D] (03)   VAR_RESULT = getActorRoom(7);
+[0010] (48)   if (VAR_RESULT == 4) {
+[0016] (1A)     Var[118] = 2;
+[001A] (1A)     VAR_EGO = 7;
+[001E] (7B)     VAR_RESULT = getActorWalkBox(7);
+[0021] (08)     if (VAR_RESULT != 3) {
+[0027] (7B)       VAR_RESULT = getActorWalkBox(1);
+[002A] (48)       if (VAR_RESULT == 3) {
+[0030] (18)         goto 0045;
+[0033] (**)       }
+[0033] (**)     }
+[0033] (7B)     VAR_RESULT = getActorWalkBox(1);
+[0036] (08)     if (VAR_RESULT != 3) {
+[003C] (7B)       VAR_RESULT = getActorWalkBox(7);
+[003F] (48)       if (VAR_RESULT == 3) {
+[0045] (19)         doSentence(1,157,0,0);
+[004C] (4C)         waitForSentence();
+[004D] (**)       }
+[004D] (**)     }
+[004D] (18)     goto 00AB;
+[0050] (**)   }
+[0050] (**) }
+[0050] (0C) loadCostume(28)
+[0053] (F2) loadRoom(Var[239]);
+[0055] (B2) setCameraAt(Var[102]);
+[0057] (13) ActorOps(7,[Costume(0)]);
+[005B] (80) breakHere();
+[005C] (08) if (Var[239] != 134) {
+[0062] (5A)   Var[102] += 6;
+[0066] (**) }
+[0066] (6D) putActorInRoom(7,Var[239]);
+[0069] (41) putActor(7,Var[102],64);
+[006D] (52) actorFollowCamera(7);
+[006F] (A8) if (Var[118]) {
+[0073] (38)   if (VAR_EGO >= 5) {
+[0079] (04)     if (VAR_EGO <= 6) {
+[007F] (83)       VAR_RESULT = getActorRoom(VAR_EGO);
+[0082] (88)       if (VAR_RESULT != Var[239]) {
+[0087] (93)         ActorOps(VAR_EGO,[Costume(0)]);
+[008B] (ED)         putActorInRoom(VAR_EGO,Var[239]);
+[008E] (81)         putActor(VAR_EGO,0,0);
+[0092] (**)       }
+[0092] (**)     }
+[0092] (**)   }
+[0092] (1A)   VAR_EGO = 7;
+[0096] (**) }
+[0096] (42) startScript(5);
+[0098] (2E) delay(120);
+[009C] (1C) startSound(89);
+[009E] (13) ActorOps(7,[Costume(28)]);
+[00A2] (11) animateActor(7,250);
+[00A5] (42) startScript(5);
+[00A7] (2E) delay(120);
+[00AB] (03) VAR_RESULT = getActorRoom(1);
+[00AE] (C8) if (VAR_RESULT == VAR_ROOM) {
+[00B3] (1A)   Var[238] = 1;
+[00B7] (18) } else {
+[00BA] (03)   VAR_RESULT = getActorRoom(2);
+[00BD] (C8)   if (VAR_RESULT == VAR_ROOM) {
+[00C2] (1A)     Var[238] = 2;
+[00C6] (**)   }
+[00C6] (**) }
+[00C6] (28) if (!Var[238]) {
+[00CA] (11)   animateActor(7,245);
+[00CD] (2E)   delay(120);
+[00D1] (11)   animateActor(7,244);
+[00D4] (2E)   delay(120);
+[00D8] (11)   animateActor(7,246);
+[00DB] (80)   breakHere();
+[00DC] (14)   print(7,"ZLORFIK! I missed him!");
+[00F2] (AE)   waitForMessage();
+[00F3] (2E)   delay(120);
+[00F7] (08)   if (VAR_ROOM != 4) {
+[00FD] (1C)     startSound(89);
+[00FF] (B2)     setCameraAt(VAR_CAMERA_POS_X);
+[0101] (2D)     putActorInRoom(7,4);
+[0104] (01)     putActor(7,22,52);
+[0108] (2E)     delay(120);
+[010C] (**)   }
+[010C] (A8) } else if (Var[118]) {
+[0113] (0D)   walkActorToActor(7,1,4);
+[0117] (3B)   waitForActor(7);
+[0119] (09)   faceActor(7,1);
+[011C] (00)   stopObjectCode();
+[011D] (62)   stopScript(49);
+[011F] (D8)   printEgo("Wake up!");
+[0128] (AE)   waitForMessage();
+[0129] (48)   if (Var[164] == 40) {
+[012F] (D8)     printEgo("And give me that disguise! You're not\x01one of us!");
+[0159] (29)     setOwnerOf(40,7);
+[015D] (1A)     Var[164] = 44;
+[0161] (27)     setState04(328);
+[0164] (AE)     waitForMessage();
+[0165] (**)   }
+[0165] (08)   if (VAR_ROOM != 31) {
+[016B] (11)     animateActor(1,250);
+[016E] (11)     animateActor(1,16);
+[0171] (11)     animateActor(1,32);
+[0174] (51)     animateActor(1,Var[167]);
+[0177] (51)     animateActor(1,Var[164]);
+[017A] (2E)     delay(60);
+[017E] (11)     animateActor(1,6);
+[0181] (11)     animateActor(1,10);
+[0184] (9A)     Var[163] = Var[234];
+[0187] (18)   } else {
+[018A] (11)     animateActor(1,246);
+[018D] (**)   }
+[018D] (2E)   delay(60);
+[0191] (A8)   if (Var[247]) {
+[0195] (42)     startScript(130);
+[0197] (**)   }
+[0197] (14)   print(1,"Oh oh!");
+[019F] (AE)   waitForMessage();
+[01A0] (3B)   waitForActor(7);
+[01A2] (9A)   Var[199] = Var[235];
+[01A5] (1A)   Var[43] = 4;
+[01A9] (42)   startScript(19);
+[01AB] (19)   doSentence(RESET);
+[01AD] (AC)   drawSentence();
+[01AE] (18) } else {
+[01B1] (9A)   VAR_EGO = Var[238];
+[01B4] (**) }
+[01B4] (C0) endCutscene();
+[01B5] (9A) Var[120] = Var[234];
+[01B8] (A8) if (Var[118]) {
+[01BC] (4A)   chainScript(75);
+[01BE] (**) }
+[01BE] (A8) if (Var[238]) {
+[01C2] (4A)   chainScript(95);
+[01C4] (**) }
+[01C4] (A0) stopObjectCode();
+END

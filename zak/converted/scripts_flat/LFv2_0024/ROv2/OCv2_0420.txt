@@ -1,0 +1,8 @@
+Events:
+   D - 0019
+[0019] (48) unless (Var[46] == 25) goto 0027;
+[001F] (E4) loadRoomWithEgo(Var[47],Var[46],2,60);
+[0024] (18) goto 002C;
+[0027] (E4) loadRoomWithEgo(Var[47],Var[46],42,60);
+[002C] (00) stopObjectCode();
+END

@@ -1,0 +1,60 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0261
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (62) stopScript(116);
+[0016] (43) VAR_RESULT = getActorX(9);
+[0019] (04) if (VAR_RESULT <= 12) {
+[001F] (0F)   if (!getState08(246)) {
+[0024] (19)     doSentence(253,251,0,1);
+[002B] (**)   }
+[002B] (**) }
+[002B] (1A) Var[55] = 249;
+[002F] (CF) if (getState08(Var[55])) {
+[0033] (76)   walkActorToObject(9,Var[55]);
+[0036] (3B)   waitForActor(9);
+[0038] (74)   VAR_RESULT = getDist(9,Var[55]);
+[003D] (A8)   if (VAR_RESULT) {
+[0041] (18)     goto 0033;
+[0044] (**)   }
+[0044] (1C)   startSound(11);
+[0046] (C7)   clearState08(Var[55]);
+[0048] (9A)   Var[66] = Var[55];
+[004B] (3A)   Var[66] -= 249;
+[004F] (9A)   Var[14] = Var[66];
+[0052] (5A)   Var[14] += 84;
+[0056] (44)   if (Var[14] > 1) {
+[005C] (9A)     Var[14] = Var[66];
+[005F] (5A)     Var[14] += 84;
+[0063] (C7)     clearState08(Var[14]);
+[0065] (9A)     Var[14] = Var[66];
+[0068] (5A)     Var[14] += 84;
+[006C] (D7)     setState02(Var[14]);
+[006E] (**)   }
+[006E] (2E)   delay(30);
+[0072] (**) }
+[0072] (46) Var[55]++;
+[0074] (44) unless (Var[55] > 254) goto 002F;
+[007A] (36) walkActorToObject(9,260);
+[007E] (3B) waitForActor(9);
+[0080] (80) breakHere();
+[0081] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[0084] (44) if (VAR_RESULT > 84) {
+[008A] (60)   cursorCommand(15, 2);
+[008D] (19)   doSentence(STOP);
+[008F] (91)   animateActor(VAR_EGO,255);
+[0092] (11)   animateActor(9,244);
+[0095] (80)   breakHere();
+[0096] (14)   print(9,"Back to your seat!");
+[00A8] (80)   breakHere();
+[00A9] (9E)   walkActorTo(VAR_EGO,80,54);
+[00AD] (AE)   waitForMessage();
+[00AE] (11)   animateActor(9,247);
+[00B1] (BB)   waitForActor(VAR_EGO);
+[00B3] (60)   cursorCommand(247, 1);
+[00B6] (9A)   VAR_KEYPRESS = Var[234];
+[00B9] (**) }
+[00B9] (43) VAR_RESULT = getActorX(9);
+[00BC] (78) unless (VAR_RESULT < 84) goto 0080;
+[00C2] (00) stopObjectCode();
+END

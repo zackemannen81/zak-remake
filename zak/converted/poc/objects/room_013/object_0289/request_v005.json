@@ -1,0 +1,12 @@
+{
+  "room": 13,
+  "object_id": 289,
+  "prompt": "Recreate ONLY THIS EXACT tightly cropped retro game image as an exquisite polished AAA Unreal Engine 5 render. Preserve visible shapes, placement, silhouette, camera angle, palette, background and animation phase. This reference IS the ENTIRE output composition: do not zoom out or add surrounding scene. Aspect 24:16, preserve full composition and proportions. Bright yellow and orange FLAMES in this exact animation phase; flames dominate, no full room or altar. Historical label '' is uncertain context and may name a REMOVED item; never add a named object absent from reference. Beautiful realistic materials and subtle lighting. Do not interpret pixels as new text, buttons or ornaments. Preserve actual symbols literally. Black remains opaque. Extreme aspect: center entire patch in black letterbox/pillarbox without stretching.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_013\\object_0289\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_013\\object_0289\\state_v005.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_013\\object_0289\\request_v005.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-364dcb04-1447-478d-987c-9bb7870318d6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

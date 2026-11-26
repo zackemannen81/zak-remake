@@ -1,0 +1,8 @@
+Events:
+   1 - 001E
+   A - 001E
+   C - 001E
+   E - 001E
+[001E] (19) doSentence(12,176,0,1);
+[0025] (00) stopObjectCode();
+END

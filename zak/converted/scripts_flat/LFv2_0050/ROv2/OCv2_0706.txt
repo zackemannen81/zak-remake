@@ -1,0 +1,12 @@
+Events:
+  FD - 0016
+  FF - 0015
+[0015] (00) stopObjectCode();
+[0016] (47) clearState08(703);
+[0019] (47) clearState08(704);
+[001C] (47) clearState08(705);
+[001F] (47) clearState08(706);
+[0022] (57) setState02(706);
+[0025] (47) clearState08(707);
+[0028] (00) stopObjectCode();
+END

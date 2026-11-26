@@ -1,0 +1,28 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (7C) VAR_RESULT = isSoundRunning(36);
+[0017] (28) unless (!VAR_RESULT) goto 0013;
+[001B] (9A) Var[46] = Var[234];
+[001E] (05) drawObject(104,255,255);
+[0023] (80) breakHere();
+[0024] (1C) startSound(29);
+[0026] (05) drawObject(105,255,255);
+[002B] (80) breakHere();
+[002C] (80) breakHere();
+[002D] (1C) startSound(29);
+[002F] (46) Var[46]++;
+[0031] (44) unless (Var[46] > 11) goto 001E;
+[0037] (47) clearState08(104);
+[003A] (47) clearState08(105);
+[003D] (1A) Var[138] = 3;
+[0041] (5A) Var[225] += 8;
+[0045] (27) setState04(103);
+[0048] (47) clearState08(103);
+[004B] (19) doSentence(253,104,0,1);
+[0052] (19) doSentence(253,109,0,1);
+[0059] (2E) delay(60);
+[005D] (91) animateActor(VAR_EGO,246);
+[0060] (D8) printEgo("Uh oh. Goldfish chowder.");
+[0077] (00) stopObjectCode();
+END

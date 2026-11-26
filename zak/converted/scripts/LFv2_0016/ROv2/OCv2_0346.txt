@@ -1,0 +1,22 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0346
+Events:
+  FD - 0013
+[0013] (9A) Var[50] = Var[234];
+[0016] (16) Var[54] = getRandomNr(3);
+[0019] (C8) if (Var[54] == Var[234]) {
+[001E] (11)   animateActor(7,246);
+[0021] (C8) } else if (Var[54] == Var[235]) {
+[0029] (11)   animateActor(7,245);
+[002C] (48) } else if (Var[54] == 2) {
+[0035] (11)   animateActor(7,247);
+[0038] (48) } else if (Var[54] == 3) {
+[0041] (11)   animateActor(7,244);
+[0044] (18)   /* goto 0047; */
+[0047] (**) }
+[0047] (80) breakHere();
+[0048] (80) breakHere();
+[0049] (46) Var[50]++;
+[004B] (44) unless (Var[50] > 2) goto 0016;
+[0051] (9A) Var[53] = Var[235];
+[0054] (00) stopObjectCode();
+END

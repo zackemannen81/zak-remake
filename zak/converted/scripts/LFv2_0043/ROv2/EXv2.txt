@@ -1,0 +1,7 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0043/ROv2/EXv2
+[0000] (08) if (VAR_EGO != 6) {
+[0006] (3D)   setActorElevation(1,0);
+[0009] (5B)   setBitVar(1440,1,Var[234]);
+[000E] (**) }
+[000E] (00) stopObjectCode();
+END

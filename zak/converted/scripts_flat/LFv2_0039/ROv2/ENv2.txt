@@ -1,0 +1,11 @@
+[0000] (70) lights(11,0,0);
+[0004] (04) unless (VAR_EGO <= 2) goto 0020;
+[000A] (9A) Var[45] = VAR_EGO;
+[000D] (5A) Var[45] += 8;
+[0011] (9A) Var[14] = Var[45];
+[0014] (5A) Var[14] += 171;
+[0018] (D3) ActorOps(VAR_EGO,[Costume(Var[14])]);
+[001C] (93) ActorOps(VAR_EGO,[Sound(7)]);
+[0020] (0C) loadSound(7)
+[0023] (00) stopObjectCode();
+END

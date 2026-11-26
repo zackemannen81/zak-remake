@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0020/ROv2/OCv2_0388
+Events:
+   D - 0016
+[0016] (AF) if (!getState04(VAR_ACTIVE_OBJECT1)) {
+[001A] (27)   setState04(387);
+[001D] (**) }
+[001D] (24) loadRoomWithEgo(398,140,255,255);
+[0023] (00) stopObjectCode();
+END

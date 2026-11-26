@@ -1,0 +1,43 @@
+Events:
+   4 - 002A
+   5 - 00A9
+   B - 002A
+  FD - 00F0
+[002A] (48) unless (VAR_EGO == 1) goto 0076;
+[0030] (EF) unless (getState04(VAR_ACTIVE_OBJECT1)) goto 0042;
+[0034] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[0036] (19) doSentence(254,89,0,1);
+[003D] (42) startScript(107);
+[003F] (18) goto 0073;
+[0042] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0064;
+[0046] (11) animateActor(1,246);
+[0049] (3B) waitForActor(1);
+[004B] (D8) printEgo("There aren't any messages.");
+[0064] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0066] (A8) unless (Var[240]) goto 0073;
+[006A] (68) VAR_RESULT = isScriptRunning(134);
+[006D] (28) unless (!VAR_RESULT) goto 0073;
+[0071] (42) startScript(134);
+[0073] (18) goto 00A8;
+[0076] (11) animateActor(2,246);
+[0079] (3B) waitForActor(2);
+[007B] (D8) printEgo("It wouldn't be polite to listen to Zak's\x01messages.");
+[00A8] (00) stopObjectCode();
+[00A9] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 00EF;
+[00AD] (48) unless (VAR_EGO == 1) goto 00C9;
+[00B3] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[00B5] (19) doSentence(254,89,0,1);
+[00BC] (62) stopScript(107);
+[00BE] (14) print(255,"");
+[00C1] (47) clearState08(89);
+[00C4] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[00C6] (18) goto 00EF;
+[00C9] (11) animateActor(2,246);
+[00CC] (3B) waitForActor(2);
+[00CE] (D8) printEgo("I don't want Zak to miss his messages.");
+[00EF] (00) stopObjectCode();
+[00F0] (13) ActorOps(0,[TalkColor(9)]);
+[00F4] (47) clearState08(89);
+[00F7] (07) setState08(88);
+[00FA] (00) stopObjectCode();
+END

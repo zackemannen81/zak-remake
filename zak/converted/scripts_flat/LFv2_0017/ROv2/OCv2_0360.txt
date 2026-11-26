@@ -1,0 +1,10 @@
+Events:
+  FD - 0013
+[0013] (1C) startSound(80);
+[0015] (05) drawObject(360,255,255);
+[001A] (80) breakHere();
+[001B] (05) drawObject(361,255,255);
+[0020] (80) breakHere();
+[0021] (18) goto 0015;
+[0024] (00) stopObjectCode();
+END

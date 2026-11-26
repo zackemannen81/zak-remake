@@ -1,0 +1,11 @@
+{
+  "room": 1,
+  "object_id": 96,
+  "prompt": "Edit reference 1, preserving the EXACT same cat-clock design, face, clock face, materials, scale, camera, turquoise background and crop. Change ONLY the swinging tail to the LEFT pose shown in reference 2 (the original alternate animation frame). Reference 2 is pose guidance only, do not copy pixel art style. This must be the same physical clock in the next animation frame, not a different cat design. No added props or text.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_001\\object_0095\\state_v002.png",
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0096\\frame_000.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-565fcaf4-10d3-4a17-8648-52cd002b32b3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "animation consistency correction"
+}

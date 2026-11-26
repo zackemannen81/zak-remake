@@ -1,0 +1,86 @@
+# Decompiled with descumm -2
+# Source: LFv2_0003\SCv2_0039
+
+[0000] (40) cutscene();
+[0001] (46) Var[152]++;
+[0003] (58) beginOverride();
+[0004] (18) goto 004D;
+[0007] (0C) loadSound(24)
+[000A] (0C) lockSound(24)
+[000D] (0C) loadSound(69)
+[0010] (0C) loadCostume(17)
+[0013] (0C) loadCostume(18)
+[0016] (0C) lockCostume(18)
+[0019] (53) ActorOps(10,[Name("baker")]);
+[0023] (13) ActorOps(10,[TalkColor(7)]);
+[0027] (13) ActorOps(10,[Costume(17)]);
+[002B] (13) ActorOps(12,[Costume(0)]);
+[002F] (2D) putActorInRoom(10,3);
+[0032] (01) putActor(10,18,22);
+[0036] (1A) Var[45] = 30;
+[003A] (2E) delay(120);
+[003E] (1E) walkActorTo(10,23,22);
+[0042] (3B) waitForActor(10);
+[0044] (11) animateActor(10,246);
+[0047] (3B) waitForActor(10);
+[0049] (2E) delay(60);
+[004D] (A8) if (VAR_OVERRIDE) {
+[0051] (01)   putActor(10,23,22);
+[0055] (11)   animateActor(10,250);
+[0058] (**) }
+[0058] (0F) if (!getState08(137)) {
+[005D] (07)   setState08(137);
+[0060] (1C)   startSound(69);
+[0062] (2E)   delay(120);
+[0066] (**) }
+[0066] (58) beginOverride();
+[0067] (18) goto 0139;
+[006A] (48) if (Var[152] == 1) {
+[0070] (14)   print(10,"We're closed, and we're out of fresh\x01bread anyway.");
+[009E] (48) } else if (Var[152] == 2) {
+[00A7] (14)   print(10,"Listen, you DON'T want the bread we have\x01left! Go away!");
+[00D8] (48) } else if (Var[152] == 3) {
+[00E1] (2D)   putActorInRoom(12,3);
+[00E4] (01)   putActor(12,23,56);
+[00E8] (14)   print(10,"OK, you asked for it!");
+[00FC] (A8)   if (VAR_OVERRIDE) {
+[0100] (18)   } else {
+[0103] (AE)     waitForMessage();
+[0104] (13)     ActorOps(12,[Costume(18)]);
+[0108] (1C)     startSound(60);
+[010A] (7D)     setActorElevation(12,Var[45]);
+[010D] (80)     breakHere();
+[010E] (3A)     Var[45] -= 5;
+[0112] (28)     unless (!Var[45]) goto 010A;
+[0116] (**)   }
+[0116] (3C)   stopSound(60);
+[0118] (05)   drawObject(148,255,255);
+[011D] (3D)   setActorElevation(12,65);
+[0120] (1C)   startSound(24);
+[0122] (80)   breakHere();
+[0123] (2D)   putActorInRoom(12,0);
+[0126] (28)   if (!VAR_OVERRIDE) {
+[012A] (2E)     delay(90);
+[012E] (**)   }
+[012E] (47)   clearState08(137);
+[0131] (1C)   startSound(69);
+[0133] (3D)   setActorElevation(12,0);
+[0136] (18)   /* goto 0139; */
+[0139] (**) }
+[0139] (0C) unlockSound(24)
+[013C] (0C) unlockCostume(18)
+[013F] (28) if (!VAR_OVERRIDE) {
+[0143] (AE)   waitForMessage();
+[0144] (1E)   walkActorTo(10,18,22);
+[0148] (3B)   waitForActor(10);
+[014A] (**) }
+[014A] (14) print(255,"");
+[014D] (2D) putActorInRoom(10,0);
+[0150] (48) if (Var[152] == 3) {
+[0156] (4F)   if (getState08(137)) {
+[015B] (18)     goto 0116;
+[015E] (**)   }
+[015E] (**) }
+[015E] (C0) endCutscene();
+[015F] (A0) stopObjectCode();
+END

@@ -1,0 +1,12 @@
+{
+  "room": 3,
+  "object_id": 139,
+  "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Brass wall MAILBOX with a small white LETTER visible at its upper slot in exactly the original position. Real mailbox, no E glyph or invented text. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0139\\frame_000.png"
+  ],
+  "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0139\\state_v006.png",
+  "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0139\\request_v006.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-9830faae-6d07-4753-aa9b-66eaf70ec556.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

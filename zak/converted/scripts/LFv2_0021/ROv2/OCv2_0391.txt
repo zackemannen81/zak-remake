@@ -1,0 +1,14 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0021/ROv2/OCv2_0391
+Events:
+   9 - 0020
+   B - 003F
+   E - 0020
+[0020] (D8) printEgo("It runs right through my fingers.");
+[003E] (00) stopObjectCode();
+[003F] (48) if (VAR_ACTIVE_OBJECT2 == 68) {
+[0045] (42)   startScript(99);
+[0047] (18) } else {
+[004A] (42)   startScript(3);
+[004C] (**) }
+[004C] (00) stopObjectCode();
+END

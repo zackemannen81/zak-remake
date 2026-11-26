@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0024/ROv2/OCv2_0415
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (B4) VAR_RESULT = getDist(Var[202],414);
+[0019] (44) unless (VAR_RESULT > 0) goto 0013;
+[001F] (1C) startSound(67);
+[0021] (47) clearState08(415);
+[0024] (47) clearState08(420);
+[0027] (57) setState02(420);
+[002A] (30) setBoxFlags(9,128);
+[002D] (47) clearState08(311);
+[0030] (57) setState02(311);
+[0033] (00) stopObjectCode();
+END

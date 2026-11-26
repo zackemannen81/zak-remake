@@ -1,0 +1,7 @@
+Events:
+  FD - 0013
+[0013] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0015] (D8) printEgo("Got it!");
+[001D] (D4) setObjectName(VAR_ACTIVE_OBJECT1,"bird nest");
+[0029] (00) stopObjectCode();
+END

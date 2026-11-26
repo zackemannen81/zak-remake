@@ -1,0 +1,7 @@
+{
+  "room": 34,
+  "ver": 2,
+  "prompt": "Edit the premium map-room image (first reference) with the original pixel image (second reference) as strict content truth. Remove all added star markers or decorative dots on the orange land map; the original solid orange silhouette has NO new labels or symbols. Preserve original coastline geometry exactly. Retain premium carved metal/stone surface quality and the same camera/framing, green side panel, lion diagram, small number 5, and cyan framing. Do not add any details that can be mistaken for puzzle clues. Full 2.5:1 canvas.",
+  "ref": "concept_v001.png",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-754f5ac6-bee1-496b-b237-3b8b63917783.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

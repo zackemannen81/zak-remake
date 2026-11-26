@@ -1,0 +1,22 @@
+Events:
+   1 - 001B
+   2 - 0021
+   D - 0027
+[001B] (42) startScript(10);
+[001D] (07) setState08(363);
+[0020] (00) stopObjectCode();
+[0021] (42) startScript(11);
+[0023] (47) clearState08(363);
+[0026] (00) stopObjectCode();
+[0027] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0052;
+[002B] (48) unless (VAR_EGO == 1) goto 004C;
+[0031] (31) VAR_RESULT = getBitVar(1541,0);
+[0036] (A8) unless (VAR_RESULT) goto 004C;
+[003A] (03) VAR_RESULT = getActorRoom(8);
+[003D] (48) unless (VAR_RESULT == 18) goto 004C;
+[0043] (68) VAR_RESULT = isScriptRunning(112);
+[0046] (28) unless (!VAR_RESULT) goto 004C;
+[004A] (42) startScript(112);
+[004C] (24) loadRoomWithEgo(363,18,255,255);
+[0052] (00) stopObjectCode();
+END

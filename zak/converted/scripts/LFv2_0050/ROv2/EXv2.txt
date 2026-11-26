@@ -1,0 +1,8 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0050/ROv2/EXv2
+[0000] (47) clearState08(769);
+[0003] (47) clearState08(770);
+[0006] (0C) unlockSound(16)
+[0009] (42) startScript(19);
+[000B] (14) print(255,"");
+[000E] (00) stopObjectCode();
+END

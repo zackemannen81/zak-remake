@@ -1,0 +1,9 @@
+# Decompiled with descumm -2
+# Source: LFv2_0049\SCv2_0010
+
+[0000] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0004] (87)   setState08(VAR_ACTIVE_OBJECT1);
+[0006] (1C)   startSound(10);
+[0008] (**) }
+[0008] (A0) stopObjectCode();
+END

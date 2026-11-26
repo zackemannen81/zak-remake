@@ -1,0 +1,18 @@
+# Decompiled with descumm -2
+# Source: LFv2_0003\SCv2_0063
+
+[0000] (07) setState08(191);
+[0003] (2E) delay(10800);
+[0007] (2E) delay(30);
+[000B] (08) unless (VAR_ROOM != 3) goto 0007;
+[0011] (48) if (VAR_ROOM == 5) {
+[0017] (18)   goto 0007;
+[001A] (**) }
+[001A] (47) clearState08(142);
+[001D] (17) clearState02(142);
+[0020] (47) clearState08(166);
+[0023] (17) clearState02(166);
+[0026] (17) clearState02(144);
+[0029] (17) clearState02(150);
+[002C] (A0) stopObjectCode();
+END

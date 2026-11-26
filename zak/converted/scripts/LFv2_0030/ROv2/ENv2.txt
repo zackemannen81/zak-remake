@@ -1,0 +1,18 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0030/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (0C) loadSound(27)
+[0007] (0C) loadSound(37)
+[000A] (46) Var[154]++;
+[000C] (0F) if (!getState08(488)) {
+[0011] (9A)   Var[154] = Var[234];
+[0014] (**) }
+[0014] (6F) if (getState04(492)) {
+[0019] (19)   doSentence(4,492,0,1);
+[0020] (**) }
+[0020] (6F) if (getState04(454)) {
+[0025] (19)   doSentence(253,490,0,1);
+[002C] (**) }
+[002C] (93) ActorOps(VAR_EGO,[Costume(0)]);
+[0030] (19) doSentence(253,488,0,1);
+[0037] (00) stopObjectCode();
+END

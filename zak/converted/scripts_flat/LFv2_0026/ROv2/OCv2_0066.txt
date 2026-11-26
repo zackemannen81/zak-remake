@@ -1,0 +1,22 @@
+Events:
+   C - 001B
+  FF - 0021
+[001B] (9A) Var[66] = Var[207];
+[001E] (42) startScript(71);
+[0020] (00) stopObjectCode();
+[0021] (48) unless (Var[170] == 32) goto 005C;
+[0027] (71) VAR_RESULT = getActorCostume(4);
+[002A] (48) unless (VAR_RESULT == 4) goto 005C;
+[0030] (16) Var[196] = getRandomNr(15);
+[0033] (48) unless (Var[196] == 12) goto 003C;
+[0039] (18) goto 0030;
+[003C] (48) unless (Var[196] == 7) goto 0045;
+[0042] (18) goto 0030;
+[0045] (48) unless (Var[196] == 8) goto 004E;
+[004B] (18) goto 0030;
+[004E] (48) unless (Var[196] == 15) goto 0057;
+[0054] (18) goto 0030;
+[0057] (53) ActorOps(4,[Color(9, Var[196])]);
+[005C] (99) doSentence(VAR_ACTIVE_VERB,65,0,1);
+[0063] (00) stopObjectCode();
+END

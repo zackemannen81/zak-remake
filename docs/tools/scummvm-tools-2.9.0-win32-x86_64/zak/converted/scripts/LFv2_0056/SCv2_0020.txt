@@ -1,0 +1,13 @@
+# Decompiled with descumm -2
+# Source: LFv2_0056\SCv2_0020
+
+[0000] (04) if (VAR_ACTIVE_OBJECT2 <= 4) {
+[0006] (E9)   setOwnerOf(VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2);
+[0009] (48)   if (VAR_ACTIVE_OBJECT2 == 2) {
+[000F] (9D)     if (classOfIs(VAR_ACTIVE_OBJECT1,32)) {
+[0014] (42)       startScript(119);
+[0016] (**)     }
+[0016] (**)   }
+[0016] (**) }
+[0016] (A0) stopObjectCode();
+END

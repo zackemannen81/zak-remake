@@ -1,0 +1,9 @@
+Events:
+   E - 0019
+[0019] (1A) Var[60] = 11;
+[001D] (42) startScript(83);
+[001F] (19) doSentence(253,537,0,1);
+[0026] (2F) unless (!getState04(70)) goto 002D;
+[002B] (E7) clearState04(Var[54]);
+[002D] (00) stopObjectCode();
+END

@@ -1,0 +1,30 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (0C) loadSound(2)
+[0007] (0C) loadSound(38)
+[000A] (4F) if (getState08(465)) {
+[000F] (46)   Var[154]++;
+[0011] (**) }
+[0011] (48) if (VAR_ROOM == 181) {
+[0017] (33)   RoomScroll(73,73);
+[001B] (30)   setBoxFlags(4,128);
+[001E] (54)   setObjectName(470,"metal plate");
+[002D] (2F)   if (!getState04(470)) {
+[0032] (19)     doSentence(253,470,0,1);
+[0039] (**)   }
+[0039] (18) } else {
+[003C] (33)   RoomScroll(20,33);
+[0040] (30)   setBoxFlags(5,128);
+[0043] (4F)   if (getState08(70)) {
+[0048] (30)     setBoxFlags(6,128);
+[004B] (18)   } else {
+[004E] (30)     setBoxFlags(6,0);
+[0051] (**)   }
+[0051] (4F)   if (getState08(463)) {
+[0056] (4F)     if (getState08(472)) {
+[005B] (46)       Var[154]++;
+[005D] (**)     }
+[005D] (**)   }
+[005D] (**) }
+[005D] (00) stopObjectCode();
+END

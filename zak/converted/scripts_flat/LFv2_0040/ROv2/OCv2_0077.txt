@@ -1,0 +1,29 @@
+Events:
+   1 - 0075
+   6 - 0051
+   7 - 0068
+   A - 0075
+   B - 0075
+   C - 0026
+[0026] (D8) printEgo("Jumpty Dumpty Parachute\x03Lifetime guarantee.");
+[0050] (00) stopObjectCode();
+[0051] (D8) printEgo("I'm already wearing it.");
+[0067] (00) stopObjectCode();
+[0068] (D8) printEgo("Better not.");
+[0074] (00) stopObjectCode();
+[0075] (48) unless (VAR_EGO == 2) goto 008E;
+[007B] (D8) printEgo("Are you kidding?");
+[008B] (18) goto 00BC;
+[008E] (48) unless (VAR_ROOM == 131) goto 00A6;
+[0094] (27) setState04(77);
+[0097] (62) stopScript(69);
+[0099] (5B) setBitVar(1510,0,Var[234]);
+[009E] (67) clearState04(602);
+[00A1] (42) startScript(50);
+[00A3] (18) goto 00BC;
+[00A6] (48) unless (VAR_ROOM == 132) goto 00B2;
+[00AC] (27) setState04(77);
+[00AF] (18) goto 00BC;
+[00B2] (D8) printEgo("Not here!");
+[00BC] (00) stopObjectCode();
+END

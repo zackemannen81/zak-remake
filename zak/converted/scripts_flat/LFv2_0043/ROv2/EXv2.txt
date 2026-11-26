@@ -1,0 +1,5 @@
+[0000] (08) unless (VAR_EGO != 6) goto 000E;
+[0006] (3D) setActorElevation(1,0);
+[0009] (5B) setBitVar(1440,1,Var[234]);
+[000E] (00) stopObjectCode();
+END

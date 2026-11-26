@@ -1,0 +1,5 @@
+Events:
+   C - 0017
+[0017] (D8) printEgo("We Buy Almost Anything^\x01^From Almost Anyone");
+[003F] (00) stopObjectCode();
+END

@@ -1,0 +1,28 @@
+Events:
+  FD - 0013
+[0013] (48) unless (Var[57] == 168) goto 0025;
+[0019] (26) setVarRange(Var[45],6,[1,1,0,39,8,0]);
+[0022] (18) goto 00A3;
+[0025] (48) unless (Var[57] == 169) goto 0037;
+[002B] (26) setVarRange(Var[45],6,[1,0,0,39,8,0]);
+[0034] (18) goto 00A3;
+[0037] (48) unless (Var[57] == 170) goto 0049;
+[003D] (26) setVarRange(Var[45],6,[1,1,0,60,8,34]);
+[0046] (18) goto 00A3;
+[0049] (48) unless (Var[57] == 171) goto 005B;
+[004F] (26) setVarRange(Var[45],6,[0,1,0,60,8,34]);
+[0058] (18) goto 00A3;
+[005B] (48) unless (Var[57] == 172) goto 006D;
+[0061] (26) setVarRange(Var[45],6,[1,1,0,60,0,0]);
+[006A] (18) goto 00A3;
+[006D] (48) unless (Var[57] == 173) goto 007F;
+[0073] (26) setVarRange(Var[45],6,[0,0,0,60,8,34]);
+[007C] (18) goto 00A3;
+[007F] (48) unless (Var[57] == 174) goto 0091;
+[0085] (26) setVarRange(Var[45],6,[1,1,15,60,0,34]);
+[008E] (18) goto 00A3;
+[0091] (48) unless (Var[57] == 175) goto 00A3;
+[0097] (26) setVarRange(Var[45],6,[1,1,15,60,0,0]);
+[00A0] (18) /* goto 00A3; */
+[00A3] (00) stopObjectCode();
+END

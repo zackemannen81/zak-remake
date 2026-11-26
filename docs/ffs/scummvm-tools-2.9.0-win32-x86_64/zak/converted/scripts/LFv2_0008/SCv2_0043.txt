@@ -1,0 +1,42 @@
+# Decompiled with descumm -2
+# Source: LFv2_0008\SCv2_0043
+
+[0000] (10) VAR_RESULT = getObjectOwner(45);
+[0004] (08) if (VAR_RESULT != 15) {
+[000A] (14)   print(10,"No more books, just let me dance.");
+[0028] (9D) } else if (classOfIs(VAR_ACTIVE_OBJECT1,128)) {
+[0030] (60)   cursorCommand(15, 2);
+[0033] (19)   doSentence(253,190,0,1);
+[003A] (BB)   waitForActor(VAR_EGO);
+[003C] (3B)   waitForActor(10);
+[003E] (4D)   walkActorToActor(10,VAR_EGO,4);
+[0042] (3B)   waitForActor(10);
+[0044] (49)   faceActor(10,VAR_EGO);
+[0047] (89)   faceActor(VAR_EGO,10);
+[004A] (00)   stopObjectCode();
+[004B] (3B)   waitForActor(10);
+[004D] (AE)   waitForMessage();
+[004E] (1A)   Var[118] = 42;
+[0052] (14)   print(10,"That'll be $\x04\x76.");
+[0062] (AE)   waitForMessage();
+[0063] (19)   doSentence(253,209,0,1);
+[006A] (80)   breakHere();
+[006B] (A8)   if (Var[66]) {
+[006F] (14)     print(10,"May you find True Enlightenment.");
+[008E] (1A)     Var[44] = -1;
+[0092] (50)     pickupObject(45);
+[0095] (18)     goto 00CE;
+[0098] (18)   } else {
+[009B] (14)     print(10,"Sorry, you don't have enough money.\x01Peace anyway.");
+[00C9] (DB)     setBitVar(704,VAR_EGO,Var[235]);
+[00CE] (60)     cursorCommand(247, 1);
+[00D1] (AE)     waitForMessage();
+[00D2] (1E)     walkActorTo(10,10,46);
+[00D6] (3B)     waitForActor(10);
+[00D8] (4A)     chainScript(40);
+[00DA] (**)   }
+[00DA] (18) } else {
+[00DD] (14)   print(10,"Sorry, CashCards only.");
+[00F4] (**) }
+[00F4] (A0) stopObjectCode();
+END

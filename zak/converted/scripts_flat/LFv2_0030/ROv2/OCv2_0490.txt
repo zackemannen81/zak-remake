@@ -1,0 +1,59 @@
+Events:
+   4 - 0025
+   5 - 00A2
+   9 - 00C8
+   A - 00C8
+   B - 00C8
+  FD - 00DC
+[0025] (08) unless (VAR_EGO != 1) goto 0073;
+[002B] (1A) Var[46] = 3;
+[002F] (1A) Var[47] = 4;
+[0033] (48) unless (VAR_EGO == 4) goto 0041;
+[0039] (1A) Var[46] = 4;
+[003D] (1A) Var[47] = 3;
+[0041] (B1) VAR_RESULT = getBitVar(1470,Var[47]);
+[0046] (28) unless (!VAR_RESULT) goto 0070;
+[004A] (83) VAR_RESULT = getActorRoom(Var[47]);
+[004D] (08) unless (VAR_RESULT != 30) goto 0070;
+[0053] (94) print(Var[46],"I'm not leaving without \x06\x2F!");
+[006D] (18) goto 00A1;
+[0070] (18) goto 008B;
+[0073] (03) VAR_RESULT = getActorRoom(4);
+[0076] (48) unless (VAR_RESULT == 30) goto 007F;
+[007C] (18) goto 002B;
+[007F] (03) VAR_RESULT = getActorRoom(3);
+[0082] (48) unless (VAR_RESULT == 30) goto 008B;
+[0088] (18) goto 002B;
+[008B] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 00A1;
+[008F] (1C) startSound(27);
+[0091] (19) doSentence(253,493,0,1);
+[0098] (87) setState08(VAR_ACTIVE_OBJECT1);
+[009A] (19) doSentence(253,494,0,1);
+[00A1] (00) stopObjectCode();
+[00A2] (2F) unless (!getState04(454)) goto 00C0;
+[00A7] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 00BD;
+[00AB] (1C) startSound(27);
+[00AD] (19) doSentence(253,493,0,1);
+[00B4] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[00B6] (19) doSentence(253,495,0,1);
+[00BD] (18) goto 00C7;
+[00C0] (19) doSentence(253,491,0,1);
+[00C7] (00) stopObjectCode();
+[00C8] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 00D5;
+[00CC] (59) doSentence(4,VAR_ACTIVE_OBJECT1,0,0);
+[00D2] (18) goto 00DB;
+[00D5] (59) doSentence(5,VAR_ACTIVE_OBJECT1,0,0);
+[00DB] (00) stopObjectCode();
+[00DC] (2E) delay(600);
+[00E0] (16) Var[66] = getRandomNr(2);
+[00E3] (48) unless (Var[66] == 0) goto 010D;
+[00E9] (D8) printEgo("As soon as I land I'm gonna get a pizza!");
+[010A] (18) goto 015C;
+[010D] (48) unless (Var[66] == 1) goto 0138;
+[0113] (D8) printEgo("Well, at least the view up here is nice.");
+[0135] (18) goto 015C;
+[0138] (48) unless (Var[66] == 2) goto 015C;
+[013E] (D8) printEgo("I wish I had a good book to read.");
+[0159] (18) /* goto 015C; */
+[015C] (00) stopObjectCode();
+END

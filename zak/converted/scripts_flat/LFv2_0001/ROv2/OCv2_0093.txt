@@ -1,0 +1,16 @@
+Events:
+  FD - 0013
+[0013] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,1)) goto 001E;
+[0018] (18) goto 0023;
+[001B] (18) goto 0063;
+[001E] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,2)) goto 004B;
+[0023] (07) setState08(106);
+[0026] (57) setState02(106);
+[0029] (50) pickupObject(18);
+[002C] (47) clearState08(18);
+[002F] (2E) delay(60);
+[0033] (D8) printEgo("Yay, it's my CashCard.");
+[0048] (18) goto 0063;
+[004B] (D8) printEgo("I can't reach it with that.");
+[0063] (00) stopObjectCode();
+END

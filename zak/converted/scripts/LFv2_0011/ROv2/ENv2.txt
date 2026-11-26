@@ -1,0 +1,4 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/ENv2
+[0000] (42) startScript(121);
+[0002] (00) stopObjectCode();
+END

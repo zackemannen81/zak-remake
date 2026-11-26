@@ -1,0 +1,5 @@
+Events:
+   B - 0017
+[0017] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[001C] (00) stopObjectCode();
+END

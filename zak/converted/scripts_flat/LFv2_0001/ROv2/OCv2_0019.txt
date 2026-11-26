@@ -1,0 +1,30 @@
+Events:
+   B - 001F
+   E - 002C
+  FD - 0067
+[001F] (48) unless (VAR_ACTIVE_OBJECT2 == 87) goto 0028;
+[0025] (18) goto 0046;
+[0028] (18) goto 002C;
+[002B] (00) stopObjectCode();
+[002C] (4F) unless (getState08(19)) goto 0037;
+[0031] (B6) walkActorToObject(VAR_EGO,19);
+[0035] (BB) waitForActor(VAR_EGO);
+[0037] (D8) printEgo("I'll hang it up.");
+[0046] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0048] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[004A] (4F) unless (getState08(88)) goto 005C;
+[004F] (67) clearState04(88);
+[0052] (47) clearState08(88);
+[0055] (19) doSentence(4,88,0,1);
+[005C] (19) doSentence(STOP);
+[005E] (AC) drawSentence();
+[005F] (19) doSentence(253,19,0,1);
+[0066] (00) stopObjectCode();
+[0067] (62) stopScript(14);
+[0069] (80) breakHere();
+[006A] (B6) walkActorToObject(VAR_EGO,87);
+[006E] (BB) waitForActor(VAR_EGO);
+[0070] (1C) startSound(27);
+[0072] (42) startScript(18);
+[0074] (00) stopObjectCode();
+END

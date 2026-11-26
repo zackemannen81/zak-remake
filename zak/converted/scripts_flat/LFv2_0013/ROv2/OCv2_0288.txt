@@ -1,0 +1,36 @@
+Events:
+   B - 0035
+   E - 001C
+  FD - 0048
+[001C] (D8) printEgo("No way, it's all dirty now!");
+[0034] (00) stopObjectCode();
+[0035] (48) unless (VAR_ACTIVE_OBJECT2 == 49) goto 0045;
+[003B] (19) doSentence(253,288,0,1);
+[0042] (18) goto 0047;
+[0045] (42) startScript(3);
+[0047] (00) stopObjectCode();
+[0048] (4F) unless (getState08(288)) goto 0054;
+[004D] (19) doSentence(253,280,0,1);
+[0054] (C8) unless (Var[153] == Var[234]) goto 007F;
+[0059] (0F) unless (!getState08(288)) goto 007C;
+[005E] (D8) printEgo("There's nothing in there to burn.");
+[007C] (18) goto 00F2;
+[007F] (48) unless (Var[153] == 2) goto 00BB;
+[0085] (80) breakHere();
+[0086] (0F) unless (!getState08(288)) goto 0085;
+[008B] (2E) delay(60);
+[008F] (D8) printEgo("The branch won't catch. I need some\x01kindling.");
+[00B8] (18) goto 00F2;
+[00BB] (C8) unless (Var[153] == Var[235]) goto 00C6;
+[00C0] (18) goto 00CC;
+[00C3] (18) goto 00F2;
+[00C6] (48) unless (Var[153] == 3) goto 00D8;
+[00CC] (68) VAR_RESULT = isScriptRunning(35);
+[00CF] (28) unless (!VAR_RESULT) goto 00D5;
+[00D3] (42) startScript(35);
+[00D5] (18) goto 00F2;
+[00D8] (48) unless (Var[153] == 4) goto 00F2;
+[00DE] (D8) printEgo("It's already lit.");
+[00EF] (18) /* goto 00F2; */
+[00F2] (00) stopObjectCode();
+END

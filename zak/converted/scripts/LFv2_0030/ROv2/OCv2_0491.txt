@@ -1,0 +1,31 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0030/ROv2/OCv2_0491
+Events:
+   C - 001D
+  21 - 0055
+  FD - 0085
+[001D] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0021] (D8)   printEgo("Everything appears to be normal.");
+[003F] (18) } else {
+[0042] (D8)   printEgo("They all read zero.");
+[0054] (**) }
+[0054] (00) stopObjectCode();
+[0055] (2F) if (!getState04(454)) {
+[005A] (4F)   if (getState08(490)) {
+[005F] (19)     doSentence(253,495,0,1);
+[0066] (**)   }
+[0066] (6F)   if (getState04(492)) {
+[006B] (67)     clearState04(492);
+[006E] (0F)     if (!getState08(72)) {
+[0073] (BC)       stopSound(Var[158]);
+[0075] (**)     }
+[0075] (3C)     stopSound(50);
+[0077] (**)   }
+[0077] (50)   pickupObject(73);
+[007A] (18) } else {
+[007D] (19)   doSentence(253,491,0,1);
+[0084] (**) }
+[0084] (00) stopObjectCode();
+[0085] (D8) printEgo("No way! That would kill me!");
+[009D] (19) doSentence(STOP);
+[009F] (00) stopObjectCode();
+END

@@ -1,0 +1,16 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0042/ROv2/OCv2_0626
+Events:
+  FD - 0013
+[0013] (9A) Var[203] = Var[235];
+[0016] (80) breakHere();
+[0017] (48) if (VAR_ACTIVE_VERB == 3) {
+[001D] (BB)   waitForActor(VAR_EGO);
+[001F] (48)   if (VAR_ACTIVE_OBJECT2 == 6) {
+[0025] (BB)     waitForActor(VAR_EGO);
+[0027] (D8)     printEgo("It won't take it.");
+[0037] (9A)     VAR_ACTIVE_OBJECT2 = Var[234];
+[003A] (**)   }
+[003A] (**) }
+[003A] (18) goto 0016;
+[003D] (00) stopObjectCode();
+END

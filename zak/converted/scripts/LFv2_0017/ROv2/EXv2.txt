@@ -1,0 +1,8 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/EXv2
+[0000] (53) ActorOps(10,[Name()]);
+[0005] (9A) Var[203] = Var[234];
+[0008] (07) setState08(362);
+[000B] (57) setState02(362);
+[000E] (3C) stopSound(80);
+[0010] (00) stopObjectCode();
+END

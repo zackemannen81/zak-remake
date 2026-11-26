@@ -1,0 +1,8 @@
+Events:
+   B - 001B
+   E - 0018
+[0018] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[001A] (00) stopObjectCode();
+[001B] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0020] (00) stopObjectCode();
+END

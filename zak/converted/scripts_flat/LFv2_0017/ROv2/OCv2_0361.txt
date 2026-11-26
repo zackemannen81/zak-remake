@@ -1,0 +1,13 @@
+Events:
+  FD - 0013
+[0013] (1E) walkActorTo(8,108,56);
+[0017] (3B) waitForActor(8);
+[0019] (11) animateActor(8,247);
+[001C] (2E) delay(60);
+[0020] (1E) walkActorTo(8,111,56);
+[0024] (3B) waitForActor(8);
+[0026] (11) animateActor(8,247);
+[0029] (2E) delay(60);
+[002D] (18) goto 0013;
+[0030] (00) stopObjectCode();
+END

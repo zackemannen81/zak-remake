@@ -1,0 +1,101 @@
+# Decompiled with descumm -2
+# Source: LFv2_0026\SCv2_0081
+
+[0000] (42) startScript(84);
+[0002] (1C) startSound(112);
+[0004] (80) breakHere();
+[0005] (40) cutscene();
+[0006] (50) pickupObject(66);
+[0009] (50) pickupObject(65);
+[000C] (29) setOwnerOf(65,3);
+[0010] (29) setOwnerOf(66,4);
+[0014] (13) ActorOps(3,[Sound(7)]);
+[0018] (13) ActorOps(4,[Sound(7)]);
+[001C] (58) beginOverride();
+[001D] (18) goto 0051;
+[0020] (1A) VAR_TIMER_NEXT = 10;
+[0024] (2E) delay(140);
+[0028] (12) panCameraTo(90);
+[002A] (14) print(255,"The landing site on Mars^");
+[0042] (80) breakHere();
+[0043] (48) unless (VAR_CAMERA_POS_X == 90) goto 0042;
+[0049] (80) breakHere();
+[004A] (7C) VAR_RESULT = isSoundRunning(112);
+[004D] (28) unless (!VAR_RESULT) goto 0049;
+[0051] (A8) if (VAR_OVERRIDE) {
+[0055] (3C)   stopSound(112);
+[0057] (72)   loadRoom(0);
+[0059] (80)   breakHere();
+[005A] (**) }
+[005A] (13) ActorOps(3,[Costume(7)]);
+[005E] (13) ActorOps(4,[Costume(36)]);
+[0062] (2D) putActorInRoom(3,185);
+[0065] (01) putActor(3,102,36);
+[0069] (11) animateActor(3,250);
+[006C] (2D) putActorInRoom(4,185);
+[006F] (01) putActor(4,106,36);
+[0073] (11) animateActor(4,250);
+[0076] (D2) actorFollowCamera(VAR_EGO);
+[0078] (A8) if (VAR_OVERRIDE) {
+[007C] (18) } else {
+[007F] (58)   beginOverride();
+[0080] (18)   goto 0233;
+[0083] (2E)   delay(60);
+[0087] (14)   print(3,"I'm getting a little tired of waiting\x01here for instructions.");
+[00BE] (11)   animateActor(3,245);
+[00C1] (AE)   waitForMessage();
+[00C2] (11)   animateActor(4,244);
+[00C5] (14)   print(4,"Yeah, this place is boring.");
+[00DF] (AE)   waitForMessage();
+[00E0] (14)   print(4,"It's got a great beach, but no water^\x01and no guys!");
+[010C] (1E)   walkActorTo(4,106,50);
+[0110] (2E)   delay(60);
+[0114] (11)   animateActor(3,246);
+[0117] (3B)   waitForActor(4);
+[0119] (2E)   delay(30);
+[011D] (1E)   walkActorTo(4,92,48);
+[0121] (3B)   waitForActor(4);
+[0123] (11)   animateActor(4,245);
+[0126] (AE)   waitForMessage();
+[0127] (14)   print(3,"We should have gone to Ft. Lauderdale\x01for Spring break like everyone else.");
+[0169] (1E)   walkActorTo(3,94,48);
+[016D] (3B)   waitForActor(3);
+[016F] (11)   animateActor(3,244);
+[0172] (AE)   waitForMessage();
+[0173] (14)   print(3,"It would have taken us two days instead\x01of two months,");
+[01A3] (2E)   delay(180);
+[01A7] (1E)   walkActorTo(3,108,48);
+[01AB] (3B)   waitForActor(3);
+[01AD] (AE)   waitForMessage();
+[01AE] (11)   animateActor(3,244);
+[01B1] (2E)   delay(30);
+[01B5] (14)   print(3,"and I wouldn't have gotten sick every\x01time I looked out the window!");
+[01F0] (2E)   delay(240);
+[01F4] (1E)   walkActorTo(3,102,36);
+[01F8] (3B)   waitForActor(3);
+[01FA] (11)   animateActor(3,246);
+[01FD] (AE)   waitForMessage();
+[01FE] (14)   print(4,"Yeah, and in zero gravity, that sure was\x01a mess!");
+[0229] (1E)   walkActorTo(4,106,36);
+[022D] (3B)   waitForActor(4);
+[022F] (11)   animateActor(4,244);
+[0232] (AE)   waitForMessage();
+[0233] (**) }
+[0233] (A8) if (VAR_OVERRIDE) {
+[0237] (14)   print(255,"");
+[023A] (01)   putActor(3,102,36);
+[023E] (01)   putActor(4,106,36);
+[0242] (42)   startScript(5);
+[0244] (**) }
+[0244] (11) animateActor(3,246);
+[0247] (11) animateActor(4,246);
+[024A] (14) print(255,"");
+[024D] (50) pickupObject(61);
+[0250] (29) setOwnerOf(61,14);
+[0254] (50) pickupObject(62);
+[0257] (29) setOwnerOf(62,14);
+[025B] (50) pickupObject(63);
+[025E] (29) setOwnerOf(63,14);
+[0262] (C0) endCutscene();
+[0263] (A0) stopObjectCode();
+END

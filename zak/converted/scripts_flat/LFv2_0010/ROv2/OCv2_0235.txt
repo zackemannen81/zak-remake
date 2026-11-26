@@ -1,0 +1,27 @@
+Events:
+   4 - 0028
+   9 - 0028
+   B - 0028
+   D - 0028
+  FD - 003D
+[0028] (28) unless (!Var[50]) goto 003C;
+[002C] (68) VAR_RESULT = isScriptRunning(64);
+[002F] (28) unless (!VAR_RESULT) goto 003C;
+[0033] (1C) startSound(77);
+[0035] (19) doSentence(253,239,0,1);
+[003C] (00) stopObjectCode();
+[003D] (80) breakHere();
+[003E] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[0041] (44) unless (VAR_RESULT > 50) goto 003D;
+[0047] (40) cutscene();
+[0048] (91) animateActor(VAR_EGO,255);
+[004B] (4D) walkActorToActor(11,VAR_EGO,4);
+[004F] (3B) waitForActor(11);
+[0051] (89) faceActor(VAR_EGO,11);
+[0054] (00) stopObjectCode();
+[0055] (14) print(11,"Glad to see you again! Enjoy the view!");
+[0077] (AE) waitForMessage();
+[0078] (C0) endCutscene();
+[0079] (19) doSentence(250,233,0,1);
+[0080] (00) stopObjectCode();
+END

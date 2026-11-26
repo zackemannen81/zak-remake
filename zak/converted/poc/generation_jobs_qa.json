@@ -1,0 +1,182 @@
+[
+  {
+    "room": 16,
+    "object_id": 334,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Preserve the flat oval HOLE/opening, cyan/blue interior and grey lip on BLACK. No surrounding machine screen, pipes or horizontal tube. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_016\\object_0334\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0334\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0334\\request_v009.json"
+  },
+  {
+    "room": 16,
+    "object_id": 336,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Flat white right field and black lower-left rectangle, with small red vertical detail at upper-left. Preserve exact block layout, no shifted center red stripe. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_016\\object_0336\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0336\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0336\\request_v009.json"
+  },
+  {
+    "room": 16,
+    "object_id": 337,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. A flat white rectangular panel with turquoise TOP and LEFT border, grey vertical border at right, black bottom/left areas. Not a smartphone, no rounded frame. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_016\\object_0337\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0337\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0337\\request_v009.json"
+  },
+  {
+    "room": 16,
+    "object_id": 339,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Blue electronic monitor with one yellow line that dips then rises. Plain grey/black frame. No fabric, curtain or classical columns. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_016\\object_0339\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0339\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0339\\request_v009.json"
+  },
+  {
+    "room": 16,
+    "object_id": 340,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Blue electronic monitor with one HORIZONTAL YELLOW LINE across its middle. Plain grey/black frame. No world map. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_016\\object_0340\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0340\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_016\\object_0340\\request_v009.json"
+  },
+  {
+    "room": 18,
+    "object_id": 374,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. A white SKULL AND CROSSBONES, exact larger close-up pose and crop. Realistic bone, black background, not disconnected bricks or abstract symbols. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_018\\object_0374\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_018\\object_0374\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_018\\object_0374\\request_v009.json"
+  },
+  {
+    "room": 19,
+    "object_id": 381,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Small bright WHITE/YELLOW/RED FLAME on black, exact tilted flickering phase. Natural fire, not an emoji or floating gold blocks. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_019\\object_0381\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0381\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0381\\request_v009.json"
+  },
+  {
+    "room": 19,
+    "object_id": 382,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Small bright YELLOW/RED FLAME on black, exact flicker phase. Natural fire, no gold ring or sparkle icon. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_019\\object_0382\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0382\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0382\\request_v009.json"
+  },
+  {
+    "room": 19,
+    "object_id": 383,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Small bright WHITE/YELLOW/RED FLAME on black, exact flicker phase. Natural fire, no cartoon mascot. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_019\\object_0383\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0383\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0383\\request_v009.json"
+  },
+  {
+    "room": 19,
+    "object_id": 384,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Small bright WHITE/YELLOW/RED FLAME on black, exact flicker phase. Natural fire, no cartoon animal. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_019\\object_0384\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0384\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_019\\object_0384\\request_v009.json"
+  },
+  {
+    "room": 20,
+    "object_id": 389,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Exact doorway and red/orange wall patch. No extra wall button or added switch. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_020\\object_0389\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_020\\object_0389\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_020\\object_0389\\request_v009.json"
+  },
+  {
+    "room": 23,
+    "object_id": 411,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Exactly FOUR black hieroglyphs in two rows: upper-left a right-pointing arrow-like mark, upper-right one oval eye with central mark; lower-left curved hook-like mark, lower-right open rectangular bowl/cup outline. Preserve literal reference silhouettes, not invented symbols. No extra eyes or ornaments. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_023\\object_0411\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_023\\object_0411\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_023\\object_0411\\request_v009.json"
+  },
+  {
+    "room": 24,
+    "object_id": 417,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Bright WHITE/YELLOW FLAME with pink edges over pink-and-yellow checker background. Exact fire animation phase, no lightning-bolt symbol. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_024\\object_0417\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_024\\object_0417\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_024\\object_0417\\request_v009.json"
+  },
+  {
+    "room": 24,
+    "object_id": 418,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Bright WHITE/YELLOW FLAME with pink edges over pink/yellow checker background. Exact fire phase, no question mark or any text. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_024\\object_0418\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_024\\object_0418\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_024\\object_0418\\request_v009.json"
+  },
+  {
+    "room": 24,
+    "object_id": 419,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Bright WHITE/YELLOW FLAME with pink edges over pink/yellow checker background. Exact fire phase, no patterned tile replacing flame. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_024\\object_0419\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_024\\object_0419\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_024\\object_0419\\request_v009.json"
+  },
+  {
+    "room": 25,
+    "object_id": 429,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Flat GREY WALL RESTORATION patch after crystal removed: vertical grey shade bands and TWO black notches at the BOTTOM edge. No vent or three bars, no new object. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_025\\object_0429\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_025\\object_0429\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_025\\object_0429\\request_v009.json"
+  },
+  {
+    "room": 25,
+    "object_id": 430,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Flat GREY WALL RESTORATION patch after crystal removed: grey vertical shades and two dark bottom notches. No vent, plaque or frame. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_025\\object_0430\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_025\\object_0430\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_025\\object_0430\\request_v009.json"
+  },
+  {
+    "room": 25,
+    "object_id": 431,
+    "prompt": "Recreate the EXACT attached small state image in polished AAA Unreal Engine 5 visual quality. Flat WHITE/GREY WALL RESTORATION patch after crystal removed: vertical white and grey bands with two dark notches only at bottom. NOT three cylindrical rods, not pillars. Fill frame with flat wall. The source image is the complete tight crop; preserve all boundaries and relative positions. No surrounding scene, new objects, text or symbols. Realistic materials and lighting, NOT extruded pixel blocks except literal existing glyphs. Fill the full frame with the matching source background; do not shrink the target into a new black border. Preserve original aspect ratio; only if extremely wide or narrow use centered letterbox keeping full proportions.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_025\\object_0431\\frame_000.png"
+    ],
+    "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_025\\object_0431\\state_v009.png",
+    "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_025\\object_0431\\request_v009.json"
+  }
+]

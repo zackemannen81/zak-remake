@@ -1,0 +1,8 @@
+Events:
+   C - 0017
+[0017] (48) unless (VAR_EGO == 2) goto 005C;
+[001D] (D8) printEgo("Those who enter, BEWARE! The Guardian\x01of the Sphinx sleeps lightly.");
+[0059] (18) goto 0072;
+[005C] (D8) printEgo("I can't read this stuff.");
+[0072] (00) stopObjectCode();
+END

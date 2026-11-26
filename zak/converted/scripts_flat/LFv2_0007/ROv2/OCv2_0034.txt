@@ -1,0 +1,11 @@
+Events:
+   1 - 002D
+   2 - 002D
+   B - 002D
+  11 - 0026
+[0026] (1A) Var[47] = 45;
+[002A] (42) startScript(24);
+[002C] (00) stopObjectCode();
+[002D] (42) startScript(138);
+[002F] (00) stopObjectCode();
+END

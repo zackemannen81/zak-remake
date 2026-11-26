@@ -1,0 +1,41 @@
+[0000] (70) lights(11,0,0);
+[0004] (D3) ActorOps(VAR_EGO,[Sound(Var[234])]);
+[0008] (0C) loadSound(27)
+[000B] (0C) loadSound(19)
+[000E] (48) unless (VAR_ROOM == 133) goto 0082;
+[0014] (33) RoomScroll(20,20);
+[0018] (30) setBoxFlags(4,128);
+[001B] (0F) unless (!getState08(642)) goto 0025;
+[0020] (1C) startSound(19);
+[0022] (18) goto 0027;
+[0025] (1C) startSound(28);
+[0027] (4F) unless (getState08(643)) goto 0035;
+[002C] (30) setBoxFlags(2,0);
+[002F] (30) setBoxFlags(3,0);
+[0032] (18) goto 003B;
+[0035] (30) setBoxFlags(2,64);
+[0038] (30) setBoxFlags(3,128);
+[003B] (13) ActorOps(10,[Costume(24)]);
+[003F] (53) ActorOps(10,[Sound(Var[234])]);
+[0043] (13) ActorOps(10,[TalkColor(12)]);
+[0047] (9A) Var[203] = Var[235];
+[004A] (1F) unless (getState02(642)) goto 0071;
+[004F] (53) ActorOps(10,[Name("sentry")]);
+[005A] (2D) putActorInRoom(10,133);
+[005D] (01) putActor(10,5,56);
+[0061] (11) animateActor(10,250);
+[0064] (19) doSentence(253,655,0,1);
+[006B] (30) setBoxFlags(1,96);
+[006E] (18) goto 0078;
+[0071] (19) doSentence(253,656,0,1);
+[0078] (19) doSentence(253,649,0,1);
+[007F] (18) goto 0098;
+[0082] (33) RoomScroll(60,60);
+[0086] (1C) startSound(28);
+[0088] (53) ActorOps(12,[Name()]);
+[008D] (13) ActorOps(12,[Costume(35)]);
+[0091] (6D) putActorInRoom(12,VAR_ROOM);
+[0094] (01) putActor(12,0,0);
+[0098] (19) doSentence(250,650,0,1);
+[009F] (00) stopObjectCode();
+END

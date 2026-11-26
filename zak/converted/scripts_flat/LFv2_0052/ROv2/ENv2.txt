@@ -1,0 +1,21 @@
+[0000] (70) lights(11,0,0);
+[0004] (0C) loadSound(44)
+[0007] (48) unless (Var[119] == 1) goto 0027;
+[000D] (33) RoomColor(6,8);
+[0011] (33) RoomColor(14,7);
+[0015] (47) clearState08(724);
+[0018] (47) clearState08(725);
+[001B] (47) clearState08(726);
+[001E] (17) clearState02(722);
+[0021] (17) clearState02(723);
+[0024] (18) goto 0044;
+[0027] (48) unless (Var[119] == 2) goto 0044;
+[002D] (5B) setBitVar(1458,0,Var[235]);
+[0032] (07) setState08(724);
+[0035] (07) setState08(725);
+[0038] (07) setState08(726);
+[003B] (57) setState02(722);
+[003E] (57) setState02(723);
+[0041] (18) /* goto 0044; */
+[0044] (00) stopObjectCode();
+END

@@ -1,0 +1,16 @@
+Events:
+   B - 004D
+   C - 0024
+  FD - 0054
+[0024] (D8) printEgo("Y A K - 1\x01Insert CashCard for airport transit.");
+[004C] (00) stopObjectCode();
+[004D] (39) doSentence(11,352,VAR_ACTIVE_OBJECT2,0);
+[0053] (00) stopObjectCode();
+[0054] (80) breakHere();
+[0055] (48) unless (VAR_ACTIVE_VERB == 3) goto 0065;
+[005B] (44) unless (VAR_ACTIVE_OBJECT2 > 2) goto 0065;
+[0061] (BB) waitForActor(VAR_EGO);
+[0063] (42) startScript(139);
+[0065] (18) goto 0054;
+[0068] (00) stopObjectCode();
+END

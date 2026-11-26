@@ -1,0 +1,28 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0002/ROv2/OCv2_0119
+Events:
+   1 - 0033
+   2 - 0029
+   9 - 0041
+   A - 0041
+   E - 0033
+  FD - 004F
+[0029] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[002B] (19) doSentence(254,119,0,1);
+[0032] (00) stopObjectCode();
+[0033] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0037] (87)   setState08(VAR_ACTIVE_OBJECT1);
+[0039] (19)   doSentence(250,119,0,1);
+[0040] (**) }
+[0040] (00) stopObjectCode();
+[0041] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0045] (18)   goto 0037;
+[0048] (18) } else {
+[004B] (18)   goto 0029;
+[004E] (**) }
+[004E] (00) stopObjectCode();
+[004F] (80) breakHere();
+[0050] (B4) VAR_RESULT = getDist(VAR_EGO,119);
+[0055] (44) unless (VAR_RESULT > 0) goto 004F;
+[005B] (47) clearState08(119);
+[005E] (00) stopObjectCode();
+END

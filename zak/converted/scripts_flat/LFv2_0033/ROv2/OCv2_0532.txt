@@ -1,0 +1,7 @@
+Events:
+   9 - 001B
+   B - 001B
+[001B] (1C) startSound(91);
+[001D] (19) doSentence(253,530,0,1);
+[0024] (00) stopObjectCode();
+END

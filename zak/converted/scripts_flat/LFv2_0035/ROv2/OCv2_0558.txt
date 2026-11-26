@@ -1,0 +1,25 @@
+Events:
+   C - 001A
+  FD - 008B
+[001A] (D8) printEgo("The temperature is \x02");
+[002D] (C8) unless (Var[161] == Var[50]) goto 0043;
+[0032] (D8) printEgo("quite nice,\x01\x02");
+[0040] (18) goto 0052;
+[0043] (D8) printEgo("way too cold,\x01\x02");
+[0052] (D8) printEgo("and the air pressure is \x02");
+[0068] (C8) unless (Var[162] == Var[50]) goto 007E;
+[006D] (D8) printEgo("comfortable.");
+[007B] (18) goto 008A;
+[007E] (D8) printEgo("dangerous!");
+[008A] (00) stopObjectCode();
+[008B] (80) breakHere();
+[008C] (C8) unless (Var[161] == Var[50]) goto 009F;
+[0091] (C8) unless (Var[162] == Var[50]) goto 009F;
+[0096] (27) setState04(558);
+[0099] (9A) Var[154] = Var[234];
+[009C] (18) goto 008B;
+[009F] (67) clearState04(558);
+[00A2] (9A) Var[154] = Var[235];
+[00A5] (18) goto 008B;
+[00A8] (00) stopObjectCode();
+END

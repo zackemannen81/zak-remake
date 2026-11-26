@@ -1,0 +1,17 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[47] = Var[234];
+[0016] (05) drawObject(353,255,255);
+[001B] (2E) delay(27);
+[001F] (05) drawObject(354,255,255);
+[0024] (80) breakHere();
+[0025] (80) breakHere();
+[0026] (05) drawObject(355,255,255);
+[002B] (2E) delay(25);
+[002F] (05) drawObject(354,255,255);
+[0034] (80) breakHere();
+[0035] (80) breakHere();
+[0036] (46) Var[47]++;
+[0038] (18) goto 0016;
+[003B] (00) stopObjectCode();
+END

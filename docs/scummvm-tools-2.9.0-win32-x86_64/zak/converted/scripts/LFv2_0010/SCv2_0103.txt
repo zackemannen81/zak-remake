@@ -1,0 +1,65 @@
+# Decompiled with descumm -2
+# Source: LFv2_0010\SCv2_0103
+
+[0000] (40) cutscene();
+[0001] (62) stopScript(95);
+[0003] (11) animateActor(1,255);
+[0006] (AE) waitForMessage();
+[0007] (48) if (VAR_ACTIVE_OBJECT1 == 41) {
+[000D] (0C)   loadSound(113)
+[0010] (11)   animateActor(11,246);
+[0013] (14)   print(11,"Ooo! Ah think ah feel a song comin' on!");
+[0035] (AE)   waitForMessage();
+[0036] (2E)   delay(60);
+[003A] (1C)   startSound(113);
+[003C] (11)   animateActor(11,12);
+[003F] (2E)   delay(120);
+[0043] (11)   animateActor(11,16);
+[0046] (2E)   delay(60);
+[004A] (14)   print(11,"Nope. Just an upset stomach.");
+[0065] (AE)   waitForMessage();
+[0066] (**) }
+[0066] (9A) Var[199] = Var[235];
+[0069] (68) VAR_RESULT = isScriptRunning(101);
+[006C] (28) if (!VAR_RESULT) {
+[0070] (18) } else {
+[0073] (62)   stopScript(101);
+[0075] (14)   print(11,"Ma friend will show ya how to leave.\x01Come back'n visit any time, ya hear?");
+[00B4] (AE)   waitForMessage();
+[00B5] (19)   doSentence(253,233,0,1);
+[00BC] (1A)   VAR_EGO = 7;
+[00C0] (0D)   walkActorToActor(7,1,3);
+[00C4] (3B)   waitForActor(7);
+[00C6] (D8)   printEgo("Come with me.");
+[00D3] (1E)   walkActorTo(7,30,50);
+[00D7] (2E)   delay(60);
+[00DB] (1E)   walkActorTo(1,32,54);
+[00DF] (3B)   waitForActor(7);
+[00E1] (11)   animateActor(7,246);
+[00E4] (3B)   waitForActor(1);
+[00E6] (D8)   printEgo("Enter this sequence to return home.");
+[0106] (AE)   waitForMessage();
+[0107] (1A)   Var[56] = 0;
+[010B] (9A)   Var[14] = Var[56];
+[010E] (5A)   Var[14] += 113;
+[0112] (9A)   Var[66] = Var[14];
+[0115] (DA)   Var[66] += Var[56];
+[0118] (46)   Var[66]++;
+[011A] (44)   if (Var[66] > 235) {
+[0120] (3A)     Var[66] -= 235;
+[0124] (5A)     Var[66] += 229;
+[0128] (**)   }
+[0128] (59)   doSentence(9,Var[66],0,0);
+[012E] (4C)   waitForSentence();
+[012F] (80)   breakHere();
+[0130] (28)   unless (!Var[50]) goto 012F;
+[0134] (2E)   delay(30);
+[0138] (46)   Var[56]++;
+[013A] (44)   unless (Var[56] > 3) goto 010B;
+[0140] (D8)   printEgo("See ya.");
+[0148] (1A)   VAR_EGO = 1;
+[014C] (**) }
+[014C] (C0) endCutscene();
+[014D] (19) doSentence(250,231,0,1);
+[0154] (A0) stopObjectCode();
+END

@@ -1,0 +1,11 @@
+Events:
+   D - 001E
+[001E] (68) VAR_RESULT = isScriptRunning(62);
+[0021] (28) unless (!VAR_RESULT) goto 002E;
+[0025] (24) loadRoomWithEgo(141,3,93,46);
+[002B] (18) goto 0038;
+[002E] (2D) putActorInRoom(1,3);
+[0031] (01) putActor(1,85,56);
+[0035] (11) animateActor(1,248);
+[0038] (00) stopObjectCode();
+END

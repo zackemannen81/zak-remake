@@ -1,0 +1,97 @@
+# Decompiled with descumm -2
+# Source: LFv2_0019\SCv2_0042
+
+[0000] (80) breakHere();
+[0001] (08) if (VAR_ROOM != 19) {
+[0007] (62)   stopScript(0);
+[0009] (**) }
+[0009] (B4) VAR_RESULT = getDist(VAR_EGO,10);
+[000E] (78) unless (VAR_RESULT < 15) goto 0000;
+[0014] (40) cutscene();
+[0015] (12) panCameraTo(60);
+[0017] (91) animateActor(VAR_EGO,255);
+[001A] (80) breakHere();
+[001B] (48) unless (VAR_CAMERA_POS_X == 60) goto 001A;
+[0021] (4D) walkActorToActor(10,VAR_EGO,4);
+[0025] (3B) waitForActor(10);
+[0027] (49) faceActor(10,VAR_EGO);
+[002A] (89) faceActor(VAR_EGO,10);
+[002D] (00) stopObjectCode();
+[002E] (3B) waitForActor(10);
+[0030] (6F) if (getState04(55)) {
+[0035] (48)   if (VAR_EGO == 1) {
+[003B] (14)     print(10,"You have already been trained. Use it!");
+[005E] (18)     goto 037B;
+[0061] (**)   }
+[0061] (**) }
+[0061] (1C) startSound(79);
+[0063] (2E) delay(120);
+[0067] (1C) startSound(79);
+[0069] (2E) delay(120);
+[006D] (48) if (VAR_EGO == 2) {
+[0073] (58)   beginOverride();
+[0074] (18)   goto 037C;
+[0077] (14)   print(10,"My dear, you have no need of my wisdom.\x01You already follow the right path.");
+[00B7] (10)   VAR_RESULT = getObjectOwner(55);
+[00BB] (48)   if (VAR_RESULT == 2) {
+[00C1] (AE)     waitForMessage();
+[00C2] (14)     print(10,"I cannot teach you the ways of the\x01Crystal. Give it to your writer friend.");
+[0102] (**)   }
+[0102] (A8) } else if (Var[225]) {
+[0109] (14)   print(10,"I smell bad Karma! You'll have to wait\x01while it burns off. Don't leave!");
+[0147] (19)   doSentence(253,383,0,1);
+[014E] (18) } else {
+[0151] (A8)   if (Var[50]) {
+[0155] (14)     print(10,"You have burned off your misdeeds,\x01\x02");
+[0177] (18)   } else {
+[017A] (14)     print(10,"You've kept yourself Karmically clean,\x01\x02");
+[01A1] (**)   }
+[01A1] (10)   VAR_RESULT = getObjectOwner(55);
+[01A5] (48)   if (VAR_RESULT == 1) {
+[01AB] (27)     setState04(55);
+[01AE] (58)     beginOverride();
+[01AF] (18)     goto 037C;
+[01B2] (14)     print(10,"and you have the Blue Crystal with you.\x03I will now teach you how to use it.\x03It will put you into a state of deep\x01rapport with any animal. Simply focus^");
+[0230] (AE)     waitForMessage();
+[0231] (72)     loadRoom(0);
+[0233] (EE)     dummy(EE);
+[0234] (14)     print(255,"One hour later^");
+[0244] (AE)     waitForMessage();
+[0245] (72)     loadRoom(19);
+[0247] (2E)     delay(60);
+[024B] (14)     print(10,"^then, you saute it in yak butter with\x01a clove of garlic over medium heat^");
+[028B] (AE)     waitForMessage();
+[028C] (72)     loadRoom(0);
+[028E] (EE)     dummy(EE);
+[028F] (14)     print(255,"Two hours later^");
+[02A0] (AE)     waitForMessage();
+[02A1] (72)     loadRoom(19);
+[02A3] (2E)     delay(60);
+[02A7] (14)     print(10,"^and he says `that was no lady,\x01that was my wife.` Get it? HA HA HA.");
+[02E0] (AE)     waitForMessage();
+[02E1] (72)     loadRoom(0);
+[02E3] (EE)     dummy(EE);
+[02E4] (14)     print(255,"Three hours later^");
+[02F7] (AE)     waitForMessage();
+[02F8] (72)     loadRoom(19);
+[02FA] (2E)     delay(60);
+[02FE] (14)     print(10,"^and it only works if you are in contact\x01with the Earth. Now go and do some good!");
+[0342] (18)   } else {
+[0345] (14)     print(10,"but you don't have the Blue Crystal.\x03Return when you have it.");
+[037B] (**)   }
+[037B] (**) }
+[037B] (AE) waitForMessage();
+[037C] (A8) if (VAR_OVERRIDE) {
+[0380] (14)   print(255,"");
+[0383] (72)   loadRoom(19);
+[0385] (**) }
+[0385] (C0) endCutscene();
+[0386] (1E) walkActorTo(10,60,56);
+[038A] (3B) waitForActor(10);
+[038C] (11) animateActor(10,246);
+[038F] (2E) delay(300);
+[0393] (48) if (VAR_ROOM == 19) {
+[0399] (11)   animateActor(10,247);
+[039C] (**) }
+[039C] (A0) stopObjectCode();
+END

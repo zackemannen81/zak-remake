@@ -1,0 +1,64 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0015/ROv2/OCv2_0317
+Events:
+   9 - 001D
+   B - 001D
+  FD - 0029
+[001D] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0021] (19)   doSentence(253,316,0,1);
+[0028] (**) }
+[0028] (00) stopObjectCode();
+[0029] (4F) if (getState08(322)) {
+[002E] (03)   VAR_RESULT = getActorRoom(1);
+[0031] (48)   if (VAR_RESULT == 152) {
+[0037] (31)     VAR_RESULT = getBitVar(1455,1);
+[003C] (28)     if (!VAR_RESULT) {
+[0040] (5B)       setBitVar(1455,1,Var[235]);
+[0045] (36)       walkActorToObject(1,321);
+[0049] (3B)       waitForActor(1);
+[004B] (14)       print(1,"This is a map of the Martian Face!");
+[0069] (**)     }
+[0069] (**)   }
+[0069] (03)   VAR_RESULT = getActorRoom(2);
+[006C] (48)   if (VAR_RESULT == 152) {
+[0072] (31)     VAR_RESULT = getBitVar(1455,2);
+[0077] (28)     if (!VAR_RESULT) {
+[007B] (5B)       setBitVar(1455,2,Var[235]);
+[0080] (36)       walkActorToObject(2,320);
+[0084] (3B)       waitForActor(2);
+[0086] (AE)       waitForMessage();
+[0087] (14)       print(2,"This is a map of the Martian Pyramid!");
+[00A8] (**)     }
+[00A8] (**)   }
+[00A8] (48)   if (Var[194] == 2) {
+[00AE] (48)   } else if (Var[193] == 2) {
+[00B7] (18)   } else {
+[00BA] (AE)     waitForMessage();
+[00BB] (2E)     delay(120);
+[00BF] (C8)     if (Var[194] == Var[235]) {
+[00C4] (10)       Var[49] = getObjectOwner(15);
+[00C8] (18)     } else {
+[00CB] (C8)       unless (Var[193] == Var[235]) goto 011E;
+[00D0] (10)       Var[49] = getObjectOwner(17);
+[00D4] (**)     }
+[00D4] (28)     if (!Var[49]) {
+[00D8] (18)     } else {
+[00DB] (83)       VAR_RESULT = getActorRoom(Var[49]);
+[00DE] (C8)       if (VAR_RESULT == VAR_ROOM) {
+[00E3] (9A)         Var[66] = Var[49];
+[00E6] (18)       } else {
+[00E9] (9A)         Var[66] = VAR_EGO;
+[00EC] (**)       }
+[00EC] (94)       print(Var[66],"I should add this to \x02");
+[0100] (C8)       if (Var[66] == Var[49]) {
+[0105] (94)         print(Var[66],"my map.");
+[010E] (18)       } else {
+[0111] (D8)         printEgo("\x06\x31's map.");
+[011B] (**)       }
+[011B] (18)     } else {
+[011E] (D8)       printEgo("I should draw a map of this.");
+[0136] (**)     }
+[0136] (**)   }
+[0136] (**) }
+[0136] (60) cursorCommand(247, 1);
+[0139] (00) stopObjectCode();
+END

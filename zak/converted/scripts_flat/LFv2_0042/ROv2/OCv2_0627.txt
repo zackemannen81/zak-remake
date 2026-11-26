@@ -1,0 +1,22 @@
+Events:
+  FD - 0013
+[0013] (48) unless (VAR_EGO == 6) goto 0039;
+[0019] (26) setVarRange(Var[42],2,[6,6]);
+[001E] (1A) Var[66] = 0;
+[0022] (B0) setBoxFlags(Var[66],160);
+[0025] (46) Var[66]++;
+[0027] (44) unless (Var[66] > 5) goto 0022;
+[002D] (30) setBoxFlags(6,0);
+[0030] (30) setBoxFlags(7,0);
+[0033] (30) setBoxFlags(8,0);
+[0036] (18) goto 0056;
+[0039] (26) setVarRange(Var[42],2,[1,4]);
+[003E] (1A) Var[66] = 0;
+[0042] (B0) setBoxFlags(Var[66],0);
+[0045] (46) Var[66]++;
+[0047] (44) unless (Var[66] > 5) goto 0042;
+[004D] (30) setBoxFlags(6,160);
+[0050] (30) setBoxFlags(7,160);
+[0053] (30) setBoxFlags(8,160);
+[0056] (00) stopObjectCode();
+END

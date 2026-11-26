@@ -1,0 +1,72 @@
+# Decompiled with descumm -2
+# Source: LFv2_0027\SCv2_0051
+
+[0000] (6F) if (getState04(445)) {
+[0005] (48)   if (VAR_ROOM == 185) {
+[000B] (18)     goto 0062;
+[000E] (**)   }
+[000E] (**) }
+[000E] (2E) delay(300);
+[0012] (1C) startSound(86);
+[0014] (1A) Var[252] = 20;
+[0018] (3A) Var[252] -= 5;
+[001C] (48) if (VAR_ROOM_RESOURCE == 27) {
+[0022] (14)   print(255,"Tram leaving in \x04\xFC seconds.\x02");
+[003E] (44)   if (Var[252] > 5) {
+[0044] (14)     print(255,"");
+[0047] (18)   } else {
+[004A] (14)     print(255," All aboard!");
+[0058] (**)   }
+[0058] (**) }
+[0058] (2E) delay(300);
+[005C] (48) unless (Var[252] == 5) goto 0018;
+[0062] (40) cutscene();
+[0063] (1A) VAR_TIMER_NEXT = 10;
+[0067] (13) ActorOps(12,[Costume(20)]);
+[006B] (0C) loadSound(3)
+[006E] (2F) if (!getState04(445)) {
+[0073] (1A)   Var[48] = 76;
+[0077] (1A)   Var[49] = 26;
+[007B] (1A)   Var[50] = 184;
+[007F] (27)   setState04(445);
+[0082] (18) } else {
+[0085] (1A)   Var[48] = 26;
+[0089] (1A)   Var[49] = 76;
+[008D] (1A)   Var[50] = 185;
+[0091] (67)   clearState04(445);
+[0094] (**) }
+[0094] (2D) putActorInRoom(12,26);
+[0097] (41) putActor(12,Var[48],49);
+[009B] (11) animateActor(12,248);
+[009E] (48) if (Var[48] == 26) {
+[00A4] (11)   animateActor(12,249);
+[00A7] (**) }
+[00A7] (72) loadRoom(26);
+[00A9] (52) actorFollowCamera(12);
+[00AB] (58) beginOverride();
+[00AC] (18) goto 00C1;
+[00AF] (2E) delay(120);
+[00B3] (1C) startSound(3);
+[00B5] (5E) walkActorTo(12,Var[49],49);
+[00B9] (3B) waitForActor(12);
+[00BB] (3C) stopSound(3);
+[00BD] (2E) delay(120);
+[00C1] (3C) stopSound(3);
+[00C3] (F2) loadRoom(Var[50]);
+[00C5] (1A) Var[47] = 1;
+[00C9] (B1) VAR_RESULT = getBitVar(1445,Var[47]);
+[00CE] (A8) if (VAR_RESULT) {
+[00D2] (ED)   putActorInRoom(Var[47],Var[50]);
+[00D5] (81)   putActor(Var[47],13,63);
+[00D9] (DB)   setBitVar(1445,Var[47],Var[234]);
+[00DE] (DB)   setBitVar(1440,Var[47],Var[234]);
+[00E3] (1A)   Var[51] = 13;
+[00E7] (DA)   Var[51] += Var[47];
+[00EA] (DE)   walkActorTo(Var[47],Var[51],51);
+[00EE] (**) }
+[00EE] (46) Var[47]++;
+[00F0] (44) unless (Var[47] > 4) goto 00C9;
+[00F6] (42) startScript(5);
+[00F8] (C0) endCutscene();
+[00F9] (A0) stopObjectCode();
+END

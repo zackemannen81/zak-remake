@@ -1,0 +1,12 @@
+Events:
+   9 - 001E
+[001E] (48) unless (VAR_ROOM == 155) goto 0036;
+[0024] (D8) printEgo("I can't move it.");
+[0033] (18) goto 0077;
+[0036] (AF) unless (!getState04(VAR_ACTIVE_OBJECT1)) goto 0070;
+[003A] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[003C] (D8) printEgo("Nothing happens when I push here,\x01maybe if I push its feet.");
+[006F] (AE) waitForMessage();
+[0070] (19) doSentence(9,414,0,0);
+[0077] (00) stopObjectCode();
+END

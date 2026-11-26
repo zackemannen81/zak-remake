@@ -1,0 +1,212 @@
+# Decompiled with descumm -2
+# Source: LFv2_0040\SCv2_0069
+
+[0000] (60) cursorCommand(255, 1);
+[0003] (2E) delay(180);
+[0007] (14) print(11,"I love the Triangle.");
+[001B] (AE) waitForMessage();
+[001C] (2E) delay(60);
+[0020] (B1) VAR_RESULT = getBitVar(1510,VAR_EGO);
+[0025] (28) if (!VAR_RESULT) {
+[0029] (14)   print(11,"You never know what to expect.");
+[0045] (AE)   waitForMessage();
+[0046] (2E)   delay(60);
+[004A] (10)   VAR_RESULT = getObjectOwner(77);
+[004E] (C8)   if (VAR_RESULT == VAR_EGO) {
+[0053] (14)     print(11,"That's why I gave you a chute.");
+[006E] (18)   } else {
+[0071] (14)     print(11,"Sorry, I'm out of chutes!");
+[0089] (**)   }
+[0089] (11)   animateActor(11,246);
+[008C] (AE)   waitForMessage();
+[008D] (11)   animateActor(11,245);
+[0090] (18) } else {
+[0093] (14)   print(11,"Looks like you love it too.");
+[00AC] (10)   VAR_RESULT = getObjectOwner(77);
+[00B0] (88)   if (VAR_RESULT != VAR_EGO) {
+[00B5] (18)     goto 0045;
+[00B8] (**)   }
+[00B8] (**) }
+[00B8] (AE) waitForMessage();
+[00B9] (2E) delay(60);
+[00BD] (11) animateActor(11,246);
+[00C0] (14) print(11,"Hey, I got a good one for ya.");
+[00D9] (AE) waitForMessage();
+[00DA] (2E) delay(30);
+[00DE] (11) animateActor(11,245);
+[00E1] (16) Var[51] = getRandomNr(2);
+[00E4] (C8) if (Var[51] == Var[234]) {
+[00E9] (14)   print(11,"Y'know why this is called a biplane?");
+[010A] (C8) } else if (Var[51] == Var[235]) {
+[0112] (14)   print(11,"What do biplanes have in common with\x01drunks?");
+[013B] (48) } else if (Var[51] == 2) {
+[0144] (14)   print(11,"Heard about our basketball team for\x01small people?");
+[0172] (18)   /* goto 0175; */
+[0175] (**) }
+[0175] (AE) waitForMessage();
+[0176] (2E) delay(120);
+[017A] (11) animateActor(11,246);
+[017D] (C8) if (Var[51] == Var[234]) {
+[0182] (14)   print(11,"Cuz ya never know if it's coming back!\x01\x02");
+[01A6] (C8) } else if (Var[51] == Var[235]) {
+[01AE] (14)   print(11,"They both have to be `propped up`!\x01\x02");
+[01CF] (48) } else if (Var[51] == 2) {
+[01D8] (14)   print(11,"They're called the `Bermuda Shorts`!\x01\x02");
+[01FD] (18)   /* goto 0200; */
+[0200] (**) }
+[0200] (2E) delay(180);
+[0204] (11) animateActor(11,245);
+[0207] (14) print(11,"HA HA HA!");
+[0211] (AE) waitForMessage();
+[0212] (91) animateActor(VAR_EGO,246);
+[0215] (2E) delay(30);
+[0219] (91) animateActor(VAR_EGO,24);
+[021C] (2E) delay(60);
+[0220] (91) animateActor(VAR_EGO,16);
+[0223] (2E) delay(30);
+[0227] (91) animateActor(VAR_EGO,245);
+[022A] (48) if (Var[233] == 2) {
+[0230] (40)   cutscene();
+[0231] (2E)   delay(60);
+[0235] (14)   print(11,"Well, time to be heading back. Hope you\x01enjoyed the trip.");
+[0268] (AE)   waitForMessage();
+[0269] (2D)   putActorInRoom(2,143);
+[026C] (01)   putActor(2,2,60);
+[0270] (72)   loadRoom(143);
+[0272] (1E)   walkActorTo(2,15,60);
+[0276] (3B)   waitForActor(2);
+[0278] (11)   animateActor(2,246);
+[027B] (2E)   delay(60);
+[027F] (14)   print(2,"That was fun.");
+[028D] (AE)   waitForMessage();
+[028E] (2E)   delay(60);
+[0292] (5B)   setBitVar(1510,0,Var[234]);
+[0297] (DB)   setBitVar(1510,Var[233],Var[235]);
+[029C] (29)   setOwnerOf(77,0);
+[02A0] (29)   setOwnerOf(77,15);
+[02A4] (C0)   endCutscene();
+[02A5] (60)   cursorCommand(1, 0);
+[02A8] (9A)   Var[199] = Var[235];
+[02AB] (62)   stopScript(0);
+[02AD] (**) }
+[02AD] (19) doSentence(250,599,0,1);
+[02B4] (2E) delay(90);
+[02B8] (14) print(11,"Uh oh. Not again!");
+[02C9] (11) animateActor(11,246);
+[02CC] (AE) waitForMessage();
+[02CD] (11) animateActor(11,245);
+[02D0] (2E) delay(360);
+[02D4] (60) cursorCommand(247, 1);
+[02D7] (40) cutscene();
+[02D8] (58) beginOverride();
+[02D9] (18) goto 03A2;
+[02DC] (67) clearState04(602);
+[02DF] (B1) VAR_RESULT = getBitVar(1510,VAR_EGO);
+[02E4] (28) if (!VAR_RESULT) {
+[02E8] (DB)   setBitVar(1510,VAR_EGO,Var[235]);
+[02ED] (D8)   printEgo("Hey! What's happening? Everything's\x01fading. The water below is shimmering!");
+[0331] (18) } else {
+[0334] (D8)   printEgo("Here we go!");
+[033F] (**) }
+[033F] (9A) Var[118] = VAR_EGO;
+[0342] (1A) VAR_EGO = 11;
+[0346] (91) animateActor(Var[118],247);
+[0349] (2E) delay(60);
+[034D] (91) animateActor(Var[118],245);
+[0350] (80) breakHere();
+[0351] (91) animateActor(Var[118],246);
+[0354] (2E) delay(60);
+[0358] (28) unless (!VAR_HAVE_MSG) goto 0346;
+[035C] (2D) putActorInRoom(12,132);
+[035F] (01) putActor(12,0,18);
+[0363] (3D) setActorElevation(12,0);
+[0366] (11) animateActor(12,249);
+[0369] (72) loadRoom(132);
+[036B] (32) setCameraAt(20);
+[036D] (19) doSentence(250,599,0,1);
+[0374] (1E) walkActorTo(12,45,18);
+[0378] (3B) waitForActor(12);
+[037A] (2D) putActorInRoom(12,54);
+[037D] (01) putActor(12,18,80);
+[0381] (07) setState08(753);
+[0384] (72) loadRoom(54);
+[0386] (32) setCameraAt(20);
+[0388] (2E) delay(120);
+[038C] (9A) Var[119] = Var[234];
+[038F] (7D) setActorElevation(12,Var[119]);
+[0392] (80) breakHere();
+[0393] (46) Var[119]++;
+[0395] (44) unless (Var[119] > 50) goto 038F;
+[039B] (47) clearState08(753);
+[039E] (2E) delay(240);
+[03A2] (48) if (VAR_ROOM == 10) {
+[03A8] (72)   loadRoom(0);
+[03AA] (62)   stopScript(64);
+[03AC] (**) }
+[03AC] (2D) putActorInRoom(12,0);
+[03AF] (3D) setActorElevation(12,0);
+[03B2] (47) clearState08(229);
+[03B5] (17) clearState02(229);
+[03B8] (47) clearState08(239);
+[03BB] (47) clearState08(238);
+[03BE] (17) clearState02(238);
+[03C1] (72) loadRoom(10);
+[03C3] (32) setCameraAt(20);
+[03C5] (AD) putActorInRoom(Var[118],10);
+[03C8] (81) putActor(Var[118],8,50);
+[03CC] (91) animateActor(Var[118],249);
+[03CF] (2D) putActorInRoom(11,10);
+[03D2] (01) putActor(11,12,50);
+[03D6] (42) startScript(5);
+[03D8] (36) walkActorToObject(11,230);
+[03DC] (2E) delay(120);
+[03E0] (D8) printEgo("I HATE it when this happens!");
+[03F9] (3B) waitForActor(11);
+[03FB] (9E) walkActorTo(Var[118],25,52);
+[03FF] (BB) waitForActor(Var[118]);
+[0401] (91) animateActor(Var[118],247);
+[0404] (AE) waitForMessage();
+[0405] (2E) delay(60);
+[0409] (11) animateActor(11,246);
+[040C] (3B) waitForActor(11);
+[040E] (D8) printEgo("Now, what was the combination?");
+[042A] (AE) waitForMessage();
+[042B] (2E) delay(60);
+[042F] (D8) printEgo("Oh yeah.");
+[0438] (AE) waitForMessage();
+[0439] (1A) Var[117] = 0;
+[043D] (9A) Var[14] = Var[117];
+[0440] (5A) Var[14] += 113;
+[0444] (59) doSentence(9,Var[14],0,0);
+[044A] (4C) waitForSentence();
+[044B] (80) breakHere();
+[044C] (28) unless (!Var[50]) goto 044B;
+[0450] (2E) delay(30);
+[0454] (46) Var[117]++;
+[0456] (44) unless (Var[117] > 3) goto 043D;
+[045C] (1E) walkActorTo(11,0,53);
+[0460] (D8) printEgo("You coming or staying?");
+[0475] (9A) Var[233] = Var[234];
+[0478] (80) breakHere();
+[0479] (43) VAR_RESULT = getActorX(11);
+[047C] (78) unless (VAR_RESULT < 22) goto 0478;
+[0482] (91) animateActor(Var[118],244);
+[0485] (2E) delay(60);
+[0489] (AE) waitForMessage();
+[048A] (91) animateActor(Var[118],246);
+[048D] (9A) VAR_EGO = Var[118];
+[0490] (C0) endCutscene();
+[0491] (3B) waitForActor(11);
+[0493] (43) VAR_RESULT = getActorX(11);
+[0496] (A8) if (VAR_RESULT) {
+[049A] (1E)   walkActorTo(11,0,53);
+[049E] (18)   goto 0491;
+[04A1] (**) }
+[04A1] (1A) Var[117] = 12;
+[04A5] (7D) setActorElevation(11,Var[117]);
+[04A8] (80) breakHere();
+[04A9] (46) Var[117]++;
+[04AB] (44) unless (Var[117] > 17) goto 04A5;
+[04B1] (11) animateActor(11,250);
+[04B4] (A0) stopObjectCode();
+END

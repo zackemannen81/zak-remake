@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0025/ROv2/OCv2_0426
+Events:
+   B - 0017
+[0017] (48) if (VAR_ACTIVE_OBJECT2 == 78) {
+[001D] (29)   setOwnerOf(78,0);
+[0021] (47)   clearState08(427);
+[0024] (17)   clearState02(427);
+[0027] (19)   doSentence(250,427,0,1);
+[002E] (18) } else {
+[0031] (42)   startScript(3);
+[0033] (**) }
+[0033] (00) stopObjectCode();
+END

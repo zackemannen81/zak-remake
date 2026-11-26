@@ -1,0 +1,22 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0013/ROv2/OCv2_0286
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (66) Var[45] = getClosestObjActor(54);
+[0018] (B4) VAR_RESULT = getDist(Var[45],54);
+[001D] (78) if (VAR_RESULT < 6) {
+[0023] (19)   doSentence(250,285,0,1);
+[002A] (5F) } else if (!getState02(285)) {
+[0032] (68)   VAR_RESULT = isScriptRunning(67);
+[0035] (28)   if (!VAR_RESULT) {
+[0039] (57)     setState02(285);
+[003C] (57)     setState02(286);
+[003F] (57)     setState02(287);
+[0042] (47)     clearState08(285);
+[0045] (47)     clearState08(286);
+[0048] (47)     clearState08(287);
+[004B] (**)   }
+[004B] (**) }
+[004B] (18) goto 0013;
+[004E] (00) stopObjectCode();
+END

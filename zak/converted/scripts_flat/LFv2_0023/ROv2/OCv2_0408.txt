@@ -1,0 +1,15 @@
+Events:
+   D - 001C
+  FD - 002D
+[001C] (48) unless (Var[55] == 220) goto 0027;
+[0022] (5B) setBitVar(1574,0,Var[235]);
+[0027] (E4) loadRoomWithEgo(Var[54],Var[55],255,255);
+[002C] (00) stopObjectCode();
+[002D] (60) cursorCommand(247, 1);
+[0030] (67) clearState04(408);
+[0033] (2E) delay(30);
+[0037] (D8) printEgo("Owwwwww. That hurt!");
+[004A] (AE) waitForMessage();
+[004B] (19) doSentence(253,409,0,1);
+[0052] (00) stopObjectCode();
+END

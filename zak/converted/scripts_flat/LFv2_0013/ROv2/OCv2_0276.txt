@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (48) unless (Var[147] == 2) goto 0042;
+[0019] (48) unless (VAR_EGO == 1) goto 003D;
+[001F] (D8) printEgo("Too bad I had to kill the squirrel.");
+[003D] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[003F] (18) goto 0068;
+[0042] (D8) printEgo("The two-headed squirrel is guarding it.");
+[0066] (19) doSentence(STOP);
+[0068] (00) stopObjectCode();
+END

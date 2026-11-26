@@ -1,0 +1,53 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0093
+
+[0000] (80) breakHere();
+[0001] (40) cutscene();
+[0002] (9A) Var[117] = VAR_EGO;
+[0005] (1A) VAR_EGO = 7;
+[0009] (52) actorFollowCamera(7);
+[000B] (58) beginOverride();
+[000C] (18) goto 00C5;
+[000F] (2E) delay(60);
+[0013] (48) if (VAR_ROOM == 4) {
+[0019] (11)   animateActor(7,246);
+[001C] (D8)   printEgo("I think I'll check on the prisoner.");
+[003B] (AE)   waitForMessage();
+[003C] (19)   doSentence(253,156,0,1);
+[0043] (80)   breakHere();
+[0044] (A8)   unless (Var[48]) goto 0043;
+[0048] (**) }
+[0048] (2D) putActorInRoom(7,16);
+[004B] (01) putActor(7,55,60);
+[004F] (72) loadRoom(16);
+[0051] (42) startScript(5);
+[0053] (32) setCameraAt(80);
+[0055] (4D) walkActorToActor(7,Var[117],4);
+[0059] (3B) waitForActor(7);
+[005B] (D8) printEgo("How'd you get in here?");
+[006F] (AE) waitForMessage();
+[0070] (4F) if (getState08(331)) {
+[0075] (19)   doSentence(5,331,0,0);
+[007C] (4C)   waitForSentence();
+[007D] (**) }
+[007D] (4D) walkActorToActor(7,Var[117],4);
+[0081] (3B) waitForActor(7);
+[0083] (D8) printEgo("Don't you know the Mindbender's not good\x01for your health!");
+[00B6] (AE) waitForMessage();
+[00B7] (36) walkActorToObject(7,329);
+[00BB] (80) breakHere();
+[00BC] (43) VAR_RESULT = getActorX(7);
+[00BF] (78) unless (VAR_RESULT < 58) goto 00BB;
+[00C5] (A8) if (VAR_OVERRIDE) {
+[00C9] (D2)   actorFollowCamera(Var[117]);
+[00CB] (19)   doSentence(5,331,0,1);
+[00D2] (**) }
+[00D2] (19) doSentence(1,329,0,1);
+[00D9] (9A) VAR_EGO = Var[117];
+[00DC] (D2) actorFollowCamera(VAR_EGO);
+[00DE] (27) setState04(330);
+[00E1] (C0) endCutscene();
+[00E2] (2D) putActorInRoom(7,4);
+[00E5] (01) putActor(7,22,52);
+[00E9] (A0) stopObjectCode();
+END

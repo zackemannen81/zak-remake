@@ -1,0 +1,28 @@
+Events:
+  FD - 0013
+[0013] (19) doSentence(250,258,0,1);
+[001A] (9A) Var[53] = Var[234];
+[001D] (1C) startSound(42);
+[001F] (19) doSentence(250,241,0,1);
+[0026] (80) breakHere();
+[0027] (48) unless (VAR_CLICK_AREA == 4) goto 0035;
+[002D] (C8) unless (VAR_KEYPRESS == VAR_CUTSCENEEXIT_KEY) goto 0035;
+[0032] (18) goto 0065;
+[0035] (A8) unless (Var[53]) goto 0026;
+[0039] (80) breakHere();
+[003A] (28) unless (!Var[248]) goto 0039;
+[003E] (68) VAR_RESULT = isScriptRunning(36);
+[0041] (A8) unless (VAR_RESULT) goto 004C;
+[0045] (2E) delay(3600);
+[0049] (18) goto 0039;
+[004C] (A8) unless (Var[248]) goto 0053;
+[0050] (18) goto 0039;
+[0053] (19) doSentence(254,261,0,1);
+[005A] (62) stopScript(105);
+[005C] (1C) startSound(109);
+[005E] (2E) delay(60);
+[0062] (3C) stopSound(42);
+[0064] (AE) waitForMessage();
+[0065] (42) startScript(79);
+[0067] (00) stopObjectCode();
+END

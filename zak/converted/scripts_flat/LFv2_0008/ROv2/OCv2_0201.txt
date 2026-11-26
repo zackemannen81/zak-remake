@@ -1,0 +1,23 @@
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (66) Var[66] = getClosestObjActor(191);
+[0018] (0F) unless (!getState08(191)) goto 0038;
+[001D] (C3) VAR_RESULT = getActorX(Var[66]);
+[0020] (44) unless (VAR_RESULT > 25) goto 0035;
+[0026] (1C) startSound(19);
+[0028] (2E) delay(30);
+[002C] (07) setState08(191);
+[002F] (2E) delay(60);
+[0033] (3C) stopSound(19);
+[0035] (18) goto 0050;
+[0038] (C3) VAR_RESULT = getActorX(Var[66]);
+[003B] (04) unless (VAR_RESULT <= 25) goto 0050;
+[0041] (1C) startSound(19);
+[0043] (2E) delay(30);
+[0047] (47) clearState08(191);
+[004A] (2E) delay(60);
+[004E] (3C) stopSound(19);
+[0050] (18) goto 0013;
+[0053] (00) stopObjectCode();
+END

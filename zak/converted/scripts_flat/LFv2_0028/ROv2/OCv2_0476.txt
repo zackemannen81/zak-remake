@@ -1,0 +1,11 @@
+Events:
+   1 - 001B
+   2 - 0034
+[001B] (4F) unless (getState08(67)) goto 0031;
+[0020] (D8) printEgo("It won't open.");
+[002E] (18) goto 0033;
+[0031] (42) startScript(10);
+[0033] (00) stopObjectCode();
+[0034] (42) startScript(11);
+[0036] (00) stopObjectCode();
+END

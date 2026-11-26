@@ -1,0 +1,129 @@
+# Decompiled with descumm -2
+# Source: LFv2_0011\SCv2_0121
+
+[0000] (70) lights(11,0,0);
+[0004] (4F) if (getState08(242)) {
+[0009] (1C)   startSound(17);
+[000B] (19)   doSentence(253,242,0,1);
+[0012] (**) }
+[0012] (26) setVarRange(Var[42],2,[9,9]);
+[0017] (9A) Var[52] = VAR_EGO;
+[001A] (53) ActorOps(9,[Name("stewardess")]);
+[0029] (D3) ActorOps(Var[52],[Sound(Var[234])]);
+[002D] (19) doSentence(253,247,0,1);
+[0034] (17) clearState02(246);
+[0037] (17) clearState02(247);
+[003A] (B1) VAR_RESULT = getBitVar(1475,VAR_EGO);
+[003F] (28) if (!VAR_RESULT) {
+[0043] (2D)   putActorInRoom(9,11);
+[0046] (01)   putActor(9,91,54);
+[004A] (11)   animateActor(9,248);
+[004D] (DB)   setBitVar(1475,VAR_EGO,Var[235]);
+[0052] (47)   clearState08(48);
+[0055] (47)   clearState08(260);
+[0058] (47)   clearState08(261);
+[005B] (33)   RoomScroll(33,80);
+[005F] (47)   clearState08(246);
+[0062] (47)   clearState08(248);
+[0065] (30)   setBoxFlags(4,128);
+[0068] (9A)   Var[248] = Var[234];
+[006B] (5B)   setBitVar(1575,0,Var[234]);
+[0070] (1A)   Var[101] = 249;
+[0074] (9A)   Var[47] = Var[234];
+[0077] (C7)   clearState08(Var[101]);
+[0079] (97)   clearState02(Var[101]);
+[007B] (9A)   Var[14] = Var[47];
+[007E] (5A)   Var[14] += 84;
+[0082] (8A)   Var[Var[14]] = Var[234];
+[0085] (9A)   Var[14] = Var[47];
+[0088] (5A)   Var[14] += 186;
+[008C] (8A)   Var[Var[14]] = Var[234];
+[008F] (46)   Var[47]++;
+[0091] (46)   Var[101]++;
+[0093] (44)   unless (Var[101] > 254) goto 0077;
+[0099] (9A)   Var[101] = Var[234];
+[009C] (1A)   Var[47] = 257;
+[00A0] (C7)   clearState08(Var[47]);
+[00A2] (D7)   setState02(Var[47]);
+[00A4] (46)   Var[47]++;
+[00A6] (44)   unless (Var[47] > 259) goto 00A0;
+[00AC] (47)   clearState08(50);
+[00AF] (57)   setState02(50);
+[00B2] (1A)   Var[49] = 257;
+[00B6] (16)   Var[48] = getRandomNr(4);
+[00B9] (9A)   Var[14] = Var[48];
+[00BC] (5A)   Var[14] += 186;
+[00C0] (A8)   if (Var[14]) {
+[00C4] (18)     goto 00B6;
+[00C7] (**)   }
+[00C7] (9A)   Var[14] = Var[48];
+[00CA] (5A)   Var[14] += 186;
+[00CE] (8A)   Var[Var[14]] = Var[49];
+[00D1] (46)   Var[49]++;
+[00D3] (44)   unless (Var[49] > 259) goto 00B6;
+[00D9] (9A)   Var[47] = Var[234];
+[00DC] (9A)   Var[14] = Var[47];
+[00DF] (5A)   Var[14] += 186;
+[00E3] (28)   if (!Var[14]) {
+[00E7] (9A)     Var[14] = Var[47];
+[00EA] (5A)     Var[14] += 186;
+[00EE] (8A)     Var[Var[14]] = Var[235];
+[00F1] (**)   }
+[00F1] (46)   Var[47]++;
+[00F3] (44)   unless (Var[47] > 5) goto 00DC;
+[00F9] (10)   VAR_RESULT = getObjectOwner(50);
+[00FD] (48)   if (VAR_RESULT == 15) {
+[0103] (1A)     Var[14] = 5;
+[0107] (5A)     Var[14] += 186;
+[010B] (0A)     Var[Var[14]] = 50;
+[010F] (**)   }
+[010F] (10)   VAR_RESULT = getObjectOwner(51);
+[0113] (48)   if (VAR_RESULT == 15) {
+[0119] (4A)     chainScript(104);
+[011B] (**)   }
+[011B] (47)   clearState08(256);
+[011E] (19)   doSentence(11,255,0,1);
+[0125] (D2)   actorFollowCamera(VAR_EGO);
+[0127] (19)   doSentence(253,261,0,1);
+[012E] (18) } else {
+[0131] (1A)   Var[47] = 257;
+[0135] (C7)   clearState08(Var[47]);
+[0137] (46)   Var[47]++;
+[0139] (44)   unless (Var[47] > 259) goto 0135;
+[013F] (47)   clearState08(50);
+[0142] (1A)   Var[50] = 18;
+[0146] (1A)   Var[47] = 249;
+[014A] (CF)   if (getState08(Var[47])) {
+[014E] (9A)     Var[51] = Var[47];
+[0151] (3A)     Var[51] -= 249;
+[0155] (9A)     Var[14] = Var[51];
+[0158] (5A)     Var[14] += 84;
+[015C] (44)     if (Var[14] > 1) {
+[0162] (9A)       Var[14] = Var[51];
+[0165] (5A)       Var[14] += 84;
+[0169] (C5)       drawObject(Var[14],Var[50],4);
+[016D] (**)     }
+[016D] (**)   }
+[016D] (5A)   Var[50] += 11;
+[0171] (46)   Var[47]++;
+[0173] (44)   unless (Var[47] > 254) goto 014A;
+[0179] (68)   VAR_RESULT = isScriptRunning(106);
+[017C] (28)   if (!VAR_RESULT) {
+[0180] (19)     doSentence(253,261,0,1);
+[0187] (18)   } else {
+[018A] (31)     VAR_RESULT = getBitVar(1575,0);
+[018F] (A8)     if (VAR_RESULT) {
+[0193] (19)       doSentence(253,265,0,1);
+[019A] (**)     }
+[019A] (**)   }
+[019A] (0F)   if (!getState08(263)) {
+[019F] (19)     doSentence(11,255,0,1);
+[01A6] (**)   }
+[01A6] (**) }
+[01A6] (30) setBoxFlags(1,64);
+[01A9] (4F) if (getState08(246)) {
+[01AE] (30)   setBoxFlags(1,0);
+[01B1] (**) }
+[01B1] (19) doSentence(253,263,0,1);
+[01B8] (A0) stopObjectCode();
+END

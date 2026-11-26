@@ -1,0 +1,115 @@
+# Decompiled with descumm -2
+# Source: LFv2_0025\SCv2_0149
+
+[0000] (0C) unlockUnkResType0(0)
+[0003] (0C) loadSound(102)
+[0006] (0C) lockSound(102)
+[0009] (0C) loadSound(104)
+[000C] (0C) lockSound(104)
+[000F] (47) clearState08(423);
+[0012] (47) clearState08(422);
+[0015] (1A) Var[167] = 52;
+[0019] (1A) Var[164] = 44;
+[001D] (72) loadRoom(25);
+[001F] (32) setCameraAt(24);
+[0021] (19) doSentence(250,433,0,1);
+[0028] (53) ActorOps(1,[Sound(Var[234])]);
+[002C] (53) ActorOps(2,[Sound(Var[234])]);
+[0030] (80) breakHere();
+[0031] (02) startMusic(102);
+[0033] (19) doSentence(253,432,0,1);
+[003A] (9E) walkActorTo(Var[200],21,53);
+[003E] (80) breakHere();
+[003F] (80) breakHere();
+[0040] (9E) walkActorTo(Var[201],24,53);
+[0044] (BB) waitForActor(Var[200]);
+[0046] (BB) waitForActor(Var[201]);
+[0048] (91) animateActor(Var[200],245);
+[004B] (91) animateActor(Var[201],244);
+[004E] (2E) delay(60);
+[0052] (11) animateActor(1,24);
+[0055] (11) animateActor(2,24);
+[0058] (2E) delay(420);
+[005C] (9E) walkActorTo(Var[201],23,53);
+[0060] (91) animateActor(Var[200],12);
+[0063] (2E) delay(120);
+[0067] (91) animateActor(Var[200],24);
+[006A] (14) print(255,"            CONGRATULATIONS!\x01YOU HAVE SAVED THE WORLD FROM STUPIDITY!");
+[00A6] (2E) delay(420);
+[00AA] (9E) walkActorTo(Var[201],24,63);
+[00AE] (80) breakHere();
+[00AF] (80) breakHere();
+[00B0] (9E) walkActorTo(Var[200],21,63);
+[00B4] (BB) waitForActor(Var[200]);
+[00B6] (91) animateActor(Var[200],246);
+[00B9] (2E) delay(120);
+[00BD] (91) animateActor(Var[200],245);
+[00C0] (91) animateActor(Var[201],244);
+[00C3] (9A) VAR_TIMER_NEXT = Var[234];
+[00C6] (2E) delay(120);
+[00CA] (14) print(255,"                EPILOGUE");
+[00DD] (AE) waitForMessage();
+[00DE] (2E) delay(60);
+[00E2] (14) print(255,"The King and his Caponian gang left\x01Earth for good^\x03^and continued their galactic search for\x01`stupider` life forms.");
+[0149] (AE) waitForMessage();
+[014A] (2E) delay(30);
+[014E] (14) print(255,"The people of Earth rapidly regained\x01their former level of intelligence^\x03^and traded in good karma for the latest\x01food fad, two-headed squirrel burgers.");
+[01D5] (AE) waitForMessage();
+[01D6] (2E) delay(30);
+[01DA] (14) print(255,"No one trusted The Phone Company\x01anymore^\x03^so telepathic conversations and\x01dream-sharing became the norm^\x03^at $2.50 for the first 3 minutes\x01after 11:00 PM.");
+[0265] (AE) waitForMessage();
+[0266] (2E) delay(30);
+[026A] (9A) Var[117] = Var[234];
+[026D] (31) VAR_RESULT = getBitVar(1473,0);
+[0272] (28) if (!VAR_RESULT) {
+[0276] (46)   Var[117]++;
+[0278] (1A)   Var[118] = 3;
+[027C] (**) }
+[027C] (31) VAR_RESULT = getBitVar(1474,0);
+[0281] (28) if (!VAR_RESULT) {
+[0285] (46)   Var[117]++;
+[0287] (1A)   Var[118] = 4;
+[028B] (**) }
+[028B] (A8) if (Var[117]) {
+[028F] (C8)   if (Var[117] == Var[235]) {
+[0294] (14)     print(255,"\x06\x76's\x02");
+[029C] (18)   } else {
+[029F] (14)     print(255,"The coeds'\x02");
+[02AC] (**)   }
+[02AC] (14)   print(255," Spring Break became \x02");
+[02C2] (C8)   if (Var[117] == Var[235]) {
+[02C7] (14)     print(255,"her\x01\x02");
+[02CF] (18)   } else {
+[02D2] (14)     print(255,"their\x01\x02");
+[02DC] (**)   }
+[02DC] (14)   print(255,"Big Break.\x03A famous movie producer starred \x02");
+[0305] (AE)   waitForMessage();
+[0306] (C8)   if (Var[117] == Var[235]) {
+[030B] (14)     print(255,"her\x02");
+[0312] (18)   } else {
+[0315] (14)     print(255,"them\x02");
+[031D] (**)   }
+[031D] (14)   print(255," in\x01the box office smash, `Mars Needs Men`.");
+[0345] (AE)   waitForMessage();
+[0346] (2E)   delay(30);
+[034A] (**) }
+[034A] (AE) waitForMessage();
+[034B] (2E) delay(30);
+[034F] (14) print(255,"Zak won the Nobel Peace Prize for saving\x01the world.\x03Then he won the Pulitzer for writing a\x01book about it.");
+[03AA] (AE) waitForMessage();
+[03AB] (2E) delay(30);
+[03AF] (91) animateActor(Var[200],246);
+[03B2] (91) animateActor(Var[201],246);
+[03B5] (80) breakHere();
+[03B6] (14) print(255,"Zak and Annie fell in love.\x03And their life together was even better\x01than their wildest dreams.");
+[0409] (AE) waitForMessage();
+[040A] (2E) delay(60);
+[040E] (91) animateActor(Var[200],245);
+[0411] (91) animateActor(Var[201],244);
+[0414] (2E) delay(30);
+[0418] (14) print(255,"                THE  END");
+[042A] (AE) waitForMessage();
+[042B] (2E) delay(180);
+[042F] (14) print(255,"                SEE  YA!");
+[0441] (A0) stopObjectCode();
+END

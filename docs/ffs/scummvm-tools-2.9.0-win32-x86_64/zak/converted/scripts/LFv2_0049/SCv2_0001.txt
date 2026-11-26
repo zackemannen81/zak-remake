@@ -1,0 +1,399 @@
+# Decompiled with descumm -2
+# Source: LFv2_0049\SCv2_0001
+
+[0000] (1A) VAR_NUM_ACTOR = 13;
+[0004] (26) setVarRange(Var[234],2,[0,1]);
+[0009] (1A) VAR_TIMER_NEXT = 6;
+[000D] (1A) VAR_EGO = 1;
+[0011] (13) ActorOps(1,[Costume(30)]);
+[0015] (13) ActorOps(1,[Color(9, 0)]);
+[001A] (13) ActorOps(1,[Color(14, 0)]);
+[001F] (13) ActorOps(1,[TalkColor(10)]);
+[0023] (13) ActorOps(0,[TalkColor(9)]);
+[0027] (13) ActorOps(1,[Sound(6)]);
+[002B] (0C) lockSound(6)
+[002E] (0C) lockScript(5)
+[0031] (0C) lockScript(6)
+[0034] (0C) lockScript(150)
+[0037] (1A) Var[66] = 0;
+[003B] (FA) VerbOps(Delete(Var[66]););
+[003E] (46) Var[66]++;
+[0040] (44) unless (Var[66] > 14) goto 003B;
+[0046] (1A) VAR_CUTSCENEEXIT_KEY = 27;
+[004A] (26) setVarRange(Var[164],2,[44,44]);
+[004F] (26) setVarRange(Var[166],5,[0,52,52,32,32]);
+[0057] (40) cutscene();
+[0058] (72) loadRoom(46);
+[005A] (32) setCameraAt(20);
+[005C] (50) pickupObject(83);
+[005F] (29) setOwnerOf(83,14);
+[0063] (50) pickupObject(82);
+[0066] (58) beginOverride();
+[0067] (18) goto 0527;
+[006A] (80) breakHere();
+[006B] (60) cursorCommand(6, 0);
+[006E] (42) startScript(122);
+[0070] (2E) delay(300);
+[0074] (58) beginOverride();
+[0075] (18) goto 0082;
+[0078] (42) startScript(127);
+[007A] (80) breakHere();
+[007B] (68) VAR_RESULT = isScriptRunning(127);
+[007E] (28) unless (!VAR_RESULT) goto 007A;
+[0082] (62) stopScript(127);
+[0084] (72) loadRoom(0);
+[0086] (58) beginOverride();
+[0087] (18) goto 0527;
+[008A] (9A) VAR_OVERRIDE = Var[234];
+[008D] (0C) unlockUnkResType0(0)
+[0090] (0C) loadSound(95)
+[0093] (0C) lockSound(95)
+[0096] (0C) loadCostume(31)
+[0099] (0C) lockCostume(31)
+[009C] (0C) loadScript(109)
+[009F] (0C) lockScript(109)
+[00A2] (0C) loadScript(111)
+[00A5] (0C) lockScript(111)
+[00A8] (0C) loadRoom(55)
+[00AB] (0C) loadSound(81)
+[00AE] (0C) lockSound(81)
+[00B1] (0C) loadRoom(51)
+[00B4] (0C) loadRoom(49)
+[00B7] (0C) loadRoom(58)
+[00BA] (0C) loadRoom(56)
+[00BD] (EE) dummy(EE);
+[00BE] (14) print(255,"Later that night, Zak's in bed^\x02");
+[00DC] (2E) delay(120);
+[00E0] (14) print(255,"alone^\x01\x02");
+[00EB] (2E) delay(180);
+[00EF] (14) print(255,"                                 ^again.");
+[010A] (13) ActorOps(10,[Costume(31)]);
+[010E] (13) ActorOps(1,[Color(9, 9)]);
+[0113] (13) ActorOps(1,[Color(14, 14)]);
+[0118] (2E) delay(180);
+[011C] (72) loadRoom(58);
+[011E] (1C) startSound(81);
+[0120] (9A) Var[60] = Var[234];
+[0123] (42) startScript(111);
+[0125] (2E) delay(180);
+[0129] (05) drawObject(766,255,255);
+[012E] (2E) delay(180);
+[0132] (05) drawObject(767,255,255);
+[0137] (2E) delay(240);
+[013B] (05) drawObject(768,255,255);
+[0140] (80) breakHere();
+[0141] (7C) VAR_RESULT = isSoundRunning(81);
+[0144] (28) unless (!VAR_RESULT) goto 0140;
+[0148] (02) startMusic(95);
+[014A] (80) breakHere();
+[014B] (72) loadRoom(51);
+[014D] (1A) VAR_TIMER_NEXT = 8;
+[0151] (32) setCameraAt(60);
+[0153] (80) breakHere();
+[0154] (12) panCameraTo(20);
+[0156] (80) breakHere();
+[0157] (44) unless (VAR_MUSIC_TIMER > 4) goto 0156;
+[015D] (80) breakHere();
+[015E] (78) unless (VAR_CAMERA_POS_X < 21) goto 015D;
+[0164] (72) loadRoom(55);
+[0166] (1A) Var[46] = 756;
+[016A] (85) drawObject(Var[46],255,255);
+[016E] (9A) Var[60] = Var[235];
+[0171] (44) if (VAR_MACHINE_SPEED > 40) {
+[0177] (9A)   Var[49] = VAR_MUSIC_TIMER;
+[017A] (80)   breakHere();
+[017B] (88)   unless (VAR_MUSIC_TIMER != Var[49]) goto 017A;
+[0180] (48)   if (Var[46] == 756) {
+[0186] (9A)     Var[49] = VAR_MUSIC_TIMER;
+[0189] (80)     breakHere();
+[018A] (88)     unless (VAR_MUSIC_TIMER != Var[49]) goto 0189;
+[018F] (**)   }
+[018F] (48)   if (Var[46] == 760) {
+[0195] (2E)     delay(60);
+[0199] (9A)     Var[60] = Var[235];
+[019C] (9A)     Var[49] = VAR_MUSIC_TIMER;
+[019F] (80)     breakHere();
+[01A0] (88)     unless (VAR_MUSIC_TIMER != Var[49]) goto 019F;
+[01A5] (**)   }
+[01A5] (18) } else {
+[01A8] (80)   breakHere();
+[01A9] (80)   breakHere();
+[01AA] (**) }
+[01AA] (08) if (Var[46] != 760) {
+[01B0] (C7)   clearState08(Var[46]);
+[01B2] (**) }
+[01B2] (46) Var[46]++;
+[01B4] (44) unless (Var[46] > 760) goto 016A;
+[01BA] (04) if (VAR_MACHINE_SPEED <= 40) {
+[01C0] (2E)   delay(180);
+[01C4] (9A)   Var[60] = Var[235];
+[01C7] (80)   breakHere();
+[01C8] (**) }
+[01C8] (72) loadRoom(49);
+[01CA] (05) drawObject(701,255,255);
+[01CF] (04) if (VAR_MACHINE_SPEED <= 40) {
+[01D5] (18) } else {
+[01D8] (2D)   putActorInRoom(1,49);
+[01DB] (01)   putActor(1,30,56);
+[01DF] (2D)   putActorInRoom(10,49);
+[01E2] (01)   putActor(10,0,20);
+[01E6] (3D)   setActorElevation(10,40);
+[01E9] (11)   animateActor(1,248);
+[01EC] (80)   breakHere();
+[01ED] (9A)   Var[60] = Var[235];
+[01F0] (2E)   delay(60);
+[01F4] (D8)   printEgo("Hey! That's ME!");
+[0203] (2E)   delay(165);
+[0207] (11)   animateActor(1,246);
+[020A] (80)   breakHere();
+[020B] (D8)   printEgo("TABLOID REPORTER `SPACES OUT` IN DREAM.");
+[022F] (2E)   delay(225);
+[0233] (1E)   walkActorTo(1,14,56);
+[0237] (80)   breakHere();
+[0238] (43)   VAR_RESULT = getActorX(1);
+[023B] (78)   unless (VAR_RESULT < 19) goto 0237;
+[0241] (47)   clearState08(701);
+[0244] (2E)   delay(30);
+[0248] (05)   drawObject(699,10,2);
+[024D] (2E)   delay(30);
+[0251] (11)   animateActor(1,12);
+[0254] (2E)   delay(60);
+[0258] (1E)   walkActorTo(1,27,56);
+[025C] (80)   breakHere();
+[025D] (43)   VAR_RESULT = getActorX(1);
+[0260] (44)   unless (VAR_RESULT > 21) goto 025C;
+[0266] (05)   drawObject(700,10,6);
+[026B] (80)   breakHere();
+[026C] (80)   breakHere();
+[026D] (80)   breakHere();
+[026E] (05)   drawObject(696,30,3);
+[0273] (2E)   delay(36);
+[0277] (1E)   walkActorTo(1,33,45);
+[027B] (3B)   waitForActor(1);
+[027D] (11)   animateActor(1,246);
+[0280] (2E)   delay(90);
+[0284] (47)   clearState08(700);
+[0287] (47)   clearState08(699);
+[028A] (47)   clearState08(696);
+[028D] (2E)   delay(60);
+[0291] (1A)   Var[45] = 4;
+[0295] (80)   breakHere();
+[0296] (45)   drawObject(697,Var[45],6);
+[029B] (5A)   Var[45] += 3;
+[029F] (44)   unless (Var[45] > 17) goto 0295;
+[02A5] (11)   animateActor(1,24);
+[02A8] (2E)   delay(42);
+[02AC] (1E)   walkActorTo(1,27,55);
+[02B0] (3B)   waitForActor(1);
+[02B2] (11)   animateActor(1,244);
+[02B5] (80)   breakHere();
+[02B6] (47)   clearState08(701);
+[02B9] (1E)   walkActorTo(1,25,55);
+[02BD] (80)   breakHere();
+[02BE] (80)   breakHere();
+[02BF] (05)   drawObject(698,19,4);
+[02C4] (80)   breakHere();
+[02C5] (11)   animateActor(1,16);
+[02C8] (2E)   delay(120);
+[02CC] (47)   clearState08(698);
+[02CF] (80)   breakHere();
+[02D0] (1E)   walkActorTo(1,19,55);
+[02D4] (11)   animateActor(1,24);
+[02D7] (3B)   waitForActor(1);
+[02D9] (80)   breakHere();
+[02DA] (38)   unless (VAR_MUSIC_TIMER >= 24) goto 02D9;
+[02E0] (47)   clearState08(697);
+[02E3] (2E)   delay(60);
+[02E7] (11)   animateActor(1,28);
+[02EA] (3D)   setActorElevation(10,0);
+[02ED] (1E)   walkActorTo(10,5,55);
+[02F1] (1A)   VAR_TIMER_NEXT = 9;
+[02F5] (2E)   delay(120);
+[02F9] (11)   animateActor(1,12);
+[02FC] (3B)   waitForActor(10);
+[02FE] (11)   animateActor(10,245);
+[0301] (2E)   delay(60);
+[0305] (D8)   printEgo("AIEEEEE!");
+[030F] (1E)   walkActorTo(1,34,55);
+[0313] (42)   startScript(109);
+[0315] (3B)   waitForActor(1);
+[0317] (11)   animateActor(1,244);
+[031A] (80)   breakHere();
+[031B] (80)   breakHere();
+[031C] (11)   animateActor(1,12);
+[031F] (1E)   walkActorTo(1,32,56);
+[0323] (2E)   delay(24);
+[0327] (1E)   walkActorTo(1,8,56);
+[032B] (80)   breakHere();
+[032C] (43)   VAR_RESULT = getActorX(1);
+[032F] (78)   unless (VAR_RESULT < 18) goto 032B;
+[0335] (05)   drawObject(702,255,255);
+[033A] (2E)   delay(30);
+[033E] (36)   walkActorToObject(1,702);
+[0342] (3B)   waitForActor(1);
+[0344] (2D)   putActorInRoom(1,56);
+[0347] (01)   putActor(1,0,48);
+[034B] (62)   stopScript(109);
+[034D] (2D)   putActorInRoom(10,56);
+[0350] (01)   putActor(10,0,48);
+[0354] (3D)   setActorElevation(10,170);
+[0357] (72)   loadRoom(56);
+[0359] (1A)   VAR_TIMER_NEXT = 8;
+[035D] (32)   setCameraAt(20);
+[035F] (1E)   walkActorTo(1,26,48);
+[0363] (80)   breakHere();
+[0364] (43)   VAR_RESULT = getActorX(1);
+[0367] (44)   unless (VAR_RESULT > 19) goto 0363;
+[036D] (3D)   setActorElevation(10,0);
+[0370] (42)   startScript(109);
+[0372] (11)   animateActor(10,249);
+[0375] (3B)   waitForActor(1);
+[0377] (11)   animateActor(1,244);
+[037A] (80)   breakHere();
+[037B] (80)   breakHere();
+[037C] (11)   animateActor(1,12);
+[037F] (80)   breakHere();
+[0380] (80)   breakHere();
+[0381] (1E)   walkActorTo(1,47,48);
+[0385] (62)   stopScript(109);
+[0387] (1E)   walkActorTo(10,0,48);
+[038B] (80)   breakHere();
+[038C] (43)   VAR_RESULT = getActorX(10);
+[038F] (78)   unless (VAR_RESULT < 6) goto 038B;
+[0395] (80)   breakHere();
+[0396] (80)   breakHere();
+[0397] (12)   panCameraTo(60);
+[0399] (80)   breakHere();
+[039A] (48)   unless (VAR_CAMERA_POS_X == 60) goto 0399;
+[03A0] (9A)   Var[45] = Var[235];
+[03A3] (07)   setState08(761);
+[03A6] (80)   breakHere();
+[03A7] (80)   breakHere();
+[03A8] (47)   clearState08(761);
+[03AB] (80)   breakHere();
+[03AC] (80)   breakHere();
+[03AD] (46)   Var[45]++;
+[03AF] (44)   unless (Var[45] > 2) goto 03A3;
+[03B5] (18) } else {
+[03B8] (2D)   putActorInRoom(1,49);
+[03BB] (01)   putActor(1,30,55);
+[03BF] (2D)   putActorInRoom(10,49);
+[03C2] (01)   putActor(10,0,20);
+[03C6] (3D)   setActorElevation(10,40);
+[03C9] (11)   animateActor(1,248);
+[03CC] (80)   breakHere();
+[03CD] (9A)   Var[60] = Var[235];
+[03D0] (2E)   delay(24);
+[03D4] (D8)   printEgo("Hey! That's ME!");
+[03E3] (2E)   delay(90);
+[03E7] (11)   animateActor(1,246);
+[03EA] (80)   breakHere();
+[03EB] (D8)   printEgo("TABLOID REPORTER `SPACES OUT` IN DREAM.");
+[040F] (2E)   delay(60);
+[0413] (1E)   walkActorTo(1,26,55);
+[0417] (47)   clearState08(701);
+[041A] (80)   breakHere();
+[041B] (05)   drawObject(699,10,2);
+[0420] (80)   breakHere();
+[0421] (14)   print(255,"");
+[0424] (80)   breakHere();
+[0425] (11)   animateActor(1,12);
+[0428] (3B)   waitForActor(1);
+[042A] (05)   drawObject(700,10,6);
+[042F] (2E)   delay(30);
+[0433] (11)   animateActor(1,245);
+[0436] (80)   breakHere();
+[0437] (05)   drawObject(696,30,3);
+[043C] (2E)   delay(60);
+[0440] (11)   animateActor(1,246);
+[0443] (80)   breakHere();
+[0444] (47)   clearState08(700);
+[0447] (47)   clearState08(699);
+[044A] (47)   clearState08(696);
+[044D] (80)   breakHere();
+[044E] (1A)   Var[45] = 4;
+[0452] (80)   breakHere();
+[0453] (45)   drawObject(697,Var[45],6);
+[0458] (5A)   Var[45] += 3;
+[045C] (44)   unless (Var[45] > 17) goto 0452;
+[0462] (11)   animateActor(1,244);
+[0465] (80)   breakHere();
+[0466] (11)   animateActor(1,24);
+[0469] (80)   breakHere();
+[046A] (47)   clearState08(701);
+[046D] (1E)   walkActorTo(1,25,55);
+[0471] (80)   breakHere();
+[0472] (80)   breakHere();
+[0473] (05)   drawObject(698,19,4);
+[0478] (80)   breakHere();
+[0479] (11)   animateActor(1,16);
+[047C] (2E)   delay(90);
+[0480] (47)   clearState08(698);
+[0483] (80)   breakHere();
+[0484] (1E)   walkActorTo(1,20,55);
+[0488] (11)   animateActor(1,24);
+[048B] (3B)   waitForActor(1);
+[048D] (47)   clearState08(697);
+[0490] (80)   breakHere();
+[0491] (11)   animateActor(1,28);
+[0494] (80)   breakHere();
+[0495] (3D)   setActorElevation(10,0);
+[0498] (1E)   walkActorTo(10,5,55);
+[049C] (2E)   delay(180);
+[04A0] (11)   animateActor(1,12);
+[04A3] (3B)   waitForActor(10);
+[04A5] (11)   animateActor(10,245);
+[04A8] (D8)   printEgo("AIEEEEE!");
+[04B2] (1E)   walkActorTo(1,34,55);
+[04B6] (42)   startScript(109);
+[04B8] (3B)   waitForActor(1);
+[04BA] (11)   animateActor(1,244);
+[04BD] (80)   breakHere();
+[04BE] (80)   breakHere();
+[04BF] (11)   animateActor(1,12);
+[04C2] (1E)   walkActorTo(1,32,58);
+[04C6] (2E)   delay(24);
+[04CA] (1E)   walkActorTo(1,8,58);
+[04CE] (80)   breakHere();
+[04CF] (43)   VAR_RESULT = getActorX(1);
+[04D2] (78)   unless (VAR_RESULT < 18) goto 04CE;
+[04D8] (05)   drawObject(702,255,255);
+[04DD] (2E)   delay(30);
+[04E1] (36)   walkActorToObject(1,702);
+[04E5] (3B)   waitForActor(1);
+[04E7] (2D)   putActorInRoom(1,56);
+[04EA] (01)   putActor(1,39,48);
+[04EE] (62)   stopScript(109);
+[04F0] (2D)   putActorInRoom(10,0);
+[04F3] (72)   loadRoom(56);
+[04F5] (32)   setCameraAt(60);
+[04F7] (1E)   walkActorTo(1,47,48);
+[04FB] (3B)   waitForActor(1);
+[04FD] (11)   animateActor(1,12);
+[0500] (07)   setState08(761);
+[0503] (80)   breakHere();
+[0504] (05)   drawObject(761,255,255);
+[0509] (80)   breakHere();
+[050A] (**) }
+[050A] (11) animateActor(1,246);
+[050D] (2E) delay(30);
+[0511] (1E) walkActorTo(1,20,48);
+[0515] (80) breakHere();
+[0516] (7C) VAR_RESULT = isSoundRunning(95);
+[0519] (28) unless (!VAR_RESULT) goto 0515;
+[051D] (80) breakHere();
+[051E] (43) VAR_RESULT = getActorX(1);
+[0521] (78) unless (VAR_RESULT < 39) goto 051D;
+[0527] (1A) VAR_TIMER_NEXT = 6;
+[052B] (AD) putActorInRoom(VAR_EGO,0);
+[052E] (9A) Var[122] = VAR_OVERRIDE;
+[0531] (62) stopScript(122);
+[0533] (C0) endCutscene();
+[0534] (3C) stopSound(81);
+[0536] (20) stopMusic();
+[0537] (72) loadRoom(0);
+[0539] (14) print(255,"");
+[053C] (14) print(255,"");
+[053F] (42) startScript(108);
+[0541] (A0) stopObjectCode();
+END

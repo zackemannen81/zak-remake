@@ -1,0 +1,62 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0074
+
+[0000] (40) cutscene();
+[0001] (B6) walkActorToObject(VAR_EGO,158);
+[0005] (36) walkActorToObject(7,152);
+[0009] (19) doSentence(253,151,0,1);
+[0010] (A8) if (Var[66]) {
+[0014] (14)   print(7,"No charge for Brothers!");
+[002B] (18) } else {
+[002E] (1A)   Var[46] = 1138;
+[0032] (14)   print(7,"You owe $\x04\x2E. You calling Mars or\x01something?\x03CashCard please.");
+[006A] (AE)   waitForMessage();
+[006B] (48)   if (VAR_EGO == 1) {
+[0071] (10)     VAR_RESULT = getObjectOwner(18);
+[0075] (08)     if (VAR_RESULT != 1) {
+[007B] (18)       goto 008B;
+[007E] (**)     }
+[007E] (18)   } else {
+[0081] (10)     VAR_RESULT = getObjectOwner(32);
+[0085] (08)     if (VAR_RESULT != 2) {
+[008B] (D8)       printEgo("I don't have it here.");
+[009E] (AE)       waitForMessage();
+[009F] (14)       print(7,"How silly of you. Here's your bill.");
+[00BF] (18)       goto 01A3;
+[00C2] (**)     }
+[00C2] (**)   }
+[00C2] (1C)   startSound(66);
+[00C4] (A8)   if (Var[194]) {
+[00C8] (14)     print(7,"Tsk tsk! Scribbling on your phone bill!\x03An extra $10 charge for defacing phone\x01company property!");
+[011E] (AE)     waitForMessage();
+[011F] (5A)     Var[46] += 10;
+[0123] (9A)     Var[194] = Var[234];
+[0126] (**)   }
+[0126] (2E)   delay(240);
+[012A] (3C)   stopSound(66);
+[012C] (80)   breakHere();
+[012D] (1C)   startSound(84);
+[012F] (80)   breakHere();
+[0130] (7C)   VAR_RESULT = isSoundRunning(84);
+[0133] (28)   unless (!VAR_RESULT) goto 012F;
+[0137] (9A)   Var[14] = VAR_EGO;
+[013A] (5A)   Var[14] += 61;
+[013E] (F8)   if (Var[14] < Var[46]) {
+[0143] (14)     print(7,"You don't have enough money!");
+[015E] (18)     goto 009E;
+[0161] (**)   }
+[0161] (9A)   Var[14] = VAR_EGO;
+[0164] (5A)   Var[14] += 61;
+[0168] (EA)   Var[Var[14]] -= Var[46];
+[016B] (14)   print(7,"Next time be prompt with your payment!");
+[018E] (**) }
+[018E] (29) setOwnerOf(15,0);
+[0192] (27) setState04(152);
+[0195] (67) clearState04(87);
+[0198] (42) startScript(134);
+[019A] (1E) walkActorTo(7,22,52);
+[019E] (3B) waitForActor(7);
+[01A0] (11) animateActor(7,246);
+[01A3] (C0) endCutscene();
+[01A4] (A0) stopObjectCode();
+END

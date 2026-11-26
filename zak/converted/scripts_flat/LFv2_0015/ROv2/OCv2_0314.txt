@@ -1,0 +1,10 @@
+Events:
+  FD - 0013
+[0013] (4F) unless (getState08(312)) goto 0022;
+[0018] (50) pickupObject(58);
+[001B] (F0) lights(Var[234],0,0);
+[001F] (18) goto 0059;
+[0022] (D8) printEgo("I can't pick it up, it's being held by\x01a crystalinetic force!");
+[0057] (19) doSentence(STOP);
+[0059] (00) stopObjectCode();
+END

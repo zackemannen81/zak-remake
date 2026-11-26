@@ -1,0 +1,44 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0018/ROv2/OCv2_0366
+Events:
+   1 - 0022
+   2 - 0054
+   B - 0071
+  FD - 0082
+[0022] (19) doSentence(253,370,0,1);
+[0029] (A8) if (Var[47]) {
+[002D] (8F)   if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0031] (D8)     printEgo("It's locked.");
+[003E] (18)   } else {
+[0041] (D8)     printEgo("It's already open.");
+[0053] (**)   }
+[0053] (**) }
+[0053] (00) stopObjectCode();
+[0054] (19) doSentence(253,370,0,1);
+[005B] (A8) if (Var[47]) {
+[005F] (CF)   if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0063] (28)     if (!VAR_OVERRIDE) {
+[0067] (1C)       startSound(94);
+[0069] (80)       breakHere();
+[006A] (**)     }
+[006A] (47)     clearState08(366);
+[006D] (30)     setBoxFlags(5,64);
+[0070] (**)   }
+[0070] (**) }
+[0070] (00) stopObjectCode();
+[0071] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0075] (39)   doSentence(11,370,VAR_ACTIVE_OBJECT2,0);
+[007B] (18) } else {
+[007E] (18)   goto 0041;
+[0081] (**) }
+[0081] (00) stopObjectCode();
+[0082] (9A) Var[46] = Var[234];
+[0085] (29) setOwnerOf(60,0);
+[0089] (29) setOwnerOf(60,15);
+[008D] (36) walkActorToObject(8,60);
+[0091] (3B) waitForActor(8);
+[0093] (47) clearState08(60);
+[0096] (17) clearState02(60);
+[0099] (80) breakHere();
+[009A] (46) Var[46]++;
+[009C] (00) stopObjectCode();
+END

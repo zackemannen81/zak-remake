@@ -1,0 +1,17 @@
+[0000] (70) lights(11,0,0);
+[0004] (9A) Var[50] = Var[234];
+[0007] (0C) loadSound(39)
+[000A] (0C) lockSound(39)
+[000D] (19) doSentence(250,624,0,1);
+[0014] (19) doSentence(253,625,0,1);
+[001B] (08) unless (VAR_EGO != 6) goto 003E;
+[0021] (0F) unless (!getState08(623)) goto 0037;
+[0026] (19) doSentence(250,629,0,1);
+[002D] (19) doSentence(253,626,0,1);
+[0034] (18) goto 003E;
+[0037] (19) doSentence(250,628,0,1);
+[003E] (53) ActorOps(6,[Name("bird")]);
+[0047] (19) doSentence(253,627,0,1);
+[004E] (1C) startSound(17);
+[0050] (00) stopObjectCode();
+END

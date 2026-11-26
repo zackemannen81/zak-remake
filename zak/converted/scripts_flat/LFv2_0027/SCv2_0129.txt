@@ -1,0 +1,18 @@
+[0000] (40) cutscene();
+[0001] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0003] (07) setState08(443);
+[0006] (58) beginOverride();
+[0007] (18) goto 002A;
+[000A] (72) loadRoom(0);
+[000C] (EE) dummy(EE);
+[000D] (14) print(255,"After sweeping for some time^");
+[0029] (AE) waitForMessage();
+[002A] (D2) actorFollowCamera(VAR_EGO);
+[002C] (28) unless (!VAR_OVERRIDE) goto 0034;
+[0030] (2E) delay(60);
+[0034] (D8) printEgo("Ta da! Gee, it looks like solar panels.");
+[0056] (AE) waitForMessage();
+[0057] (19) doSentence(253,451,0,1);
+[005E] (C0) endCutscene();
+[005F] (A0) stopObjectCode();
+END

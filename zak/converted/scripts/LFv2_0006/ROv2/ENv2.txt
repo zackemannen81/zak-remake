@@ -1,0 +1,7 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0006/ROv2/ENv2
+[0000] (F0) lights(Var[234],0,0);
+[0004] (2F) if (!getState04(174)) {
+[0009] (70)   lights(11,0,0);
+[000D] (**) }
+[000D] (00) stopObjectCode();
+END

@@ -1,0 +1,24 @@
+Events:
+   B - 0018
+[0018] (48) unless (VAR_ACTIVE_OBJECT2 == 49) goto 006D;
+[001E] (48) unless (VAR_ROOM == 155) goto 0048;
+[0024] (AF) unless (!getState04(VAR_ACTIVE_OBJECT1)) goto 0034;
+[0028] (A7) setState04(VAR_ACTIVE_OBJECT1);
+[002A] (19) doSentence(250,417,0,1);
+[0031] (18) goto 0045;
+[0034] (D8) printEgo("It's already lit.");
+[0045] (18) goto 006A;
+[0048] (D8) printEgo("There's not enough oxygen to light it!");
+[006A] (18) goto 0094;
+[006D] (48) unless (VAR_ACTIVE_OBJECT2 == 48) goto 0092;
+[0073] (19) doSentence(254,417,0,1);
+[007A] (47) clearState08(417);
+[007D] (47) clearState08(418);
+[0080] (47) clearState08(419);
+[0083] (47) clearState08(416);
+[0086] (19) doSentence(253,419,0,1);
+[008D] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[008F] (18) goto 0094;
+[0092] (42) startScript(3);
+[0094] (00) stopObjectCode();
+END

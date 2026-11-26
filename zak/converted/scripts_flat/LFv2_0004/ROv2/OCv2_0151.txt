@@ -1,0 +1,32 @@
+Events:
+   1 - 001D
+   2 - 0023
+   D - 0029
+  FD - 0051
+[001D] (42) startScript(10);
+[001F] (07) setState08(135);
+[0022] (00) stopObjectCode();
+[0023] (42) startScript(11);
+[0025] (47) clearState08(135);
+[0028] (00) stopObjectCode();
+[0029] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0050;
+[002D] (7B) VAR_RESULT = getActorWalkBox(7);
+[0030] (48) unless (VAR_RESULT == 3) goto 004A;
+[0036] (60) cursorCommand(15, 2);
+[0039] (49) faceActor(7,VAR_EGO);
+[003C] (80) breakHere();
+[003D] (14) print(7,"See ya.");
+[0046] (AE) waitForMessage();
+[0047] (60) cursorCommand(247, 1);
+[004A] (24) loadRoomWithEgo(135,3,255,255);
+[0050] (00) stopObjectCode();
+[0051] (9A) Var[66] = Var[234];
+[0054] (9A) Var[14] = VAR_EGO;
+[0057] (5A) Var[14] += 163;
+[005B] (48) unless (Var[14] == 40) goto 0070;
+[0061] (9A) Var[14] = VAR_EGO;
+[0064] (5A) Var[14] += 166;
+[0068] (48) unless (Var[14] == 48) goto 0070;
+[006E] (46) Var[66]++;
+[0070] (00) stopObjectCode();
+END

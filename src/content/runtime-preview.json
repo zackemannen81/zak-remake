@@ -1,0 +1,394 @@
+{
+  "1": {
+    "path": "preview/backgrounds/room_001/concept_v003.png",
+    "uv": null
+  },
+  "2": {
+    "path": "preview/backgrounds/room_002/concept_v003.png",
+    "uv": null
+  },
+  "3": {
+    "path": "preview/backgrounds/room_003/concept_v002.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "4": {
+    "path": "preview/backgrounds/room_004/concept_v001.png",
+    "uv": null
+  },
+  "5": {
+    "path": "preview/backgrounds/room_005/concept_v002.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "6": {
+    "path": "preview/backgrounds/room_006/concept_v001.png",
+    "uv": null
+  },
+  "7": {
+    "path": "preview/backgrounds/room_007/concept_v001.png",
+    "uv": null
+  },
+  "8": {
+    "path": "preview/backgrounds/room_008/concept_v001.png",
+    "uv": null
+  },
+  "9": {
+    "path": "preview/backgrounds/room_009/concept_v001.png",
+    "uv": null
+  },
+  "10": {
+    "path": "preview/backgrounds/room_010/concept_v001.png",
+    "uv": [
+      0.0,
+      0.25,
+      1.0,
+      0.75
+    ]
+  },
+  "11": {
+    "path": "preview/backgrounds/room_011/concept_v001.png",
+    "uv": [
+      0.0,
+      0.26,
+      1.0,
+      0.74
+    ]
+  },
+  "12": {
+    "path": "preview/backgrounds/room_012/concept_v001.png",
+    "uv": null
+  },
+  "13": {
+    "path": "preview/backgrounds/room_013/concept_v001.png",
+    "uv": [
+      0.0,
+      0.09999999999999996,
+      1.0,
+      0.9
+    ]
+  },
+  "14": {
+    "path": "preview/backgrounds/room_014/concept_v001.png",
+    "uv": null
+  },
+  "15": {
+    "path": "preview/backgrounds/room_015/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "16": {
+    "path": "preview/backgrounds/room_016/concept_v001.png",
+    "uv": [
+      0.0,
+      0.26,
+      1.0,
+      0.74
+    ]
+  },
+  "17": {
+    "path": "preview/backgrounds/room_017/concept_v001.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "18": {
+    "path": "preview/backgrounds/room_018/concept_v001.png",
+    "uv": null
+  },
+  "19": {
+    "path": "preview/backgrounds/room_019/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "20": {
+    "path": "preview/backgrounds/room_020/concept_v001.png",
+    "uv": [
+      0.0,
+      0.26,
+      1.0,
+      0.74
+    ]
+  },
+  "21": {
+    "path": "preview/backgrounds/room_021/concept_v001.png",
+    "uv": null
+  },
+  "22": {
+    "path": "preview/backgrounds/room_022/concept_v001.png",
+    "uv": null
+  },
+  "23": {
+    "path": "preview/backgrounds/room_023/concept_v001.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "24": {
+    "path": "preview/backgrounds/room_024/concept_v001.png",
+    "uv": [
+      0.0,
+      0.09999999999999996,
+      1.0,
+      0.9
+    ]
+  },
+  "25": {
+    "path": "preview/backgrounds/room_025/concept_v001.png",
+    "uv": null
+  },
+  "26": {
+    "path": "preview/backgrounds/room_026/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2818181818181818,
+      1.0,
+      0.7181818181818183
+    ]
+  },
+  "27": {
+    "path": "preview/backgrounds/room_027/concept_v001.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "28": {
+    "path": "preview/backgrounds/room_028/concept_v001.png",
+    "uv": [
+      0.0,
+      0.24193548387096775,
+      1.0,
+      0.7580645161290323
+    ]
+  },
+  "29": {
+    "path": "preview/backgrounds/room_029/concept_v001.png",
+    "uv": null
+  },
+  "30": {
+    "path": "preview/backgrounds/room_030/concept_v001.png",
+    "uv": null
+  },
+  "31": {
+    "path": "preview/backgrounds/room_031/concept_v001.png",
+    "uv": null
+  },
+  "32": {
+    "path": "preview/backgrounds/room_032/concept_v001.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "33": {
+    "path": "preview/backgrounds/room_033/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "34": {
+    "path": "preview/backgrounds/room_034/concept_v002.png",
+    "uv": null
+  },
+  "35": {
+    "path": "preview/backgrounds/room_035/concept_v001.png",
+    "uv": [
+      0.0,
+      0.20082758620689653,
+      1.0,
+      0.7991724137931034
+    ]
+  },
+  "36": {
+    "path": "preview/backgrounds/room_036/concept_v001.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "37": {
+    "path": "preview/backgrounds/room_037/concept_v001.png",
+    "uv": [
+      0.0,
+      0.13076923076923075,
+      1.0,
+      0.8692307692307694
+    ]
+  },
+  "38": {
+    "path": "preview/backgrounds/room_038/concept_v001.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "39": {
+    "path": "preview/backgrounds/room_039/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "40": {
+    "path": "preview/backgrounds/room_040/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "41": {
+    "path": "preview/backgrounds/room_041/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "42": {
+    "path": "preview/backgrounds/room_042/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "43": {
+    "path": "preview/backgrounds/room_043/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "44": {
+    "path": "preview/backgrounds/room_044/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "45": {
+    "path": "preview/backgrounds/room_045/concept_v001.png",
+    "uv": null
+  },
+  "46": {
+    "path": "preview/backgrounds/room_046/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "47": {
+    "path": "preview/backgrounds/room_047/concept_v001.png",
+    "uv": null
+  },
+  "48": {
+    "path": "preview/backgrounds/room_048/concept_v001.png",
+    "uv": null
+  },
+  "49": {
+    "path": "preview/backgrounds/room_049/concept_v001.png",
+    "uv": null
+  },
+  "50": {
+    "path": "preview/backgrounds/room_050/concept_v001.png",
+    "uv": null
+  },
+  "51": {
+    "path": "preview/backgrounds/room_051/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "52": {
+    "path": "preview/backgrounds/room_052/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "53": {
+    "path": "preview/backgrounds/room_053/concept_v001.png",
+    "uv": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ]
+  },
+  "54": {
+    "path": "preview/backgrounds/room_054/concept_v001.png",
+    "uv": null
+  },
+  "55": {
+    "path": "preview/backgrounds/room_055/concept_v001.png",
+    "uv": null
+  },
+  "56": {
+    "path": "preview/backgrounds/room_056/concept_v001.png",
+    "uv": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ]
+  },
+  "57": {
+    "path": "preview/backgrounds/room_057/concept_v001.png",
+    "uv": null
+  },
+  "58": {
+    "path": "preview/backgrounds/room_058/concept_v001.png",
+    "uv": null
+  }
+}

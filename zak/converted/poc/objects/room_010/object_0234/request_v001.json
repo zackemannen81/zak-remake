@@ -1,0 +1,10 @@
+{
+  "room": 10,
+  "object_id": 234,
+  "reference": "room_010/object_0234/frame_000.png",
+  "source_width": 16,
+  "source_height": 16,
+  "prompt": "Precision premium AAA adventure-game asset style transfer of ONLY the single attached small rectangular image. Reproduce the actual visible shapes, their exact state, silhouette, geometry, palette, perspective and position within the image. Upgrade pixel-art surfaces to beautifully polished Unreal Engine 5 quality materials and lighting without adding any content. This is a small opaque game state patch, not an invitation to draw its surrounding room. If the reference is an empty surface or a tiny flat rectangle, keep it an empty surface or tiny flat rectangle; do not invent a prop, furniture, characters or architectural surroundings. If the source contains a visible prop, creature, face, fire, splash, energy effect, UI glyph, label or button, preserve that specific subject and its exact phase/layout. Preserve all visible lettering exactly; add no text. Preserve exact visible image aspect ratio 16:16, edge to edge. Output only the refined source patch, no conceptual redesign, no extra objects, no sheet/grid.",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-f582ce22-b8ea-42ea-abbb-c7413a5a1262.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

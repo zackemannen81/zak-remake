@@ -1,0 +1,61 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0258
+Events:
+   1 - 0023
+   2 - 0023
+   A - 0023
+   E - 0023
+  FD - 002B
+[0023] (99) doSentence(VAR_ACTIVE_VERB,257,0,1);
+[002A] (00) stopObjectCode();
+[002B] (C3) VAR_RESULT = getActorX(Var[52]);
+[002E] (04) if (VAR_RESULT <= 12) {
+[0034] (5F)   if (!getState02(246)) {
+[0039] (57)     setState02(246);
+[003C] (17)     clearState02(247);
+[003F] (33)     RoomScroll(20,80);
+[0043] (**)   }
+[0043] (0F)   if (!getState08(246)) {
+[0048] (0F)     if (!getState08(248)) {
+[004D] (07)       setState08(248);
+[0050] (**)     }
+[0050] (**)   }
+[0050] (18) } else {
+[0053] (5F)   if (!getState02(247)) {
+[0058] (17)     clearState02(246);
+[005B] (57)     setState02(247);
+[005E] (33)     RoomScroll(33,80);
+[0062] (**)   }
+[0062] (0F)   if (!getState08(263)) {
+[0067] (30)     setBoxFlags(4,160);
+[006A] (80)     breakHere();
+[006B] (C3)     VAR_RESULT = getActorX(Var[52]);
+[006E] (08)     unless (VAR_RESULT != 63) goto 006A;
+[0074] (9A)     Var[57] = VAR_VIRT_MOUSE_X;
+[0077] (9A)     Var[58] = VAR_VIRT_MOUSE_Y;
+[007A] (F5)     VAR_RESULT = findObject(VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[007E] (28)     if (!VAR_RESULT) {
+[0082] (9A)       VAR_ACTIVE_OBJECT1 = Var[234];
+[0085] (**)     }
+[0085] (07)     setState08(263);
+[0088] (47)     clearState08(774);
+[008B] (47)     clearState08(775);
+[008E] (BD)     setActorElevation(Var[52],0);
+[0091] (9E)     walkActorTo(Var[52],68,52);
+[0095] (DB)     setBitVar(1440,Var[52],Var[235]);
+[009A] (19)     doSentence(STOP);
+[009C] (BB)     waitForActor(Var[52]);
+[009E] (DB)     setBitVar(1440,Var[52],Var[234]);
+[00A3] (30)     setBoxFlags(4,128);
+[00A6] (A8)     if (VAR_ACTIVE_OBJECT1) {
+[00AA] (C8)       if (Var[137] == Var[52]) {
+[00AF] (F9)         doSentence(VAR_ACTIVE_VERB,VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2,0);
+[00B4] (18)         goto 00BB;
+[00B7] (**)       }
+[00B7] (**)     }
+[00B7] (FE)     walkActorTo(Var[52],Var[57],Var[58]);
+[00BB] (**)   }
+[00BB] (**) }
+[00BB] (80) breakHere();
+[00BC] (18) goto 002B;
+[00BF] (00) stopObjectCode();
+END

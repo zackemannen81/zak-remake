@@ -1,0 +1,36 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0003/ROv2/OCv2_0142
+Events:
+   1 - 001A
+   B - 005A
+  FD - 0079
+[001A] (4F) if (getState08(144)) {
+[001F] (D8)   printEgo("The door won't open from the outside,\x01and the bus driver's asleep.");
+[0059] (**) }
+[0059] (00) stopObjectCode();
+[005A] (9D) if (classOfIs(VAR_ACTIVE_OBJECT2,2)) {
+[005F] (18) } else {
+[0062] (9D)   unless (classOfIs(VAR_ACTIVE_OBJECT2,16)) goto 0076;
+[0067] (**) }
+[0067] (4F) if (getState08(144)) {
+[006C] (19)   doSentence(253,147,0,1);
+[0073] (**) }
+[0073] (18) goto 0078;
+[0076] (42) startScript(3);
+[0078] (00) stopObjectCode();
+[0079] (80) breakHere();
+[007A] (B4) VAR_RESULT = getDist(VAR_EGO,142);
+[007F] (44) unless (VAR_RESULT > 20) goto 0079;
+[0085] (1A) Var[48] = 1;
+[0089] (48) if (VAR_EGO == 1) {
+[008F] (1A)   Var[48] = 2;
+[0093] (**) }
+[0093] (19) doSentence(253,149,0,1);
+[009A] (A8) if (Var[47]) {
+[009E] (18)   goto 0079;
+[00A1] (**) }
+[00A1] (19) doSentence(254,143,0,1);
+[00A8] (1F) if (getState02(142)) {
+[00AD] (19)   doSentence(253,145,0,1);
+[00B4] (**) }
+[00B4] (00) stopObjectCode();
+END

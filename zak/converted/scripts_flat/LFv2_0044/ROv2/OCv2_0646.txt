@@ -1,0 +1,7 @@
+Events:
+   E - 0020
+[0020] (69) setOwnerOf(56,VAR_EGO);
+[0024] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0026] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0028] (00) stopObjectCode();
+END

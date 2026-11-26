@@ -1,0 +1,26 @@
+Events:
+   9 - 0067
+   A - 0067
+   B - 0024
+   E - 0067
+[0024] (48) unless (VAR_ACTIVE_OBJECT2 == 81) goto 0037;
+[002A] (29) setOwnerOf(81,14);
+[002E] (47) clearState08(429);
+[0031] (17) clearState02(429);
+[0034] (18) goto 0066;
+[0037] (48) unless (VAR_ACTIVE_OBJECT2 == 58) goto 0051;
+[003D] (29) setOwnerOf(58,0);
+[0041] (47) clearState08(430);
+[0044] (17) clearState02(430);
+[0047] (19) doSentence(250,430,0,1);
+[004E] (18) goto 0066;
+[0051] (48) unless (VAR_ACTIVE_OBJECT2 == 55) goto 0064;
+[0057] (29) setOwnerOf(55,14);
+[005B] (47) clearState08(431);
+[005E] (17) clearState02(431);
+[0061] (18) goto 0066;
+[0064] (42) startScript(3);
+[0066] (00) stopObjectCode();
+[0067] (D8) printEgo("It's stuck in the glowing object.");
+[0085] (00) stopObjectCode();
+END

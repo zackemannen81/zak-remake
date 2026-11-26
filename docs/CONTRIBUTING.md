@@ -1,3 +1,2 @@
 # Contributing
-
-Read `AGENTS.md` and its ordered authority list before changing the repository.
+Läs AGENTS.md och docs/CURRENT_TASK.md först, därefter angiven dokumentordning. Arbeta autonomt enligt TASK_WORKFLOW.md. Bevara original-LFL, dump, bakgrunder och befintliga användarändringar. Skriv genererade resultat separat, med SHA-256 och källreferenser. Inga hemligheter i kod, manifest eller loggar. Testa parsergränser, pixeldata och återkörning när pipeline ändras. Dokumentera ej körda kontroller och osäkerheter. Commit/push krävs inte för att börja arbeta.

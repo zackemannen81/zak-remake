@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0029/ROv2/OCv2_0484
+Events:
+   9 - 0023
+[0023] (68) VAR_RESULT = isScriptRunning(60);
+[0026] (A8) if (VAR_RESULT) {
+[002A] (1A)   Var[81] = 437;
+[002E] (1A)   Var[195] = 25;
+[0032] (A7)   setState04(VAR_ACTIVE_OBJECT1);
+[0034] (**) }
+[0034] (00) stopObjectCode();
+END

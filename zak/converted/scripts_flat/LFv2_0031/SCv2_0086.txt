@@ -1,0 +1,27 @@
+[0000] (08) unless (VAR_ROOM != 31) goto 000E;
+[0006] (1A) VAR_EGO = 1;
+[000A] (42) startScript(19);
+[000C] (D2) actorFollowCamera(VAR_EGO);
+[000E] (9A) Var[199] = Var[234];
+[0011] (2E) delay(120);
+[0015] (11) animateActor(1,246);
+[0018] (80) breakHere();
+[0019] (D8) printEgo("I can't last much longer!");
+[0030] (2E) delay(1800);
+[0034] (D8) printEgo("This is the end!");
+[0043] (19) doSentence(253,503,0,1);
+[004A] (2E) delay(480);
+[004E] (19) doSentence(253,497,0,1);
+[0055] (80) breakHere();
+[0056] (44) unless (Var[46] > 10) goto 0055;
+[005C] (D8) printEgo("HELP!");
+[0063] (19) doSentence(250,504,0,1);
+[006A] (2E) delay(600);
+[006E] (19) doSentence(253,503,0,1);
+[0075] (2E) delay(300);
+[0079] (19) doSentence(254,504,0,1);
+[0080] (1A) Var[166] = 2;
+[0084] (67) clearState04(504);
+[0087] (42) startScript(78);
+[0089] (A0) stopObjectCode();
+END

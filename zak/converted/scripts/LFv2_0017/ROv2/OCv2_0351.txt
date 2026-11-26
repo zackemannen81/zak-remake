@@ -1,0 +1,44 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/OCv2_0351
+Events:
+   1 - 001D
+   2 - 0030
+   D - 0035
+  FD - 0056
+[001D] (D8) printEgo("It's already open.");
+[002F] (00) stopObjectCode();
+[0030] (42) startScript(11);
+[0032] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0034] (00) stopObjectCode();
+[0035] (68) VAR_RESULT = isScriptRunning(112);
+[0038] (A8) if (VAR_RESULT) {
+[003C] (48)   if (VAR_EGO == 1) {
+[0042] (2D)     putActorInRoom(8,17);
+[0045] (01)     putActor(8,83,60);
+[0049] (11)     animateActor(8,251);
+[004C] (**)   }
+[004C] (**) }
+[004C] (60) cursorCommand(9, 0);
+[004F] (24) loadRoomWithEgo(375,19,5,56);
+[0055] (00) stopObjectCode();
+[0056] (14) print(10,"You may enter.");
+[0065] (AE) waitForMessage();
+[0066] (0F) if (!getState08(351)) {
+[006B] (1E)   walkActorTo(10,83,11);
+[006F] (3B)   waitForActor(10);
+[0071] (11)   animateActor(10,247);
+[0074] (80)   breakHere();
+[0075] (1C)   startSound(10);
+[0077] (07)   setState08(351);
+[007A] (17)   clearState02(351);
+[007D] (80)   breakHere();
+[007E] (1E)   walkActorTo(10,80,11);
+[0082] (**) }
+[0082] (3B) waitForActor(10);
+[0084] (11) animateActor(10,246);
+[0087] (19) doSentence(253,354,0,1);
+[008E] (A8) if (Var[45]) {
+[0092] (AE)   waitForMessage();
+[0093] (14)   print(10,"Or, if you wish, your friend may enter.\x01But only one may visit Guru at a time.");
+[00D5] (**) }
+[00D5] (00) stopObjectCode();
+END

@@ -1,0 +1,15 @@
+# Decompiled with descumm -2
+# Source: LFv2_0017\SCv2_0117
+
+[0000] (0F) if (!getState08(350)) {
+[0005] (07)   setState08(350);
+[0008] (07)   setState08(363);
+[000B] (48)   if (VAR_ROOM == 18) {
+[0011] (1C)     startSound(10);
+[0013] (**)   }
+[0013] (48)   if (VAR_ROOM == 17) {
+[0019] (1C)     startSound(10);
+[001B] (**)   }
+[001B] (**) }
+[001B] (A0) stopObjectCode();
+END

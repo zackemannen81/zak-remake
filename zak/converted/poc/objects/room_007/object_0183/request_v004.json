@@ -1,0 +1,11 @@
+{
+  "room": 7,
+  "object_id": 183,
+  "prompt": "Create ONLY close-up state patch in reference 1. Reference 2 is original room CONTEXT only; NEVER output whole room. Exact crop x=232, y=24, width=16, height=16. Flat grey shop display background with one brown/gold horizontal shelf edge near top. Removed crystal display state: NO crystal added. Entire grey area remains filled; not two floating gold bars on black. Preserve exact source state, silhouette, perspective and palette. Premium polished AAA Unreal Engine 5 materials and lighting, realistic physical surfaces. Tight opaque patch aspect 16:16, no new props/text. For extreme aspect use centered letterbox/pillarbox preserving full target aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_007\\object_0183\\frame_000.png",
+    "C:\\code\\zac\\docs\\scummvm-tools-2.9.0-win32-x86_64\\zak\\converted\\images\\backgrounds\\LFv2_0007.png"
+  ],
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-948f80f2-9dc3-4580-955a-771f15f765c3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "semantic correction; review pending"
+}

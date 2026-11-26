@@ -1,0 +1,26 @@
+Events:
+   1 - 002D
+   2 - 0025
+   4 - 0025
+   5 - 002D
+   9 - 0035
+   A - 0035
+   B - 0035
+[0025] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 002C;
+[0029] (18) goto 003E;
+[002C] (00) stopObjectCode();
+[002D] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0034;
+[0031] (18) goto 0039;
+[0034] (00) stopObjectCode();
+[0035] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 003E;
+[0039] (87) setState08(VAR_ACTIVE_OBJECT1);
+[003B] (18) goto 0040;
+[003E] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0040] (1C) startSound(27);
+[0042] (3C) stopSound(28);
+[0044] (80) breakHere();
+[0045] (3C) stopSound(19);
+[0047] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 004D;
+[004B] (1C) startSound(19);
+[004D] (00) stopObjectCode();
+END

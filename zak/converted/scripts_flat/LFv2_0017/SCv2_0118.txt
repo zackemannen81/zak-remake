@@ -1,0 +1,27 @@
+[0000] (67) clearState04(359);
+[0003] (19) doSentence(254,361,0,1);
+[000A] (19) doSentence(254,360,0,1);
+[0011] (47) clearState08(360);
+[0014] (47) clearState08(361);
+[0017] (3C) stopSound(80);
+[0019] (2E) delay(120);
+[001D] (14) print(8,"Finally!");
+[0028] (31) VAR_RESULT = getBitVar(1541,0);
+[002D] (A8) unless (VAR_RESULT) goto 004D;
+[0031] (31) VAR_RESULT = getBitVar(1475,0);
+[0036] (28) unless (!VAR_RESULT) goto 004D;
+[003A] (03) Var[66] = getActorRoom(1);
+[003D] (48) unless (Var[66] == 17) goto 0045;
+[0043] (4A) chainScript(112);
+[0045] (48) unless (Var[66] == 18) goto 004D;
+[004B] (4A) chainScript(112);
+[004D] (48) unless (VAR_ROOM == 17) goto 0059;
+[0053] (36) walkActorToObject(8,350);
+[0057] (3B) waitForActor(8);
+[0059] (42) startScript(117);
+[005B] (80) breakHere();
+[005C] (2D) putActorInRoom(8,18);
+[005F] (01) putActor(8,2,54);
+[0063] (19) doSentence(253,367,0,1);
+[006A] (A0) stopObjectCode();
+END

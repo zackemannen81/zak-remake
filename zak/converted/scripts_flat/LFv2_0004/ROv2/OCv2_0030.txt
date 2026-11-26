@@ -1,0 +1,14 @@
+Events:
+   B - 0025
+   C - 0036
+   E - 0022
+[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0024] (00) stopObjectCode();
+[0025] (48) unless (VAR_ACTIVE_OBJECT2 == 25) goto 0030;
+[002B] (42) startScript(61);
+[002D] (18) goto 0035;
+[0030] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0035] (00) stopObjectCode();
+[0036] (42) startScript(61);
+[0038] (00) stopObjectCode();
+END

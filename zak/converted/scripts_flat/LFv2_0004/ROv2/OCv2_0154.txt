@@ -1,0 +1,16 @@
+Events:
+   C - 0019
+  FD - 003F
+[0019] (D8) printEgo("THE PHONE COMPANY\x01Please pay bills here.");
+[003E] (00) stopObjectCode();
+[003F] (FB) VAR_RESULT = getActorWalkBox(VAR_EGO);
+[0042] (48) unless (VAR_RESULT == 3) goto 0051;
+[0048] (57) setState02(156);
+[004B] (17) clearState02(157);
+[004E] (18) goto 0057;
+[0051] (57) setState02(157);
+[0054] (17) clearState02(156);
+[0057] (80) breakHere();
+[0058] (18) goto 003F;
+[005B] (00) stopObjectCode();
+END

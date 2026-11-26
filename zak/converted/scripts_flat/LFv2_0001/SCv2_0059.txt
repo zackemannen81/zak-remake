@@ -1,0 +1,22 @@
+[0000] (48) unless (Var[21] == 1) goto 008F;
+[0006] (60) cursorCommand(191, 3);
+[0009] (9A) Var[66] = Var[234];
+[000C] (FA) VerbOps(Delete(Var[66]););
+[000F] (46) Var[66]++;
+[0011] (44) unless (Var[66] > 14) goto 000C;
+[0017] (31) VAR_RESULT = getBitVar(1471,0);
+[001C] (28) unless (!VAR_RESULT) goto 0031;
+[0020] (7A) VerbOps(New-46(0,20,10,0,"Zak@@@@@@@"));
+[0031] (31) VAR_RESULT = getBitVar(1472,0);
+[0036] (28) unless (!VAR_RESULT) goto 004B;
+[003A] (7A) VerbOps(New-47(10,20,11,0,"Annie@@@@@"));
+[004B] (31) VAR_RESULT = getBitVar(1473,0);
+[0050] (28) unless (!VAR_RESULT) goto 0065;
+[0054] (7A) VerbOps(New-48(20,20,12,0,"Melissa@@@"));
+[0065] (31) VAR_RESULT = getBitVar(1474,0);
+[006A] (28) unless (!VAR_RESULT) goto 007F;
+[006E] (7A) VerbOps(New-49(30,20,13,0,"Leslie@@@@"));
+[007F] (7A) VerbOps(New-45(0,200,14,0,"Switch"));
+[008C] (60) cursorCommand(0, 0);
+[008F] (A0) stopObjectCode();
+END

@@ -1,0 +1,31 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0012/ROv2/OCv2_0267
+Events:
+   9 - 0031
+   B - 004D
+   D - 0026
+   E - 0031
+[0026] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[002A] (24)   loadRoomWithEgo(272,13,5,48);
+[0030] (**) }
+[0030] (00) stopObjectCode();
+[0031] (D8) printEgo("I don't want to dirty my hands.");
+[004C] (00) stopObjectCode();
+[004D] (9D) if (classOfIs(VAR_ACTIVE_OBJECT2,2)) {
+[0052] (88)   if (Var[147] != Var[234]) {
+[0057] (8F)     if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[005B] (48)       if (VAR_ACTIVE_OBJECT2 == 26) {
+[0061] (6F)         if (getState04(26)) {
+[0066] (D8)           printEgo("It's too bent to dig with.");
+[007D] (18)           goto 00BD;
+[0080] (**)         }
+[0080] (**)       }
+[0080] (42)       startScript(33);
+[0082] (**)     }
+[0082] (18)   } else {
+[0085] (D8)     printEgo("Not with a vicious squirrel in my way.");
+[00A6] (**)   }
+[00A6] (18) } else {
+[00A9] (D8)   printEgo("I can't dig with that.");
+[00BD] (**) }
+[00BD] (00) stopObjectCode();
+END

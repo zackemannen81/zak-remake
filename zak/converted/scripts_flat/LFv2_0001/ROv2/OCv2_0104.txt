@@ -1,0 +1,8 @@
+Events:
+  FD - 0013
+[0013] (70) lights(11,0,0);
+[0017] (0F) unless (!getState08(103)) goto 0025;
+[001C] (0F) unless (!getState08(90)) goto 0025;
+[0021] (F0) lights(Var[234],0,0);
+[0025] (00) stopObjectCode();
+END

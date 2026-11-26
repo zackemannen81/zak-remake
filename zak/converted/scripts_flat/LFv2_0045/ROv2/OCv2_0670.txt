@@ -1,0 +1,16 @@
+Events:
+  FD - 0013
+[0013] (2E) delay(30);
+[0017] (9A) Var[14] = VAR_EGO;
+[001A] (5A) Var[14] += 81;
+[001E] (9A) Var[66] = Var[14];
+[0021] (48) unless (VAR_EGO == 1) goto 002B;
+[0027] (13) ActorOps(0,[TalkColor(10)]);
+[002B] (14) print(255,"I cashed in my old ticket for $\x04\x42.");
+[0049] (13) ActorOps(0,[TalkColor(9)]);
+[004D] (A9) setOwnerOf(Var[61],14);
+[0050] (9A) Var[14] = VAR_EGO;
+[0053] (5A) Var[14] += 81;
+[0057] (8A) Var[Var[14]] = Var[234];
+[005A] (00) stopObjectCode();
+END

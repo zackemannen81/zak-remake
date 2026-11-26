@@ -1,0 +1,22 @@
+Events:
+   B - 001B
+[001B] (48) unless (VAR_ACTIVE_OBJECT2 == 31) goto 0055;
+[0021] (60) cursorCommand(15, 2);
+[0024] (0C) loadSound(111)
+[0027] (29) setOwnerOf(31,0);
+[002B] (57) setState02(393);
+[002E] (05) drawObject(394,255,255);
+[0033] (1C) startSound(111);
+[0035] (2E) delay(50);
+[0039] (05) drawObject(395,255,255);
+[003E] (1C) startSound(111);
+[0040] (2E) delay(60);
+[0044] (1C) startSound(78);
+[0046] (17) clearState02(395);
+[0049] (07) setState08(392);
+[004C] (67) clearState04(392);
+[004F] (60) cursorCommand(247, 1);
+[0052] (18) goto 0057;
+[0055] (42) startScript(3);
+[0057] (00) stopObjectCode();
+END

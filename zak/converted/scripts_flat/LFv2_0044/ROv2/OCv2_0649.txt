@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (FB) Var[66] = getActorWalkBox(VAR_EGO);
+[0016] (17) clearState02(640);
+[0019] (08) unless (Var[66] != 9) goto 0028;
+[001F] (38) unless (Var[66] >= 2) goto 0028;
+[0025] (57) setState02(640);
+[0028] (80) breakHere();
+[0029] (18) goto 0013;
+[002C] (00) stopObjectCode();
+END

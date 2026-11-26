@@ -1,0 +1,16 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0031/ROv2/OCv2_0498
+Events:
+  FD - 0013
+[0013] (53) ActorOps(5,[Name("dolphin")]);
+[001F] (9A) Var[47] = Var[234];
+[0022] (46) Var[47]++;
+[0024] (7D) setActorElevation(5,Var[47]);
+[0027] (80) breakHere();
+[0028] (44) unless (Var[47] > 33) goto 0022;
+[002E] (C6) Var[47]--;
+[0030] (7D) setActorElevation(5,Var[47]);
+[0033] (80) breakHere();
+[0034] (48) unless (Var[47] == 28) goto 002E;
+[003A] (18) goto 0022;
+[003D] (00) stopObjectCode();
+END

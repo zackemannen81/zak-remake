@@ -1,0 +1,29 @@
+test_all_table_dimensions_and_pixel_values (__main__.PipelineTests.test_all_table_dimensions_and_pixel_values) ... ok
+test_color_literal_bleed_and_extended (__main__.PipelineTests.test_color_literal_bleed_and_extended) ... ok
+test_protected_output (__main__.PipelineTests.test_protected_output) ... ok
+test_reproducibility (__main__.PipelineTests.test_reproducibility) ... ok
+test_source_baseline (__main__.PipelineTests.test_source_baseline) ... ok
+test_zplane_bit_order_and_terminal_run (__main__.PipelineTests.test_zplane_bit_order_and_terminal_run) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 33.781s
+
+OK
+{
+  "identified": 578,
+  "exported": 578,
+  "mask_review": [
+    {
+      "room": 35,
+      "object_id": 553
+    },
+    {
+      "room": 35,
+      "object_id": 554
+    }
+  ],
+  "unresolved": [],
+  "room_table_records": 762,
+  "image_less_table_records": 183,
+  "frames_note": "One image per old-bundle OI; scripted state changes may switch object IDs. No invented animation frames."
+}

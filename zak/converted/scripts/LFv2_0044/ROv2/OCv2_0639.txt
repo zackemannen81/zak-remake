@@ -1,0 +1,7 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0639
+Events:
+   D - 001A
+[001A] (5B) setBitVar(1572,0,Var[235]);
+[001F] (24) loadRoomWithEgo(191,141,255,255);
+[0025] (00) stopObjectCode();
+END

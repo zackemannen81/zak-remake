@@ -1,0 +1,80 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0095
+
+[0000] (9A) Var[238] = VAR_EGO;
+[0003] (9A) Var[199] = Var[235];
+[0006] (9A) Var[120] = Var[234];
+[0009] (48) if (VAR_ROOM == 10) {
+[000F] (46)   Var[120]++;
+[0011] (18) } else {
+[0014] (1A)   Var[245] = 24;
+[0018] (**) }
+[0018] (80) breakHere();
+[0019] (83) Var[66] = getActorRoom(Var[238]);
+[001C] (03) VAR_RESULT = getActorRoom(7);
+[001F] (88) if (VAR_RESULT != Var[66]) {
+[0024] (48)   if (Var[66] == 4) {
+[002A] (2E)     delay(120);
+[002E] (83)     VAR_RESULT = getActorRoom(Var[238]);
+[0031] (48)     if (VAR_RESULT == 4) {
+[0037] (D2)       actorFollowCamera(Var[238]);
+[0039] (19)       doSentence(1,155,0,1);
+[0040] (80)       breakHere();
+[0041] (2D)       putActorInRoom(7,4);
+[0044] (01)       putActor(7,28,52);
+[0048] (11)       animateActor(7,250);
+[004B] (42)       startScript(5);
+[004D] (18)       goto 00B6;
+[0050] (**)     }
+[0050] (**)   }
+[0050] (2E)   delay(60);
+[0054] (40)   cutscene();
+[0055] (52)   actorFollowCamera(7);
+[0057] (2E)   delay(60);
+[005B] (11)   animateActor(7,246);
+[005E] (14)   print(7,"Where'd \x02");
+[0069] (48)   if (Var[238] == 2) {
+[006F] (14)     print(7,"s\x02");
+[0074] (**)   }
+[0074] (14)   print(7,"he go?");
+[007C] (AE)   waitForMessage();
+[007D] (2E)   delay(120);
+[0081] (08)   if (VAR_ROOM != 4) {
+[0087] (1C)     startSound(89);
+[0089] (B2)     setCameraAt(VAR_CAMERA_POS_X);
+[008B] (2D)     putActorInRoom(7,4);
+[008E] (01)     putActor(7,22,52);
+[0092] (2E)     delay(120);
+[0096] (**)   }
+[0096] (C0)   endCutscene();
+[0097] (62)   stopScript(0);
+[0099] (**) }
+[0099] (88) if (VAR_ROOM != Var[66]) {
+[009E] (F2)   loadRoom(Var[66]);
+[00A0] (C3)   Var[67] = getActorX(Var[238]);
+[00A3] (3A)   Var[67] -= 2;
+[00A7] (A3)   Var[61] = getActorY(Var[238]);
+[00AA] (6D)   putActorInRoom(7,VAR_ROOM);
+[00AD] (61)   putActor(7,Var[67],Var[61]);
+[00B1] (42)   startScript(5);
+[00B3] (18) } else {
+[00B6] (4D)   walkActorToActor(7,Var[238],0);
+[00BA] (80)   breakHere();
+[00BB] (74)   VAR_RESULT = getDist(7,Var[238]);
+[00C0] (04)   if (VAR_RESULT <= 2) {
+[00C6] (18)   } else {
+[00C9] (80)     breakHere();
+[00CA] (74)     VAR_RESULT = getDist(7,Var[238]);
+[00CF] (04)     unless (VAR_RESULT <= 2) goto 0018;
+[00D5] (**)   }
+[00D5] (19)   doSentence(STOP);
+[00D7] (11)   animateActor(7,255);
+[00DA] (91)   animateActor(Var[238],255);
+[00DD] (DB)   setBitVar(1440,Var[238],Var[235]);
+[00E2] (**) }
+[00E2] (89) faceActor(Var[238],7);
+[00E5] (00) stopObjectCode();
+[00E6] (49) faceActor(7,Var[238]);
+[00E9] (4A) chainScript(75);
+[00EB] (A0) stopObjectCode();
+END

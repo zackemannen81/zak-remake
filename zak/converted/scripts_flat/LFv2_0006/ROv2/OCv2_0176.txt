@@ -1,0 +1,11 @@
+Events:
+   1 - 001E
+   A - 001E
+   C - 001E
+   E - 001E
+[001E] (48) unless (VAR_EGO == 2) goto 0040;
+[0024] (D8) printEgo("I've already read them all.");
+[003D] (18) goto 005D;
+[0040] (D8) printEgo("It would take YEARS to read them!");
+[005D] (00) stopObjectCode();
+END

@@ -1,0 +1,69 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0651
+Events:
+  FD - 0013
+[0013] (9A) Var[199] = Var[234];
+[0016] (AE) waitForMessage();
+[0017] (0F) if (!getState08(647)) {
+[001C] (3C)   stopSound(28);
+[001E] (1C)   startSound(30);
+[0020] (05)   drawObject(649,255,255);
+[0025] (80)   breakHere();
+[0026] (05)   drawObject(650,255,255);
+[002B] (05)   drawObject(656,255,255);
+[0030] (80)   breakHere();
+[0031] (05)   drawObject(651,255,255);
+[0036] (80)   breakHere();
+[0037] (05)   drawObject(654,255,255);
+[003C] (80)   breakHere();
+[003D] (80)   breakHere();
+[003E] (4F)   if (getState08(653)) {
+[0043] (3C)     stopSound(30);
+[0045] (60)     cursorCommand(15, 2);
+[0048] (1C)     startSound(31);
+[004A] (57)     setState02(653);
+[004D] (05)     drawObject(655,255,255);
+[0052] (80)     breakHere();
+[0053] (05)     drawObject(653,255,255);
+[0058] (80)     breakHere();
+[0059] (7C)     VAR_RESULT = isSoundRunning(31);
+[005C] (28)     unless (!VAR_RESULT) goto 004D;
+[0060] (05)     drawObject(81,255,255);
+[0065] (80)     breakHere();
+[0066] (17)     clearState02(81);
+[0069] (47)     clearState08(653);
+[006C] (47)     clearState08(655);
+[006F] (29)     setOwnerOf(33,0);
+[0073] (29)     setOwnerOf(56,0);
+[0077] (29)     setOwnerOf(79,0);
+[007B] (80)     breakHere();
+[007C] (36)     walkActorToObject(2,81);
+[0080] (03)     VAR_RESULT = getActorRoom(1);
+[0083] (C8)     if (VAR_RESULT == VAR_ROOM) {
+[0088] (36)       walkActorToObject(1,649);
+[008C] (**)     }
+[008C] (3B)     waitForActor(2);
+[008E] (D8)     printEgo("Wow! The crystal's fused and the scroll\x01burned up in my hands!");
+[00C4] (60)     cursorCommand(247, 1);
+[00C7] (**)   }
+[00C7] (18) } else {
+[00CA] (C3)   Var[45] = getActorX(VAR_EGO);
+[00CD] (A3)   Var[46] = getActorY(VAR_EGO);
+[00D0] (1A)   Var[47] = 64;
+[00D4] (61)   putActor(12,Var[45],Var[46]);
+[00D8] (3C)   stopSound(28);
+[00DA] (1C)   startSound(30);
+[00DC] (7D)   setActorElevation(12,Var[47]);
+[00DF] (80)   breakHere();
+[00E0] (44)   if (VAR_MACHINE_SPEED > 40) {
+[00E6] (3A)     Var[47] -= 8;
+[00EA] (18)   } else {
+[00ED] (3A)     Var[47] -= 16;
+[00F1] (**)   }
+[00F1] (78)   unless (Var[47] < 8) goto 00DC;
+[00F7] (3D)   setActorElevation(12,80);
+[00FA] (2E)   delay(30);
+[00FE] (14)   print(2,"WHOA!");
+[0106] (**) }
+[0106] (9A) Var[199] = Var[235];
+[0109] (00) stopObjectCode();
+END

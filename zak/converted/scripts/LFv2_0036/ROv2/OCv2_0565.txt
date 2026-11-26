@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0036/ROv2/OCv2_0565
+Events:
+   D - 001A
+[001A] (48) if (VAR_ROOM == 200) {
+[0020] (48)   if (VAR_EGO == 3) {
+[0026] (6F)     if (getState04(555)) {
+[002B] (11)       animateActor(3,246);
+[002E] (D8)       printEgo("No way! I'm SCARED of heights!");
+[0049] (18)       goto 0051;
+[004C] (**)     }
+[004C] (**)   }
+[004C] (**) }
+[004C] (E4) loadRoomWithEgo(Var[48],Var[49],255,255);
+[0051] (00) stopObjectCode();
+END

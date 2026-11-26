@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0038/ROv2/OCv2_0591
+Events:
+   1 - 0016
+[0016] (D8) printEgo("I don't want to disturb its occupants.");
+[0038] (00) stopObjectCode();
+END

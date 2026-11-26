@@ -1,0 +1,7 @@
+Events:
+   E - 0019
+[0019] (1A) Var[60] = 10;
+[001D] (42) startScript(83);
+[001F] (19) doSentence(253,537,0,1);
+[0026] (00) stopObjectCode();
+END

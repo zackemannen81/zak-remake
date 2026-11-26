@@ -1,0 +1,23 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[50] = Var[234];
+[0016] (16) Var[54] = getRandomNr(3);
+[0019] (C8) unless (Var[54] == Var[234]) goto 0024;
+[001E] (11) animateActor(7,246);
+[0021] (18) goto 0047;
+[0024] (C8) unless (Var[54] == Var[235]) goto 002F;
+[0029] (11) animateActor(7,245);
+[002C] (18) goto 0047;
+[002F] (48) unless (Var[54] == 2) goto 003B;
+[0035] (11) animateActor(7,247);
+[0038] (18) goto 0047;
+[003B] (48) unless (Var[54] == 3) goto 0047;
+[0041] (11) animateActor(7,244);
+[0044] (18) /* goto 0047; */
+[0047] (80) breakHere();
+[0048] (80) breakHere();
+[0049] (46) Var[50]++;
+[004B] (44) unless (Var[50] > 2) goto 0016;
+[0051] (9A) Var[53] = Var[235];
+[0054] (00) stopObjectCode();
+END

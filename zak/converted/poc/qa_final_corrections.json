@@ -1,0 +1,150 @@
+{
+  "78": {
+    "room": 41,
+    "hint": "Empty blue stone alcove state: black opening, violet/blue L-shaped floor and right wall fill exact original proportions. No component added, no new black padding."
+  },
+  "546": {
+    "room": 35,
+    "hint": "Flat BROWN background with horizontal purple/magenta stripe across middle. A short pink/white vertical tab extends DOWN from stripe at center. No gold rails, no upward button."
+  },
+  "561": {
+    "room": 35,
+    "hint": "Fill entire frame with a FLAT LIGHT-GREY background, darker grey horizontal strip across TOP. No floating panel, border, button or black padding."
+  },
+  "562": {
+    "room": 35,
+    "hint": "Flat light-grey background fills the full frame, darker grey strip at TOP. No separate floating metal panel or black padding."
+  },
+  "577": {
+    "room": 38,
+    "hint": "Sign text EXACTLY 'THE DOC' on first line and 'IS OUT' on second line, black letters on pink. Preserve left wood/green edge. No CODE, arrows or other text."
+  },
+  "602": {
+    "room": 40,
+    "hint": "Flat RED and WHITE horizontal stripes with a MAGENTA/WHITE stepped diagonal rising from bottom-left to right. No crown, insignia, labels or gold added."
+  },
+  "603": {
+    "room": 40,
+    "hint": "Flat RED and WHITE horizontal stripes, magenta horizontal/stepped line across lower-middle. No gold struts, gold border or separate device."
+  },
+  "604": {
+    "room": 40,
+    "hint": "Flat RED and WHITE stripes, magenta/grey diagonal descending toward right across middle. No gold line, text or new objects."
+  },
+  "606": {
+    "room": 41,
+    "hint": "Glowing circular MECHANICAL component in blue/turquoise stone alcove. White/cyan arcs and purple center exactly as source. No face, eyes, mouth, character or mascot."
+  },
+  "607": {
+    "room": 41,
+    "hint": "Glowing circular mechanical component in underwater BLUE/TURQUOISE alcove, exact colored arcs and purple center. No face, eyes, mouth or character."
+  },
+  "608": {
+    "room": 41,
+    "hint": "Mechanical circular glowing component in turquoise alcove, magenta top/left trim. No cartoon person or mascot. Preserve exact original machinery geometry and crop."
+  },
+  "623": {
+    "room": 42,
+    "hint": "EMPTY GREEN ground/background patch AFTER bread crumbs removed, with irregular grey stone shapes at top and bottom. NO bird, pigeon, crumbs, food or animals added."
+  },
+  "624": {
+    "room": 42,
+    "hint": "FLOWING RIVER WATER animation, turquoise/blue surface with white ripples and stationary grey ROCKS in exact source positions. Natural realistic moving water and reflections, not LED lights, mosaic tiles, repeating geometric pattern or neon pixel blocks. Preserve this specific flow phase and crop."
+  },
+  "625": {
+    "room": 42,
+    "hint": "FLOWING RIVER WATER animation, turquoise/blue surface with white ripples and stationary grey ROCKS in exact source positions. Natural realistic moving water and reflections, not LED lights, mosaic tiles, repeating geometric pattern or neon pixel blocks. Preserve this specific flow phase and crop."
+  },
+  "626": {
+    "room": 42,
+    "hint": "FLOWING RIVER WATER animation, turquoise/blue surface with white ripples and stationary grey ROCKS in exact source positions. Natural realistic moving water and reflections, not LED lights, mosaic tiles, repeating geometric pattern or neon pixel blocks. Preserve this specific flow phase and crop."
+  },
+  "627": {
+    "room": 42,
+    "hint": "FLOWING RIVER WATER animation, turquoise/blue surface with white ripples and stationary grey ROCKS in exact source positions. Natural realistic moving water and reflections, not LED lights, mosaic tiles, repeating geometric pattern or neon pixel blocks. Preserve this specific flow phase and crop."
+  },
+  "628": {
+    "room": 42,
+    "hint": "FLOWING RIVER WATER animation, turquoise/blue surface with white ripples and stationary grey ROCKS in exact source positions. Natural realistic moving water and reflections, not LED lights, mosaic tiles, repeating geometric pattern or neon pixel blocks. Preserve this specific flow phase and crop."
+  },
+  "629": {
+    "room": 42,
+    "hint": "FLOWING RIVER WATER animation, turquoise/blue surface with white ripples and stationary grey ROCKS in exact source positions. Natural realistic moving water and reflections, not LED lights, mosaic tiles, repeating geometric pattern or neon pixel blocks. Preserve this specific flow phase and crop."
+  },
+  "656": {
+    "room": 44,
+    "hint": "A grey-clad human figure with hat, leaning/hunched FORWARD in exactly source pose, on black. Do not straighten into an upright idle pose. Same tight silhouette and crop."
+  },
+  "700": {
+    "room": 49,
+    "hint": "A long BLACK-clad arm extending horizontally across grey background, ending in a BLUE HAND with INDEX FINGER POINTING RIGHT. Preserve arm and hand placement. Not wrench, E letter or bracket."
+  },
+  "701": {
+    "room": 49,
+    "hint": "Sleeping adult HUMAN MAN (Zak), short brown/auburn hair, head on blue pillow at left, covered by blue blanket with gold/magenta trim. Preserve original whole bed silhouette and cyan outline on grey. NO horns, spikes, monster or alien head."
+  },
+  "706": {
+    "room": 50,
+    "hint": "Purple pressed OK button with white 'OK', black shadow to right, entire background BROWN. No added gold border, no black background."
+  },
+  "707": {
+    "room": 50,
+    "hint": "Pink raised OK button with white 'OK', entire background BROWN. No black background, extra border or ornament."
+  },
+  "709": {
+    "room": 51,
+    "hint": "Close-up abstract mechanical/energy patch: cyan vertical strip left, brown/blue geometry left-center, black center, MAGENTA cone of energy flaring to white at right edge. NO person, sorcerer, mascot or invented machinery beyond source crop."
+  },
+  "712": {
+    "room": 52,
+    "hint": "ONE grey keypad key displaying ONLY black digit 0. No colon, dots, extra buttons or added symbols. Preserve original grey background and edge reflections."
+  },
+  "719": {
+    "room": 52,
+    "hint": "ONE grey keypad key displaying ONLY black digit 7, original squared style. NOT a question mark, no dot below."
+  },
+  "722": {
+    "room": 52,
+    "hint": "ONE grey keypad key displaying black ASTERISK (*) matching exact source silhouette. No substitution with X or invented glyph."
+  },
+  "725": {
+    "room": 52,
+    "hint": "Completely FLAT GREY EMPTY background patch. Nothing else. NO boot, wings, icon, item, decoration, texture object or border. Subtle premium grey surface only, full frame."
+  },
+  "726": {
+    "room": 52,
+    "hint": "Flat GREY EMPTY background patch with tiny WHITE diagonal edge/reflection marks at LOWER-RIGHT corner only. NO sword, knife, icon, object or border."
+  },
+  "731": {
+    "room": 52,
+    "hint": "Grey panel with exactly TWO black vertical rectangular openings side by side. No extra small black buttons at top or any other added features."
+  },
+  "736": {
+    "room": 52,
+    "hint": "Grey keypad panel with exactly FOUR grey openings arranged 2x2 inside ONE black grid outline. No extra black dots or small buttons at top."
+  },
+  "737": {
+    "room": 52,
+    "hint": "Two BLACK SQUARE OUTLINES, upper-left and lower-right, touching at a SINGLE corner. Preserve exact source glyph. No added zigzag connector or stepped path."
+  },
+  "750": {
+    "room": 53,
+    "hint": "Yellow/orange TORCH FLAME in exactly this source animation phase, in front of flat grey stone wall with vertical dark gap, thin brown horizontal band at bottom. Natural flame, no added fireplace, piled stones or enclosing frame. Preserve full crop and background."
+  },
+  "751": {
+    "room": 53,
+    "hint": "Yellow/orange TORCH FLAME in exactly this source animation phase, in front of flat grey stone wall with vertical dark gap, thin brown horizontal band at bottom. Natural flame, no added fireplace, piled stones or enclosing frame. Preserve full crop and background."
+  },
+  "752": {
+    "room": 53,
+    "hint": "Yellow/orange TORCH FLAME in exactly this source animation phase, in front of flat grey stone wall with vertical dark gap, thin brown horizontal band at bottom. Natural flame, no added fireplace, piled stones or enclosing frame. Preserve full crop and background."
+  },
+  "754": {
+    "room": 54,
+    "hint": "Tight abstract RED/GREY mechanical light/state patch on black: blue cap upper-left, grey left vertical area, red right contour, short brown horizontal band lower-left. No character, crewmate, helmet or icon."
+  },
+  "755": {
+    "room": 54,
+    "hint": "Tight GREY/WHITE mechanical light/state patch on black: small blue cap upper-left, grey vertical shape, white reflection upper-right, short brown horizontal band lower-left. No paper, question mark, writing, character or inventory icon."
+  }
+}

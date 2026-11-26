@@ -1,0 +1,17 @@
+# Decompiled with descumm -2
+# Source: LFv2_0048\SCv2_0132
+
+[0000] (80) breakHere();
+[0001] (03) VAR_RESULT = getActorRoom(1);
+[0004] (C8) if (VAR_RESULT == VAR_ROOM) {
+[0009] (03)   VAR_RESULT = getActorRoom(3);
+[000C] (C8)   if (VAR_RESULT == VAR_ROOM) {
+[0011] (18)   } else {
+[0014] (03)     VAR_RESULT = getActorRoom(4);
+[0017] (C8)     unless (VAR_RESULT == VAR_ROOM) goto 001E;
+[001C] (**)   }
+[001C] (4A)   chainScript(133);
+[001E] (**) }
+[001E] (18) goto 0000;
+[0021] (A0) stopObjectCode();
+END

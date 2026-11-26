@@ -1,0 +1,5 @@
+Events:
+   C - 001D
+[001D] (D8) printEgo("Pay for goods here. CashCards only.");
+[003D] (00) stopObjectCode();
+END

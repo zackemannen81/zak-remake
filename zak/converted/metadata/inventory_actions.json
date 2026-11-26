@@ -1,0 +1,1196 @@
+[
+  {
+    "line": 6,
+    "instruction": "[0025] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0015.txt",
+    "room": 1
+  },
+  {
+    "line": 6,
+    "instruction": "[001C] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0016.txt",
+    "room": 1
+  },
+  {
+    "line": 12,
+    "instruction": "[002F] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,1);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0018.txt",
+    "room": 1
+  },
+  {
+    "line": 15,
+    "instruction": "[0041] (29)     setOwnerOf(14,0);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0091.txt",
+    "room": 1
+  },
+  {
+    "line": 16,
+    "instruction": "[0045] (29)     setOwnerOf(14,15);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0091.txt",
+    "room": 1
+  },
+  {
+    "line": 9,
+    "instruction": "[0029] (50)   pickupObject(18);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0093.txt",
+    "room": 1
+  },
+  {
+    "line": 5,
+    "instruction": "[0015] (50) pickupObject(17);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0097.txt",
+    "room": 1
+  },
+  {
+    "line": 6,
+    "instruction": "[002D] (50) pickupObject(14);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0098.txt",
+    "room": 1
+  },
+  {
+    "line": 7,
+    "instruction": "[001D] (69) setOwnerOf(37,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0001/ROv2/OCv2_0110.txt",
+    "room": 1
+  },
+  {
+    "line": 9,
+    "instruction": "[0029] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0020.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[0023] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0021.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[0018] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0022.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0023.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[001E] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0024.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[0026] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0026.txt",
+    "room": 2
+  },
+  {
+    "line": 4,
+    "instruction": "[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0117.txt",
+    "room": 2
+  },
+  {
+    "line": 4,
+    "instruction": "[0013] (29) setOwnerOf(20,0);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0128.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[0017] (29) setOwnerOf(20,15);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0128.txt",
+    "room": 2
+  },
+  {
+    "line": 20,
+    "instruction": "[003E] (29)   setOwnerOf(29,14);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0129.txt",
+    "room": 2
+  },
+  {
+    "line": 6,
+    "instruction": "[0022] (69) setOwnerOf(29,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0130.txt",
+    "room": 2
+  },
+  {
+    "line": 5,
+    "instruction": "[0020] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0029.txt",
+    "room": 3
+  },
+  {
+    "line": 30,
+    "instruction": "[0090] (29)       setOwnerOf(30,0);",
+    "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0138.txt",
+    "room": 3
+  },
+  {
+    "line": 7,
+    "instruction": "[001F] (50) pickupObject(27);",
+    "source": "zak/converted/scripts/LFv2_0003/ROv2/OCv2_0139.txt",
+    "room": 3
+  },
+  {
+    "line": 6,
+    "instruction": "[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0004/ROv2/OCv2_0030.txt",
+    "room": 4
+  },
+  {
+    "line": 22,
+    "instruction": "[0089] (29)       setOwnerOf(15,0);",
+    "source": "zak/converted/scripts/LFv2_0004/ROv2/OCv2_0153.txt",
+    "room": 4
+  },
+  {
+    "line": 12,
+    "instruction": "[0051] (50)   pickupObject(31);",
+    "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0167.txt",
+    "room": 5
+  },
+  {
+    "line": 37,
+    "instruction": "[00D8] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT2,2);",
+    "source": "zak/converted/scripts/LFv2_0005/ROv2/OCv2_0169.txt",
+    "room": 5
+  },
+  {
+    "line": 7,
+    "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0032.txt",
+    "room": 6
+  },
+  {
+    "line": 19,
+    "instruction": "[003F] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,2);",
+    "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0032.txt",
+    "room": 6
+  },
+  {
+    "line": 5,
+    "instruction": "[0022] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0006/ROv2/OCv2_0033.txt",
+    "room": 6
+  },
+  {
+    "line": 11,
+    "instruction": "[0017] (A9)   setOwnerOf(Var[45],0);",
+    "source": "zak/converted/scripts/LFv2_0007/ROv2/EXv2.txt",
+    "room": 7
+  },
+  {
+    "line": 12,
+    "instruction": "[001A] (A9)   setOwnerOf(Var[45],15);",
+    "source": "zak/converted/scripts/LFv2_0007/ROv2/EXv2.txt",
+    "room": 7
+  },
+  {
+    "line": 21,
+    "instruction": "[00B1] (29)   setOwnerOf(45,0);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0208.txt",
+    "room": 8
+  },
+  {
+    "line": 27,
+    "instruction": "[00C5] (E9)   setOwnerOf(Var[66],VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0208.txt",
+    "room": 8
+  },
+  {
+    "line": 36,
+    "instruction": "[0107] (50) pickupObject(46);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0208.txt",
+    "room": 8
+  },
+  {
+    "line": 33,
+    "instruction": "[0079] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,10);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0210.txt",
+    "room": 8
+  },
+  {
+    "line": 18,
+    "instruction": "[0045] (29) setOwnerOf(40,7);",
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0234.txt",
+    "room": 10
+  },
+  {
+    "line": 19,
+    "instruction": "[0049] (29) setOwnerOf(43,7);",
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0234.txt",
+    "room": 10
+  },
+  {
+    "line": 29,
+    "instruction": "[00BF] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,0);",
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0236.txt",
+    "room": 10
+  },
+  {
+    "line": 5,
+    "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0047.txt",
+    "room": 11
+  },
+  {
+    "line": 7,
+    "instruction": "[0024] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0049.txt",
+    "room": 11
+  },
+  {
+    "line": 25,
+    "instruction": "[007D] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0242.txt",
+    "room": 11
+  },
+  {
+    "line": 12,
+    "instruction": "[0035] (50)     pickupObject(48);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0259.txt",
+    "room": 11
+  },
+  {
+    "line": 16,
+    "instruction": "[0055] (29)         setOwnerOf(22,14);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0260.txt",
+    "room": 11
+  },
+  {
+    "line": 6,
+    "instruction": "[001A] (69) setOwnerOf(22,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0262.txt",
+    "room": 11
+  },
+  {
+    "line": 12,
+    "instruction": "[0035] (50)       pickupObject(50);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/OCv2_0262.txt",
+    "room": 11
+  },
+  {
+    "line": 10,
+    "instruction": "[002D] (50) pickupObject(52);",
+    "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0266.txt",
+    "room": 12
+  },
+  {
+    "line": 24,
+    "instruction": "[00A0] (29) setOwnerOf(51,0);",
+    "source": "zak/converted/scripts/LFv2_0012/ROv2/OCv2_0268.txt",
+    "room": 12
+  },
+  {
+    "line": 20,
+    "instruction": "[00B1] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0273.txt",
+    "room": 13
+  },
+  {
+    "line": 46,
+    "instruction": "[013F] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0273.txt",
+    "room": 13
+  },
+  {
+    "line": 60,
+    "instruction": "[0171] (29)     setOwnerOf(52,0);",
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0273.txt",
+    "room": 13
+  },
+  {
+    "line": 4,
+    "instruction": "[0013] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0274.txt",
+    "room": 13
+  },
+  {
+    "line": 8,
+    "instruction": "[003D] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0013/ROv2/OCv2_0276.txt",
+    "room": 13
+  },
+  {
+    "line": 5,
+    "instruction": "[0019] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0014/ROv2/OCv2_0057.txt",
+    "room": 14
+  },
+  {
+    "line": 5,
+    "instruction": "[0018] (50)   pickupObject(58);",
+    "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0314.txt",
+    "room": 15
+  },
+  {
+    "line": 8,
+    "instruction": "[0022] (29)   setOwnerOf(76,0);",
+    "source": "zak/converted/scripts/LFv2_0015/ROv2/OCv2_0325.txt",
+    "room": 15
+  },
+  {
+    "line": 15,
+    "instruction": "[0041] (E9)       setOwnerOf(Var[50],VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0328.txt",
+    "room": 16
+  },
+  {
+    "line": 5,
+    "instruction": "[0019] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/OCv2_0358.txt",
+    "room": 17
+  },
+  {
+    "line": 7,
+    "instruction": "[0028] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0060.txt",
+    "room": 18
+  },
+  {
+    "line": 4,
+    "instruction": "[001A] (A9) setOwnerOf(Var[50],0);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0365.txt",
+    "room": 18
+  },
+  {
+    "line": 5,
+    "instruction": "[001D] (A9) setOwnerOf(Var[50],15);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0365.txt",
+    "room": 18
+  },
+  {
+    "line": 35,
+    "instruction": "[0085] (29) setOwnerOf(60,0);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0366.txt",
+    "room": 18
+  },
+  {
+    "line": 36,
+    "instruction": "[0089] (29) setOwnerOf(60,15);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0366.txt",
+    "room": 18
+  },
+  {
+    "line": 34,
+    "instruction": "[00AD] (E9)     setOwnerOf(Var[66],VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0368.txt",
+    "room": 18
+  },
+  {
+    "line": 52,
+    "instruction": "[0173] (A9)             setOwnerOf(VAR_ACTIVE_OBJECT1,2);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0371.txt",
+    "room": 18
+  },
+  {
+    "line": 7,
+    "instruction": "[0027] (29)   setOwnerOf(31,0);",
+    "source": "zak/converted/scripts/LFv2_0021/ROv2/OCv2_0393.txt",
+    "room": 21
+  },
+  {
+    "line": 5,
+    "instruction": "[001D] (29)   setOwnerOf(78,0);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0426.txt",
+    "room": 25
+  },
+  {
+    "line": 9,
+    "instruction": "[002F] (29)   setOwnerOf(80,0);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0427.txt",
+    "room": 25
+  },
+  {
+    "line": 8,
+    "instruction": "[002A] (29)   setOwnerOf(81,14);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0428.txt",
+    "room": 25
+  },
+  {
+    "line": 12,
+    "instruction": "[003D] (29)   setOwnerOf(58,0);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0428.txt",
+    "room": 25
+  },
+  {
+    "line": 17,
+    "instruction": "[0057] (29)   setOwnerOf(55,14);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0428.txt",
+    "room": 25
+  },
+  {
+    "line": 7,
+    "instruction": "[0029] (69) setOwnerOf(81,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0429.txt",
+    "room": 25
+  },
+  {
+    "line": 6,
+    "instruction": "[0025] (69) setOwnerOf(55,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0025/ROv2/OCv2_0431.txt",
+    "room": 25
+  },
+  {
+    "line": 33,
+    "instruction": "[00BD] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT2,14);",
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/OCv2_0445.txt",
+    "room": 27
+  },
+  {
+    "line": 6,
+    "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0064.txt",
+    "room": 28
+  },
+  {
+    "line": 17,
+    "instruction": "[0066] (29) setOwnerOf(64,0);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0064.txt",
+    "room": 28
+  },
+  {
+    "line": 6,
+    "instruction": "[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0067.txt",
+    "room": 28
+  },
+  {
+    "line": 12,
+    "instruction": "[0049] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,0);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0067.txt",
+    "room": 28
+  },
+  {
+    "line": 7,
+    "instruction": "[0027] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0069.txt",
+    "room": 28
+  },
+  {
+    "line": 35,
+    "instruction": "[00A1] (29)     setOwnerOf(73,14);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0470.txt",
+    "room": 28
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (69) setOwnerOf(73,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0471.txt",
+    "room": 28
+  },
+  {
+    "line": 18,
+    "instruction": "[0068] (50)   pickupObject(70);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0477.txt",
+    "room": 28
+  },
+  {
+    "line": 27,
+    "instruction": "[00C8] (50)   pickupObject(68);",
+    "source": "zak/converted/scripts/LFv2_0028/ROv2/OCv2_0479.txt",
+    "room": 28
+  },
+  {
+    "line": 10,
+    "instruction": "[0032] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0072.txt",
+    "room": 30
+  },
+  {
+    "line": 19,
+    "instruction": "[0048] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,3);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0074.txt",
+    "room": 30
+  },
+  {
+    "line": 16,
+    "instruction": "[003D] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,4);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0075.txt",
+    "room": 30
+  },
+  {
+    "line": 15,
+    "instruction": "[004A] (29)   setOwnerOf(73,0);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0489.txt",
+    "room": 30
+  },
+  {
+    "line": 16,
+    "instruction": "[004E] (29)   setOwnerOf(73,15);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0489.txt",
+    "room": 30
+  },
+  {
+    "line": 23,
+    "instruction": "[0077] (50)   pickupObject(73);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0491.txt",
+    "room": 30
+  },
+  {
+    "line": 27,
+    "instruction": "[0068] (29)   setOwnerOf(72,0);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0492.txt",
+    "room": 30
+  },
+  {
+    "line": 28,
+    "instruction": "[006C] (29)   setOwnerOf(72,15);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0492.txt",
+    "room": 30
+  },
+  {
+    "line": 46,
+    "instruction": "[0111] (29)       setOwnerOf(65,14);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0494.txt",
+    "room": 30
+  },
+  {
+    "line": 52,
+    "instruction": "[0127] (29)       setOwnerOf(66,0);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0494.txt",
+    "room": 30
+  },
+  {
+    "line": 56,
+    "instruction": "[0138] (29)         setOwnerOf(65,0);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0494.txt",
+    "room": 30
+  },
+  {
+    "line": 5,
+    "instruction": "[0015] (50) pickupObject(74);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0495.txt",
+    "room": 30
+  },
+  {
+    "line": 6,
+    "instruction": "[0018] (50) pickupObject(75);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/OCv2_0495.txt",
+    "room": 30
+  },
+  {
+    "line": 11,
+    "instruction": "[002E] (29)   setOwnerOf(77,0);",
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/ENv2.txt",
+    "room": 31
+  },
+  {
+    "line": 12,
+    "instruction": "[0032] (29)   setOwnerOf(77,15);",
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/ENv2.txt",
+    "room": 31
+  },
+  {
+    "line": 5,
+    "instruction": "[0021] (29)   setOwnerOf(70,14);",
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0518.txt",
+    "room": 33
+  },
+  {
+    "line": 10,
+    "instruction": "[0029] (29)   setOwnerOf(70,14);",
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0530.txt",
+    "room": 33
+  },
+  {
+    "line": 13,
+    "instruction": "[0031] (69)   setOwnerOf(70,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0033/ROv2/OCv2_0537.txt",
+    "room": 33
+  },
+  {
+    "line": 5,
+    "instruction": "[001F] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0076.txt",
+    "room": 35
+  },
+  {
+    "line": 12,
+    "instruction": "[0052] (29)   setOwnerOf(57,0);",
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/OCv2_0549.txt",
+    "room": 35
+  },
+  {
+    "line": 11,
+    "instruction": "[0029] (50)       pickupObject(77);",
+    "source": "zak/converted/scripts/LFv2_0040/ROv2/ENv2.txt",
+    "room": 40
+  },
+  {
+    "line": 5,
+    "instruction": "[001A] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0041/ROv2/OCv2_0607.txt",
+    "room": 41
+  },
+  {
+    "line": 7,
+    "instruction": "[002A] (29)   setOwnerOf(23,0);",
+    "source": "zak/converted/scripts/LFv2_0042/ROv2/OCv2_0621.txt",
+    "room": 42
+  },
+  {
+    "line": 12,
+    "instruction": "[0036] (D0) pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0081.txt",
+    "room": 44
+  },
+  {
+    "line": 4,
+    "instruction": "[0020] (69) setOwnerOf(33,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0645.txt",
+    "room": 44
+  },
+  {
+    "line": 4,
+    "instruction": "[0020] (69) setOwnerOf(56,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0646.txt",
+    "room": 44
+  },
+  {
+    "line": 5,
+    "instruction": "[0024] (29)   setOwnerOf(59,0);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0648.txt",
+    "room": 44
+  },
+  {
+    "line": 9,
+    "instruction": "[0037] (29)   setOwnerOf(33,14);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0648.txt",
+    "room": 44
+  },
+  {
+    "line": 19,
+    "instruction": "[005B] (29)   setOwnerOf(56,14);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0648.txt",
+    "room": 44
+  },
+  {
+    "line": 35,
+    "instruction": "[006F] (29)     setOwnerOf(33,0);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0651.txt",
+    "room": 44
+  },
+  {
+    "line": 36,
+    "instruction": "[0073] (29)     setOwnerOf(56,0);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0651.txt",
+    "room": 44
+  },
+  {
+    "line": 37,
+    "instruction": "[0077] (29)     setOwnerOf(79,0);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0651.txt",
+    "room": 44
+  },
+  {
+    "line": 7,
+    "instruction": "[0027] (69) setOwnerOf(33,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0653.txt",
+    "room": 44
+  },
+  {
+    "line": 8,
+    "instruction": "[002B] (69) setOwnerOf(56,VAR_EGO);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0653.txt",
+    "room": 44
+  },
+  {
+    "line": 13,
+    "instruction": "[004D] (A9) setOwnerOf(Var[61],14);",
+    "source": "zak/converted/scripts/LFv2_0045/ROv2/OCv2_0670.txt",
+    "room": 45
+  },
+  {
+    "line": 4,
+    "instruction": "[0000] (50) pickupObject(19);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0014.txt",
+    "room": 1
+  },
+  {
+    "line": 21,
+    "instruction": "[0030] (29) setOwnerOf(19,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0014.txt",
+    "room": 1
+  },
+  {
+    "line": 22,
+    "instruction": "[0034] (29) setOwnerOf(19,15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0014.txt",
+    "room": 1
+  },
+  {
+    "line": 4,
+    "instruction": "[0000] (29) setOwnerOf(19,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0018.txt",
+    "room": 1
+  },
+  {
+    "line": 5,
+    "instruction": "[0004] (29) setOwnerOf(19,15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0018.txt",
+    "room": 1
+  },
+  {
+    "line": 29,
+    "instruction": "[00A5] (29)   setOwnerOf(37,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0001/SCv2_0037.txt",
+    "room": 1
+  },
+  {
+    "line": 9,
+    "instruction": "[0011] (29)   setOwnerOf(29,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0021.txt",
+    "room": 2
+  },
+  {
+    "line": 53,
+    "instruction": "[018E] (29) setOwnerOf(15,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0074.txt",
+    "room": 4
+  },
+  {
+    "line": 13,
+    "instruction": "[0022] (A9)     setOwnerOf(Var[66],7);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0141.txt",
+    "room": 4
+  },
+  {
+    "line": 57,
+    "instruction": "[0126] (29)       setOwnerOf(40,7);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0141.txt",
+    "room": 4
+  },
+  {
+    "line": 58,
+    "instruction": "[012A] (29)       setOwnerOf(43,7);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0004/SCv2_0141.txt",
+    "room": 4
+  },
+  {
+    "line": 188,
+    "instruction": "[0520] (50)     pickupObject(33);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+    "room": 5
+  },
+  {
+    "line": 190,
+    "instruction": "[0523] (29)   setOwnerOf(33,1);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+    "room": 5
+  },
+  {
+    "line": 191,
+    "instruction": "[0527] (A9)   setOwnerOf(Var[119],1);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0005/SCv2_0062.txt",
+    "room": 5
+  },
+  {
+    "line": 5,
+    "instruction": "[0006] (D0)   pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0006/SCv2_0119.txt",
+    "room": 6
+  },
+  {
+    "line": 101,
+    "instruction": "[0248] (D0)         pickupObject(Var[45]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+    "room": 7
+  },
+  {
+    "line": 103,
+    "instruction": "[024D] (E9)         setOwnerOf(Var[46],VAR_EGO);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+    "room": 7
+  },
+  {
+    "line": 112,
+    "instruction": "[026D] (D0)           pickupObject(Var[66]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+    "room": 7
+  },
+  {
+    "line": 113,
+    "instruction": "[026F] (A9)           setOwnerOf(Var[66],12);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0024.txt",
+    "room": 7
+  },
+  {
+    "line": 7,
+    "instruction": "[000B] (A9)     setOwnerOf(Var[45],0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0025.txt",
+    "room": 7
+  },
+  {
+    "line": 8,
+    "instruction": "[000E] (A9)     setOwnerOf(Var[45],15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0025.txt",
+    "room": 7
+  },
+  {
+    "line": 154,
+    "instruction": "[0343] (A9)     setOwnerOf(Var[52],14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+    "room": 7
+  },
+  {
+    "line": 160,
+    "instruction": "[035C] (A9)         setOwnerOf(Var[66],0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+    "room": 7
+  },
+  {
+    "line": 161,
+    "instruction": "[035F] (A9)         setOwnerOf(Var[66],15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+    "room": 7
+  },
+  {
+    "line": 173,
+    "instruction": "[03B4] (A9)       setOwnerOf(Var[52],0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0026.txt",
+    "room": 7
+  },
+  {
+    "line": 80,
+    "instruction": "[0252] (29) setOwnerOf(42,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0072.txt",
+    "room": 7
+  },
+  {
+    "line": 81,
+    "instruction": "[0256] (29) setOwnerOf(42,15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0072.txt",
+    "room": 7
+  },
+  {
+    "line": 34,
+    "instruction": "[0132] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 107,
+    "instruction": "[024E] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT2,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 156,
+    "instruction": "[0334] (E9)         setOwnerOf(Var[66],Var[61]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 27,
+    "instruction": "[0092] (50)     pickupObject(45);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0008/SCv2_0043.txt",
+    "room": 8
+  },
+  {
+    "line": 29,
+    "instruction": "[007E] (29)     setOwnerOf(82,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0009/SCv2_0115.txt",
+    "room": 9
+  },
+  {
+    "line": 31,
+    "instruction": "[0085] (29)     setOwnerOf(83,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0009/SCv2_0115.txt",
+    "room": 9
+  },
+  {
+    "line": 101,
+    "instruction": "[0143] (29)     setOwnerOf(77,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+    "room": 10
+  },
+  {
+    "line": 102,
+    "instruction": "[0147] (29)     setOwnerOf(77,15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+    "room": 10
+  },
+  {
+    "line": 21,
+    "instruction": "[0066] (29)   setOwnerOf(22,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0036.txt",
+    "room": 11
+  },
+  {
+    "line": 66,
+    "instruction": "[0091] (69)     setOwnerOf(22,Var[52]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0079.txt",
+    "room": 11
+  },
+  {
+    "line": 88,
+    "instruction": "[0113] (69)   setOwnerOf(22,Var[52]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0079.txt",
+    "room": 11
+  },
+  {
+    "line": 78,
+    "instruction": "[01F8] (50)     pickupObject(51);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0104.txt",
+    "room": 11
+  },
+  {
+    "line": 69,
+    "instruction": "[0124] (29)     setOwnerOf(47,15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0106.txt",
+    "room": 11
+  },
+  {
+    "line": 15,
+    "instruction": "[0025] (50)   pickupObject(51);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0116.txt",
+    "room": 11
+  },
+  {
+    "line": 16,
+    "instruction": "[0028] (29)   setOwnerOf(47,15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0120.txt",
+    "room": 11
+  },
+  {
+    "line": 19,
+    "instruction": "[003F] (29)   setOwnerOf(51,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0012/SCv2_0144.txt",
+    "room": 12
+  },
+  {
+    "line": 97,
+    "instruction": "[0159] (29)     setOwnerOf(40,7);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0098.txt",
+    "room": 16
+  },
+  {
+    "line": 14,
+    "instruction": "[003D] (29)         setOwnerOf(45,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0139.txt",
+    "room": 17
+  },
+  {
+    "line": 33,
+    "instruction": "[00C0] (29)     setOwnerOf(59,8);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0139.txt",
+    "room": 17
+  },
+  {
+    "line": 36,
+    "instruction": "[00D9] (29)     setOwnerOf(60,8);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0139.txt",
+    "room": 17
+  },
+  {
+    "line": 14,
+    "instruction": "[0029] (29) setOwnerOf(82,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+    "room": 18
+  },
+  {
+    "line": 30,
+    "instruction": "[0065] (A9)         setOwnerOf(Var[66],8);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+    "room": 18
+  },
+  {
+    "line": 5,
+    "instruction": "[0001] (29) setOwnerOf(68,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0021/SCv2_0099.txt",
+    "room": 21
+  },
+  {
+    "line": 8,
+    "instruction": "[0010] (A9)   setOwnerOf(Var[66],0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0025/SCv2_0066.txt",
+    "room": 25
+  },
+  {
+    "line": 8,
+    "instruction": "[0006] (50) pickupObject(66);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 9,
+    "instruction": "[0009] (50) pickupObject(65);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 10,
+    "instruction": "[000C] (29) setOwnerOf(65,3);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 11,
+    "instruction": "[0010] (29) setOwnerOf(66,4);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 93,
+    "instruction": "[024D] (50) pickupObject(61);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 94,
+    "instruction": "[0250] (29) setOwnerOf(61,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 95,
+    "instruction": "[0254] (50) pickupObject(62);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 96,
+    "instruction": "[0257] (29) setOwnerOf(62,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 97,
+    "instruction": "[025B] (50) pickupObject(63);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 98,
+    "instruction": "[025E] (29) setOwnerOf(63,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 22,
+    "instruction": "[004E] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT1,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0145.txt",
+    "room": 27
+  },
+  {
+    "line": 39,
+    "instruction": "[0085] (E9)     setOwnerOf(Var[66],VAR_ACTIVE_OBJECT2);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0145.txt",
+    "room": 27
+  },
+  {
+    "line": 9,
+    "instruction": "[0054] (D0)     pickupObject(VAR_ACTIVE_OBJECT1);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+    "room": 30
+  },
+  {
+    "line": 23,
+    "instruction": "[00AF] (29)       setOwnerOf(72,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+    "room": 30
+  },
+  {
+    "line": 25,
+    "instruction": "[00B6] (29)       setOwnerOf(72,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+    "room": 30
+  },
+  {
+    "line": 151,
+    "instruction": "[0303] (69)       setOwnerOf(72,VAR_EGO);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0030/SCv2_0055.txt",
+    "room": 30
+  },
+  {
+    "line": 15,
+    "instruction": "[0028] (A9)     setOwnerOf(Var[66],0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0078.txt",
+    "room": 31
+  },
+  {
+    "line": 11,
+    "instruction": "[0042] (29)   setOwnerOf(44,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0038/SCv2_0070.txt",
+    "room": 38
+  },
+  {
+    "line": 85,
+    "instruction": "[029C] (29)   setOwnerOf(77,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+    "room": 40
+  },
+  {
+    "line": 86,
+    "instruction": "[02A0] (29)   setOwnerOf(77,15);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0040/SCv2_0069.txt",
+    "room": 40
+  },
+  {
+    "line": 17,
+    "instruction": "[0050] (29) setOwnerOf(46,0);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0044/SCv2_0076.txt",
+    "room": 44
+  },
+  {
+    "line": 159,
+    "instruction": "[0235] (29)     setOwnerOf(83,2);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0030.txt",
+    "room": 45
+  },
+  {
+    "line": 161,
+    "instruction": "[023C] (29)     setOwnerOf(82,1);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0030.txt",
+    "room": 45
+  },
+  {
+    "line": 11,
+    "instruction": "[001E] (29)     setOwnerOf(83,2);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0058.txt",
+    "room": 45
+  },
+  {
+    "line": 21,
+    "instruction": "[009B] (29)       setOwnerOf(82,1);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0058.txt",
+    "room": 45
+  },
+  {
+    "line": 24,
+    "instruction": "[00A7] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0045/SCv2_0058.txt",
+    "room": 45
+  },
+  {
+    "line": 28,
+    "instruction": "[005C] (50) pickupObject(83);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 29,
+    "instruction": "[005F] (29) setOwnerOf(83,14);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 30,
+    "instruction": "[0063] (50) pickupObject(82);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 5,
+    "instruction": "[0006] (E9)   setOwnerOf(VAR_ACTIVE_OBJECT1,VAR_ACTIVE_OBJECT2);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0056/SCv2_0020.txt",
+    "room": 56
+  }
+]

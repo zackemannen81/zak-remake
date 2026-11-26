@@ -1,0 +1,19 @@
+[0000] (50) pickupObject(19);
+[0003] (47) clearState08(19);
+[0006] (07) setState08(87);
+[0009] (0C) loadScript(18)
+[000C] (9A) Var[157] = VAR_EGO;
+[000F] (80) breakHere();
+[0010] (B4) VAR_RESULT = getDist(Var[157],87);
+[0015] (A8) unless (VAR_RESULT) goto 000F;
+[0019] (48) unless (VAR_ROOM == 1) goto 0021;
+[001F] (1C) startSound(27);
+[0021] (68) VAR_RESULT = isScriptRunning(13);
+[0024] (A8) unless (VAR_RESULT) goto 002A;
+[0028] (4A) chainScript(18);
+[002A] (07) setState08(19);
+[002D] (17) clearState02(19);
+[0030] (29) setOwnerOf(19,0);
+[0034] (29) setOwnerOf(19,15);
+[0038] (A0) stopObjectCode();
+END

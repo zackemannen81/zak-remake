@@ -1,0 +1,6 @@
+Events:
+   B - 001C
+   C - 001C
+[001C] (42) startScript(138);
+[001E] (00) stopObjectCode();
+END

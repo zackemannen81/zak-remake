@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (3C) stopSound(80);
+[0015] (47) clearState08(274);
+[0018] (47) clearState08(289);
+[001B] (47) clearState08(290);
+[001E] (47) clearState08(291);
+[0021] (C8) unless (Var[153] == Var[235]) goto 0029;
+[0026] (9A) Var[153] = Var[234];
+[0029] (00) stopObjectCode();
+END

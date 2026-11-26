@@ -1,0 +1,674 @@
+[
+  {
+    "line": 4,
+    "instruction": "[0013] (13) ActorOps(10,[Costume(34)]);",
+    "source": "zak/converted/scripts/LFv2_0002/ROv2/OCv2_0115.txt",
+    "room": 2
+  },
+  {
+    "line": 11,
+    "instruction": "[0025] (53) ActorOps(10,[Name(\"Lou\")]);",
+    "source": "zak/converted/scripts/LFv2_0007/ROv2/ENv2.txt",
+    "room": 7
+  },
+  {
+    "line": 12,
+    "instruction": "[002D] (13) ActorOps(10,[Costume(16)]);",
+    "source": "zak/converted/scripts/LFv2_0007/ROv2/ENv2.txt",
+    "room": 7
+  },
+  {
+    "line": 14,
+    "instruction": "[001D] (53) ActorOps(10,[Name()]);",
+    "source": "zak/converted/scripts/LFv2_0007/ROv2/EXv2.txt",
+    "room": 7
+  },
+  {
+    "line": 94,
+    "instruction": "[0184] (13)     ActorOps(10,[Costume(23)]);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/ENv2.txt",
+    "room": 8
+  },
+  {
+    "line": 97,
+    "instruction": "[0190] (53)     ActorOps(10,[Name(\"bum\")]);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/ENv2.txt",
+    "room": 8
+  },
+  {
+    "line": 122,
+    "instruction": "[0206] (13)     ActorOps(10,[Costume(25)]);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/ENv2.txt",
+    "room": 8
+  },
+  {
+    "line": 125,
+    "instruction": "[0212] (53)     ActorOps(10,[Name(\"devotee\")]);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/ENv2.txt",
+    "room": 8
+  },
+  {
+    "line": 35,
+    "instruction": "[00FB] (53) ActorOps(10,[Name(\"devotee\")]);",
+    "source": "zak/converted/scripts/LFv2_0008/ROv2/OCv2_0208.txt",
+    "room": 8
+  },
+  {
+    "line": 6,
+    "instruction": "[0011] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0009/ROv2/ENv2.txt",
+    "room": 9
+  },
+  {
+    "line": 13,
+    "instruction": "[0020] (53) ActorOps(7,[Name(\"representative\")]);",
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/EXv2.txt",
+    "room": 10
+  },
+  {
+    "line": 19,
+    "instruction": "[003B] (13) ActorOps(11,[Costume(27)]);",
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0240.txt",
+    "room": 10
+  },
+  {
+    "line": 22,
+    "instruction": "[0047] (53) ActorOps(11,[Name(\"The King\")]);",
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0240.txt",
+    "room": 10
+  },
+  {
+    "line": 23,
+    "instruction": "[0054] (53) ActorOps(7,[Name(\"Caponian\")]);",
+    "source": "zak/converted/scripts/LFv2_0010/ROv2/OCv2_0240.txt",
+    "room": 10
+  },
+  {
+    "line": 2,
+    "instruction": "[0000] (53) ActorOps(9,[Name()]);",
+    "source": "zak/converted/scripts/LFv2_0011/ROv2/EXv2.txt",
+    "room": 11
+  },
+  {
+    "line": 5,
+    "instruction": "[0017] (13) ActorOps(12,[Costume(28)]);",
+    "source": "zak/converted/scripts/LFv2_0016/ROv2/OCv2_0341.txt",
+    "room": 16
+  },
+  {
+    "line": 3,
+    "instruction": "[0004] (53) ActorOps(8,[Name(\"policeman\")]);",
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/ENv2.txt",
+    "room": 17
+  },
+  {
+    "line": 21,
+    "instruction": "[0058] (13) ActorOps(10,[Costume(26)]);",
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/ENv2.txt",
+    "room": 17
+  },
+  {
+    "line": 25,
+    "instruction": "[006A] (53) ActorOps(10,[Name(\"guard\")]);",
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/ENv2.txt",
+    "room": 17
+  },
+  {
+    "line": 2,
+    "instruction": "[0000] (53) ActorOps(10,[Name()]);",
+    "source": "zak/converted/scripts/LFv2_0017/ROv2/EXv2.txt",
+    "room": 17
+  },
+  {
+    "line": 16,
+    "instruction": "[00AD] (13) ActorOps(8,[Costume(0)]);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0369.txt",
+    "room": 18
+  },
+  {
+    "line": 21,
+    "instruction": "[00C3] (13) ActorOps(8,[Costume(26)]);",
+    "source": "zak/converted/scripts/LFv2_0018/ROv2/OCv2_0369.txt",
+    "room": 18
+  },
+  {
+    "line": 5,
+    "instruction": "[000B] (13) ActorOps(10,[Costume(22)]);",
+    "source": "zak/converted/scripts/LFv2_0019/ROv2/ENv2.txt",
+    "room": 19
+  },
+  {
+    "line": 6,
+    "instruction": "[000F] (53) ActorOps(10,[Name(\"Guru\")]);",
+    "source": "zak/converted/scripts/LFv2_0019/ROv2/ENv2.txt",
+    "room": 19
+  },
+  {
+    "line": 4,
+    "instruction": "[0017] (53) ActorOps(10,[Name()]);",
+    "source": "zak/converted/scripts/LFv2_0019/ROv2/OCv2_0375.txt",
+    "room": 19
+  },
+  {
+    "line": 11,
+    "instruction": "[0022] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/ENv2.txt",
+    "room": 20
+  },
+  {
+    "line": 6,
+    "instruction": "[0010] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0020/ROv2/EXv2.txt",
+    "room": 20
+  },
+  {
+    "line": 8,
+    "instruction": "[0018] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0022/ROv2/ENv2.txt",
+    "room": 22
+  },
+  {
+    "line": 5,
+    "instruction": "[000D] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0022/ROv2/EXv2.txt",
+    "room": 22
+  },
+  {
+    "line": 18,
+    "instruction": "[006C] (93) ActorOps(VAR_EGO,[Costume(0)]);",
+    "source": "zak/converted/scripts/LFv2_0023/ROv2/OCv2_0410.txt",
+    "room": 23
+  },
+  {
+    "line": 3,
+    "instruction": "[0004] (13) ActorOps(12,[Costume(20)]);",
+    "source": "zak/converted/scripts/LFv2_0026/ROv2/ENv2.txt",
+    "room": 26
+  },
+  {
+    "line": 7,
+    "instruction": "[0014] (13)   ActorOps(3,[Costume(0)]);",
+    "source": "zak/converted/scripts/LFv2_0026/ROv2/ENv2.txt",
+    "room": 26
+  },
+  {
+    "line": 8,
+    "instruction": "[0018] (13)   ActorOps(4,[Costume(0)]);",
+    "source": "zak/converted/scripts/LFv2_0026/ROv2/ENv2.txt",
+    "room": 26
+  },
+  {
+    "line": 11,
+    "instruction": "[0021] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/ENv2.txt",
+    "room": 27
+  },
+  {
+    "line": 7,
+    "instruction": "[0012] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0027/ROv2/EXv2.txt",
+    "room": 27
+  },
+  {
+    "line": 15,
+    "instruction": "[002C] (93) ActorOps(VAR_EGO,[Costume(0)]);",
+    "source": "zak/converted/scripts/LFv2_0030/ROv2/ENv2.txt",
+    "room": 30
+  },
+  {
+    "line": 6,
+    "instruction": "[001B] (13) ActorOps(5,[Costume(13)]);",
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/ENv2.txt",
+    "room": 31
+  },
+  {
+    "line": 26,
+    "instruction": "[0067] (13)       ActorOps(5,[Costume(12)]);",
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/ENv2.txt",
+    "room": 31
+  },
+  {
+    "line": 4,
+    "instruction": "[0013] (53) ActorOps(5,[Name(\"dolphin\")]);",
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/OCv2_0498.txt",
+    "room": 31
+  },
+  {
+    "line": 19,
+    "instruction": "[0043] (13) ActorOps(5,[Costume(12)]);",
+    "source": "zak/converted/scripts/LFv2_0031/ROv2/OCv2_0500.txt",
+    "room": 31
+  },
+  {
+    "line": 27,
+    "instruction": "[0066] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0032/ROv2/ENv2.txt",
+    "room": 32
+  },
+  {
+    "line": 7,
+    "instruction": "[0013] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0032/ROv2/EXv2.txt",
+    "room": 32
+  },
+  {
+    "line": 17,
+    "instruction": "[0031] (13)   ActorOps(10,[Costume(29)]);",
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/ENv2.txt",
+    "room": 35
+  },
+  {
+    "line": 19,
+    "instruction": "[003A] (53)   ActorOps(10,[Name(\"projection\")]);",
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/ENv2.txt",
+    "room": 35
+  },
+  {
+    "line": 29,
+    "instruction": "[0049] (53) ActorOps(10,[Name()]);",
+    "source": "zak/converted/scripts/LFv2_0035/ROv2/EXv2.txt",
+    "room": 35
+  },
+  {
+    "line": 6,
+    "instruction": "[000E] (93) ActorOps(Var[66],[Costume(21)]);",
+    "source": "zak/converted/scripts/LFv2_0038/ROv2/ENv2.txt",
+    "room": 38
+  },
+  {
+    "line": 8,
+    "instruction": "[0016] (D3) ActorOps(Var[66],[Name()]);",
+    "source": "zak/converted/scripts/LFv2_0038/ROv2/ENv2.txt",
+    "room": 38
+  },
+  {
+    "line": 11,
+    "instruction": "[0023] (53) ActorOps(10,[Name(\"Shaman\")]);",
+    "source": "zak/converted/scripts/LFv2_0038/ROv2/ENv2.txt",
+    "room": 38
+  },
+  {
+    "line": 8,
+    "instruction": "[0018] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0039/ROv2/ENv2.txt",
+    "room": 39
+  },
+  {
+    "line": 5,
+    "instruction": "[000D] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);",
+    "source": "zak/converted/scripts/LFv2_0039/ROv2/EXv2.txt",
+    "room": 39
+  },
+  {
+    "line": 14,
+    "instruction": "[002C] (13)   ActorOps(11,[Costume(10)]);",
+    "source": "zak/converted/scripts/LFv2_0040/ROv2/ENv2.txt",
+    "room": 40
+  },
+  {
+    "line": 17,
+    "instruction": "[0038] (53)   ActorOps(11,[Name(\"pilot\")]);",
+    "source": "zak/converted/scripts/LFv2_0040/ROv2/ENv2.txt",
+    "room": 40
+  },
+  {
+    "line": 23,
+    "instruction": "[0052] (13)   ActorOps(12,[Costume(19)]);",
+    "source": "zak/converted/scripts/LFv2_0040/ROv2/ENv2.txt",
+    "room": 40
+  },
+  {
+    "line": 6,
+    "instruction": "[001E] (13) ActorOps(5,[Costume(13)]);",
+    "source": "zak/converted/scripts/LFv2_0041/ROv2/ENv2.txt",
+    "room": 41
+  },
+  {
+    "line": 16,
+    "instruction": "[003E] (53) ActorOps(6,[Name(\"bird\")]);",
+    "source": "zak/converted/scripts/LFv2_0042/ROv2/ENv2.txt",
+    "room": 42
+  },
+  {
+    "line": 5,
+    "instruction": "[0017] (13) ActorOps(6,[Costume(15)]);",
+    "source": "zak/converted/scripts/LFv2_0042/ROv2/OCv2_0628.txt",
+    "room": 42
+  },
+  {
+    "line": 4,
+    "instruction": "[0013] (13) ActorOps(6,[Costume(14)]);",
+    "source": "zak/converted/scripts/LFv2_0042/ROv2/OCv2_0629.txt",
+    "room": 42
+  },
+  {
+    "line": 21,
+    "instruction": "[003B] (13)   ActorOps(10,[Costume(24)]);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/ENv2.txt",
+    "room": 44
+  },
+  {
+    "line": 26,
+    "instruction": "[004F] (53)     ActorOps(10,[Name(\"sentry\")]);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/ENv2.txt",
+    "room": 44
+  },
+  {
+    "line": 39,
+    "instruction": "[0088] (53)   ActorOps(12,[Name()]);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/ENv2.txt",
+    "room": 44
+  },
+  {
+    "line": 40,
+    "instruction": "[008D] (13)   ActorOps(12,[Costume(35)]);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/ENv2.txt",
+    "room": 44
+  },
+  {
+    "line": 4,
+    "instruction": "[0013] (53) ActorOps(10,[Name(\"drunken sentry\")]);",
+    "source": "zak/converted/scripts/LFv2_0044/ROv2/OCv2_0656.txt",
+    "room": 44
+  },
+  {
+    "line": 4,
+    "instruction": "[0000] (53) ActorOps(10,[Name()]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0102.txt",
+    "room": 2
+  },
+  {
+    "line": 46,
+    "instruction": "[015E] (13)     ActorOps(10,[Costume(2)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0102.txt",
+    "room": 2
+  },
+  {
+    "line": 95,
+    "instruction": "[0369] (13)     ActorOps(11,[Costume(3)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0102.txt",
+    "room": 2
+  },
+  {
+    "line": 96,
+    "instruction": "[036D] (53)     ActorOps(11,[Name()]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0002/SCv2_0102.txt",
+    "room": 2
+  },
+  {
+    "line": 14,
+    "instruction": "[0019] (53) ActorOps(10,[Name(\"baker\")]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0003/SCv2_0039.txt",
+    "room": 3
+  },
+  {
+    "line": 16,
+    "instruction": "[0027] (13) ActorOps(10,[Costume(17)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0003/SCv2_0039.txt",
+    "room": 3
+  },
+  {
+    "line": 17,
+    "instruction": "[002B] (13) ActorOps(12,[Costume(0)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0003/SCv2_0039.txt",
+    "room": 3
+  },
+  {
+    "line": 49,
+    "instruction": "[0104] (13)     ActorOps(12,[Costume(18)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0003/SCv2_0039.txt",
+    "room": 3
+  },
+  {
+    "line": 49,
+    "instruction": "[0161] (13)         ActorOps(1,[Costume(37)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 52,
+    "instruction": "[016B] (13)         ActorOps(1,[Costume(38)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 55,
+    "instruction": "[0175] (13)         ActorOps(1,[Costume(39)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 84,
+    "instruction": "[01F1] (13)       ActorOps(1,[Costume(1)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 87,
+    "instruction": "[01FB] (13)       ActorOps(1,[Costume(5)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 90,
+    "instruction": "[0205] (13)       ActorOps(1,[Costume(9)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0007/SCv2_0138.txt",
+    "room": 7
+  },
+  {
+    "line": 66,
+    "instruction": "[00CF] (13)     ActorOps(1,[Costume(0)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+    "room": 10
+  },
+  {
+    "line": 100,
+    "instruction": "[013F] (D3)     ActorOps(VAR_EGO,[Costume(Var[172])]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+    "room": 10
+  },
+  {
+    "line": 133,
+    "instruction": "[01B2] (D3)       ActorOps(VAR_EGO,[Costume(Var[172])]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0010/SCv2_0064.txt",
+    "room": 10
+  },
+  {
+    "line": 11,
+    "instruction": "[001A] (53) ActorOps(9,[Name(\"stewardess\")]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0011/SCv2_0121.txt",
+    "room": 11
+  },
+  {
+    "line": 33,
+    "instruction": "[0057] (13) ActorOps(7,[Costume(0)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0098.txt",
+    "room": 16
+  },
+  {
+    "line": 46,
+    "instruction": "[0087] (93)         ActorOps(VAR_EGO,[Costume(0)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0098.txt",
+    "room": 16
+  },
+  {
+    "line": 57,
+    "instruction": "[009E] (13) ActorOps(7,[Costume(28)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0016/SCv2_0098.txt",
+    "room": 16
+  },
+  {
+    "line": 26,
+    "instruction": "[006D] (53) ActorOps(8,[Name()]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0017/SCv2_0031.txt",
+    "room": 17
+  },
+  {
+    "line": 117,
+    "instruction": "[01E9] (13)         ActorOps(1,[Costume(1)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+    "room": 18
+  },
+  {
+    "line": 173,
+    "instruction": "[02CD] (13)       ActorOps(1,[Costume(1)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0018/SCv2_0113.txt",
+    "room": 18
+  },
+  {
+    "line": 13,
+    "instruction": "[002C] (13) ActorOps(10,[Costume(33)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0021/SCv2_0099.txt",
+    "room": 21
+  },
+  {
+    "line": 30,
+    "instruction": "[005A] (13) ActorOps(3,[Costume(7)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 31,
+    "instruction": "[005E] (13) ActorOps(4,[Costume(36)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0026/SCv2_0081.txt",
+    "room": 26
+  },
+  {
+    "line": 25,
+    "instruction": "[0067] (13) ActorOps(12,[Costume(20)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0027/SCv2_0051.txt",
+    "room": 27
+  },
+  {
+    "line": 80,
+    "instruction": "[0137] (13)     ActorOps(1,[Costume(0)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0060.txt",
+    "room": 29
+  },
+  {
+    "line": 92,
+    "instruction": "[015B] (53)     ActorOps(1,[Costume(Var[172])]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0060.txt",
+    "room": 29
+  },
+  {
+    "line": 106,
+    "instruction": "[0183] (53)       ActorOps(1,[Costume(Var[172])]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0029/SCv2_0060.txt",
+    "room": 29
+  },
+  {
+    "line": 11,
+    "instruction": "[0014] (53) ActorOps(5,[Name()]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 16,
+    "instruction": "[0029] (13)   ActorOps(1,[Costume(39)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 18,
+    "instruction": "[0030] (13)   ActorOps(1,[Costume(9)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 76,
+    "instruction": "[00ED] (53) ActorOps(1,[Costume(Var[172])]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0031/SCv2_0050.txt",
+    "room": 31
+  },
+  {
+    "line": 8,
+    "instruction": "[0011] (13) ActorOps(1,[Costume(30)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 70,
+    "instruction": "[010A] (13) ActorOps(10,[Costume(31)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0001.txt",
+    "room": 49
+  },
+  {
+    "line": 71,
+    "instruction": "[00CA] (13) ActorOps(8,[Costume(26)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 74,
+    "instruction": "[00D6] (13) ActorOps(9,[Costume(11)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 76,
+    "instruction": "[00DE] (53) ActorOps(1,[Name(\"Zak\")]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 77,
+    "instruction": "[00E6] (53) ActorOps(2,[Name(\"Annie\")]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 78,
+    "instruction": "[00F0] (53) ActorOps(3,[Name(\"Melissa\")]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 79,
+    "instruction": "[00FC] (53) ActorOps(4,[Name(\"Leslie\")]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 80,
+    "instruction": "[0107] (53) ActorOps(7,[Name(\"representative\")]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 81,
+    "instruction": "[011A] (13) ActorOps(1,[Costume(1)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 82,
+    "instruction": "[011E] (13) ActorOps(2,[Costume(2)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 83,
+    "instruction": "[0122] (13) ActorOps(3,[Costume(0)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 84,
+    "instruction": "[0126] (13) ActorOps(4,[Costume(0)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 85,
+    "instruction": "[012A] (13) ActorOps(7,[Costume(28)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0108.txt",
+    "room": 49
+  },
+  {
+    "line": 5,
+    "instruction": "[0002] (13) ActorOps(10,[Costume(32)]);",
+    "source": "docs/scummvm-tools-2.9.0-win32-x86_64/zak/converted/scripts/LFv2_0049/SCv2_0127.txt",
+    "room": 49
+  }
+]

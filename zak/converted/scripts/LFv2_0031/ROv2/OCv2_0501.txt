@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0031/ROv2/OCv2_0501
+Events:
+  FD - 0013
+[0013] (3A) Var[47] -= 2;
+[0017] (7D) setActorElevation(5,Var[47]);
+[001A] (80) breakHere();
+[001B] (78) unless (Var[47] < 12) goto 0013;
+[0021] (00) stopObjectCode();
+END

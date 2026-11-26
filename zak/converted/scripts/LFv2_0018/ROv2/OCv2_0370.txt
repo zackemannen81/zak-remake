@@ -1,0 +1,32 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0018/ROv2/OCv2_0370
+Events:
+   B - 001D
+  FD - 003D
+[001D] (19) doSentence(253,370,0,1);
+[0024] (A8) if (Var[47]) {
+[0028] (48)   if (VAR_ACTIVE_OBJECT2 == 60) {
+[002E] (1C)     startSound(94);
+[0030] (80)     breakHere();
+[0031] (07)     setState08(366);
+[0034] (30)     setBoxFlags(5,0);
+[0037] (18)   } else {
+[003A] (42)     startScript(3);
+[003C] (**)   }
+[003C] (**) }
+[003C] (00) stopObjectCode();
+[003D] (9A) Var[47] = Var[234];
+[0040] (48) if (VAR_EGO == 8) {
+[0046] (18) } else {
+[0049] (03)   VAR_RESULT = getActorRoom(8);
+[004C] (08)   unless (VAR_RESULT != 18) goto 0057;
+[0052] (**) }
+[0052] (46) Var[47]++;
+[0054] (18) goto 0078;
+[0057] (49) faceActor(8,VAR_EGO);
+[005A] (19) doSentence(STOP);
+[005C] (3B) waitForActor(8);
+[005E] (14) print(8,"Don't touch that!");
+[0070] (AE) waitForMessage();
+[0071] (19) doSentence(253,367,0,1);
+[0078] (00) stopObjectCode();
+END

@@ -1,0 +1,9 @@
+Events:
+   B - 0022
+  11 - 001B
+[001B] (1A) Var[47] = 139;
+[001F] (42) startScript(24);
+[0021] (00) stopObjectCode();
+[0022] (D8) printEgo("I don't know how.");
+[0032] (00) stopObjectCode();
+END

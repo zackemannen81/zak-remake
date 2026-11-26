@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (2E) delay(30);
+[0017] (05) drawObject(170,255,255);
+[001C] (1C) startSound(19);
+[001E] (2E) delay(60);
+[0022] (05) drawObject(171,255,255);
+[0027] (3C) stopSound(19);
+[0029] (18) goto 0013;
+[002C] (00) stopObjectCode();
+END

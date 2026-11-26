@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0097
+Events:
+  FD - 0013
+[0013] (1C) startSound(34);
+[0015] (50) pickupObject(17);
+[0018] (2E) delay(30);
+[001C] (D8) printEgo("Whoops!");
+[0025] (00) stopObjectCode();
+END

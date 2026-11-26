@@ -1,0 +1,45 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/OCv2_0470
+Events:
+   1 - 0024
+   2 - 0040
+   B - 0050
+  FD - 0043
+[0024] (EF) if (getState04(VAR_ACTIVE_OBJECT1)) {
+[0028] (D8)   printEgo("It's screwed shut.");
+[003A] (18) } else {
+[003D] (42)   startScript(10);
+[003F] (**) }
+[003F] (00) stopObjectCode();
+[0040] (42) startScript(11);
+[0042] (00) stopObjectCode();
+[0043] (54) setObjectName(470,"fuse box");
+[004F] (00) stopObjectCode();
+[0050] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0054] (9D)   if (classOfIs(VAR_ACTIVE_OBJECT2,16)) {
+[0059] (42)     startScript(10);
+[005B] (EF)     if (getState04(VAR_ACTIVE_OBJECT1)) {
+[005F] (E7)       clearState04(VAR_ACTIVE_OBJECT1);
+[0061] (2E)       delay(60);
+[0065] (D8)       printEgo("It looks like a fuse box!");
+[007B] (19)       doSentence(253,470,0,1);
+[0082] (**)     }
+[0082] (18)   } else {
+[0085] (42)     startScript(3);
+[0087] (**)   }
+[0087] (48) } else if (VAR_ACTIVE_OBJECT2 == 73) {
+[0090] (4F)   if (getState08(64)) {
+[0095] (B6)     walkActorToObject(VAR_EGO,471);
+[0099] (BB)     waitForActor(VAR_EGO);
+[009B] (07)     setState08(471);
+[009E] (17)     clearState02(471);
+[00A1] (29)     setOwnerOf(73,14);
+[00A5] (D8)     printEgo("That ought to fix it!");
+[00B8] (19)     doSentence(13,470,0,0);
+[00BF] (18)   } else {
+[00C2] (D8)     printEgo("The burnt fuse is in the box.");
+[00DB] (**)   }
+[00DB] (18) } else {
+[00DE] (42)   startScript(3);
+[00E0] (**) }
+[00E0] (00) stopObjectCode();
+END

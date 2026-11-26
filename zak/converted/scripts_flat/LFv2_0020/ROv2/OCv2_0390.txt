@@ -1,0 +1,5 @@
+Events:
+   D - 0018
+[0018] (24) loadRoomWithEgo(218,146,34,60);
+[001E] (00) stopObjectCode();
+END

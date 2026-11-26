@@ -1,0 +1,21 @@
+Events:
+   3 - 0039
+   B - 0024
+   C - 0032
+   E - 0021
+[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0023] (00) stopObjectCode();
+[0024] (48) unless (VAR_EGO == 2) goto 002F;
+[002A] (42) startScript(131);
+[002C] (18) goto 0031;
+[002F] (42) startScript(53);
+[0031] (00) stopObjectCode();
+[0032] (1A) Var[67] = 2;
+[0036] (42) startScript(53);
+[0038] (00) stopObjectCode();
+[0039] (48) unless (VAR_ACTIVE_OBJECT2 == 2) goto 0045;
+[003F] (A9) setOwnerOf(VAR_ACTIVE_OBJECT1,2);
+[0042] (18) goto 0047;
+[0045] (42) startScript(53);
+[0047] (00) stopObjectCode();
+END

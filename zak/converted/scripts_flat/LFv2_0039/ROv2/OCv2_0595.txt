@@ -1,0 +1,8 @@
+Events:
+   D - 0019
+[0019] (19) doSentence(253,593,0,1);
+[0020] (1A) Var[58] = 574;
+[0024] (1A) Var[59] = 595;
+[0028] (A4) loadRoomWithEgo(Var[58],169,255,255);
+[002D] (00) stopObjectCode();
+END

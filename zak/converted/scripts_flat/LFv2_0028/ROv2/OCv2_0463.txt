@@ -1,0 +1,18 @@
+Events:
+   1 - 002B
+   2 - 0051
+   D - 0020
+[0020] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 002A;
+[0024] (24) loadRoomWithEgo(449,185,255,255);
+[002A] (00) stopObjectCode();
+[002B] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 0039;
+[002F] (19) doSentence(9,466,0,0);
+[0036] (18) goto 0050;
+[0039] (D8) printEgo("The door is already open.");
+[0050] (00) stopObjectCode();
+[0051] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 005F;
+[0055] (19) doSentence(9,466,0,0);
+[005C] (18) goto 0078;
+[005F] (D8) printEgo("The door is already closed.");
+[0078] (00) stopObjectCode();
+END

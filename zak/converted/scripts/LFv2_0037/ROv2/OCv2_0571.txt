@@ -1,0 +1,87 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0037/ROv2/OCv2_0571
+Events:
+  FD - 0013
+[0013] (9A) Var[14] = VAR_EGO;
+[0016] (5A) Var[14] += 216;
+[001A] (EA) Var[Var[14]] -= Var[235];
+[001D] (C8) if (VAR_ACTIVE_OBJECT1 == Var[58]) {
+[0022] (28)   if (!Var[255]) {
+[0026] (27)     setState04(575);
+[0029] (9A)     Var[14] = VAR_EGO;
+[002C] (5A)     Var[14] += 216;
+[0030] (AA)     Var[Var[14]] += Var[235];
+[0033] (18)   } else {
+[0036] (9A)     Var[56] = Var[59];
+[0039] (9A)     Var[57] = Var[255];
+[003C] (18)     goto 0102;
+[003F] (**)   }
+[003F] (**) }
+[003F] (9A) Var[255] = Var[234];
+[0042] (9A) Var[14] = VAR_EGO;
+[0045] (5A) Var[14] += 216;
+[0049] (28) if (!Var[14]) {
+[004D] (9A)   Var[14] = VAR_EGO;
+[0050] (5A)   Var[14] += 219;
+[0054] (9A)   Var[56] = Var[14];
+[0057] (9A)   Var[14] = VAR_EGO;
+[005A] (5A)   Var[14] += 222;
+[005E] (9A)   Var[57] = Var[14];
+[0061] (18) } else {
+[0064] (16)   Var[57] = getRandomNr(7);
+[0067] (5A)   Var[57] += 168;
+[006B] (C8)   if (Var[57] == VAR_ROOM) {
+[0070] (18)     goto 0064;
+[0073] (**)   }
+[0073] (1A)   Var[14] = 1;
+[0077] (5A)   Var[14] += 222;
+[007B] (1A)   Var[15] = 2;
+[007F] (5A)   Var[15] += 222;
+[0083] (C8)   if (Var[14] == Var[15]) {
+[0088] (48)   } else if (VAR_EGO == 1) {
+[0091] (03)     VAR_RESULT = getActorRoom(2);
+[0094] (C8)     if (VAR_RESULT == Var[57]) {
+[0099] (18)       goto 0064;
+[009C] (**)     }
+[009C] (18)   } else {
+[009F] (03)     VAR_RESULT = getActorRoom(1);
+[00A2] (C8)     if (VAR_RESULT == Var[57]) {
+[00A7] (18)       goto 0064;
+[00AA] (**)     }
+[00AA] (**)   }
+[00AA] (19)   doSentence(253,570,0,1);
+[00B1] (9A)   Var[56] = Var[234];
+[00B4] (16)   Var[44] = getRandomNr(3);
+[00B7] (48)   if (Var[44] == 0) {
+[00BD] (A8)     if (Var[45]) {
+[00C1] (1A)       Var[56] = 572;
+[00C5] (**)     }
+[00C5] (48)   } else if (Var[44] == 1) {
+[00CE] (A8)     if (Var[46]) {
+[00D2] (1A)       Var[56] = 573;
+[00D6] (**)     }
+[00D6] (48)   } else if (Var[44] == 2) {
+[00DF] (A8)     if (Var[49]) {
+[00E3] (1A)       Var[56] = 574;
+[00E7] (**)     }
+[00E7] (48)   } else if (Var[44] == 3) {
+[00F0] (A8)     if (Var[50]) {
+[00F4] (1A)       Var[56] = 575;
+[00F8] (**)     }
+[00F8] (18)     /* goto 00FB; */
+[00FB] (**)   }
+[00FB] (28)   if (!Var[56]) {
+[00FF] (18)     goto 00B4;
+[0102] (**)   }
+[0102] (**) }
+[0102] (48) if (Var[57] == 142) {
+[0108] (5B)   setBitVar(1572,0,Var[235]);
+[010D] (**) }
+[010D] (38) if (Var[57] >= 147) {
+[0113] (04)   if (Var[57] <= 149) {
+[0119] (E4)     loadRoomWithEgo(Var[56],Var[57],34,60);
+[011E] (18)     goto 0126;
+[0121] (**)   }
+[0121] (**) }
+[0121] (E4) loadRoomWithEgo(Var[56],Var[57],255,255);
+[0126] (00) stopObjectCode();
+END

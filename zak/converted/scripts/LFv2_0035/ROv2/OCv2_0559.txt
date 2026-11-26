@@ -1,0 +1,27 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0035/ROv2/OCv2_0559
+Events:
+  FD - 0013
+[0013] (4F) if (getState08(556)) {
+[0018] (3C)   stopSound(56);
+[001A] (1C)   startSound(55);
+[001C] (F8)   if (Var[161] < Var[50]) {
+[0021] (2E)     delay(240);
+[0025] (45)     drawObject(561,Var[161],5);
+[002A] (46)     Var[161]++;
+[002C] (45)     drawObject(559,Var[161],5);
+[0031] (C8)     unless (Var[161] == Var[50]) goto 0021;
+[0036] (**)   }
+[0036] (18) } else {
+[0039] (1C)   startSound(56);
+[003B] (2E)   delay(60);
+[003F] (3C)   stopSound(55);
+[0041] (C4)   if (Var[161] > Var[49]) {
+[0046] (2E)     delay(60);
+[004A] (45)     drawObject(561,Var[161],5);
+[004F] (3A)     Var[161] -= 1;
+[0053] (45)     drawObject(559,Var[161],5);
+[0058] (C8)     unless (Var[161] == Var[49]) goto 0046;
+[005D] (**)   }
+[005D] (**) }
+[005D] (00) stopObjectCode();
+END

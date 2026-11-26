@@ -1,0 +1,69 @@
+Events:
+   9 - 0028
+   A - 0028
+   B - 00AC
+   E - 0028
+[0028] (48) unless (Var[153] == 2) goto 004A;
+[002E] (D8) printEgo("I'd rather start it on fire.");
+[0047] (18) goto 00AB;
+[004A] (C8) unless (Var[153] == Var[235]) goto 006B;
+[004F] (D8) printEgo("I'll leave it for kindling.");
+[0068] (18) goto 00AB;
+[006B] (48) unless (Var[153] == 3) goto 008A;
+[0071] (D8) printEgo("I just need to burn them.");
+[0087] (18) goto 00AB;
+[008A] (48) unless (Var[153] == 4) goto 00A9;
+[0090] (D8) printEgo("No way! I'd burn myself!");
+[00A6] (18) goto 00AB;
+[00A9] (42) startScript(3);
+[00AB] (00) stopObjectCode();
+[00AC] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,1)) goto 00E1;
+[00B1] (A9) setOwnerOf(VAR_ACTIVE_OBJECT2,0);
+[00B4] (08) unless (Var[153] != 4) goto 00D1;
+[00BA] (07) setState08(288);
+[00BD] (17) clearState02(288);
+[00C0] (68) VAR_RESULT = isScriptRunning(35);
+[00C3] (A8) unless (VAR_RESULT) goto 00CE;
+[00C7] (19) doSentence(253,280,0,1);
+[00CE] (18) goto 00DE;
+[00D1] (D8) printEgo("It burned up.");
+[00DE] (18) goto 01C0;
+[00E1] (48) unless (VAR_ACTIVE_OBJECT2 == 53) goto 00EA;
+[00E7] (18) goto 00F0;
+[00EA] (48) unless (VAR_ACTIVE_OBJECT2 == 54) goto 016B;
+[00F0] (48) unless (Var[153] == 3) goto 00FC;
+[00F6] (18) goto 011A;
+[00F9] (18) goto 0115;
+[00FC] (08) unless (Var[153] != 2) goto 0115;
+[0102] (D8) printEgo("Now I need some wood!");
+[0115] (C8) unless (Var[153] == Var[235]) goto 013F;
+[011A] (D8) printEgo("I'll put it behind the first nest.");
+[0138] (5A) Var[47] += 20;
+[013C] (27) setState04(290);
+[013F] (A9) setOwnerOf(VAR_ACTIVE_OBJECT2,0);
+[0142] (48) unless (Var[153] == 4) goto 014B;
+[0148] (18) goto 00D1;
+[014B] (48) unless (Var[153] == 2) goto 0154;
+[0151] (18) goto 017A;
+[0154] (48) unless (Var[153] == 3) goto 0160;
+[015A] (18) goto 017A;
+[015D] (18) goto 016B;
+[0160] (9A) Var[153] = Var[235];
+[0163] (05) drawObject(274,255,255);
+[0168] (18) goto 01C0;
+[016B] (48) unless (VAR_ACTIVE_OBJECT2 == 52) goto 0192;
+[0171] (29) setOwnerOf(52,0);
+[0175] (C8) unless (Var[153] == Var[235]) goto 0186;
+[017A] (1A) Var[153] = 3;
+[017E] (05) drawObject(276,255,255);
+[0183] (18) goto 018F;
+[0186] (1A) Var[153] = 2;
+[018A] (05) drawObject(275,255,255);
+[018F] (18) goto 01C0;
+[0192] (48) unless (VAR_ACTIVE_OBJECT2 == 49) goto 01A2;
+[0198] (19) doSentence(253,288,0,1);
+[019F] (18) goto 01C0;
+[01A2] (D8) printEgo("I don't want to put that in the pit.");
+[01C0] (19) doSentence(253,291,0,1);
+[01C7] (00) stopObjectCode();
+END

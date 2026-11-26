@@ -1,0 +1,12 @@
+Events:
+  FD - 0013
+[0013] (4D) walkActorToActor(10,VAR_EGO,2);
+[0017] (80) breakHere();
+[0018] (80) breakHere();
+[0019] (80) breakHere();
+[001A] (B4) VAR_RESULT = getDist(VAR_EGO,10);
+[001F] (78) unless (VAR_RESULT < 3) goto 0013;
+[0025] (14) print(10,"Can y'spare a debit?");
+[0039] (1A) Var[54] = 80;
+[003D] (00) stopObjectCode();
+END

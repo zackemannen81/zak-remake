@@ -1,0 +1,22 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0042/ROv2/OCv2_0619
+Events:
+   D - 0019
+[0019] (48) if (VAR_EGO == 6) {
+[001F] (D8)   printEgo("The jungle's too dense for me to fly\x01through.");
+[0047] (18) } else {
+[004A] (1A)   Var[58] = 573;
+[004E] (1A)   Var[59] = 619;
+[0052] (9A)   Var[255] = VAR_ROOM;
+[0055] (9A)   Var[14] = VAR_EGO;
+[0058] (5A)   Var[14] += 219;
+[005C] (0A)   Var[Var[14]] = 218;
+[0060] (9A)   Var[14] = VAR_EGO;
+[0063] (5A)   Var[14] += 222;
+[0067] (0A)   Var[Var[14]] = 149;
+[006B] (9A)   Var[14] = VAR_EGO;
+[006E] (5A)   Var[14] += 216;
+[0072] (0A)   Var[Var[14]] = 3;
+[0076] (A4)   loadRoomWithEgo(Var[58],172,255,255);
+[007B] (**) }
+[007B] (00) stopObjectCode();
+END

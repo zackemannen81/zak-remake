@@ -1,0 +1,49 @@
+# Decompiled with descumm -2
+# Source: LFv2_0011\SCv2_0038
+
+[0000] (40) cutscene();
+[0001] (58) beginOverride();
+[0002] (18) goto 0070;
+[0005] (68) VAR_RESULT = isScriptRunning(116);
+[0008] (A8) if (VAR_RESULT) {
+[000C] (42)   startScript(116);
+[000E] (**) }
+[000E] (4F) if (getState08(246)) {
+[0013] (19)   doSentence(2,247,0,0);
+[001A] (4C)   waitForSentence();
+[001B] (36)   walkActorToObject(1,243);
+[001F] (3B)   waitForActor(1);
+[0021] (**) }
+[0021] (11) animateActor(1,246);
+[0024] (2E) delay(60);
+[0028] (14) print(1,"Excuse me!");
+[0034] (AE) waitForMessage();
+[0035] (12) panCameraTo(33);
+[0037] (80) breakHere();
+[0038] (48) unless (VAR_CAMERA_POS_X == 33) goto 0037;
+[003E] (2E) delay(180);
+[0042] (11) animateActor(1,248);
+[0045] (1C) startSound(22);
+[0047] (80) breakHere();
+[0048] (7C) VAR_RESULT = isSoundRunning(22);
+[004B] (28) unless (!VAR_RESULT) goto 0047;
+[004F] (4F) if (getState08(242)) {
+[0054] (1C)   startSound(17);
+[0056] (**) }
+[0056] (12) panCameraTo(20);
+[0058] (80) breakHere();
+[0059] (48) unless (VAR_CAMERA_POS_X == 20) goto 0058;
+[005F] (11) animateActor(1,246);
+[0062] (3B) waitForActor(1);
+[0064] (14) print(1,"Thank you.");
+[0070] (D2) actorFollowCamera(VAR_EGO);
+[0072] (A8) if (VAR_OVERRIDE) {
+[0076] (3C)   stopSound(22);
+[0078] (11)   animateActor(1,250);
+[007B] (4F)   if (getState08(242)) {
+[0080] (1C)     startSound(17);
+[0082] (**)   }
+[0082] (**) }
+[0082] (C0) endCutscene();
+[0083] (A0) stopObjectCode();
+END

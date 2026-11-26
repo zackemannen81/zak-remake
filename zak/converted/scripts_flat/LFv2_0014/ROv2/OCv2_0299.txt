@@ -1,0 +1,17 @@
+Events:
+   1 - 001B
+   2 - 0031
+  FD - 0046
+[001B] (2F) unless (!getState04(293)) goto 002D;
+[0020] (1C) startSound(10);
+[0022] (17) clearState02(300);
+[0025] (07) setState08(300);
+[0028] (E7) clearState04(VAR_ACTIVE_OBJECT1);
+[002A] (18) goto 0030;
+[002D] (18) goto 0046;
+[0030] (00) stopObjectCode();
+[0031] (D8) printEgo("It's already closed.");
+[0045] (00) stopObjectCode();
+[0046] (D8) printEgo("It seems to be locked.");
+[005A] (00) stopObjectCode();
+END

@@ -1,0 +1,14 @@
+Events:
+  11 - 0023
+  FD - 002E
+[0023] (1A) Var[47] = 75;
+[0027] (1A) Var[46] = 21;
+[002B] (42) startScript(24);
+[002D] (00) stopObjectCode();
+[002E] (2E) delay(30);
+[0032] (11) animateActor(10,245);
+[0035] (14) print(10,"Hello.");
+[003E] (AE) waitForMessage();
+[003F] (11) animateActor(10,246);
+[0042] (00) stopObjectCode();
+END

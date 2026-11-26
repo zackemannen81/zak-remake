@@ -1,0 +1,28 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/OCv2_0350
+Events:
+   1 - 001B
+   2 - 0021
+   D - 0027
+[001B] (42) startScript(10);
+[001D] (07) setState08(363);
+[0020] (00) stopObjectCode();
+[0021] (42) startScript(11);
+[0023] (47) clearState08(363);
+[0026] (00) stopObjectCode();
+[0027] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[002B] (48)   if (VAR_EGO == 1) {
+[0031] (31)     VAR_RESULT = getBitVar(1541,0);
+[0036] (A8)     if (VAR_RESULT) {
+[003A] (03)       VAR_RESULT = getActorRoom(8);
+[003D] (48)       if (VAR_RESULT == 18) {
+[0043] (68)         VAR_RESULT = isScriptRunning(112);
+[0046] (28)         if (!VAR_RESULT) {
+[004A] (42)           startScript(112);
+[004C] (**)         }
+[004C] (**)       }
+[004C] (**)     }
+[004C] (**)   }
+[004C] (24)   loadRoomWithEgo(363,18,255,255);
+[0052] (**) }
+[0052] (00) stopObjectCode();
+END

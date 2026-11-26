@@ -1,0 +1,12 @@
+Events:
+   B - 002B
+   E - 0023
+[0023] (19) doSentence(253,165,0,1);
+[002A] (00) stopObjectCode();
+[002B] (48) unless (VAR_ACTIVE_OBJECT2 == 38) goto 003F;
+[0031] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 003F;
+[0035] (19) doSentence(253,167,0,1);
+[003C] (18) goto 0044;
+[003F] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0044] (00) stopObjectCode();
+END

@@ -1,0 +1,11 @@
+[0000] (3C) stopSound(17);
+[0002] (0C) unlockSound(39)
+[0005] (26) setVarRange(Var[42],2,[1,4]);
+[000A] (57) setState02(630);
+[000D] (1A) Var[66] = 0;
+[0011] (B0) setBoxFlags(Var[66],0);
+[0014] (46) Var[66]++;
+[0016] (44) unless (Var[66] > 5) goto 0011;
+[001C] (9A) Var[203] = Var[234];
+[001F] (00) stopObjectCode();
+END

@@ -1,0 +1,27 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0012/ROv2/OCv2_0269
+Events:
+  FD - 0013
+[0013] (05) drawObject(268,255,255);
+[0018] (80) breakHere();
+[0019] (66) Var[45] = getClosestObjActor(268);
+[001D] (C3) VAR_RESULT = getActorX(Var[45]);
+[0020] (44) unless (VAR_RESULT > 23) goto 0018;
+[0026] (16) Var[46] = getRandomNr(2);
+[0029] (5A) Var[46] += 268;
+[002D] (48) if (Var[46] == 269) {
+[0033] (1C)   startSound(93);
+[0035] (31)   VAR_RESULT = getBitVar(1554,0);
+[003A] (28)   if (!VAR_RESULT) {
+[003E] (48)     if (VAR_EGO == 1) {
+[0044] (19)       doSentence(253,270,0,1);
+[004B] (**)     }
+[004B] (**)   }
+[004B] (**) }
+[004B] (85) drawObject(Var[46],255,255);
+[004F] (80) breakHere();
+[0050] (66) Var[45] = getClosestObjActor(268);
+[0054] (C3) VAR_RESULT = getActorX(Var[45]);
+[0057] (78) unless (VAR_RESULT < 23) goto 0026;
+[005D] (18) goto 0013;
+[0060] (00) stopObjectCode();
+END

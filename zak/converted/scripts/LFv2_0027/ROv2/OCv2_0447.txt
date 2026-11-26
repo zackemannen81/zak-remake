@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0027/ROv2/OCv2_0447
+Events:
+   B - 0019
+   C - 0020
+[0019] (39) doSentence(11,448,VAR_ACTIVE_OBJECT2,0);
+[001F] (00) stopObjectCode();
+[0020] (D8) printEgo("Face Area Rapid Transit:\x01One token each way: $100");
+[004C] (00) stopObjectCode();
+END

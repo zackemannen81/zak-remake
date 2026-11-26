@@ -1,0 +1,5 @@
+Events:
+   D - 0021
+[0021] (42) startScript(115);
+[0023] (00) stopObjectCode();
+END

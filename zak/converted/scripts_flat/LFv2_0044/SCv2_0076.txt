@@ -1,0 +1,23 @@
+[0000] (19) doSentence(254,653,0,1);
+[0007] (40) cutscene();
+[0008] (5B) setBitVar(1559,3,Var[235]);
+[000D] (17) clearState02(642);
+[0010] (14) print(10,"I'd be HAPPY to join you in a drink.");
+[002F] (58) beginOverride();
+[0030] (18) goto 0050;
+[0033] (AE) waitForMessage();
+[0034] (72) loadRoom(0);
+[0036] (EE) dummy(EE);
+[0037] (2E) delay(60);
+[003B] (14) print(255,"Half a bottle later^");
+[004F] (AE) waitForMessage();
+[0050] (29) setOwnerOf(46,0);
+[0054] (C0) endCutscene();
+[0055] (43) VAR_RESULT = getActorX(10);
+[0058] (A8) unless (VAR_RESULT) goto 0063;
+[005C] (19) doSentence(253,656,0,1);
+[0063] (2E) delay(60);
+[0067] (11) animateActor(2,246);
+[006A] (14) print(2,"That was MOST unpleasant.");
+[0083] (A0) stopObjectCode();
+END

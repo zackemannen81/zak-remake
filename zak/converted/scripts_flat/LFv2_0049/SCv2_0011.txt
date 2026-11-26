@@ -1,0 +1,5 @@
+[0000] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0008;
+[0004] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0006] (1C) startSound(11);
+[0008] (A0) stopObjectCode();
+END

@@ -1,0 +1,26 @@
+Events:
+  FD - 0013
+[0013] (16) Var[66] = getRandomNr(255);
+[0016] (2B) delayVariable(Var[66]);
+[0018] (A8) unless (Var[58]) goto 0026;
+[001C] (08) unless (Var[242] != 208) goto 0026;
+[0022] (80) breakHere();
+[0023] (18) goto 0018;
+[0026] (1A) Var[57] = 6;
+[002A] (1A) Var[241] = 201;
+[002E] (48) unless (Var[241] == 201) goto 0044;
+[0034] (9A) Var[66] = Var[57];
+[0037] (C6) Var[66]--;
+[0039] (38) unless (Var[66] >= 6) goto 0044;
+[003F] (45) drawObject(215,Var[66],1);
+[0044] (C5) drawObject(Var[241],Var[57],1);
+[0048] (80) breakHere();
+[0049] (46) Var[241]++;
+[004B] (44) unless (Var[241] > 204) goto 002E;
+[0051] (46) Var[57]++;
+[0053] (44) unless (Var[57] > 33) goto 002A;
+[0059] (08) unless (Var[58] != 33) goto 0064;
+[005F] (05) drawObject(215,33,1);
+[0064] (18) goto 0013;
+[0067] (00) stopObjectCode();
+END

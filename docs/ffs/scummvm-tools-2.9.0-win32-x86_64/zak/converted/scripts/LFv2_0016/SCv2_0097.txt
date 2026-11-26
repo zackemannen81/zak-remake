@@ -1,0 +1,59 @@
+# Decompiled with descumm -2
+# Source: LFv2_0016\SCv2_0097
+
+[0000] (9A) Var[239] = VAR_ROOM;
+[0003] (9A) Var[102] = VAR_CAMERA_POS_X;
+[0006] (48) if (VAR_ROOM_RESOURCE == 22) {
+[000C] (18) } else {
+[000F] (48)   unless (Var[239] == 20) goto 0019;
+[0015] (**) }
+[0015] (1A) Var[239] = 135;
+[0019] (48) if (Var[239] == 39) {
+[001F] (1A)   Var[239] = 156;
+[0023] (**) }
+[0023] (48) if (VAR_ROOM_RESOURCE == 40) {
+[0029] (1A)   Var[239] = 143;
+[002D] (**) }
+[002D] (08) if (Var[239] != 32) {
+[0033] (08)   if (Var[239] != 30) {
+[0039] (08)     if (Var[239] != 151) {
+[003F] (18)       goto 0044;
+[0042] (**)     }
+[0042] (**)   }
+[0042] (**) }
+[0042] (62) stopScript(0);
+[0044] (38) if (Var[239] >= 180) {
+[004A] (04)   if (Var[239] <= 205) {
+[0050] (62)     stopScript(0);
+[0052] (**)   }
+[0052] (**) }
+[0052] (2E) delay(1800);
+[0056] (6F) if (getState04(55)) {
+[005B] (2E)   delay(2700);
+[005F] (**) }
+[005F] (2F) if (!getState04(344)) {
+[0064] (18)   goto 0052;
+[0067] (**) }
+[0067] (48) if (Var[239] == 17) {
+[006D] (03)   VAR_RESULT = getActorRoom(8);
+[0070] (48)   if (VAR_RESULT == 17) {
+[0076] (18)     goto 0052;
+[0079] (**)   }
+[0079] (**) }
+[0079] (68) VAR_RESULT = isScriptRunning(82);
+[007C] (A8) if (VAR_RESULT) {
+[0080] (18)   goto 0052;
+[0083] (**) }
+[0083] (62) stopScript(112);
+[0085] (68) VAR_RESULT = isScriptRunning(49);
+[0088] (A8) if (VAR_RESULT) {
+[008C] (48)   if (VAR_EGO == 1) {
+[0092] (28)     if (!Var[247]) {
+[0096] (80)       breakHere();
+[0097] (18)       goto 0067;
+[009A] (**)     }
+[009A] (**)   }
+[009A] (**) }
+[009A] (4A) chainScript(98);
+[009C] (A0) stopObjectCode();
+END

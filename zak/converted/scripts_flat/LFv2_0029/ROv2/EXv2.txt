@@ -1,0 +1,3 @@
+[0000] (42) startScript(19);
+[0002] (00) stopObjectCode();
+END

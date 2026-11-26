@@ -1,0 +1,10 @@
+Events:
+  FD - 0013
+[0013] (1C) startSound(80);
+[0015] (16) Var[46] = getRandomNr(3);
+[0018] (5A) Var[46] += 277;
+[001C] (85) drawObject(Var[46],255,255);
+[0020] (80) breakHere();
+[0021] (18) goto 0015;
+[0024] (00) stopObjectCode();
+END

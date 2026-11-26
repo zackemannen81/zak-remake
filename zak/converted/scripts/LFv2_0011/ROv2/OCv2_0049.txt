@@ -1,0 +1,40 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0049
+Events:
+   4 - 0054
+   5 - 009A
+   B - 0027
+   E - 0024
+[0024] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0026] (00) stopObjectCode();
+[0027] (08) if (VAR_ROOM != 31) {
+[002D] (A8)   if (Var[154]) {
+[0031] (18)     goto 0061;
+[0034] (**)   }
+[0034] (9D)   if (classOfIs(VAR_ACTIVE_OBJECT2,1)) {
+[0039] (42)     startScript(138);
+[003B] (18)   } else {
+[003E] (79)     doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0043] (**)   }
+[0043] (18) } else {
+[0046] (D8)   printEgo("It's too wet!");
+[0053] (**) }
+[0053] (00) stopObjectCode();
+[0054] (48) if (VAR_ROOM == 31) {
+[005A] (18)   goto 0046;
+[005D] (**) }
+[005D] (A8) if (Var[154]) {
+[0061] (D8)   printEgo("There's no air!");
+[0070] (78) } else if (Var[222] < 30) {
+[0079] (A7)   setState04(VAR_ACTIVE_OBJECT1);
+[007B] (D4)   setObjectName(VAR_ACTIVE_OBJECT1,"lit lighter");
+[0089] (18) } else {
+[008C] (D8)   printEgo("It's too hot!");
+[0099] (**) }
+[0099] (00) stopObjectCode();
+[009A] (67) clearState04(49);
+[009D] (54) setObjectName(49,"lighter");
+[00A8] (48) if (VAR_CURRENT_LIGHTS == 12) {
+[00AE] (F0)   lights(Var[234],0,0);
+[00B2] (**) }
+[00B2] (00) stopObjectCode();
+END

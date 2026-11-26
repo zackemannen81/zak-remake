@@ -1,0 +1,54 @@
+# Decompiled with descumm -2
+# Source: LFv2_0049\SCv2_0111
+
+[0000] (80) breakHere();
+[0001] (A8) unless (Var[60]) goto 0000;
+[0005] (9A) Var[60] = Var[234];
+[0008] (80) breakHere();
+[0009] (60) cursorCommand(132, 0);
+[000C] (7A) VerbOps(New-1(9,19,1,0,"Created and designed by"));
+[002A] (7A) VerbOps(New-2(9,20,2,0,"David Fox, Matthew Kane,"));
+[0049] (7A) VerbOps(New-3(5,21,3,0,"David Spangler, and Ron Gilbert"));
+[006F] (60) cursorCommand(0, 0);
+[0072] (80) breakHere();
+[0073] (A8) unless (Var[60]) goto 0072;
+[0077] (9A) Var[60] = Var[234];
+[007A] (7A) VerbOps(Delete(3));
+[007D] (7A) VerbOps(New-1(7,19,1,0,"Scripted and programmed by"));
+[009E] (7A) VerbOps(New-2(7,20,2,0,"David Fox and Matthew Kane"));
+[00BF] (60) cursorCommand(0, 0);
+[00C2] (80) breakHere();
+[00C3] (A8) unless (Var[60]) goto 00C2;
+[00C7] (9A) Var[60] = Var[234];
+[00CA] (7A) VerbOps(New-1(10,19,1,0,"Art and Animation by"));
+[00E5] (7A) VerbOps(New-2(4,20,2,0,"Mark J. Ferrari, Basilio Amaro,"));
+[010B] (7A) VerbOps(New-3(4,21,3,0,"Martin Cameron, and Gary Winnick"));
+[0132] (60) cursorCommand(0, 0);
+[0135] (80) breakHere();
+[0136] (A8) unless (Var[60]) goto 0135;
+[013A] (9A) Var[60] = Var[234];
+[013D] (7A) VerbOps(New-1(7,19,1,0,"Music and Sound Effects by"));
+[015E] (7A) VerbOps(New-2(0,20,2,0,"Matthew Kane, Dave Hayes, & Dave Warhol"));
+[018C] (7A) VerbOps(Delete(3));
+[018F] (60) cursorCommand(0, 0);
+[0192] (80) breakHere();
+[0193] (A8) unless (Var[60]) goto 0192;
+[0197] (9A) Var[60] = Var[234];
+[019A] (80) breakHere();
+[019B] (7A) VerbOps(Delete(1));
+[019E] (7A) VerbOps(New-2(5,20,2,0,"IBM Version by Aric Wilmunder"));
+[01C2] (60) cursorCommand(0, 0);
+[01C5] (80) breakHere();
+[01C6] (A8) unless (Var[60]) goto 01C5;
+[01CA] (9A) Var[60] = Var[234];
+[01CD] (7A) VerbOps(Delete(1));
+[01D0] (7A) VerbOps(New-2(5,20,2,0,"Project Directed by David Fox"));
+[01F4] (60) cursorCommand(0, 0);
+[01F7] (80) breakHere();
+[01F8] (A8) unless (Var[60]) goto 01F7;
+[01FC] (9A) Var[60] = Var[234];
+[01FF] (7A) VerbOps(Delete(2));
+[0202] (60) cursorCommand(0, 0);
+[0205] (60) cursorCommand(4, 0);
+[0208] (A0) stopObjectCode();
+END

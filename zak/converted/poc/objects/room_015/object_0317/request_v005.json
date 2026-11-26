@@ -1,0 +1,12 @@
+{
+  "room": 15,
+  "object_id": 317,
+  "prompt": "Recreate ONLY THIS EXACT tightly cropped retro game image as an exquisite polished AAA Unreal Engine 5 render. Preserve visible shapes, placement, silhouette, camera angle, palette, background and animation phase. This reference IS the ENTIRE output composition: do not zoom out or add surrounding scene. Aspect 24:8, preserve full composition and proportions. ONE single long horizontal yellow capsule-shaped BUTTON against blue. Not three buttons or entire panel. Historical label 'button' is uncertain context and may name a REMOVED item; never add a named object absent from reference. Beautiful realistic materials and subtle lighting. Do not interpret pixels as new text, buttons or ornaments. Preserve actual symbols literally. Black remains opaque. Extreme aspect: center entire patch in black letterbox/pillarbox without stretching.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_015\\object_0317\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_015\\object_0317\\state_v005.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_015\\object_0317\\request_v005.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-29a7182d-0bab-4785-b461-df3c95c65f2f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

@@ -1,0 +1,10 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0011/ROv2/OCv2_0243
+Events:
+   B - 0019
+[0019] (48) if (VAR_EGO == 1) {
+[001F] (42)   startScript(38);
+[0021] (18) } else {
+[0024] (D8)   printEgo("I don't have to!");
+[0033] (**) }
+[0033] (00) stopObjectCode();
+END

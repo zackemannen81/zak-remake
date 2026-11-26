@@ -1,0 +1,66 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0092
+
+[0000] (2E) delay(600);
+[0004] (80) breakHere();
+[0005] (03) VAR_RESULT = getActorRoom(7);
+[0008] (48) unless (VAR_RESULT == 4) goto 0004;
+[000E] (40) cutscene();
+[000F] (1A) VAR_EGO = 7;
+[0013] (52) actorFollowCamera(7);
+[0015] (2E) delay(60);
+[0019] (11) animateActor(7,246);
+[001C] (9A) Var[119] = Var[234];
+[001F] (D8) printEgo("Hmm. The prisoner's probably lost h\x02");
+[0040] (44) if (Var[236] > 13) {
+[0046] (1A)   Var[118] = 1;
+[004A] (44)   if (Var[237] > 13) {
+[0050] (1A)     Var[119] = 2;
+[0054] (**)   }
+[0054] (D8)   printEgo("is\x01\x02");
+[005A] (18) } else {
+[005D] (1A)   Var[118] = 2;
+[0061] (D8)   printEgo("er\x01\x02");
+[0067] (**) }
+[0067] (D8) printEgo("mind by now.");
+[0073] (AE) waitForMessage();
+[0074] (19) doSentence(253,156,0,1);
+[007B] (80) breakHere();
+[007C] (A8) unless (Var[48]) goto 007B;
+[0080] (2D) putActorInRoom(7,16);
+[0083] (01) putActor(7,55,60);
+[0087] (72) loadRoom(16);
+[0089] (32) setCameraAt(80);
+[008B] (4F) if (getState08(331)) {
+[0090] (19)   doSentence(5,331,0,0);
+[0097] (4C)   waitForSentence();
+[0098] (**) }
+[0098] (1E) walkActorTo(7,84,53);
+[009C] (3B) waitForActor(7);
+[009E] (D8) printEgo("You are free to go now. Don't come back!");
+[00C0] (36) walkActorToObject(7,329);
+[00C4] (2E) delay(60);
+[00C8] (B6) walkActorToObject(Var[118],329);
+[00CC] (A8) if (Var[119]) {
+[00D0] (2E)   delay(60);
+[00D4] (B6)   walkActorToObject(Var[119],329);
+[00D8] (**) }
+[00D8] (80) breakHere();
+[00D9] (C3) VAR_RESULT = getActorX(Var[118]);
+[00DC] (78) unless (VAR_RESULT < 55) goto 00D8;
+[00E2] (AD) putActorInRoom(Var[118],3);
+[00E5] (81) putActor(Var[118],59,56);
+[00E9] (2D) putActorInRoom(7,4);
+[00EC] (01) putActor(7,22,52);
+[00F0] (91) animateActor(Var[118],250);
+[00F3] (A8) if (Var[119]) {
+[00F7] (AD)   putActorInRoom(Var[119],3);
+[00FA] (81)   putActor(Var[119],63,56);
+[00FE] (91)   animateActor(Var[119],250);
+[0101] (**) }
+[0101] (9A) VAR_EGO = Var[118];
+[0104] (42) startScript(19);
+[0106] (D2) actorFollowCamera(VAR_EGO);
+[0108] (C0) endCutscene();
+[0109] (A0) stopObjectCode();
+END

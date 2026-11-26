@@ -1,0 +1,6 @@
+[0000] (07) setState08(359);
+[0003] (19) doSentence(250,361,0,1);
+[000A] (2E) delay(18000);
+[000E] (4A) chainScript(118);
+[0010] (A0) stopObjectCode();
+END

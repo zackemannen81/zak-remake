@@ -1,0 +1,12 @@
+Events:
+  FD - 0013
+[0013] (9A) Var[203] = Var[235];
+[0016] (80) breakHere();
+[0017] (48) unless (VAR_ACTIVE_VERB == 3) goto 002A;
+[001D] (BB) waitForActor(VAR_EGO);
+[001F] (48) unless (VAR_ACTIVE_OBJECT2 == 10) goto 002A;
+[0025] (42) startScript(43);
+[0027] (9A) VAR_ACTIVE_OBJECT2 = Var[234];
+[002A] (18) goto 0016;
+[002D] (00) stopObjectCode();
+END

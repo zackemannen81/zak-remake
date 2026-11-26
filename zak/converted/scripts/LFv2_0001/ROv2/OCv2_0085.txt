@@ -1,0 +1,19 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0085
+Events:
+   B - 0018
+  FD - 0036
+[0018] (48) if (VAR_EGO == 1) {
+[001E] (87)   setState08(VAR_ACTIVE_OBJECT1);
+[0020] (19)   doSentence(250,85,0,1);
+[0027] (18) } else {
+[002A] (D8)   printEgo("I'll pass.");
+[0035] (**) }
+[0035] (00) stopObjectCode();
+[0036] (3D) setActorElevation(1,210);
+[0039] (80) breakHere();
+[003A] (34) VAR_RESULT = getDist(1,85);
+[0040] (A8) unless (VAR_RESULT) goto 0039;
+[0044] (47) clearState08(85);
+[0047] (3D) setActorElevation(1,0);
+[004A] (00) stopObjectCode();
+END

@@ -1,0 +1,12 @@
+Events:
+   B - 003D
+   C - 0027
+  11 - 0020
+[0020] (1A) Var[47] = 75;
+[0024] (42) startScript(24);
+[0026] (00) stopObjectCode();
+[0027] (D8) printEgo("Golden Boar Sand Wedge");
+[003C] (00) stopObjectCode();
+[003D] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0042] (00) stopObjectCode();
+END

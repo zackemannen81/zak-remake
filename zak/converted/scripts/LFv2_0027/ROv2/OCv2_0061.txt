@@ -1,0 +1,18 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0027/ROv2/OCv2_0061
+Events:
+   3 - 001D
+   B - 003F
+   C - 003C
+[001D] (44) if (VAR_ACTIVE_OBJECT2 > 2) {
+[0023] (04)   if (VAR_ACTIVE_OBJECT2 <= 4) {
+[0029] (42)     startScript(145);
+[002B] (18)     goto 003B;
+[002E] (**)   }
+[002E] (**) }
+[002E] (D8) printEgo("I'll keep it.");
+[003B] (00) stopObjectCode();
+[003C] (42) startScript(145);
+[003E] (00) stopObjectCode();
+[003F] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0044] (00) stopObjectCode();
+END

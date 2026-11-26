@@ -1,0 +1,46 @@
+Events:
+   4 - 0024
+   5 - 005D
+   B - 0074
+[0024] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 005C;
+[0028] (1C) startSound(27);
+[002A] (AF) unless (!getState04(VAR_ACTIVE_OBJECT1)) goto 0046;
+[002E] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0030] (19) doSentence(253,104,0,1);
+[0037] (C8) unless (Var[138] == Var[235]) goto 0043;
+[003C] (19) doSentence(250,105,0,1);
+[0043] (18) goto 005C;
+[0046] (2E) delay(60);
+[004A] (91) animateActor(VAR_EGO,246);
+[004D] (BB) waitForActor(VAR_EGO);
+[004F] (D8) printEgo("It's broken.");
+[005C] (00) stopObjectCode();
+[005D] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0073;
+[0061] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0063] (19) doSentence(254,105,0,1);
+[006A] (1C) startSound(27);
+[006C] (19) doSentence(253,104,0,1);
+[0073] (00) stopObjectCode();
+[0074] (48) unless (VAR_ACTIVE_OBJECT2 == 14) goto 00FA;
+[007A] (C8) unless (Var[138] == Var[234]) goto 00B1;
+[007F] (9A) Var[138] = Var[235];
+[0082] (1C) startSound(36);
+[0084] (D8) printEgo("Hope you're happy in there, Sushi.");
+[00A3] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 00AE;
+[00A7] (19) doSentence(250,105,0,1);
+[00AE] (18) goto 00F0;
+[00B1] (C8) unless (Var[138] == Var[235]) goto 00EE;
+[00B6] (19) doSentence(254,105,0,1);
+[00BD] (19) doSentence(7,14,0,1);
+[00C4] (1C) startSound(36);
+[00C6] (9A) Var[138] = Var[234];
+[00C9] (D8) printEgo("Isn't it nice to be home, Sushi?");
+[00E5] (47) clearState08(104);
+[00E8] (47) clearState08(105);
+[00EB] (18) goto 00F0;
+[00EE] (42) startScript(3);
+[00F0] (19) doSentence(253,109,0,1);
+[00F7] (18) goto 00FC;
+[00FA] (42) startScript(3);
+[00FC] (00) stopObjectCode();
+END

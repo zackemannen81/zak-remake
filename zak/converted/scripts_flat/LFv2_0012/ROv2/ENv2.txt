@@ -1,0 +1,13 @@
+[0000] (70) lights(11,0,0);
+[0004] (D3) ActorOps(VAR_EGO,[Sound(Var[234])]);
+[0008] (C8) unless (Var[147] == Var[234]) goto 0014;
+[000D] (19) doSentence(250,269,0,1);
+[0014] (0F) unless (!getState08(52)) goto 001F;
+[0019] (30) setBoxFlags(4,64);
+[001C] (18) goto 0022;
+[001F] (30) setBoxFlags(4,0);
+[0022] (54) setObjectName(267,"loose dirt");
+[0030] (4F) unless (getState08(267)) goto 0046;
+[0035] (54) setObjectName(267,"cave entrance");
+[0046] (00) stopObjectCode();
+END

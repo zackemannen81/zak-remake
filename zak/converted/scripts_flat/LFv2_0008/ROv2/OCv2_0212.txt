@@ -1,0 +1,20 @@
+Events:
+  FD - 0013
+[0013] (46) Var[59]++;
+[0015] (7C) VAR_RESULT = isSoundRunning(96);
+[0018] (28) unless (!VAR_RESULT) goto 001E;
+[001C] (1C) startSound(96);
+[001E] (9A) Var[53] = Var[234];
+[0021] (9A) Var[14] = Var[53];
+[0024] (5A) Var[14] += 49;
+[0028] (51) animateActor(10,Var[14]);
+[002B] (80) breakHere();
+[002C] (9A) Var[14] = Var[53];
+[002F] (5A) Var[14] += 49;
+[0033] (51) animateActor(10,Var[14]);
+[0036] (80) breakHere();
+[0037] (46) Var[53]++;
+[0039] (44) unless (Var[53] > 3) goto 0021;
+[003F] (18) goto 001E;
+[0042] (00) stopObjectCode();
+END

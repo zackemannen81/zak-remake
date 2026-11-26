@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0032/ROv2/EXv2
+[0000] (47) clearState08(514);
+[0003] (9A) Var[154] = Var[234];
+[0006] (04) if (VAR_EGO <= 4) {
+[000C] (9A)   Var[14] = VAR_EGO;
+[000F] (5A)   Var[14] += 171;
+[0013] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);
+[0017] (93)   ActorOps(VAR_EGO,[Sound(6)]);
+[001B] (**) }
+[001B] (00) stopObjectCode();
+END

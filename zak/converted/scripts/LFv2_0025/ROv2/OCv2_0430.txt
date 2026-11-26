@@ -1,0 +1,8 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0025/ROv2/OCv2_0430
+Events:
+   9 - 0024
+   A - 0024
+   E - 0024
+[0024] (D8) printEgo("It's stuck in the crystalabra.");
+[0040] (00) stopObjectCode();
+END

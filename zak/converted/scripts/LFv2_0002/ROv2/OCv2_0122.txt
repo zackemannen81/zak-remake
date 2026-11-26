@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0002/ROv2/OCv2_0122
+Events:
+   4 - 001B
+   5 - 0021
+[001B] (27) setState04(122);
+[001E] (42) startScript(21);
+[0020] (00) stopObjectCode();
+[0021] (67) clearState04(122);
+[0024] (62) stopScript(21);
+[0026] (3C) stopSound(18);
+[0028] (00) stopObjectCode();
+END

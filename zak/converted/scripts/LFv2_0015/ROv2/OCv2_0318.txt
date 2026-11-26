@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0015/ROv2/OCv2_0318
+Events:
+   9 - 001B
+   B - 001B
+[001B] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[001F] (19)   doSentence(253,316,0,1);
+[0026] (**) }
+[0026] (00) stopObjectCode();
+END

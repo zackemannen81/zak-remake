@@ -1,0 +1,12 @@
+{
+  "room": 38,
+  "object_id": 577,
+  "prompt": "Create ONLY the exact attached original state patch in beautifully polished AAA Unreal Engine 5 visual quality. Sign text EXACTLY 'THE DOC' on first line and 'IS OUT' on second line, black letters on pink. Preserve left wood/green edge. No CODE, arrows or other text. The reference is the complete tight crop. Preserve source boundaries, geometry, relative positions, camera, palette and full image aspect. Realistic physical materials and refined lighting, not voxel/extruded pixel blocks. No surrounding room, invented props, extra symbols or text. Fill entire frame with original background; no new black padding except proportion-preserving letterbox if aspect is extreme.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_038\\object_0577\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_038\\object_0577\\state_v012.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_038\\object_0577\\request_v012.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-2d497ed4-550f-4a6c-86d1-03bd63452ec8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

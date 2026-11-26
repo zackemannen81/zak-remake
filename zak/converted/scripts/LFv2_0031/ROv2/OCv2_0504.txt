@@ -1,0 +1,24 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0031/ROv2/OCv2_0504
+Events:
+   B - 001C
+  FD - 0049
+[001C] (48) if (VAR_ACTIVE_OBJECT2 == 55) {
+[0022] (68)   VAR_RESULT = isScriptRunning(86);
+[0025] (A8)   if (VAR_RESULT) {
+[0029] (D8)     printEgo("I'm too exhausted!");
+[003B] (18)   } else {
+[003E] (79)     doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0043] (**)   }
+[0043] (18) } else {
+[0046] (42)   startScript(3);
+[0048] (**) }
+[0048] (00) stopObjectCode();
+[0049] (27) setState04(504);
+[004C] (80) breakHere();
+[004D] (1F) if (getState02(504)) {
+[0052] (18)   goto 004C;
+[0055] (**) }
+[0055] (62) stopScript(86);
+[0057] (42) startScript(87);
+[0059] (00) stopObjectCode();
+END

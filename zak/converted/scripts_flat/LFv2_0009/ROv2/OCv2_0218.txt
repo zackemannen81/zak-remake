@@ -1,0 +1,12 @@
+Events:
+   D - 001A
+[001A] (48) unless (VAR_ROOM == 147) goto 0023;
+[0020] (18) goto 0029;
+[0023] (48) unless (VAR_ROOM == 149) goto 0034;
+[0029] (1A) Var[58] = 572;
+[002D] (1A) Var[59] = 218;
+[0031] (9A) Var[255] = VAR_ROOM;
+[0034] (67) clearState04(219);
+[0037] (E4) loadRoomWithEgo(Var[47],Var[48],255,255);
+[003C] (00) stopObjectCode();
+END

@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/OCv2_0469
+Events:
+   C - 0017
+[0017] (D8) printEgo("Don't be a space goof -\x01always wear your spacesuit!\x03A reminder from The Friendly Hostel.");
+[0064] (00) stopObjectCode();
+END

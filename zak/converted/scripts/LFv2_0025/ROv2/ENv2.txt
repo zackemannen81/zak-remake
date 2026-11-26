@@ -1,0 +1,28 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0025/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (4F) if (getState08(423)) {
+[0009] (30)   setBoxFlags(1,64);
+[000C] (30)   setBoxFlags(3,1);
+[000F] (18) } else {
+[0012] (30)   setBoxFlags(1,0);
+[0015] (30)   setBoxFlags(3,128);
+[0018] (**) }
+[0018] (68) VAR_RESULT = isScriptRunning(149);
+[001B] (28) if (!VAR_RESULT) {
+[001F] (42)   startScript(65);
+[0021] (10)   Var[66] = getObjectOwner(81);
+[0025] (A8)   if (Var[66]) {
+[0029] (08)     if (Var[66] != 15) {
+[002F] (19)       doSentence(253,429,0,1);
+[0036] (**)     }
+[0036] (**)   }
+[0036] (6F)   if (getState04(433)) {
+[003B] (19)     doSentence(250,433,0,1);
+[0042] (1C)     startSound(98);
+[0044] (**)   }
+[0044] (**) }
+[0044] (0F) if (!getState08(427)) {
+[0049] (19)   doSentence(250,427,0,1);
+[0050] (**) }
+[0050] (00) stopObjectCode();
+END

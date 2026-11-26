@@ -1,0 +1,5 @@
+Events:
+   9 - 0027
+[0027] (1A) Var[195] = 1;
+[002B] (00) stopObjectCode();
+END

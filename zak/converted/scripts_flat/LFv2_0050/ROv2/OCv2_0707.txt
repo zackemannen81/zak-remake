@@ -1,0 +1,24 @@
+Events:
+  FD - 0013
+[0013] (28) unless (!Var[66]) goto 0026;
+[0017] (7A) VerbOps(New-35(0,19,0,0,"Game A@@"));
+[0026] (C8) unless (Var[66] == Var[235]) goto 003A;
+[002B] (7A) VerbOps(New-36(8,19,1,0,"Game B@@"));
+[003A] (48) unless (Var[66] == 2) goto 004F;
+[0040] (7A) VerbOps(New-37(16,19,2,0,"Game C@@"));
+[004F] (48) unless (Var[66] == 3) goto 0064;
+[0055] (7A) VerbOps(New-38(24,19,3,0,"Game D@@"));
+[0064] (48) unless (Var[66] == 4) goto 0079;
+[006A] (7A) VerbOps(New-39(32,19,4,0,"Game E@@"));
+[0079] (48) unless (Var[66] == 5) goto 008E;
+[007F] (7A) VerbOps(New-40(0,21,5,0,"Game F@@"));
+[008E] (48) unless (Var[66] == 6) goto 00A3;
+[0094] (7A) VerbOps(New-41(8,21,6,0,"Game G@@"));
+[00A3] (48) unless (Var[66] == 7) goto 00B8;
+[00A9] (7A) VerbOps(New-42(16,21,7,0,"Game H@@"));
+[00B8] (48) unless (Var[66] == 8) goto 00CD;
+[00BE] (7A) VerbOps(New-43(24,21,8,0,"Game I@@"));
+[00CD] (48) unless (Var[66] == 9) goto 00E2;
+[00D3] (7A) VerbOps(New-44(32,21,9,0,"Game J@@"));
+[00E2] (00) stopObjectCode();
+END

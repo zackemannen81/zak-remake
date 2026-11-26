@@ -1,0 +1,9 @@
+Events:
+  FD - 0021
+  FF - 0028
+[0021] (64) loadRoomWithEgo(515,Var[45],65,5);
+[0027] (00) stopObjectCode();
+[0028] (1A) Var[45] = 189;
+[002C] (18) goto 0021;
+[002F] (00) stopObjectCode();
+END

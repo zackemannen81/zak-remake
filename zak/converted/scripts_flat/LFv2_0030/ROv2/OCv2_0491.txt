@@ -1,0 +1,25 @@
+Events:
+   C - 001D
+  21 - 0055
+  FD - 0085
+[001D] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0042;
+[0021] (D8) printEgo("Everything appears to be normal.");
+[003F] (18) goto 0054;
+[0042] (D8) printEgo("They all read zero.");
+[0054] (00) stopObjectCode();
+[0055] (2F) unless (!getState04(454)) goto 007D;
+[005A] (4F) unless (getState08(490)) goto 0066;
+[005F] (19) doSentence(253,495,0,1);
+[0066] (6F) unless (getState04(492)) goto 0077;
+[006B] (67) clearState04(492);
+[006E] (0F) unless (!getState08(72)) goto 0075;
+[0073] (BC) stopSound(Var[158]);
+[0075] (3C) stopSound(50);
+[0077] (50) pickupObject(73);
+[007A] (18) goto 0084;
+[007D] (19) doSentence(253,491,0,1);
+[0084] (00) stopObjectCode();
+[0085] (D8) printEgo("No way! That would kill me!");
+[009D] (19) doSentence(STOP);
+[009F] (00) stopObjectCode();
+END

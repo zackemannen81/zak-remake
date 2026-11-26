@@ -1,0 +1,8 @@
+[0000] (9A) Var[154] = Var[234];
+[0003] (48) unless (VAR_ROOM == 193) goto 0015;
+[0009] (0C) loadCostume(39)
+[000C] (0C) lockCostume(39)
+[000F] (0C) loadCostume(37)
+[0012] (0C) lockCostume(37)
+[0015] (00) stopObjectCode();
+END

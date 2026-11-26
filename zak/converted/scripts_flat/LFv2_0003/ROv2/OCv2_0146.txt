@@ -1,0 +1,20 @@
+Events:
+  FD - 0013
+[0013] (62) stopScript(63);
+[0015] (60) cursorCommand(15, 2);
+[0018] (47) clearState08(142);
+[001B] (47) clearState08(166);
+[001E] (17) clearState02(166);
+[0021] (47) clearState08(144);
+[0024] (17) clearState02(144);
+[0027] (17) clearState02(150);
+[002A] (2E) delay(60);
+[002E] (1C) startSound(47);
+[0030] (2E) delay(40);
+[0034] (07) setState08(143);
+[0037] (30) setBoxFlags(6,0);
+[003A] (9E) walkActorTo(VAR_EGO,90,60);
+[003E] (BB) waitForActor(VAR_EGO);
+[0040] (19) doSentence(253,145,0,1);
+[0047] (00) stopObjectCode();
+END

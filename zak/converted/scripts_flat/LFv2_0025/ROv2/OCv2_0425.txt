@@ -1,0 +1,25 @@
+Events:
+   4 - 0021
+   5 - 0029
+   9 - 0043
+   A - 0043
+   B - 0043
+[0021] (9A) Var[201] = VAR_EGO;
+[0024] (1C) startSound(27);
+[0026] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0028] (00) stopObjectCode();
+[0029] (9A) Var[201] = Var[234];
+[002C] (1C) startSound(27);
+[002E] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0030] (67) clearState04(433);
+[0033] (19) doSentence(254,433,0,1);
+[003A] (3C) stopSound(98);
+[003C] (47) clearState08(433);
+[003F] (47) clearState08(435);
+[0042] (00) stopObjectCode();
+[0043] (CF) unless (getState08(VAR_ACTIVE_OBJECT1)) goto 0051;
+[0047] (19) doSentence(5,425,0,0);
+[004E] (18) goto 0058;
+[0051] (19) doSentence(4,425,0,0);
+[0058] (00) stopObjectCode();
+END

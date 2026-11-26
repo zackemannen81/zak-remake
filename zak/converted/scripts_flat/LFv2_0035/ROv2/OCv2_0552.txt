@@ -1,0 +1,16 @@
+Events:
+  FD - 0013
+[0013] (A6) setVarRange(Var[51],4,[550,551,552,551]);
+[001E] (1A) Var[45] = 48;
+[0022] (9A) Var[46] = Var[234];
+[0025] (9A) Var[14] = Var[46];
+[0028] (5A) Var[14] += 51;
+[002C] (85) drawObject(Var[14],255,255);
+[0030] (2B) delayVariable(Var[45]);
+[0032] (44) unless (Var[45] > 0) goto 003C;
+[0038] (3A) Var[45] -= 6;
+[003C] (46) Var[46]++;
+[003E] (44) unless (Var[46] > 3) goto 0025;
+[0044] (18) goto 0022;
+[0047] (00) stopObjectCode();
+END

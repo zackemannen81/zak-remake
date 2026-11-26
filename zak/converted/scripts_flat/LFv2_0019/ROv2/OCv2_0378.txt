@@ -1,0 +1,11 @@
+Events:
+   C - 001B
+[001B] (D8) printEgo("It's a picture of \x02");
+[002C] (B1) VAR_RESULT = getBitVar(1458,VAR_EGO);
+[0031] (A8) unless (VAR_RESULT) goto 0054;
+[0035] (D8) printEgo("my friend, the Witch\x01Doctor, \x02");
+[0051] (18) goto 0067;
+[0054] (D8) printEgo("an African Shaman\x01\x02");
+[0067] (D8) printEgo("and the Guru playing golf.");
+[007F] (00) stopObjectCode();
+END

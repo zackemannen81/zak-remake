@@ -1,0 +1,13 @@
+Events:
+   B - 0023
+   E - 0036
+[0023] (6C) VAR_RESULT = getObjPreposition(81);
+[0027] (28) unless (!VAR_RESULT) goto 0030;
+[002B] (42) startScript(60);
+[002D] (18) goto 0035;
+[0030] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0035] (00) stopObjectCode();
+[0036] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0038] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[003A] (00) stopObjectCode();
+END

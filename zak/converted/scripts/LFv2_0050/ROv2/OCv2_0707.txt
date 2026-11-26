@@ -1,0 +1,35 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0050/ROv2/OCv2_0707
+Events:
+  FD - 0013
+[0013] (28) if (!Var[66]) {
+[0017] (7A)   VerbOps(New-35(0,19,0,0,"Game A@@"));
+[0026] (**) }
+[0026] (C8) if (Var[66] == Var[235]) {
+[002B] (7A)   VerbOps(New-36(8,19,1,0,"Game B@@"));
+[003A] (**) }
+[003A] (48) if (Var[66] == 2) {
+[0040] (7A)   VerbOps(New-37(16,19,2,0,"Game C@@"));
+[004F] (**) }
+[004F] (48) if (Var[66] == 3) {
+[0055] (7A)   VerbOps(New-38(24,19,3,0,"Game D@@"));
+[0064] (**) }
+[0064] (48) if (Var[66] == 4) {
+[006A] (7A)   VerbOps(New-39(32,19,4,0,"Game E@@"));
+[0079] (**) }
+[0079] (48) if (Var[66] == 5) {
+[007F] (7A)   VerbOps(New-40(0,21,5,0,"Game F@@"));
+[008E] (**) }
+[008E] (48) if (Var[66] == 6) {
+[0094] (7A)   VerbOps(New-41(8,21,6,0,"Game G@@"));
+[00A3] (**) }
+[00A3] (48) if (Var[66] == 7) {
+[00A9] (7A)   VerbOps(New-42(16,21,7,0,"Game H@@"));
+[00B8] (**) }
+[00B8] (48) if (Var[66] == 8) {
+[00BE] (7A)   VerbOps(New-43(24,21,8,0,"Game I@@"));
+[00CD] (**) }
+[00CD] (48) if (Var[66] == 9) {
+[00D3] (7A)   VerbOps(New-44(32,21,9,0,"Game J@@"));
+[00E2] (**) }
+[00E2] (00) stopObjectCode();
+END

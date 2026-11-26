@@ -1,0 +1,53 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0001/ROv2/OCv2_0103
+Events:
+   4 - 0024
+   5 - 005D
+   B - 0074
+[0024] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0028] (1C)   startSound(27);
+[002A] (AF)   if (!getState04(VAR_ACTIVE_OBJECT1)) {
+[002E] (87)     setState08(VAR_ACTIVE_OBJECT1);
+[0030] (19)     doSentence(253,104,0,1);
+[0037] (C8)     if (Var[138] == Var[235]) {
+[003C] (19)       doSentence(250,105,0,1);
+[0043] (**)     }
+[0043] (18)   } else {
+[0046] (2E)     delay(60);
+[004A] (91)     animateActor(VAR_EGO,246);
+[004D] (BB)     waitForActor(VAR_EGO);
+[004F] (D8)     printEgo("It's broken.");
+[005C] (**)   }
+[005C] (**) }
+[005C] (00) stopObjectCode();
+[005D] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0061] (C7)   clearState08(VAR_ACTIVE_OBJECT1);
+[0063] (19)   doSentence(254,105,0,1);
+[006A] (1C)   startSound(27);
+[006C] (19)   doSentence(253,104,0,1);
+[0073] (**) }
+[0073] (00) stopObjectCode();
+[0074] (48) if (VAR_ACTIVE_OBJECT2 == 14) {
+[007A] (C8)   if (Var[138] == Var[234]) {
+[007F] (9A)     Var[138] = Var[235];
+[0082] (1C)     startSound(36);
+[0084] (D8)     printEgo("Hope you're happy in there, Sushi.");
+[00A3] (CF)     if (getState08(VAR_ACTIVE_OBJECT1)) {
+[00A7] (19)       doSentence(250,105,0,1);
+[00AE] (**)     }
+[00AE] (C8)   } else if (Var[138] == Var[235]) {
+[00B6] (19)     doSentence(254,105,0,1);
+[00BD] (19)     doSentence(7,14,0,1);
+[00C4] (1C)     startSound(36);
+[00C6] (9A)     Var[138] = Var[234];
+[00C9] (D8)     printEgo("Isn't it nice to be home, Sushi?");
+[00E5] (47)     clearState08(104);
+[00E8] (47)     clearState08(105);
+[00EB] (18)   } else {
+[00EE] (42)     startScript(3);
+[00F0] (**)   }
+[00F0] (19)   doSentence(253,109,0,1);
+[00F7] (18) } else {
+[00FA] (42)   startScript(3);
+[00FC] (**) }
+[00FC] (00) stopObjectCode();
+END

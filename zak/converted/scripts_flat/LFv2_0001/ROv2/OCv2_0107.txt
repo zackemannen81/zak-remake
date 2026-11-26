@@ -1,0 +1,29 @@
+Events:
+   9 - 0027
+   A - 0027
+   D - 0048
+   E - 0027
+  FD - 0054
+  FF - 0049
+[0027] (4F) unless (getState08(108)) goto 0030;
+[002C] (91) animateActor(VAR_EGO,250);
+[002F] (80) breakHere();
+[0030] (8F) unless (!getState08(VAR_ACTIVE_OBJECT1)) goto 003F;
+[0034] (87) setState08(VAR_ACTIVE_OBJECT1);
+[0036] (07) setState08(109);
+[0039] (57) setState02(109);
+[003C] (18) goto 0047;
+[003F] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0041] (47) clearState08(109);
+[0044] (17) clearState02(109);
+[0047] (00) stopObjectCode();
+[0048] (00) stopObjectCode();
+[0049] (4F) unless (getState08(108)) goto 0051;
+[004E] (91) animateActor(VAR_EGO,250);
+[0051] (42) startScript(3);
+[0053] (00) stopObjectCode();
+[0054] (16) Var[66] = getRandomNr(1);
+[0057] (80) breakHere();
+[0058] (18) goto 0054;
+[005B] (00) stopObjectCode();
+END

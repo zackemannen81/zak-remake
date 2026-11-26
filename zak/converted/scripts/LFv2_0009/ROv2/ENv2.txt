@@ -1,0 +1,81 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0009/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (04) if (VAR_EGO <= 2) {
+[000A] (9A)   Var[14] = VAR_EGO;
+[000D] (5A)   Var[14] += 171;
+[0011] (D3)   ActorOps(VAR_EGO,[Costume(Var[14])]);
+[0015] (93)   ActorOps(VAR_EGO,[Sound(6)]);
+[0019] (**) }
+[0019] (0C) loadScript(115)
+[001C] (9A) Var[45] = VAR_ROOM;
+[001F] (47) clearState08(222);
+[0022] (47) clearState08(221);
+[0025] (1A) Var[60] = 220;
+[0029] (1A) Var[66] = 224;
+[002D] (C7) clearState08(Var[66]);
+[002F] (46) Var[66]++;
+[0031] (44) unless (Var[66] > 227) goto 002D;
+[0037] (7C) VAR_RESULT = isSoundRunning(114);
+[003A] (28) if (!VAR_RESULT) {
+[003E] (1C)   startSound(114);
+[0040] (16)   VAR_RESULT = getRandomNr(1);
+[0043] (A8)   if (VAR_RESULT) {
+[0047] (47)     clearState08(223);
+[004A] (17)     clearState02(223);
+[004D] (**)   }
+[004D] (**) }
+[004D] (48) if (VAR_ROOM == 146) {
+[0053] (07)   setState08(222);
+[0056] (1A)   Var[46] = 3;
+[005A] (A6)   setVarRange(Var[68],4,[666,665,659,661]);
+[0065] (A6)   setVarRange(Var[73],4,[1033,644,795,1316]);
+[0070] (05)   drawObject(224,255,255);
+[0075] (1A)   Var[47] = 390;
+[0079] (1A)   Var[48] = 20;
+[007D] (**) }
+[007D] (48) if (VAR_ROOM == 148) {
+[0083] (07)   setState08(221);
+[0086] (1A)   Var[46] = 2;
+[008A] (A6)   setVarRange(Var[68],3,[664,665,659]);
+[0093] (A6)   setVarRange(Var[73],3,[1033,1399,1589]);
+[009C] (05)   drawObject(227,255,255);
+[00A1] (1A)   Var[47] = 352;
+[00A5] (1A)   Var[48] = 17;
+[00A9] (**) }
+[00A9] (48) if (VAR_ROOM == 147) {
+[00AF] (9A)   Var[46] = Var[235];
+[00B2] (A6)   setVarRange(Var[68],2,[664,666]);
+[00B9] (A6)   setVarRange(Var[73],2,[644,1399]);
+[00C0] (05)   drawObject(226,255,255);
+[00C5] (1A)   Var[47] = 572;
+[00C9] (1A)   Var[48] = 170;
+[00CD] (9A)   Var[14] = VAR_EGO;
+[00D0] (5A)   Var[14] += 219;
+[00D4] (0A)   Var[Var[14]] = 576;
+[00D8] (9A)   Var[14] = VAR_EGO;
+[00DB] (5A)   Var[14] += 222;
+[00DF] (0A)   Var[Var[14]] = 150;
+[00E3] (9A)   Var[14] = VAR_EGO;
+[00E6] (5A)   Var[14] += 216;
+[00EA] (0A)   Var[Var[14]] = 5;
+[00EE] (**) }
+[00EE] (48) if (VAR_ROOM == 149) {
+[00F4] (07)   setState08(221);
+[00F7] (9A)   Var[46] = Var[235];
+[00FA] (A6)   setVarRange(Var[68],2,[660,663]);
+[0101] (A6)   setVarRange(Var[73],2,[691,937]);
+[0108] (05)   drawObject(225,255,255);
+[010D] (1A)   Var[47] = 572;
+[0111] (1A)   Var[48] = 175;
+[0115] (9A)   Var[14] = VAR_EGO;
+[0118] (5A)   Var[14] += 219;
+[011C] (0A)   Var[Var[14]] = 619;
+[0120] (9A)   Var[14] = VAR_EGO;
+[0123] (5A)   Var[14] += 222;
+[0127] (0A)   Var[Var[14]] = 42;
+[012B] (9A)   Var[14] = VAR_EGO;
+[012E] (5A)   Var[14] += 216;
+[0132] (0A)   Var[Var[14]] = 3;
+[0136] (**) }
+[0136] (00) stopObjectCode();
+END

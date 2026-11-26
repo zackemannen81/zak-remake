@@ -1,0 +1,11 @@
+Events:
+   9 - 0021
+   A - 0021
+   E - 0021
+[0021] (48) unless (VAR_EGO == 2) goto 003F;
+[0027] (D8) printEgo("No, it's VERY fragile.");
+[003C] (18) goto 0055;
+[003F] (91) animateActor(VAR_EGO,246);
+[0042] (D8) printEgo("I'm NOT touching it!");
+[0055] (00) stopObjectCode();
+END

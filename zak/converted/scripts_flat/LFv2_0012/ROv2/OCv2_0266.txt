@@ -1,0 +1,11 @@
+Events:
+   D - 001C
+  FD - 0028
+[001C] (5B) setBitVar(1572,0,Var[235]);
+[0021] (24) loadRoomWithEgo(191,144,255,255);
+[0027] (00) stopObjectCode();
+[0028] (30) setBoxFlags(4,0);
+[002B] (1C) startSound(97);
+[002D] (50) pickupObject(52);
+[0030] (00) stopObjectCode();
+END

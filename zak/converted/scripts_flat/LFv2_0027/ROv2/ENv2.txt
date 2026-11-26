@@ -1,0 +1,55 @@
+[0000] (0C) loadSound(7)
+[0003] (0C) lockSound(7)
+[0006] (70) lights(11,0,0);
+[000A] (9A) Var[154] = Var[235];
+[000D] (04) unless (VAR_EGO <= 4) goto 0029;
+[0013] (9A) Var[52] = VAR_EGO;
+[0016] (5A) Var[52] += 4;
+[001A] (9A) Var[14] = Var[52];
+[001D] (5A) Var[14] += 171;
+[0021] (D3) ActorOps(VAR_EGO,[Costume(Var[14])]);
+[0025] (93) ActorOps(VAR_EGO,[Sound(7)]);
+[0029] (0C) loadSound(38)
+[002C] (47) clearState08(445);
+[002F] (17) clearState02(445);
+[0032] (19) doSentence(253,460,0,1);
+[0039] (48) unless (VAR_ROOM == 185) goto 00A3;
+[003F] (33) RoomScroll(20,100);
+[0043] (2F) unless (!getState04(454)) goto 0066;
+[0048] (47) clearState08(454);
+[004B] (17) clearState02(454);
+[004E] (30) setBoxFlags(9,0);
+[0051] (30) setBoxFlags(10,0);
+[0054] (30) setBoxFlags(4,0);
+[0057] (0F) unless (!getState08(73)) goto 0063;
+[005C] (19) doSentence(250,459,0,1);
+[0063] (18) goto 006F;
+[0066] (30) setBoxFlags(9,128);
+[0069] (30) setBoxFlags(10,128);
+[006C] (30) setBoxFlags(4,128);
+[006F] (6F) unless (getState04(445)) goto 007A;
+[0074] (07) setState08(445);
+[0077] (57) setState02(445);
+[007A] (0C) loadSound(37)
+[007D] (0C) loadSound(25)
+[0080] (0C) loadSound(2)
+[0083] (47) clearState08(446);
+[0086] (57) setState02(456);
+[0089] (47) clearState08(456);
+[008C] (54) setObjectName(451,"sand");
+[0094] (4F) unless (getState08(451)) goto 00A0;
+[0099] (19) doSentence(253,451,0,1);
+[00A0] (18) goto 00C9;
+[00A3] (33) RoomScroll(20,20);
+[00A7] (30) setBoxFlags(1,128);
+[00AA] (30) setBoxFlags(5,128);
+[00AD] (07) setState08(446);
+[00B0] (17) clearState02(456);
+[00B3] (07) setState08(456);
+[00B6] (05) drawObject(454,33,1);
+[00BB] (57) setState02(454);
+[00BE] (2F) unless (!getState04(445)) goto 00C9;
+[00C3] (07) setState08(445);
+[00C6] (57) setState02(445);
+[00C9] (00) stopObjectCode();
+END

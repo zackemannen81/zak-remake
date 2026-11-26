@@ -1,0 +1,20 @@
+Events:
+  FD - 0027
+  FF - 001F
+[001F] (99) doSentence(VAR_ACTIVE_VERB,107,0,0);
+[0026] (00) stopObjectCode();
+[0027] (C8) unless (Var[138] == Var[235]) goto 006D;
+[002C] (54) setObjectName(103,"Sushi in lamp");
+[003D] (10) VAR_RESULT = getObjectOwner(14);
+[0041] (A8) unless (VAR_RESULT) goto 006A;
+[0045] (54) setObjectName(14,"fish bowl");
+[0052] (6F) unless (getState04(14)) goto 006A;
+[0057] (54) setObjectName(14,"taped fish bowl");
+[006A] (18) goto 0075;
+[006D] (54) setObjectName(103,"lamp");
+[0075] (C8) unless (Var[138] == Var[234]) goto 0098;
+[007A] (10) VAR_RESULT = getObjectOwner(14);
+[007E] (A8) unless (VAR_RESULT) goto 0098;
+[0082] (54) setObjectName(14,"Sushi in fish bowl");
+[0098] (00) stopObjectCode();
+END

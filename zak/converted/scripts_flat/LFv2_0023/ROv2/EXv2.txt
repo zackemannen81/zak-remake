@@ -1,0 +1,16 @@
+[0000] (48) unless (VAR_ROOM == 220) goto 0024;
+[0006] (03) VAR_RESULT = getActorRoom(1);
+[0009] (C8) unless (VAR_RESULT == VAR_ROOM) goto 0015;
+[000E] (2D) putActorInRoom(1,219);
+[0011] (01) putActor(1,21,44);
+[0015] (03) VAR_RESULT = getActorRoom(2);
+[0018] (C8) unless (VAR_RESULT == VAR_ROOM) goto 0024;
+[001D] (2D) putActorInRoom(2,219);
+[0020] (01) putActor(2,25,44);
+[0024] (3C) stopSound(88);
+[0026] (3C) stopSound(82);
+[0028] (30) setBoxFlags(1,0);
+[002B] (30) setBoxFlags(3,0);
+[002E] (9A) Var[154] = Var[234];
+[0031] (00) stopObjectCode();
+END

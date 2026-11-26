@@ -1,0 +1,17 @@
+Events:
+   B - 0027
+   C - 003F
+  FD - 0042
+[0027] (48) unless (VAR_ACTIVE_OBJECT2 == 25) goto 003C;
+[002D] (EF) unless (getState04(VAR_ACTIVE_OBJECT1)) goto 0036;
+[0031] (42) startScript(28);
+[0033] (18) goto 0039;
+[0036] (18) goto 0042;
+[0039] (18) goto 003E;
+[003C] (42) startScript(3);
+[003E] (00) stopObjectCode();
+[003F] (42) startScript(68);
+[0041] (00) stopObjectCode();
+[0042] (D8) printEgo("It looks fine the way it is.");
+[005A] (00) stopObjectCode();
+END

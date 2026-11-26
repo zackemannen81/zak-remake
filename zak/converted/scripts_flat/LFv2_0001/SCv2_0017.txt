@@ -1,0 +1,8 @@
+[0000] (48) unless (VAR_ROOM == 1) goto 0008;
+[0006] (1C) startSound(14);
+[0008] (48) unless (VAR_ROOM == 4) goto 0010;
+[000E] (1C) startSound(13);
+[0010] (2E) delay(240);
+[0014] (18) goto 0000;
+[0017] (A0) stopObjectCode();
+END

@@ -1,0 +1,11 @@
+Events:
+   E - 001C
+[001C] (87) setState08(VAR_ACTIVE_OBJECT1);
+[001E] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0020] (2E) delay(60);
+[0024] (D8) printEgo("Oops! It crumbled to dust.");
+[003C] (AE) waitForMessage();
+[003D] (91) animateActor(VAR_EGO,246);
+[0040] (D8) printEgo("I wonder if there's a locksmith nearby?");
+[0063] (00) stopObjectCode();
+END

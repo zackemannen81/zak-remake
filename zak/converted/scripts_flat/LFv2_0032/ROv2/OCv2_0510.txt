@@ -1,0 +1,6 @@
+Events:
+  FF - 001F
+[001F] (1A) Var[45] = 191;
+[0023] (19) doSentence(253,508,0,1);
+[002A] (00) stopObjectCode();
+END

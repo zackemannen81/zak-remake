@@ -1,0 +1,9 @@
+[0000] (03) VAR_RESULT = getActorRoom(1);
+[0003] (08) unless (VAR_RESULT != 7) goto 0018;
+[0009] (03) VAR_RESULT = getActorRoom(2);
+[000C] (08) unless (VAR_RESULT != 7) goto 0018;
+[0012] (47) clearState08(161);
+[0015] (47) clearState08(180);
+[0018] (3C) stopSound(19);
+[001A] (00) stopObjectCode();
+END

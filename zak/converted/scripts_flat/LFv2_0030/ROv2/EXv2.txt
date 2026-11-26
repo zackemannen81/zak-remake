@@ -1,0 +1,7 @@
+[0000] (9A) Var[154] = Var[234];
+[0003] (BC) stopSound(Var[158]);
+[0005] (3C) stopSound(50);
+[0007] (3C) stopSound(51);
+[0009] (3C) stopSound(37);
+[000B] (00) stopObjectCode();
+END

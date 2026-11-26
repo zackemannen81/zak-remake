@@ -1,0 +1,21 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0134
+
+[0000] (A8) if (Var[240]) {
+[0004] (2E)   delay(18000);
+[0008] (**) }
+[0008] (80) breakHere();
+[0009] (03) VAR_RESULT = getActorRoom(1);
+[000C] (04) if (VAR_RESULT <= 2) {
+[0012] (18)   goto 0008;
+[0015] (**) }
+[0015] (46) Var[240]++;
+[0017] (78) if (Var[240] < 8) {
+[001D] (4F)   if (getState08(88)) {
+[0022] (0F)     if (!getState08(19)) {
+[0027] (27)       setState04(88);
+[002A] (**)     }
+[002A] (**)   }
+[002A] (**) }
+[002A] (A0) stopObjectCode();
+END

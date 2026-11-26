@@ -1,0 +1,16 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0013/ROv2/OCv2_0053
+Events:
+   B - 0030
+   E - 0028
+[0028] (19) doSentence(253,275,0,1);
+[002F] (00) stopObjectCode();
+[0030] (90) VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0033] (48) if (VAR_RESULT == 15) {
+[0039] (19)   doSentence(253,275,0,1);
+[0040] (48) } else if (VAR_ACTIVE_OBJECT2 == 49) {
+[0049] (D8)   printEgo("Not in my hands!");
+[0058] (18) } else {
+[005B] (79)   doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0060] (**) }
+[0060] (00) stopObjectCode();
+END

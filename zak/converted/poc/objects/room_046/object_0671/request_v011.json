@@ -1,0 +1,13 @@
+{
+  "room": 46,
+  "object_id": 671,
+  "prompt": "Create a clean nonfigurative rectangular surface matching the attached reference exactly. Aspect 2:1. The TOP 3/8 of the image is solid teal cyan (RGB 0,170,170); the BOTTOM 5/8 is solid warm ochre brown (RGB 170,85,0). Straight horizontal boundary. Very subtle refined surface material only. Fill entire frame. No objects, people, text, icons, perspective or extra border.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_046\\object_0671\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_046\\object_0671\\state_v011.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_046\\object_0671\\request_v011.json",
+  "status": "generated; saved after missing-directory recovery",
+  "generated_source": "C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-4bab790f-fa06-4417-b2d1-ee6eb8f877c5.png",
+  "recovery": "Generated source identified by dimensions and visual inspection after copy failed; original generated file retained."
+}

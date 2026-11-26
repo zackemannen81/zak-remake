@@ -1,0 +1,17 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0023/ROv2/OCv2_0408
+Events:
+   D - 001C
+  FD - 002D
+[001C] (48) if (Var[55] == 220) {
+[0022] (5B)   setBitVar(1574,0,Var[235]);
+[0027] (**) }
+[0027] (E4) loadRoomWithEgo(Var[54],Var[55],255,255);
+[002C] (00) stopObjectCode();
+[002D] (60) cursorCommand(247, 1);
+[0030] (67) clearState04(408);
+[0033] (2E) delay(30);
+[0037] (D8) printEgo("Owwwwww. That hurt!");
+[004A] (AE) waitForMessage();
+[004B] (19) doSentence(253,409,0,1);
+[0052] (00) stopObjectCode();
+END

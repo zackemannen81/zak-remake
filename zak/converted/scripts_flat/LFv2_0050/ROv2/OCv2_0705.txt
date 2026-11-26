@@ -1,0 +1,11 @@
+Events:
+  FD - 0016
+  FF - 0015
+[0015] (00) stopObjectCode();
+[0016] (9A) Var[66] = Var[234];
+[0019] (FA) VerbOps(Delete(Var[66]););
+[001C] (46) Var[66]++;
+[001E] (44) unless (Var[66] > 14) goto 0019;
+[0024] (60) cursorCommand(0, 0);
+[0027] (00) stopObjectCode();
+END

@@ -1,0 +1,30 @@
+Events:
+   D - 001D
+[001D] (48) unless (VAR_EGO == 5) goto 0041;
+[0023] (19) doSentence(254,498,0,1);
+[002A] (19) doSentence(250,501,0,1);
+[0031] (80) breakHere();
+[0032] (78) unless (Var[47] < 12) goto 0031;
+[0038] (24) loadRoomWithEgo(605,41,26,9);
+[003E] (18) goto 00EF;
+[0041] (19) doSentence(253,503,0,1);
+[0048] (80) breakHere();
+[0049] (78) unless (Var[46] < 2) goto 0048;
+[004F] (2E) delay(300);
+[0053] (19) doSentence(250,497,0,1);
+[005A] (80) breakHere();
+[005B] (44) unless (Var[46] > 10) goto 005A;
+[0061] (48) unless (Var[167] == 64) goto 00A8;
+[0067] (6F) unless (getState04(39)) goto 00A5;
+[006C] (48) unless (Var[164] == 60) goto 00A2;
+[0072] (D8) printEgo("Wow! It's pretty down there but I can't\x01swim very deep.");
+[00A2] (18) goto 00EF;
+[00A5] (18) goto 00AE;
+[00A8] (48) unless (Var[167] == 56) goto 00C7;
+[00AE] (D8) printEgo("The water's leaking in.");
+[00C4] (18) goto 00EF;
+[00C7] (48) unless (Var[164] == 60) goto 00D0;
+[00CD] (18) goto 00AE;
+[00D0] (D8) printEgo("I can't hold my breath long enough.");
+[00EF] (00) stopObjectCode();
+END

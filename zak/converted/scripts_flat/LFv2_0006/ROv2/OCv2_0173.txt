@@ -1,0 +1,5 @@
+Events:
+   1 - 0017
+[0017] (D8) printEgo("There aren't any drawers.");
+[002F] (00) stopObjectCode();
+END

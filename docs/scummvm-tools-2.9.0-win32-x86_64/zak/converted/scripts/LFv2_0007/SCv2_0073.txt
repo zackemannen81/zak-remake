@@ -1,0 +1,8 @@
+# Decompiled with descumm -2
+# Source: LFv2_0007\SCv2_0073
+
+[0000] (5B) setBitVar(1455,0,Var[234]);
+[0005] (2E) delay(14400);
+[0009] (5B) setBitVar(1455,0,Var[235]);
+[000E] (A0) stopObjectCode();
+END

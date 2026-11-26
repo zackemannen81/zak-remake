@@ -1,0 +1,31 @@
+# Decompiled with descumm -2
+# Source: LFv2_0001\SCv2_0013
+
+[0000] (28) if (!Var[131]) {
+[0004] (42)   startScript(48);
+[0006] (**) }
+[0006] (42) startScript(14);
+[0008] (1C) startSound(15);
+[000A] (2E) delay(120);
+[000E] (3C) stopSound(15);
+[0010] (9A) Var[66] = Var[234];
+[0013] (9A) Var[14] = Var[66];
+[0016] (5A) Var[14] += 139;
+[001A] (9A) Var[15] = Var[66];
+[001D] (5A) Var[15] += 143;
+[0021] (8A) Var[Var[14]] = Var[15];
+[0024] (46) Var[66]++;
+[0026] (44) unless (Var[66] > 3) goto 0013;
+[002C] (1A) Var[119] = 1;
+[0030] (42) startScript(15);
+[0032] (80) breakHere();
+[0033] (31) VAR_RESULT = getBitVar(1470,0);
+[0038] (28) unless (!VAR_RESULT) goto 0032;
+[003C] (31) VAR_RESULT = getBitVar(1467,0);
+[0041] (28) if (!VAR_RESULT) {
+[0045] (42)   startScript(17);
+[0047] (4A)   chainScript(77);
+[0049] (**) }
+[0049] (4A) chainScript(16);
+[004B] (A0) stopObjectCode();
+END

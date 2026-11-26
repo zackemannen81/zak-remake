@@ -1,0 +1,14 @@
+Events:
+   D - 0023
+  FD - 0026
+[0023] (42) startScript(115);
+[0025] (00) stopObjectCode();
+[0026] (19) doSentence(254,212,0,1);
+[002D] (19) doSentence(254,216,0,1);
+[0034] (3C) stopSound(96);
+[0036] (7C) VAR_RESULT = isSoundRunning(87);
+[0039] (28) unless (!VAR_RESULT) goto 003F;
+[003D] (1C) startSound(87);
+[003F] (9A) Var[59] = Var[234];
+[0042] (00) stopObjectCode();
+END

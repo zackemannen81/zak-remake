@@ -1,0 +1,68 @@
+# Decompiled with descumm -2
+# Source: LFv2_0004\SCv2_0075
+
+[0000] (68) VAR_RESULT = isScriptRunning(67);
+[0003] (A8) if (VAR_RESULT) {
+[0007] (80)   breakHere();
+[0008] (18)   goto 0000;
+[000B] (**) }
+[000B] (28) if (!Var[238]) {
+[000F] (62)   stopScript(0);
+[0011] (**) }
+[0011] (44) if (Var[238] > 2) {
+[0017] (62)   stopScript(0);
+[0019] (**) }
+[0019] (19) doSentence(254,155,0,1);
+[0020] (40) cutscene();
+[0021] (0C) loadScript(142)
+[0024] (0C) loadScript(143)
+[0027] (9A) Var[119] = Var[234];
+[002A] (42) startScript(141);
+[002C] (80) breakHere();
+[002D] (68) VAR_RESULT = isScriptRunning(141);
+[0030] (28) unless (!VAR_RESULT) goto 002C;
+[0034] (A8) if (Var[119]) {
+[0038] (18) } else {
+[003B] (67)   clearState04(330);
+[003E] (58)   beginOverride();
+[003F] (18)   goto 0056;
+[0042] (42)   startScript(142);
+[0044] (80)   breakHere();
+[0045] (68)   VAR_RESULT = isScriptRunning(142);
+[0048] (28)   unless (!VAR_RESULT) goto 0044;
+[004C] (**) }
+[004C] (42) startScript(143);
+[004E] (80) breakHere();
+[004F] (68) VAR_RESULT = isScriptRunning(143);
+[0052] (28) unless (!VAR_RESULT) goto 004E;
+[0056] (A8) if (VAR_OVERRIDE) {
+[005A] (62)   stopScript(143);
+[005C] (62)   stopScript(142);
+[005E] (DB)   setBitVar(1464,Var[117],Var[234]);
+[0063] (AD)   putActorInRoom(Var[117],16);
+[0066] (81)   putActor(Var[117],81,44);
+[006A] (91)   animateActor(Var[117],250);
+[006D] (72)   loadRoom(16);
+[006F] (19)   doSentence(STOP);
+[0071] (19)   doSentence(253,344,0,1);
+[0078] (A8)   if (Var[66]) {
+[007C] (81)     putActor(Var[66],45,52);
+[0080] (91)     animateActor(Var[66],248);
+[0083] (**)   }
+[0083] (42)   startScript(5);
+[0085] (2D)   putActorInRoom(7,4);
+[0088] (01)   putActor(7,22,52);
+[008C] (19)   doSentence(4,331,0,1);
+[0093] (19)   doSentence(2,328,0,1);
+[009A] (2F)   if (!getState04(330)) {
+[009F] (19)     doSentence(2,329,0,1);
+[00A6] (**)   }
+[00A6] (**) }
+[00A6] (9A) VAR_EGO = Var[117];
+[00A9] (D2) actorFollowCamera(VAR_EGO);
+[00AB] (42) startScript(19);
+[00AD] (2E) delay(60);
+[00B1] (C0) endCutscene();
+[00B2] (60) cursorCommand(247, 1);
+[00B5] (A0) stopObjectCode();
+END

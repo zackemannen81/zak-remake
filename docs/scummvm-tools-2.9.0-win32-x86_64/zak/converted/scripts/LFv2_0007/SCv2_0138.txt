@@ -1,0 +1,171 @@
+# Decompiled with descumm -2
+# Source: LFv2_0007\SCv2_0138
+
+[0000] (48) if (VAR_ACTIVE_OBJECT1 == 46) {
+[0006] (48)   if (VAR_ACTIVE_VERB == 12) {
+[000C] (D8)     printEgo("Old Spitinureye");
+[001C] (**)   }
+[001C] (48)   if (VAR_ACTIVE_VERB == 11) {
+[0022] (48)     if (VAR_EGO == 1) {
+[0028] (D8)       printEgo("Glug, glug.\x03It tastes AWFUL!");
+[0043] (18)     } else {
+[0046] (D8)       printEgo("No thanks.");
+[0051] (**)     }
+[0051] (**)   }
+[0051] (**) }
+[0051] (48) if (VAR_ACTIVE_OBJECT1 == 45) {
+[0057] (D8)   printEgo("It's `How To Raise Your Consciousness\x01And Lower Your Golf Scores.`");
+[0092] (AE)   waitForMessage();
+[0093] (D8)   printEgo("It was written by a guru in Nepal named\x01Swami Holanwanda. I'\x02");
+[00C8] (48)   if (VAR_EGO == 2) {
+[00CE] (D8)     printEgo("ve already read it.");
+[00E0] (18)   } else {
+[00E3] (D8)     printEgo("ll read it later.");
+[00F3] (**)   }
+[00F3] (62)   stopScript(0);
+[00F5] (**) }
+[00F5] (48) if (VAR_ACTIVE_OBJECT1 == 36) {
+[00FB] (48)   if (VAR_ACTIVE_OBJECT2 == 14) {
+[0101] (C8)     if (Var[138] == Var[234]) {
+[0106] (D8)       printEgo("The \x06\x09 will get wet.");
+[0119] (18)     } else {
+[011C] (54)       setObjectName(14,"taped fish bowl");
+[012F] (27)       setState04(14);
+[0132] (A9)       setOwnerOf(VAR_ACTIVE_OBJECT1,0);
+[0135] (48)       if (Var[167] == 56) {
+[013B] (1A)         Var[167] = 64;
+[013F] (42)         startScript(150);
+[0141] (**)       }
+[0141] (**)     }
+[0141] (**)   }
+[0141] (62)   stopScript(0);
+[0143] (**) }
+[0143] (48) if (VAR_ACTIVE_OBJECT1 == 39) {
+[0149] (48)   if (VAR_ACTIVE_VERB == 6) {
+[014F] (90)     VAR_RESULT = getObjectOwner(VAR_ACTIVE_OBJECT1);
+[0152] (48)     if (VAR_RESULT == 1) {
+[0158] (71)       Var[66] = getActorCostume(1);
+[015B] (48)       if (Var[66] == 1) {
+[0161] (13)         ActorOps(1,[Costume(37)]);
+[0165] (**)       }
+[0165] (48)       if (Var[66] == 5) {
+[016B] (13)         ActorOps(1,[Costume(38)]);
+[016F] (**)       }
+[016F] (48)       if (Var[66] == 9) {
+[0175] (13)         ActorOps(1,[Costume(39)]);
+[0179] (**)       }
+[0179] (42)       startScript(150);
+[017B] (1A)       Var[172] = 37;
+[017F] (1A)       Var[176] = 38;
+[0183] (1A)       Var[180] = 39;
+[0187] (48)       if (VAR_ROOM == 11) {
+[018D] (0F)         if (!getState08(263)) {
+[0192] (07)           setState08(774);
+[0195] (**)         }
+[0195] (**)       }
+[0195] (A7)       setState04(VAR_ACTIVE_OBJECT1);
+[0197] (D8)       printEgo("It's uncomfortably tight!");
+[01B0] (18)     } else {
+[01B3] (D8)       printEgo("Not me!");
+[01BB] (**)     }
+[01BB] (**)   }
+[01BB] (48)   if (VAR_ACTIVE_VERB == 12) {
+[01C1] (D8)     printEgo("size small");
+[01CC] (**)   }
+[01CC] (48)   if (VAR_ACTIVE_VERB == 7) {
+[01D2] (18)   } else {
+[01D5] (48)     unless (VAR_ACTIVE_VERB == 3) goto 0227;
+[01DB] (42)     startScript(20);
+[01DD] (**)   }
+[01DD] (48)   if (VAR_EGO == 1) {
+[01E3] (5B)     setBitVar(1506,0,Var[234]);
+[01E8] (71)     Var[66] = getActorCostume(1);
+[01EB] (48)     if (Var[66] == 37) {
+[01F1] (13)       ActorOps(1,[Costume(1)]);
+[01F5] (**)     }
+[01F5] (48)     if (Var[66] == 38) {
+[01FB] (13)       ActorOps(1,[Costume(5)]);
+[01FF] (**)     }
+[01FF] (48)     if (Var[66] == 39) {
+[0205] (13)       ActorOps(1,[Costume(9)]);
+[0209] (**)     }
+[0209] (1A)     Var[172] = 1;
+[020D] (1A)     Var[176] = 5;
+[0211] (1A)     Var[180] = 9;
+[0215] (42)     startScript(150);
+[0217] (48)     if (VAR_ROOM == 11) {
+[021D] (0F)       if (!getState08(263)) {
+[0222] (47)         clearState08(774);
+[0225] (**)       }
+[0225] (**)     }
+[0225] (E7)     clearState04(VAR_ACTIVE_OBJECT1);
+[0227] (**)   }
+[0227] (**) }
+[0227] (48) if (VAR_ACTIVE_OBJECT1 == 49) {
+[022D] (48)   if (VAR_ACTIVE_VERB == 11) {
+[0233] (D8)     printEgo("Ouch! It burned up in my hands!");
+[024E] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT2,0);
+[0251] (**)   }
+[0251] (62)   stopScript(0);
+[0253] (**) }
+[0253] (48) if (VAR_ACTIVE_OBJECT1 == 42) {
+[0259] (48)   if (VAR_ACTIVE_VERB == 12) {
+[025F] (D8)     printEgo("Super Lucky Lotto - \x02");
+[0272] (9A)     Var[67] = Var[234];
+[0275] (9A)     Var[14] = Var[67];
+[0278] (5A)     Var[14] += 208;
+[027C] (9A)     Var[66] = Var[14];
+[027F] (D8)     printEgo("\x04\x42 \x02");
+[0285] (46)     Var[67]++;
+[0287] (44)     unless (Var[67] > 3) goto 0275;
+[028D] (D8)     printEgo("");
+[028F] (**)   }
+[028F] (48)   if (VAR_ACTIVE_VERB == 3) {
+[0295] (04)     if (VAR_ACTIVE_OBJECT2 <= 13) {
+[029B] (94)       print(VAR_ACTIVE_OBJECT2,"No thanks, I don't gamble.");
+[02B4] (18)     } else {
+[02B7] (4A)       chainScript(3);
+[02B9] (**)     }
+[02B9] (**)   }
+[02B9] (**) }
+[02B9] (48) if (VAR_ACTIVE_OBJECT1 == 34) {
+[02BF] (48)   if (VAR_ACTIVE_VERB == 1) {
+[02C5] (EF)     if (getState04(VAR_ACTIVE_OBJECT1)) {
+[02C9] (D4)       setObjectName(VAR_ACTIVE_OBJECT1,"open tool kit");
+[02D9] (E7)       clearState04(VAR_ACTIVE_OBJECT1);
+[02DB] (1C)       startSound(26);
+[02DD] (2F)       if (!getState04(35)) {
+[02E2] (D8)         printEgo("Wow! Look at all this stuff!");
+[02FB] (27)         setState04(35);
+[02FE] (**)       }
+[02FE] (9A)       Var[61] = VAR_EGO;
+[0301] (1A)       Var[67] = 12;
+[0305] (18)       goto 0328;
+[0308] (**)     }
+[0308] (**)   }
+[0308] (48)   if (VAR_ACTIVE_VERB == 2) {
+[030E] (AF)     if (!getState04(VAR_ACTIVE_OBJECT1)) {
+[0312] (A7)       setState04(VAR_ACTIVE_OBJECT1);
+[0314] (D4)       setObjectName(VAR_ACTIVE_OBJECT1,"tool kit");
+[031F] (1C)       startSound(11);
+[0321] (1A)       Var[61] = 12;
+[0325] (9A)       Var[67] = VAR_EGO;
+[0328] (1A)       Var[66] = 35;
+[032C] (90)       VAR_RESULT = getObjectOwner(Var[66]);
+[032F] (C8)       if (VAR_RESULT == Var[67]) {
+[0334] (E9)         setOwnerOf(Var[66],Var[61]);
+[0337] (**)       }
+[0337] (46)       Var[66]++;
+[0339] (44)       unless (Var[66] > 38) goto 032C;
+[033F] (**)     }
+[033F] (**)   }
+[033F] (48)   if (VAR_ACTIVE_VERB == 11) {
+[0345] (EF)     if (getState04(VAR_ACTIVE_OBJECT1)) {
+[0349] (D8)       printEgo("Maybe I should open it.");
+[035E] (18)     } else {
+[0361] (4A)       chainScript(3);
+[0363] (**)     }
+[0363] (**)   }
+[0363] (**) }
+[0363] (A0) stopObjectCode();
+END

@@ -1,0 +1,31 @@
+Events:
+  FD - 0013
+[0013] (3A) Var[121] -= 3;
+[0017] (7E) walkActorTo(7,Var[121],Var[122]);
+[001B] (3B) waitForActor(7);
+[001D] (9A) Var[53] = Var[234];
+[0020] (19) doSentence(253,346,0,1);
+[0027] (80) breakHere();
+[0028] (A8) unless (Var[53]) goto 0027;
+[002C] (3A) Var[121] -= 2;
+[0030] (C6) Var[122]--;
+[0032] (7E) walkActorTo(7,Var[121],Var[122]);
+[0036] (3B) waitForActor(7);
+[0038] (9A) Var[53] = Var[234];
+[003B] (19) doSentence(253,346,0,1);
+[0042] (80) breakHere();
+[0043] (A8) unless (Var[53]) goto 0042;
+[0047] (5A) Var[121] += 4;
+[004B] (7E) walkActorTo(7,Var[121],Var[122]);
+[004F] (3B) waitForActor(7);
+[0051] (9A) Var[53] = Var[234];
+[0054] (19) doSentence(253,346,0,1);
+[005B] (80) breakHere();
+[005C] (A8) unless (Var[53]) goto 005B;
+[0060] (C6) Var[121]--;
+[0062] (3A) Var[122] -= 2;
+[0066] (7E) walkActorTo(7,Var[121],Var[122]);
+[006A] (3B) waitForActor(7);
+[006C] (18) goto 0013;
+[006F] (00) stopObjectCode();
+END

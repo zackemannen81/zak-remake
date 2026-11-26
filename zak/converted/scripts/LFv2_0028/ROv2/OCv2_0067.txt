@@ -1,0 +1,17 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/OCv2_0067
+Events:
+   A - 0021
+   B - 0026
+   E - 0021
+[0021] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0023] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[0025] (00) stopObjectCode();
+[0026] (48) if (VAR_ACTIVE_OBJECT2 == 72) {
+[002C] (27)   setState04(493);
+[002F] (D8)   printEgo("Great, now I can record on it.");
+[0049] (A9)   setOwnerOf(VAR_ACTIVE_OBJECT1,0);
+[004C] (18) } else {
+[004F] (79)   doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0054] (**) }
+[0054] (00) stopObjectCode();
+END

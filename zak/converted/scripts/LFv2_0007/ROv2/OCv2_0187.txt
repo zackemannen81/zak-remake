@@ -1,0 +1,20 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0007/ROv2/OCv2_0187
+Events:
+  11 - 0021
+  FD - 002C
+[0021] (1A) Var[47] = 140;
+[0025] (1A) Var[46] = 26;
+[0029] (42) startScript(24);
+[002B] (00) stopObjectCode();
+[002C] (2E) delay(30);
+[0030] (11) animateActor(10,245);
+[0033] (14) print(10,"Hiya buddy.");
+[0040] (AE) waitForMessage();
+[0041] (68) VAR_RESULT = isScriptRunning(73);
+[0044] (A8) if (VAR_RESULT) {
+[0048] (14)   print(10,"Sorry, but today's Super Lucky Lotto\x01numbers ain't been picked.");
+[0082] (AE)   waitForMessage();
+[0083] (**) }
+[0083] (11) animateActor(10,246);
+[0086] (00) stopObjectCode();
+END

@@ -1,0 +1,27 @@
+[0000] (70) lights(11,0,0);
+[0004] (53) ActorOps(8,[Name("policeman")]);
+[0012] (48) unless (Var[247] == 352) goto 0022;
+[0018] (19) doSentence(253,362,0,1);
+[001F] (18) goto 0029;
+[0022] (19) doSentence(253,353,0,1);
+[0029] (0C) loadScript(117)
+[002C] (0F) unless (!getState08(59)) goto 0038;
+[0031] (19) doSentence(250,357,0,1);
+[0038] (6F) unless (getState04(359)) goto 0054;
+[003D] (19) doSentence(250,360,0,1);
+[0044] (03) VAR_RESULT = getActorRoom(8);
+[0047] (48) unless (VAR_RESULT == 17) goto 0054;
+[004D] (19) doSentence(250,361,0,1);
+[0054] (13) ActorOps(10,[TalkColor(5)]);
+[0058] (13) ActorOps(10,[Costume(26)]);
+[005C] (13) ActorOps(10,[Color(9, 5)]);
+[0061] (13) ActorOps(10,[Color(3, 1)]);
+[0066] (13) ActorOps(10,[Sound(6)]);
+[006A] (53) ActorOps(10,[Name("guard")]);
+[0074] (2D) putActorInRoom(10,17);
+[0077] (01) putActor(10,80,11);
+[007B] (19) doSentence(253,356,0,1);
+[0082] (11) animateActor(10,250);
+[0085] (46) Var[203]++;
+[0087] (00) stopObjectCode();
+END

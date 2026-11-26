@@ -1,0 +1,7 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0647
+Events:
+   A - 001D
+   E - 001D
+[001D] (D8) printEgo("It seems to be stuck in the stone!");
+[003A] (00) stopObjectCode();
+END

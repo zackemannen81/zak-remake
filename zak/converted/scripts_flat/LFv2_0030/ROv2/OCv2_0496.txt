@@ -1,0 +1,25 @@
+Events:
+   1 - 0023
+   4 - 0023
+   B - 0023
+[0023] (6F) unless (getState04(454)) goto 003F;
+[0028] (D8) printEgo("I don't need to use it.");
+[003C] (18) goto 0094;
+[003F] (60) cursorCommand(15, 2);
+[0042] (48) unless (VAR_EGO == 1) goto 004C;
+[0048] (1A) Var[205] = 60;
+[004C] (48) unless (VAR_EGO == 3) goto 0056;
+[0052] (1A) Var[206] = 243;
+[0056] (48) unless (VAR_EGO == 4) goto 0060;
+[005C] (1A) Var[207] = 240;
+[0060] (07) setState08(496);
+[0063] (1C) startSound(37);
+[0065] (19) doSentence(253,493,0,1);
+[006C] (80) breakHere();
+[006D] (7C) VAR_RESULT = isSoundRunning(37);
+[0070] (28) unless (!VAR_RESULT) goto 006C;
+[0074] (47) clearState08(496);
+[0077] (D8) printEgo("Now my oxygen supply is full.");
+[0091] (60) cursorCommand(247, 1);
+[0094] (00) stopObjectCode();
+END

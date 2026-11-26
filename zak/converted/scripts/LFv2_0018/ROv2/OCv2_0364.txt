@@ -1,0 +1,32 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0018/ROv2/OCv2_0364
+Events:
+   C - 0019
+  FD - 005A
+[0019] (48) if (VAR_EGO == 1) {
+[001F] (D8)   printEgo("I think it's the name of a cigarette.");
+[003F] (18) } else {
+[0042] (D8)   printEgo("It says `JAIL` in Nepali.");
+[0059] (**) }
+[0059] (00) stopObjectCode();
+[005A] (2E) delay(60);
+[005E] (48) if (VAR_EGO == 1) {
+[0064] (6F)   if (getState04(372)) {
+[0069] (14)     print(8,"Better not cause any trouble!");
+[0085] (18)     goto 00E9;
+[0088] (**)   }
+[0088] (**) }
+[0088] (14) print(8,"Hello\x02");
+[0091] (B1) VAR_RESULT = getBitVar(1541,VAR_EGO);
+[0096] (28) if (!VAR_RESULT) {
+[009A] (DB)   setBitVar(1541,VAR_EGO,Var[235]);
+[009F] (14)   print(8,", and welcome to Katmandu!");
+[00B8] (18) } else {
+[00BB] (14)   print(8," again.");
+[00C5] (**) }
+[00C5] (31) VAR_RESULT = getBitVar(1475,0);
+[00CA] (A8) if (VAR_RESULT) {
+[00CE] (AE)   waitForMessage();
+[00CF] (14)   print(8,"Here to visit the prisoner?");
+[00E9] (**) }
+[00E9] (00) stopObjectCode();
+END

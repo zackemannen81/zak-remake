@@ -1,0 +1,23 @@
+Events:
+   1 - 0022
+   2 - 0022
+   9 - 0022
+   A - 0022
+   B - 0029
+[0022] (B9) doSentence(VAR_ACTIVE_VERB,92,VAR_ACTIVE_OBJECT2,1);
+[0028] (00) stopObjectCode();
+[0029] (48) unless (VAR_ACTIVE_OBJECT2 == 14) goto 006D;
+[002F] (C8) unless (Var[138] == Var[234]) goto 0054;
+[0034] (47) clearState08(14);
+[0037] (17) clearState02(14);
+[003A] (19) doSentence(250,101,0,1);
+[0041] (29) setOwnerOf(14,0);
+[0045] (29) setOwnerOf(14,15);
+[0049] (6F) unless (getState04(14)) goto 0051;
+[004E] (07) setState08(93);
+[0051] (18) goto 006A;
+[0054] (D8) printEgo("Not without Sushi in it!");
+[006A] (18) goto 006F;
+[006D] (42) startScript(3);
+[006F] (00) stopObjectCode();
+END

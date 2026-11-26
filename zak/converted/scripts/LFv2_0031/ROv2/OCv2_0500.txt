@@ -1,0 +1,29 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0031/ROv2/OCv2_0500
+Events:
+  FD - 0013
+[0013] (40) cutscene();
+[0014] (19) doSentence(254,499,0,1);
+[001B] (11) animateActor(5,255);
+[001E] (58) beginOverride();
+[001F] (18) goto 003B;
+[0022] (2E) delay(20);
+[0026] (11) animateActor(5,246);
+[0029] (2E) delay(120);
+[002D] (1E) walkActorTo(5,44,35);
+[0031] (3B) waitForActor(5);
+[0033] (01) putActor(5,37,90);
+[0037] (2E) delay(300);
+[003B] (A8) if (VAR_OVERRIDE) {
+[003F] (01)   putActor(5,37,90);
+[0043] (**) }
+[0043] (13) ActorOps(5,[Costume(12)]);
+[0047] (07) setState08(506);
+[004A] (9A) Var[47] = Var[234];
+[004D] (19) doSentence(250,498,0,1);
+[0054] (1A) Var[171] = 2;
+[0058] (C0) endCutscene();
+[0059] (1E) walkActorTo(5,28,90);
+[005D] (3B) waitForActor(5);
+[005F] (17) clearState02(504);
+[0062] (00) stopObjectCode();
+END

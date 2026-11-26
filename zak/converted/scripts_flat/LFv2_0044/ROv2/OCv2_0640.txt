@@ -1,0 +1,23 @@
+Events:
+   B - 0019
+  FF - 0084
+[0019] (4F) unless (getState08(642)) goto 0080;
+[001E] (48) unless (VAR_ACTIVE_OBJECT2 == 38) goto 006B;
+[0024] (0F) unless (!getState08(643)) goto 0052;
+[0029] (B6) walkActorToObject(VAR_EGO,643);
+[002D] (BB) waitForActor(VAR_EGO);
+[002F] (D8) printEgo("This looks like a good spot.");
+[0048] (19) doSentence(11,38,643,0);
+[004F] (18) goto 0068;
+[0052] (D8) printEgo("There already is a hole.");
+[0068] (18) goto 007D;
+[006B] (D8) printEgo("That doesn't work.");
+[007D] (18) goto 0083;
+[0080] (18) goto 0099;
+[0083] (00) stopObjectCode();
+[0084] (4F) unless (getState08(642)) goto 0099;
+[0089] (D8) printEgo("It's locked.");
+[0096] (18) goto 00A0;
+[0099] (19) doSentence(255,643,0,1);
+[00A0] (00) stopObjectCode();
+END

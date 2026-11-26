@@ -1,0 +1,9 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0002/ROv2/OCv2_0021
+Events:
+   B - 0026
+   E - 0023
+[0023] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[0025] (00) stopObjectCode();
+[0026] (42) startScript(23);
+[0028] (00) stopObjectCode();
+END

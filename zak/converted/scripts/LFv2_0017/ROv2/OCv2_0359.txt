@@ -1,0 +1,25 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0017/ROv2/OCv2_0359
+Events:
+   B - 0016
+[0016] (48) if (VAR_ACTIVE_OBJECT2 == 49) {
+[001C] (EF)   if (getState04(VAR_ACTIVE_OBJECT1)) {
+[0020] (D8)     printEgo("It's already on fire.");
+[0034] (18)   } else {
+[0037] (48)     if (VAR_EGO == 2) {
+[003D] (31)       VAR_RESULT = getBitVar(1475,0);
+[0042] (A8)       if (VAR_RESULT) {
+[0046] (D8)         printEgo("I shouldn't do this, but I have to get\x01Zak out of jail!");
+[0074] (18)       } else {
+[0077] (D8)         printEgo("I'd need a REALLY good reason to commit\x01arson!");
+[00A0] (18)         goto 00B3;
+[00A3] (**)       }
+[00A3] (**)     }
+[00A3] (A7)     setState04(VAR_ACTIVE_OBJECT1);
+[00A5] (19)     doSentence(250,360,0,1);
+[00AC] (42)     startScript(114);
+[00AE] (**)   }
+[00AE] (18) } else {
+[00B1] (42)   startScript(3);
+[00B3] (**) }
+[00B3] (00) stopObjectCode();
+END

@@ -1,0 +1,1858 @@
+;; ScummTR note: every line starting with this prefix is ignored
+;; ScummTR note: file encoding is Windows-1252/ISO-8859-1 (¡café-piñata Straße!)
+[001:ONv2#0110]rope
+[001:OCv2#0110]Down we go!
+[001:ONv2#0108]loose boards
+[001:OCv2#0108]AHHHHHHEEEEEEEEeeeeeee^
+[001:OCv2#0108]I'm not going down there!
+[001:OCv2#0108]They're not THAT loose. I'll need some\001help.
+[001:OCv2#0108]loose boards
+[001:OCv2#0108]hole@@@@@@@@
+[001:ONv2#0107]rug corner
+[001:ONv2#0109]rug corner
+[001:OCv2#0109]Sushi in lamp
+[001:OCv2#0109]fish bowl@@@@@@@@@
+[001:OCv2#0109]taped fish bowl@@@
+[001:OCv2#0109]lamp@@@@@@@@@
+[001:OCv2#0109]Sushi in fish bowl
+[001:ONv2#0085]bed
+[001:OCv2#0085]I'll pass.
+[001:ONv2#0084]door
+[001:OCv2#0084]I'll remove the rope first.
+[001:OCv2#0084]Not yet.
+[001:ONv2#0017]torn wallpaper
+[001:OCv2#0097]Whoops!
+[001:OCv2#0098]Come with me, Sushi.
+[001:OCv2#0099]Swim forward@@
+[001:OCv2#0099]   Smile@@@
+[001:OCv2#0099]  Swim backward
+[001:OCv2#0093]Yay, it's my CashCard.
+[001:OCv2#0093]I can't reach it with that.
+[001:ONv2#0014]Sushi in fish bowl
+[001:OCv2#0014]Forget it!
+[001:OCv2#0014]I have to put Sushi somewhere first.
+[001:OCv2#0014]Gotta remove my hat.
+[001:ONv2#0015]phone bill@@@@
+[001:ONv2#0016]kazoo
+[001:ONv2#0092]dresser drawer
+[001:ONv2#0091]dresser
+[001:OCv2#0091]Not without Sushi in it!
+[001:ONv2#0018]CashCard
+[001:ONv2#0106]plastic card
+[001:OCv2#0106]Oh no, I pushed it way under the desk!
+[001:OCv2#0106]It's way under the desk.
+[001:OCv2#0106]I can't make out what it says.
+[001:ONv2#0094]desk drawer
+[001:ONv2#0019]receiver
+[001:OCv2#0019]I'll hang it up.
+[001:ONv2#0087]telephone
+[001:OCv2#0087]It seems to be out of order.
+[001:ONv2#0088]answering machine
+[001:OCv2#0088]There aren't any messages.
+[001:OCv2#0088]It wouldn't be polite to listen to Zak's\001messages.
+[001:OCv2#0088]I don't want Zak to miss his messages.
+[001:OCv2#0105]Uh oh. Goldfish chowder.
+[001:ONv2#0103]lamp@@@@@@@@@
+[001:OCv2#0103]It's broken.
+[001:OCv2#0103]Hope you're happy in there, Sushi.
+[001:OCv2#0103]Isn't it nice to be home, Sushi?
+[001:ONv2#0086]plant
+[001:ONv2#0095]cat clock
+[001:OCv2#0095]Gosh, it's getting late.
+[001:OCv2#0095]It seems to have stopped.
+[001:OCv2#0095]It's nailed to the wall.
+[001:ONv2#0096]cat clock
+[001:ONv2#0090]window shade
+[001:SCv2#0019]Push@@
+[001:SCv2#0019]Pull@@
+[001:SCv2#0019]Give@@
+[001:SCv2#0019]Open@@@
+[001:SCv2#0019]Close@@
+[001:SCv2#0019]Read@@@
+[001:SCv2#0019]Walk to@@
+[001:SCv2#0019]Pick up@@
+[001:SCv2#0019]What is@@
+[001:SCv2#0019]Put on@@@@
+[001:SCv2#0019]Take off@@
+[001:SCv2#0019]Use@@@@@@@
+[001:SCv2#0019]Turn on@
+[001:SCv2#0019]Turn off
+[001:SCv2#0019]Switch@@
+[001:SCv2#0019]To Zak@@
+[001:SCv2#0019]Fly to@@@
+[001:SCv2#0037]It's bent.
+[001:SCv2#0037]bent butter knife
+[001:SCv2#0037]Ooops! I bent it!
+[001:SCv2#0037]I can't remove them with that.
+[001:SCv2#0046]fish bowl@@@@@@@@@
+[001:SCv2#0046]taped fish bowl@@@
+[001:SCv2#0046]Sorry, Sushi, but you're fertilizer now.
+[001:SCv2#0046]That would kill it!
+[001:SCv2#0053]Zachary McKracken\002
+[001:SCv2#0053]Annie Larris\002
+[001:SCv2#0053]The one in front says:\001\002
+[001:SCv2#0053]Melissa China\002
+[001:SCv2#0053]Leslie Bennett\002
+[001:SCv2#0053], balance is $\004\066
+[001:SCv2#0053]That's useless - it only works for me.
+[001:SCv2#0053]Put it in the \006\066.
+[001:SCv2#0053]No way!
+[001:SCv2#0053]It won't work. It's not mine.
+[001:SCv2#0059]Zak@@@@@@@
+[001:SCv2#0059]Annie@@@@@
+[001:SCv2#0059]Melissa@@@
+[001:SCv2#0059]Leslie@@@@
+[001:SCv2#0059]Switch@@
+[001:SCv2#0107]Zachary darling, this is your mother.\001Why don't you ever call me?
+[001:SCv2#0107]This is The Phone Company calling.\001Your telephone has been disconnected.\003Please stop by our office to settle your\001bill. See ya.
+[001:SCv2#0107]Have you seen that girl on TV looking\001for artifacts?\003She looks like your type, Zachary, and\001lives so close to you!\003Why don't you ever bring home nice girls\001like her?
+[001:SCv2#0107]So, did you see those cute girls on Mars\001with their darling little spaceship?\003You're a smart boy, Zachary, why don't\001YOU build a spaceship?
+[001:SCv2#0107]I just loved your "Vegetarian Vampire"\001article! Did you REALLY get to meet one?\003My good friend Jayne was just telling me\001about a Golfing Guru in Katmandu!\003You should do a story about him!
+[001:SCv2#0107]My friend Jayne told me that Space\001Aliens are running The Phone Company!\003She said they wear big cowboy hats\001and don't have knees^or was that noses?\003I know you're doing a story on them.\001Be careful! They could be DANGEROUS!
+[001:SCv2#0107]My friend Jayne's daughter Sally is home\001from school, and would like to meet you!\003She's a nice, polite girl, not like that\001tramp Sandy you brought home last month!
+[001:SCv2#0107]Zak, this is your boss calling.\001How's the squirrel story coming?\003I'd better see some great copy on my\001desk soon, or you're out of a job!
+[001:SCv2#0107]This is Ed calling for Sandy. Are we on\001for the Monster Truck Show tomorrow?\003I've got the Edsel all polished up and\001ready to go! I'll pick you up at 7:30.\003See ya!
+[001:SCv2#0107]Bye dear. Don't forget to call!
+[001:SCv2#0137]Key of Sea Kazoo
+[001:SCv2#0137]The bowl's in the way.
+[001:SCv2#0137]The oxygen mask's in the way.
+[001:SCv2#0137]That's the only song I know.
+[001:SCv2#0137]I can't carry a tune.
+[002:ONv2#0026]butter knife@@@@@
+[002:ONv2#0024]small key
+[002:ONv2#0111]door
+[002:ONv2#0112]door
+[002:ONv2#0117]infrared sensor
+[002:OCv2#0117]yellow crayon@
+[002:OCv2#0117]Hmm. Only one yellow crayon left.
+[002:ONv2#0113]TV
+[002:OCv2#0113]I have to use the remote control.
+[002:OCv2#0113]It doesn't have any controls on it.
+[002:ONv2#0020]power cord
+[002:ONv2#0118]power outlet
+[002:OCv2#0118]YOWL!!!
+[002:OCv2#0118]That would be stupid!
+[002:ONv2#0021]remote control
+[002:ONv2#0131]seat cushion
+[002:OCv2#0131]Good idea! This place is a mess!
+[002:OCv2#0131]power cord@@
+[002:OCv2#0131]power outlet
+[002:ONv2#0119]seat cushion
+[002:ONv2#0023]bread crumbs
+[002:ONv2#0126]pipe
+[002:OCv2#0126]I'll need some tools for that.
+[002:OCv2#0126]It's already open.
+[002:OCv2#0126]It's already closed.
+[002:ONv2#0025]box of crayons
+[002:ONv2#0121]cabinet
+[002:ONv2#0122]switch
+[002:ONv2#0124]stove
+[002:OCv2#0124]I don't feel like cooking.
+[002:ONv2#0130]stale bread
+[002:ONv2#0129]sink
+[002:OCv2#0129]fish bowl@@@@@@@@@
+[002:OCv2#0129]taped fish bowl@@@
+[002:OCv2#0129]Hey Sushi, hope you're happy there.
+[002:OCv2#0129]Sushi in fish bowl
+[002:OCv2#0129]Welcome home, Sushi!
+[002:OCv2#0129]Sushi's not here.
+[002:OCv2#0129]It's a perfectly good egg.
+[002:OCv2#0129]I don't want to put that in the \006\009.
+[002:ONv2#0123]faucet
+[002:ONv2#0022]egg
+[002:ONv2#0125]refrigerator
+[002:SCv2#0021]Oh no! The crumbs got washed away!
+[002:SCv2#0021]WHOOPS! Shredded Sushi.
+[002:SCv2#0022]Whoops! That washed away the crumbs!
+[002:SCv2#0023]I guess I chose the right channel!
+[002:SCv2#0023]I wonder why it's not working?
+[002:SCv2#0023]I'm too far away from the TV.
+[002:SCv2#0023]It doesn't seem to work here.
+[002:SCv2#0029]I need to turn the TV off.
+[002:SCv2#0029]I don't want to leave the disposal on.
+[002:SCv2#0029]I can't leave with the water running.
+[002:SCv2#0029]I forgot to close the fridge.
+[002:SCv2#0029]Looks good to me.
+[002:SCv2#0061]It's too dark in here.
+[002:SCv2#0061]THE KING FAN CLUB\001Member in good standing since 1997.
+[002:SCv2#0061]Well, it's all filled out and the\001postage is prepaid.
+[002:SCv2#0061]   THE KING FAN CLUB\001DON'T DELAY - JOIN TODAY
+[002:SCv2#0061]And it's filled out in crayon.
+[002:SCv2#0061]wallpaper map@
+[002:SCv2#0061]phone bill map
+[002:SCv2#0061]I drew the map from my dream on it.
+[002:SCv2#0061]I drew my dream map and the Mars map.
+[002:SCv2#0061]I drew the Mars map.
+[002:SCv2#0061]It already has a map on it.
+[002:SCv2#0102]Good morning San Francisco,\001this is Lori Amore.
+[002:SCv2#0102]We'll continue with today's top story\001about the \002
+[002:SCv2#0102]Yale coeds' mission to Mars,
+[002:SCv2#0102]after this important message:
+[002:SCv2#0102]universal stupidity epidemic,
+[002:SCv2#0102]after this^
+[002:SCv2#0102]uhh^
+[002:SCv2#0102]after this story about the universal\001stupidity epidemic.
+[002:SCv2#0102]Hello, I'm Annie Larris from The Society\001for Ancient Wisdom in San Francisco.
+[002:SCv2#0102]Gosh, she looks VERY familiar.
+[002:SCv2#0102]Where have I seen her before?
+[002:SCv2#0102]Our quest for a greater understanding of\001the past can make a better world today.
+[002:SCv2#0102]But we need your help! Please deposit\001artifacts in our 14th Avenue drop slot.
+[002:SCv2#0102]I promise they will be returned\001undamaged. Thank you for your time.
+[002:SCv2#0102]Now from Mars, one of the women who made\001this dangerous journey, Melissa China.
+[002:SCv2#0102]Hi there!
+[002:SCv2#0102]Melissa, why have you and your friend\001Leslie traveled all the way to Mars?
+[002:SCv2#0102]We had dreams in which an alien told us\001how to convert our van into a spaceship.\003We were told to fly to Mars and await\001further instructions.
+[002:SCv2#0102]So here we are!
+[002:SCv2#0102]I see.
+[002:SCv2#0102]And have you received your, um,\001"instructions?"
+[002:SCv2#0102]No. We haven't talked to ANY\001"intelligent beings" since we landed.\003But we're willing to wait!
+[002:SCv2#0102]Oops. My helmet says my oxygen level\001is low. I have to go refill it.
+[002:SCv2#0102]OK, Melissa. Thank you, and good luck!
+[002:SCv2#0102]If you've been feeling increasingly\001stupid lately, you're not alone!\003Scientists are baffled by a mysterious\001buzz that is affecting people worldwide.
+[002:SCv2#0102]The 60-cycle hum seems to come from\001every telephone line on the planet.
+[002:SCv2#0102]A spokesperson for The Phone Company\001refused to comment.
+[003:ONv2#0134]stairs
+[003:ONv2#0135]door
+[003:ONv2#0147]doorbell
+[003:OCv2#0147]I don't want to bother them, they're\001closed.
+[003:OCv2#0147]Hey! Wadda ya doin' wakin' me up?
+[003:OCv2#0147]I guess ya wanna go to the airport.
+[003:OCv2#0147]Oh, it's you again.
+[003:OCv2#0147]Well, climb aboard.
+[003:ONv2#0149]sign
+[003:OCv2#0149]CLOSED\001For service, push doorbell.
+[003:ONv2#0136]door
+[003:ONv2#0028]mailbox
+[003:OCv2#0028]A letter! I need the key.
+[003:OCv2#0028]I'll leave it for the mailman.
+[003:OCv2#0028]That didn't open it.
+[003:OCv2#0028]It's already closed.
+[003:ONv2#0139]letter
+[003:OCv2#0139]It's THE KING FAN CLUB card! Wow, that\001was fast!
+[003:ONv2#0138]mailbox
+[003:OCv2#0138]It's \002
+[003:OCv2#0138]locked.
+[003:OCv2#0138]already opened.
+[003:OCv2#0138]It's not filled out.
+[003:OCv2#0138]I can't mail that!
+[003:OCv2#0138]It's locked.
+[003:OCv2#0138]Zachary McKracken, 5858 13th Ave.
+[003:ONv2#0140]Golden Gate Bridge
+[003:OCv2#0140]That's a bit too far!
+[003:OCv2#0140]Hey! I'm a busy guy! Just put your\001CashCard in the card reader.
+[003:ONv2#0141]14th Avenue
+[003:ONv2#0150]CashCard reader
+[003:OCv2#0150]C'mon!
+[003:OCv2#0150]Hey! No free rides!
+[003:OCv2#0150]Sorry bud, but you're low on dough!
+[003:ONv2#0142]bus
+[003:OCv2#0142]The door won't open from the outside,\001and the bus driver's asleep.
+[003:OCv2#0143]Well? This ain't a free ride y'know.
+[003:OCv2#0143]OK, off ya go!
+[003:OCv2#0143]You too!
+[003:OCv2#0143]Off my bus!
+[003:ONv2#0144]bus driver
+[003:OCv2#0144]Use it in the \006\066.
+[003:OCv2#0144]I don't want it!
+[003:ONv2#0029]stale bread
+[003:ONv2#0027]fan club card
+[003:SCv2#0039]baker
+[003:SCv2#0039]We're closed, and we're out of fresh\001bread anyway.
+[003:SCv2#0039]Listen, you DON'T want the bread we have\001left! Go away!
+[003:SCv2#0039]OK, you asked for it!
+[003:SCv2#0052]Don't just stand there. Pay your fare.
+[003:SCv2#0052]Hey, does your friend wanna come?\001I'll be leaving in 15 seconds!
+[003:SCv2#0052]Are ya gonna pay or what?
+[003:SCv2#0052]OK, outta here ya bum!
+[003:SCv2#0054]All right, let's go!
+[004:ONv2#0151]door
+[004:OCv2#0151]See ya.
+[004:ONv2#0152]computer terminal
+[004:OCv2#0152]It's already on.
+[004:OCv2#0152]There's no off switch.
+[004:OCv2#0152]It lists what everyone in town owes.
+[004:OCv2#0152]Tum de dum.
+[004:OCv2#0152]Hello?
+[004:ONv2#0030]application
+[004:ONv2#0159]pay phone
+[004:OCv2#0159]I don't have any change.
+[004:OCv2#0159]\004\066\002
+[004:OCv2#0159]One moment^
+[004:OCv2#0159]Look what you found! How interesting!
+[004:OCv2#0159]OH! You have MORE than one!
+[004:OCv2#0159]No thanks.
+[004:OCv2#0159]Do you have a bill to pay?
+[004:OCv2#0159]We can't accept your \006\009\001as payment.
+[004:ONv2#0153]plant
+[004:OCv2#0153]There, now my bill is zero. I'll stamp\001it paid and leave it here.
+[004:OCv2#0153]I don't remember my account number!
+[004:OCv2#0153]I've already taken care of my bill.
+[004:OCv2#0153]I don't know a thing about computers.
+[004:ONv2#0154]sign
+[004:OCv2#0154]THE PHONE COMPANY\001Please pay bills here.
+[004:ONv2#0156]counter door
+[004:OCv2#0156]Hello.
+[004:OCv2#0156]You can't come back here!
+[004:ONv2#0157]counter door
+[004:ONv2#0158]counter
+[004:ONv2#0155]door
+[004:SCv2#0074]No charge for Brothers!
+[004:SCv2#0074]You owe $\004\046. You calling Mars or\001something?\003CashCard please.
+[004:SCv2#0074]I don't have it here.
+[004:SCv2#0074]How silly of you. Here's your bill.
+[004:SCv2#0074]Tsk tsk! Scribbling on your phone bill!\003An extra $10 charge for defacing phone\001company property!
+[004:SCv2#0074]You don't have enough money!
+[004:SCv2#0074]Next time be prompt with your payment!
+[004:SCv2#0077]Hello?\003Hello, who's there?\003Is this Edna again?
+[004:SCv2#0077]They hung up!
+[004:SCv2#0092]Hmm. The prisoner's probably lost h\002
+[004:SCv2#0092]is\001\002
+[004:SCv2#0092]er\001\002
+[004:SCv2#0092]mind by now.
+[004:SCv2#0092]You are free to go now. Don't come back!
+[004:SCv2#0093]I think I'll check on the prisoner.
+[004:SCv2#0093]How'd you get in here?
+[004:SCv2#0093]Don't you know the Mindbender's not good\001for your health!
+[004:SCv2#0094]What was that!
+[004:SCv2#0094]Oh, it must be the Brother in the back.
+[004:SCv2#0094]I THOUGHT I heard something!
+[004:SCv2#0094]An intruder!
+[004:SCv2#0095]Where'd \002
+[004:SCv2#0095]s\002
+[004:SCv2#0095]he go?
+[004:SCv2#0141]Sorry! I thought you were an intruder!
+[004:SCv2#0141]I'll put your artifact\002
+[004:SCv2#0141]s\002
+[004:SCv2#0141] in a safe place!
+[004:SCv2#0141]I didn't know there was a Brother here.
+[004:SCv2#0141]WAIT! You're bobbing up and down!
+[004:SCv2#0141]You're not one of us!
+[004:SCv2#0141]What are you doing in there?
+[004:SCv2#0141]Oh well.
+[004:SCv2#0142]How'd you get in here?
+[004:SCv2#0142]Where's the artifact?
+[004:SCv2#0142]Where'd you get the artifact\002
+[004:SCv2#0142]s\002
+[004:SCv2#0142]?
+[004:SCv2#0142]You're coming with me.
+[004:SCv2#0142]Not talking? I know what to do with you!
+[004:SCv2#0142]Get in!
+[004:SCv2#0142]Stay!
+[004:SCv2#0142]Oh, thanks for the artifact\002
+[004:SCv2#0142]s\002
+[004:SCv2#0142].
+[004:SCv2#0142]See ya.
+[005:ONv2#0165]sign
+[005:OCv2#0165]Society for Ancient Wisdom\001Deposit artifacts in slot.
+[005:OCv2#0165]It's connected with wires.
+[005:OCv2#0165]That would be stealing.
+[005:ONv2#0169]drop slot
+[005:OCv2#0169]It's locked.
+[005:OCv2#0169]Artifact Drop Slot:\001\002
+[005:OCv2#0169]Deposit artifacts here.
+[005:OCv2#0169]Locked until further notice.
+[005:OCv2#0169]It's closed.
+[005:OCv2#0169]It's too big.
+[005:OCv2#0169]No, I'll hold on to this.
+[005:ONv2#0167]sign
+[005:OCv2#0167]CLOSED PERMANENTLY\003Owner "locked" out.
+[005:OCv2#0167]I'm not into vandalism!
+[005:ONv2#0164]sign
+[005:OCv2#0164]We Buy Almost Anything^\001^From Almost Anyone
+[005:ONv2#0166]bus
+[005:ONv2#0160]13th Avenue
+[005:ONv2#0161]door
+[005:ONv2#0168]stairs
+[005:ONv2#0162]door
+[005:OCv2#0162]It's locked.
+[005:ONv2#0163]door
+[005:OCv2#0163]It's locked.
+[005:ONv2#0031]bobby pin sign
+[005:SCv2#0062]Hey you!
+[005:SCv2#0062]Where did you get that artifact?
+[005:SCv2#0062]Never mind that! You're the woman who\001was in my dream!
+[005:SCv2#0062]What a line!\003Wait a second^ I had a dream too. I was\001in a strange room with a strange man.
+[005:SCv2#0062]Hold on!
+[005:SCv2#0062]IT WAS YOU!\003Come with me.
+[005:SCv2#0062]My two friends and I had special dreams\001sent to us by the Ancient Ones.\003You're the one they told us about.
+[005:SCv2#0062]Give me a break!
+[005:SCv2#0062]I see you're skeptical. You'll soon\001change your mind.
+[005:SCv2#0062]In the dream we shared, we saw a strange\001device which we must build.
+[005:SCv2#0062]Here's a drawing of it.
+[005:SCv2#0062]Hey! That's it!
+[005:SCv2#0062]The \006\119 you brought me is\001\002
+[005:SCv2#0062]very important to our mission.
+[005:SCv2#0062]a part of this device.
+[005:SCv2#0062]This is another part of it.
+[005:SCv2#0062]Here.\003When whole, this yellow crystal shard\001will let you join my friends on Mars.\003Of course, you'll need a spacesuit.
+[005:SCv2#0062]A spacesuit?
+[005:SCv2#0062]Oh yes, here's your artifact back.
+[005:SCv2#0062]From now on, we will all share knowledge\001through our dreams.\003Be careful! If one of us dies, it will\001be impossible to complete our mission!
+[005:SCv2#0062]Switch@@
+[005:SCv2#0148]What could be keeping him?
+[005:SCv2#0148]He should have been here by now!
+[006:ONv2#0179]Yeti skull
+[006:OCv2#0179]No, it's VERY fragile.
+[006:OCv2#0179]I'm NOT touching it!
+[006:ONv2#0032]CashCard
+[006:ONv2#0033]crystal shard
+[006:ONv2#0172]door
+[006:ONv2#0174]lamp
+[006:OCv2#0174]There's not enough room in there.
+[006:ONv2#0175]blotter
+[006:ONv2#0173]desk
+[006:OCv2#0173]There aren't any drawers.
+[006:ONv2#0178]drawing
+[006:OCv2#0178]Nope, that won't work.
+[006:OCv2#0178]It's the device from my dream!
+[006:OCv2#0178]I can't see it.
+[006:ONv2#0176]books
+[006:OCv2#0176]I've already read them all.
+[006:OCv2#0176]It would take YEARS to read them!
+[006:ONv2#0177]books
+[006:SCv2#0119]This looks like an artifact!
+[006:SCv2#0119]I wonder who would know what this is.
+[006:SCv2#0119]Hmm^
+[006:SCv2#0119]This \006\009 is \002
+[006:SCv2#0119]part of the\001device!
+[006:SCv2#0119]VERY old.
+[006:SCv2#0119]And you already know how to use its\001power.
+[006:SCv2#0119]It also has tremendous power if you're\001trained to use it.
+[006:SCv2#0119]There's some writing on it!
+[006:SCv2#0119]It's the section that generates the\001device's power.
+[006:SCv2#0119]We must acquire its other half.
+[006:SCv2#0119]We lost its other half! Our mission\001has failed!
+[006:SCv2#0119]We can't use it until the two halves are\001fused together!
+[006:SCv2#0119]It will hold the crystals when we build\001the device
+[006:SCv2#0119]It is the Master Crystal which will\001focus the device's energy.
+[007:ONv2#0034]tool kit@@@@@
+[007:ONv2#0035]monkey wrench
+[007:ONv2#0036]duct tape@@@@
+[007:ONv2#0037]rope@@@@@@@@@
+[007:ONv2#0038]wire cutters@
+[007:ONv2#0039]wet suit@@@@@
+[007:ONv2#0040]nose glasses@
+[007:OCv2#0040]Gotta remove my mask.
+[007:ONv2#0043]hat@@@@@@@@@@
+[007:OCv2#0043]Gotta remove my fishbowl.
+[007:ONv2#0044]golf club@@@@
+[007:OCv2#0044]Golden Boar Sand Wedge
+[007:ONv2#0180]door@@@@@@@@@
+[007:ONv2#0181]Buy Window@@@
+[007:OCv2#0181]Pay for goods here. CashCards only.
+[007:ONv2#0182]Sell Window@@
+[007:OCv2#0182]Cash offered for merchandise.\001No questions asked.
+[007:ONv2#0183]crystal shard
+[007:OCv2#0183]Buy@@@@@@
+[007:OCv2#0183]Sell@@
+[007:ONv2#0184]crystal shard
+[007:ONv2#0185]yellow crystal
+[007:ONv2#0186]blue crystal@
+[007:ONv2#0187]butter knife@
+[007:OCv2#0187]Hiya buddy.
+[007:OCv2#0187]Sorry, but today's Super Lucky Lotto\001numbers ain't been picked.
+[007:ONv2#0188]remote control
+[007:OCv2#0188]Hello.
+[007:ONv2#0041]guitar@@@@@@@
+[007:OCv2#0041]I don't know how.
+[007:ONv2#0189]Lotto@@@@@@@@
+[007:OCv2#0189]Dontcha know the law?\001Only one Lotto ticket per person.
+[007:OCv2#0189]I told ya, NO MORE LOTTO TICKETS!
+[007:OCv2#0189]I don't gamble.
+[007:OCv2#0189]PLAY LOTTO\001"If you don't play, you can't lose!"
+[007:OCv2#0189]Gee, I hope I win!
+[007:OCv2#0189]Come back after the numbers are picked\001and I'll tell ya if yer a winner.
+[007:OCv2#0189]Thanks!
+[007:ONv2#0042]Lotto ticket@
+[007:ENv2#0007]Lou@@
+[007:SCv2#0024]You can't buy somethin with no CashCard!
+[007:SCv2#0024]Oh yeah!
+[007:SCv2#0024]You already own that!
+[007:SCv2#0024]I want to buy the \006\045.
+[007:SCv2#0024]Come over here.
+[007:SCv2#0024]That'll be \004\047 bucks, friend.
+[007:SCv2#0024]Uh, I don't have my CashCard with me.
+[007:SCv2#0024]Can't ya read? "CashCards only!" Come\001back when ya have it!
+[007:SCv2#0024]Here's my CashCard.
+[007:SCv2#0024]Thanks.
+[007:SCv2#0024]Sorry, ya don't have enough money.\001Here's yer card back.
+[007:SCv2#0024]Here\002
+[007:SCv2#0024], and good luck!
+[007:SCv2#0024].
+[007:SCv2#0024]It's a bargain at \004\047 bucks!
+[007:SCv2#0024]That's my last \006\045 with transparent\001gloves.
+[007:SCv2#0024]How embarrassing!
+[007:SCv2#0026]You need a CashCard to sell somethin'!
+[007:SCv2#0026]Whoops!
+[007:SCv2#0026]Ya gotta go to the Sell window.
+[007:SCv2#0026]Someone will be with ya in a moment.
+[007:SCv2#0026]I'd like to sell this to you.
+[007:SCv2#0026]Hey, what are ya trying to pull! I'm\001not gonna buy my own \006\045!
+[007:SCv2#0026]Hmmm.
+[007:SCv2#0026]Oh!\003Wow!\003What a beautiful silver sculpture!\001I'm adding this to my art collection!
+[007:SCv2#0026]An antique silver \006\045!
+[007:SCv2#0026]I don't want yer \006\045.
+[007:SCv2#0026]Gimme yer CashCard.
+[007:SCv2#0026]Uh, I don't have it with me.
+[007:SCv2#0026]I only deal in CashCards. Come back when\001ya have one.
+[007:SCv2#0026]Whoops!
+[007:SCv2#0026]Here.
+[007:SCv2#0026]Thanks.
+[007:SCv2#0026]Here's \004\047 bucks for it.\001A pleasure doin' business with ya.
+[007:SCv2#0027]I told ya, no card, no bizness.
+[007:SCv2#0027]Show me what ya wanna buy.
+[007:SCv2#0027]Can't help ya without yer card.
+[007:SCv2#0027]Can I help ya?
+[007:SCv2#0072]Friend, ya won the big one a few too\001many times. Now, I'm not accusin' ya^\003I'll pay up this last time, but I ain't\001sellin' ya another ticket.
+[007:SCv2#0072]Congratulations lucky fella! Ya won the\001big lotto prize! 10,000 Smackeroos!
+[007:SCv2#0072]Hey bud, yer lotto ticket won ya $\004\054!
+[007:SCv2#0072]C'mere, I'll give ya yer winnin's.
+[007:SCv2#0072]Gimme that ticket and yer CashCard.
+[007:SCv2#0072]Ya sure are one lucky guy!
+[007:SCv2#0072]So tell me, what's yer secret?
+[007:SCv2#0072]Sorry bud, but yer lotto tick's a dud.\001Give it here and I'll toss it for ya.
+[007:SCv2#0138]Old Spitinureye
+[007:SCv2#0138]Glug, glug.\003It tastes AWFUL!
+[007:SCv2#0138]No thanks.
+[007:SCv2#0138]It's "How To Raise Your Consciousness\001And Lower Your Golf Scores."
+[007:SCv2#0138]It was written by a guru in Nepal named\001Swami Holanwanda. I'\002
+[007:SCv2#0138]ve already read it.
+[007:SCv2#0138]ll read it later.
+[007:SCv2#0138]The \006\009 will get wet.
+[007:SCv2#0138]taped fish bowl@@@
+[007:SCv2#0138]It's uncomfortably tight!
+[007:SCv2#0138]Not me!
+[007:SCv2#0138]size small
+[007:SCv2#0138]Ouch! It burned up in my hands!
+[007:SCv2#0138]Super Lucky Lotto - \002
+[007:SCv2#0138]\004\066 \002
+[007:SCv2#0138]No thanks, I don't gamble.
+[007:SCv2#0138]open tool kit
+[007:SCv2#0138]Wow! Look at all this stuff!
+[007:SCv2#0138]tool kit@@@@@
+[007:SCv2#0138]Maybe I should open it.
+[008:ONv2#0190]gate to planes
+[008:ONv2#0214]sign@@@@@@@@@
+[008:OCv2#0214]Miami closed for repairs.
+[008:ONv2#0191]door@@@@@@@@@
+[008:OCv2#0191]Looks like it's broken.
+[008:ONv2#0193]newsstand@@@@
+[008:ONv2#0213]ticket@@@@@@@
+[008:ONv2#0194]reservations terminal
+[008:ONv2#0195]plane@@@@@@@@
+[008:ONv2#0192]plant@@@@@@@@
+[008:OCv2#0206]I don't need anything! Let me dance!
+[008:OCv2#0207]Can y'spare a debit?
+[008:OCv2#0208]I've heard of dis guru. Lemme see what\001he has t'say.
+[008:OCv2#0208]Ah!
+[008:OCv2#0208]I UNDERSTAND now! I don't need this\001whiskey any longer! Here, and thank you!
+[008:OCv2#0208]And here're all my earthly possessions.
+[008:OCv2#0208]devotee
+[008:OCv2#0210]Tanks, but my life shtill ain' got no\001meanin'.
+[008:OCv2#0210]One moment^
+[008:OCv2#0210]Hey! You're broke too!
+[008:OCv2#0210]No tanks.
+[008:ONv2#0045]book@@@@@@@@@
+[008:ONv2#0046]whiskey@@@@@@
+[008:ENv2#0008]bum@@@@
+[008:ENv2#0008]devotee
+[008:SCv2#0040]You want my last book?
+[008:SCv2#0040]Want to buy a book on enlightenment?
+[008:SCv2#0043]No more books, just let me dance.
+[008:SCv2#0043]That'll be $\004\118.
+[008:SCv2#0043]May you find True Enlightenment.
+[008:SCv2#0043]Sorry, you don't have enough money.\001Peace anyway.
+[008:SCv2#0043]Sorry, CashCards only.
+[009:ONv2#0217]gate to planes
+[009:ONv2#0218]outside@@@@@@
+[009:ONv2#0219]newsstand@@@@
+[009:ONv2#0228]ticket@@@@@@@
+[009:ONv2#0220]reservations terminal
+[009:ONv2#0223]plane@@@@@@@@
+[009:SCv2#0080]I don't need to buy one. I can read the\001headlines from here.
+[009:SCv2#0080]COEDS DISCOVER MILE-LONG FACE ON MARS!
+[009:SCv2#0080]LAST OF THE TWO-HEADED SQUIRRELS\001BLUDGEONED BY BUMBLING FOOL!
+[009:SCv2#0080]TWO-HEADED SQUIRREL ON RAVENOUS\001RAMPAGE IN PACIFIC NORTHWEST!
+[009:SCv2#0080]REAL LIFE DR. DOOLITTLE\001YAKS WITH THE ANIMALS!
+[009:SCv2#0080]SERIOUS SECURITY SLIPPAGE AT STONEHENGE!
+[009:SCv2#0080]RIDDLE OF THE SILENT SPHINX, SOLVED!
+[009:SCv2#0080]ANGRY GURU MAKES MAN WAIT -- FOUR YEARS!
+[009:SCv2#0080]ALIEN CADILLAC CRUISER CAUSE OF\001BERMUDA TRIANGLE CATASTROPHES!
+[009:SCv2#0080]A-MAZE-ING MYSTERY OF THE\001ANCIENT MAYANS, REVEALED!
+[009:SCv2#0080]ISOLATED AFRICAN TRIBE\001WORSHIPS ANCIENT ASTRONAUTS!
+[009:SCv2#0115]I need a ticket first.
+[009:SCv2#0115]The plane's not here now.
+[009:SCv2#0115]A completely miserable flight later^
+[009:SCv2#0115]An enjoyable flight later^
+[009:SCv2#0115]Whoops! My ticket's from a different\001airport.
+[010:ONv2#0240]button@@@@@@@
+[010:OCv2#0240]The King
+[010:OCv2#0240]Caponian@@@@@@
+[010:ONv2#0229]biplane@@@@@@
+[010:OCv2#0239]I must have played the wrong tune.
+[010:ONv2#0230]red button@@@
+[010:OCv2#0230]I'm on!
+[010:ONv2#0231]blue button@@
+[010:ONv2#0232]green button@
+[010:OCv2#0232]REPORTER BECOMES "SPACE CADET"\001IN SPACE CADILLAC!
+[010:ONv2#0233]light blue button
+[010:ONv2#0234]yellow button
+[010:ONv2#0235]purple button
+[010:OCv2#0235]Glad to see you again! Enjoy the view!
+[010:ONv2#0236]viewscreen@@@
+[010:OCv2#0236]It looks like Earth!
+[010:OCv2#0236]A \006\009! It's been SO long since ah've\001strummed them strings!
+[010:OCv2#0236]A fan! Ah didn't know!
+[010:OCv2#0236]Ah don't play no sissy instruments!
+[010:OCv2#0236]Lazy! You gotta send away for your card.
+[010:OCv2#0236]An artifact!
+[010:OCv2#0236]Ah don't want it!
+[010:OCv2#0236]No thanks.
+[010:OCv2#0236]Give it to The King.
+[010:ONv2#0237]Lott-O-Dictor
+[010:OCv2#0237]Tomorrow's Winning Lotto Number: \002
+[010:OCv2#0237]\004\066 \002
+[010:ONv2#0238]door@@@@@@@@@
+[010:OCv2#0238]It doesn't seem to open.
+[010:OCv2#0238]Hey! What's THAT ah see?
+[010:OCv2#0238]Trying to fool us?\003Take him!
+[010:EXv2#0010]representative
+[010:SCv2#0064]Hope you had a nice ride!
+[010:SCv2#0100]You again? Oh well, come in.
+[010:SCv2#0100]Hello! Here to visit The King? Come in!
+[010:SCv2#0100]A captive!\003Follow me to The King.
+[010:SCv2#0100]Oh King, I have brought you a \002
+[010:SCv2#0100]visitor.
+[010:SCv2#0100]captive.
+[010:SCv2#0100]Ooops!
+[010:SCv2#0100]Tuna head! This isn't one of us!
+[010:SCv2#0100]Ah see.
+[010:SCv2#0101]Now what shall we do with him?
+[010:SCv2#0101]Make him clean the meteor slime off\001our hull?
+[010:SCv2#0101]Make him listen to New Age elevator\001music?
+[010:SCv2#0101]Make him play Ballblazer with Droid 9?
+[010:SCv2#0101]Glue money to him and toss him into a\001pit full of lawyers?
+[010:SCv2#0101]Naw^
+[010:SCv2#0101]Ah know, let's use the Mindbender.\003Get him!
+[010:SCv2#0103]Ooo! Ah think ah feel a song comin' on!
+[010:SCv2#0103]Nope. Just an upset stomach.
+[010:SCv2#0103]Ma friend will show ya how to leave.\001Come back'n visit any time, ya hear?
+[010:SCv2#0103]Come with me.
+[010:SCv2#0103]Enter this sequence to return home.
+[010:SCv2#0103]See ya.
+[011:ONv2#0241]exploded egg@
+[011:OCv2#0241]I'm not cleaning up that mess!
+[011:ONv2#0262]egg@@@@@@@@@@
+[011:OCv2#0262]She might catch me!
+[011:OCv2#0262]That's ILLEGAL!!
+[011:ONv2#0245]call button@@
+[011:OCv2#0245]In case of emergency, push button.
+[011:ONv2#0047]toilet paper@
+[011:ONv2#0264]toilet paper holder
+[011:OCv2#0264]I already have some toilet paper.
+[011:OCv2#0264]It's empty.
+[011:ONv2#0242]sink@@@@@@@@@
+[011:OCv2#0242]I'd never get her back!
+[011:OCv2#0242]It's already clogged up.
+[011:OCv2#0242]OK, but that could clog it up.
+[011:OCv2#0242]It's going to overflow!
+[011:ONv2#0243]toilet@@@@@@@
+[011:OCv2#0243]I don't have to!
+[011:ONv2#0244]toilet handle
+[011:ONv2#0248]sign@@@@@@@@@
+[011:OCv2#0248]Vacant
+[011:OCv2#0248]Occupied
+[011:ONv2#0246]door@@@@@@@@@
+[011:OCv2#0246]It's occupied.
+[011:ONv2#0257]suitcase@@@@@
+[011:OCv2#0257]I'd better not, the owner might get mad.
+[011:ONv2#0258]suitcase@@@@@
+[011:ONv2#0259]suitcase@@@@@
+[011:OCv2#0259]What's that?
+[011:OCv2#0259]That's only for emergencies.
+[011:ONv2#0050]oxygen tank@@
+[011:OCv2#0050]No way!
+[011:OCv2#0050]Gotta remove my glasses.
+[011:OCv2#0050]I'm out of oxygen!
+[011:ONv2#0249]bin@@@@@@@@@@
+[011:ONv2#0250]bin@@@@@@@@@@
+[011:ONv2#0251]bin@@@@@@@@@@
+[011:ONv2#0252]bin@@@@@@@@@@
+[011:ONv2#0253]bin@@@@@@@@@@
+[011:OCv2#0253]I think it's too late!
+[011:ONv2#0254]bin@@@@@@@@@@
+[011:ONv2#0048]cushion@@@@@@
+[011:ONv2#0255]seat@@@@@@@@@
+[011:ONv2#0256]door@@@@@@@@@
+[011:OCv2#0256]I'd depressurize the plane!
+[011:ONv2#0049]lighter@@@@@@
+[011:OCv2#0049]It's too wet!
+[011:OCv2#0049]There's no air!
+[011:OCv2#0049]lit lighter@@
+[011:OCv2#0049]It's too hot!
+[011:OCv2#0049]lighter@@@@@@
+[011:OCv2#0261]Back to your seat!
+[011:ONv2#0260]microwave oven
+[011:OCv2#0260]The door is closed.
+[011:OCv2#0260]Not Sushi!
+[011:OCv2#0260]I'd better not.
+[011:ONv2#0247]door@@@@@@@@@
+[011:OCv2#0247]There's NOTHING I want from you!
+[011:OCv2#0247]No, thanks.
+[011:ONv2#0051]peanuts@@@@@@
+[011:ONv2#0265]water@@@@@@@@
+[011:OCv2#0265]DID YOU DO THIS? GO SIT DOWN!
+[011:OCv2#0265]W\002
+[011:OCv2#0265]Ohhhh w\002
+[011:OCv2#0265]hat a mess!
+[011:SCv2#0036]It's already cooked!
+[011:SCv2#0036]I shouldn't turn on an empty microwave.
+[011:SCv2#0038]Excuse me!
+[011:SCv2#0038]Thank you.
+[011:SCv2#0079]We are now landing. Prepare to\001disembark.
+[011:SCv2#0079]Here's your egg.
+[011:SCv2#0079]Next time cook it at home!
+[011:SCv2#0079]It's been a JOY having you aboard.\001Have a nice day.
+[011:SCv2#0104]You're late! I'll show you to your seat.
+[011:SCv2#0104]Here it is.
+[011:SCv2#0104]Ladies and gentlemen, you've heard this\001speech before so I'll cut it short.\003In the likely event of a water landing,
+[011:SCv2#0104]your seat cushion may be used as a\001flotation device.
+[011:SCv2#0104]If we lose cabin pressure, oxygen masks\001should appear. But don't count on it.
+[011:SCv2#0104]Enjoy your flight^\001\002
+[011:SCv2#0104]I've a feeling I won't!
+[011:SCv2#0105]Hey you!
+[011:SCv2#0105]You shouldn't be doing that.
+[011:SCv2#0105]Get back in your seat right now!
+[011:SCv2#0105]Now stay there.
+[011:SCv2#0106]Are you all right in there?
+[011:SCv2#0106]Good, now please take your seat.
+[011:SCv2#0106]Please sit down.
+[011:SCv2#0106]Oh no! What a mess!
+[011:SCv2#0106]Hmm^
+[011:SCv2#0106]SABOTAGED SINK STIFLES\001SCREECHING STEWARDESS.
+[011:SCv2#0106]What's that awful smell?
+[011:SCv2#0106]AIEEEEE! WHO DID THIS!!!
+[011:SCv2#0106]Who left this egg in here?
+[011:SCv2#0106]Is this your egg? Don't let me catch you\001using the microwave again!
+[011:SCv2#0116]Here's your meal.
+[011:SCv2#0121]stewardess
+[012:ONv2#0266]airport@@@@@@
+[012:ONv2#0052]tree branch@@
+[012:ONv2#0268]two-headed squirrel
+[012:OCv2#0268]No way, it'll bite me!
+[012:OCv2#0268]That might kill it!
+[012:OCv2#0268]That won't do any good.
+[012:OCv2#0268]It took them and left!
+[012:OCv2#0268]It doesn't seem to want it.
+[012:OCv2#0270]There's that two-headed squirrel!
+[012:OCv2#0270]Lemme think^what would be a good\001headline?
+[012:OCv2#0270]How about^ TWO-HEADED SQUIRREL\001ATTACKS TABLOID REPORTER.
+[012:OCv2#0270]Maybe^ TWO-HEADED SQUIRREL\001DEVOURS SEATTLE AND TACOMA.
+[012:OCv2#0270]VICIOUS TABLOID REPORTER TURNS\001TWO-HEADED SQUIRREL INTO MONSTER.
+[012:OCv2#0270]I hate my job!
+[012:ONv2#0267]loose dirt@@@
+[012:OCv2#0267]I don't want to dirty my hands.
+[012:OCv2#0267]It's too bent to dig with.
+[012:OCv2#0267]Not with a vicious squirrel in my way.
+[012:OCv2#0267]I can't dig with that.
+[012:ONv2#0271]Mt. Rainier@@
+[012:OCv2#0271]It's way too high!
+[012:OCv2#0271]Come on^ get real.
+[012:ENv2#0012]loose dirt@@@
+[012:ENv2#0012]cave entrance
+[012:SCv2#0033]After digging for a long time^
+[012:SCv2#0033]bent butter knife
+[012:SCv2#0033]Sheesh^ that was a lot of work!
+[012:SCv2#0144]Uh oh, I killed it.
+[012:SCv2#0144]I'm hungry! I think I'll eat these\001peanuts.
+[013:ONv2#0272]cave exit@@@@
+[013:ONv2#0282]strange markings
+[013:OCv2#0282]Connect the dots^ la, la, la-la.
+[013:OCv2#0282]Hmmm, nothing happened.
+[013:OCv2#0282]I need more light in here.
+[013:OCv2#0282]It looks like an unfinished drawing made\001of yellow dots.
+[013:ONv2#0281]ankh door@@@@
+[013:ONv2#0288]paper@@@@@@@@
+[013:OCv2#0288]No way, it's all dirty now!
+[013:OCv2#0288]There's nothing in there to burn.
+[013:OCv2#0288]The branch won't catch. I need some\001kindling.
+[013:OCv2#0288]It's already lit.
+[013:ONv2#0273]fire pit@@@@@@@
+[013:OCv2#0273]I'd rather start it on fire.
+[013:OCv2#0273]I'll leave it for kindling.
+[013:OCv2#0273]I just need to burn them.
+[013:OCv2#0273]No way! I'd burn myself!
+[013:OCv2#0273]It burned up.
+[013:OCv2#0273]Now I need some wood!
+[013:OCv2#0273]I'll put it behind the first nest.
+[013:OCv2#0273]I don't want to put that in the pit.
+[013:OCv2#0291]branch in pit@@
+[013:OCv2#0291]nest in pit@@@@
+[013:OCv2#0291]nest and branch
+[013:OCv2#0291]pit of fire@@@@
+[013:OCv2#0291]fire pit@@@@@@@
+[013:OCv2#0276]Too bad I had to kill the squirrel.
+[013:OCv2#0276]The two-headed squirrel is guarding it.
+[013:OCv2#0275]I can't reach it.
+[013:OCv2#0275]I can't reach it with that.
+[013:OCv2#0274]Got it!
+[013:OCv2#0274]bird nest@@@@
+[013:OCv2#0284]Oh no! The fire has gone out!
+[013:ONv2#0053]abandoned bird nest
+[013:OCv2#0053]Not in my hands!
+[013:ONv2#0285]two-headed squirrel
+[013:OCv2#0285]I don't want to get bit.
+[013:OCv2#0285]That would kill it!
+[013:OCv2#0285]It just wants to be left alone.
+[013:OCv2#0287]  Left head@@@
+[013:OCv2#0287]   Chatter@@@
+[013:OCv2#0287]  Right head@@@
+[013:ONv2#0054]squirrel nest
+[013:OCv2#0054]Not in my hands!
+[014:ONv2#0297]door@@@@@@@@@
+[014:ONv2#0292]sensor@@@@@@@
+[014:ONv2#0296]platform@@@@@
+[014:ONv2#0309]platform@@@@@
+[014:ONv2#0300]tunnel@@@@@@@
+[014:OCv2#0300]It's already open.
+[014:ONv2#0299]door@@@@@@@@@
+[014:OCv2#0299]It's already closed.
+[014:OCv2#0299]It seems to be locked.
+[014:ONv2#0293]strange markings
+[014:OCv2#0293]It looks fine the way it is.
+[014:ONv2#0302]tunnel@@@@@@@
+[014:ONv2#0301]door@@@@@@@@@
+[014:ONv2#0304]tunnel@@@@@@@
+[014:ONv2#0303]door@@@@@@@@@
+[014:ONv2#0057]ankh@@@@@@@@@
+[014:ONv2#0056]crystal shard
+[014:OCv2#0307]I can't get it out.
+[014:ONv2#0294]strange markings
+[014:ONv2#0305]statue@@@@@@@
+[014:ONv2#0295]pedestal@@@@@
+[014:ONv2#0055]blue crystal@
+[014:OCv2#0298]It's locked into the pedestal.
+[014:SCv2#0049]Fly to@@@
+[014:SCv2#0049]Glug!
+[014:SCv2#0049]To Zak@@
+[014:SCv2#0049]My body is too far away.
+[014:SCv2#0049]Walk to@@
+[014:SCv2#0049]Whew!
+[014:SCv2#0049]That was some experience!
+[014:SCv2#0067]Not now! The policeman might get me!
+[014:SCv2#0067]Not with a monster in here!
+[014:SCv2#0067]It won't work, I'm not on Mother Earth.
+[014:SCv2#0067]Nothing's happening.
+[014:SCv2#0067]Oops! Better put her down.
+[014:SCv2#0067]First I'd better put her on my dresser.
+[014:SCv2#0067]I can't see her.
+[014:SCv2#0067]It will only work with animals.
+[014:SCv2#0067]Oooh! I feel dizzy!
+[014:SCv2#0067]An artifact!
+[014:SCv2#0067]What happened?
+[014:SCv2#0130]ZAK YAKKETY-YAKS YAK.
+[014:SCv2#0130]MAN TRADES MINDS WITH TWO-HEADED\001SQUIRREL; DEVELOPS SPLIT PERSONALITY.
+[014:SCv2#0130]MAN EXCHANGES MINDS WITH GOLDFISH;\001BORES HIMSELF TO DEATH.
+[015:ONv2#0323]door@@@@@@@@@
+[015:ONv2#0316]button@@@@@@@
+[015:OCv2#0316]Hmmm, nothing happened.
+[015:OCv2#0316]OOOOO NOOOOO\002
+[015:OCv2#0316]oo\002
+[015:ONv2#0317]button@@@@@@@
+[015:OCv2#0317]This is a map of the Martian Face!
+[015:OCv2#0317]This is a map of the Martian Pyramid!
+[015:OCv2#0317]I should add this to \002
+[015:OCv2#0317]my map.
+[015:OCv2#0317]\006\049's map.
+[015:OCv2#0317]I should draw a map of this.
+[015:ONv2#0318]button@@@@@@@
+[015:ONv2#0319]hieroglyphics
+[015:OCv2#0319]First\002
+[015:OCv2#0319]Then\002
+[015:OCv2#0319]And finally,\002
+[015:OCv2#0319]I can't read those symbols!
+[015:OCv2#0319] push the \002
+[015:OCv2#0319]left\002
+[015:OCv2#0319]center\002
+[015:OCv2#0319]right\002
+[015:OCv2#0319] button.
+[015:ONv2#0320]pyramid@@@@@@
+[015:OCv2#0320]It looks like there's a special object\001inside the Martian Pyramid.
+[015:ONv2#0321]face@@@@@@@@@
+[015:ONv2#0310]strange markings
+[015:ONv2#0311]stairs@@@@@@@
+[015:ONv2#0326]button@@@@@@@
+[015:ONv2#0325]box@@@@@@@@@@
+[015:OCv2#0325]I think I'll need a key.
+[015:OCv2#0325]It won't close.
+[015:ONv2#0327]platform@@@@@
+[015:ONv2#0058]white crystal
+[015:ONv2#0312]containment device
+[015:OCv2#0314]I can't pick it up, it's being held by\001a crystalinetic force!
+[016:ONv2#0328]cabinet@@@@@@
+[016:OCv2#0328]Yay! Here's the \002
+[016:OCv2#0328]stuff\002
+[016:OCv2#0328]artifact\002
+[016:OCv2#0328] they took!
+[016:OCv2#0328]It's empty.
+[016:ONv2#0329]door@@@@@@@@@
+[016:ONv2#0330]map@@@@@@@@@@
+[016:OCv2#0330]It's a map of Earth.
+[016:OCv2#0330]Oooh! I just felt real stupid.
+[016:OCv2#0340]I can't stand the noise! It's MUCH\001louder in here!
+[016:ONv2#0343]switch@@@@@@@
+[016:OCv2#0343]There isn't any way to turn it off!
+[016:ONv2#0344]machine@@@@@@
+[016:OCv2#0344]It's set to 60.
+[016:ONv2#0331]switch@@@@@@@
+[016:ONv2#0332]detention chamber
+[016:ONv2#0333]rope@@@@@@@@@
+[016:OCv2#0333]It's securely tied upstairs.
+[016:OCv2#0333]Up we go!!!
+[016:ONv2#0334]hole@@@@@@@@@
+[016:OCv2#0334]I can't reach it.
+[016:OCv2#0334]Ouch!
+[016:SCv2#0088]Not again!
+[016:SCv2#0088]Ohhh^
+[016:SCv2#0088]I'm losing my mind!
+[016:SCv2#0088]SLEAZY TABLOID REPORTER\001ABDUCTED BY SPACE ALIENS.
+[016:SCv2#0088]TEASING SLABOID, uh, PORTER AB, AB,\001er, TAKEN BY SPACE ALIASES.
+[016:SCv2#0088]TEDING SLOBORT, uh, TABES\001SPADES ALIABUH.
+[016:SCv2#0088]SLEEBLE DEEDOB, uh,\001PACEALOO BALEAZZ.
+[016:SCv2#0089]I'm feeling better now.
+[016:SCv2#0089]Ah, back to normal!
+[016:SCv2#0090]My mind is going!
+[016:SCv2#0090]Ooo^
+[016:SCv2#0091]I'm feeling better now.
+[016:SCv2#0091]Ah, back to normal!
+[016:SCv2#0096]At that very instant in the secret room^
+[016:SCv2#0096]It's happened!
+[016:SCv2#0096]IT'S HAPPENED!
+[016:SCv2#0096]WHAT happened?
+[016:SCv2#0096]A part of THE DEVICE has been\001discovered and tested!
+[016:SCv2#0096]We must recover the artifact at ONCE!
+[016:SCv2#0096]Yes, at ONCE!
+[016:SCv2#0096]WAIT!
+[016:SCv2#0096]Your disguise!
+[016:SCv2#0096]My disguise?\003OH! Almost forgot!
+[016:SCv2#0096]My hat. \002
+[016:SCv2#0096]My nose glasses.
+[016:SCv2#0096]How do I look?
+[016:SCv2#0096]Ugly.\002
+[016:SCv2#0096] Just like a human!
+[016:SCv2#0096]Good!\003See ya!
+[016:SCv2#0096]Whew!
+[016:SCv2#0098]ZLORFIK! I missed him!
+[016:SCv2#0098]Wake up!
+[016:SCv2#0098]And give me that disguise! You're not\001one of us!
+[016:SCv2#0098]Oh oh!
+[016:SCv2#0126]Meanwhile, in a secret room^
+[016:SCv2#0126]Ahem.
+[016:SCv2#0126]I just talked to The King. He said the\001machine is working perfectly.
+[016:SCv2#0126]Yeah^ working perfectly.
+[016:SCv2#0126]He said in just a few more days all\001earthlings will be stupider than we are.
+[016:SCv2#0126]Yeah^ stupider than we are.
+[016:SCv2#0126]I think you've been hanging around the\001machine too long.
+[016:SCv2#0126]Yeah^ too long.
+[016:SCv2#0126]I think I need a new partner.
+[016:SCv2#0126]Yeah^ new partner.
+[016:SCv2#0126]See ya.
+[016:SCv2#0140]Meanwhile, back in the secret room^
+[016:SCv2#0140]O BABY - I'M A JAILHOUND DOG LOVIN' MEAT\001TENDERIZIN' ROCKER IN MY BLUE SUEDE^
+[016:SCv2#0140]And WHAT do you think you're doing?
+[016:SCv2#0140]Grooveling to The King!
+[016:SCv2#0140]STOP IT THIS INSTANT!
+[016:SCv2#0140]You're SUPPOSED to be watching the\001machine, not dancing like a gloon!
+[016:SCv2#0140]Sorry.
+[016:SCv2#0140]There is still a chance^
+[016:SCv2#0140]a very SMALL chance^
+[016:SCv2#0140]^that someone will discover and activate\001the Skolarian Device.
+[016:SCv2#0140]It's the only thing that could stop us!
+[016:SCv2#0140]Of course, we will soon be in control\001and won't have to worry.
+[016:SCv2#0140]But until then^
+[016:SCv2#0140]KEEP YOUR MIND ON THE JOB!
+[016:SCv2#0140]Whatever you say, boss.
+[016:SCv2#0140]See ya.
+[016:SCv2#0140]DON'T BE COOL TO MY HEARTACHE HOVEL JUST\001TREAT MY LICE CUZ I'M ALL SHAKEN UP^
+[017:ONv2#0059]flagpole@@@@@
+[017:ONv2#0348]sign@@@@@@@@@
+[017:OCv2#0348]I think it's the name of a cigarette.
+[017:OCv2#0348]It obviously says "JAIL."
+[017:ONv2#0350]door@@@@@@@@@
+[017:ONv2#0351]door@@@@@@@@@
+[017:OCv2#0351]It's already open.
+[017:OCv2#0351]You may enter.
+[017:OCv2#0351]Or, if you wish, your friend may enter.\001But only one may visit Guru at a time.
+[017:ONv2#0349]door@@@@@@@@@
+[017:OCv2#0349]Only devotees of Guru may enter.
+[017:ONv2#0356]license plate
+[017:OCv2#0356]Y A K - 1\001Insert CashCard for airport transit.
+[017:ONv2#0362]yak pie@@@@@@
+[017:OCv2#0362]Yeah, sure!
+[017:OCv2#0362]Chew@@@@@@@@@@
+[017:OCv2#0362]   Poop@@@@@@@@
+[017:ONv2#0352]Yak@@@@@@@@@@
+[017:OCv2#0352]It doesn't want that.
+[017:OCv2#0358]That would be stealing!
+[017:ONv2#0359]hay@@@@@@@@@@
+[017:OCv2#0359]It's already on fire.
+[017:OCv2#0359]I shouldn't do this, but I have to get\001Zak out of jail!
+[017:OCv2#0359]I'd need a REALLY good reason to commit\001arson!
+[017:ENv2#0017]policeman
+[017:ENv2#0017]guard@@
+[017:SCv2#0031]I must not have enough money.
+[017:SCv2#0031]You're not getting away!
+[017:SCv2#0031]A long dusty ride later^
+[017:SCv2#0112]There's my prisoner!
+[017:SCv2#0112]Stop, thief!
+[017:SCv2#0114]FIRE! FIRE!
+[017:SCv2#0114]A fire?
+[017:SCv2#0118]Finally!
+[017:SCv2#0139]Welcome, devotee!
+[017:SCv2#0139]Oh! I see you are a follower of Guru!
+[017:SCv2#0139]No, thank you.
+[017:SCv2#0139]NOT NOW!
+[017:SCv2#0139]The law was still broken.
+[017:SCv2#0139]Thank you.
+[017:SCv2#0139]No bribes!
+[018:ONv2#0363]door@@@@@@@@@
+[018:ONv2#0060]jail key@@@@@
+[018:ONv2#0364]sign@@@@@@@@@
+[018:OCv2#0364]I think it's the name of a cigarette.
+[018:OCv2#0364]It says "JAIL" in Nepali.
+[018:OCv2#0364]Better not cause any trouble!
+[018:OCv2#0364]Hello\002
+[018:OCv2#0364], and welcome to Katmandu!
+[018:OCv2#0364] again.
+[018:OCv2#0364]Here to visit the prisoner?
+[018:ONv2#0365]counter@@@@@@
+[018:ONv2#0368]cabinet door@
+[018:OCv2#0368]Here's the stuff he took from \002
+[018:OCv2#0368]me!
+[018:OCv2#0368]Zak!\001I'll take it for him.
+[018:OCv2#0368]It's empty.
+[018:ONv2#0367]cabinet@@@@@@
+[018:ONv2#0369]wanted poster
+[018:OCv2#0369]I can't read the words, but there's a\001photo of a meteor on it!
+[018:OCv2#0369]WANTED: For gobs of terrible things,\001one murderous purple slimy meteor.
+[018:ONv2#0371]flyer@@@@@@@@
+[018:OCv2#0371]It's a picture of a flagpole, but I\001can't read Nepali.
+[018:OCv2#0371]Bulletin: Because of termite problems,\001all wooden flagpoles have been replaced.
+[018:OCv2#0371]Our flag! Thank you!
+[018:OCv2#0371]You found the key!
+[018:OCv2#0371]I don't take bribes!
+[018:OCv2#0371]Don't give anything to the prisoner!
+[018:ONv2#0370]key hole@@@@@
+[018:OCv2#0370]Don't touch that!
+[018:ONv2#0372]cell@@@@@@@@@
+[018:OCv2#0372]Let me outta here!
+[018:ONv2#0366]cell door@@@@
+[018:OCv2#0366]It's locked.
+[018:OCv2#0366]It's already open.
+[018:SCv2#0113]Where's the flag?
+[018:SCv2#0113]You're coming with me!
+[018:SCv2#0113]Don't move!
+[018:SCv2#0113]I'll take that key!
+[018:SCv2#0113]Hmm. I'll have to use my spare.
+[018:SCv2#0113]OK, get in and make yourself at home,\001you're in for a LONG\002
+[018:SCv2#0113]ER\002
+[018:SCv2#0113] stay.
+[018:SCv2#0113]I'll take your belongings.
+[018:SCv2#0113]I won't take your lighter in case you\001want to smoke.
+[018:SCv2#0113]A LONG time later^
+[018:SCv2#0113]OK, you can go. But don't EVER steal\001our flag again!
+[018:SCv2#0135]I just can't understand it. A nice \002
+[018:SCv2#0135]boy\001\002
+[018:SCv2#0135]girl\001\002
+[018:SCv2#0135]like you flagrantly breaking the law!
+[018:SCv2#0135]I hope you ROT in there!
+[018:SCv2#0135]As for you^
+[018:SCv2#0135]I'll assume your finger slipped while\001entering the Exit Visa Code.
+[018:SCv2#0135]But if not, I think it's high time you\001bought a legitimate copy of this game!
+[018:SCv2#0135]The Designers worked long and hard to\001bring "Zak McKracken" to life^
+[018:SCv2#0135]YEAH!
+[018:SCv2#0135]Keep quiet, prisoner!
+[018:SCv2#0135]And we want to encourage them to create\001more exciting adventures, don't we?
+[018:SCv2#0135]YEAH!
+[018:SCv2#0135]Ooops!\003Sorry!
+[018:SCv2#0135]So hurry on down to your local software\001store and buy your very own copy.
+[018:SCv2#0135]Remember^
+[018:SCv2#0135]Only YOU can stop worldwide stupidity!
+[018:SCv2#0135]See ya!
+[018:SCv2#0135]            THE GAME IS OVER
+[018:SCv2#0135]      Press ESCAPE to play again.
+[019:ONv2#0375]door@@@@@@@@@
+[019:ONv2#0378]postcard@@@@@
+[019:OCv2#0378]It's a picture of \002
+[019:OCv2#0378]my friend, the Witch\001Doctor, \002
+[019:OCv2#0378]an African Shaman\001\002
+[019:OCv2#0378]and the Guru playing golf.
+[019:ONv2#0377]flyer@@@@@@@@
+[019:OCv2#0377]Buy "How To Raise Your Consciousness\001And Lower Your Golf Scores",\003available at airports around the world.
+[019:ONv2#0379]statue@@@@@@@
+[019:ONv2#0380]certificate@@
+[019:OCv2#0380]Awarded to Swami Holanwanda:\003For a record-shattering score of 19 at\001Pebble Beach.
+[019:ONv2#0376]bulletin board
+[019:OCv2#0382]I already have a great sand wedge,\001but I have a friend who needs one.
+[019:OCv2#0382]You'd better hold on to that!
+[019:OCv2#0382]I have no need of your earthly\001possessions.
+[019:ENv2#0019]Guru@@@
+[019:SCv2#0042]You have already been trained. Use it!
+[019:SCv2#0042]My dear, you have no need of my wisdom.\001You already follow the right path.
+[019:SCv2#0042]I cannot teach you the ways of the\001Crystal. Give it to your writer friend.
+[019:SCv2#0042]I smell bad Karma! You'll have to wait\001while it burns off. Don't leave!
+[019:SCv2#0042]You have burned off your misdeeds,\001\002
+[019:SCv2#0042]You've kept yourself Karmically clean,\001\002
+[019:SCv2#0042]and you have the Blue Crystal with you.\003I will now teach you how to use it.\003It will put you into a state of deep\001rapport with any animal. Simply focus^
+[019:SCv2#0042]One hour later^
+[019:SCv2#0042]^then, you saute it in yak butter with\001a clove of garlic over medium heat^
+[019:SCv2#0042]Two hours later^
+[019:SCv2#0042]^and he says "that was no lady,\001that was my wife." Get it? HA HA HA.
+[019:SCv2#0042]Three hours later^
+[019:SCv2#0042]^and it only works if you are in contact\001with the Earth. Now go and do some good!
+[019:SCv2#0042]but you don't have the Blue Crystal.\003Return when you have it.
+[020:ONv2#0386]pyramid door@
+[020:ONv2#0389]secret entryway
+[020:ONv2#0388]leg@@@@@@@@@@
+[020:ONv2#0387]leg@@@@@@@@@@
+[020:ONv2#0390]Cairo@@@@@@@@
+[021:ONv2#0393]key hole@@@@@
+[021:ONv2#0395]bobby pin sign
+[021:OCv2#0395]It's stuck in the hole.
+[021:ONv2#0392]door@@@@@@@@@
+[021:OCv2#0392]The sand pile is in the way.
+[021:OCv2#0392]It won't budge.
+[021:ONv2#0391]sand pile@@@@
+[021:OCv2#0391]It runs right through my fingers.
+[021:ONv2#0396]the desert@@@
+[021:ONv2#0397]the desert@@@
+[021:ENv2#0021]tram station@
+[021:ENv2#0021]tram station@
+[021:ENv2#0021]the desert@@@
+[021:ENv2#0021]the desert@@@
+[021:SCv2#0099]After sweeping for some time^
+[021:SCv2#0099]AHhhhCHoooo
+[021:SCv2#0099]Gesundheit!
+[021:SCv2#0099]You're ALIVE!
+[021:SCv2#0099]Ahh \002
+[021:SCv2#0099]Ahh \002
+[021:SCv2#0099]CHoooooo
+[021:SCv2#0099]I try to take a nice, peaceful nap^\001and what happens?
+[021:SCv2#0099]An inconsiderate alien - and an ugly one\001at that - sweeps up sand with my HEAD!
+[021:SCv2#0099]I'M SORRY!
+[021:SCv2#0099]The NERVE of some beings!
+[021:SCv2#0099]I'll go find another planet where I can\001get some rest.
+[022:ONv2#0398]the desert@@@
+[022:ONv2#0399]strange markings
+[022:ONv2#0400]secret entryway
+[022:OCv2#0400]It's already opened.
+[023:ONv2#0403]doorway@@@@@@
+[023:ONv2#0404]doorway@@@@@@
+[023:ONv2#0405]doorway@@@@@@
+[023:ONv2#0406]doorway@@@@@@
+[023:ONv2#0407]doorway@@@@@@
+[023:ONv2#0408]doorway@@@@@@
+[023:OCv2#0408]Owwwwww. That hurt!
+[023:OCv2#0409]I don't like the sound of this.
+[023:OCv2#0409]It sounds like a vicious sleeping beast.\001I wouldn't want to wake it.
+[023:OCv2#0409]I'm getting out of here!
+[023:OCv2#0410]Uh oh, I think it's waking up!
+[023:OCv2#0410]STAY AWAY!
+[023:OCv2#0410]HELP!
+[023:OCv2#0410]ARRRRGHHHH!
+[023:ONv2#0411]sign@@@@@@@@@
+[023:OCv2#0411]Those who enter, BEWARE! The Guardian\001of the Sphinx sleeps lightly.
+[023:OCv2#0411]I can't read this stuff.
+[024:ONv2#0414]sarcophagus feet
+[024:ONv2#0413]sarcophagus@@
+[024:OCv2#0413]I can't move it.
+[024:OCv2#0413]Nothing happens when I push here,\001maybe if I push its feet.
+[024:ONv2#0416]torch@@@@@@@@
+[024:OCv2#0416]It's already lit.
+[024:OCv2#0416]There's not enough oxygen to light it!
+[024:ONv2#0420]stairs@@@@@@@
+[024:ONv2#0421]door@@@@@@@@@
+[025:ONv2#0422]stairs@@@@@@@
+[025:ONv2#0423]lever@@@@@@@@
+[025:OCv2#0423]Not with me standing there you don't!
+[025:ONv2#0424]switch@@@@@@@
+[025:ONv2#0425]switch@@@@@@@
+[025:ONv2#0426]base@@@@@@@@@
+[025:ONv2#0427]glowing object
+[025:OCv2#0427]It's stuck on the base.
+[025:ONv2#0428]crystalabra@@
+[025:OCv2#0428]It's stuck in the glowing object.
+[025:ONv2#0429]yellow crystal
+[025:ONv2#0430]white crystal
+[025:OCv2#0430]It's stuck in the crystalabra.
+[025:ONv2#0431]blue crystal@
+[025:ONv2#0432]hole@@@@@@@@@
+[025:ONv2#0437]platform@@@@@
+[025:SCv2#0066]HEY! WHAT'S HAPPENING?
+[025:SCv2#0066]SOMETHING'S VERY, VERY WRONG!
+[025:SCv2#0066]SEE YA^
+[025:SCv2#0149]            CONGRATULATIONS!\001YOU HAVE SAVED THE WORLD FROM STUPIDITY!
+[025:SCv2#0149]                EPILOGUE
+[025:SCv2#0149]The King and his Caponian gang left\001Earth for good^\003^and continued their galactic search for\001"stupider" life forms.
+[025:SCv2#0149]The people of Earth rapidly regained\001their former level of intelligence^\003^and traded in good karma for the latest\001food fad, two-headed squirrel burgers.
+[025:SCv2#0149]No one trusted The Phone Company\001anymore^\003^so telepathic conversations and\001dream-sharing became the norm^\003^at $2.50 for the first 3 minutes\001after 11:00 PM.
+[025:SCv2#0149]\006\118's\002
+[025:SCv2#0149]The coeds'\002
+[025:SCv2#0149] Spring Break became \002
+[025:SCv2#0149]her\001\002
+[025:SCv2#0149]their\001\002
+[025:SCv2#0149]Big Break.\003A famous movie producer starred \002
+[025:SCv2#0149]her\002
+[025:SCv2#0149]them\002
+[025:SCv2#0149] in\001the box office smash, "Mars Needs Men".
+[025:SCv2#0149]Zak won the Nobel Peace Prize for saving\001the world.\003Then he won the Pulitzer for writing a\001book about it.
+[025:SCv2#0149]Zak and Annie fell in love.\003And their life together was even better\001than their wildest dreams.
+[025:SCv2#0149]                THE  END
+[025:SCv2#0149]                SEE  YA!
+[026:ONv2#0065]helmet@@@@@@@
+[026:OCv2#0065]I'm out of air!
+[026:OCv2#0065]There's no air here!
+[026:OCv2#0065]It only fits me.
+[026:ONv2#0066]helmet@@@@@@@
+[026:SCv2#0081]The landing site on Mars^
+[026:SCv2#0081]I'm getting a little tired of waiting\001here for instructions.
+[026:SCv2#0081]Yeah, this place is boring.
+[026:SCv2#0081]It's got a great beach, but no water^\001and no guys!
+[026:SCv2#0081]We should have gone to Ft. Lauderdale\001for Spring break like everyone else.
+[026:SCv2#0081]It would have taken us two days instead\001of two months,
+[026:SCv2#0081]and I wouldn't have gotten sick every\001time I looked out the window!
+[026:SCv2#0081]Yeah, and in zero gravity, that sure was\001a mess!
+[027:ONv2#0061]token@@@@@@@@
+[027:OCv2#0061]I'll keep it.
+[027:ONv2#0062]token@@@@@@@@
+[027:ONv2#0063]token@@@@@@@@
+[027:ONv2#0445]tram@@@@@@@@@
+[027:OCv2#0445]There's no switch. Maybe it's not\001getting any power.
+[027:OCv2#0445]It just spits my token out again!
+[027:OCv2#0445]token@@@@@@@@
+[027:ONv2#0447]sign@@@@@@@@@
+[027:OCv2#0447]Face Area Rapid Transit:\001One token each way: $100
+[027:ONv2#0448]slot@@@@@@@@@
+[027:OCv2#0448]Doesn't work. It knows it's not mine.
+[027:OCv2#0448]My balance is too low.
+[027:OCv2#0448]A token!
+[027:OCv2#0448]The slot's been blown away!
+[027:ONv2#0446]monolith@@@@@
+[027:ONv2#0450]button@@@@@@@
+[027:OCv2#0450]It seems to be broken.
+[027:ONv2#0455]light@@@@@@@@
+[027:ONv2#0453]sign@@@@@@@@@
+[027:OCv2#0453]Hmm, it's in several alien languages^\003Ah, here's English:
+[027:OCv2#0453]Welcome Space Travelers. Please leave\001The Friendly Hostel as you found it.\003No gum chewing.
+[027:ONv2#0449]door@@@@@@@@@
+[027:OCv2#0449]The door is already open.
+[027:OCv2#0449]The door is already closed.
+[027:ONv2#0451]sand@@@@@@@@@
+[027:OCv2#0451]It's too much to carry.
+[027:OCv2#0451]Sure, I'll put it in my pocket.
+[027:OCv2#0451]They look fine to me.
+[027:OCv2#0451]solar panels@
+[027:ONv2#0458]bumper sticker
+[027:OCv2#0458]We HEART Matt and Ron!
+[027:ONv2#0452]door@@@@@@@@@
+[027:ONv2#0454]Shuttle Bug@@
+[027:ONv2#0456]pyramid@@@@@@
+[027:ONv2#0444]huge face@@@@
+[027:ENv2#0027]sand@@@@@@@@@
+[027:SCv2#0051]Tram leaving in \004\252 seconds.\002
+[027:SCv2#0051] All aboard!
+[027:SCv2#0129]After sweeping for some time^
+[027:SCv2#0129]Ta da! Gee, it looks like solar panels.
+[027:SCv2#0145]Here's one token.
+[027:SCv2#0145]token@@@@@@@@
+[027:SCv2#0145]tokens@@@@@@@
+[027:SCv2#0145]"One way fare."\001I have \004\066 of them.
+[027:SCv2#0146]My helmet reads just \002
+[027:SCv2#0146]7\002
+[027:SCv2#0146]2\002
+[027:SCv2#0146] minutes of oxygen\001left!
+[027:SCv2#0146]I'd better hurry and refill it or find\001a place where I can take it off!
+[028:ONv2#0463]Mars door@@@@@
+[028:OCv2#0463]The door is already open.
+[028:OCv2#0463]The door is already closed.
+[028:ONv2#0468]button@@@@@@@@
+[028:OCv2#0468]It seems to be broken.
+[028:ONv2#0464]hostel door@@@
+[028:OCv2#0464]The door is already open.
+[028:OCv2#0464]The door is already closed.
+[028:ONv2#0465]light@@@@@@@@@
+[028:ONv2#0466]button@@@@@@@@
+[028:OCv2#0466]It seems to be broken.
+[028:ONv2#0467]light@@@@@@@@@
+[028:ONv2#0469]sign@@@@@@@@@@
+[028:OCv2#0469]Don't be a space goof -\001always wear your spacesuit!\003A reminder from The Friendly Hostel.
+[028:ONv2#0471]fuse@@@@@@@@@@
+[028:ONv2#0064]burnt fuse@@@@
+[028:OCv2#0064]Hmm. It crumbled to dust in my hands.
+[028:ONv2#0470]metal plate@@@
+[028:OCv2#0470]It's screwed shut.
+[028:OCv2#0470]fuse box@@@@@@
+[028:OCv2#0470]It looks like a fuse box!
+[028:OCv2#0470]That ought to fix it!
+[028:OCv2#0470]The burnt fuse is in the box.
+[028:ONv2#0067]vinyl tape@@@@
+[028:OCv2#0067]Great, now I can record on it.
+[028:ONv2#0068]broom alien@@@
+[028:OCv2#0068]I'm not touching a dead alien!
+[028:ONv2#0478]covers@@@@@@@@
+[028:OCv2#0478]I don't know what's under the covers,\001\002
+[028:OCv2#0478]but \002
+[028:OCv2#0478]and I'd really rather not find out.
+[028:OCv2#0478]I guess it won't hurt to look.
+[028:OCv2#0478]Oh. It's just a broom.\003No! WAIT! IT HAS EYES!!
+[028:OCv2#0478]It's a DEAD ALIEN!
+[028:ONv2#0069]flashlight@@@@
+[028:OCv2#0069]lit flashlight
+[028:OCv2#0069]flashlight@@@@
+[028:ONv2#0479]can of gas@@@@
+[028:OCv2#0479]I don't need it.
+[028:OCv2#0479]It's for a different game.
+[028:OCv2#0479]Use for chainsaws only.
+[028:OCv2#0479]No way am I gonna pick up a dead alien!
+[028:OCv2#0479]Well, I'll just pretend it's a broom.
+[028:ONv2#0473]button@@@@@@@@
+[028:OCv2#0473]It seems to be broken.
+[028:ONv2#0472]door@@@@@@@@@@
+[028:OCv2#0472]The door is already open.
+[028:OCv2#0472]The door is already closed.
+[028:ONv2#0474]light@@@@@@@@@
+[028:ONv2#0475]locker@@@@@@@@
+[028:OCv2#0475]OH NO! I've depressurized the hostel!
+[028:ONv2#0476]locker@@@@@@@@
+[028:OCv2#0476]It won't open.
+[028:ONv2#0477]bunk@@@@@@@@@@
+[028:OCv2#0477]No way! Who knows WHAT used it last!
+[028:OCv2#0477]I'm not sleepy.
+[028:ONv2#0070]ladder@@@@@@@@
+[028:ENv2#0028]metal plate@@@
+[028:SCv2#0071]It reads \002
+[028:SCv2#0071]\004\118 hour\002
+[028:SCv2#0071] and \002
+[028:SCv2#0071]\004\117 minute\002
+[028:SCv2#0071]s\002
+[028:SCv2#0071]no \002
+[028:SCv2#0071] of \002
+[028:SCv2#0071] of\001\002
+[028:SCv2#0071]oxygen left.
+[028:SCv2#0082]My skin's boiling!
+[028:SCv2#0082]The air's leaking from my fish bowl.
+[028:SCv2#0082]I can't breathe!
+[028:SCv2#0083]I don't want to hurt my friend!
+[029:ONv2#0480]???@@@@@@@@@@@@@@
+[029:OCv2#0480]Mt. Rainier cave@
+[029:OCv2#0480]Mayan pyramid@@@@
+[029:OCv2#0480]Peruvian eye cave
+[029:OCv2#0480]Atlantis@@@@@@@@@
+[029:OCv2#0480]Egyptian pyramid@
+[029:OCv2#0480]???@@@@@@@@@@@@@@
+[029:ONv2#0481]???@@@@@@@@@@@@@@
+[029:ONv2#0482]???@@@@@@@@@@@@@@
+[029:ONv2#0483]???@@@@@@@@@@@@@@@@@
+[029:ONv2#0484]???@@@@@@@@@@@@@@
+[029:ONv2#0485]Mars pyramid@@@@@
+[029:ONv2#0486]Mars face chamber
+[029:ENv2#0029]Done@@@@
+[029:ENv2#0029]Teleport to
+[029:ENv2#0029]@@@@@@@@@@@
+[029:SCv2#0041]NOT NOW!
+[029:SCv2#0041]There's nothing on it.
+[029:SCv2#0041]$1138! \002
+[029:SCv2#0041]I'd\002
+[029:SCv2#0041]Zak\002
+[029:SCv2#0041] better pay this soon!
+[029:SCv2#0060]It doesn't seem to be doing anything.
+[029:SCv2#0060]It doesn't seem to work here.
+[029:SCv2#0060]I need a map to focus on.
+[029:SCv2#0060]Nothing's happening!
+[030:ONv2#0496]oxygen valve@@@@@
+[030:OCv2#0496]I don't need to use it.
+[030:OCv2#0496]Now my oxygen supply is full.
+[030:OCv2#0495]CashCard@@@@@@@@@
+[030:ONv2#0071]boom box@@@@@@@@@@
+[030:ONv2#0072]Digital Audio Tape
+[030:ONv2#0073]fuse@@@@@@@@@@@@@
+[030:ONv2#0074]CashCards@@@@@@@@
+[030:ONv2#0488]door@@@@@@@@@@@@@
+[030:OCv2#0488]I took off\002
+[030:OCv2#0488]I put on\002
+[030:OCv2#0488] my helmet.
+[030:ONv2#0489]glove compartment
+[030:OCv2#0494]Watch out earth, here I come!
+[030:OCv2#0494]\004\045
+[030:OCv2#0494]BLASTOFF!
+[030:OCv2#0494]Wheeeeeeeeeeeeeeee!
+[030:OCv2#0494]Well, I'd better get comfortable. I'm\001going to be here for over two months!
+[030:OCv2#0494]I won't need my helmet any longer.
+[030:OCv2#0494]I wonder why it's not working?
+[030:OCv2#0494]It won't work with the door open.
+[030:ONv2#0490]controls@@@@@@@@@
+[030:OCv2#0490]I'm not leaving without \006\047!
+[030:OCv2#0490]As soon as I land I'm gonna get a pizza!
+[030:OCv2#0490]Well, at least the view up here is nice.
+[030:OCv2#0490]I wish I had a good book to read.
+[030:ONv2#0491]meters@@@@@@@@@@@
+[030:OCv2#0491]Everything appears to be normal.
+[030:OCv2#0491]They all read zero.
+[030:OCv2#0491]No way! That would kill me!
+[030:ONv2#0492]radio@@@@@@@@@@@@
+[030:OCv2#0492]Hmmmm^it's not working.
+[030:ONv2#0075]CashCard@@@@@@@@@
+[030:SCv2#0044]ZWOW! Darkeen tones! Razor's a wayhot\001jamster!\003She blows poodles over old noizglunk!
+[030:SCv2#0055]Mitachisoniba DAT Recorder\001Property of Melissa China - Don't Touch!
+[030:SCv2#0055]No Way! Melissa would KILL me!
+[030:SCv2#0055]No way, it's mine!
+[030:SCv2#0055]There's no tape in it.
+[030:SCv2#0055]        Play@@@@@@@@
+[030:SCv2#0055]      Record@@@@@@@@
+[030:SCv2#0055]The DAT is blank.
+[030:SCv2#0055]Hmmm, it won't play in here. Perhaps\001it's the crystalinetic force!
+[030:SCv2#0055]recording boom box
+[030:SCv2#0055]It won't record!\003I think the DAT is write-protected.
+[030:SCv2#0055]The DAT fell out.
+[030:SCv2#0055]The DAT is stuck inside.
+[030:SCv2#0055]boom box@@@@@@@@@@
+[030:SCv2#0125]I can't see the label.
+[030:SCv2#0125]Razor and the Scummettes Greatest Hit,\001"Inda Glop Oda Krell"
+[031:ONv2#0504]dolphin@@@@@@@@@@
+[031:OCv2#0504]I'm too exhausted!
+[031:OCv2#0506]It won't take it.
+[031:OCv2#0506]It's too far away.
+[031:OCv2#0498]dolphin
+[031:OCv2#0502]MAN TRADES MINDS WITH DOLPHIN;\001DESTROYS TUNA BOAT FLEET.
+[031:ONv2#0505]underwater@@@@@@@
+[031:OCv2#0505]Wow! It's pretty down there but I can't\001swim very deep.
+[031:OCv2#0505]The water's leaking in.
+[031:OCv2#0505]I can't hold my breath long enough.
+[031:EXv2#0031]Walk to@@
+[031:ENv2#0031]Swim to@@
+[031:SCv2#0050]Geronimo!!!
+[031:SCv2#0050]OH NO\002
+[031:SCv2#0050]O\002
+[031:SCv2#0050]Ahhh!
+[031:SCv2#0050]Whew!
+[031:SCv2#0050]I'm glad I have this flotation seat! I\001should be able to last at least an hour.
+[031:SCv2#0050]I don't know how long I can tread water!
+[031:SCv2#0078]\006\000 \002
+[031:SCv2#0078]fell to his death!
+[031:SCv2#0078]drowned.
+[031:SCv2#0078]suffocated from lack of oxygen!
+[031:SCv2#0078]spent his remaining years in jail\001for crimes against the Nepalese flag.
+[031:SCv2#0078]was viciously ripped to shreds by\001The Guardian of the Sphinx!
+[031:SCv2#0078]died a horrible death as his blood\001boiled away.
+[031:SCv2#0078]            THE GAME IS OVER
+[031:SCv2#0078]      Press ESCAPE to start again.
+[031:SCv2#0085]58 minutes later^
+[031:SCv2#0086]I can't last much longer!
+[031:SCv2#0086]This is the end!
+[031:SCv2#0086]HELP!
+[031:SCv2#0087]A ride?\003Sure!
+[031:SCv2#0087]After 3 days of swimming and a short\001stay in an EXPENSIVE hospital^
+[031:SCv2#0087]Ohhhhh!
+[032:ONv2#0507]exit@@@@@@@@@@@@@
+[032:ONv2#0508]massive door@@@@@
+[032:ONv2#0509]massive door@@@@@
+[032:ONv2#0510]massive door@@@@@
+[032:ONv2#0513]strange markings@
+[032:ONv2#0511]huge statue@@@@@@
+[032:ONv2#0512]huge statue@@@@@@
+[032:ENv2#0032]massive door@@@@@
+[032:ENv2#0032]doorway@@@@@@@@@@
+[033:ONv2#0535]ladder@@@@@@@@@@@
+[033:ONv2#0536]ladder@@@@@@@@@@@
+[033:ONv2#0537]ladder@@@@@@@@@@@
+[033:ONv2#0515]Great Chamber@@@@
+[033:ONv2#0516]Great Chamber@@@@
+[033:ONv2#0525]mouth@@@@@@@@@@@@
+[033:OCv2#0525]It's already open.
+[033:ONv2#0517]massive door@@@@@
+[033:OCv2#0517]I can't do it! It's too big!
+[033:OCv2#0517]It's already open.
+[033:OCv2#0517]The door's too heavy to move.
+[033:OCv2#0517]It's already closed.
+[033:ONv2#0520]crystal sphere@@@
+[033:OCv2#0520]boom box@@@@@@@@@@
+[033:OCv2#0520]Waycool earstuff! Those old aliens\001sure played herenow noizbop!
+[033:ONv2#0518]pedestal@@@@@@@@@
+[033:OCv2#0521]massive door@@@@@
+[033:OCv2#0521]doorway@@@@@@@@@@
+[033:ONv2#0531]button@@@@@@@@@@@
+[033:ONv2#0532]button@@@@@@@@@@@
+[033:ONv2#0533]button@@@@@@@@@@@
+[033:ONv2#0530]door@@@@@@@@@@@@@
+[033:ONv2#0538]great chamber@@@@
+[033:ONv2#0534]landing site@@@@@
+[034:ONv2#0539]map@@@@@@@@@@@@@@
+[034:OCv2#0539]It looks like a map of ancient Earth!
+[034:OCv2#0539]Hey! It's the map from my dream!
+[034:ONv2#0540]carving@@@@@@@@@@
+[034:OCv2#0540]It looks like the Egyptian Sphinx!
+[034:ONv2#0541]strange markings@
+[034:ONv2#0542]maze@@@@@@@@@@@@@
+[035:ONv2#0076]golden key@@@@@@@
+[035:ONv2#0543]door@@@@@@@@@@@@@
+[035:ONv2#0544]large key@@@@@@@@
+[035:OCv2#0544]Oops! It crumbled to dust.
+[035:OCv2#0544]I wonder if there's a locksmith nearby?
+[035:ONv2#0545]button@@@@@@@@@@@
+[035:ONv2#0548]glass tube@@@@@@@
+[035:OCv2#0548]It's just a hologram.
+[035:ONv2#0549]panel@@@@@@@@@@@@
+[035:OCv2#0549]There's an indentation the shape of an\001ankh.
+[035:OCv2#0551]YEEEOUCH!
+[035:ONv2#0553]force field@@@@@@
+[035:ONv2#0555]maze@@@@@@@@@@@@@
+[035:OCv2#0555]YIKES! It must be a zillion miles to the\001bottom!
+[035:OCv2#0555]I'm SCARED of heights!
+[035:ONv2#0556]switch@@@@@@@@@@@
+[035:ONv2#0557]switch@@@@@@@@@@@
+[035:ONv2#0558]gauge@@@@@@@@@@@@
+[035:OCv2#0558]The temperature is \002
+[035:OCv2#0558]quite nice,\001\002
+[035:OCv2#0558]way too cold,\001\002
+[035:OCv2#0558]and the air pressure is \002
+[035:OCv2#0558]comfortable.
+[035:OCv2#0558]dangerous!
+[035:ENv2#0035]projection
+[035:SCv2#0047]Greetings!\003Our race departed this dimension fifty\001millennia ago.\003We, the Skolarians, were your guardians.\003We knew of the corrupt Caponians and\001took steps to protect you.\003They will subvert the Earth with their\001deadly machines.
+[035:SCv2#0047]We sent you dreams to lead you here.\003You must construct our device to\001neutralize the Caponian menace.\003Use these keys to obtain the Power\001Crystal.\003Hurry, before they stop you.
+[036:ONv2#0563]doorway@@@@@@@@@@
+[036:ONv2#0564]doorway@@@@@@@@@@
+[036:ONv2#0565]doorway@@@@@@@@@@
+[036:OCv2#0565]No way! I'm SCARED of heights!
+[036:ONv2#0566]doorway@@@@@@@@@@
+[036:ONv2#0567]doorway@@@@@@@@@@
+[036:ONv2#0568]doorway@@@@@@@@@@
+[036:ENv2#0036]doorway@@@@@@@@@@
+[036:ENv2#0036]doorway@@@@@@@@@@
+[036:ENv2#0036]tunnel@@@@@@@@@@@
+[036:ENv2#0036]tunnel@@@@@@@@@@@
+[036:ENv2#0036]tunnel@@@@@@@@@@@
+[036:SCv2#0133]Hey!
+[036:SCv2#0133]It's Zak! Welcome to Mars!\001It's about time you got here!
+[036:SCv2#0133]Give me a break!\003I've been busy saving the Earth!
+[036:SCv2#0133]You're \006\117, right?
+[036:SCv2#0133]Right!
+[036:SCv2#0133]And you must be \006\118.
+[036:SCv2#0133]That's me!
+[036:SCv2#0133]Where's \006\118?
+[036:SCv2#0133]She's around the planet somewhere.
+[036:SCv2#0133]You're too late, she died!
+[036:SCv2#0133]There's no way we can retrieve the\001Power Crystal without her!
+[036:SCv2#0133]We have lots to do and not much time,\001so let's hurry!
+[037:ONv2#0572]path@@@@@@@@@@@@@
+[037:ONv2#0573]path@@@@@@@@@@@@@
+[037:OCv2#0573]Yikes! What was that?
+[037:ONv2#0574]path@@@@@@@@@@@@@
+[037:ONv2#0575]path@@@@@@@@@@@@@
+[037:OCv2#0575]Will I ever see civilization again?
+[037:OCv2#0575]Oh no. I'm hopelessly lost.
+[038:ONv2#0576]jungle@@@@@@@@@@@
+[038:ONv2#0577]sign@@@@@@@@@@@@@
+[038:OCv2#0577]The Doctor is IN
+[038:OCv2#0577]The Doctor is OUT
+[038:ONv2#0578]door@@@@@@@@@@@@@
+[038:OCv2#0578]The door's locked.
+[038:OCv2#0578]It's already open.
+[038:ONv2#0579]door@@@@@@@@@@@@@
+[038:ONv2#0580]sign@@@@@@@@@@@@@
+[038:OCv2#0580]CashCards Accepted
+[038:ONv2#0581]hut@@@@@@@@@@@@@@
+[038:ONv2#0591]hut@@@@@@@@@@@@@@
+[038:OCv2#0591]I don't want to disturb its occupants.
+[038:ONv2#0592]hut@@@@@@@@@@@@@@
+[038:OCv2#0585]I could help you, but I won't.
+[038:OCv2#0585]First, make this shard whole again.\001Find the place and words of power.
+[038:OCv2#0585]That's not my department. See my friend,\001the Guru.
+[038:OCv2#0585]I helped research that book!
+[038:OCv2#0585]Yes, the words of power!
+[038:OCv2#0585]I'd rather make a trade.
+[038:OCv2#0585]You don't have enough.
+[038:OCv2#0585]No, thank you.
+[038:ONv2#0590]desk@@@@@@@@@@@@@
+[038:ONv2#0586]golf clubs@@@@@@@
+[038:OCv2#0586]They look like a nice set of Pongs\002
+[038:OCv2#0586],\001but there's no sand wedge.
+[038:OCv2#0586].
+[038:OCv2#0586]I'd better not touch them^ the doctor\001might get mad.
+[038:ONv2#0587]diploma@@@@@@@@@@
+[038:OCv2#0587]Watsamatta University^\003^Master of Cranial Diminishment
+[038:ONv2#0588]diploma@@@@@@@@@@
+[038:OCv2#0588]Kinshasa Medical School^\003^Witch Doctor First Class
+[038:ONv2#0589]photograph@@@@@@@
+[038:OCv2#0589]It's a photo of the Shaman and \002
+[038:OCv2#0589]the Guru.\001\002
+[038:OCv2#0589]a guru.\001\002
+[038:OCv2#0589]And they're on a golf course!
+[038:ENv2#0038]Shaman@@@@
+[038:SCv2#0034]Hello, hello! \002
+[038:SCv2#0034]I cannot help you until\001you bring the Yellow Crystal.
+[038:SCv2#0034]What can I do for you?
+[038:SCv2#0045]Excellent!
+[038:SCv2#0045]I will now teach you how to use your\001Teleportation Crystal.
+[038:SCv2#0045]You may only travel TO a teleport pad.
+[038:SCv2#0045]Use your\002
+[038:SCv2#0045]Use Annie's\002
+[038:SCv2#0045]Draw a\002
+[038:SCv2#0045] map to focus on your\001destination.\003No one can do this but you.
+[038:SCv2#0045]The Teleport Crystal will not work for\001you. \002
+[038:SCv2#0045]But it will work for you. Listen:
+[038:SCv2#0045]Give it to Zak and send him here.
+[038:SCv2#0045]Goodbye, my friend.
+[038:SCv2#0070]A Golden Boar Sand Wedge! Just what I\001needed for my set!
+[038:SCv2#0070]Thanks!
+[038:SCv2#0070]Come, my friend.
+[038:SCv2#0070]What's taking you so long?
+[038:SCv2#0070]Sorry, my friend, but only one outsider\001may witness this.
+[038:SCv2#0070]We will perform the sacred dance taught\001to us by the Ancient Ones.\003Watch carefully. It is said to "unlock\001the door to the head."
+[038:SCv2#0070]This time, watch more carefully!
+[038:SCv2#0070]Don't forget what you have seen!
+[038:SCv2#0070]Next time it will cost you!
+[038:SCv2#0070]And come back with the Yellow Crystal!
+[038:SCv2#0070]Tell your friend to bring me the\001Yellow Crystal!
+[038:SCv2#0070]Not fair!
+[039:ONv2#0593]jungle@@@@@@@@@@@
+[039:ONv2#0594]temple entrance@@
+[039:ONv2#0595]jungle@@@@@@@@@@@
+[039:ONv2#0596]temple entrance@@
+[039:ONv2#0597]temple entrance@@
+[040:ONv2#0077]parachute@@@@@@@@
+[040:OCv2#0077]Jumpty Dumpty Parachute\003Lifetime guarantee.
+[040:OCv2#0077]I'm already wearing it.
+[040:OCv2#0077]Better not.
+[040:OCv2#0077]Are you kidding?
+[040:OCv2#0077]Not here!
+[040:OCv2#0604]You'd better hold on to that!
+[040:OCv2#0604]Sure! I'll take a swig!
+[040:OCv2#0604]Not now! I'm flyin' the plane!
+[040:ENv2#0040]pilot@@@
+[040:SCv2#0069]I love the Triangle.
+[040:SCv2#0069]You never know what to expect.
+[040:SCv2#0069]That's why I gave you a chute.
+[040:SCv2#0069]Sorry, I'm out of chutes!
+[040:SCv2#0069]Looks like you love it too.
+[040:SCv2#0069]Hey, I got a good one for ya.
+[040:SCv2#0069]Y'know why this is called a biplane?
+[040:SCv2#0069]What do biplanes have in common with\001drunks?
+[040:SCv2#0069]Heard about our basketball team for\001small people?
+[040:SCv2#0069]Cuz ya never know if it's coming back!\001\002
+[040:SCv2#0069]They both have to be "propped up"!\001\002
+[040:SCv2#0069]They're called the "Bermuda Shorts"!\001\002
+[040:SCv2#0069]HA HA HA!
+[040:SCv2#0069]Well, time to be heading back. Hope you\001enjoyed the trip.
+[040:SCv2#0069]That was fun.
+[040:SCv2#0069]Uh oh. Not again!
+[040:SCv2#0069]Hey! What's happening? Everything's\001fading. The water below is shimmering!
+[040:SCv2#0069]Here we go!
+[040:SCv2#0069]I HATE it when this happens!
+[040:SCv2#0069]Now, what was the combination?
+[040:SCv2#0069]Oh yeah.
+[040:SCv2#0069]You coming or staying?
+[041:ONv2#0605]surface@@@@@@@@@@
+[041:ONv2#0618]platform@@@@@@@@@
+[041:ONv2#0614]seaweed@@@@@@@@@@
+[041:ONv2#0078]glowing object@@@
+[041:OCv2#0607]This looks like the bottom part of the\001device!
+[041:OCv2#0607]Didn't I see this in my dream?
+[041:ONv2#0609]seaweed@@@@@@@@@@
+[041:ONv2#0610]seaweed@@@@@@@@@@
+[041:ENv2#0041]Swim to@@
+[042:ONv2#0619]jungle@@@@@@@@@@@
+[042:OCv2#0619]The jungle's too dense for me to fly\001through.
+[042:ONv2#0620]huge carving@@@@@
+[042:OCv2#0620]It's way across the valley!
+[042:OCv2#0620]I don't have wings!
+[042:ONv2#0623]bread crumbs@@@@@
+[042:OCv2#0623]Yuck! Bird food!
+[042:OCv2#0623]I'll leave it for the birds.
+[042:ONv2#0622]sign@@@@@@@@@@@@@
+[042:OCv2#0622]Ancient Incan Bird Feeder:\001Fill only with dry bread crumbs.
+[042:OCv2#0622]REPORTER BECOMES BIRD-BRAINED\001AFTER TRADING MINDS WITH SPARROW.
+[042:ONv2#0621]bird feeder@@@@@@
+[042:OCv2#0626]It won't take it.
+[042:ONv2#0630]bird@@@@@@@@@@@@@
+[042:ENv2#0042]bird
+[043:ONv2#0080]candelabra@@@@@@@
+[043:ONv2#0079]scroll@@@@@@@@@@@
+[043:ONv2#0632]platform@@@@@@@@@
+[043:OCv2#0632]It's too heavy.
+[043:ONv2#0631]window@@@@@@@@@@@
+[043:OCv2#0631]I see a valley and a river far below.
+[043:ONv2#0636]eye@@@@@@@@@@@@@@
+[043:ONv2#0637]eye@@@@@@@@@@@@@@
+[043:ONv2#0638]valley@@@@@@@@@@@
+[043:SCv2#0136]Hm. This is difficult.\003One moment^\003It has "words of power" on it:
+[043:SCv2#0136]"Gnik Sisi Vle"
+[043:SCv2#0136]Nothing happened!
+[043:SCv2#0136]I can't read it. It's written in a\001bizarre language.
+[044:ONv2#0639]airport@@@@@@@@@@
+[044:ONv2#0652]guard house@@@@@@
+[044:OCv2#0652]He's drunk!
+[044:ONv2#0641]sign@@@@@@@@@@@@@
+[044:OCv2#0641]WARNING: Fence is electrified.
+[044:ONv2#0640]gate@@@@@@@@@@@@@
+[044:OCv2#0640]This looks like a good spot.
+[044:OCv2#0640]There already is a hole.
+[044:OCv2#0640]That doesn't work.
+[044:OCv2#0640]It's locked.
+[044:ONv2#0642]switch@@@@@@@@@@@
+[044:ONv2#0643]fence@@@@@@@@@@@@
+[044:OCv2#0643]YOWL!!!
+[044:ONv2#0644]Stonehenge@@@@@@@
+[044:OCv2#0644]I can't get there!
+[044:ONv2#0081]yellow crystal@@@
+[044:ONv2#0653]crystal shards@@@
+[044:OCv2#0653]It's COLD out here tonight!
+[044:OCv2#0655]Sorry, mate, you're not my type!
+[044:OCv2#0655]Don't bother me, I'm on DUTY now.
+[044:OCv2#0655]Sorry, luv, I mustn't accept gifts.
+[044:OCv2#0655]Have you anything else to offer?
+[044:OCv2#0655]You are very attractive!
+[044:OCv2#0655]Yuck!
+[044:ONv2#0645]crystal shard@@@@
+[044:ONv2#0646]crystal shard@@@@
+[044:OCv2#0656]drunken sentry
+[044:ONv2#0647]flagpole@@@@@@@@@
+[044:OCv2#0647]It seems to be stuck in the stone!
+[044:ONv2#0648]altar stone@@@@@@
+[044:OCv2#0648]Nope, doesn't work.
+[044:OCv2#0654]Ohhhh.
+[044:OCv2#0651]Wow! The crystal's fused and the scroll\001burned up in my hands!
+[044:OCv2#0651]WHOA!
+[044:ENv2#0044]sentry@@@@@@@@
+[044:SCv2#0076]I'd be HAPPY to join you in a drink.
+[044:SCv2#0076]Half a bottle later^
+[044:SCv2#0076]That was MOST unpleasant.
+[045:OCv2#0670]I cashed in my old ticket for $\004\066.
+[045:SCv2#0030]Oops! I don't have my CashCard here.
+[045:SCv2#0030]One way fare is $\004\244.00\001\002
+[045:SCv2#0030]WARNING: Exit Visa Code Required.\002
+[045:SCv2#0030]I should really go \002
+[045:SCv2#0030]back \002
+[045:SCv2#0030]to Seattle.
+[045:SCv2#0030]I have a strong feeling that there's\001something that I need there!
+[045:SCv2#0058]I\002
+[045:SCv2#0058]No way! You\002
+[045:SCv2#0058] already have a ticket,\001and you know the FAA's new rules:\003only one ticket per person!
+[045:SCv2#0058]I'll keep it.
+[045:SCv2#0058]Point of departure: \002
+[045:SCv2#0058]Cairo, Egypt\001\002
+[045:SCv2#0058]Katmandu, Nepal\001\002
+[045:SCv2#0058]Kinshasa, Zaire\001\002
+[045:SCv2#0058]Lima, Peru\001\002
+[045:SCv2#0058]London, England\001\002
+[045:SCv2#0058]Mexico City, Mexico\001\002
+[045:SCv2#0058]Miami, FL\001\002
+[045:SCv2#0058]San Francisco, CA\001\002
+[045:SCv2#0058]Seattle, WA\001\002
+[045:SCv2#0058]Bermuda Triangle\001\002
+[045:SCv2#0058]Destination:        \002
+[045:SCv2#0058]Value: $\004\066. Ticket is refundable.
+[046:ONv2#0082]ticket@@@@@@@@@@@
+[046:ONv2#0083]ticket@@@@@@@@@@@
+[048:SCv2#0028]Finished drawing
+[048:SCv2#0028]@@@@@@@@@
+[048:SCv2#0028]I guess it didn't work.
+[049:SCv2#0001]Later that night, Zak's in bed^\002
+[049:SCv2#0001]alone^\001\002
+[049:SCv2#0001]                                 ^again.
+[049:SCv2#0001]Hey! That's ME!
+[049:SCv2#0001]TABLOID REPORTER "SPACES OUT" IN DREAM.
+[049:SCv2#0001]AIEEEEE!
+[049:SCv2#0001]Hey! That's ME!
+[049:SCv2#0001]TABLOID REPORTER "SPACES OUT" IN DREAM.
+[049:SCv2#0001]AIEEEEE!
+[049:SCv2#0009]Ouch! The lighter's hot!
+[049:SCv2#0108]Zak
+[049:SCv2#0108]Annie
+[049:SCv2#0108]Melissa
+[049:SCv2#0108]Leslie
+[049:SCv2#0108]representative
+[049:SCv2#0108]WOW! What a dream!\003I should make a drawing of that map I\001saw.
+[049:SCv2#0111]Created and designed by@@@
+[049:SCv2#0111]David Fox, Matthew Kane,@@@@@@@@@@@@@@@
+[049:SCv2#0111]David Spangler, and Ron Gilbert@
+[049:SCv2#0111]Scripted and programmed by
+[049:SCv2#0111]David Fox and Matthew Kane@@@@@@@@@@@@@
+[049:SCv2#0111]Art and Animation by@@@@@@
+[049:SCv2#0111]Mark J. Ferrari, Basilio Amaro,@@@@@@@@
+[049:SCv2#0111]Martin Cameron, and Gary Winnick
+[049:SCv2#0111]Music and Sound Effects by
+[049:SCv2#0111]Matthew Kane, Dave Hayes, & Dave Warhol
+[049:SCv2#0111]IBM Version by Aric Wilmunder@@@@@@@@@@
+[049:SCv2#0111]Project Directed by David Fox@@@@@@@@@@
+[049:SCv2#0127]Zak, Zak, Zak.\003What am I going to do with you?
+[049:SCv2#0127]But Boss! I'll NEVER win a Pulitzer\001working for this sleazy tabloid!
+[049:SCv2#0127]I'm SICK of making up STUPID STORIES!
+[049:SCv2#0127]Then make up stories that AREN'T stupid!
+[049:SCv2#0127]Look. Just do this last feature, and\001then you can write your novel.
+[049:SCv2#0127]Here's your ticket to Seattle.
+[049:SCv2#0127]I want more on that vicious two-headed\001squirrel that's been attacking campers.
+[049:SCv2#0127]Oh, all right!
+[049:SCv2#0127]And while you're there^
+[049:SCv2#0127]The first UFO sighting happened on Mt.\001Rainier 50 years ago. Write it up too.
+[049:SCv2#0127]Hmmm^
+[049:SCv2#0127]TABLOID REPORTER STRANGLES\001BOSS OVER LOUSY ASSIGNMENT.
+[049:SCv2#0127]What was that?
+[049:SCv2#0127]Nothing, Boss.
+[050:OCv2#0707]Game A@@
+[050:OCv2#0707]Game B@@
+[050:OCv2#0707]Game C@@
+[050:OCv2#0707]Game D@@
+[050:OCv2#0707]Game E@@
+[050:OCv2#0707]Game F@@
+[050:OCv2#0707]Game G@@
+[050:OCv2#0707]Game H@@
+[050:OCv2#0707]Game I@@
+[050:OCv2#0707]Game J@@
+[050:OCv2#0708]Game A*@
+[050:OCv2#0708]Game B*@
+[050:OCv2#0708]Game C*@
+[050:OCv2#0708]Game D*@
+[050:OCv2#0708]Game E*@
+[050:OCv2#0708]Game F*@
+[050:OCv2#0708]Game G*@
+[050:OCv2#0708]Game H*@
+[050:OCv2#0708]Game I*@
+[050:OCv2#0708]Game J*@
+[050:SCv2#0008]           The game was saved.
+[050:SCv2#0008]         The game was NOT saved.
+[050:SCv2#0008]        The game was NOT loaded.
+[050:SCv2#0008]  There are no saved games on the disk.
+[050:SCv2#0008] Put a save-load game disk in Drive \002
+[050:SCv2#0008]A.
+[050:SCv2#0008]B.
+[052:OCv2#0712]*\002
+[052:OCv2#0712]#\002
+[052:OCv2#0712]\004\121\002
+[052:ONv2#0718]6@@@@@@@@@@@@@@@@
+[052:OCv2#0727]#\002
+[052:ONv2#0732]6@@@@@@@@@@@@@@@@
+[052:SCv2#0015]Travel key is: Section \004\243 (\007\066 \004\241)\001Enter code: \002
+[052:SCv2#0015]Enter four digits: \002
+[052:SCv2#0015]INCORRECT ENTRY #\004\118
+[052:SCv2#0015]Successful entry.\001Thank you for flying Air Airlines.
+[053:ONv2#0741]tunnel@@@@@@@@@@@
+[053:ONv2#0742]tunnel@@@@@@@@@@@
+[053:ONv2#0743]tunnel@@@@@@@@@@@
+[053:ONv2#0747]doorway@@@@@@@@@@
+[053:ONv2#0744]doorway@@@@@@@@@@
+[053:ONv2#0745]doorway@@@@@@@@@@
+[053:ONv2#0748]torch@@@@@@@@@@@@
+[053:ONv2#0749]torch@@@@@@@@@@@@
+[053:ENv2#0053]doorway@@@@@@@@@@
+[053:ENv2#0053]tunnel@@@@@@@@@@@
+[053:ENv2#0053]tunnel@@@@@@@@@@@
+[053:ENv2#0053]doorway@@@@@@@@@@
+[056:SCv2#0002]It's too dark to read.
+[056:SCv2#0002]I can't reach it.
+[056:SCv2#0003]It doesn't seem to open.
+[056:SCv2#0003]I can't move it.
+[056:SCv2#0003]There's nothing to read on it.
+[056:SCv2#0003]I can't pick that up.
+[056:SCv2#0003]That doesn't seem to work.
+[056:SCv2#0006]Switch@@

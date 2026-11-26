@@ -1,0 +1,51 @@
+# Decompiled with descumm -2
+# Source: LFv2_0027\SCv2_0145
+
+[0000] (48) if (VAR_ACTIVE_VERB == 11) {
+[0006] (48)   if (VAR_ACTIVE_OBJECT1 == 448) {
+[000C] (18)     goto 0051;
+[000F] (**)   }
+[000F] (**) }
+[000F] (48) if (VAR_ACTIVE_VERB == 3) {
+[0015] (9A)   Var[14] = VAR_EGO;
+[0018] (5A)   Var[14] += 147;
+[001C] (EA)   Var[Var[14]] -= Var[235];
+[001F] (9A)   Var[14] = VAR_EGO;
+[0022] (5A)   Var[14] += 147;
+[0026] (9A)   Var[66] = Var[14];
+[0029] (D8)   printEgo("Here's one token.");
+[003A] (A8)   if (Var[66]) {
+[003E] (C8)     if (Var[66] == Var[235]) {
+[0043] (D4)       setObjectName(VAR_ACTIVE_OBJECT1,"token");
+[004B] (**)     }
+[004B] (18)   } else {
+[004E] (A9)     setOwnerOf(VAR_ACTIVE_OBJECT1,14);
+[0051] (**)   }
+[0051] (9A)   Var[14] = VAR_ACTIVE_OBJECT2;
+[0054] (5A)   Var[14] += 147;
+[0058] (AA)   Var[Var[14]] += Var[235];
+[005B] (48)   if (VAR_ACTIVE_OBJECT2 == 1) {
+[0061] (1A)     Var[66] = 61;
+[0065] (**)   }
+[0065] (48)   if (VAR_ACTIVE_OBJECT2 == 3) {
+[006B] (1A)     Var[66] = 62;
+[006F] (**)   }
+[006F] (48)   if (VAR_ACTIVE_OBJECT2 == 4) {
+[0075] (1A)     Var[66] = 63;
+[0079] (**)   }
+[0079] (9A)   Var[14] = VAR_ACTIVE_OBJECT2;
+[007C] (5A)   Var[14] += 147;
+[0080] (C8)   if (Var[14] == Var[235]) {
+[0085] (E9)     setOwnerOf(Var[66],VAR_ACTIVE_OBJECT2);
+[0088] (18)   } else {
+[008B] (D4)     setObjectName(Var[66],"tokens");
+[0094] (**)   }
+[0094] (**) }
+[0094] (48) if (VAR_ACTIVE_VERB == 12) {
+[009A] (9A)   Var[14] = VAR_EGO;
+[009D] (5A)   Var[14] += 147;
+[00A1] (9A)   Var[66] = Var[14];
+[00A4] (D8)   printEgo("`One way fare.`\x01I have \x04\x42 of them.");
+[00C3] (**) }
+[00C3] (A0) stopObjectCode();
+END

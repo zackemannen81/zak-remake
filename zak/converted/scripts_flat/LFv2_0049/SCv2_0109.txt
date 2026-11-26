@@ -1,0 +1,10 @@
+[0000] (43) Var[47] = getActorX(1);
+[0003] (23) Var[48] = getActorY(1);
+[0006] (7E) walkActorTo(10,Var[47],Var[48]);
+[000A] (80) breakHere();
+[000B] (80) breakHere();
+[000C] (80) breakHere();
+[000D] (80) breakHere();
+[000E] (18) goto 0000;
+[0011] (A0) stopObjectCode();
+END

@@ -1,0 +1,10 @@
+Events:
+  FD - 0013
+[0013] (1A) Var[45] = 1;
+[0017] (48) unless (VAR_EGO == 1) goto 0021;
+[001D] (1A) Var[45] = 2;
+[0021] (B4) VAR_RESULT = getDist(Var[45],10);
+[0026] (44) unless (VAR_RESULT > 20) goto 002F;
+[002C] (9A) Var[45] = Var[234];
+[002F] (00) stopObjectCode();
+END

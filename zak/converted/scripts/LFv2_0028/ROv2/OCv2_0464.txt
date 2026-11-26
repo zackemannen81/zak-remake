@@ -1,0 +1,22 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0028/ROv2/OCv2_0464
+Events:
+   1 - 002D
+   2 - 0053
+   D - 0022
+[0022] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0026] (24)   loadRoomWithEgo(472,180,255,255);
+[002C] (**) }
+[002C] (00) stopObjectCode();
+[002D] (8F) if (!getState08(VAR_ACTIVE_OBJECT1)) {
+[0031] (19)   doSentence(9,468,0,0);
+[0038] (18) } else {
+[003B] (D8)   printEgo("The door is already open.");
+[0052] (**) }
+[0052] (00) stopObjectCode();
+[0053] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[0057] (19)   doSentence(9,468,0,0);
+[005E] (18) } else {
+[0061] (D8)   printEgo("The door is already closed.");
+[007A] (**) }
+[007A] (00) stopObjectCode();
+END

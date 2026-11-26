@@ -1,0 +1,26 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0035/ROv2/OCv2_0551
+Events:
+  FD - 0013
+[0013] (80) breakHere();
+[0014] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[0017] (78) if (VAR_RESULT < 28) {
+[001D] (1C)   startSound(29);
+[001F] (DB)   setBitVar(1440,VAR_EGO,Var[235]);
+[0024] (80)   breakHere();
+[0025] (D8)   printEgo("YEEEOUCH!");
+[0030] (C3)   Var[47] = getActorX(VAR_EGO);
+[0033] (5A)   Var[47] += 3;
+[0037] (A3)   Var[48] = getActorY(VAR_EGO);
+[003A] (48)   if (VAR_ACTIVE_OBJECT1 == 553) {
+[0040] (19)     doSentence(STOP);
+[0042] (**)   }
+[0042] (48)   if (VAR_ACTIVE_OBJECT2 == 553) {
+[0048] (19)     doSentence(STOP);
+[004A] (**)   }
+[004A] (FE)   walkActorTo(VAR_EGO,Var[47],Var[48]);
+[004E] (BB)   waitForActor(VAR_EGO);
+[0050] (DB)   setBitVar(1440,VAR_EGO,Var[234]);
+[0055] (**) }
+[0055] (18) goto 0013;
+[0058] (00) stopObjectCode();
+END

@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0019/ROv2/OCv2_0380
+Events:
+   C - 001E
+[001E] (D8) printEgo("Awarded to Swami Holanwanda:\x03For a record-shattering score of 19 at\x01Pebble Beach.");
+[0067] (00) stopObjectCode();
+END

@@ -1,0 +1,9 @@
+Events:
+  FD - 0013
+[0013] (1E) walkActorTo(1,45,58);
+[0017] (3B) waitForActor(1);
+[0019] (1E) walkActorTo(1,74,58);
+[001D] (3B) waitForActor(1);
+[001F] (18) goto 0013;
+[0022] (00) stopObjectCode();
+END

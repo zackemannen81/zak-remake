@@ -1,0 +1,45 @@
+Events:
+   9 - 001B
+   B - 001B
+[001B] (1C) startSound(2);
+[001D] (2E) delay(30);
+[0021] (4F) unless (getState08(471)) goto 0095;
+[0026] (0F) unless (!getState08(464)) goto 008A;
+[002B] (0F) unless (!getState08(467)) goto 0084;
+[0030] (60) cursorCommand(15, 2);
+[0033] (1A) Var[44] = 3;
+[0037] (1C) startSound(37);
+[0039] (47) clearState08(465);
+[003C] (47) clearState08(455);
+[003F] (47) clearState08(467);
+[0042] (1C) startSound(38);
+[0044] (80) breakHere();
+[0045] (07) setState08(467);
+[0048] (80) breakHere();
+[0049] (C6) Var[44]--;
+[004B] (28) unless (!Var[44]) goto 003F;
+[004F] (07) setState08(474);
+[0052] (80) breakHere();
+[0053] (7C) VAR_RESULT = isSoundRunning(37);
+[0056] (28) unless (!VAR_RESULT) goto 0052;
+[005A] (2E) delay(30);
+[005E] (1C) startSound(25);
+[0060] (07) setState08(464);
+[0063] (07) setState08(472);
+[0066] (9A) Var[154] = Var[234];
+[0069] (4F) unless (getState08(463)) goto 007A;
+[006E] (19) doSentence(253,475,0,1);
+[0075] (46) Var[154]++;
+[0077] (18) goto 0081;
+[007A] (2E) delay(60);
+[007E] (60) cursorCommand(247, 1);
+[0081] (18) goto 0087;
+[0084] (18) goto 005E;
+[0087] (18) goto 0092;
+[008A] (1C) startSound(25);
+[008C] (47) clearState08(464);
+[008F] (47) clearState08(472);
+[0092] (18) goto 00A9;
+[0095] (D8) printEgo("It seems to be broken.");
+[00A9] (00) stopObjectCode();
+END

@@ -1,0 +1,11 @@
+Events:
+  FD - 0013
+[0013] (19) doSentence(254,497,0,1);
+[001A] (3A) Var[46] -= 2;
+[001E] (44) unless (Var[46] > 30) goto 0027;
+[0024] (9A) Var[46] = Var[234];
+[0027] (7D) setActorElevation(1,Var[46]);
+[002A] (80) breakHere();
+[002B] (78) unless (Var[46] < 2) goto 001A;
+[0031] (00) stopObjectCode();
+END

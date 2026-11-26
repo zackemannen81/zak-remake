@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0045/ROv2/OCv2_0669
+Events:
+  FD - 0019
+  FF - 0015
+[0015] (9A) Var[121] = VAR_ACTIVE_OBJECT1;
+[0018] (00) stopObjectCode();
+[0019] (16) Var[66] = getRandomNr(255);
+[001C] (80) breakHere();
+[001D] (18) goto 0019;
+[0020] (00) stopObjectCode();
+END

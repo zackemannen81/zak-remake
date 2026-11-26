@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0654
+Events:
+  FD - 0013
+[0013] (16) Var[49] = getRandomNr(30);
+[0016] (5A) Var[49] += 20;
+[001A] (2E) delay(60);
+[001E] (C6) Var[49]--;
+[0020] (28) unless (!Var[49]) goto 001A;
+[0024] (11) animateActor(10,31);
+[0027] (14) print(10,"Ohhhh.");
+[0030] (18) goto 0013;
+[0033] (00) stopObjectCode();
+END

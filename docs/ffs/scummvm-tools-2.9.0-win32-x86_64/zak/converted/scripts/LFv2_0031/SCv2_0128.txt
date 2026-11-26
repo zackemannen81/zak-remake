@@ -1,0 +1,14 @@
+# Decompiled with descumm -2
+# Source: LFv2_0031\SCv2_0128
+
+[0000] (9A) VAR_TIMER_NEXT = Var[234];
+[0003] (80) breakHere();
+[0004] (7C) VAR_RESULT = isSoundRunning(103);
+[0007] (28) unless (!VAR_RESULT) goto 0003;
+[000B] (02) startMusic(104);
+[000D] (80) breakHere();
+[000E] (7C) VAR_RESULT = isSoundRunning(104);
+[0011] (28) unless (!VAR_RESULT) goto 000D;
+[0015] (18) goto 000B;
+[0018] (A0) stopObjectCode();
+END

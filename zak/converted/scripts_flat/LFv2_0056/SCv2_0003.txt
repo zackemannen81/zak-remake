@@ -1,0 +1,21 @@
+[0000] (48) unless (VAR_ACTIVE_VERB == 1) goto 001F;
+[0006] (D8) printEgo("It doesn't seem to open.");
+[001C] (18) goto 009B;
+[001F] (48) unless (VAR_ACTIVE_VERB == 9) goto 002B;
+[0025] (18) goto 0031;
+[0028] (18) goto 009B;
+[002B] (48) unless (VAR_ACTIVE_VERB == 10) goto 0043;
+[0031] (D8) printEgo("I can't move it.");
+[0040] (18) goto 009B;
+[0043] (48) unless (VAR_ACTIVE_VERB == 12) goto 0067;
+[0049] (D8) printEgo("There's nothing to read on it.");
+[0064] (18) goto 009B;
+[0067] (48) unless (VAR_ACTIVE_VERB == 14) goto 0083;
+[006D] (D8) printEgo("I can't pick that up.");
+[0080] (18) goto 009B;
+[0083] (D8) printEgo("That doesn't seem to work.");
+[009B] (19) doSentence(STOP);
+[009D] (19) doSentence(RESET);
+[009F] (AC) drawSentence();
+[00A0] (A0) stopObjectCode();
+END

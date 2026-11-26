@@ -1,0 +1,12 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0041/ROv2/OCv2_0609
+Events:
+   9 - 001E
+   A - 001E
+   E - 001E
+[001E] (D7) setState02(VAR_ACTIVE_OBJECT1);
+[0020] (47) clearState08(611);
+[0023] (47) clearState08(612);
+[0026] (47) clearState08(613);
+[0029] (C7) clearState08(VAR_ACTIVE_OBJECT1);
+[002B] (00) stopObjectCode();
+END

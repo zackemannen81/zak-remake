@@ -1,0 +1,10 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0043/ROv2/OCv2_0632
+Events:
+  FD - 001B
+[001B] (48) if (VAR_EGO == 6) {
+[0021] (D8)   printEgo("It's too heavy.");
+[0030] (18) } else {
+[0033] (42)   startScript(119);
+[0035] (**) }
+[0035] (00) stopObjectCode();
+END

@@ -1,0 +1,8 @@
+[0000] (70) lights(11,0,0);
+[0004] (19) doSentence(253,706,0,1);
+[000B] (19) doSentence(250,769,0,1);
+[0012] (0C) loadSound(16)
+[0015] (0C) lockSound(16)
+[0018] (05) drawObject(770,255,255);
+[001D] (00) stopObjectCode();
+END

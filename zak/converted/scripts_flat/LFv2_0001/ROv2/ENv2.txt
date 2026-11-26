@@ -1,0 +1,17 @@
+[0000] (0F) unless (!getState08(14)) goto 000C;
+[0005] (19) doSentence(250,101,0,1);
+[000C] (4F) unless (getState08(85)) goto 0018;
+[0011] (19) doSentence(250,85,0,1);
+[0018] (0C) loadSound(27)
+[001B] (19) doSentence(253,104,0,1);
+[0022] (2F) unless (!getState04(95)) goto 002E;
+[0027] (19) doSentence(250,95,0,1);
+[002E] (19) doSentence(253,108,0,1);
+[0035] (6F) unless (getState04(88)) goto 0041;
+[003A] (19) doSentence(250,89,0,1);
+[0041] (4F) unless (getState08(110)) goto 004D;
+[0046] (19) doSentence(2,84,0,1);
+[004D] (19) doSentence(253,109,0,1);
+[0054] (19) doSentence(250,107,0,1);
+[005B] (00) stopObjectCode();
+END

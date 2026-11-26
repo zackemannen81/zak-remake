@@ -1,0 +1,63 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0004/ROv2/OCv2_0155
+Events:
+   1 - 001D
+   2 - 0023
+   D - 0029
+  FD - 006A
+[001D] (42) startScript(10);
+[001F] (07) setState08(329);
+[0022] (00) stopObjectCode();
+[0023] (42) startScript(11);
+[0025] (47) clearState08(329);
+[0028] (00) stopObjectCode();
+[0029] (CF) if (getState08(VAR_ACTIVE_OBJECT1)) {
+[002D] (30)   setBoxFlags(4,0);
+[0030] (9E)   walkActorTo(VAR_EGO,30,48);
+[0034] (BB)   waitForActor(VAR_EGO);
+[0036] (C3)   VAR_RESULT = getActorX(VAR_EGO);
+[0039] (08)   if (VAR_RESULT != 30) {
+[003F] (18)   } else {
+[0042] (A3)     VAR_RESULT = getActorY(VAR_EGO);
+[0045] (08)     if (VAR_RESULT != 48) {
+[004B] (18)     } else {
+[004E] (19)       doSentence(253,151,0,1);
+[0055] (A8)       if (Var[66]) {
+[0059] (68)         VAR_RESULT = isScriptRunning(77);
+[005C] (28)         if (!VAR_RESULT) {
+[0060] (27)           setState04(330);
+[0063] (**)         }
+[0063] (**)       }
+[0063] (24)       loadRoomWithEgo(329,16,255,255);
+[0069] (**)     }
+[0069] (**)   }
+[0069] (**) }
+[0069] (00) stopObjectCode();
+[006A] (80) breakHere();
+[006B] (68) VAR_RESULT = isScriptRunning(77);
+[006E] (28) unless (!VAR_RESULT) goto 006A;
+[0072] (7B) VAR_RESULT = getActorWalkBox(1);
+[0075] (48) if (VAR_RESULT == 3) {
+[007B] (48)   if (Var[167] == 48) {
+[0081] (48)     if (Var[164] == 40) {
+[0087] (18)       goto 008D;
+[008A] (**)     }
+[008A] (**)   }
+[008A] (18) } else {
+[008D] (7B)   VAR_RESULT = getActorWalkBox(2);
+[0090] (48)   unless (VAR_RESULT == 3) goto 00B5;
+[0096] (48)   if (Var[168] == 48) {
+[009C] (48)     if (Var[165] == 40) {
+[00A2] (18)       goto 006A;
+[00A5] (**)     }
+[00A5] (**)   }
+[00A5] (**) }
+[00A5] (68) VAR_RESULT = isScriptRunning(95);
+[00A8] (28) if (!VAR_RESULT) {
+[00AC] (68)   VAR_RESULT = isScriptRunning(75);
+[00AF] (28)   if (!VAR_RESULT) {
+[00B3] (42)     startScript(95);
+[00B5] (**)   }
+[00B5] (**) }
+[00B5] (18) goto 006A;
+[00B8] (00) stopObjectCode();
+END

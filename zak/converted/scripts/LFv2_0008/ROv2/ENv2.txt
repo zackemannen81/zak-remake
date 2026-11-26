@@ -1,0 +1,162 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0008/ROv2/ENv2
+[0000] (70) lights(11,0,0);
+[0004] (0C) loadScript(115)
+[0007] (9A) Var[45] = VAR_ROOM;
+[000A] (1A) Var[60] = 194;
+[000E] (19) doSentence(253,190,0,1);
+[0015] (16) VAR_RESULT = getRandomNr(1);
+[0018] (A8) if (VAR_RESULT) {
+[001C] (47)   clearState08(195);
+[001F] (17)   clearState02(195);
+[0022] (**) }
+[0022] (19) doSentence(250,204,0,1);
+[0029] (1A) Var[66] = 196;
+[002D] (C7) clearState08(Var[66]);
+[002F] (46) Var[66]++;
+[0031] (44) unless (Var[66] > 200) goto 002D;
+[0037] (44) if (VAR_MACHINE_SPEED > 40) {
+[003D] (19)   doSentence(250,202,0,1);
+[0044] (19)   doSentence(250,203,0,1);
+[004B] (**) }
+[004B] (05) drawObject(215,6,1);
+[0050] (07) setState08(192);
+[0053] (57) setState02(192);
+[0056] (47) clearState08(214);
+[0059] (57) setState02(214);
+[005C] (1A) Var[66] = 2;
+[0060] (C8) if (VAR_EGO == Var[66]) {
+[0065] (1A)   Var[66] = 1;
+[0069] (**) }
+[0069] (31) VAR_RESULT = getBitVar(1572,0);
+[006E] (A8) if (VAR_RESULT) {
+[0072] (5B)   setBitVar(1572,0,Var[234]);
+[0077] (18) } else {
+[007A] (47)   clearState08(191);
+[007D] (31)   VAR_RESULT = getBitVar(1569,0);
+[0082] (A8)   if (VAR_RESULT) {
+[0086] (5B)     setBitVar(1569,0,Var[234]);
+[008B] (18)   } else {
+[008E] (C3)     VAR_RESULT = getActorX(VAR_EGO);
+[0091] (44)     if (VAR_RESULT > 25) {
+[0097] (18)       goto 00AB;
+[009A] (**)     }
+[009A] (**)   }
+[009A] (83)   VAR_RESULT = getActorRoom(Var[66]);
+[009D] (C8)   unless (VAR_RESULT == VAR_ROOM) goto 00AE;
+[00A2] (C3)   VAR_RESULT = getActorX(Var[66]);
+[00A5] (44)   unless (VAR_RESULT > 25) goto 00AE;
+[00AB] (**) }
+[00AB] (07) setState08(191);
+[00AE] (48) if (VAR_ROOM == 141) {
+[00B4] (1A)   Var[46] = 4;
+[00B8] (A6)   setVarRange(Var[68],5,[664,666,660,661,663]);
+[00C5] (A6)   setVarRange(Var[73],5,[795,1589,779,511,808]);
+[00D2] (05)   drawObject(198,255,255);
+[00D7] (1A)   Var[47] = 639;
+[00DB] (1A)   Var[48] = 133;
+[00DF] (**) }
+[00DF] (48) if (VAR_ROOM == 142) {
+[00E5] (1A)   Var[46] = 3;
+[00E9] (A6)   setVarRange(Var[68],4,[667,659,661,663]);
+[00F4] (A6)   setVarRange(Var[73],4,[691,779,271,295]);
+[00FF] (05)   drawObject(200,255,255);
+[0104] (47)   clearState08(192);
+[0107] (17)   clearState02(192);
+[010A] (1A)   Var[47] = 572;
+[010E] (1A)   Var[48] = 168;
+[0112] (16)   Var[117] = getRandomNr(1);
+[0115] (A8)   if (Var[117]) {
+[0119] (9A)     Var[14] = VAR_EGO;
+[011C] (5A)     Var[14] += 219;
+[0120] (0A)     Var[Var[14]] = 593;
+[0124] (18)   } else {
+[0127] (9A)     Var[14] = VAR_EGO;
+[012A] (5A)     Var[14] += 219;
+[012E] (0A)     Var[Var[14]] = 595;
+[0132] (**)   }
+[0132] (9A)   Var[14] = VAR_EGO;
+[0135] (5A)   Var[14] += 222;
+[0139] (0A)   Var[Var[14]] = 39;
+[013D] (9A)   Var[14] = VAR_EGO;
+[0140] (5A)   Var[14] += 216;
+[0144] (0A)   Var[Var[14]] = 4;
+[0148] (**) }
+[0148] (48) if (VAR_ROOM == 143) {
+[014E] (1A)   Var[46] = 4;
+[0152] (A6)   setVarRange(Var[68],5,[664,659,660,663,668]);
+[015F] (A6)   setVarRange(Var[73],5,[1316,511,271,305,99]);
+[016C] (05)   drawObject(199,255,255);
+[0171] (47)   clearState08(191);
+[0174] (07)   setState08(214);
+[0177] (17)   clearState02(214);
+[017A] (10)   VAR_RESULT = getObjectOwner(46);
+[017E] (48)   if (VAR_RESULT == 15) {
+[0184] (13)     ActorOps(10,[Costume(23)]);
+[0188] (13)     ActorOps(10,[TalkColor(12)]);
+[018C] (13)     ActorOps(10,[Sound(6)]);
+[0190] (53)     ActorOps(10,[Name("bum")]);
+[0198] (2D)     putActorInRoom(10,143);
+[019B] (01)     putActor(10,30,46);
+[019F] (9A)     Var[44] = Var[234];
+[01A2] (19)     doSentence(250,211,0,1);
+[01A9] (19)     doSentence(253,210,0,1);
+[01B0] (18)   } else {
+[01B3] (1A)     Var[44] = -1;
+[01B7] (03)     VAR_RESULT = getActorRoom(10);
+[01BA] (C8)     if (VAR_RESULT == VAR_ROOM) {
+[01BF] (19)       doSentence(253,206,0,1);
+[01C6] (18)     } else {
+[01C9] (3C)       stopSound(96);
+[01CB] (**)     }
+[01CB] (**)   }
+[01CB] (**) }
+[01CB] (48) if (VAR_ROOM == 145) {
+[01D1] (1A)   Var[46] = 4;
+[01D5] (A6)   setVarRange(Var[68],5,[667,659,660,661,662]);
+[01E2] (A6)   setVarRange(Var[73],5,[937,808,295,305,260]);
+[01EF] (05)   drawObject(196,255,255);
+[01F4] (1A)   Var[47] = 144;
+[01F8] (1A)   Var[48] = 3;
+[01FC] (10)   VAR_RESULT = getObjectOwner(45);
+[0200] (48)   if (VAR_RESULT == 15) {
+[0206] (13)     ActorOps(10,[Costume(25)]);
+[020A] (13)     ActorOps(10,[TalkColor(12)]);
+[020E] (53)     ActorOps(10,[Sound(Var[234])]);
+[0212] (53)     ActorOps(10,[Name("devotee")]);
+[021E] (68)     VAR_RESULT = isScriptRunning(40);
+[0221] (28)     if (!VAR_RESULT) {
+[0225] (2D)       putActorInRoom(10,145);
+[0228] (01)       putActor(10,10,46);
+[022C] (9A)       Var[44] = Var[234];
+[022F] (42)       startScript(40);
+[0231] (**)     }
+[0231] (18)   } else {
+[0234] (1A)     Var[44] = -1;
+[0238] (**)   }
+[0238] (03)   VAR_RESULT = getActorRoom(10);
+[023B] (C8)   if (VAR_RESULT == VAR_ROOM) {
+[0240] (19)     doSentence(253,205,0,1);
+[0247] (0C)     loadScript(43)
+[024A] (18)   } else {
+[024D] (3C)     stopSound(96);
+[024F] (**)   }
+[024F] (**) }
+[024F] (48) if (VAR_ROOM == 144) {
+[0255] (9A)   Var[46] = Var[235];
+[0258] (A6)   setVarRange(Var[68],2,[661,663]);
+[025F] (A6)   setVarRange(Var[73],2,[407,260]);
+[0266] (05)   drawObject(197,255,255);
+[026B] (47)   clearState08(192);
+[026E] (17)   clearState02(192);
+[0271] (1A)   Var[47] = 266;
+[0275] (1A)   Var[48] = 12;
+[0279] (31)   VAR_RESULT = getBitVar(1557,0);
+[027E] (28)   if (!VAR_RESULT) {
+[0282] (42)     startScript(140);
+[0284] (**)   }
+[0284] (**) }
+[0284] (08) if (VAR_ROOM != 143) {
+[028A] (19)   doSentence(250,201,0,1);
+[0291] (**) }
+[0291] (00) stopObjectCode();
+END

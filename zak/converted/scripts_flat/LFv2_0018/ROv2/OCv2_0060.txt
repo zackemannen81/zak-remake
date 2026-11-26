@@ -1,0 +1,10 @@
+Events:
+   B - 002B
+   E - 001D
+[001D] (19) doSentence(253,370,0,1);
+[0024] (A8) unless (Var[47]) goto 002A;
+[0028] (D0) pickupObject(VAR_ACTIVE_OBJECT1);
+[002A] (00) stopObjectCode();
+[002B] (79) doSentence(11,VAR_ACTIVE_OBJECT2,VAR_ACTIVE_OBJECT1,0);
+[0030] (00) stopObjectCode();
+END

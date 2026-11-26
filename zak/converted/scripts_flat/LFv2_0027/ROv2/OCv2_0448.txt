@@ -1,0 +1,50 @@
+Events:
+   B - 0017
+[0017] (0F) unless (!getState08(446)) goto 00E8;
+[001C] (9D) unless (classOfIs(VAR_ACTIVE_OBJECT2,128)) goto 00E3;
+[0021] (48) unless (VAR_EGO == 1) goto 0033;
+[0027] (08) unless (VAR_ACTIVE_OBJECT2 != 18) goto 0030;
+[002D] (18) goto 0051;
+[0030] (18) goto 0078;
+[0033] (48) unless (VAR_EGO == 3) goto 0045;
+[0039] (08) unless (VAR_ACTIVE_OBJECT2 != 74) goto 0042;
+[003F] (18) goto 0051;
+[0042] (18) goto 0078;
+[0045] (48) unless (VAR_EGO == 4) goto 0078;
+[004B] (08) unless (VAR_ACTIVE_OBJECT2 != 75) goto 0075;
+[0051] (D8) printEgo("Doesn't work. It knows it's not mine.");
+[0072] (18) goto 0101;
+[0075] (18) /* goto 0078; */
+[0078] (1C) startSound(84);
+[007A] (80) breakHere();
+[007B] (7C) VAR_RESULT = isSoundRunning(84);
+[007E] (28) unless (!VAR_RESULT) goto 007A;
+[0082] (9A) Var[14] = VAR_EGO;
+[0085] (5A) Var[14] += 61;
+[0089] (78) unless (Var[14] < 100) goto 00A6;
+[008F] (D8) printEgo("My balance is too low.");
+[00A3] (18) goto 0101;
+[00A6] (9A) Var[14] = VAR_EGO;
+[00A9] (5A) Var[14] += 61;
+[00AD] (6A) Var[Var[14]] -= 100;
+[00B1] (9A) VAR_ACTIVE_OBJECT2 = VAR_EGO;
+[00B4] (42) startScript(145);
+[00B6] (60) cursorCommand(15, 2);
+[00B9] (47) clearState08(457);
+[00BC] (1C) startSound(44);
+[00BE] (2E) delay(30);
+[00C2] (D8) printEgo("A token!");
+[00CB] (AE) waitForMessage();
+[00CC] (B6) walkActorToObject(VAR_EGO,457);
+[00D0] (BB) waitForActor(VAR_EGO);
+[00D2] (07) setState08(457);
+[00D5] (80) breakHere();
+[00D6] (60) cursorCommand(247, 1);
+[00D9] (6F) unless (getState04(445)) goto 00E0;
+[00DE] (42) startScript(51);
+[00E0] (18) goto 00E5;
+[00E3] (42) startScript(3);
+[00E5] (18) goto 0101;
+[00E8] (D8) printEgo("The slot's been blown away!");
+[0101] (00) stopObjectCode();
+END

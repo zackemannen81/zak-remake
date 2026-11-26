@@ -1,0 +1,45 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0027/ROv2/OCv2_0450
+Events:
+   9 - 0019
+[0019] (1C) startSound(2);
+[001B] (2E) delay(30);
+[001F] (4F) if (getState08(471)) {
+[0024] (47)   clearState08(464);
+[0027] (47)   clearState08(472);
+[002A] (0F)   if (!getState08(463)) {
+[002F] (0F)     if (!getState08(465)) {
+[0034] (60)       cursorCommand(15, 2);
+[0037] (1A)       Var[47] = 3;
+[003B] (1C)       startSound(37);
+[003D] (47)       clearState08(467);
+[0040] (47)       clearState08(474);
+[0043] (47)       clearState08(455);
+[0046] (1C)       startSound(38);
+[0048] (80)       breakHere();
+[0049] (07)       setState08(455);
+[004C] (80)       breakHere();
+[004D] (C6)       Var[47]--;
+[004F] (28)       unless (!Var[47]) goto 0043;
+[0053] (07)       setState08(465);
+[0056] (80)       breakHere();
+[0057] (7C)       VAR_RESULT = isSoundRunning(37);
+[005A] (28)       unless (!VAR_RESULT) goto 0056;
+[005E] (2E)       delay(30);
+[0062] (1C)       startSound(25);
+[0064] (07)       setState08(463);
+[0067] (07)       setState08(449);
+[006A] (2E)       delay(60);
+[006E] (60)       cursorCommand(247, 1);
+[0071] (18)     } else {
+[0074] (18)       goto 0062;
+[0077] (**)     }
+[0077] (18)   } else {
+[007A] (1C)     startSound(25);
+[007C] (47)     clearState08(463);
+[007F] (47)     clearState08(449);
+[0082] (**)   }
+[0082] (18) } else {
+[0085] (D8)   printEgo("It seems to be broken.");
+[0099] (**) }
+[0099] (00) stopObjectCode();
+END

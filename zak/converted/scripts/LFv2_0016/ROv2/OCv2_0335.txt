@@ -1,0 +1,15 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0016/ROv2/OCv2_0335
+Events:
+  FD - 0013
+[0013] (19) doSentence(254,338,0,1);
+[001A] (78) if (Var[49] < 61) {
+[0020] (45)   drawObject(335,Var[49],5);
+[0025] (46)   Var[49]++;
+[0027] (45)   drawObject(336,Var[49],5);
+[002C] (1C)   startSound(83);
+[002E] (80)   breakHere();
+[002F] (48)   unless (Var[49] == 61) goto 0020;
+[0035] (**) }
+[0035] (19) doSentence(250,337,0,1);
+[003C] (00) stopObjectCode();
+END

@@ -1,0 +1,1220 @@
+[
+  {
+    "room": 1,
+    "file": "zak/converted/poc/backgrounds/room_001/concept_v003.png",
+    "sha256": "542f4c87734ba6e19d8b8ddae68529b3ca6a97f23d8621c818ab180042aa1e8e",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 2,
+    "file": "zak/converted/poc/backgrounds/room_002/concept_v003.png",
+    "sha256": "9022114e7e842246d014f9632bb66c680e5fd2a6a788129a59d31046f4c4bdf2",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 3,
+    "file": "zak/converted/poc/backgrounds/room_003/concept_v002.png",
+    "sha256": "7cbdebb067231d8663729039b4d05ea0ed1fb8ed77705fc1d7cf3f9c96b9fffe",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 4,
+    "file": "zak/converted/poc/backgrounds/room_004/concept_v001.png",
+    "sha256": "30a2f4ff49dfdc5ef9e42b3c2f9c213d552923c49428a54f31241ed1fb1ea73a",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 5,
+    "file": "zak/converted/poc/backgrounds/room_005/concept_v002.png",
+    "sha256": "4eb42ccb73838c6bb61292c0b781757d8dcc00a2329b453411f3fbdae4943129",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 6,
+    "file": "zak/converted/poc/backgrounds/room_006/concept_v001.png",
+    "sha256": "65fbd46dccb24f4d338d667a6da5102296307d28991e776b1ea3ce57a5c8c6c8",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 7,
+    "file": "zak/converted/poc/backgrounds/room_007/concept_v001.png",
+    "sha256": "b586930e83dca7683317d96cd838ca3f696411a44642b10ca1daea6ebfd13431",
+    "pixel_rect": [
+      0,
+      72.39999999999998,
+      2172,
+      651.6
+    ],
+    "uv_top_left": [
+      0.0,
+      0.09999999999999996,
+      1.0,
+      0.9
+    ],
+    "reference_aspect": 3.75,
+    "content_aspect": 3.7499999999999996,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 8,
+    "file": "zak/converted/poc/backgrounds/room_008/concept_v001.png",
+    "sha256": "f94453eda3a09cd33d30526676bb88eab9ee3580ce437ed5010d7897b0ec65af",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 9,
+    "file": "zak/converted/poc/backgrounds/room_009/concept_v001.png",
+    "sha256": "3f9451d51d1a6b8c52a8b855eb342dd502dd74de296288a32704c1fd0f6ab4eb",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 10,
+    "file": "zak/converted/poc/backgrounds/room_010/concept_v001.png",
+    "sha256": "e39779b853ecfbb9a805b15aae8bd0d8f63d55f49d1977871258e6e54f6a86d6",
+    "pixel_rect": [
+      0,
+      181.0,
+      2172,
+      543.0
+    ],
+    "uv_top_left": [
+      0.0,
+      0.25,
+      1.0,
+      0.75
+    ],
+    "reference_aspect": 6.0,
+    "content_aspect": 6.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 11,
+    "file": "zak/converted/poc/backgrounds/room_011/concept_v001.png",
+    "sha256": "323fba3d21fdecb6fddc170e3792c44f886ea7cf400ec34da792d5527b9d93de",
+    "pixel_rect": [
+      0,
+      188.24,
+      2172,
+      535.76
+    ],
+    "uv_top_left": [
+      0.0,
+      0.26,
+      1.0,
+      0.74
+    ],
+    "reference_aspect": 6.25,
+    "content_aspect": 6.25,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 12,
+    "file": "zak/converted/poc/backgrounds/room_012/concept_v001.png",
+    "sha256": "75ed0457789920e421e2c9a1909f60357b3763170e4871acd357f058b09246c2",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 13,
+    "file": "zak/converted/poc/backgrounds/room_013/concept_v001.png",
+    "sha256": "40af924afeddcf03167a1804f4f1972560ff7fa0bc09393af5041d6b74a0c44b",
+    "pixel_rect": [
+      0,
+      72.39999999999998,
+      2172,
+      651.6
+    ],
+    "uv_top_left": [
+      0.0,
+      0.09999999999999996,
+      1.0,
+      0.9
+    ],
+    "reference_aspect": 3.75,
+    "content_aspect": 3.7499999999999996,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 14,
+    "file": "zak/converted/poc/backgrounds/room_014/concept_v001.png",
+    "sha256": "89cef6e498a20395b9d9ca78626c1ff2fd17a788cc89af3cd9c6161c1a51987d",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 15,
+    "file": "zak/converted/poc/backgrounds/room_015/concept_v001.png",
+    "sha256": "e4aec5933002f6fd52b3fd7e99dca467acb401ddbf20ce8e010890791104410d",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 16,
+    "file": "zak/converted/poc/backgrounds/room_016/concept_v001.png",
+    "sha256": "6113c8e0d4fc37df3aef3ca778a464bc10e3b0390cc037356e748fdfd456d3ce",
+    "pixel_rect": [
+      0,
+      188.24,
+      2172,
+      535.76
+    ],
+    "uv_top_left": [
+      0.0,
+      0.26,
+      1.0,
+      0.74
+    ],
+    "reference_aspect": 6.25,
+    "content_aspect": 6.25,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 17,
+    "file": "zak/converted/poc/backgrounds/room_017/concept_v001.png",
+    "sha256": "b11e49dc33c8b330adfaff3e9d1924d9a9801ebdbe6cf250e631888fdf87b528",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 18,
+    "file": "zak/converted/poc/backgrounds/room_018/concept_v001.png",
+    "sha256": "1023a0918d857841cae4955d607ee03a82b1c5238e69d1052bb76e6a79c10b46",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 19,
+    "file": "zak/converted/poc/backgrounds/room_019/concept_v001.png",
+    "sha256": "b54aa3f17883fe0c447bb151b1f47e316763bf6b8cfb4013950524303a3d8e0a",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 20,
+    "file": "zak/converted/poc/backgrounds/room_020/concept_v001.png",
+    "sha256": "681cda69767730ee7bafa78bc4f1f98a26e0d98751d958ac752039db1af0d7e3",
+    "pixel_rect": [
+      0,
+      188.24,
+      2172,
+      535.76
+    ],
+    "uv_top_left": [
+      0.0,
+      0.26,
+      1.0,
+      0.74
+    ],
+    "reference_aspect": 6.25,
+    "content_aspect": 6.25,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 21,
+    "file": "zak/converted/poc/backgrounds/room_021/concept_v001.png",
+    "sha256": "65e940bed47c7d0abbfa8a5f021878dca0604f6abbfe5c0e263db308c284624c",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 22,
+    "file": "zak/converted/poc/backgrounds/room_022/concept_v001.png",
+    "sha256": "59b04d93e3d66be178f1617c3b1d026922ea86a89f36b963d875e8195f0033e2",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 23,
+    "file": "zak/converted/poc/backgrounds/room_023/concept_v001.png",
+    "sha256": "c5bf1cc261cb31762a3dcfc42a0e9d163f99ab0f73b37c138c50cba55b3b565f",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 24,
+    "file": "zak/converted/poc/backgrounds/room_024/concept_v001.png",
+    "sha256": "6f55a53364a997a8e6fd0cb3a0b8ec40adc8e1c5e58b3aaa96576581c0eb0f8e",
+    "pixel_rect": [
+      0,
+      72.39999999999998,
+      2172,
+      651.6
+    ],
+    "uv_top_left": [
+      0.0,
+      0.09999999999999996,
+      1.0,
+      0.9
+    ],
+    "reference_aspect": 3.75,
+    "content_aspect": 3.7499999999999996,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 25,
+    "file": "zak/converted/poc/backgrounds/room_025/concept_v001.png",
+    "sha256": "3399c8427c093e2cee99b6670d745f8d380e31660448b6510d18be9d3a954f1e",
+    "pixel_rect": [
+      0,
+      0,
+      2172,
+      724
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 3.0,
+    "content_aspect": 3.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 26,
+    "file": "zak/converted/poc/backgrounds/room_026/concept_v001.png",
+    "sha256": "e62a869f3e988cd94b76d7e1936ce2e87fff6e8916150ab6074234cc26a61c64",
+    "pixel_rect": [
+      0,
+      204.03636363636363,
+      2172,
+      519.9636363636364
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2818181818181818,
+      1.0,
+      0.7181818181818183
+    ],
+    "reference_aspect": 6.875,
+    "content_aspect": 6.874999999999998,
+    "relative_aspect_error": 2.220446049250313e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 27,
+    "file": "zak/converted/poc/backgrounds/room_027/concept_v001.png",
+    "sha256": "2b7ed24530d5c9631bfa6d0a1577e28b5260643aff68b5da878cb1b3d1a66ac2",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 28,
+    "file": "zak/converted/poc/backgrounds/room_028/concept_v001.png",
+    "sha256": "f5ffefd852a042e8321d8a517e0f7afb4a32b89d1e75e94f6935f589b5c1fd6d",
+    "pixel_rect": [
+      0,
+      175.16129032258064,
+      2172,
+      548.8387096774194
+    ],
+    "uv_top_left": [
+      0.0,
+      0.24193548387096775,
+      1.0,
+      0.7580645161290323
+    ],
+    "reference_aspect": 5.8125,
+    "content_aspect": 5.812499999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 29,
+    "file": "zak/converted/poc/backgrounds/room_029/concept_v001.png",
+    "sha256": "a6960e0a4e5ae6192a22699643d6ca3b6d49f3ce0ae0399ffa0dfffe3e3fa4b6",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 30,
+    "file": "zak/converted/poc/backgrounds/room_030/concept_v001.png",
+    "sha256": "cd72982fd519ffe27e42001f1d22d4de5880525e869ac34518b48c82829f02f5",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 31,
+    "file": "zak/converted/poc/backgrounds/room_031/concept_v001.png",
+    "sha256": "df2e296e34439f39cd41dbb4fb71f75553dc072100594fcb54d949a120fcad0b",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 32,
+    "file": "zak/converted/poc/backgrounds/room_032/concept_v001.png",
+    "sha256": "c586b331b43c8cdd972b9fd7101a4e84fad73551d6834bc285e004ec3f4530fe",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 33,
+    "file": "zak/converted/poc/backgrounds/room_033/concept_v001.png",
+    "sha256": "2cdb297455a271df782cbf8fdefe76dc03f50c917e93794351aaa293714cb0f6",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 34,
+    "file": "zak/converted/poc/backgrounds/room_034/concept_v002.png",
+    "sha256": "5db858aab6458863723fa1dd20ec50b4df1295642160085ca4a167b28593be29",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 35,
+    "file": "zak/converted/poc/backgrounds/room_035/concept_v001.png",
+    "sha256": "72c1117c587267c3dc10cb9a5eee1372e1ba49393409f2b729b5aa4e508d6d20",
+    "pixel_rect": [
+      0,
+      145.6,
+      2169,
+      579.4
+    ],
+    "uv_top_left": [
+      0.0,
+      0.20082758620689653,
+      1.0,
+      0.7991724137931034
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.000000000000001,
+    "relative_aspect_error": 2.220446049250313e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 36,
+    "file": "zak/converted/poc/backgrounds/room_036/concept_v001.png",
+    "sha256": "a423014a36c65d55685e5fae292419aa48153cc0ab13e50e697aab13b00a938f",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 37,
+    "file": "zak/converted/poc/backgrounds/room_037/concept_v001.png",
+    "sha256": "fce306726f354d95486e90a79d8ebe9292a1cfb8ad0f78766e3c57e5aab2c79a",
+    "pixel_rect": [
+      0,
+      94.67692307692306,
+      2172,
+      629.323076923077
+    ],
+    "uv_top_left": [
+      0.0,
+      0.13076923076923075,
+      1.0,
+      0.8692307692307694
+    ],
+    "reference_aspect": 4.0625,
+    "content_aspect": 4.062499999999999,
+    "relative_aspect_error": 2.220446049250313e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 38,
+    "file": "zak/converted/poc/backgrounds/room_038/concept_v001.png",
+    "sha256": "fbfdd4ffc00a459d7dce6384980e85676b7331587e905c2cc9c2c5514994261c",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 39,
+    "file": "zak/converted/poc/backgrounds/room_039/concept_v001.png",
+    "sha256": "e8c7fdd658798cac5c5ee201b9a2381ac811c58c36044bbfacced005984bff63",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 40,
+    "file": "zak/converted/poc/backgrounds/room_040/concept_v001.png",
+    "sha256": "8e5b5027346d5a17ab0c63b019498f16ec5b9fedb9464ad1b0694d5530010c5f",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 41,
+    "file": "zak/converted/poc/backgrounds/room_041/concept_v001.png",
+    "sha256": "43c35faedc0280b70c34a6fdc59a3f59957e4f7e099ad6d280911c6f4aecbd8c",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 42,
+    "file": "zak/converted/poc/backgrounds/room_042/concept_v001.png",
+    "sha256": "28dab28dd1aa4bce75f0361deb3bcdc3d10f58e05382ab0685a5ee88710f530a",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 43,
+    "file": "zak/converted/poc/backgrounds/room_043/concept_v001.png",
+    "sha256": "7bf5493440c3d8f0a6d7002b1f79d3983e0b755b7ea4a03fe29e9a09753a28a0",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 44,
+    "file": "zak/converted/poc/backgrounds/room_044/concept_v001.png",
+    "sha256": "051bf0d0ee539f0cfd65b8fd03941281ea8fb068cf99ad8fcbabe932cccb8cbe",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 45,
+    "file": "zak/converted/poc/backgrounds/room_045/concept_v001.png",
+    "sha256": "061b8452bd9b98178491292de081030f716fac84224a34b44dea7958128beda2",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 46,
+    "file": "zak/converted/poc/backgrounds/room_046/concept_v001.png",
+    "sha256": "2ab0152b6b8cb58b9681182c81cfca8929a56d5dd3cf5cc4507542d74bd09b8d",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 47,
+    "file": "zak/converted/poc/backgrounds/room_047/concept_v001.png",
+    "sha256": "2ffb227b72ff9f521b168f97696c48ea36eca4e2f116aa10b74c075b069116d9",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 48,
+    "file": "zak/converted/poc/backgrounds/room_048/concept_v001.png",
+    "sha256": "3b8ccff3548a10655b4d00e0369fa860f611933f8aa8939a3713225db9fa611c",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 49,
+    "file": "zak/converted/poc/backgrounds/room_049/concept_v001.png",
+    "sha256": "742b6550c1400884c56de263b5cb4f084c9f62daf9557fe149d0b245b675c583",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 50,
+    "file": "zak/converted/poc/backgrounds/room_050/concept_v001.png",
+    "sha256": "baa0508a04feee8c9111e5276b04419ed97bfb1e5a346a78c752a7d12332ec5b",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 51,
+    "file": "zak/converted/poc/backgrounds/room_051/concept_v001.png",
+    "sha256": "f10dd3d377385ce703904ef00164b96dceea6bf836d472cef4d923bc2b6e3d92",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 52,
+    "file": "zak/converted/poc/backgrounds/room_052/concept_v001.png",
+    "sha256": "6350025f99e8e1610da2428f80d357a998b5878da0841df912b9dfd9a29ca574",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 53,
+    "file": "zak/converted/poc/backgrounds/room_053/concept_v001.png",
+    "sha256": "28758edff93cbe9bd9290b321f276c40f00e70ccebce7ea23a20e05e6a57dbc5",
+    "pixel_rect": [
+      0,
+      217.2,
+      2172,
+      506.8
+    ],
+    "uv_top_left": [
+      0.0,
+      0.3,
+      1.0,
+      0.7000000000000001
+    ],
+    "reference_aspect": 7.5,
+    "content_aspect": 7.499999999999999,
+    "relative_aspect_error": 1.1102230246251565e-16,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 54,
+    "file": "zak/converted/poc/backgrounds/room_054/concept_v001.png",
+    "sha256": "d09c8e423fa96d560d0490fe6dc2152c9ecaac16a59539d403016780671179ac",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 55,
+    "file": "zak/converted/poc/backgrounds/room_055/concept_v001.png",
+    "sha256": "2db9f62c7c0f1f76f9d49a4480a46727233517dd7e61b932865076ea9ad83b16",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 56,
+    "file": "zak/converted/poc/backgrounds/room_056/concept_v001.png",
+    "sha256": "d16d13e1c77f3f9fa97270522ede67f6fd988c3d1822fce38e71b819a007fb8a",
+    "pixel_rect": [
+      0,
+      144.8,
+      2172,
+      579.2
+    ],
+    "uv_top_left": [
+      0.0,
+      0.2,
+      1.0,
+      0.8
+    ],
+    "reference_aspect": 5.0,
+    "content_aspect": 5.0,
+    "relative_aspect_error": 0.0,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 57,
+    "file": "zak/converted/poc/backgrounds/room_057/concept_v001.png",
+    "sha256": "6324f013b942793f4986af49ecd07bf55dca4fcf7e0446210d579cf8874f5626",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  },
+  {
+    "room": 58,
+    "file": "zak/converted/poc/backgrounds/room_058/concept_v001.png",
+    "sha256": "d5297c35bbea149514c34a424ef1d2a429a040a08b0fd69bd77175faf93807a9",
+    "pixel_rect": [
+      0,
+      0,
+      1983,
+      793
+    ],
+    "uv_top_left": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_aspect": 2.5,
+    "content_aspect": 2.5006305170239598,
+    "relative_aspect_error": 0.00025220680958382147,
+    "status": "candidate; borders and anchor geometry need review"
+  }
+]

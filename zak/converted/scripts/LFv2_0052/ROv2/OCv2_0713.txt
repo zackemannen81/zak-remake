@@ -1,0 +1,11 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0052/ROv2/OCv2_0713
+Events:
+  FD - 001D
+  FF - 0015
+[0015] (19) doSentence(253,713,0,1);
+[001C] (00) stopObjectCode();
+[001D] (28) if (!Var[122]) {
+[0021] (19)   doSentence(253,712,0,1);
+[0028] (**) }
+[0028] (00) stopObjectCode();
+END

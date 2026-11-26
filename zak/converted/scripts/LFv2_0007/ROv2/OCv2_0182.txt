@@ -1,0 +1,19 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0007/ROv2/OCv2_0182
+Events:
+   C - 0020
+  FD - 004F
+[0020] (D8) printEgo("Cash offered for merchandise.\x01No questions asked.");
+[004E] (00) stopObjectCode();
+[004F] (48) if (VAR_EGO == 1) {
+[0055] (10)   VAR_RESULT = getObjectOwner(18);
+[0059] (08)   if (VAR_RESULT != 1) {
+[005F] (5B)     setBitVar(848,1,Var[235]);
+[0064] (**)   }
+[0064] (18) } else {
+[0067] (10)   VAR_RESULT = getObjectOwner(32);
+[006B] (08)   if (VAR_RESULT != 2) {
+[0071] (5B)     setBitVar(848,2,Var[235]);
+[0076] (**)   }
+[0076] (**) }
+[0076] (00) stopObjectCode();
+END

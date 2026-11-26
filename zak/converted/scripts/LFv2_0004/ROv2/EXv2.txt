@@ -1,0 +1,6 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0004/ROv2/EXv2
+[0000] (3C) stopSound(66);
+[0002] (3C) stopSound(13);
+[0004] (9A) Var[203] = Var[234];
+[0007] (00) stopObjectCode();
+END

@@ -1,0 +1,30 @@
+Events:
+  FD - 0018
+[0018] (5B) setBitVar(1575,0,Var[235]);
+[001D] (1A) Var[54] = 1;
+[0021] (80) breakHere();
+[0022] (C3) VAR_RESULT = getActorX(VAR_EGO);
+[0025] (44) unless (VAR_RESULT > 84) goto 0061;
+[002B] (60) cursorCommand(15, 2);
+[002E] (19) doSentence(STOP);
+[0030] (91) animateActor(VAR_EGO,255);
+[0033] (11) animateActor(9,244);
+[0036] (80) breakHere();
+[0037] (14) print(9,"DID YOU DO THIS? GO SIT DOWN!");
+[0051] (AE) waitForMessage();
+[0052] (11) animateActor(9,247);
+[0055] (9E) walkActorTo(VAR_EGO,80,54);
+[0059] (BB) waitForActor(VAR_EGO);
+[005B] (60) cursorCommand(247, 1);
+[005E] (9A) VAR_KEYPRESS = Var[234];
+[0061] (46) Var[54]++;
+[0063] (44) unless (Var[54] > 100) goto 0021;
+[0069] (16) VAR_RESULT = getRandomNr(2);
+[006C] (A8) unless (VAR_RESULT) goto 0078;
+[0070] (14) print(9,"W\x02");
+[0075] (18) goto 0082;
+[0078] (14) print(9,"Ohhhh w\x02");
+[0082] (14) print(9,"hat a mess!");
+[008E] (18) goto 001D;
+[0091] (00) stopObjectCode();
+END

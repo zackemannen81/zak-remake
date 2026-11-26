@@ -1,0 +1,34 @@
+Events:
+  FD - 0013
+[0013] (2E) delay(900);
+[0017] (14) print(255,"Well? This ain't a free ride y'know.");
+[0038] (19) doSentence(253,148,0,1);
+[003F] (AE) waitForMessage();
+[0040] (2E) delay(420);
+[0044] (19) doSentence(253,140,0,1);
+[004B] (AE) waitForMessage();
+[004C] (2E) delay(420);
+[0050] (9A) Var[48] = VAR_EGO;
+[0053] (9A) Var[49] = Var[234];
+[0056] (19) doSentence(253,149,0,1);
+[005D] (A8) unless (Var[47]) goto 0079;
+[0061] (14) print(255,"OK, off ya go!");
+[006F] (46) Var[49]++;
+[0071] (19) doSentence(253,141,0,1);
+[0078] (80) breakHere();
+[0079] (1A) Var[48] = 1;
+[007D] (48) unless (VAR_EGO == 1) goto 0087;
+[0083] (1A) Var[48] = 2;
+[0087] (19) doSentence(253,149,0,1);
+[008E] (A8) unless (Var[47]) goto 00B7;
+[0092] (A8) unless (Var[49]) goto 00A3;
+[0096] (14) print(255,"You too!");
+[00A0] (18) goto 00AF;
+[00A3] (14) print(255,"Off my bus!");
+[00AF] (19) doSentence(253,141,0,1);
+[00B6] (80) breakHere();
+[00B7] (19) doSentence(254,142,0,1);
+[00BE] (1F) unless (getState02(142)) goto 00CA;
+[00C3] (19) doSentence(253,145,0,1);
+[00CA] (00) stopObjectCode();
+END

@@ -1,0 +1,13 @@
+Events:
+   1 - 003A
+   D - 0019
+[0019] (0F) unless (!getState08(577)) goto 0027;
+[001E] (24) loadRoomWithEgo(579,151,255,255);
+[0024] (18) goto 0039;
+[0027] (D8) printEgo("The door's locked.");
+[0039] (00) stopObjectCode();
+[003A] (4F) unless (getState08(577)) goto 0042;
+[003F] (18) goto 0027;
+[0042] (D8) printEgo("It's already open.");
+[0054] (00) stopObjectCode();
+END

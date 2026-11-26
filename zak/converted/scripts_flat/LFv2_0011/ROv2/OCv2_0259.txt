@@ -1,0 +1,26 @@
+Events:
+   1 - 0023
+   2 - 0023
+   A - 0023
+   E - 0023
+  FD - 002B
+[0023] (99) doSentence(VAR_ACTIVE_VERB,257,0,1);
+[002A] (00) stopObjectCode();
+[002B] (48) unless (VAR_EGO == 1) goto 0064;
+[0031] (A8) unless (Var[248]) goto 0058;
+[0035] (50) pickupObject(48);
+[0038] (47) clearState08(49);
+[003B] (17) clearState02(49);
+[003E] (2E) delay(60);
+[0042] (91) animateActor(VAR_EGO,244);
+[0045] (BB) waitForActor(VAR_EGO);
+[0047] (AE) waitForMessage();
+[0048] (D8) printEgo("What's that?");
+[0055] (18) goto 0061;
+[0058] (68) VAR_RESULT = isScriptRunning(105);
+[005B] (28) unless (!VAR_RESULT) goto 0061;
+[005F] (42) startScript(105);
+[0061] (18) goto 007F;
+[0064] (D8) printEgo("That's only for emergencies.");
+[007F] (00) stopObjectCode();
+END

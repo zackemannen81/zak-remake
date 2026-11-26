@@ -1,0 +1,12 @@
+{
+  "room": 49,
+  "object_id": 701,
+  "prompt": "Create ONLY the exact attached original state patch in beautifully polished AAA Unreal Engine 5 visual quality. Sleeping adult HUMAN MAN (Zak), short brown/auburn hair, head on blue pillow at left, covered by blue blanket with gold/magenta trim. Preserve original whole bed silhouette and cyan outline on grey. NO horns, spikes, monster or alien head. The reference is the complete tight crop. Preserve source boundaries, geometry, relative positions, camera, palette and full image aspect. Realistic physical materials and refined lighting, not voxel/extruded pixel blocks. No surrounding room, invented props, extra symbols or text. Fill entire frame with original background; no new black padding except proportion-preserving letterbox if aspect is extreme.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_049\\object_0701\\frame_000.png"
+  ],
+  "destination": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_049\\object_0701\\state_v012.png",
+  "request": "C:\\code\\zac\\zak\\converted\\poc\\objects\\room_049\\object_0701\\request_v012.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-b88eebae-0768-4aeb-9063-236338b7161c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

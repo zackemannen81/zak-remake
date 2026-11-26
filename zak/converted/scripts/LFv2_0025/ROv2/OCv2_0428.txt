@@ -1,0 +1,26 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0025/ROv2/OCv2_0428
+Events:
+   9 - 0067
+   A - 0067
+   B - 0024
+   E - 0067
+[0024] (48) if (VAR_ACTIVE_OBJECT2 == 81) {
+[002A] (29)   setOwnerOf(81,14);
+[002E] (47)   clearState08(429);
+[0031] (17)   clearState02(429);
+[0034] (48) } else if (VAR_ACTIVE_OBJECT2 == 58) {
+[003D] (29)   setOwnerOf(58,0);
+[0041] (47)   clearState08(430);
+[0044] (17)   clearState02(430);
+[0047] (19)   doSentence(250,430,0,1);
+[004E] (48) } else if (VAR_ACTIVE_OBJECT2 == 55) {
+[0057] (29)   setOwnerOf(55,14);
+[005B] (47)   clearState08(431);
+[005E] (17)   clearState02(431);
+[0061] (18) } else {
+[0064] (42)   startScript(3);
+[0066] (**) }
+[0066] (00) stopObjectCode();
+[0067] (D8) printEgo("It's stuck in the glowing object.");
+[0085] (00) stopObjectCode();
+END

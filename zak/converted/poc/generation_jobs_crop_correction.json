@@ -1,0 +1,409 @@
+[
+  {
+    "room": 1,
+    "object_id": 18,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A small flat GREEN RECTANGULAR CASHCARD visible in the dark slot/space beneath the red desk. Keep its original small size within the wider rectangular background patch. No giant raised green shape. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0018\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0018\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0018\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 87,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A tiny close crop of the grey/black TELEPHONE base in its original state. Use the room to understand real telephone geometry, not a raised black symbol or abstract glyph. Do not add a handset if absent in the target patch. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0087\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0087\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0087\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 88,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A compact black/grey cassette ANSWERING MACHINE, green indicator illuminated, with small red controls in the original locations. No HP, AAA or any invented brand or writing; not a car stereo. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0088\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0088\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0088\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 89,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. The alternate black/grey cassette ANSWERING MACHINE state, green indicator off. Same original controls/slots. No AAA, HP, logos, extra buttons or text. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0089\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0089\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0089\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 93,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Preserve the simple low flat SILVER-GREY silhouette against turquoise and red/wood trim exactly. No ornate curls, gems or crown. It is a small state patch, not a jewel design. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0093\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0093\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0093\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 97,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A close crop of the water and small orange/yellow fish inside Sushi's fishbowl in the upper-left bedroom. Preserve this exact fish/flashing-water animation phase, blue water and same crop. Not an abstract neon mural. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0097\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0097\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0097\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 98,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Fishbowl water and fish animation close crop, exact source phase. Realistic tiny orange/gold fish and water highlights following the original shapes; no abstract wall art. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0098\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0098\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0098\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 99,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Fishbowl water and fish animation close crop, exact source phase. Realistic orange/gold fish and water motion, not ornamental flames or abstract wall art. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0099\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0099\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0099\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 100,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Fishbowl water and fish animation close crop, exact source phase. Same orange/gold fish with blue water and reflections, not an abstract mural. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0100\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0100\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0100\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 101,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Fishbowl water and fish animation close crop, exact source phase. Same orange/gold fish with blue water and reflections; preserve original phase. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0101\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0101\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0101\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 102,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Fishbowl water and fish animation close crop, exact source phase. Same orange/gold fish with blue water and reflections; not glowing pixel mosaic tiles. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0102\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0102\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0102\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 105,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A tight crop of the WHITE SPHERICAL GLASS LAMP, with black FISH SKELETON silhouette inside the glowing globe. Turquoise background and tiny brass stem. Not a metal dumbbell or mechanical shaft. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0105\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0105\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0105\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 109,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A small flat floor/rug edge restoration patch with thin horizontal wood/red bands. No raised picture frame, no decorative corner tabs. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0109\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0109\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0109\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 1,
+    "object_id": 110,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. This is a diagonal ROPE crossing a doorway/floor in the original. Render realistic braided rope, not a rigid golden stair handrail. Preserve its angle and surrounding narrow door patch. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_001\\object_0110\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0110\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_001\\object_0110\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 20,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A small floor patch showing a BLACK ELECTRIC POWER CORD and grey/green/yellow floor. Preserve the stepped cable route, not a luminous green UI progress bar. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0020\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0020\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0020\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 22,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. An EMPTY refrigerator wire shelf after the egg was removed, grey metal horizontal shelf and dark fridge interior. No egg added, no chain, no hexagonal jewelry links. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0022\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0022\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0022\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 23,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Small golden BREAD CRUMBS piled below disconnected plumbing inside the blue kitchen sink cabinet. Original pipe/cabinet edges. No numbers, letters, labels or UI. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0023\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0023\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0023\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 25,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. The kitchen-cabinet background AFTER the crayon box was removed: grey/silver plumbing pipes against dark cabinet interior and cyan/blue framing. NO crayons added. NO Japanese lettering or other text. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0025\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0025\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0025\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 118,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. An indoor wall POWER OUTLET with black plugged cord against green/turquoise stripes and red/black baseboard. No grass, dirt or outdoor landscape at bottom. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0118\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0118\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0118\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 119,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A lifted/upturned magenta upholstered SOFA CUSHION revealing a small black REMOTE CONTROL underneath. Real fabric/leather cushioning, not a metallic jewelry box or neon control panel. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0119\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0119\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0119\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 123,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A kitchen FAUCET with grey/silver spout and handles, green/turquoise wallpaper behind and thin red baseboard. Real faucet geometry, not arrow buttons, F1 text or a red UI button. No writing. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0123\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0123\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0123\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 126,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Disconnected grey/silver PLUMBING PIPE in dark space below kitchen sink, cyan edges and blue cabinet. Real plumbing, not mathematical symbols or UI controls. No plus signs or equals signs. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0126\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0126\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0126\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 127,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Water leaking from the disconnected sink pipe into the blue cabinet, exact source animation phase. Real kitchen plumbing and falling water, not a sci-fi energy portal or decorative glass column. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0127\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0127\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0127\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 128,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Alternate falling-water splash phase under the kitchen sink; preserve pipe, falling stream and splash positions. Not an energy portal or voxel ice cubes. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0128\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0128\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0128\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 130,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. The narrow bread-related state patch at the kitchen sink/disposal. Use the room context to preserve the actual small physical bread/water/sink detail visible in the target, without turning colored pixels into letters or a decorative glyph. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0130\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0130\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0130\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 2,
+    "object_id": 132,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. An empty magenta/red upholstered sofa-seat/cushion surface state patch. Soft fabric, matching original corner and seams. No hard shiny metal box. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_002\\object_0132\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0132\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_002\\object_0132\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 3,
+    "object_id": 28,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A small brass wall MAILBOX with two rectangular inset areas, attached to a grey stone wall. Render a real mailbox, not the letter E. Preserve target state and geometry. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0028\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0028\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0028\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 3,
+    "object_id": 136,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A stale yellow/brown loaf of BREAD falling/hovering in front of the bakery red-brick wall and cracked grey pavement, exact source pose. Not a pendant or jewel. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0136\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0136\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0136\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 3,
+    "object_id": 138,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Brass wall MAILBOX in the target open/changed state, on grey stone wall. Preserve rectangular flap/slot geometry; not an E-shaped letter. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0138\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0138\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0138\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 3,
+    "object_id": 139,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Brass wall MAILBOX with a small white LETTER visible at its upper slot in exactly the original position. Real mailbox, no E glyph or invented text. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0139\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0139\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0139\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 3,
+    "object_id": 146,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A tightly cropped animation patch of the BUS DRIVER'S red/pink face in profile, open mouth, blond/orange hair and grey uniform edges, matching source crop. Natural stylized realistic facial geometry, no voxel jigsaw shapes. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0146\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0146\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0146\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 3,
+    "object_id": 148,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Yellow/brown stale BREAD loaf bouncing/landing in front of red bakery bricks and cracked grey pavement. Preserve exact tilted pose. Not a gold chain. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0148\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0148\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0148\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 6,
+    "object_id": 32,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. An empty part of the library desk after CashCard removal: green desk blotter surface and grey desk trim. Do not add a green electronic button, ports or a card if absent from target. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_006\\object_0032\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_006\\object_0032\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_006\\object_0032\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 6,
+    "object_id": 175,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. A lifted GREEN DESK BLOTTER/paper mat exposing a small red item beneath, on grey desktop with brown wooden edge. Preserve shape and folded angle. Not a green lizard or animal. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_006\\object_0175\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_006\\object_0175\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_006\\object_0175\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 7,
+    "object_id": 183,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Flat grey shop display background with one brown/gold horizontal shelf edge near top. Removed crystal display state: NO crystal added. Entire grey area remains filled; not two floating gold bars on black. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_007\\object_0183\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_007\\object_0183\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_007\\object_0183\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 8,
+    "object_id": 195,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Airport view patch after plane removal: blue sky with small soft white clouds and the grey terminal wall at right. Preserve layout; natural clouds, not extruded white pixel-shaped lettering. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_008\\object_0195\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_008\\object_0195\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_008\\object_0195\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  },
+  {
+    "room": 8,
+    "object_id": 201,
+    "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. This is an 8x8 animated airport sign detail: blue background, exact black silhouette and red/pink square visible in reference 1. Preserve every relative shape and position, no golden glyph, no extra symbols. Render the tiny sign detail only. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+    "references": [
+      "C:\\code\\zac\\zak\\converted\\images\\objects\\room_008\\object_0201\\frame_000.png"
+    ],
+    "destination": "D:\\zac-asset-storage\\poc\\objects\\room_008\\object_0201\\state_v006.png",
+    "request": "D:\\zac-asset-storage\\poc\\objects\\room_008\\object_0201\\request_v006.json",
+    "status": "queued_single_reference_crop_correction"
+  }
+]

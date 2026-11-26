@@ -1,0 +1,20 @@
+[0000] (DB) setBitVar(1559,Var[235],Var[235]);
+[0005] (1A) Var[147] = 2;
+[0009] (3C) stopSound(93);
+[000B] (80) breakHere();
+[000C] (1C) startSound(24);
+[000E] (57) setState02(285);
+[0011] (2E) delay(30);
+[0015] (D8) printEgo("Uh oh, I killed it.");
+[0026] (5A) Var[225] += 12;
+[002A] (10) VAR_RESULT = getObjectOwner(51);
+[002E] (C8) unless (VAR_RESULT == VAR_EGO) goto 006D;
+[0033] (80) breakHere();
+[0034] (48) unless (VAR_ROOM == 144) goto 0033;
+[003A] (2E) delay(180);
+[003E] (AE) waitForMessage();
+[003F] (29) setOwnerOf(51,0);
+[0043] (91) animateActor(VAR_EGO,246);
+[0046] (D8) printEgo("I'm hungry! I think I'll eat these\x01peanuts.");
+[006D] (A0) stopObjectCode();
+END

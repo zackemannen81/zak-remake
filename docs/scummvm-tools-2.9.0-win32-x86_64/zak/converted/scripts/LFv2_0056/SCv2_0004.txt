@@ -1,0 +1,194 @@
+# Decompiled with descumm -2
+# Source: LFv2_0056\SCv2_0004
+
+[0000] (9A) Var[34] = Var[234];
+[0003] (48) if (Var[21] == 3) {
+[0009] (9A)   Var[34] = Var[235];
+[000C] (**) }
+[000C] (48) if (VAR_CLICK_AREA == 4) {
+[0012] (48)   if (VAR_KEYPRESS == 8) {
+[0018] (98)     restart();
+[0019] (**)   }
+[0019] (48)   if (Var[21] == 1) {
+[001F] (48)     if (VAR_KEYPRESS == 5) {
+[0025] (4A)       chainScript(7);
+[0027] (**)     }
+[0027] (04)     if (VAR_KEYPRESS <= 4) {
+[002D] (A8)       if (Var[199]) {
+[0031] (6F)         if (getState04(169)) {
+[0036] (B1)           VAR_RESULT = getBitVar(1470,VAR_KEYPRESS);
+[003B] (28)           if (!VAR_RESULT) {
+[003F] (1A)             VAR_SENTENCE_VERB = 45;
+[0043] (9A)             VAR_SENTENCE_OBJECT2 = VAR_KEYPRESS;
+[0046] (18)             goto 01DA;
+[0049] (**)           }
+[0049] (**)         }
+[0049] (**)       }
+[0049] (**)     }
+[0049] (**)   }
+[0049] (**) }
+[0049] (48) if (VAR_CLICK_AREA == 5) {
+[004F] (9A)   Var[34] = Var[235];
+[0052] (**) }
+[0052] (48) if (VAR_CLICK_AREA == 1) {
+[0058] (A8)   if (VAR_SENTENCE_PREPOSITION) {
+[005C] (08)     if (VAR_SENTENCE_VERB != 45) {
+[0062] (18)       goto 007D;
+[0065] (**)     }
+[0065] (**)   }
+[0065] (48)   if (VAR_CLICK_VERB == 30) {
+[006B] (48)   } else if (VAR_CLICK_VERB == 45) {
+[0074] (18)   } else {
+[0077] (48)     unless (VAR_CLICK_VERB == 3) goto 007F;
+[007D] (**)   }
+[007D] (19)   doSentence(RESET);
+[007F] (48)   if (VAR_CLICK_VERB == 15) {
+[0085] (1A)     VAR_SENTENCE_VERB = 15;
+[0089] (AC)     drawSentence();
+[008A] (78)     if (VAR_VIRT_MOUSE_Y < 67) {
+[0090] (F5)       VAR_CLICK_OBJECT = findObject(VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[0094] (88)       if (VAR_CLICK_OBJECT != VAR_SENTENCE_OBJECT1) {
+[0099] (9A)         VAR_SENTENCE_OBJECT1 = VAR_CLICK_OBJECT;
+[009C] (AC)         drawSentence();
+[009D] (**)       }
+[009D] (**)     }
+[009D] (80)     breakHere();
+[009E] (18)     goto 008A;
+[00A1] (**)   }
+[00A1] (38)   if (VAR_CLICK_VERB >= 46) {
+[00A7] (04)     if (VAR_CLICK_VERB <= 49) {
+[00AD] (9A)       VAR_SENTENCE_OBJECT2 = VAR_CLICK_VERB;
+[00B0] (3A)       VAR_SENTENCE_OBJECT2 -= 45;
+[00B4] (1A)       VAR_SENTENCE_VERB = 45;
+[00B8] (9A)       Var[34] = Var[235];
+[00BB] (18)       goto 0179;
+[00BE] (**)     }
+[00BE] (**)   }
+[00BE] (38)   if (VAR_CLICK_VERB >= 30) {
+[00C4] (48)     if (VAR_CLICK_VERB == 45) {
+[00CA] (1A)       VAR_SENTENCE_PREPOSITION = 4;
+[00CE] (**)     }
+[00CE] (9A)     VAR_SENTENCE_VERB = VAR_CLICK_VERB;
+[00D1] (**)   }
+[00D1] (C8)   if (VAR_SENTENCE_VERB == VAR_CLICK_VERB) {
+[00D6] (9A)     Var[34] = Var[235];
+[00D9] (18)   } else {
+[00DC] (9A)     VAR_SENTENCE_VERB = VAR_CLICK_VERB;
+[00DF] (**)   }
+[00DF] (18) } else {
+[00E2] (48)   if (VAR_CLICK_AREA == 3) {
+[00E8] (48)     if (VAR_SENTENCE_VERB == 3) {
+[00EE] (9A)       VAR_SENTENCE_PREPOSITION = Var[234];
+[00F1] (**)     }
+[00F1] (**)   }
+[00F1] (48)   if (VAR_CLICK_AREA == 2) {
+[00F7] (08)     if (VAR_SENTENCE_VERB != 45) {
+[00FD] (48)       if (VAR_SENTENCE_VERB == 13) {
+[0103] (9A)         Var[34] = Var[235];
+[0106] (**)       }
+[0106] (48)       if (VAR_SENTENCE_VERB == 15) {
+[010C] (19)         doSentence(RESET);
+[010E] (9A)         Var[34] = Var[234];
+[0111] (**)       }
+[0111] (48)       if (VAR_SENTENCE_VERB == 3) {
+[0117] (A8)         if (VAR_SENTENCE_PREPOSITION) {
+[011B] (F5)           VAR_CLICK_OBJECT = findObject(VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[011F] (A8)           if (VAR_CLICK_OBJECT) {
+[0123] (9D)             if (classOfIs(VAR_CLICK_OBJECT,4)) {
+[0128] (18)               goto 013F;
+[012B] (**)             }
+[012B] (**)           }
+[012B] (D5)           VAR_CLICK_OBJECT = actorFromPos(VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[012F] (38)           if (VAR_CLICK_OBJECT >= 12) {
+[0135] (9A)             VAR_CLICK_OBJECT = Var[234];
+[0138] (**)           }
+[0138] (18)           goto 013F;
+[013B] (**)         }
+[013B] (**)       }
+[013B] (F5)       VAR_CLICK_OBJECT = findObject(VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[013F] (**)     }
+[013F] (**)   }
+[013F] (28)   if (!VAR_CLICK_OBJECT) {
+[0143] (48)     if (VAR_SENTENCE_VERB == 13) {
+[0149] (19)       doSentence(RESET);
+[014B] (9A)       Var[34] = Var[235];
+[014E] (**)     }
+[014E] (A8)   } else if (VAR_SENTENCE_PREPOSITION) {
+[0155] (C8)     if (VAR_CLICK_OBJECT == VAR_SENTENCE_OBJECT2) {
+[015A] (9A)       Var[34] = Var[235];
+[015D] (**)     }
+[015D] (C8)     if (VAR_CLICK_OBJECT == VAR_SENTENCE_OBJECT1) {
+[0162] (9A)       VAR_CLICK_OBJECT = Var[234];
+[0165] (**)     }
+[0165] (9A)     VAR_SENTENCE_OBJECT2 = VAR_CLICK_OBJECT;
+[0168] (18)   } else {
+[016B] (9A)     VAR_SENTENCE_OBJECT2 = Var[234];
+[016E] (C8)     if (VAR_CLICK_OBJECT == VAR_SENTENCE_OBJECT1) {
+[0173] (9A)       Var[34] = Var[235];
+[0176] (**)     }
+[0176] (9A)     VAR_SENTENCE_OBJECT1 = VAR_CLICK_OBJECT;
+[0179] (**)   }
+[0179] (**) }
+[0179] (48) if (VAR_SENTENCE_VERB == 14) {
+[017F] (90)   VAR_RESULT = getObjectOwner(VAR_SENTENCE_OBJECT1);
+[0182] (08)   if (VAR_RESULT != 15) {
+[0188] (9A)     VAR_SENTENCE_OBJECT1 = Var[234];
+[018B] (**)   }
+[018B] (**) }
+[018B] (48) if (VAR_SENTENCE_VERB == 11) {
+[0191] (A8)   if (VAR_SENTENCE_OBJECT1) {
+[0195] (EC)     VAR_SENTENCE_PREPOSITION = getObjPreposition(VAR_SENTENCE_OBJECT1);
+[0198] (28)     if (!VAR_SENTENCE_PREPOSITION) {
+[019C] (9A)       VAR_SENTENCE_OBJECT2 = Var[234];
+[019F] (**)     }
+[019F] (**)   }
+[019F] (**) }
+[019F] (48) if (VAR_SENTENCE_VERB == 3) {
+[01A5] (A8)   if (VAR_SENTENCE_OBJECT1) {
+[01A9] (1A)     VAR_SENTENCE_PREPOSITION = 4;
+[01AD] (**)   }
+[01AD] (**) }
+[01AD] (28) if (!VAR_SENTENCE_VERB) {
+[01B1] (9A)   VAR_SENTENCE_VERB = VAR_BACKUP_VERB;
+[01B4] (**) }
+[01B4] (AC) drawSentence();
+[01B5] (A8) if (Var[34]) {
+[01B9] (38)   if (VAR_SENTENCE_VERB >= 30) {
+[01BF] (04)     if (VAR_SENTENCE_VERB <= 45) {
+[01C5] (18)       goto 01DA;
+[01C8] (**)     }
+[01C8] (**)   }
+[01C8] (A8)   if (VAR_SENTENCE_OBJECT1) {
+[01CC] (A8)     if (VAR_SENTENCE_PREPOSITION) {
+[01D0] (A8)       if (VAR_SENTENCE_OBJECT2) {
+[01D4] (18)       } else {
+[01D7] (18)         goto 01E1;
+[01DA] (**)       }
+[01DA] (**)     }
+[01DA] (19)     doSentence(STOP);
+[01DC] (F9)     doSentence(VAR_SENTENCE_VERB,VAR_SENTENCE_OBJECT1,VAR_SENTENCE_OBJECT2,0);
+[01E1] (48)   } else if (VAR_SENTENCE_VERB == 13) {
+[01EA] (B1)     VAR_RESULT = getBitVar(1440,VAR_EGO);
+[01EF] (28)     if (!VAR_RESULT) {
+[01F3] (48)       if (VAR_CLICK_AREA == 2) {
+[01F9] (08)         if (Var[21] != 3) {
+[01FF] (19)           doSentence(STOP);
+[0201] (FE)           walkActorTo(VAR_EGO,VAR_VIRT_MOUSE_X,VAR_VIRT_MOUSE_Y);
+[0205] (**)         }
+[0205] (**)       }
+[0205] (**)     }
+[0205] (**)   }
+[0205] (08)   if (VAR_SENTENCE_VERB != 13) {
+[020B] (08)     if (VAR_SENTENCE_VERB != 45) {
+[0211] (9A)       Var[66] = VAR_SENTENCE_OBJECT1;
+[0214] (19)       doSentence(RESET);
+[0216] (28)       if (!Var[66]) {
+[021A] (AC)         drawSentence();
+[021B] (**)       }
+[021B] (**)     }
+[021B] (**)   }
+[021B] (**) }
+[021B] (9A) VAR_CLICK_VERB = Var[234];
+[021E] (9A) VAR_CLICK_OBJECT = Var[234];
+[0221] (A0) stopObjectCode();
+END

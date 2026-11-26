@@ -1,0 +1,16 @@
+[0000] (4F) unless (getState08(23)) goto 002C;
+[0005] (47) clearState08(23);
+[0008] (57) setState02(23);
+[000B] (D8) printEgo("Whoops! That washed away the crumbs!");
+[002C] (9A) Var[44] = Var[235];
+[002F] (4F) unless (getState08(121)) goto 0039;
+[0034] (05) drawObject(127,255,255);
+[0039] (80) breakHere();
+[003A] (4F) unless (getState08(121)) goto 0044;
+[003F] (05) drawObject(128,255,255);
+[0044] (80) breakHere();
+[0045] (28) unless (!Var[44]) goto 002F;
+[0049] (07) setState08(127);
+[004C] (07) setState08(128);
+[004F] (A0) stopObjectCode();
+END

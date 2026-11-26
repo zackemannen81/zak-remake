@@ -1,0 +1,3 @@
+[0000] (9A) Var[154] = Var[234];
+[0003] (00) stopObjectCode();
+END

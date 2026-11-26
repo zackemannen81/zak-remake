@@ -1,0 +1,32 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/OCv2_0237
+Events:
+   C - 0022
+  FD - 007E
+[0022] (AF) if (!getState04(VAR_ACTIVE_OBJECT1)) {
+[0026] (A7)   setState04(VAR_ACTIVE_OBJECT1);
+[0028] (9A)   Var[66] = Var[234];
+[002B] (16)   Var[67] = getRandomNr(9);
+[002E] (9A)   Var[14] = Var[66];
+[0031] (5A)   Var[14] += 212;
+[0035] (8A)   Var[Var[14]] = Var[67];
+[0038] (46)   Var[66]++;
+[003A] (44)   unless (Var[66] > 3) goto 002B;
+[0040] (**) }
+[0040] (D8) printEgo("Tomorrow's Winning Lotto Number: \x02");
+[0060] (9A) Var[67] = Var[234];
+[0063] (9A) Var[14] = Var[67];
+[0066] (5A) Var[14] += 212;
+[006A] (9A) Var[66] = Var[14];
+[006D] (D8) printEgo("\x04\x42 \x02");
+[0073] (46) Var[67]++;
+[0075] (44) unless (Var[67] > 3) goto 0063;
+[007B] (D8) printEgo("");
+[007D] (00) stopObjectCode();
+[007E] (9A) Var[45] = Var[235];
+[0081] (1E) walkActorTo(11,57,36);
+[0085] (3B) waitForActor(11);
+[0087] (1E) walkActorTo(11,74,36);
+[008B] (3B) waitForActor(11);
+[008D] (18) goto 0081;
+[0090] (00) stopObjectCode();
+END

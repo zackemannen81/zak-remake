@@ -1,0 +1,17 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0005/ROv2/OCv2_0162
+Events:
+   1 - 0019
+   2 - 0036
+[0019] (EF) if (getState04(VAR_ACTIVE_OBJECT1)) {
+[001D] (D8)   printEgo("It's locked.");
+[002A] (18) } else {
+[002D] (42)   startScript(10);
+[002F] (07)   setState08(172);
+[0032] (30)   setBoxFlags(14,0);
+[0035] (**) }
+[0035] (00) stopObjectCode();
+[0036] (42) startScript(11);
+[0038] (47) clearState08(172);
+[003B] (30) setBoxFlags(14,128);
+[003E] (00) stopObjectCode();
+END

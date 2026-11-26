@@ -1,0 +1,13 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0030/ROv2/OCv2_0493
+Events:
+  FD - 0013
+[0013] (6F) if (getState04(492)) {
+[0018] (80)   breakHere();
+[0019] (FC)   VAR_RESULT = isSoundRunning(VAR_LAST_SOUND);
+[001C] (28)   unless (!VAR_RESULT) goto 0018;
+[0020] (0F)   if (!getState08(73)) {
+[0025] (19)     doSentence(4,492,0,1);
+[002C] (**)   }
+[002C] (**) }
+[002C] (00) stopObjectCode();
+END

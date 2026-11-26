@@ -1,0 +1,12 @@
+{
+  "room": 3,
+  "object_id": 148,
+  "prompt": "Recreate ONLY the exact attached original PATCH, matching its tight crop, every boundary and the relative size/position of each shape. Premium photorealistic AAA Unreal Engine 5 material quality. Yellow/brown stale BREAD loaf bouncing/landing in front of red bakery bricks and cracked grey pavement. Preserve exact tilted pose. Not a gold chain. Do NOT zoom out: no surrounding room, furniture, extra supports, walls or props beyond this patch. All visible source edges must remain at the same proportional positions. Make surfaces beautifully realistic without new words, symbols or buttons. Opaque background, preserve source proportions; black letterbox allowed only for extreme aspect.",
+  "references": [
+    "C:\\code\\zac\\zak\\converted\\images\\objects\\room_003\\object_0148\\frame_000.png"
+  ],
+  "destination": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0148\\state_v006.png",
+  "request": "D:\\zac-asset-storage\\poc\\objects\\room_003\\object_0148\\request_v006.json",
+  "status": "generated; visual QA pending",
+  "hint": "Generated images are saved to C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b as C:\\Users\\zakri\\.codex\\generated_images\\01a1fe41-6dc7-7ed0-8069-7cb1f6e9109b\\exec-97a1cb2a-f4ae-4a82-99a7-b9c146e08ff4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

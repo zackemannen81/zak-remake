@@ -1,0 +1,10 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0044/ROv2/OCv2_0644
+Events:
+   D - 001D
+[001D] (0F) if (!getState08(643)) {
+[0022] (D8)   printEgo("I can't get there!");
+[0033] (18) } else {
+[0036] (24)   loadRoomWithEgo(652,134,62,12);
+[003C] (**) }
+[003C] (00) stopObjectCode();
+END

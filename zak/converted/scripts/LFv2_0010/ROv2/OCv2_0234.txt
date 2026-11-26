@@ -1,0 +1,23 @@
+# Source: docs/scummvm-tools-2.9.0-win32-x86_64/zak/dump/LFv2_0010/ROv2/OCv2_0234
+Events:
+   4 - 0028
+   9 - 0028
+   B - 0028
+   D - 0028
+  FD - 003D
+[0028] (28) if (!Var[50]) {
+[002C] (68)   VAR_RESULT = isScriptRunning(64);
+[002F] (28)   if (!VAR_RESULT) {
+[0033] (1C)     startSound(76);
+[0035] (19)     doSentence(253,239,0,1);
+[003C] (**)   }
+[003C] (**) }
+[003C] (00) stopObjectCode();
+[003D] (1A) Var[167] = 52;
+[0041] (1A) Var[164] = 44;
+[0045] (29) setOwnerOf(40,7);
+[0049] (29) setOwnerOf(43,7);
+[004D] (27) setState04(328);
+[0050] (42) startScript(5);
+[0052] (00) stopObjectCode();
+END
