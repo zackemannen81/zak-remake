@@ -12,7 +12,7 @@ import { actorDepthScale, actorYaw } from './actorPose';
 import { composeRoomMaskPixels, scummV2MaskBufferIndex } from './zPlaneMask';
 import { applyScummV2ZPlanePatch } from './zPlaneShader';
 
-const ACTOR_HEIGHT = 70;
+const ACTOR_HEIGHT = 75;
 const costumeImages = new Set(runtimeAssets.costumes);
 
 /** Wrap the GLB so its feet meet the logical actor anchor without changing its animation root. */
@@ -125,6 +125,8 @@ export class GameRenderer {
   private currentVisualSignature = '';
   private scrollX = 0;
   private actorAction?: THREE.AnimationAction;
+  private actorWalkAction?: THREE.AnimationAction;
+  private actorIdleAction?: THREE.AnimationAction;
   private actorMixer?: THREE.AnimationMixer;
   private externalActor?: THREE.Group;
   private externalActorModel?: THREE.Group;
@@ -188,12 +190,16 @@ export class GameRenderer {
     this.actorPlaceholder.visible = !this.externalActor;
     if (this.externalActor) this.externalActor.visible = true;
 
-    if (this.actorAction && this.actorMixer) {
+    if (this.actorMixer) {
       const moving = state.actor.pose === 'walk';
-      this.actorAction.paused = !moving;
-      if (!moving && this.actorAction.time !== 0) this.actorAction.time = 0;
+      const desired = moving ? this.actorWalkAction : this.actorIdleAction;
+      if (desired && desired !== this.actorAction) {
+        desired.reset().setEffectiveWeight(1).setEffectiveTimeScale(1).play();
+        if (this.actorAction) desired.crossFadeFrom(this.actorAction, 0.18, false);
+        this.actorAction = desired;
+      }
       const delta = this.lastFrameTime === 0 ? 0 : Math.min((performance.now() - this.lastFrameTime) / 1000, 0.05);
-      this.actorMixer.update(moving ? delta : 0);
+      this.actorMixer.update(delta);
     }
     this.lastFrameTime = performance.now();
     this.renderer.render(this.scene, this.camera);
@@ -534,15 +540,17 @@ export class GameRenderer {
       this.actorRoot.add(visual);
       this.actorPlaceholder.visible = false;
 
-      const clipName = assetManifest.character.walkAnimation.toLowerCase();
-      const clip = gltf.animations.find((entry) => entry.name.toLowerCase().includes(clipName)) ?? gltf.animations[0];
-      if (clip) {
+      const findClip = (name: string) => gltf.animations.find(clip => clip.name.toLowerCase() === name.toLowerCase());
+      const walk = findClip(assetManifest.character.walkAnimation);
+      const idle = findClip(assetManifest.character.idleAnimation);
+      if (walk && idle) {
         this.actorMixer = new THREE.AnimationMixer(model);
-        this.actorAction = this.actorMixer.clipAction(clip);
+        this.actorWalkAction = this.actorMixer.clipAction(walk);
+        this.actorIdleAction = this.actorMixer.clipAction(idle);
+        this.actorAction = this.actorIdleAction;
         this.actorAction.play();
-        this.actorAction.paused = true;
       }
-      this.onCharacterStatus?.(clip ? `Zak model ready — ${clip.name} animation loaded.` : 'Zak model ready; no animation clip found, so the placeholder pose is used.');
+      this.onCharacterStatus?.(walk && idle ? `Zak model ready — ${idle.name} / ${walk.name} (${gltf.animations.length} clips).` : 'Zak model ready; configured animation clips are missing.');
     }, undefined, () => {
       this.onCharacterStatus?.('Zak GLB could not be loaded; using the built-in placeholder.');
     });

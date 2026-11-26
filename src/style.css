@@ -198,3 +198,11 @@ h1 span { color: #b7ad96; font-weight: 400; }
 @media (prefers-reduced-motion: reduce) {
   .intro-art { animation: none; }
 }
+
+.intro-scene { position:absolute; inset:0; z-index:-2; overflow:hidden; }
+.intro-scene .intro-art { z-index:0; object-fit:fill; animation:none; }
+.intro-patch { position:absolute; image-rendering:pixelated; }
+.intro-scene[data-pan="true"] { width:200%; animation:intro-pan-wide 6s ease-in-out forwards; }
+@keyframes intro-pan-wide { from { transform:translateX(-50%); } to { transform:translateX(0); } }
+@media(prefers-reduced-motion:reduce) { .intro-scene[data-pan="true"] { animation:none; } }
+.intro-card:empty { display:none; }

@@ -61,7 +61,7 @@ function playIntro(): void {
     onDreamMusicCue: () => void music.play(),
     onFinish: (skipped) => {
       introSequence = undefined;
-      if (skipped) music.stop();
+      music.stop();
       engine.replaceState(createInitialState(getRoom(1), { skipIntro: skipped }));
       ui.setNotice(skipped
         ? 'Intro skipped. Zak starts at the original SCv2_0108 skip position.'
@@ -71,8 +71,8 @@ function playIntro(): void {
   introSequence.start();
 }
 ui.bind({
-  onVerb: (verb) => engine.setVerb(verb),
-  onInventoryItem: (objectId) => engine.selectInventoryItem(objectId),
+  onVerb: (verb) => { if (!introSequence) engine.setVerb(verb); },
+  onInventoryItem: (objectId) => { if (!introSequence) engine.selectInventoryItem(objectId); },
   onSave: () => {
     try {
       localStorage.setItem(SAVE_STORAGE_KEY, serializeSave(engine.state));
@@ -88,6 +88,7 @@ ui.bind({
         ui.setNotice('No local save found yet.');
         return;
       }
+      introSequence?.dispose(); introSequence = undefined; music.stop();
       engine.replaceState(deserializeSave(saved));
       ui.setNotice('Save loaded.');
     } catch (error) {
@@ -107,7 +108,7 @@ function frame(now: number): void {
   previousTime = now;
   let steps = 0;
   while (accumulator >= FIXED_STEP_MS && steps < 8) {
-    engine.advanceOneTick();
+    if (!introSequence) engine.advanceOneTick();
     accumulator -= FIXED_STEP_MS;
     steps += 1;
   }

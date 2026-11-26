@@ -3,9 +3,9 @@
   "characters": {
     "zak": {
       "kind": "gltf",
-      "source": "assets/characters/zak-walking.glb",
-      "walkAnimation": "walk",
-      "idleAnimation": "walk",
+      "source": "assets/characters/zak-animated.glb",
+      "walkAnimation": "walking_2_inplace",
+      "idleAnimation": "Idle_9",
       "fallback": "procedural-placeholder"
     }
   },

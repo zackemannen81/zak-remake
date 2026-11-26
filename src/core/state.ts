@@ -25,7 +25,7 @@ export function createInitialState(room: RoomData, options: InitialStateOptions 
     tick: 0,
     roomId: room.id,
     actor: { ...spawn, path: [], facing: 'down', pose: 'idle' },
-    variables: Array.from({ length: 256 }, () => 0),
+    variables: Array.from({ length: 256 }, (_, i) => i === 62 ? 12250 : 0),
     flags: {},
     objectOwners: Object.fromEntries(initialObjects.map((value, id) => [id, value & 15])),
     // Script 108's skip branch explicitly calls setState08(90).

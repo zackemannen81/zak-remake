@@ -119,6 +119,12 @@ export class GameEngine {
       return;
     }
 
+    const early = applyRoomScriptVerb(this.state, room.id, target.object_id, pending.verb, pending.selectedItemId);
+    if (early !== undefined) {
+      this.state.selectedItemId = null;
+      this.speak(early, 120);
+      return;
+    }
     // Existing verified room 1–3 handlers retain precedence. New rooms use source programs.
     if (room.id > 3 || (room.id === 3 && [135,141].includes(target.object_id))) {
       const vm = runObjectProgram(this.state,target.object_id,pending.verb,pending.selectedItemId);
@@ -146,13 +152,6 @@ export class GameEngine {
       if (outsideDestination !== undefined) {
         this.speak(`The original exit leads to room ${outsideDestination}; that room is outside this playable slice.`);
       }
-      return;
-    }
-
-    const scripted = applyRoomScriptVerb(this.state, room.id, target.object_id, pending.verb, pending.selectedItemId);
-    if (scripted) {
-      if (pending.verb === 'use') this.state.selectedItemId = null;
-      this.speak(scripted, 120);
       return;
     }
 

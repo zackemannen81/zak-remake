@@ -1,5 +1,7 @@
+import { getRoom, objectImageUrl } from '../content/rooms';
 import { assetUrl } from '../content/runtimeAssets';
-const officeRoom = assetUrl('backgrounds/LFv2_0046.png');
+const officeRoom = assetUrl('intro/office.png');
+const logoRoom = assetUrl('intro/logo.png');
 const bedroomRoom = assetUrl('backgrounds/LFv2_0001.png');
 const dreamRoom = assetUrl('backgrounds/LFv2_0058.png');
 const dreamPanorama = assetUrl('backgrounds/LFv2_0051.png');
@@ -15,6 +17,9 @@ interface IntroBeat {
   text?: string;
   musicCue?: boolean;
   credit?: boolean;
+  durationMs?: number;
+  pan?: boolean;
+  patches?: number[];
 }
 
 const officeDialogue: IntroBeat[] = [
@@ -43,19 +48,26 @@ const credits: IntroBeat[] = [
   { roomId: 58, image: dreamRoom, label: 'SCv2_0111 · Original credits', text: 'Project Directed by David Fox', credit: true },
 ];
 
-const introBeats: IntroBeat[] = [
+export const introBeats: IntroBeat[] = [
+  { roomId: 46, image: logoRoom, label: "Opening logo", durationMs: 5000 },
   ...officeDialogue,
   { roomId: 1, image: bedroomRoom, label: 'SCv2_0001 · Later that night', text: 'Later that night, Zak’s in bed…' },
   { roomId: 1, image: bedroomRoom, label: 'SCv2_0001 · Later that night', text: 'Alone… again.' },
-  { roomId: 58, image: dreamRoom, label: 'SCv2_0001 · Dream sequence', text: 'The dream begins.' },
+  { roomId: 58, image: dreamRoom, label: 'SCv2_0001 · Dream sequence', durationMs: 3000 },
   ...credits,
-  { roomId: 58, image: dreamRoom, label: 'SCv2_0001 · Dream sequence', text: 'The last dream images pass…' },
-  { roomId: 51, image: dreamPanorama, label: 'SCv2_0001 · Dream / music cue 95', text: 'The dream opens out.', musicCue: true },
-  { roomId: 55, image: dreamCloseup, label: 'SCv2_0001 · Dream sequence', text: 'A vision flashes by.' },
-  { roomId: 49, image: dreamStreet, label: 'SCv2_0001 · Dream sequence', text: 'Zak sees himself in the dream.' },
-  { roomId: 56, image: dreamExit, label: 'SCv2_0001 · Return transition', text: 'The dream fades and Zak returns to his room.' },
-  { roomId: 1, image: bedroomRoom, label: 'SCv2_0108 · Wake-up', text: 'Continue into the original wake-up script.' },
+  { roomId: 58, image: dreamRoom, label: 'SCv2_0001 · Dream sequence', durationMs: 3000, patches: [766, 767, 768] },
+  { roomId: 51, image: dreamPanorama, label: 'SCv2_0001 · Dream / music cue 95', durationMs: 8000, pan: true, musicCue: true },
+  ...[756, 757, 758, 759, 760].map(id => ({ roomId: 55, image: dreamCloseup, label: 'Dream vision', durationMs: 1600, patches: [id] })),
+  { roomId: 49, image: dreamStreet, label: 'SCv2_0001 · Dream sequence', text: "Hey! That's ME!", patches: [701] },
+  { roomId: 49, image: dreamStreet, label: 'Dream sequence', speaker: 'Zak', text: 'TABLOID REPORTER SPACES OUT IN DREAM.', patches: [699,700] },
+  { roomId: 49, image: dreamStreet, label: 'Dream sequence', speaker: 'Zak', text: 'AIEEEEE!', patches: [702] },
+  { roomId: 56, image: dreamExit, label: 'SCv2_0001 · Return transition', durationMs: 6000, pan: true, patches: [761] },
+  { roomId: 1, image: bedroomRoom, label: 'SCv2_0108 · Wake-up', durationMs: 1800 },
 ];
+
+export function introBeatDuration(beat: IntroBeat): number {
+  return beat.durationMs ?? Math.max(2200, Math.min(9500, 1100 + (beat.text?.length ?? 0) * 55));
+}
 
 export interface IntroSequenceCallbacks {
   onDreamMusicCue: () => void;
@@ -67,6 +79,9 @@ export class IntroSequence {
   private readonly overlay = document.createElement('section');
   private index = 0;
   private finished = false;
+  private timer?: ReturnType<typeof setTimeout>;
+  private imageKey = "";
+  private readonly art = document.createElement("div");
 
   constructor(private readonly viewport: HTMLElement, private readonly callbacks: IntroSequenceCallbacks) {
     this.overlay.className = 'intro-playback';
@@ -89,6 +104,7 @@ export class IntroSequence {
 
   dispose(): void {
     this.finished = true;
+    clearTimeout(this.timer);
     this.overlay.removeEventListener('keydown', this.handleKeyDown);
     this.overlay.remove();
   }
@@ -105,6 +121,7 @@ export class IntroSequence {
 
   private advance(): void {
     if (this.finished) return;
+    clearTimeout(this.timer);
     if (this.index >= introBeats.length - 1) {
       this.finish(false);
       return;
@@ -124,13 +141,34 @@ export class IntroSequence {
     if (beat.musicCue) this.callbacks.onDreamMusicCue();
     this.overlay.dataset.room = String(beat.roomId);
     this.overlay.dataset.credit = beat.credit ? 'true' : 'false';
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => this.advance(), introBeatDuration(beat));
     this.overlay.replaceChildren();
 
-    const image = document.createElement('img');
-    image.className = 'intro-art';
-    image.src = beat.image;
-    image.alt = `Original game room ${beat.roomId}`;
-    image.draggable = false;
+    const key = JSON.stringify([beat.image, beat.patches, beat.pan]);
+    if (key !== this.imageKey) {
+      this.imageKey = key;
+      this.art.className = 'intro-scene';
+      this.art.dataset.pan = beat.pan ? 'true' : 'false';
+      this.art.replaceChildren();
+      const image = document.createElement('img');
+      image.className = 'intro-art';
+      image.src = beat.image;
+      image.alt = beat.label;
+      image.draggable = false;
+      this.art.append(image);
+      const roomWidth = beat.roomId === 51 || beat.roomId === 56 ? 640 : 320;
+      for (const id of beat.patches ?? []) {
+        const object = getRoom(beat.roomId).objects.find(o => o.object_id === id);
+        const url = objectImageUrl(beat.roomId, id);
+        if (!object || !url) continue;
+        const patch = document.createElement('img');
+        patch.className = 'intro-patch';
+        patch.src = url;
+        Object.assign(patch.style, { left: (object.x / roomWidth * 100) + '%', top: (object.y / 128 * 100) + '%', width: (object.width / roomWidth * 100) + '%', height: (object.height / 128 * 100) + '%' });
+        this.art.append(patch);
+      }
+    }
 
     const shade = document.createElement('div');
     shade.className = 'intro-shade';
@@ -164,7 +202,7 @@ export class IntroSequence {
     footer.className = 'intro-footer';
     const hint = document.createElement('span');
     hint.className = 'intro-hint';
-    hint.textContent = 'Click the scene or press → to continue · Esc to skip';
+    hint.textContent = 'Autoplay · Click or press → to advance · Esc to skip';
     const actions = document.createElement('div');
     actions.className = 'intro-actions';
     const skip = document.createElement('button');
@@ -180,6 +218,6 @@ export class IntroSequence {
     actions.append(skip, next);
     footer.append(hint, actions);
 
-    this.overlay.append(image, shade, header, card, footer);
+    this.overlay.append(this.art, shade, header, card, footer);
   }
 }

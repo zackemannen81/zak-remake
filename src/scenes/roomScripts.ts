@@ -75,6 +75,18 @@ function toggleTv(state: GameState, desired?: boolean): string {
 }
 
 export function applyInventoryVerb(state: GameState, id: number, verb: VerbId): string | undefined {
+  if (id === 18 && verb === 'look') return 'CashCard balance: $' + state.variables[62];
+  if (id === 42 && verb === 'look') return 'Super Lucky Lotto - ' + state.variables.slice(208,212).join(' ');
+  if (id === 34 && (verb === 'open' || verb === 'close')) {
+    const open = verb === 'open';
+    setBits(state,34,4,!open);
+    (state.objectNames ??= {})['34'] = open ? 'open tool kit' : 'tool kit';
+    for (const tool of [35,36,37,38]) {
+      if (state.objectOwners[String(tool)] === (open ? 12 : 1))
+        scheduleAction(state,1,{type:'set-owner',objectId:tool,ownerId:open ? 1 : 12});
+    }
+    return open ? 'Wow! Look at all this stuff!' : 'Closed the tool kit.';
+  }
   if (id === 21 && (verb === 'use' || verb === 'turnOn' || verb === 'turnOff') && state.selectedItemId === null) {
     return toggleTv(state, verb === 'use' ? undefined : verb === 'turnOn');
   }
@@ -83,6 +95,52 @@ export function applyInventoryVerb(state: GameState, id: number, verb: VerbId): 
 }
 
 export function applyRoomScriptVerb(state: GameState, roomId: number, objectId: number, verb: VerbId, itemId: number | null = state.selectedItemId): string | undefined {
+  // SCv2_0024: goods are requested with Pick up, paid at Buy Window.
+  const prices: Record<number,number> = {34:45,39:145,40:3,41:139,43:15,44:75,189:10};
+  if (roomId === 7 && prices[objectId] !== undefined && (verb === 'pickup' || (objectId === 189 && verb === 'use'))) {
+    const id = objectId === 189 ? 42 : objectId;
+    if (!state.inventory.includes(18)) return "You can't buy somethin with no CashCard!";
+    if (state.objectOwners[String(id)] === 1) return id === 42 ? 'Only one Lotto ticket per person.' : 'You already own that!';
+    const price = prices[objectId]!;
+    // Migrate saves created before the original opening cash balance was initialized.
+    if (!state.flags.cashInitialized && state.variables[62] === 0) state.variables[62] = 12250;
+    state.flags.cashInitialized = true;
+    if (state.variables[62]! < price) return "Sorry, ya don't have enough money.";
+    const window = getRoom(7).objects.find(o=>o.object_id===181)!;
+    planWalk(state,getRoom(7),{x:window.walk_x,y:window.walk_y});
+    const actions: ScheduledAction[] = [
+      {type:'add-variable',index:62,amount:-price},
+      {type:'set-owner',objectId:id,ownerId:1},
+      {type:'set-object-state',objectId:id,mask:10,value:true},
+      {type:'say',text:id===42?'Here, and good luck!':'Here. Thanks, friend.'},
+    ];
+    if (id===34) for (const tool of [35,36,37,38]) actions.push({type:'set-owner',objectId:tool,ownerId:12});
+    if (id===42) {
+      for(let i=0;i<4;i++) actions.push({type:'set-variable',index:208+i,value:Math.floor(Math.random()*10)});
+      actions.push({type:'set-flag',name:'lottoPending',value:true});
+    }
+    state.scriptSequence={roomId,afterWalk:actions};
+    return "Come over here. That'll be " + price + " bucks, friend.";
+  }
+  if (roomId===7 && objectId===181 && ['use','talk'].includes(verb)) return 'Show me what ya wanna buy.';
+  if (roomId===5 && objectId===31 && verb==='use' && itemId===38 && state.inventory.includes(38)) {
+    scheduleAction(state,48,{type:'set-owner',objectId:31,ownerId:1});
+    scheduleAction(state,48,{type:'set-object-state',objectId:31,mask:10,value:true});
+    state.scriptLockedUntil=state.tick+48;
+    return 'Cut the wires holding the bobby pin sign.';
+  }
+  if (roomId===3 && objectId===150 && verb==='use' && itemId!==null && state.inventory.includes(itemId)) {
+    if (!objectHasClass(itemId,128) && itemId!==18) return 'CashCards only.';
+    if (!state.flags.busDriverAwakened) return 'The driver is asleep.';
+    if (!state.flags.cashInitialized && state.variables[62]===0) state.variables[62]=12250;
+    state.flags.cashInitialized=true;
+    if (state.variables[62]!<8) return "Sorry bud, but you're low on dough!";
+    state.variables[62]-=8;
+    state.scriptLockedUntil=state.tick+220;
+    scheduleAction(state,40,{type:'set-object-state',objectId:143,mask:8,value:false});
+    scheduleAction(state,220,{type:'travel',roomId:8,x:264,y:120});
+    return "All right, let's go!";
+  }
   // OCv2_0103: Sushi moves between the bowl and the lamp; the bowl remains owned.
   if (roomId === 1 && objectId === 103 && verb === 'use' && itemId === 14 && state.inventory.includes(14)) {
     if (state.variables[138] === 3 || state.variables[138] === 2) return "Sushi's not here.";
@@ -123,6 +181,7 @@ export function applyRoomScriptVerb(state: GameState, roomId: number, objectId: 
     if (!objectHasClass(itemId,18) && itemId !== 16) return "That won't wake him up.";
     if (!(state.objectStates['144']! & 8)) return "He's already awake.";
     setBits(state,144,8,false);
+    setBits(state,150,2,false);
     state.scriptLockedUntil = state.tick + 240;
     const seen = state.flags.busDriverAwakened;
     state.flags.busDriverAwakened = true;
