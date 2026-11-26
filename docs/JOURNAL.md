@@ -90,3 +90,8 @@ Read SC41/EN29, SC0001/SC108/SC127/SC115. Implemented original map inspection an
 - Verification: 89 unit/content tests pass. Browser checked office actors, startup survival, skip, replay and full phase traversal; original office/dream screenshots inspected.
 - Remaining fidelity work: this is a deterministic authored adaptation, NOT execution of SC1 bytecode. Walk paths, frame cycling, palette remaps, credit trigger timing and wait-for-music timing are not exact SCUMM behavior. User intro track is retained; original sound81/music95 playback is not implemented. Full-script and all-room Scene Lab work remains open.
 Signed: Codex — 2026-11-26.
+
+## Scene Lab 05 — all resource rooms, 2026-11-26
+Expanded selector and project validation from rooms1/2 to all58 extracted resource rooms, including special views. Preserve legacy PoC masters for1/2; other rooms use runtime cropped catalog or original background, with image-load fallback to original. Existing project format unchanged. Room drafts remain session-local; save each room before closing/reloading. Logical aliases share resource backgrounds and are not separate authored projects. Full script coverage remains unfinished.
+Browser verified all58 loads, airport layer retention across room switches, embedded save/import round-trip and airport playtest, no page errors. Airport screenshot inspected. Existing89 tests pass; dedicated all-room catalog round-trip test added. No user artwork changed.
+Signed: Codex.

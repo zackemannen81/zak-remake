@@ -171,3 +171,7 @@ User priority: restore the original opening. Compare SC1/127/111/109/122, restor
 
 ## All-room Scene Lab — 2026-11-26 (In Progress)
 User now wants to author other rooms. Expose all extracted resource rooms, cropped/original master fallback, retain room1/2 projects, round-trip and browser-check additional rooms. This advances authoring without claiming all game scripts complete.
+
+## Scene Lab 05 — all resource rooms, 2026-11-26
+Expanded selector and project validation from rooms1/2 to all58 extracted resource rooms, including special views. Preserve legacy PoC masters for1/2; other rooms use runtime cropped catalog or original background, with image-load fallback to original. Existing project format unchanged. Room drafts remain session-local; save each room before closing/reloading. Logical aliases share resource backgrounds and are not separate authored projects. Full script coverage remains unfinished.
+Browser verified all58 loads, airport layer retention across room switches, embedded save/import round-trip and airport playtest, no page errors. Airport screenshot inspected. Existing89 tests pass; dedicated all-room catalog round-trip test added. No user artwork changed.

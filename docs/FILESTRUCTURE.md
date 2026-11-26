@@ -83,3 +83,5 @@ Updated: 2026-11-22
 
 - src/scenes/intro.ts: source-ordered cinematic adaptation, original costume atlas animation, camera and patch placement.
 - src/scenes/introPolicy.ts / intro.test.ts: entry policy and source asset/sequence regression checks.
+
+- src/lab/roomCatalog.ts / roomCatalog.test.ts: 58-resource editor catalog, allowed shipped master URLs and project round-trip validation. main.ts loads cropped/original master per room; model.ts accepts all catalog room IDs.
