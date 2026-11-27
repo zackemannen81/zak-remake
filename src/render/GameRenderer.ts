@@ -1,3 +1,6 @@
+import {ActorGroundEffects} from './ActorGroundEffects';
+import {actorEnvironmentDefaults,type ActorEnvironment} from './actorEnvironment';
+import {lightingDefaults,type Lighting} from '../lab/model';
 import runtimeAssets from '../content/runtime-assets.json';
 import { npcVisuals } from '../scenes/npcVisuals';
 import { assetUrl } from '../content/runtimeAssets';
@@ -95,6 +98,13 @@ function createZPlaneDepthTexture(width: number, height: number, pixels: Uint8Ar
 }
 
 export class GameRenderer {
+  private readonly groundEffects=new ActorGroundEffects();
+  private readonly keyLight=new THREE.DirectionalLight(0xffe4bb,1.6);
+  private readonly ambientLight=new THREE.HemisphereLight(0xfff1d8,0x526071,1.3);
+  private readonly environmentProfiles=new Map<number,{lighting?:Lighting;actor?:ActorEnvironment}>();
+  setRoomEnvironment(roomId:number,lighting?:Lighting,actor?:ActorEnvironment):void {
+    this.environmentProfiles.set(roomId,{lighting,actor});
+  }
   private labTextures = new Map<number, THREE.CanvasTexture>();
   private labObjectIds = new Map<number, Set<number>>();
   labHitTest?: (point:Point,room:RoomData,state:GameState)=>SourceObject|undefined;
@@ -167,10 +177,8 @@ export class GameRenderer {
     this.world.position.y = ORIGINAL_ROOM_HEIGHT;
     this.world.add(this.roomLayer, this.scriptActorLayer, this.actorRoot);
     this.scene.add(this.world);
-    this.scene.add(new THREE.HemisphereLight(0xfff4e4, 0x727d95, 2.0));
-    const keyLight = new THREE.DirectionalLight(0xffffff, 2.2);
-    keyLight.position.set(120, 180, 100);
-    this.scene.add(keyLight);
+    this.scene.add(this.ambientLight,this.keyLight,this.keyLight.target);
+    this.world.add(this.groundEffects.mesh);
     this.createActorPlaceholder();
     this.applyZPlaneOcclusion(this.actorPlaceholder);
     this.actorRoot.add(this.actorPlaceholder);
@@ -217,10 +225,33 @@ export class GameRenderer {
       this.actorMixer.update(delta);
     }
     this.lastFrameTime = performance.now();
+    const profile=this.environmentProfiles.get(room.id);
+    const light=profile?.lighting??{...lightingDefaults,x:250};
+    const ground=profile?.actor??actorEnvironmentDefaults(room.id);
+    this.keyLight.color.set(light.color);
+    this.keyLight.intensity=light.enabled?light.intensity:0;
+    this.ambientLight.intensity=light.enabled?light.ambient:1.3;
+    const ax=state.actor.x-this.scrollX, ay=128-state.actor.y;
+    this.keyLight.position.set(ax+light.x*0.15,ay+30+light.y*0.15,5+light.z*0.15);
+    this.keyLight.target.position.set(ax,ay+30,5);
+    this.groundEffects.update(state.actor.x,state.actor.y,this.scrollX,
+      {...ground,shadowOpacity:light.shadows?ground.shadowOpacity:0},light.x,light.y,light.softness);
+    this.groundEffects.mesh.visible=ground.enabled&&!!this.externalActor;
+    if(this.groundEffects.mesh.visible){
+      const background=this.scene.background,clear=this.renderer.getClearColor(new THREE.Color()),alpha=this.renderer.getClearAlpha();
+      this.roomLayer.visible=false;this.scriptActorLayer.visible=false;this.groundEffects.mesh.visible=false;
+      this.scene.background=null;this.renderer.setClearColor(0,0);
+      this.renderer.setRenderTarget(this.groundEffects.target);
+      this.renderer.render(this.scene,this.camera);
+      this.renderer.setRenderTarget(null);this.renderer.setClearColor(clear,alpha);
+      this.scene.background=background;this.roomLayer.visible=true;this.scriptActorLayer.visible=true;this.groundEffects.mesh.visible=true;
+    }
     this.renderer.render(this.scene, this.camera);
   }
 
   destroy(): void {
+    this.groundEffects.dispose();
+    this.keyLight.shadow.dispose();
     for(const texture of this.labTextures.values())texture.dispose();
     this.zPlaneLoadGeneration += 1;
     this.resizeObserver.disconnect();
@@ -556,7 +587,8 @@ export class GameRenderer {
       }
       model.traverse((node) => {
         if (node instanceof THREE.Mesh) {
-          node.castShadow = false;
+          node.castShadow = true;
+          // Ground shadows use the animated silhouette; avoid self-shadow acne in the mirrored 2D world.
           node.receiveShadow = false;
         }
       });

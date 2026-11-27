@@ -85,3 +85,6 @@ Updated: 2026-11-22
 - src/scenes/introPolicy.ts / intro.test.ts: entry policy and source asset/sequence regression checks.
 
 - src/lab/roomCatalog.ts / roomCatalog.test.ts: 58-resource editor catalog, allowed shipped master URLs and project round-trip validation. main.ts loads cropped/original master per room; model.ts accepts all catalog room IDs.
+
+- src/render/actorEnvironment.ts / actorEnvironment.test.ts: optional per-room character floor profile, defaults and validation.
+- src/render/ActorGroundEffects.ts: animated silhouette capture target and projected floor reflection/contact/cast-shadow shader. GameRenderer renders the capture and shares room lighting; lab model/main/playRuntime persist and pass profiles.
